@@ -12,7 +12,7 @@
 #define FIR_RS (B_UPDATED_TYPE_MATCHUPS >= GEN_2 ? X(0.5) : X(1.0))  // Ice        -> Fire
 
 const uq4_12_t gTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPES] =
-{//                   Defender -->
+{//                   Defender --> 
  //  Attacker           None   Normal Fighting Wind  Filth  Earth   Beast    Insect     Undead   Machine  Mystery  Fire   Water   Plant  Electric Psychic   Ice   Dragon   Dark   Puppet   Stellar Vaccine Virus    Data    Free    Light
     [TYPE_NONE]     = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
     [TYPE_NULL]   = {______, ______, ______, ______, ______, ______, X(0.5), ______, X(0.0), X(0.5), ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
