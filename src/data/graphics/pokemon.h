@@ -26753,6 +26753,41 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+
+//SPECIES_BOTAMON
+    const u32 gMonFrontPic_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/botamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/botamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/botamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/botamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Botamon[] = INCBIN_U8("graphics/pokemon/digimon/botamon/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Botamon[] = INCBIN_U8("graphics/pokemon/digimon/botamon/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Botamon[] = INCBIN_COMP("graphics/pokemon/digimon/botamon/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gOverworldPalette_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/botamon/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/botamon/overworld_shiny.gbapal.lz");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+//SPECIES_CHOROMON
+    const u32 gMonFrontPic_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/stage1/choromon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/stage1/choromon/normal.gbapal.lz");
+    const u32 gMonBackPic_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/stage1/choromon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/stage1/choromon/shiny.gbapal.lz");
+    const u8 gMonIcon_Choromon[] = INCBIN_U8("graphics/pokemon/digimon/stage1/choromon/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Choromon[] = INCBIN_U8("graphics/pokemon/digimon/stage1/choromon/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Choromon[] = INCBIN_COMP("graphics/pokemon/digimon/stage1/choromon/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gOverworldPalette_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/stage1/choromon/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/stage1/choromon/overworld_shiny.gbapal.lz");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
 //SPECIES_YOKOMON
    const u32 gMonFrontPic_Yokomon[] = INCBIN_U32("graphics/pokemon/digimon/yokomon/anim_front.4bpp.lz");
    const u32 gMonBackPic_Yokomon[] = INCBIN_U32("graphics/pokemon/digimon/yokomon/back.4bpp.lz");
@@ -27314,6 +27349,24 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+//SPECIES_AGUMON_2006
+   const u32 gMonFrontPic_Agumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/Agumon_2006/anim_front.4bpp.lz");
+   const u32 gMonBackPic_Agumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/Agumon_2006/back.4bpp.lz");
+   const u32 gMonPalette_Agumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/Agumon_2006/normal.gbapal.lz");
+   const u32 gMonShinyPalette_Agumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/Agumon_2006/shiny.gbapal.lz");
+   const u8 gMonIcon_Agumon_2006[] = INCBIN_U8("graphics/pokemon/digimon/Agumon_2006/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Agumon_2006[] = INCBIN_U8("graphics/pokemon/digimon/Agumon_2006/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Agumon_2006[] = INCBIN_COMP("graphics/pokemon/digimon/Agumon_2006/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gOverworldPalette_Agumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/Agumon_2006/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_Agumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/Agumon_2006/overworld_shiny.gbapal.lz");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+
 //SPECIES_GOMAMON
    const u32 gMonFrontPic_Gomamon[] = INCBIN_U32("graphics/pokemon/digimon/gomamon/anim_front.4bpp.lz");
    const u32 gMonBackPic_Gomamon[] = INCBIN_U32("graphics/pokemon/digimon/gomamon/back.4bpp.lz");
@@ -27604,21 +27657,39 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 //SPECIES_BLACKAGUMON
-   const u32 gMonFrontPic_Blackagumon[] = INCBIN_U32("graphics/pokemon/digimon/blackagumon/anim_front.4bpp.lz");
-   const u32 gMonBackPic_Blackagumon[] = INCBIN_U32("graphics/pokemon/digimon/blackagumon/back.4bpp.lz");
-   const u32 gMonPalette_Blackagumon[] = INCBIN_U32("graphics/pokemon/digimon/blackagumon/normal.gbapal.lz");
-   const u32 gMonShinyPalette_Blackagumon[] = INCBIN_U32("graphics/pokemon/digimon/blackagumon/shiny.gbapal.lz");
-   const u8 gMonIcon_Blackagumon[] = INCBIN_U8("graphics/pokemon/digimon/blackagumon/icon.4bpp");
+   const u32 gMonFrontPic_BlackAgumon[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon/anim_front.4bpp.lz");
+   const u32 gMonBackPic_BlackAgumon[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon/back.4bpp.lz");
+   const u32 gMonPalette_BlackAgumon[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon/normal.gbapal.lz");
+   const u32 gMonShinyPalette_BlackAgumon[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon/shiny.gbapal.lz");
+   const u8 gMonIcon_BlackAgumon[] = INCBIN_U8("graphics/pokemon/digimon/BlackAgumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Blackagumon[] = INCBIN_U8("graphics/pokemon/digimon/blackagumon/footprint.1bpp");
+    const u8 gMonFootprint_BlackAgumon[] = INCBIN_U8("graphics/pokemon/digimon/BlackAgumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Blackagumon[] = INCBIN_COMP("graphics/pokemon/digimon/blackagumon/overworld.4bpp");
+    const u32 gObjectEventPic_BlackAgumon[] = INCBIN_COMP("graphics/pokemon/digimon/BlackAgumon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u32 gOverworldPalette_Blackagumon[] = INCBIN_U32("graphics/pokemon/digimon/blackagumon/overworld_normal.gbapal.lz");
-    const u32 gShinyOverworldPalette_Blackagumon[] = INCBIN_U32("graphics/pokemon/digimon/blackagumon/overworld_shiny.gbapal.lz");
+    const u32 gOverworldPalette_BlackAgumon[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_BlackAgumon[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+//SPECIES_BLACKAGUMON_2006
+   const u32 gMonFrontPic_BlackAgumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon_2006/anim_front.4bpp.lz");
+   const u32 gMonBackPic_BlackAgumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon_2006/back.4bpp.lz");
+   const u32 gMonPalette_BlackAgumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon_2006/normal.gbapal.lz");
+   const u32 gMonShinyPalette_BlackAgumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon_2006/shiny.gbapal.lz");
+   const u8 gMonIcon_BlackAgumon_2006[] = INCBIN_U8("graphics/pokemon/digimon/BlackAgumon_2006/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_BlackAgumon_2006[] = INCBIN_U8("graphics/pokemon/digimon/BlackAgumon_2006/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_BlackAgumon_2006[] = INCBIN_COMP("graphics/pokemon/digimon/BlackAgumon_2006/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gOverworldPalette_BlackAgumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon_2006/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_BlackAgumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/BlackAgumon_2006/overworld_shiny.gbapal.lz");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
 
 //SPECIES_BLACKGABUMON
    const u32 gMonFrontPic_Blackgabumon[] = INCBIN_U32("graphics/pokemon/digimon/blackgabumon/anim_front.4bpp.lz");
@@ -27668,6 +27739,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u32 gOverworldPalette_Snowagumon[] = INCBIN_U32("graphics/pokemon/digimon/snowagumon/overworld_normal.gbapal.lz");
     const u32 gShinyOverworldPalette_Snowagumon[] = INCBIN_U32("graphics/pokemon/digimon/snowagumon/overworld_shiny.gbapal.lz");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+//SPECIES_SNOWAGUMON_2006
+   const u32 gMonFrontPic_Snowagumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/snowagumon_2006/anim_front.4bpp.lz");
+   const u32 gMonBackPic_Snowagumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/snowagumon_2006/back.4bpp.lz");
+   const u32 gMonPalette_Snowagumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/snowagumon_2006/normal.gbapal.lz");
+   const u32 gMonShinyPalette_Snowagumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/snowagumon_2006/shiny.gbapal.lz");
+   const u8 gMonIcon_Snowagumon_2006[] = INCBIN_U8("graphics/pokemon/digimon/snowagumon_2006/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Snowagumon_2006[] = INCBIN_U8("graphics/pokemon/digimon/snowagumon_2006/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Snowagumon_2006[] = INCBIN_COMP("graphics/pokemon/digimon/snowagumon_2006/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gOverworldPalette_Snowagumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/snowagumon_2006/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_Snowagumon_2006[] = INCBIN_U32("graphics/pokemon/digimon/snowagumon_2006/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

@@ -157,7 +157,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     #include "species_info/gen_7_families.h"
     #include "species_info/gen_8_families.h"
     #include "species_info/gen_9_families.h"
-//	#include "digi_families.h"
+    #include "species_info/digi_stage1.h"
 
     [SPECIES_EGG] =
     {
@@ -2591,6 +2591,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     },
 
 
+
     [SPECIES_GOMAMON] =
     {
         .baseHP        = 55,
@@ -2603,7 +2604,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
-        .evYield_Attack = 1,
+        .evYield_Attack
+         = 1,
         .evYield_Defense = 1,
         .evYield_SpAttack = 1,
         .evYield_SpDefense = 1,
@@ -3821,9 +3823,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_NIGHT_SOLDIER, ABILITY_BLIZZARD_FANG, ABILITY_VOLCANIC_BEAT },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Blackagumon"),
+        .speciesName = _("BlackAgumon"),
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_BLACKAGUMON,
+        .natDexNum = NATIONAL_DEX_AGUMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -3836,7 +3838,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Blackagumon,
+        .frontPic = gMonFrontPic_BlackAgumon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3845,30 +3847,31 @@ const struct SpeciesInfo gSpeciesInfo[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Blackagumon,
+        .backPic = gMonBackPic_BlackAgumon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Blackagumon,
-        .shinyPalette = gMonShinyPalette_Blackagumon,
-        .iconSprite = gMonIcon_Blackagumon,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_BlackAgumon,
+        .shinyPalette = gMonShinyPalette_BlackAgumon,
+        .iconSprite = gMonIcon_BlackAgumon,
+        .iconPalIndex = 5,
         SHADOW(1, 7, SHADOW_SIZE_M)
-        FOOTPRINT(Blackagumon)
+        FOOTPRINT(BlackAgumon)
         OVERWORLD(
-            sPicTable_Blackagumon,
+            sPicTable_BlackAgumon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Blackagumon,
-            gShinyOverworldPalette_Blackagumon
+            gOverworldPalette_BlackAgumon,
+            gShinyOverworldPalette_BlackAgumon
         ) 
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
-		.levelUpLearnset = sBlackagumonLevelUpLearnset,
-        .teachableLearnset = sBlackagumonTeachableLearnset,
+		.levelUpLearnset = sBlackAgumonLevelUpLearnset,
+        .teachableLearnset = sBlackAgumonTeachableLearnset,
     },
 
+    
 
     [SPECIES_BLACKGABUMON] =
     {
@@ -4020,7 +4023,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 31,
         .baseSpAttack  = 45,
         .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_VACCINE, TYPE_ICE),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_ICE, TYPE_DRAGON),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4037,7 +4040,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Snowagumon"),
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_SNOWAGUMON,
+        .natDexNum = NATIONAL_DEX_AGUMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -4066,7 +4069,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_Snowagumon,
         .shinyPalette = gMonShinyPalette_Snowagumon,
         .iconSprite = gMonIcon_Snowagumon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 5,
         SHADOW(1, 2, SHADOW_SIZE_L)
         FOOTPRINT(Snowagumon)
         OVERWORLD(
@@ -4081,6 +4084,77 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
         .levelUpLearnset = sSnowagumonLevelUpLearnset,
         .teachableLearnset = sSnowagumonTeachableLearnset,
+    },
+
+    [SPECIES_SNOWAGUMON_2006] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 68,
+        .baseDefense   = 64,
+        .baseSpeed     = 31,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_ICE, TYPE_DRAGON),
+        .catchRate = 225,
+        .expYield = 100,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_SHELL_ARMOR },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("SnowAgumon"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_AGUMON,
+        .categoryName = _("Unknown"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "placeholder text for snow agumon!\n"
+            "you know what's the most cringe \n"
+            "dinosaur of all? Dracorex Hogwartsia\n"
+            "dw its not a real dino any more.gottem"),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Snowagumon_2006,
+        .frontPicSize = MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 1),
+            ANIMCMD_FRAME(1, 36),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_Snowagumon_2006,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_Snowagumon_2006,
+        .shinyPalette = gMonShinyPalette_Snowagumon_2006,
+        .iconSprite = gMonIcon_Snowagumon_2006,
+        .iconPalIndex = 5,
+        SHADOW(1, 2, SHADOW_SIZE_L)
+        FOOTPRINT(Snowagumon_2006)
+        OVERWORLD(
+            sPicTable_Snowagumon_2006,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Snowagumon_2006,
+            gShinyOverworldPalette_Snowagumon_2006
+        ) 
+        .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
+        .levelUpLearnset = sSnowagumon_2006LevelUpLearnset,
+        .teachableLearnset = sSnowagumon_2006TeachableLearnset,
     },
 
 
@@ -13526,91 +13600,147 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .teachableLearnset = sRapidmongTeachableLearnset,
     },
 
-
-
-
-
-
-	
-	
-	
-	
-	
-    /* You may add any custom species below this point based on the following structure: */
-
-    /*
-    [SPECIES_NONE] =
+    [SPECIES_AGUMON_2006] =
     {
-        .baseHP        = 1,
-        .baseAttack    = 1,
-        .baseDefense   = 1,
-        .baseSpeed     = 1,
-        .baseSpAttack  = 1,
-        .baseSpDefense = 1,
-        .types = MON_TYPES(TYPE_MYSTERY),
-        .catchRate = 255,
-        .expYield = 67,
+        .baseHP        = 55,
+        .baseAttack    = 68,
+        .baseDefense   = 64,
+        .baseSpeed     = 31,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_DRAGON, TYPE_FIRE),
+        .catchRate = 225,
+        .expYield = 100,
         .evYield_HP = 1,
+        .evYield_Attack = 1,
         .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
         .evYield_SpDefense = 1,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_CURSED_BODY, ABILITY_DAMP },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("??????????"),
+        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_SHELL_ARMOR },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Agumon"),
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_NONE,
+        .natDexNum = NATIONAL_DEX_AGUMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "This is a newly discovered Pokémon.\n"
-            "It is currently under investigation.\n"
-            "No detailed information is available\n"
-            "at this time."),
+            "agumon 2006 yall\n"
+            "you know what's the most cringe \n"
+            "dinosaur of all? Dracorex Hogwartsia\n"
+            "dw its not a real dino any more.gottem"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CircledQuestionMark,
-        .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_None,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CircledQuestionMark,
-        .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-#if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_CircledQuestionMark,
-        .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
-        .backPicFemale = gMonBackPic_CircledQuestionMarkF,
-        .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
-        .paletteFemale = gMonPalette_CircledQuestionMarkF,
-        .shinyPaletteFemale = gMonShinyPalette_CircledQuestionMarkF,
-        .iconSpriteFemale = gMonIcon_QuestionMarkF,
-        .iconPalIndexFemale = 1,
-#endif //P_GENDER_DIFFERENCES
-        .backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CircledQuestionMark,
-        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
-        .iconSprite = gMonIcon_QuestionMark,
-        .iconPalIndex = 0,
-        FOOTPRINT(QuestionMark)
-        .levelUpLearnset = sNoneLevelUpLearnset,
-        .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 100, SPECIES_NONE},
-                                {EVO_ITEM, ITEM_MOOMOO_MILK, SPECIES_NONE}),
-        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
-        //.formChangeTable = sNoneFormChangeTable,
-        //.perfectIVCount = NUM_STATS,
+        .frontPic = gMonFrontPic_Agumon_2006,
+        .frontPicSize = MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 1),
+            ANIMCMD_FRAME(1, 36),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_Agumon_2006,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_Agumon_2006,
+        .shinyPalette = gMonShinyPalette_Agumon_2006,
+        .iconSprite = gMonIcon_Agumon_2006,
+        .iconPalIndex = 5,
+        SHADOW(1, 2, SHADOW_SIZE_L)
+        FOOTPRINT(Agumon_2006)
+        OVERWORLD(
+            sPicTable_Agumon_2006,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Agumon_2006,
+            gShinyOverworldPalette_Agumon_2006
+        ) 
+        .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
+        .levelUpLearnset = sAgumon_2006LevelUpLearnset,
+        .teachableLearnset = sAgumon_2006TeachableLearnset,
     },
-    */
 
+    [SPECIES_BLACKAGUMON_2006] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 68,
+        .baseDefense   = 64,
+        .baseSpeed     = 31,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_FIRE, TYPE_DRAGON),
+        .catchRate = 225,
+        .expYield = 100,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_NIGHT_SOLDIER, ABILITY_VOLCANIC_BEAT, ABILITY_VOLCANIC_BEAT },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("BlackAgumon"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_AGUMON,
+        .categoryName = _("Unknown"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "black agumon 2006 get on it bro\n"
+            "On a very healthy Turtwig, the shell \n"
+            "should feel moist. The leaf on its head\n"
+            "wilts if it is thirsty."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BlackAgumon_2006,
+        .frontPicSize = MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 1),
+            ANIMCMD_FRAME(1, 36),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_BlackAgumon_2006,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_BlackAgumon_2006,
+        .shinyPalette = gMonShinyPalette_BlackAgumon_2006,
+        .iconSprite = gMonIcon_BlackAgumon_2006,
+        .iconPalIndex = 5,
+        SHADOW(1, 2, SHADOW_SIZE_L)
+        FOOTPRINT(BlackAgumon_2006)
+        OVERWORLD(
+            sPicTable_BlackAgumon_2006,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_BlackAgumon_2006,
+            gShinyOverworldPalette_BlackAgumon_2006
+        )
+        .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
+        .levelUpLearnset = sBlackAgumon_2006LevelUpLearnset,
+        .teachableLearnset = sBlackAgumon_2006TeachableLearnset,
+    },
 
-
-	
-	
 } ;
+

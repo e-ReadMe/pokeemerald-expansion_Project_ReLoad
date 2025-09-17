@@ -1,5 +1,6 @@
 POKEMONGFXDIR := graphics/pokemon
 DIGIMONGFXDIR := graphics/pokemon/digimon
+DIGIMONSTAGE1GFXDIR := graphics/pokemon/digimon/stage1
 OBJEVENTGFXDIR := graphics/object_events/pics
 FLDEFFGFXDIR := graphics/field_effects/pics
 MISCGFXDIR := graphics/misc
@@ -4919,8 +4920,17 @@ $(POKEMONGFXDIR)/gourgeist/super/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 
+$(DIGIMONGFXDIR)/botamon/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+
+$(DIGIMONSTAGE1GFXDIR)/choromon/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+
 $(DIGIMONGFXDIR)/koromon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 
 $(DIGIMONGFXDIR)/yokomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
@@ -5054,6 +5064,10 @@ $(DIGIMONGFXDIR)/agumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 
+$(DIGIMONGFXDIR)/agumon2006/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+
 $(DIGIMONGFXDIR)/gomamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
@@ -5126,6 +5140,10 @@ $(DIGIMONGFXDIR)/blackagumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 
+$(DIGIMONGFXDIR)/blackagumon_2006/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+
 $(DIGIMONGFXDIR)/blackgabumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
@@ -5137,6 +5155,8 @@ $(DIGIMONGFXDIR)/elecmonv/overworld.4bpp: %.4bpp: %.png
 $(DIGIMONGFXDIR)/snowagumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(DIGIMONGFXDIR)/snowagumon_2006/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(DIGIMONGFXDIR)/snowgoblimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4

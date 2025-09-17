@@ -6732,6 +6732,16 @@ static const struct SpriteFrameImage sPicTable_Koromon[] = {
     overworld_ascending_frames(gObjectEventPic_Koromon, 4, 4),
 };
 
+//SPECIES_BOTAMON
+static const struct SpriteFrameImage sPicTable_Botamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Botamon, 4, 4),
+};
+
+//SPECIES_CHOROMON
+static const struct SpriteFrameImage sPicTable_Choromon[] = {
+    overworld_ascending_frames(gObjectEventPic_Choromon, 4, 4),
+};
+
 //SPECIES_YOKOMON
 static const struct SpriteFrameImage sPicTable_Yokomon[] = {
     overworld_ascending_frames(gObjectEventPic_Yokomon, 4, 4),
@@ -6897,6 +6907,11 @@ static const struct SpriteFrameImage sPicTable_Agumon[] = {
     overworld_ascending_frames(gObjectEventPic_Agumon, 4, 4),
 };
 
+//SPECIES_AGUMON_2006
+static const struct SpriteFrameImage sPicTable_Agumon_2006[] = {
+    overworld_ascending_frames(gObjectEventPic_Agumon_2006, 4, 4),
+};
+
 //SPECIES_GOMAMON
 static const struct SpriteFrameImage sPicTable_Gomamon[] = {
     overworld_ascending_frames(gObjectEventPic_Gomamon, 4, 4),
@@ -6983,8 +6998,13 @@ static const struct SpriteFrameImage sPicTable_Goblimon[] = {
 };
 
 //SPECIES_BLACKAGUMON
-static const struct SpriteFrameImage sPicTable_Blackagumon[] = {
-    overworld_ascending_frames(gObjectEventPic_Blackagumon, 4, 4),
+static const struct SpriteFrameImage sPicTable_BlackAgumon[] = {
+    overworld_ascending_frames(gObjectEventPic_BlackAgumon, 4, 4),
+};
+
+//SPECIES_BLACKAGUMON_2006
+static const struct SpriteFrameImage sPicTable_BlackAgumon_2006[] = {
+    overworld_ascending_frames(gObjectEventPic_BlackAgumon_2006, 4, 4),
 };
 
 //SPECIES_BLACKGABUMON
@@ -7000,6 +7020,11 @@ static const struct SpriteFrameImage sPicTable_Elecmonv[] = {
 //SPECIES_SNOWAGUMON
 static const struct SpriteFrameImage sPicTable_Snowagumon[] = {
     overworld_ascending_frames(gObjectEventPic_Snowagumon, 4, 4),
+};
+
+//SPECIES_SNOWAGUMON_2006
+static const struct SpriteFrameImage sPicTable_Snowagumon_2006[] = {
+    overworld_ascending_frames(gObjectEventPic_Snowagumon_2006, 4, 4),
 };
 
 //SPECIES_SNOWGOBLIMON

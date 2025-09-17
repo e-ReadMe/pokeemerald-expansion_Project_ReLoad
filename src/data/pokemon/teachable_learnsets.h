@@ -35846,6 +35846,21 @@ static const u16 sKoromonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+//SPECIES_BOTAMON
+static const u16 sBotamonTeachableLearnset[] = {
+    MOVE_SLEEP_TALK,
+    MOVE_SNORE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_CHOROMON
+static const u16 sChoromonTeachableLearnset[] = {
+    MOVE_SLEEP_TALK,
+    MOVE_SNORE,
+    MOVE_UNAVAILABLE,
+};
+
+
 //SPECIES_YOKOMON
 static const u16 sYokomonTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
@@ -36077,6 +36092,13 @@ static const u16 sAgumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+//SPECIES_AGUMON_2006
+static const u16 sAgumon_2006TeachableLearnset[] = {
+    MOVE_SLEEP_TALK,
+    MOVE_SNORE,
+    MOVE_UNAVAILABLE,
+};
+
 //SPECIES_GOMAMON
 static const u16 sGomamonTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
@@ -36197,7 +36219,14 @@ static const u16 sGoblimonTeachableLearnset[] = {
 };
 
 //SPECIES_BLACKAGUMON
-static const u16 sBlackagumonTeachableLearnset[] = {
+static const u16 sBlackAgumonTeachableLearnset[] = {
+    MOVE_SLEEP_TALK,
+    MOVE_SNORE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BLACKAGUMON_2006
+static const u16 sBlackAgumon_2006TeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_UNAVAILABLE,
@@ -36219,6 +36248,13 @@ static const u16 sElecmonvTeachableLearnset[] = {
 
 //SPECIES_SNOWAGUMON
 static const u16 sSnowagumonTeachableLearnset[] = {
+    MOVE_SLEEP_TALK,
+    MOVE_SNORE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SNOWAGUMON_2006
+static const u16 sSnowagumon_2006TeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_UNAVAILABLE,

@@ -1825,9 +1825,14 @@
 #define SPECIES_TNDRBIRDMON			1709
 #define SPECIES_SALAMANDRMON			1710
 #define SPECIES_RAPIDMONG			1711
+#define SPECIES_AGUMON_2006			1712
+#define SPECIES_BLACKAGUMON_2006	1713
+#define SPECIES_SNOWAGUMON_2006	    1714
+#define SPECIES_BOTAMON     	    1715
+#define SPECIES_CHOROMON     	    1716
 
 
-#define SPECIES_EGG                                     (SPECIES_RAPIDMONG + 1)
+#define SPECIES_EGG                                     (SPECIES_CHOROMON + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

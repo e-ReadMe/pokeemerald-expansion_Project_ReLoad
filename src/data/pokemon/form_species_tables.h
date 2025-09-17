@@ -1,3 +1,15 @@
+//digimon list
+static const u16 sAgumonFormSpeciesIdTable[] = {
+    SPECIES_AGUMON,
+    SPECIES_AGUMON_2006,
+    SPECIES_BLACKAGUMON,
+    SPECIES_BLACKAGUMON_2006,
+    SPECIES_SNOWAGUMON,
+    SPECIES_SNOWAGUMON_2006,
+    FORM_SPECIES_END,
+};
+
+
 #if P_FAMILY_BULBASAUR
 static const u16 sVenusaurFormSpeciesIdTable[] = {
     SPECIES_VENUSAUR,
@@ -2130,14 +2142,6 @@ static const u16 sSquawkabillyFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_SQUAWKABILLY
 
-#if P_FAMILY_FINIZEN
-static const u16 sPalafinFormSpeciesIdTable[] = {
-    SPECIES_PALAFIN_ZERO,
-    SPECIES_PALAFIN_HERO,
-    FORM_SPECIES_END,
-};
-#endif //P_FAMILY_FINIZEN
-
 #if P_FAMILY_TATSUGIRI
 static const u16 sTatsugiriFormSpeciesIdTable[] = {
     SPECIES_TATSUGIRI_CURLY,
@@ -2196,9 +2200,12 @@ static const u16 sTerapagosFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_TERAPAGOS
 
-//digimon list
-static const u16 sAgumonFormSpeciesIdTable[] = {
-    SPECIES_AGUMON,
-    SPECIES_BLACKAGUMON,
-    SPECIES_SNOWAGUMON,
+#if P_FAMILY_FINIZEN
+static const u16 sPalafinFormSpeciesIdTable[] = {
+    SPECIES_PALAFIN_ZERO,
+    SPECIES_PALAFIN_HERO,
+    FORM_SPECIES_END,
 };
+#endif //P_FAMILY_FINIZEN
+
+

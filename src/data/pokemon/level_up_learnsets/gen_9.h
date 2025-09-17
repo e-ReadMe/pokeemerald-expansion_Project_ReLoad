@@ -22324,6 +22324,20 @@ static const struct LevelUpMove sKoromonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+//SPECIES_BOTAMON
+static const struct LevelUpMove sBotamonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_POUND),
+    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_END
+};
+
+//SPECIES_CHOROMON
+static const struct LevelUpMove sChoromonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_POUND),
+    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_END
+};
+
 //SPECIES_YOKOMON
 static const struct LevelUpMove sYokomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_POUND),
@@ -22557,6 +22571,15 @@ static const struct LevelUpMove sAgumonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+//SPECIES_AGUMON_2006
+static const struct LevelUpMove sAgumon_2006LevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_POUND),
+    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_MOVE(6, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(7, MOVE_DRAGON_TAIL),
+    LEVEL_UP_END
+};
+
 //SPECIES_GOMAMON
 static const struct LevelUpMove sGomamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_POUND),
@@ -22677,7 +22700,14 @@ static const struct LevelUpMove sGoblimonLevelUpLearnset[] = {
 };
 
 //SPECIES_BLACKAGUMON
-static const struct LevelUpMove sBlackagumonLevelUpLearnset[] = {
+static const struct LevelUpMove sBlackAgumonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_POUND),
+    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_END
+};
+
+//SPECIES_BLACKAGUMON_2006
+static const struct LevelUpMove sBlackAgumon_2006LevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_POUND),
     LEVEL_UP_MOVE(5, MOVE_LEER),
     LEVEL_UP_END
@@ -22699,6 +22729,13 @@ static const struct LevelUpMove sElecmonvLevelUpLearnset[] = {
 
 //SPECIES_SNOWAGUMON
 static const struct LevelUpMove sSnowagumonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_POUND),
+    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_END
+};
+
+//SPECIES_SNOWAGUMON_2006
+static const struct LevelUpMove sSnowagumon_2006LevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_POUND),
     LEVEL_UP_MOVE(5, MOVE_LEER),
     LEVEL_UP_END
