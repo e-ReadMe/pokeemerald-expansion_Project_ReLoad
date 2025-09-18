@@ -19502,24 +19502,24 @@ gBattleAnimMove_MagicalTorque::
 	end
 
 gBattleAnimMove_TeraBlast::
-	jumpifmovetypeequal TYPE_NORMAL, TeraBlastNormal
-	jumpifmovetypeequal TYPE_FIGHTING, TeraBlastFighting
-	jumpifmovetypeequal TYPE_FLYING, TeraBlastFlying
-	jumpifmovetypeequal TYPE_POISON, TeraBlastPoison
-	jumpifmovetypeequal TYPE_GROUND, TeraBlastGround
-	jumpifmovetypeequal TYPE_ROCK, TeraBlastRock
-	jumpifmovetypeequal TYPE_BUG, TeraBlastBug
-	jumpifmovetypeequal TYPE_GHOST, TeraBlastGhost
-	jumpifmovetypeequal TYPE_STEEL, TeraBlastSteel
+	jumpifmovetypeequal TYPE_NULL, TeraBlastNormal
+	jumpifmovetypeequal TYPE_COMBAT, TeraBlastFighting
+	jumpifmovetypeequal TYPE_WIND, TeraBlastFlying
+	jumpifmovetypeequal TYPE_FILTH, TeraBlastPoison
+	jumpifmovetypeequal TYPE_EARTH, TeraBlastGround
+	jumpifmovetypeequal TYPE_BEAST, TeraBlastRock
+	jumpifmovetypeequal TYPE_INSECT, TeraBlastBug
+	jumpifmovetypeequal TYPE_UNDEAD, TeraBlastGhost
+	jumpifmovetypeequal TYPE_MACHINE, TeraBlastSteel
 	jumpifmovetypeequal TYPE_FIRE, TeraBlastFire
 	jumpifmovetypeequal TYPE_WATER, TeraBlastWater
-	jumpifmovetypeequal TYPE_GRASS, TeraBlastGrass
+	jumpifmovetypeequal TYPE_PLANT, TeraBlastGrass
 	jumpifmovetypeequal TYPE_ELECTRIC, TeraBlastElectric
 	jumpifmovetypeequal TYPE_PSYCHIC, TeraBlastPsychic
 	jumpifmovetypeequal TYPE_ICE, TeraBlastIce
 	jumpifmovetypeequal TYPE_DRAGON, TeraBlastDragon
 	jumpifmovetypeequal TYPE_DARK, TeraBlastDark
-	jumpifmovetypeequal TYPE_FAIRY, TeraBlastFairy
+	jumpifmovetypeequal TYPE_PUPPET, TeraBlastFairy
 	jumpifmovetypeequal TYPE_STELLAR, TeraBlastStellar
 	end
 TeraBlastNormal:

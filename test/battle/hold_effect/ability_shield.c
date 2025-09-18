@@ -43,7 +43,7 @@ SINGLE_BATTLE_TEST("Ability Shield protects against Mold Breaker (no message)")
     PARAMETRIZE { item = ITEM_NONE; }
 
     GIVEN {
-        ASSUME(GetMoveType(MOVE_EARTHQUAKE) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_EARTHQUAKE) == TYPE_EARTH);
         PLAYER(SPECIES_FLYGON) { Ability(ABILITY_LEVITATE); Item(item); }
         OPPONENT(SPECIES_EXCADRILL) { Ability(ABILITY_MOLD_BREAKER); }
     } WHEN {

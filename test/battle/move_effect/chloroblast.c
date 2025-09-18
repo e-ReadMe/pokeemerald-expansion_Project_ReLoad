@@ -98,7 +98,7 @@ SINGLE_BATTLE_TEST("Chloroblast does not cause the user to lose HP even if the o
 SINGLE_BATTLE_TEST("Chloroblast does not cause the user to lose HP even if it is absorbed by Sap Sipper")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_CHLOROBLAST) == TYPE_GRASS);
+        ASSUME(GetMoveType(MOVE_CHLOROBLAST) == TYPE_PLANT);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_GOGOAT) { Ability(ABILITY_SAP_SIPPER); }
     } WHEN {

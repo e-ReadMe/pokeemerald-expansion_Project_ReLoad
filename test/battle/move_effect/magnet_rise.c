@@ -9,7 +9,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Magnet Rise rises the user into the air, avoiding Ground-type attacks")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_EARTHQUAKE) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_EARTHQUAKE) == TYPE_EARTH);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
@@ -42,7 +42,7 @@ SINGLE_BATTLE_TEST("Magnet Rise fails if the user is Grounded by Smack Down")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_SMACK_DOWN) == EFFECT_SMACK_DOWN);
-        ASSUME(gSpeciesInfo[SPECIES_XATU].types[0] == TYPE_FLYING || gSpeciesInfo[SPECIES_XATU].types[1] == TYPE_FLYING);
+        ASSUME(gSpeciesInfo[SPECIES_XATU].types[0] == TYPE_WIND || gSpeciesInfo[SPECIES_XATU].types[1] == TYPE_WIND);
         PLAYER(SPECIES_XATU);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {

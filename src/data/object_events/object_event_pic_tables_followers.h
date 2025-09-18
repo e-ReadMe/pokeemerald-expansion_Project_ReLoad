@@ -6750,14 +6750,14 @@ static const struct SpriteFrameImage sPicTable_Yokomon[] = {
 };
 
 //SPECIES_BUKAMON
-static const struct SpriteFrameImage sPicTable_Bukamon[] = {
-    overworld_ascending_frames(gObjectEventPic_Bukamon, 4, 4),
-};
+// static const struct SpriteFrameImage sPicTable_Bukamon[] = {
+//     overworld_ascending_frames(gObjectEventPic_Bukamon, 4, 4),
+// };
 
 //SPECIES_TSUNOMON
-static const struct SpriteFrameImage sPicTable_Tsunomon[] = {
-    overworld_ascending_frames(gObjectEventPic_Tsunomon, 4, 4),
-};
+// static const struct SpriteFrameImage sPicTable_Tsunomon[] = {
+//     overworld_ascending_frames(gObjectEventPic_Tsunomon, 4, 4),
+// };
 
 //SPECIES_TANEMON
 static const struct SpriteFrameImage sPicTable_Tanemon[] = {

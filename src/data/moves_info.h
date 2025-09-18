@@ -3953,7 +3953,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A blast of light that\n"
             "paralyses & cuts accuracy."),
-        .effect = EFFECT_PARALYZE,
+        .effect = EFFECT_ACCURACY_DOWN,
         .power = 0,
         .type = TYPE_NULL,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_4 ? 100 : 70,
