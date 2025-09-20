@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("Tera Starstorm remains Normal-type if used by Pokemon other 
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_TERA_STARSTORM) == TYPE_NULL);
-        ASSUME(gSpeciesInfo[SPECIES_MISDREAVUS].types[0] == TYPE_UNDEAD);
+        ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_UNDEAD);
         PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_STELLAR); }
         OPPONENT(SPECIES_MISDREAVUS);
     } WHEN {

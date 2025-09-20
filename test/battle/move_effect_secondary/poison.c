@@ -25,8 +25,8 @@ SINGLE_BATTLE_TEST("Poison cannot be inflicted on Poison and Steel-type Pokémon
     PARAMETRIZE { mon = SPECIES_REGISTEEL; }
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_TWINEEDLE, MOVE_EFFECT_POISON) == TRUE);
-        ASSUME(gSpeciesInfo[SPECIES_NIDORAN_M].types[0] == TYPE_FILTH);
-        ASSUME(gSpeciesInfo[SPECIES_REGISTEEL].types[0] == TYPE_MACHINE);
+        ASSUME(GetSpeciesType(SPECIES_NIDORAN_M, 0) == TYPE_FILTH);
+        ASSUME(GetSpeciesType(SPECIES_REGISTEEL, 0) == TYPE_MACHINE);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(mon);
     } WHEN {

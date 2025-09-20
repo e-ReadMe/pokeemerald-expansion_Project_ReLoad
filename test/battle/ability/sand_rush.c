@@ -3,8 +3,8 @@
 
 SINGLE_BATTLE_TEST("Sand Rush prevents damage from sandstorm")
 {
-    u32 type1 = gSpeciesInfo[SPECIES_STOUTLAND].types[0];
-    u32 type2 = gSpeciesInfo[SPECIES_STOUTLAND].types[1];
+    u32 type1 = GetSpeciesType(SPECIES_STOUTLAND, 0);
+    u32 type2 = GetSpeciesType(SPECIES_STOUTLAND, 1);
     GIVEN {
         ASSUME(type1 != TYPE_BEAST && type2 != TYPE_BEAST);
         ASSUME(type1 != TYPE_EARTH && type2 != TYPE_EARTH);
