@@ -5,12 +5,12 @@ extern u8 gUnusedPokedexU8;
 extern void (*gPokedexVBlankCB)(void);
 
 void ResetPokedex(void);
-u16 GetNationalPokedexCount(u8 caseID);
-u16 GetHoennPokedexCount(u8 caseID);
+u16 GetNationalPokedexCount(u8);
+u16 GetHoennPokedexCount(u8);
 u8 DisplayCaughtMonDexPage(u16 species, bool32 isShiny, u32 personality);
-s8 GetSetPokedexFlag(enum NationalDexOrder nationalDexNo, u8 caseID);
+s8 GetSetPokedexFlag(u16 nationalNum, u8 caseId);
 void DrawFootprint(u8 windowId, u16 species);
-u16 CreateMonSpriteFromNationalDexNumber(enum NationalDexOrder nationalNum, s16 x, s16 y, u16 paletteSlot);
+u16 CreateMonSpriteFromNationalDexNumber(u16, s16, s16, u16);
 bool16 HasAllHoennMons(void);
 void ResetPokedexScrollPositions(void);
 bool16 HasAllMons(void);

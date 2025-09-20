@@ -5,7 +5,6 @@
 // Macros for ease of use.
 
 #define EVOLUTION(...) (const struct Evolution[]) { __VA_ARGS__, { EVOLUTIONS_END }, }
-#define CONDITIONS(...) ((const struct EvolutionParam[]) { __VA_ARGS__, {CONDITIONS_END} })
 
 #define ANIM_FRAMES(...) (const union AnimCmd *const[]) { sAnim_GeneralFrame0, (const union AnimCmd[]) { __VA_ARGS__ ANIMCMD_END, }, }
 
@@ -123,9 +122,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_CircledQuestionMark,
         .iconSprite = gMonIcon_QuestionMark,
         .iconPalIndex = 0,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(QuestionMark)
-        SHADOW(-1, 0, SHADOW_SIZE_M)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -244,8 +241,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         )
         .levelUpLearnset = sKoromonLevelUpLearnset,
         .teachableLearnset = sKoromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_AGUMON, CONDITIONS({IF_STAT_BASED, STAT_ATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE})},
-                                {EVO_LEVEL, 30, SPECIES_HACKMON, CONDITIONS({IF_STAT_BASED, STAT_SPATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE})}),
+        .evolutions = EVOLUTION({EVO_STAT_BASED, 20, SPECIES_AGUMON, STAT_ATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE},
+                                {EVO_STAT_BASED, 30, SPECIES_HACKMON, STAT_SPATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE}),
     },
 
 
@@ -317,7 +314,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         ) 
         .levelUpLearnset = sYokomonLevelUpLearnset,
         .teachableLearnset = sYokomonTeachableLearnset,
-		.evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_ALLOMON, CONDITIONS({IF_SADNESS, 50})}),
+		.evolutions = EVOLUTION({EVO_SADNESS, 50, SPECIES_ALLOMON}),
     },
 
 
@@ -378,15 +375,15 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconPalIndex = 5,
         SHADOW(1, 2, SHADOW_SIZE_L)
         FOOTPRINT(Bukamon)
-        // OVERWORLD(
-        //     sPicTable_Bukamon,
-        //     SIZE_32x32,
-        //     SHADOW_SIZE_M,
-        //     TRACKS_FOOT,
-        //     sAnimTable_Following,
-        //     gOverworldPalette_Bukamon,
-        //     gShinyOverworldPalette_Bukamon
-        // ) 
+        OVERWORLD(
+            sPicTable_Bukamon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Bukamon,
+            gShinyOverworldPalette_Bukamon
+        ) 
         .levelUpLearnset = sBukamonLevelUpLearnset,
         .teachableLearnset = sBukamonTeachableLearnset,
     },
@@ -449,15 +446,15 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconPalIndex = 3,
         SHADOW(1, 2, SHADOW_SIZE_L)
         FOOTPRINT(Tsunomon)
-        // OVERWORLD(
-        //     sPicTable_Tsunomon,
-        //     SIZE_32x32,
-        //     SHADOW_SIZE_M,
-        //     TRACKS_FOOT,
-        //     sAnimTable_Following,
-        //     gOverworldPalette_Tsunomon,
-        //     gShinyOverworldPalette_Tsunomon
-        // ) 
+        OVERWORLD(
+            sPicTable_Tsunomon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Tsunomon,
+            gShinyOverworldPalette_Tsunomon
+        ) 
         .levelUpLearnset = sTsunomonLevelUpLearnset,
         .teachableLearnset = sTsunomonTeachableLearnset,
     },

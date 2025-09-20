@@ -22,7 +22,10 @@ enum {
     CURRENT_TEST_STATE_RUN,
 };
 
-__attribute__((section(".persistent"))) struct PersistentTestRunnerState gPersistentTestRunnerState = {0};
+__attribute__((section(".persistent"))) static struct {
+    u32 address:28;
+    u32 state:1;
+} sCurrentTest = {0};
 
 void TestRunner_Battle(const struct Test *);
 
@@ -33,25 +36,6 @@ static void Intr_Timer2(void);
 
 extern const struct Test __start_tests[];
 extern const struct Test __stop_tests[];
-
-static enum TestFilterMode DetectFilterMode(const char *pattern)
-{
-    size_t n = strlen(pattern);
-    if (n > 2 && pattern[n-2] == '.' && pattern[n-1] == 'c')
-        return TEST_FILTER_MODE_FILENAME_EXACT;
-    else if (pattern[0] == '*') // TODO: Support '*pattern*'.
-        return TEST_FILTER_MODE_TEST_NAME_INFIX;
-    else
-        return TEST_FILTER_MODE_TEST_NAME_PREFIX;
-}
-
-static bool32 ExactMatch(const char *pattern, const char *string)
-{
-    if (string == NULL)
-        return TRUE;
-
-    return strcmp(pattern, string) == 0;
-}
 
 static bool32 PrefixMatch(const char *pattern, const char *string)
 {
@@ -67,14 +51,6 @@ static bool32 PrefixMatch(const char *pattern, const char *string)
         pattern++;
         string++;
     }
-}
-
-static bool32 InfixMatch(const char *pattern, const char *string)
-{
-    if (string == NULL)
-        return TRUE;
-
-    return strstr(string, &pattern[1]) != NULL;
 }
 
 enum
@@ -198,8 +174,6 @@ top:
             return;
         }
 
-        gTestRunnerState.filterMode = DetectFilterMode(gTestRunnerArgv);
-
         MoveSaveBlocks_ResetHeap();
         ClearSav1();
         ClearSav2();
@@ -210,16 +184,15 @@ top:
         gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SET;
 
         // The current test restarted the ROM (e.g. by jumping to NULL).
-        if (gPersistentTestRunnerState.address != 0)
+        if (sCurrentTest.address != 0)
         {
             gTestRunnerState.test = __start_tests;
-            while ((uintptr_t)gTestRunnerState.test != gPersistentTestRunnerState.address)
+            while ((uintptr_t)gTestRunnerState.test != sCurrentTest.address)
             {
                 AssignCostToRunner();
                 gTestRunnerState.test++;
             }
-
-            if (gPersistentTestRunnerState.state == CURRENT_TEST_STATE_ESTIMATE)
+            if (sCurrentTest.state == CURRENT_TEST_STATE_ESTIMATE)
             {
                 u32 runner = MinCostProcess();
                 gTestRunnerState.processCosts[runner] += 1;
@@ -235,14 +208,9 @@ top:
             }
             else
             {
-                // Cost must be assigned to the test that crashed, otherwise tests will be desynched
-                AssignCostToRunner();
                 gTestRunnerState.state = STATE_REPORT_RESULT;
                 gTestRunnerState.result = TEST_RESULT_CRASH;
             }
-
-            if (gPersistentTestRunnerState.expectCrash)
-                gTestRunnerState.expectedResult = TEST_RESULT_CRASH;
         }
         else
         {
@@ -262,17 +230,11 @@ top:
                 gTestRunnerState.state = STATE_EXIT;
                 return;
             }
-            if (gTestRunnerState.test->runner != &gAssumptionsRunner)
-            {
-                if ((gTestRunnerState.filterMode == TEST_FILTER_MODE_TEST_NAME_PREFIX && !PrefixMatch(gTestRunnerArgv, gTestRunnerState.test->name))
-                 || (gTestRunnerState.filterMode == TEST_FILTER_MODE_TEST_NAME_INFIX && !InfixMatch(gTestRunnerArgv, gTestRunnerState.test->name))
-                 || (gTestRunnerState.filterMode == TEST_FILTER_MODE_FILENAME_EXACT && !ExactMatch(gTestRunnerArgv, gTestRunnerState.test->filename)))
-                {
-                    ++gTestRunnerState.test;
-                    continue;
-                }
-            }
-            break;
+            if (gTestRunnerState.test->runner != &gAssumptionsRunner
+              && !PrefixMatch(gTestRunnerArgv, gTestRunnerState.test->name))
+                ++gTestRunnerState.test;
+            else
+                break;
         }
 
         Test_MgbaPrintf(":N%s", gTestRunnerState.test->name);
@@ -290,8 +252,8 @@ top:
         REG_TM2CNT_L = UINT16_MAX - (274 * 60); // Approx. 1 second.
         REG_TM2CNT_H = TIMER_ENABLE | TIMER_INTR_ENABLE | TIMER_1024CLK;
 
-        gPersistentTestRunnerState.address = (uintptr_t)gTestRunnerState.test;
-        gPersistentTestRunnerState.state = CURRENT_TEST_STATE_ESTIMATE;
+        sCurrentTest.address = (uintptr_t)gTestRunnerState.test;
+        sCurrentTest.state = CURRENT_TEST_STATE_ESTIMATE;
 
         // If AssignCostToRunner fails, we want to report the failure.
         gTestRunnerState.state = STATE_REPORT_RESULT;
@@ -304,8 +266,7 @@ top:
 
     case STATE_RUN_TEST:
         gTestRunnerState.state = STATE_REPORT_RESULT;
-        gPersistentTestRunnerState.state = CURRENT_TEST_STATE_RUN;
-        gPersistentTestRunnerState.expectCrash = FALSE;
+        sCurrentTest.state = CURRENT_TEST_STATE_RUN;
         SeedRng(0);
         SeedRng2(0);
         if (gTestRunnerState.test->runner->setUp)
@@ -351,9 +312,7 @@ top:
             const char *color;
             const char *result;
 
-            if (gTestRunnerState.result == gTestRunnerState.expectedResult
-             || (gTestRunnerState.result == TEST_RESULT_FAIL
-              && gTestRunnerState.expectedResult == TEST_RESULT_KNOWN_FAIL))
+            if (gTestRunnerState.result == gTestRunnerState.expectedResult)
             {
                 color = "\e[32m";
                 Test_MgbaPrintf(":N%s", gTestRunnerState.test->name);
@@ -371,7 +330,7 @@ top:
             switch (gTestRunnerState.result)
             {
             case TEST_RESULT_FAIL:
-                if (gTestRunnerState.expectedResult == TEST_RESULT_KNOWN_FAIL)
+                if (gTestRunnerState.expectedResult == TEST_RESULT_FAIL)
                 {
                     result = "KNOWN_FAILING";
                     color = "\e[33m";
@@ -428,9 +387,7 @@ top:
                 Test_MgbaPrintf(":A%s%s\e[0m", color, result);
             else if (gTestRunnerState.result == TEST_RESULT_TODO)
                 Test_MgbaPrintf(":T%s%s\e[0m", color, result);
-            else if (gTestRunnerState.expectedResult == gTestRunnerState.result
-                 || (gTestRunnerState.result == TEST_RESULT_FAIL
-                  && gTestRunnerState.expectedResult == TEST_RESULT_KNOWN_FAIL))
+            else if (gTestRunnerState.expectedResult == gTestRunnerState.result)
                 Test_MgbaPrintf(":K%s%s\e[0m", color, result);
             else
                 Test_MgbaPrintf(":F%s%s\e[0m", color, result);
@@ -446,11 +403,6 @@ top:
     case STATE_EXIT:
         MgbaExit_(gTestRunnerState.exitCode);
         break;
-    default:
-        MgbaOpen_();
-        Test_MgbaPrintf("\e[31mInvalid TestRunner state, exiting\e[0m");
-        gTestRunnerState.exitCode = 1;
-        gTestRunnerState.state = STATE_EXIT;
     }
 
     if (gMain.callback2 == CB2_TestRunner)
@@ -465,13 +417,6 @@ void Test_ExpectedResult(enum TestResult result)
 void Test_ExpectLeaks(bool32 expectLeaks)
 {
     gTestRunnerState.expectLeaks = expectLeaks;
-}
-
-void Test_ExpectCrash(bool32 expectCrash)
-{
-    gPersistentTestRunnerState.expectCrash = expectCrash;
-    if (expectCrash)
-        Test_ExpectedResult(TEST_RESULT_CRASH);
 }
 
 static void FunctionTest_SetUp(void *data)

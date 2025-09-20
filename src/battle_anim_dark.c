@@ -257,21 +257,6 @@ const struct SpriteTemplate gPunishmentImpactSpriteTemplate =
     .callback = AnimPunishment,
 };
 
-// See AnimShadowBall in battle_anim_ghost.c for more specifics
-// arg 0: duration step 1 (attacker -> center)
-// arg 1: duration step 2 (spin center)
-// arg 2: duration step 3 (center -> target)
-const struct SpriteTemplate gDarkPulseSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_PURPLE_RING,
-    .paletteTag = ANIM_TAG_PURPLE_RING,
-    .oam = &gOamData_AffineDouble_ObjNormal_16x32,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gAffineAnims_SpinningBone,
-    .callback = AnimShadowBall,
-};
-
 // arg 0: x pixel offset
 // arg 1: y pixel offset
 // arg 2: Something
@@ -516,7 +501,7 @@ void AnimTask_MoveAttackerMementoShadow(u8 taskId)
     task->data[14] = pos - 32;
     task->data[15] = pos + 32;
 
-    if (IsOnPlayerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
         task->data[8] = -12;
     else
         task->data[8] = -64;
@@ -686,7 +671,7 @@ void AnimTask_MoveTargetMementoShadow(u8 taskId)
         task->data[14] = x - 4;
         task->data[15] = x + 4;
 
-        if (IsOnPlayerSide(gBattleAnimTarget))
+        if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
             task->data[8] = -12;
         else
             task->data[8] = -64;
@@ -949,7 +934,7 @@ void AnimTask_MetallicShine(u8 taskId)
     if (IsContest())
         species = gContestResources->moveAnim->species;
     else
-        species = GetMonData(GetBattlerMon(gBattleAnimAttacker), MON_DATA_SPECIES);
+        species = GetMonData(GetPartyBattlerData(gBattleAnimAttacker), MON_DATA_SPECIES);
 
     spriteId = GetAnimBattlerSpriteId(ANIM_ATTACKER);
     newSpriteId = CreateInvisibleSpriteCopy(gBattleAnimAttacker, spriteId, species);
@@ -957,7 +942,7 @@ void AnimTask_MetallicShine(u8 taskId)
     GetBattleAnimBg1Data(&animBg);
     AnimLoadCompressedBgTilemap(animBg.bgId, gMetalShineTilemap);
     AnimLoadCompressedBgGfx(animBg.bgId, gMetalShineGfx, animBg.tilesOffset);
-    LoadPalette(gMetalShinePalette, BG_PLTT_ID(animBg.paletteId), PLTT_SIZE_4BPP);
+    LoadCompressedPalette(gMetalShinePalette, BG_PLTT_ID(animBg.paletteId), PLTT_SIZE_4BPP);
 
     gBattle_BG1_X = -gSprites[spriteId].x + 96;
     gBattle_BG1_Y = -gSprites[spriteId].y + 32;

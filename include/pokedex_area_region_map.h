@@ -9,9 +9,9 @@ struct PokedexAreaMapTemplate
     u32 unk:20; // never read
 };
 
-void LoadPokedexAreaMapGfx(const struct PokedexAreaMapTemplate *template);
+void LoadPokedexAreaMapGfx(const struct PokedexAreaMapTemplate *);
 bool32 TryShowPokedexAreaMap(void);
-void PokedexAreaMapChangeBgY(u32 move);
+void PokedexAreaMapChangeBgY(u32);
 void FreePokedexAreaMapBgNum(void);
 
 #endif // GUARD_POKEDEX_AREA_REGION_MAP_H

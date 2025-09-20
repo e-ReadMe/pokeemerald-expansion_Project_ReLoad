@@ -3,8 +3,8 @@
 
 SINGLE_BATTLE_TEST("Sand Force prevents damage from sandstorm")
 {
-    u32 type1 = GetSpeciesType(SPECIES_SHELLOS, 0);
-    u32 type2 = GetSpeciesType(SPECIES_SHELLOS, 1);
+    u32 type1 = gSpeciesInfo[SPECIES_SHELLOS].types[0];
+    u32 type2 = gSpeciesInfo[SPECIES_SHELLOS].types[1];
     GIVEN {
         ASSUME(type1 != TYPE_BEAST && type2 != TYPE_BEAST);
         ASSUME(type1 != TYPE_EARTH && type2 != TYPE_EARTH);

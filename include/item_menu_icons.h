@@ -3,9 +3,9 @@
 
 extern const struct CompressedSpriteSheet gBagMaleSpriteSheet;
 extern const struct CompressedSpriteSheet gBagFemaleSpriteSheet;
-extern const struct SpritePalette gBagPaletteTable;
+extern const struct CompressedSpritePalette gBagPaletteTable;
 extern const struct CompressedSpriteSheet gBerryCheckCircleSpriteSheet;
-extern const struct SpritePalette gBerryCheckCirclePaletteTable;
+extern const struct CompressedSpritePalette gBerryCheckCirclePaletteTable;
 
 void RemoveBagSprite(u8 id);
 void AddBagVisualSprite(u8 bagPocketId);

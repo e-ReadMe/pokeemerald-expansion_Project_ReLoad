@@ -23,10 +23,10 @@ enum {
 #define TAG_BERRY_CHECK_CIRCLE_GFX 10000
 #define TAG_BERRY_PIC_PAL 30020
 
-struct TilesPal
+struct CompressedTilesPal
 {
     const u32 *tiles;
-    const u16 *pal;
+    const u32 *pal;
 };
 
 // this file's functions
@@ -96,12 +96,12 @@ static const union AnimCmd sSpriteAnim_Bag_Berries[] =
 
 static const union AnimCmd *const sBagSpriteAnimTable[] =
 {
+    [POCKET_NONE]       = sSpriteAnim_Bag_Closed,
     [POCKET_ITEMS]      = sSpriteAnim_Bag_Items,
     [POCKET_POKE_BALLS] = sSpriteAnim_Bag_Pokeballs,
     [POCKET_TM_HM]      = sSpriteAnim_Bag_TMsHMs,
     [POCKET_BERRIES]    = sSpriteAnim_Bag_Berries,
     [POCKET_KEY_ITEMS]  = sSpriteAnim_Bag_KeyItems,
-    [POCKET_DUMMY]       = sSpriteAnim_Bag_Closed,
 };
 
 static const union AffineAnimCmd sSpriteAffineAnim_BagNormal[] =
@@ -140,7 +140,7 @@ const struct CompressedSpriteSheet gBagFemaleSpriteSheet =
     gBagFemaleTiles, 0x3000, TAG_BAG_GFX
 };
 
-const struct SpritePalette gBagPaletteTable =
+const struct CompressedSpritePalette gBagPaletteTable =
 {
     gBagPalette, TAG_BAG_GFX
 };
@@ -322,7 +322,7 @@ static const struct SpriteTemplate sBerryPicRotatingSpriteTemplate =
     .callback = SpriteCallbackDummy,
 };
 
-static const struct TilesPal sBerryPicTable[] =
+static const struct CompressedTilesPal sBerryPicTable[] =
 {
     [ITEM_TO_BERRY(ITEM_CHERI_BERRY)  - 1]          = {gBerryPic_Cheri,  gBerryPalette_Cheri},
     [ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1]          = {gBerryPic_Chesto, gBerryPalette_Chesto},
@@ -399,7 +399,7 @@ const struct CompressedSpriteSheet gBerryCheckCircleSpriteSheet =
     gBerryCheckCircle_Gfx, 0x800, TAG_BERRY_CHECK_CIRCLE_GFX
 };
 
-const struct SpritePalette gBerryCheckCirclePaletteTable =
+const struct CompressedSpritePalette gBerryCheckCirclePaletteTable =
 {
     gBerryCheck_Pal, TAG_BERRY_CHECK_CIRCLE_GFX
 };
@@ -473,12 +473,12 @@ void SetBagVisualPocketId(u8 bagPocketId, bool8 isSwitchingPockets)
     {
         sprite->y2 = -5;
         sprite->callback = SpriteCB_BagVisualSwitchingPockets;
-        sprite->sPocketId = bagPocketId;
-        StartSpriteAnim(sprite, POCKET_DUMMY);
+        sprite->sPocketId = bagPocketId + 1;
+        StartSpriteAnim(sprite, POCKET_NONE);
     }
     else
     {
-        StartSpriteAnim(sprite, bagPocketId);
+        StartSpriteAnim(sprite, bagPocketId + 1);
     }
 }
 
@@ -648,11 +648,11 @@ struct BerryDynamicGfx
 
 static struct BerryDynamicGfx *LoadBerryGfx(u8 berryId)
 {
-    struct SpritePalette pal;
+    struct CompressedSpritePalette pal;
 
     pal.data = sBerryPicTable[berryId].pal;
     pal.tag = TAG_BERRY_PIC_PAL + berryId;
-    LoadSpritePalette(&pal);
+    LoadCompressedSpritePalette(&pal);
     struct BerryDynamicGfx *gfxAlloced = Alloc(sizeof(struct BerryDynamicGfx));
     void *buffer = malloc_and_decompress(sBerryPicTable[berryId].tiles, NULL);
     ArrangeBerryGfx(buffer, gfxAlloced->gfx);

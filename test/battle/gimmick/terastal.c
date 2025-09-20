@@ -385,7 +385,7 @@ SINGLE_BATTLE_TEST("(TERA) Synchronoise uses a Terastallized Pokemon's Tera Type
     } SCENE {
         // turn 1
         MESSAGE("The opposing Wobbuffet used Synchronoise!");
-        MESSAGE("It doesn't affect Wobbuffet…");
+        MESSAGE("It won't have any effect on Wobbuffet!");
         // turn 2
         MESSAGE("The opposing Wobbuffet used Synchronoise!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SYNCHRONOISE, opponent);
@@ -448,6 +448,28 @@ SINGLE_BATTLE_TEST("(TERA) Double Shock does not remove the user's Electric type
         EXPECT_EQ(damage[0], damage[1]);
         EXPECT_MUL_EQ(damage[0], Q_4_12(1.333), damage[2]);
         EXPECT_EQ(damage[2], damage[3]);
+    }
+}
+
+SINGLE_BATTLE_TEST("(TERA) Transform does not copy the target's Tera Type, and if the user is Terastallized it keeps its own Tera Type")
+{
+    KNOWN_FAILING; // Transform seems to be bugged in tests.
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE, MOVE_SCRATCH, MOVE_EARTHQUAKE); TeraType(TYPE_UNDEAD); }
+        OPPONENT(SPECIES_DITTO) { TeraType(TYPE_WIND); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_TRANSFORM); }
+        TURN { MOVE(player, MOVE_EARTHQUAKE); }
+        // TURN { MOVE(player, MOVE_SCRATCH); MOVE(opponent, MOVE_SCRATCH, target: player, gimmick: GIMMICK_TERA); }
+    } SCENE {
+        // turn 2
+        MESSAGE("Wobbuffet used Earthquake!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, player);
+        HP_BAR(opponent);
+        // turn 3
+        MESSAGE("Wobbuffet used Scratch!");
+        MESSAGE("It doesn't affect Ditto…");
+        NOT { HP_BAR(opponent); }
     }
 }
 
@@ -755,52 +777,36 @@ SINGLE_BATTLE_TEST("(TERA) Terapagos retains its base defensive profile when Ter
     }
 }
 
-SINGLE_BATTLE_TEST("(TERA) Illusion breaks if the Pokémon Terastallizes when illusioned as a mon that changes forms by Terastallizing")
+SINGLE_BATTLE_TEST("(TERA) Illusion breaks if the pokemon Terastalizes")
 {
+    KNOWN_FAILING; // #5015
     u32 species;
     PARAMETRIZE { species = SPECIES_TERAPAGOS; }
-    PARAMETRIZE { species = SPECIES_OGERPON; }
+    PARAMETRIZE { species = SPECIES_WOBBUFFET; }
     GIVEN {
-        ASSUME(DoesSpeciesHaveFormChangeMethod(species, FORM_CHANGE_BATTLE_TERASTALLIZATION));
-        PLAYER(SPECIES_ZOROARK) { TeraType(TYPE_BUG); }
+        PLAYER(SPECIES_ZOROARK) { TeraType(TYPE_DARK); }
         PLAYER(species);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ILLUSION_OFF, player);
+        MESSAGE("Zoroark's Illusion wore off!");
     }
 }
 
-// Visual test to make sure Zoroark appears as Wobbuffet/Zigzagoon until illusion breaks
-SINGLE_BATTLE_TEST("(TERA) Illusion doesn't break upon Terastallizing when illusioned as a mon that doesn't change forms by Terastallizing")
-{
-    u32 species;
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; }
-    PARAMETRIZE { species = SPECIES_ZIGZAGOON; }
-    GIVEN {
-        ASSUME(!DoesSpeciesHaveFormChangeMethod(species, FORM_CHANGE_BATTLE_TERASTALLIZATION));
-        PLAYER(SPECIES_ZOROARK) { TeraType(TYPE_BUG); }
-        PLAYER(species);
-        OPPONENT(SPECIES_WOBBUFFET);
-    } WHEN {
-        TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_SCRATCH); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ILLUSION_OFF, player);
-    }
-}
-
-SINGLE_BATTLE_TEST("(TERA) Transformed Pokémon can't Terastalize")
+/*
+//  This test freezes the emulator
+SINGLE_BATTLE_TEST("(TERA) Transformed pokemon can't Terastalize")
 {
     GIVEN {
-        PLAYER(SPECIES_DITTO) { Moves(MOVE_TRANSFORM, MOVE_CELEBRATE); }
-        OPPONENT(SPECIES_TERAPAGOS) { Moves(MOVE_TRANSFORM, MOVE_CELEBRATE); }
+        PLAYER(SPECIES_DITTO);
+        OPPONENT(SPECIES_TERAPAGOS) { Moves(MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(player, MOVE_TRANSFORM); }
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }
     }
 }
+*/
 
 SINGLE_BATTLE_TEST("(TERA) Pokemon with Tera forms change upon Terastallizing")
 {

@@ -1,3 +1,8 @@
+.set LOCALID_EXPERT_M, 4
+.set LOCALID_TWIN, 5
+.set LOCALID_SCHOOL_KID_M, 7
+.set LOCALID_PSYCHIC_M, 8
+
 DewfordTown_Hall_MapScripts::
 	.byte 0
 
@@ -50,7 +55,7 @@ DewfordTown_Hall_EventScript_ExpertM::
 	call Common_EventScript_BufferTrendyPhrase
 	msgbox DewfordTown_Hall_Text_TVShowAboutTrend, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_DEWFORD_HALL_EXPERT_M, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_EXPERT_M, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	release
 	end
@@ -61,7 +66,7 @@ DewfordTown_Hall_EventScript_Twin::
 	call Common_EventScript_BufferTrendyPhrase
 	msgbox DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_DEWFORD_HALL_TWIN, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_TWIN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	release
 	end
@@ -186,7 +191,7 @@ DewfordTown_Hall_EventScript_DontMovePlayer1::
 	return
 
 DewfordTown_Hall_EventScript_DebateReact1::
-	applymovement LOCALID_DEWFORD_HALL_PSYCHIC_M, DewfordTown_Hall_Movement_PsychicWalkInPlaceLeft
+	applymovement LOCALID_PSYCHIC_M, DewfordTown_Hall_Movement_PsychicWalkInPlaceLeft
 	waitmovement 0
 	goto_if_eq VAR_0x8008, 0, DewfordTown_Hall_EventScript_PlayerReactWest
 	goto_if_eq VAR_0x8008, 1, DewfordTown_Hall_EventScript_DontMovePlayer2
@@ -194,7 +199,7 @@ DewfordTown_Hall_EventScript_DebateReact1::
 
 DewfordTown_Hall_EventScript_PlayerReactWest::
 	goto_if_eq VAR_FACING, DIR_EAST, DewfordTown_Hall_EventScript_DontMovePlayer1
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
@@ -202,7 +207,7 @@ DewfordTown_Hall_EventScript_DontMovePlayer2::
 	return
 
 DewfordTown_Hall_EventScript_DebateReact2::
-	applymovement LOCALID_DEWFORD_HALL_SCHOOL_KID_M, DewfordTown_Hall_Movement_SchoolKidWalkInPlaceRight
+	applymovement LOCALID_SCHOOL_KID_M, DewfordTown_Hall_Movement_SchoolKidWalkInPlaceRight
 	waitmovement 0
 	goto_if_eq VAR_0x8008, 0, DewfordTown_Hall_EventScript_PlayerReactNorthSouth
 	goto_if_eq VAR_0x8008, 1, DewfordTown_Hall_EventScript_PlayerReactEast
@@ -214,18 +219,18 @@ DewfordTown_Hall_EventScript_PlayerReactNorthSouth::
 	return
 
 DewfordTown_Hall_EventScript_PlayerWalkInPlaceUp::
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	return
 
 DewfordTown_Hall_EventScript_PlayerWalkInPlaceDown::
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
 DewfordTown_Hall_EventScript_PlayerReactEast::
 	goto_if_eq VAR_FACING, DIR_WEST, DewfordTown_Hall_EventScript_DontMovePlayer1
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	return
 

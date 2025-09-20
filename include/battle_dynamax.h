@@ -20,6 +20,8 @@ void ChooseDamageNonTypesString(u8 type);
 
 void BS_UpdateDynamax(void);
 void BS_SetSteelsurge(void);
+void BS_TrySetStatus1(void);
+void BS_TrySetStatus2(void);
 void BS_HealOneSixth(void);
 void BS_TryRecycleBerry(void);
 void BS_JumpIfDynamaxed(void);

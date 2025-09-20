@@ -353,7 +353,7 @@ void CFile::TryConvertIncbin()
 
         // INCBIN_COMP; include *compressed* version of file
         if (incbinType == 7)
-            path = path.append(".smol");
+            path = path.append(".lz");
 
         m_pos++;
 

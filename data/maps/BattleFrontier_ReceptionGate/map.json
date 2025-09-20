@@ -15,7 +15,6 @@
   "connections": null,
   "object_events": [
     {
-      "local_id": "LOCALID_FRONTIER_RECEPTION_GREETER",
       "graphics_id": "OBJ_EVENT_GFX_TEALA",
       "x": 0,
       "y": 11,
@@ -29,7 +28,6 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_FRONTIER_RECEPTION_GUIDE",
       "graphics_id": "OBJ_EVENT_GFX_TEALA",
       "x": 8,
       "y": 11,
@@ -56,7 +54,6 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_FRONTIER_RECEPTION_SCOTT",
       "graphics_id": "OBJ_EVENT_GFX_SCOTT",
       "x": 4,
       "y": 5,

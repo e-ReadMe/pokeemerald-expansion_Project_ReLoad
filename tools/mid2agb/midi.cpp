@@ -21,7 +21,6 @@
 #include <cstdio>
 #include <cassert>
 #include <string>
-#include <cstring>
 #include <vector>
 #include <algorithm>
 #include <memory>
@@ -30,10 +29,6 @@
 #include "error.h"
 #include "agb.h"
 #include "tables.h"
-
-// expansion headers
-#include "../../include/config/battle.h"
-#include "../../include/config/general.h"
 
 enum class MidiEventCategory
 {
@@ -921,7 +916,6 @@ void Compress(std::vector<Event>& events)
 void ReadMidiTracks()
 {
     long trackHeaderStart = 14;
-    int trackLoops = B_NUM_LOW_HEALTH_BEEPS;
 
     ReadMidiTrackHeader(trackHeaderStart);
     ReadSeqEvents();
@@ -961,10 +955,7 @@ void ReadMidiTracks()
                 if (g_compressionEnabled)
                     Compress(*events);
 
-                if ((strcmp(g_asmLabel.c_str(), "se_low_health") == 0) && trackLoops >= 0)
-                    PrintAgbTrackLoop(*events, trackLoops);
-                else
-                    PrintAgbTrack(*events);
+                PrintAgbTrack(*events);
 
                 g_agbTrack++;
             }

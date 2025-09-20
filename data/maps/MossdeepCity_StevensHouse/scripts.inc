@@ -1,3 +1,6 @@
+.set LOCALID_STEVEN, 1
+.set LOCALID_BELDUM_BALL, 2
+
 MossdeepCity_StevensHouse_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MossdeepCity_StevensHouse_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_StevensHouse_OnTransition
@@ -17,8 +20,8 @@ MossdeepCity_StevensHouse_OnTransition:
 	end
 
 MossdeepCity_StevensHouse_EventScript_SetStevenPos::
-	setobjectxyperm LOCALID_STEVENS_HOUSE_STEVEN, 6, 5
-	setobjectmovementtype LOCALID_STEVENS_HOUSE_STEVEN, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm LOCALID_STEVEN, 6, 5
+	setobjectmovementtype LOCALID_STEVEN, MOVEMENT_TYPE_FACE_UP
 	return
 
 MossdeepCity_StevensHouse_OnFrame:
@@ -27,14 +30,14 @@ MossdeepCity_StevensHouse_OnFrame:
 
 MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	lockall
-	applymovement LOCALID_STEVENS_HOUSE_STEVEN, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	playse SE_PIN
-	applymovement LOCALID_STEVENS_HOUSE_STEVEN, Common_Movement_ExclamationMark
+	applymovement LOCALID_STEVEN, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_STEVENS_HOUSE_STEVEN, Common_Movement_Delay48
+	applymovement LOCALID_STEVEN, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_STEVENS_HOUSE_STEVEN, MossdeepCity_StevensHouse_Movement_StevenApproachPlayer
+	applymovement LOCALID_STEVEN, MossdeepCity_StevensHouse_Movement_StevenApproachPlayer
 	waitmovement 0
 	msgbox MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT
 	giveitem ITEM_HM_DIVE
@@ -43,7 +46,7 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	msgbox MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT
 	closemessage
 	delay 20
-	applymovement LOCALID_STEVENS_HOUSE_STEVEN, MossdeepCity_StevensHouse_Movement_StevenReturn
+	applymovement LOCALID_STEVEN, MossdeepCity_StevensHouse_Movement_StevenReturn
 	waitmovement 0
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
@@ -113,7 +116,7 @@ MossdeepCity_StevensHouse_EventScript_BeldumTransferredToPC::
 
 MossdeepCity_StevensHouse_EventScript_ReceivedBeldumFanfare::
 	bufferspeciesname STR_VAR_2, SPECIES_BELDUM
-	removeobject LOCALID_STEVENS_HOUSE_BALL
+	removeobject LOCALID_BELDUM_BALL
 	playfanfare MUS_OBTAIN_ITEM
 	message MossdeepCity_StevensHouse_Text_ObtainedBeldum
 	waitmessage

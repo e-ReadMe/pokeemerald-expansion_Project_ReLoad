@@ -9,8 +9,8 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Rototiller boosts Attack and Special Attack of all Grass types on the field")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_SNIVY, 0) == TYPE_PLANT);
+        ASSUME(gSpeciesInfo[SPECIES_TANGELA].types[0] == TYPE_PLANT);
+        ASSUME(gSpeciesInfo[SPECIES_SNIVY].types[0] == TYPE_PLANT);
         PLAYER(SPECIES_TANGELA);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_SNIVY);
@@ -38,8 +38,8 @@ DOUBLE_BATTLE_TEST("Rototiller boosts Attack and Special Attack of all Grass typ
 SINGLE_BATTLE_TEST("Rototiller fails if there are no valid targets")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_PLANT);
+        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] != TYPE_PLANT);
+        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] != TYPE_PLANT);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -51,10 +51,10 @@ SINGLE_BATTLE_TEST("Rototiller fails if there are no valid targets")
     }
 }
 
-SINGLE_BATTLE_TEST("Rototiller doesn't affect Pokémon that are semi-invulnerable")
+SINGLE_BATTLE_TEST("Rototiller doesn't affect pokemon that are semi-invulnerable")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_PLANT);
+        ASSUME(gSpeciesInfo[SPECIES_TANGELA].types[0] == TYPE_PLANT);
         ASSUME(GetMoveEffect(MOVE_DIG) == EFFECT_SEMI_INVULNERABLE);
         PLAYER(SPECIES_TANGELA);
         OPPONENT(SPECIES_TANGELA);
@@ -76,9 +76,9 @@ SINGLE_BATTLE_TEST("Rototiller doesn't affect Pokémon that are semi-invulnerabl
 SINGLE_BATTLE_TEST("Rototiller fails if the only valid target is semi-invulnerable")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_PLANT);
+        ASSUME(gSpeciesInfo[SPECIES_TANGELA].types[0] == TYPE_PLANT);
+        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] != TYPE_PLANT);
+        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] != TYPE_PLANT);
         ASSUME(GetMoveEffect(MOVE_DIG) == EFFECT_SEMI_INVULNERABLE);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_TANGELA);
@@ -94,21 +94,5 @@ SINGLE_BATTLE_TEST("Rototiller fails if the only valid target is semi-invulnerab
         EXPECT_EQ(player->statStages[STAT_SPATK], DEFAULT_STAT_STAGE);
         EXPECT_EQ(opponent->statStages[STAT_ATK], DEFAULT_STAT_STAGE);
         EXPECT_EQ(opponent->statStages[STAT_SPATK], DEFAULT_STAT_STAGE);
-    }
-}
-
-AI_DOUBLE_BATTLE_TEST("AI uses Rototiller")
-{
-    GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_PLANT);
-        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
-        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
-        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
-        OPPONENT(SPECIES_TANGELA) { Moves(MOVE_ROTOTILLER, MOVE_POUND); }
-        OPPONENT(SPECIES_TANGELA);
-    } WHEN {
-        TURN {  EXPECT_MOVE(opponentLeft, MOVE_ROTOTILLER); }
     }
 }

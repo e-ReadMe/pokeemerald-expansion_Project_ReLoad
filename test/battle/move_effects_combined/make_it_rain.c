@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(MoveHasAdditionalEffectWithChance(MOVE_MAKE_IT_RAIN, MOVE_EFFECT_PAYDAY, 0) == TRUE);
+    ASSUME(MoveHasAdditionalEffect(MOVE_MAKE_IT_RAIN, MOVE_EFFECT_PAYDAY));
     ASSUME(MoveHasAdditionalEffectSelf(MOVE_MAKE_IT_RAIN, MOVE_EFFECT_SP_ATK_MINUS_1));
 }
 

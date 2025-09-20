@@ -103,7 +103,6 @@ static const u8 sText_FollowMe[] = _("Follow Me");
 static const u8 sText_RecoverHP[] = _("Recover HP");
 static const u8 sText_HealAllyHP[] = _("Heal Replacement HP");
 static const u8 sText_PowerColon[] = _("Power: ");
-static const u8 sText_NoAdditionalEffect[] = _("No Additional Effect");
 
 // Functions
 bool32 IsZMove(u32 move)
@@ -113,7 +112,7 @@ bool32 IsZMove(u32 move)
 
 bool32 CanUseZMove(u32 battler)
 {
-    enum ItemHoldEffect holdEffect = GetBattlerHoldEffect(battler, FALSE);
+    u32 holdEffect = GetBattlerHoldEffect(battler, FALSE);
 
     // Check if Player has Z-Power Ring.
     if (!TESTING && (battler == B_POSITION_PLAYER_LEFT
@@ -144,7 +143,7 @@ bool32 CanUseZMove(u32 battler)
 u32 GetUsableZMove(u32 battler, u32 move)
 {
     u32 item = gBattleMons[battler].item;
-    enum ItemHoldEffect holdEffect = GetBattlerHoldEffect(battler, FALSE);
+    u32 holdEffect = GetBattlerHoldEffect(battler, FALSE);
 
     if (holdEffect == HOLD_EFFECT_Z_CRYSTAL)
     {
@@ -152,7 +151,7 @@ u32 GetUsableZMove(u32 battler, u32 move)
         if (zMove != MOVE_NONE)
             return zMove;  // Signature z move exists
 
-        if (move != MOVE_NONE && zMove != MOVE_Z_STATUS && GetMoveType(move) == GetItemSecondaryId(item))
+        if (move != MOVE_NONE && zMove != MOVE_Z_STATUS && GetMoveType(move) == ItemId_GetSecondaryId(item))
             return GetTypeBasedZMove(move);
     }
 
@@ -168,7 +167,7 @@ void ActivateZMove(u32 battler)
 bool32 IsViableZMove(u32 battler, u32 move)
 {
     u32 item;
-    enum ItemHoldEffect holdEffect = GetBattlerHoldEffect(battler, FALSE);
+    u32 holdEffect = GetBattlerHoldEffect(battler, FALSE);
     int moveSlotIndex;
 
     item = gBattleMons[battler].item;
@@ -196,7 +195,7 @@ bool32 IsViableZMove(u32 battler, u32 move)
         if (zMove != MOVE_NONE)
             return TRUE;
 
-        if (move != MOVE_NONE && GetMoveType(move) == GetItemSecondaryId(item))
+        if (move != MOVE_NONE && GetMoveType(move) == ItemId_GetSecondaryId(item))
             return TRUE;
     }
 
@@ -353,10 +352,6 @@ bool32 MoveSelectionDisplayZMove(u16 zmove, u32 battler)
                 PREPARE_STAT_BUFFER(gBattleTextBuff1, zEffect - Z_EFFECT_ATK_UP_3 + 1);
                 ExpandBattleTextBuffPlaceholders(gBattleTextBuff1, gDisplayedStringBattle + 4);
                 break;
-            default:
-                if (B_SHOW_USELESS_Z_MOVE_INFO == TRUE)
-                    StringCopy(gDisplayedStringBattle, sText_NoAdditionalEffect);
-                break;
             }
 
             BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_NAME_3);
@@ -364,7 +359,7 @@ bool32 MoveSelectionDisplayZMove(u16 zmove, u32 battler)
             gDisplayedStringBattle[1] = CHAR_HYPHEN;
             StringCopy(gDisplayedStringBattle + 2, GetMoveName(move));
         }
-        else if (GetMoveEffect(zmove) == EFFECT_EXTREME_EVOBOOST)
+        else if (zmove == MOVE_EXTREME_EVOBOOST)
         {
             // Damaging move -> status z move
             StringCopy(gDisplayedStringBattle, sText_StatsPlus2);
@@ -486,9 +481,9 @@ void SetZEffect(void)
         break;
     }
     case Z_EFFECT_BOOST_CRITS:
-        if (!(gBattleMons[gBattlerAttacker].volatiles.dragonCheer || gBattleMons[gBattlerAttacker].volatiles.focusEnergy))
+        if (!(gBattleMons[gBattlerAttacker].status2 & STATUS2_FOCUS_ENERGY_ANY))
         {
-            gBattleMons[gBattlerAttacker].volatiles.focusEnergy = TRUE;
+            gBattleMons[gBattlerAttacker].status2 |= STATUS2_FOCUS_ENERGY;
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_Z_BOOST_CRITS;
             BattleScriptPush(gBattlescriptCurrInstr + Z_EFFECT_BS_LENGTH);
             gBattlescriptCurrInstr = BattleScript_ZEffectPrintString;
@@ -549,8 +544,7 @@ u32 GetZMovePower(u32 move)
 {
     if (GetMoveCategory(move) == DAMAGE_CATEGORY_STATUS)
         return 0;
-    enum BattleMoveEffects moveEffect = GetMoveEffect(move);
-    if (moveEffect == EFFECT_OHKO || moveEffect == EFFECT_SHEER_COLD)
+    if (GetMoveEffect(move) == EFFECT_OHKO)
         return 180;
 
     u32 power = GetMoveZPowerOverride(move);
@@ -569,3 +563,4 @@ u32 GetZMovePower(u32 move)
     else if (power >= 60)  return 120;
     else                   return 100;
 }
+

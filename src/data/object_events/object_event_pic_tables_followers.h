@@ -4590,11 +4590,9 @@ static const struct SpriteFrameImage sPicTable_Frogadier[] = {
 static const struct SpriteFrameImage sPicTable_Greninja[] = {
     overworld_ascending_frames(gObjectEventPic_Greninja, 4, 4),
 };
-#if OW_BATTLE_ONLY_FORMS
-static const struct SpriteFrameImage sPicTable_GreninjaAsh[] = {
+/*static const struct SpriteFrameImage sPicTable_GreninjaAsh[] = {
     overworld_ascending_frames(gObjectEventPic_GreninjaAsh, 4, 4),
-};
-#endif //OW_BATTLE_ONLY_FORMS
+};*/
 #endif //P_FAMILY_FROAKIE
 
 #if P_FAMILY_BUNNELBY
@@ -6750,14 +6748,14 @@ static const struct SpriteFrameImage sPicTable_Yokomon[] = {
 };
 
 //SPECIES_BUKAMON
-// static const struct SpriteFrameImage sPicTable_Bukamon[] = {
-//     overworld_ascending_frames(gObjectEventPic_Bukamon, 4, 4),
-// };
+static const struct SpriteFrameImage sPicTable_Bukamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Bukamon, 4, 4),
+};
 
 //SPECIES_TSUNOMON
-// static const struct SpriteFrameImage sPicTable_Tsunomon[] = {
-//     overworld_ascending_frames(gObjectEventPic_Tsunomon, 4, 4),
-// };
+static const struct SpriteFrameImage sPicTable_Tsunomon[] = {
+    overworld_ascending_frames(gObjectEventPic_Tsunomon, 4, 4),
+};
 
 //SPECIES_TANEMON
 static const struct SpriteFrameImage sPicTable_Tanemon[] = {

@@ -1204,26 +1204,15 @@ const struct SpriteTemplate gMegaParticlesSpriteTemplate =
     .callback = AnimPowerAbsorptionOrb,
 };
 
-const struct SpriteTemplate gMegaSmokeSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_ELECTRICITY,
-    .paletteTag = ANIM_TAG_ELECTRICITY,
-    .oam = &gOamData_AffineOff_ObjNormal_32x32,
-    .anims = gAnims_ElectricPuff,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimParticleInVortex,
-};
-
 const struct SpriteTemplate gMegaSymbolSpriteTemplate =
 {
     .tileTag = ANIM_TAG_MEGA_SYMBOL,
     .paletteTag = ANIM_TAG_MEGA_SYMBOL,
-    .oam = &gOamData_AffineDouble_ObjBlend_32x32,
+    .oam = &gOamData_AffineOff_ObjBlend_32x32,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
-    .affineAnims = gSpriteAffineAnimTable_MegaSymbol,
-    .callback = AnimSpriteOnMonPos,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimGhostStatusSprite,
 };
 
 const struct SpriteTemplate gAlphaStoneSpriteTemplate =
@@ -1252,55 +1241,22 @@ const struct SpriteTemplate gAlphaSymbolSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ALPHA_SYMBOL,
     .paletteTag = ANIM_TAG_ALPHA_SYMBOL,
-    .oam = &gOamData_AffineDouble_ObjBlend_32x32,
+    .oam = &gOamData_AffineOff_ObjBlend_32x32,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
-    .affineAnims = gSpriteAffineAnimTable_PrimalSymbol,
-    .callback = AnimSpriteOnMonPos,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimGhostStatusSprite,
 };
 
 const struct SpriteTemplate gOmegaSymbolSpriteTemplate =
 {
     .tileTag = ANIM_TAG_OMEGA_SYMBOL,
     .paletteTag = ANIM_TAG_OMEGA_SYMBOL,
-    .oam = &gOamData_AffineDouble_ObjBlend_32x32,
+    .oam = &gOamData_AffineOff_ObjBlend_32x32,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
-    .affineAnims = gSpriteAffineAnimTable_PrimalSymbol,
-    .callback = AnimSpriteOnMonPos,
-};
-
-const struct SpriteTemplate gPowerConstructSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_VERTICAL_HEX,
-    .paletteTag = ANIM_TAG_ZYGARDE_HEXES,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = gPowerAbsorptionOrbAnimTable,
-    .images = NULL,
-    .affineAnims = gPowerAbsorptionOrbAffineAnimTable,
-    .callback = AnimPowerAbsorptionOrb,
-};
-
-const struct SpriteTemplate gPowerConstructEmergeSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_VERTICAL_HEX,
-    .paletteTag = ANIM_TAG_ZYGARDE_HEXES,
-    .oam = &gOamData_AffineDouble_ObjBlend_16x16,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gAffineAnims_LusterPurgeCircle,
-    .callback = AnimSpriteOnMonPos,
-};
-
-const struct SpriteTemplate gZSymbolSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_SNORE_Z,
-    .paletteTag = ANIM_TAG_SNORE_Z,
-    .oam = &gOamData_AffineDouble_ObjBlend_32x32,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gSpriteAffineAnimTable_MegaSymbol,
-    .callback = AnimSpriteOnMonPos,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimGhostStatusSprite,
 };
 
 const struct SpriteTemplate gTeraCrystalSpriteTemplate =
@@ -1323,41 +1279,6 @@ const struct SpriteTemplate gTeraCrystalSpreadSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimTask_TeraCrystalShatter,
-};
-
-// See AnimSpriteOnMonPos in battle_anim_mons.c for more specifics
-// Reuses the Mega Symbol affine animation seen in Mega Evolution
-// gBattleAnimArgs 0-3 used
-// 0, 1 used for position
-// 2, 3 as some control variables
-const struct SpriteTemplate gTeraSymbolSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_TERA_SYMBOL,
-    .paletteTag = ANIM_TAG_TERA_SYMBOL,
-    .oam = &gOamData_AffineDouble_ObjBlend_32x32,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gSpriteAffineAnimTable_MegaSymbol,
-    .callback = AnimSpriteOnMonPos,
-};
-
-// Swirls particle in vortex. Used for moves like Fire Spin or Sand Tomb
-// args[0] - initial x offset
-// args[1] - initial y offset
-// args[2] - y increment
-// args[3] - duration
-// args[4] - increments some sin parameter
-// args[5] - fixed sin parameter
-// args[6] - attacker or target
-const struct SpriteTemplate gTeraSmokeSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_SPARKLE_6,
-    .paletteTag = ANIM_TAG_SPARKLE_6,
-    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimParticleInVortex,
 };
 
 const struct SpriteTemplate gPinkPetalVortexTemplate =
@@ -1654,7 +1575,7 @@ static void AnimSpikes(struct Sprite *sprite)
     InitSpritePosToAnimAttacker(sprite, TRUE);
     SetAverageBattlerPositions(gBattleAnimTarget, FALSE, &x, &y);
 
-    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
         gBattleAnimArgs[2] = -gBattleAnimArgs[2];
 
     sprite->data[0] = gBattleAnimArgs[4];
@@ -1704,7 +1625,7 @@ static void AnimLetterZ(struct Sprite *sprite)
         SetAnimSpriteInitialXOffset(sprite, gBattleAnimArgs[0]);
         if (!IsContest())
         {
-            if (IsOnPlayerSide(gBattleAnimAttacker))
+            if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
             {
                 sprite->data[1] = gBattleAnimArgs[2];
                 sprite->data[2] = gBattleAnimArgs[3];
@@ -1741,7 +1662,7 @@ static void AnimFang(struct Sprite *sprite)
 
 void AnimTask_IsTargetPlayerSide(u8 taskId)
 {
-    if (!IsOnPlayerSide(gBattleAnimTarget))
+    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_OPPONENT)
         gBattleAnimArgs[ARG_RET_ID] = FALSE;
     else
         gBattleAnimArgs[ARG_RET_ID] = TRUE;
@@ -2324,7 +2245,7 @@ static void AnimBatonPassPokeball(struct Sprite *sprite)
 
 static void AnimWishStar(struct Sprite *sprite)
 {
-    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
         sprite->x = -16;
     else
         sprite->x = DISPLAY_WIDTH + 16;
@@ -2338,7 +2259,7 @@ static void AnimWishStar_Step(struct Sprite *sprite)
     u32 newX;
 
     sprite->data[0] += 72;
-    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
         sprite->x2 = sprite->data[0] >> 4;
     else
         sprite->x2 = -(sprite->data[0] >> 4);
@@ -2538,7 +2459,7 @@ void AnimTask_HideSwapSprite(u8 taskId)
         gSprites[spriteId].x = gTasks[taskId].data[11]; // restores battler position
         if (!IsContest())
         {
-            if (!IsOnPlayerSide(gBattleAnimAttacker))
+            if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
             {
                 if (gTasks[taskId].data[10] == 0)
                     SetBattlerShadowSpriteCallback(gBattleAnimAttacker, gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies);
@@ -2548,32 +2469,6 @@ void AnimTask_HideSwapSprite(u8 taskId)
         DestroyAnimVisualTask(taskId);
         break;
     }
-}
-
-void AnimTask_HideOpponentShadows(u8 taskId)
-{
-    u32 battlerLeft = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-    gSprites[gBattleSpritesDataPtr->healthBoxesData[battlerLeft].shadowSpriteIdPrimary].callback = SpriteCB_SetInvisible;
-    gSprites[gBattleSpritesDataPtr->healthBoxesData[battlerLeft].shadowSpriteIdSecondary].callback = SpriteCB_SetInvisible;
-    if (IsDoubleBattle())
-    {
-        u32 battlerRight = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
-        gSprites[gBattleSpritesDataPtr->healthBoxesData[battlerRight].shadowSpriteIdPrimary].callback = SpriteCB_SetInvisible;
-        gSprites[gBattleSpritesDataPtr->healthBoxesData[battlerRight].shadowSpriteIdSecondary].callback = SpriteCB_SetInvisible;
-    }
-    DestroyAnimVisualTask(taskId);
-}
-
-void AnimTask_SetOpponentShadowCallbacks(u8 taskId)
-{
-    u32 battlerLeft = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-    SetBattlerShadowSpriteCallback(battlerLeft, gBattleMons[battlerLeft].species);
-    if (IsDoubleBattle())
-    {
-        u32 battlerRight = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
-        SetBattlerShadowSpriteCallback(battlerRight, gBattleMons[battlerRight].species);
-    }
-    DestroyAnimVisualTask(taskId);
 }
 
 void AnimTask_TransformMon(u8 taskId)
@@ -2678,7 +2573,7 @@ void AnimTask_TransformMon(u8 taskId)
 
         if (!IsContest())
         {
-            if (!IsOnPlayerSide(gBattleAnimAttacker))
+            if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
             {
                 if (gTasks[taskId].data[10] == 0)
                     SetBattlerShadowSpriteCallback(gBattleAnimAttacker, gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies);
@@ -2719,7 +2614,7 @@ void AnimTask_MorningSunLightBeam(u8 taskId)
         }
         else
         {
-            if (!IsOnPlayerSide(gBattleAnimAttacker))
+            if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
                 gBattle_BG1_X = -135;
             else
                 gBattle_BG1_X = -10;
@@ -2728,7 +2623,7 @@ void AnimTask_MorningSunLightBeam(u8 taskId)
         }
 
         AnimLoadCompressedBgGfx(animBg.bgId, gBattleAnimMaskImage_LightBeam, animBg.tilesOffset);
-        LoadPalette(gBattleAnimMaskPalette_LightBeam, BG_PLTT_ID(animBg.paletteId), PLTT_SIZE_4BPP);
+        LoadCompressedPalette(gBattleAnimMaskPalette_LightBeam, BG_PLTT_ID(animBg.paletteId), PLTT_SIZE_4BPP);
 
         gTasks[taskId].data[10] = gBattle_BG1_X;
         gTasks[taskId].data[11] = gBattle_BG1_Y;
@@ -2924,14 +2819,14 @@ void AnimTask_DoomDesireLightBeam(u8 taskId)
         }
 
         AnimLoadCompressedBgGfx(animBg.bgId, gBattleAnimMaskImage_LightBeam, animBg.tilesOffset);
-        LoadPalette(gBattleAnimMaskPalette_LightBeam, BG_PLTT_ID(animBg.paletteId), PLTT_SIZE_4BPP);
+        LoadCompressedPalette(gBattleAnimMaskPalette_LightBeam, BG_PLTT_ID(animBg.paletteId), PLTT_SIZE_4BPP);
         gTasks[taskId].data[10] = gBattle_BG1_X;
         gTasks[taskId].data[11] = gBattle_BG1_Y;
         gTasks[taskId].data[0]++;
         break;
     case 1:
         gTasks[taskId].data[3] = 0;
-        if (!IsOnPlayerSide(gBattleAnimTarget))
+        if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_OPPONENT)
             gBattle_BG1_X = gTasks[taskId].data[10] + gDoomDesireLightBeamCoordTable[gTasks[taskId].data[2]];
         else
             gBattle_BG1_X = gTasks[taskId].data[10] - gDoomDesireLightBeamCoordTable[gTasks[taskId].data[2]];
@@ -3008,7 +2903,7 @@ static void AnimWeakFrustrationAngerMark(struct Sprite *sprite)
         sprite->data[1] += 160;
         sprite->data[2] += 128;
 
-        if (!IsOnPlayerSide(gBattleAnimAttacker))
+        if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
             sprite->x2 = -(sprite->data[1] >> 8);
         else
             sprite->x2 = sprite->data[1] >> 8;
@@ -3123,7 +3018,7 @@ static void AnimTask_RockMonBackAndForth_Step(u8 taskId)
 // arg 2: unused
 void AnimSweetScentPetal(struct Sprite *sprite)
 {
-    if (IsOnPlayerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
     {
         sprite->x = 0;
         sprite->y = gBattleAnimArgs[0];
@@ -3142,7 +3037,7 @@ void AnimSweetScentPetal(struct Sprite *sprite)
 static void AnimSweetScentPetal_Step(struct Sprite *sprite)
 {
     sprite->data[0] += 3;
-    if (IsOnPlayerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
     {
         sprite->x += 5;
         sprite->y -= 1;
@@ -3319,13 +3214,13 @@ void AnimTask_PainSplitMovement(u8 taskId)
         case 1:
             SetSpriteRotScale(spriteId, 0xD0, 0x130, 0xF00);
             SetBattlerSpriteYOffsetFromYScale(spriteId);
-            if (IsContest() || IsOnPlayerSide(gTasks[taskId].data[11]))
+            if (IsContest() || GetBattlerSide(gTasks[taskId].data[11]) == B_SIDE_PLAYER)
                 gSprites[spriteId].y2 += 16;
             break;
         case 2:
             SetSpriteRotScale(spriteId, 0xD0, 0x130, 0xF100);
             SetBattlerSpriteYOffsetFromYScale(spriteId);
-            if (IsContest() || IsOnPlayerSide(gTasks[taskId].data[11]))
+            if (IsContest() || GetBattlerSide(gTasks[taskId].data[11]) == B_SIDE_PLAYER)
                 gSprites[spriteId].y2 += 16;
             break;
         }
@@ -3525,8 +3420,8 @@ void AnimTask_RolePlaySilhouette(u8 taskId)
     }
     else
     {
-        struct Pokemon *mon = GetBattlerMon(gBattleAnimTarget);
-        if (!IsOnPlayerSide(gBattleAnimAttacker))
+        struct Pokemon *mon = GetPartyBattlerData(gBattleAnimTarget);
+        if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
             isBackPic = FALSE;
         else
             isBackPic = TRUE;
@@ -3612,7 +3507,7 @@ void AnimTask_AcidArmor(u8 taskId)
     task->data[7] = 0;
     task->data[8] = 24;
 
-    if (!IsOnPlayerSide(battler))
+    if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
         task->data[8] *= -1;
 
     task->data[13] = GetBattlerYCoordWithElevation(battler) - 34;
@@ -3867,7 +3762,7 @@ void AnimSmokeBallEscapeCloud(struct Sprite *sprite)
 {
     sprite->data[0] = gBattleAnimArgs[3];
     StartSpriteAffineAnim(sprite, gBattleAnimArgs[0]);
-    if (!IsOnPlayerSide(gBattleAnimTarget))
+    if (GetBattlerSide(gBattleAnimTarget) != B_SIDE_PLAYER)
         gBattleAnimArgs[1] = -gBattleAnimArgs[1];
 
     sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + gBattleAnimArgs[1];
@@ -3987,7 +3882,7 @@ void AnimTask_SlideMonForFocusBand(u8 taskId)
     if (gBattleAnimArgs[3])
         gTasks[taskId].data[6] = gTasks[taskId].data[6] | -0x8000;
 
-    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
     {
         gTasks[taskId].data[2] = gBattleAnimArgs[1];
         gTasks[taskId].data[3] = gBattleAnimArgs[2];
@@ -4219,7 +4114,7 @@ void AnimTask_StatusClearedEffect(u8 taskId)
 // arg 2: which direction (0 = upward, 1 = downward, 2 = horizontal)
 static void AnimRoarNoiseLine(struct Sprite *sprite)
 {
-    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
         gBattleAnimArgs[0] = -gBattleAnimArgs[0];
 
     sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X) + gBattleAnimArgs[0];
@@ -4241,7 +4136,7 @@ static void AnimRoarNoiseLine(struct Sprite *sprite)
         sprite->data[0] = 0x280;
     }
 
-    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
     {
         sprite->data[0] = -sprite->data[0];
         sprite->hFlip = 1;
@@ -4299,7 +4194,7 @@ void AnimTask_GlareEyeDots(u8 taskId)
         task->tIsContest = FALSE;
     }
 
-    if (IsOnPlayerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
         task->tStartX = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + GetBattlerSpriteCoordAttr(gBattleAnimAttacker, BATTLER_COORD_ATTR_HEIGHT) / 4;
     else
         task->tStartX = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) - GetBattlerSpriteCoordAttr(gBattleAnimAttacker, BATTLER_COORD_ATTR_HEIGHT) / 4;
@@ -4467,7 +4362,7 @@ void AnimTask_BarrageBall(u8 taskId)
         gSprites[task->data[15]].data[4] = task->data[14];
         gSprites[task->data[15]].data[5] = -32;
         InitAnimArcTranslation(&gSprites[task->data[15]]);
-        if (!IsOnPlayerSide(gBattleAnimAttacker))
+        if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
             StartSpriteAffineAnim(&gSprites[task->data[15]], 1);
 
         task->func = AnimTask_BarrageBall_Step;
@@ -4807,7 +4702,7 @@ void AnimTask_HelpingHandAttackerMovement(u8 taskId)
         }
         else
         {
-            if (IsOnPlayerSide(gBattleAnimAttacker))
+            if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
                 task->data[14] = -1;
             else
                 task->data[14] = 1;
@@ -4917,7 +4812,7 @@ static void AnimForesightMagnifyingGlass(struct Sprite *sprite)
         sprite->data[7] = gBattleAnimTarget;
     }
 
-    if (!IsOnPlayerSide(sprite->data[7]))
+    if (GetBattlerSide(sprite->data[7]) == B_SIDE_OPPONENT)
         sprite->oam.matrixNum = ST_OAM_HFLIP;
 
     sprite->oam.priority = GetBattlerSpriteBGPriority(sprite->data[7]);
@@ -5056,7 +4951,7 @@ static void AnimMeteorMashStar(struct Sprite *sprite)
     s16 UNUSED y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
     s16 UNUSED x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
 
-    if (IsOnPlayerSide(gBattleAnimTarget) || IsContest())
+    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER || IsContest())
     {
         sprite->data[0] = sprite->x - gBattleAnimArgs[0];
         sprite->data[2] = sprite->x - gBattleAnimArgs[2];
@@ -5175,7 +5070,7 @@ void AnimBlockX(struct Sprite *sprite)
 {
     s16 y;
 
-    if (IsOnPlayerSide(gBattleAnimTarget))
+    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
     {
         sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimTarget) - 2;
         y = -144;
@@ -5384,7 +5279,7 @@ void AnimTask_SnatchOpposingMonMove(u8 taskId)
     case 0:
         spriteId = GetAnimBattlerSpriteId(ANIM_ATTACKER);
         gTasks[taskId].data[1] += 0x800;
-        if (IsOnPlayerSide(gBattleAnimAttacker))
+        if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
             gSprites[spriteId].x2 += (gTasks[taskId].data[1] >> 8);
         else
             gSprites[spriteId].x2 -= (gTasks[taskId].data[1] >> 8);
@@ -5409,7 +5304,7 @@ void AnimTask_SnatchOpposingMonMove(u8 taskId)
         }
         else
         {
-            struct Pokemon *mon = GetBattlerMon(gBattleAnimAttacker);
+            struct Pokemon *mon = GetPartyBattlerData(gBattleAnimAttacker);
             personality = GetMonData(mon, MON_DATA_PERSONALITY);
             isShiny = GetMonData(mon, MON_DATA_IS_SHINY);
             if (gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies == SPECIES_NONE)
@@ -5417,7 +5312,7 @@ void AnimTask_SnatchOpposingMonMove(u8 taskId)
             else
                 species = gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies;
 
-            if (IsOnPlayerSide(gBattleAnimAttacker))
+            if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
             {
                 subpriority = gSprites[GetAnimBattlerSpriteId(ANIM_TARGET)].subpriority + 1;
                 isBackPic = FALSE;
@@ -5441,7 +5336,7 @@ void AnimTask_SnatchOpposingMonMove(u8 taskId)
     case 2:
         spriteId2 = gTasks[taskId].data[15];
         gTasks[taskId].data[1] += 0x800;
-        if (IsOnPlayerSide(gBattleAnimAttacker))
+        if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
             gSprites[spriteId2].x2 -= (gTasks[taskId].data[1] >> 8);
         else
             gSprites[spriteId2].x2 += (gTasks[taskId].data[1] >> 8);
@@ -5450,7 +5345,7 @@ void AnimTask_SnatchOpposingMonMove(u8 taskId)
         x = gSprites[spriteId2].x + gSprites[spriteId2].x2;
         if (gTasks[taskId].data[14] == 0)
         {
-            if (IsOnPlayerSide(gBattleAnimAttacker))
+            if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
             {
                 if (x < GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X))
                 {
@@ -5478,7 +5373,7 @@ void AnimTask_SnatchOpposingMonMove(u8 taskId)
         spriteId = GetAnimBattlerSpriteId(ANIM_ATTACKER);
         spriteId2 = gTasks[taskId].data[15];
         DestroySpriteAndFreeResources_(&gSprites[spriteId2]);
-        if (IsOnPlayerSide(gBattleAnimAttacker))
+        if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
             gSprites[spriteId].x2 = -gSprites[spriteId].x - 32;
         else
             gSprites[spriteId].x2 = DISPLAY_WIDTH + 32 - gSprites[spriteId].x;
@@ -5488,7 +5383,7 @@ void AnimTask_SnatchOpposingMonMove(u8 taskId)
     case 4:
         spriteId = GetAnimBattlerSpriteId(ANIM_ATTACKER);
         gTasks[taskId].data[1] += 0x800;
-        if (IsOnPlayerSide(gBattleAnimAttacker))
+        if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
         {
             gSprites[spriteId].x2 += (gTasks[taskId].data[1] >> 8);
             if (gSprites[spriteId].x2 + gSprites[spriteId].x >= GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X))
@@ -5520,7 +5415,7 @@ static void AnimUnusedItemBagSteal(struct Sprite *sprite)
             sprite->data[0] = -32;
             sprite->data[7]++;
             sprite->invisible = FALSE;
-            if (!IsOnPlayerSide(gBattleAnimAttacker) && !IsContest())
+            if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT && !IsContest())
                 sprite->subpriority = gSprites[GetAnimBattlerSpriteId(ANIM_TARGET)].subpriority - 1;
         }
         else
@@ -5539,7 +5434,7 @@ static void AnimUnusedItemBagSteal(struct Sprite *sprite)
         }
 
         sprite->data[2] += 0x100;
-        if (IsOnPlayerSide(gBattleAnimAttacker))
+        if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
             sprite->x2 -= (sprite->data[2] >> 8);
         else
             sprite->x2 += (sprite->data[2] >> 8);
@@ -5618,7 +5513,7 @@ void AnimTask_TeeterDanceMovement(u8 taskId)
 {
     struct Task *task = &gTasks[taskId];
     task->data[3] = GetAnimBattlerSpriteId(ANIM_ATTACKER);
-    task->data[4] = IsOnPlayerSide(gBattleAnimAttacker) ? 1 : -1;
+    task->data[4] = GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER ? 1 : -1;
     task->data[6] = gSprites[task->data[3]].y;
     task->data[5] = gSprites[task->data[3]].x;
     task->data[9] = 0;
@@ -5665,7 +5560,7 @@ static void AnimTask_TeeterDanceMovement_Step(u8 taskId)
 void AnimKnockOffStrike_Step(struct Sprite *sprite)
 {
     // These two cases are identical.
-    if (IsOnPlayerSide(gBattleAnimTarget))
+    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
     {
         sprite->data[1] += sprite->data[0];
         sprite->data[1] &= 0xFF;
@@ -5689,7 +5584,7 @@ void AnimKnockOffStrike_Step(struct Sprite *sprite)
 // arg 1: initial y pixel offset
 static void AnimKnockOffStrike(struct Sprite *sprite)
 {
-    if (IsOnPlayerSide(gBattleAnimTarget))
+    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
     {
         sprite->x -= gBattleAnimArgs[0];
         sprite->y += gBattleAnimArgs[1];

@@ -19,19 +19,19 @@ SINGLE_BATTLE_TEST("Beast Boost boosts the most proficient stat when knocking ou
         ABILITY_POPUP(player, ABILITY_BEAST_BOOST);
         switch(i) {
             case 0:
-                MESSAGE("Nihilego's Attack rose!");
+                MESSAGE("Nihilego's Beast Boost raised its Attack!");
                 break;
             case 1:
-                MESSAGE("Nihilego's Defense rose!");
+                MESSAGE("Nihilego's Beast Boost raised its Defense!");
                 break;
             case 2:
-                MESSAGE("Nihilego's Sp. Atk rose!");
+                MESSAGE("Nihilego's Beast Boost raised its Sp. Atk!");
                 break;
             case 3:
-                MESSAGE("Nihilego's Sp. Def rose!");
+                MESSAGE("Nihilego's Beast Boost raised its Sp. Def!");
                 break;
             case 4:
-                MESSAGE("Nihilego's Speed rose!");
+                MESSAGE("Nihilego's Beast Boost raised its Speed!");
                 break;
         }
     }
@@ -75,16 +75,16 @@ SINGLE_BATTLE_TEST("Beast Boost prioritizes stats in the case of a tie in the fo
         ABILITY_POPUP(player, ABILITY_BEAST_BOOST);
         switch(i) {
             case 0:
-                MESSAGE("Nihilego's Attack rose!");
+                MESSAGE("Nihilego's Beast Boost raised its Attack!");
                 break;
             case 1:
-                MESSAGE("Nihilego's Defense rose!");
+                MESSAGE("Nihilego's Beast Boost raised its Defense!");
                 break;
             case 2:
-                MESSAGE("Nihilego's Sp. Atk rose!");
+                MESSAGE("Nihilego's Beast Boost raised its Sp. Atk!");
                 break;
             case 3:
-                MESSAGE("Nihilego's Sp. Def rose!");
+                MESSAGE("Nihilego's Beast Boost raised its Sp. Def!");
                 break;
         }
     }

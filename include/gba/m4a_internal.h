@@ -170,11 +170,7 @@ struct SoundChannel
 
 struct MusicPlayerInfo;
 
-#if __STDC_VERSION__ < 202311L
 typedef void (*MPlayFunc)();
-#else
-typedef void (*MPlayFunc)(...);
-#endif
 typedef void (*PlyNoteFunc)(u32, struct MusicPlayerInfo *, struct MusicPlayerTrack *);
 typedef void (*CgbSoundFunc)(void);
 typedef void (*CgbOscOffFunc)(u8);
@@ -401,7 +397,7 @@ extern const u8 gNoiseTable[];
 
 extern const struct PokemonCrySong gPokemonCrySongTemplate;
 
-extern const struct ToneData voicegroup_dummy;
+extern const struct ToneData voicegroup000;
 
 extern char gNumMusicPlayers[];
 extern char gMaxLines[];

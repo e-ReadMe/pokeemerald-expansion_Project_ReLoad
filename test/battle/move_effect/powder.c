@@ -80,27 +80,10 @@ SINGLE_BATTLE_TEST("Powder doesn't damage target if it has Magic Guard")
     }
 }
 
-SINGLE_BATTLE_TEST("Powder damages the target under heavy rain (Gen 6)")
+SINGLE_BATTLE_TEST("Powder doesn't damage target under heavy rain")
 {
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_POWDER_RAIN, GEN_6);
-        PLAYER(SPECIES_KYOGRE_PRIMAL) { Ability(ABILITY_PRIMORDIAL_SEA); }
-        OPPONENT(SPECIES_VIVILLON);
-    } WHEN {
-        TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_POWDER, opponent);
-        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, player);
-        HP_BAR(player);
-    } THEN {
-        EXPECT_LT(player->hp, player->maxHP);
-    }
-}
-
-SINGLE_BATTLE_TEST("Powder doesn't damage target under heavy rain (Gen 7+)")
-{
-    GIVEN {
-        WITH_CONFIG(GEN_CONFIG_POWDER_RAIN, GEN_7);
+        ASSUME(B_POWDER_RAIN >= GEN_7);
         PLAYER(SPECIES_KYOGRE_PRIMAL) { Ability(ABILITY_PRIMORDIAL_SEA); }
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
@@ -109,7 +92,7 @@ SINGLE_BATTLE_TEST("Powder doesn't damage target under heavy rain (Gen 7+)")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POWDER, opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, player);
-            HP_BAR(player);
+            HP_BAR(opponent);
         }
     } THEN {
         EXPECT_EQ(player->maxHP, player->hp);
@@ -152,7 +135,7 @@ DOUBLE_BATTLE_TEST("Powder fails if target is already affected by Powder")
 SINGLE_BATTLE_TEST("Powder fails if the target is Grass type")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_VENUSAUR, 0) == TYPE_PLANT || GetSpeciesType(SPECIES_VENUSAUR, 1) == TYPE_PLANT);
+        ASSUME(gSpeciesInfo[SPECIES_VENUSAUR].types[0] == TYPE_PLANT || gSpeciesInfo[SPECIES_VENUSAUR].types[1] == TYPE_PLANT);
         PLAYER(SPECIES_VENUSAUR);
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {

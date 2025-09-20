@@ -98,10 +98,10 @@ TEST("Form change targets have the appropriate species flags")
 
 TEST("No species has two evolutions that use the evolution tracker")
 {
-    u32 i, j;
+    u32 i;
     u32 species = SPECIES_NONE;
     u32 evolutionTrackerEvolutions;
-    bool32 hasRecoilEvo;
+    bool32 hasGenderBasedRecoil;
     const struct Evolution *evolutions;
 
     for (i = 0; i < NUM_SPECIES; i++)
@@ -110,28 +110,24 @@ TEST("No species has two evolutions that use the evolution tracker")
     }
 
     evolutionTrackerEvolutions = 0;
-    hasRecoilEvo = FALSE;
+    hasGenderBasedRecoil = FALSE;
     evolutions = GetSpeciesEvolutions(species);
 
     for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
     {
-        if (evolutions[i].params == NULL)
-            continue;
-        for (j = 0; evolutions[i].params[j].condition != CONDITIONS_END; j++)
-        {
-            if (evolutions[i].params[j].condition == IF_USED_MOVE_X_TIMES
-             || evolutions[i].params[j].condition == IF_DEFEAT_X_WITH_ITEMS
-            )
-                evolutionTrackerEvolutions++;
+        if (evolutions[i].method == EVO_USE_MOVE_TWENTY_TIMES
+         || evolutions[i].method == EVO_DEFEAT_THREE_WITH_ITEM
+        )
+            evolutionTrackerEvolutions++;
 
-            if (evolutions[i].params[j].condition == IF_RECOIL_DAMAGE_GE)
+        if (evolutions[i].method == EVO_RECOIL_DAMAGE_MALE
+         || evolutions[i].method == EVO_RECOIL_DAMAGE_FEMALE)
+        {
+            // Special handling for these since they can be combined as the evolution tracker field is used for the same purpose
+            if (!hasGenderBasedRecoil)
             {
-                // Special handling for these since they can be combined as the evolution tracker field is used for the same purpose
-                if (!hasRecoilEvo)
-                {
-                    hasRecoilEvo = TRUE;
-                    evolutionTrackerEvolutions++;
-                }
+                hasGenderBasedRecoil = TRUE;
+                evolutionTrackerEvolutions++;
             }
         }
     }

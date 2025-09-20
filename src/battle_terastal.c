@@ -20,6 +20,8 @@
 // Sets flags and variables upon a battler's Terastallization.
 void ActivateTera(u32 battler)
 {
+    u32 side = GetBattlerSide(battler);
+
     // Set appropriate flags.
     SetActiveGimmick(battler, GIMMICK_TERA);
     SetGimmickAsActivated(battler, GIMMICK_TERA);
@@ -27,7 +29,7 @@ void ActivateTera(u32 battler)
     // Remove Tera Orb charge.
     if (B_FLAG_TERA_ORB_CHARGED != 0
         && (B_FLAG_TERA_ORB_NO_COST == 0 || !FlagGet(B_FLAG_TERA_ORB_NO_COST))
-        && IsOnPlayerSide(battler)
+        && side == B_SIDE_PLAYER
         && !(IsDoubleBattle() && !IsPartnerMonFromSameTrainer(battler)))
     {
         FlagClear(B_FLAG_TERA_ORB_CHARGED);
@@ -37,9 +39,6 @@ void ActivateTera(u32 battler)
     PREPARE_TYPE_BUFFER(gBattleTextBuff1, GetBattlerTeraType(battler));
     if (TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_TERASTALLIZATION))
         BattleScriptExecute(BattleScript_TeraFormChange);
-    else if (gBattleStruct->illusion[gBattlerAttacker].state == ILLUSION_ON
-          && DoesSpeciesHaveFormChangeMethod(GetIllusionMonSpecies(gBattlerAttacker), FORM_CHANGE_BATTLE_TERASTALLIZATION))
-        BattleScriptExecute(BattleScript_IllusionOffAndTerastallization);
     else
         BattleScriptExecute(BattleScript_Terastallization);
 }
@@ -62,16 +61,16 @@ void ApplyBattlerVisualsForTeraAnim(u32 battler)
 // Returns whether a battler can Terastallize.
 bool32 CanTerastallize(u32 battler)
 {
-    enum ItemHoldEffect holdEffect = GetBattlerHoldEffect(battler, FALSE);
-
-    if (gBattleMons[battler].volatiles.transformed && GET_BASE_SPECIES_ID(gBattleMons[battler].species) == SPECIES_TERAPAGOS)
+    u32 holdEffect = GetBattlerHoldEffect(battler, FALSE);
+    
+    if (gBattleMons[battler].status2 & STATUS2_TRANSFORMED && GET_BASE_SPECIES_ID(gBattleMons[battler].species) == SPECIES_TERAPAGOS)
         return FALSE;
-
+    
     // Prevents Zigzagoon from terastalizing in vanilla.
-    if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && !IsOnPlayerSide(battler))
+    if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && GetBattlerSide(battler) == B_SIDE_OPPONENT)
         return FALSE;
 
-    if (TESTING || !IsOnPlayerSide(battler))
+    if (TESTING || GetBattlerSide(battler) == B_SIDE_OPPONENT)
     {
         // Skip all other checks in this block, go to HasTrainerUsedGimmick
     }
@@ -111,7 +110,7 @@ bool32 CanTerastallize(u32 battler)
 // Returns a battler's Tera type.
 u32 GetBattlerTeraType(u32 battler)
 {
-    return GetMonData(GetBattlerMon(battler), MON_DATA_TERA_TYPE);
+    return GetMonData(&GetBattlerParty(battler)[gBattlerPartyIndexes[battler]], MON_DATA_TERA_TYPE);
 }
 
 // Uses up a type's Stellar boost.

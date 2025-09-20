@@ -92,7 +92,7 @@ SINGLE_BATTLE_TEST("Attract fails when used by a genderless Pokémon")
         MESSAGE("Starmie used Attract!");
         MESSAGE("But it failed!");
     } THEN {
-        EXPECT(!(opponent->volatiles.infatuation));
+        EXPECT(!(opponent->status2 & STATUS2_INFATUATION));
     }
 }
 
@@ -107,6 +107,6 @@ SINGLE_BATTLE_TEST("Attract fails if both the user and the target are genderless
         MESSAGE("Starmie used Attract!");
         MESSAGE("But it failed!");
     } THEN {
-        EXPECT(!(opponent->volatiles.infatuation));
+        EXPECT(!(opponent->status2 & STATUS2_INFATUATION));
     }
 }

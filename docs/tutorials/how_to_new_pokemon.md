@@ -314,8 +314,7 @@ Cry_Pecharunt::
 Then we add the cry ID to [include/constants/cries.h](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/constants/cries.h):
 
 ```diff
-enum PokemonCry
-{
+enum {
     CRY_NONE,
     ...
 #if P_FAMILY_TERAPAGOS
@@ -372,8 +371,7 @@ Edit [include/constants/pokedex.h](https://github.com/rh-hideout/pokeemerald-exp
 
 ```diff
 // National Pokedex order
-enum NationalDexOrder
-{
+enum {
     NATIONAL_DEX_NONE,
     // Kanto
     NATIONAL_DEX_BULBASAUR,
@@ -396,8 +394,7 @@ Do keep in mind that if you intend to add your new species to the Hoenn Dex, you
 
 ```diff
 // Hoenn Pokedex order
-enum HoennDexOrder
-{
+enum {
     HOENN_DEX_NONE,
     HOENN_DEX_TREECKO,
 ...
@@ -527,9 +524,9 @@ Edit [src/data/graphics/pokemon.h](https://github.com/rh-hideout/pokeemerald-exp
 ```diff
 #if P_FAMILY_PECHARUNT
     const u32 gMonFrontPic_Pecharunt[] = INCBIN_U32("graphics/pokemon/pecharunt/front.4bpp.lz");
-    const u16 gMonPalette_Pecharunt[] = INCBIN_U16("graphics/pokemon/pecharunt/normal.gbapal");
+    const u32 gMonPalette_Pecharunt[] = INCBIN_U32("graphics/pokemon/pecharunt/normal.gbapal.lz");
     const u32 gMonBackPic_Pecharunt[] = INCBIN_U32("graphics/pokemon/pecharunt/back.4bpp.lz");
-    const u16 gMonShinyPalette_Pecharunt[] = INCBIN_U16("graphics/pokemon/pecharunt/shiny.gbapal");
+    const u32 gMonShinyPalette_Pecharunt[] = INCBIN_U32("graphics/pokemon/pecharunt/shiny.gbapal.lz");
     const u8 gMonIcon_Pecharunt[] = INCBIN_U8("graphics/pokemon/pecharunt/icon.4bpp");
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Pecharunt[] = INCBIN_U8("graphics/pokemon/pecharunt/footprint.1bpp");
@@ -537,20 +534,20 @@ Edit [src/data/graphics/pokemon.h](https://github.com/rh-hideout/pokeemerald-exp
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Pecharunt[] = INCBIN_COMP("graphics/pokemon/pecharunt/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Pecharunt[] = INCBIN_U16("graphics/pokemon/pecharunt/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Pecharunt[] = INCBIN_U16("graphics/pokemon/pecharunt/overworld_shiny.gbapal");
+    const u32 gOverworldPalette_Pecharunt[] = INCBIN_U32("graphics/pokemon/pecharunt/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_Pecharunt[] = INCBIN_U32("graphics/pokemon/pecharunt/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_PECHARUNT
 
     const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
-    const u16 gMonPalette_Egg[] = INCBIN_U16("graphics/pokemon/egg/normal.gbapal");
+    const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
     const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");
 
 +   const u32 gMonFrontPic_Mewthree[] = INCBIN_U32("graphics/pokemon/mewthree/anim_front.4bpp.lz");
 +   const u32 gMonBackPic_Mewthree[] = INCBIN_U32("graphics/pokemon/mewthree/back.4bpp.lz");
-+   const u16 gMonPalette_Mewthree[] = INCBIN_U16("graphics/pokemon/mewthree/normal.gbapal");
-+   const u16 gMonShinyPalette_Mewthree[] = INCBIN_U16("graphics/pokemon/mewthree/shiny.gbapal");
++   const u32 gMonPalette_Mewthree[] = INCBIN_U32("graphics/pokemon/mewthree/normal.gbapal.lz");
++   const u32 gMonShinyPalette_Mewthree[] = INCBIN_U32("graphics/pokemon/mewthree/shiny.gbapal.lz");
 +   const u8 gMonIcon_Mewthree[] = INCBIN_U8("graphics/pokemon/mewthree/icon.4bpp");
 +   const u8 gMonFootprint_Mewthree[] = INCBIN_U8("graphics/pokemon/mewthree/footprint.1bpp");
 ```

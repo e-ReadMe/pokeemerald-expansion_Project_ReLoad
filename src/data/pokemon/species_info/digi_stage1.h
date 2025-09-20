@@ -68,9 +68,10 @@
         )
         .levelUpLearnset = sBotamonLevelUpLearnset,
         .teachableLearnset = sBotamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_AGUMON, CONDITIONS({IF_STAT_BASED, STAT_ATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE})},
-                                {EVO_LEVEL, 30, SPECIES_HACKMON, CONDITIONS({STAT_SPATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE})}),
+        .evolutions = EVOLUTION({EVO_STAT_BASED, 20, SPECIES_AGUMON, STAT_ATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE},
+                                {EVO_STAT_BASED, 30, SPECIES_HACKMON, STAT_SPATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE}),
     },
+
 
     [SPECIES_CHOROMON] =
     {
@@ -140,8 +141,8 @@
         )
         .levelUpLearnset = sChoromonLevelUpLearnset,
         .teachableLearnset = sChoromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_AGUMON, CONDITIONS({IF_STAT_BASED, STAT_ATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE})},
-                                {EVO_LEVEL, 30, SPECIES_HACKMON, CONDITIONS({IF_STAT_BASED, STAT_SPATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE})}),
+        .evolutions = EVOLUTION({EVO_STAT_BASED, 20, SPECIES_AGUMON, STAT_ATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE},
+                                {EVO_STAT_BASED, 30, SPECIES_HACKMON, STAT_SPATK, 30, STAT_DEF, 1, STAT_HP, 1, 0, 255, ITEM_NONE}),
     },
 
 

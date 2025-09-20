@@ -15,7 +15,6 @@
   "connections": null,
   "object_events": [
     {
-      "local_id": "LOCALID_MYSTERY_EVENTS_OLD_MAN",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
       "x": 6,
       "y": 4,

@@ -4,14 +4,11 @@
 #include "config/dexnav.h"
 
 // GUI Info
-enum RowGUIInfo
-{
-    ROW_WATER,
-    ROW_LAND_TOP,
-    ROW_LAND_BOT,
-    ROW_HIDDEN,
-    ROWS_COUNT
-};
+#define ROW_WATER       0
+#define ROW_LAND_TOP    1
+#define ROW_LAND_BOT    2
+#define ROW_HIDDEN      3
+#define ROWS_COUNT      4
 
 #define ROW_WATER_ICON_X        30
 #define ROW_WATER_ICON_Y        35
@@ -23,12 +20,9 @@ enum RowGUIInfo
 #define ROW_HIDDEN_ICON_X       52
 #define ROW_HIDDEN_ICON_Y       138
 
-enum EncounterType
-{
-    ENCOUNTER_TYPE_LAND,
-    ENCOUNTER_TYPE_WATER,
-    ENCOUNTER_TYPE_HIDDEN // Get from species
-};
+#define ENCOUNTER_TYPE_LAND     0
+#define ENCOUNTER_TYPE_WATER    1
+#define ENCOUNTER_TYPE_HIDDEN   2   // Get from species
 
 #define COL_WATER_COUNT         5
 #define COL_LAND_COUNT          6
