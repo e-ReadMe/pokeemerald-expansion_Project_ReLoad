@@ -397,7 +397,7 @@ void SetBattlerData(u32 battlerId)
             // If the battler's type has not been changed, AI assumes the types of the illusion mon.
             if (gBattleMons[battlerId].types[0] == GetSpeciesType(species, 0)
                 && gBattleMons[battlerId].types[1] == GetSpeciesType(species, 1)
-                && gBattleMons[battlerId].types[2] == GetSpeciesType(species, 2)
+                && gBattleMons[battlerId].types[2] == GetSpeciesType(species, 2))
             {
                 gBattleMons[battlerId].types[0] = GetSpeciesType(illusionSpecies, 0);
                 gBattleMons[battlerId].types[1] = GetSpeciesType(illusionSpecies, 1);
@@ -3123,7 +3123,7 @@ static bool32 PartyBattlerShouldAvoidHazards(u32 currBattler, u32 switchBattler)
     s32 hazardDamage = 0;
     u32 type1 = GetSpeciesType(species, 0);
     u32 type2 = GetSpeciesType(species, 1);
-    u32 type2 = GetSpeciesType(species, 2);
+    u32 type3 = GetSpeciesType(species, 2);
     u32 maxHp = GetMonData(mon, MON_DATA_MAX_HP);
     u32 side = GetBattlerSide(currBattler);
 
@@ -3140,9 +3140,9 @@ static bool32 PartyBattlerShouldAvoidHazards(u32 currBattler, u32 switchBattler)
         return FALSE;
 
     if (IsHazardOnSide(side, HAZARDS_STEALTH_ROCK))
-        hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_POINTED_STONES, type1, type2, type 3, maxHp);
+        hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_POINTED_STONES, type1, type2, type3, maxHp);
     if (IsHazardOnSide(side, HAZARDS_STEELSURGE))
-        hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_SHARP_STEEL, type1, type2, type 3, maxHp);
+        hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_SHARP_STEEL, type1, type2, type3, maxHp);
 
     if (IsHazardOnSide(side, HAZARDS_SPIKES) && ((type1 != TYPE_FLYING && type2 != TYPE_FLYING && type3 != TYPE_FLYING
         && ability != ABILITY_LEVITATE && holdEffect != HOLD_EFFECT_AIR_BALLOON)

@@ -214,6 +214,8 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
     u32 hitsToKoAI = 0, hitsToKoAIPriority = 0, hitsToKoPlayer = 0;
     bool32 canBattlerWin1v1 = FALSE, isBattlerFirst, isBattlerFirstPriority;
 
+
+
     // Only use this if AI_FLAG_SMART_SWITCHING is set for the trainer
     if (!(gAiThinkingStruct->aiFlags[battler] & AI_FLAG_SMART_SWITCHING))
         return FALSE;
@@ -227,12 +229,13 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
     u16 *playerMoves = GetMovesArray(opposingBattler);
 
     // Gets types of player (opposingBattler) and computer (battler)
-    atkType1 = gBattleMons[opposingBattler].types[0];
-    atkType2 = gBattleMons[opposingBattler].types[1];
-    atkType3 = gBattleMons[opposingBattler].types[2];
-    defType1 = gBattleMons[battler].types[0];
-    defType2 = gBattleMons[battler].types[1];
-    defType3 = gBattleMons[battler].types[2];
+//    atkType1 = gBattleMons[opposingBattler].types[0];
+//    atkType2 = gBattleMons[opposingBattler].types[1];
+//    atkType3 = gBattleMons[opposingBattler].types[2];
+//    defType1 = gBattleMons[battler].types[0];
+//    defType2 = gBattleMons[battler].types[1];
+//    defType3 = gBattleMons[battler].types[2];
+  
     // Get max damage mon could take
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
@@ -302,29 +305,29 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
     }
 
     // Calculate type advantage
-    typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType1)));
-    if (atkType2 != atkType1)
-        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType1)));
-    if (atkType3 != atkType1 && atkType3 != atkType2)
-        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType3, defType1)));
-    if (defType2 != defType1)
-    {
-        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType2)));
-        if (atkType2 != atkType1)
-            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType2)));
-        if (atkType3 != atkType1 && atkType3 != atkType2)
-            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType3, defType2)));
-    }
-    if (defType3 != defType1 && defType3 != defType2)
-    {
-        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType3)));
-        if (atkType2 != atkType1)
-            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType3)));
-        if (atkType3 != atkType1 && atkType3 != atkType2)
-            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType3, defType3)));
-    }
+//    typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType1)));
+//    if (atkType2 != atkType1)
+//        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType1)));
+//    if (atkType3 != atkType1 && atkType3 != atkType2)
+//        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType3, defType1)));
+//    if (defType2 != defType1)
+//    {
+//        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType2)));
+//        if (atkType2 != atkType1)
+//            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType2)));
+//        if (atkType3 != atkType1 && atkType3 != atkType2)
+//            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType3, defType2)));
+//    }
+//    if (defType3 != defType1 && defType3 != defType2)
+//    {
+//        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType3)));
+//        if (atkType2 != atkType1)
+//            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType3)));
+//        if (atkType3 != atkType1 && atkType3 != atkType2)
+//            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType3, defType3)));
+//    }
 
-    typeMatchup = GetBattleMonTypeMatchup(gBattleMons[opposingBattler], gBattleMons[battler]);//redundant or conflicting??
+    typeMatchup = GetBattleMonTypeMatchup(gBattleMons[opposingBattler], gBattleMons[battler]);//this makes the previous section redundant 
 
     // Check if mon gets one shot
     if (maxDamageTaken > gBattleMons[battler].hp
