@@ -8,10 +8,10 @@ SINGLE_BATTLE_TEST("Solid Rock reduces damage to Super Effective moves by 0.75",
     PARAMETRIZE { ability = ABILITY_SOLID_ROCK; }
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_CARRACOSTA].types[0] == TYPE_WATER);
-        ASSUME(gSpeciesInfo[SPECIES_CARRACOSTA].types[1] == TYPE_ROCK);
-        ASSUME(gMovesInfo[MOVE_CLOSE_COMBAT].type == TYPE_FIGHTING);
-        ASSUME(gTypeEffectivenessTable[TYPE_FIGHTING][TYPE_ROCK] > UQ_4_12(1.0));
-        ASSUME(gTypeEffectivenessTable[TYPE_FIGHTING][TYPE_WATER] == UQ_4_12(1.0));
+        ASSUME(gSpeciesInfo[SPECIES_CARRACOSTA].types[1] == TYPE_BEAST);
+        ASSUME(gMovesInfo[MOVE_CLOSE_COMBAT].type == TYPE_COMBAT);
+        ASSUME(gTypeEffectivenessTable[TYPE_COMBAT][TYPE_BEAST] > UQ_4_12(1.0));
+        ASSUME(gTypeEffectivenessTable[TYPE_COMBAT][TYPE_WATER] == UQ_4_12(1.0));
         PLAYER(SPECIES_CARRACOSTA) { Ability(ability); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

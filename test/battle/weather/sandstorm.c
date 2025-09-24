@@ -43,9 +43,9 @@ SINGLE_BATTLE_TEST("Sandstorm damage does not hurt Ground, Rock, and Steel-type 
     PARAMETRIZE { mon = SPECIES_NOSEPASS; }
     PARAMETRIZE { mon = SPECIES_REGISTEEL; }
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_SANDSLASH, 0) == TYPE_GROUND);
-        ASSUME(GetSpeciesType(SPECIES_NOSEPASS, 0) == TYPE_ROCK);
-        ASSUME(GetSpeciesType(SPECIES_REGISTEEL, 0) == TYPE_STEEL);
+        ASSUME(GetSpeciesType(SPECIES_SANDSLASH, 0) == TYPE_EARTH);
+        ASSUME(GetSpeciesType(SPECIES_NOSEPASS, 0) == TYPE_BEAST);
+        ASSUME(GetSpeciesType(SPECIES_REGISTEEL, 0) == TYPE_METAL);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(mon);
     } WHEN {
@@ -100,9 +100,9 @@ SINGLE_BATTLE_TEST("Sandstorm doesn't do damage when weather is negated")
     u32 type1 = GetSpeciesType(SPECIES_STOUTLAND, 0);
     u32 type2 = GetSpeciesType(SPECIES_STOUTLAND, 1);
     GIVEN {
-        ASSUME(type1 != TYPE_ROCK && type2 != TYPE_ROCK);
-        ASSUME(type1 != TYPE_GROUND && type2 != TYPE_GROUND);
-        ASSUME(type1 != TYPE_STEEL && type2 != TYPE_STEEL);
+        ASSUME(type1 != TYPE_BEAST && type2 != TYPE_BEAST);
+        ASSUME(type1 != TYPE_EARTH && type2 != TYPE_EARTH);
+        ASSUME(type1 != TYPE_METAL && type2 != TYPE_METAL);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_CLOUD_NINE); }
     } WHEN {

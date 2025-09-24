@@ -1047,7 +1047,7 @@ bool32 IsMovePowderBlocked(u32 battlerAtk, u32 battlerDef, u32 move)
     if (IsPowderMove(move) && (battlerAtk != battlerDef))
     {
         if (B_POWDER_GRASS >= GEN_6
-         && (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GRASS) || GetBattlerAbility(battlerDef) == ABILITY_OVERCOAT))
+         && (IS_BATTLER_OF_TYPE(battlerDef, TYPE_PLANT) || GetBattlerAbility(battlerDef) == ABILITY_OVERCOAT))
         {
             gBattlerAbility = battlerDef;
             RecordAbilityBattle(gBattlerTarget, ABILITY_OVERCOAT);
@@ -1271,7 +1271,7 @@ static void Cmd_attackcanceler(void)
         RecordAbilityBattle(gBattlerTarget, gLastUsedAbility);
     }
     else if (IsBattlerProtected(gBattlerAttacker, gBattlerTarget, gCurrentMove)
-     && (effect != EFFECT_CURSE || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST))
+     && (effect != EFFECT_CURSE || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_UNDEAD))
      && (!gBattleMoveEffects[effect].twoTurnEffect || (gBattleMons[gBattlerAttacker].volatiles.multipleTurns))
      && effect != EFFECT_SUCKER_PUNCH
      && effect != EFFECT_COUNTER
@@ -2063,8 +2063,8 @@ static inline bool32 TryStrongWindsWeakenAttack(u32 battlerDef, u32 moveType)
     if (gBattleWeather & B_WEATHER_STRONG_WINDS && HasWeatherEffect())
     {
         if (GetMoveCategory(gCurrentMove) != DAMAGE_CATEGORY_STATUS
-         && IS_BATTLER_OF_TYPE(battlerDef, TYPE_FLYING)
-         && gTypeEffectivenessTable[moveType][TYPE_FLYING] >= UQ_4_12(2.0)
+         && IS_BATTLER_OF_TYPE(battlerDef, TYPE_WIND)
+         && gTypeEffectivenessTable[moveType][TYPE_WIND] >= UQ_4_12(2.0)
          && !gBattleStruct->printedStrongWindsWeakenedAttack)
         {
             gBattleStruct->printedStrongWindsWeakenedAttack = TRUE;
@@ -3645,7 +3645,7 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
         gBattlescriptCurrInstr = BattleScript_MoveEffectHaze;
         break;
     case MOVE_EFFECT_LEECH_SEED:
-        if (!IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_GRASS) && !gBattleMons[gBattlerTarget].volatiles.leechSeed)
+        if (!IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_PLANT) && !gBattleMons[gBattlerTarget].volatiles.leechSeed)
         {
             gBattleMons[gBattlerTarget].volatiles.leechSeed = LEECHSEEDED_BY(gBattlerAttacker);
             BattleScriptPush(gBattlescriptCurrInstr + 1);
@@ -7697,7 +7697,7 @@ void TryHazardsOnSwitchIn(u32 battler, u32 side, enum Hazards hazardType)
         if (!IsBattlerGrounded(battler))
             break;
 
-        if (IS_BATTLER_OF_TYPE(battler, TYPE_POISON)) // Absorb the toxic spikes.
+        if (IS_BATTLER_OF_TYPE(battler, TYPE_FILTH)) // Absorb the toxic spikes.
         {
             gBattleStruct->hazardsCounter--; // reduce counter so the next hazard can be applied
             gSideTimers[GetBattlerSide(battler)].toxicSpikesAmount = 0;
@@ -9258,7 +9258,7 @@ static bool32 TryTidyUpClear(u32 battlerAtk, bool32 clear)
 
 u32 IsFlowerVeilProtected(u32 battler)
 {
-    if (IS_BATTLER_OF_TYPE(battler, TYPE_GRASS))
+    if (IS_BATTLER_OF_TYPE(battler, TYPE_PLANT))
         return IsAbilityOnSide(battler, ABILITY_FLOWER_VEIL);
     else
         return 0;
@@ -9310,7 +9310,7 @@ static bool32 IsRototillerAffected(u32 battler)
         return FALSE;
     if (!IsBattlerGrounded(battler))
         return FALSE;   // Only grounded battlers affected
-    if (!IS_BATTLER_OF_TYPE(battler, TYPE_GRASS))
+    if (!IS_BATTLER_OF_TYPE(battler, TYPE_PLANT))
         return FALSE;   // Only grass types affected
     if (IsSemiInvulnerable(battler, CHECK_ALL))
         return FALSE;   // Rototiller doesn't affected semi-invulnerable battlers
@@ -9745,7 +9745,7 @@ static void Cmd_setseeded(void)
         gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LEECH_SEED_MISS;
     }
-    else if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_GRASS))
+    else if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_PLANT))
     {
         gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LEECH_SEED_FAIL;
@@ -10781,10 +10781,10 @@ static void Cmd_tryconversiontypechange(void)
 
             if (moveType == TYPE_MYSTERY)
             {
-                if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST))
-                    moveType = TYPE_GHOST;
+                if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_UNDEAD))
+                    moveType = TYPE_UNDEAD;
                 else
-                    moveType = TYPE_NORMAL;
+                    moveType = TYPE_NULL;
             }
             if (moveType != gBattleMons[gBattlerAttacker].types[0]
                 && moveType != gBattleMons[gBattlerAttacker].types[1]
@@ -10808,10 +10808,10 @@ static void Cmd_tryconversiontypechange(void)
 
                 if (moveType == TYPE_MYSTERY)
                 {
-                    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST))
-                        moveType = TYPE_GHOST;
+                    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_UNDEAD))
+                        moveType = TYPE_UNDEAD;
                     else
-                        moveType = TYPE_NORMAL;
+                        moveType = TYPE_NULL;
                 }
             }
             while (moveType == gBattleMons[gBattlerAttacker].types[0] || moveType == gBattleMons[gBattlerAttacker].types[1] || moveType == gBattleMons[gBattlerAttacker].types[2]);
@@ -13563,13 +13563,13 @@ static void Cmd_settypetoenvironment(void)
         environmentType = TYPE_ELECTRIC;
         break;
     case STATUS_FIELD_GRASSY_TERRAIN:
-        environmentType = TYPE_GRASS;
+        environmentType = TYPE_PLANT;
         break;
     case STATUS_FIELD_MISTY_TERRAIN:
-        environmentType = TYPE_FAIRY;
+        environmentType = TYPE_PUPPET;
         break;
     case STATUS_FIELD_PSYCHIC_TERRAIN:
-        environmentType = TYPE_PSYCHIC;
+        environmentType = TYPE_LIGHT;
         break;
     default:
         environmentType = gBattleEnvironmentInfo[gBattleEnvironment].camouflageType;
@@ -13731,7 +13731,7 @@ static void Cmd_handleballthrow(void)
                     ballMultiplier = 150;
                 break;
             case BALL_NET:
-                if (IS_BATTLER_ANY_TYPE(gBattlerTarget, TYPE_WATER, TYPE_BUG))
+                if (IS_BATTLER_ANY_TYPE(gBattlerTarget, TYPE_WATER, TYPE_INSECT))
                     ballMultiplier = B_NET_BALL_MODIFIER >= GEN_7 ? 350 : 300;
                 break;
             case BALL_DIVE:
@@ -15299,8 +15299,8 @@ void BS_TryReflectType(void)
     }
     else if (targetTypes[0] == TYPE_MYSTERY && targetTypes[1] == TYPE_MYSTERY && targetTypes[2] != TYPE_MYSTERY)
     {
-        gBattleMons[gBattlerAttacker].types[0] = TYPE_NORMAL;
-        gBattleMons[gBattlerAttacker].types[1] = TYPE_NORMAL;
+        gBattleMons[gBattlerAttacker].types[0] = TYPE_NULL;
+        gBattleMons[gBattlerAttacker].types[1] = TYPE_NULL;
         gBattleMons[gBattlerAttacker].types[2] = targetTypes[2];
         gBattlescriptCurrInstr = cmd->nextInstr;
     }

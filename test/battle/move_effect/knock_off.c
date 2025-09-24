@@ -136,7 +136,7 @@ SINGLE_BATTLE_TEST("Knock Off does not remove items if target is immune")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ELECTRIFY) == EFFECT_ELECTRIFY);
-        ASSUME(GetSpeciesType(SPECIES_DONPHAN, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_DONPHAN, 1) == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_DONPHAN, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_DONPHAN, 1) == TYPE_EARTH);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_DONPHAN) { Item(ITEM_LEFTOVERS); };
     } WHEN {

@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
+    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
     ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
 }
 
@@ -54,8 +54,8 @@ SINGLE_BATTLE_TEST("Pixilate doesn't affect Weather Ball's type", s16 damage)
     PARAMETRIZE { move = MOVE_SUNNY_DAY; ability = ABILITY_PIXILATE; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
-        ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_PINSIR, 0) == TYPE_BUG);
+        ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_PINSIR, 0) == TYPE_INSECT);
         PLAYER(SPECIES_SYLVEON) { Level(5); Ability(ability); }
         OPPONENT(SPECIES_PINSIR);
     } WHEN {
@@ -80,8 +80,8 @@ SINGLE_BATTLE_TEST("Pixilate doesn't affect Natural Gift's type")
     PARAMETRIZE { ability = ABILITY_PIXILATE; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_NATURAL_GIFT) == EFFECT_NATURAL_GIFT);
-        ASSUME(gNaturalGiftTable[ITEM_TO_BERRY(ITEM_ORAN_BERRY)].type == TYPE_POISON);
-        ASSUME(GetSpeciesType(SPECIES_BELDUM, 0) == TYPE_STEEL);
+        ASSUME(gNaturalGiftTable[ITEM_TO_BERRY(ITEM_ORAN_BERRY)].type == TYPE_FILTH);
+        ASSUME(GetSpeciesType(SPECIES_BELDUM, 0) == TYPE_METAL);
         PLAYER(SPECIES_SYLVEON) { Ability(ability); Item(ITEM_ORAN_BERRY); }
         OPPONENT(SPECIES_BELDUM);
     } WHEN {
@@ -108,7 +108,7 @@ SINGLE_BATTLE_TEST("Pixilate doesn't affect Judgment / Techno Blast / Multi-Atta
         ASSUME(gItemsInfo[ITEM_SHOCK_DRIVE].secondaryId == TYPE_ELECTRIC);
         ASSUME(gItemsInfo[ITEM_ELECTRIC_MEMORY].holdEffect == HOLD_EFFECT_MEMORY);
         ASSUME(gItemsInfo[ITEM_ELECTRIC_MEMORY].secondaryId == TYPE_ELECTRIC);
-        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_EARTH);
         PLAYER(SPECIES_SYLVEON) { Ability(ABILITY_PIXILATE); Item(item); }
         OPPONENT(SPECIES_DIGLETT);
     } WHEN {
@@ -124,7 +124,7 @@ SINGLE_BATTLE_TEST("Pixilate doesn't affect Hidden Power's type")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_HIDDEN_POWER) == EFFECT_HIDDEN_POWER);
         ASSUME(gTypesInfo[TYPE_ELECTRIC].isHiddenPowerType == TRUE);
-        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_EARTH);
         PLAYER(SPECIES_SYLVEON) { Ability(ABILITY_PIXILATE); HPIV(31); AttackIV(31); DefenseIV(31); SpAttackIV(30); SpDefenseIV(31); SpeedIV(31); } // HP Electric
         OPPONENT(SPECIES_DIGLETT);
     } WHEN {

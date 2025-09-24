@@ -695,7 +695,7 @@ BattleScript_SkyDropTurn2:
 	call BattleScript_TwoTurnMovesSecondTurnRet
 	attackstring
 	clearskydrop BattleScript_SkyDropChangedTarget
-	jumpiftype BS_TARGET, TYPE_FLYING, BattleScript_SkyDropFlyingType
+	jumpiftype BS_TARGET, TYPE_WIND, BattleScript_SkyDropFlyingType
 	goto BattleScript_HitFromCritCalc
 BattleScript_SkyDropFlyingType:
 	makevisible BS_TARGET
@@ -752,7 +752,7 @@ BattleScript_EffectFling::
 	jumpiflastuseditemholdeffect HOLD_EFFECT_FLINCH, 0, BattleScript_FlingFlinch
 	jumpiflastuseditemholdeffect HOLD_EFFECT_LIGHT_BALL, 0, BattleScript_FlingLightBall
 	jumpiflastuseditemholdeffect HOLD_EFFECT_MENTAL_HERB, 0, BattleScript_FlingMentalHerb
-	jumpiflastuseditemholdeffect HOLD_EFFECT_TYPE_POWER, TYPE_POISON, BattleScript_FlingPoisonBarb
+	jumpiflastuseditemholdeffect HOLD_EFFECT_TYPE_POWER, TYPE_FILTH, BattleScript_FlingPoisonBarb
 	jumpiflastuseditemholdeffect HOLD_EFFECT_TOXIC_ORB, 0, BattleScript_FlingToxicOrb
 	jumpiflastuseditemholdeffect HOLD_EFFECT_WHITE_HERB, 0, BattleScript_FlingWhiteHerb
 	goto BattleScript_FlingEnd
@@ -1477,7 +1477,7 @@ BattleScript_EffectFlowerShield::
 	selectfirstvalidtarget
 BattleScript_FlowerShieldIsAnyValidTarget:
 	jumpifvolatile BS_TARGET, VOLATILE_SEMI_INVULNERABLE, BattleScript_FlowerShieldCheckNextTarget
-	jumpiftype BS_TARGET, TYPE_GRASS, BattleScript_FlowerShieldLoopStart
+	jumpiftype BS_TARGET, TYPE_PLANT, BattleScript_FlowerShieldLoopStart
 BattleScript_FlowerShieldCheckNextTarget:
 	jumpifnexttargetvalid BattleScript_FlowerShieldIsAnyValidTarget
 	goto BattleScript_RestoreTargetButItFailed
@@ -1486,7 +1486,7 @@ BattleScript_FlowerShieldLoopStart:
 BattleScript_FlowerShieldLoop:
 	movevaluescleanup
 	jumpifvolatile BS_TARGET, VOLATILE_SEMI_INVULNERABLE, BattleScript_FlowerShieldMoveTargetEnd
-	jumpiftype BS_TARGET, TYPE_GRASS, BattleScript_FlowerShieldLoop2
+	jumpiftype BS_TARGET, TYPE_PLANT, BattleScript_FlowerShieldLoop2
 	goto BattleScript_FlowerShieldMoveTargetEnd
 BattleScript_FlowerShieldLoop2:
 	setstatchanger STAT_DEF, 1, FALSE
@@ -3809,7 +3809,7 @@ BattleScript_EffectMeanLook::
 	jumpifvolatile BS_TARGET, VOLATILE_ESCAPE_PREVENTION, BattleScript_ButItFailed
 	jumpifsubstituteblocks BattleScript_ButItFailed
 .if B_GHOSTS_ESCAPE >= GEN_6
-	jumpiftype BS_TARGET, TYPE_GHOST, BattleScript_ButItFailed
+	jumpiftype BS_TARGET, TYPE_UNDEAD, BattleScript_ButItFailed
 .endif
 	attackanimation
 	waitanimation
@@ -3846,9 +3846,9 @@ BattleScript_EffectMinimize::
 	goto BattleScript_EffectStatUpAfterAtkCanceler
 
 BattleScript_EffectCurse::
-	jumpiftype BS_ATTACKER, TYPE_GHOST, BattleScript_GhostCurse
+	jumpiftype BS_ATTACKER, TYPE_UNDEAD, BattleScript_GhostCurse
 	attackcanceler
-	jumpiftype BS_ATTACKER, TYPE_GHOST, BattleScript_DoGhostCurse
+	jumpiftype BS_ATTACKER, TYPE_UNDEAD, BattleScript_DoGhostCurse
 	attackstring
 	ppreduce
 	jumpifstat BS_ATTACKER, CMP_GREATER_THAN, STAT_SPEED, MIN_STAT_STAGE, BattleScript_CurseTrySpeed
@@ -6826,7 +6826,7 @@ BattleScript_PowderMoveNoEffect::
 	attackstring
 	ppreduce
 	pause B_WAIT_TIME_SHORT
-	jumpiftype BS_TARGET, TYPE_GRASS, BattleScript_PowderMoveNoEffectPrint
+	jumpiftype BS_TARGET, TYPE_PLANT, BattleScript_PowderMoveNoEffectPrint
 	jumpifability BS_TARGET, ABILITY_OVERCOAT, BattleScript_PowderMoveNoEffectOvercoat
 	printstring STRINGID_SAFETYGOGGLESPROTECTED
 	goto BattleScript_PowderMoveNoEffectWaitMsg

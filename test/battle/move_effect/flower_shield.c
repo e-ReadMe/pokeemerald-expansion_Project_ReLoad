@@ -9,10 +9,10 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Flower Shield raises the defense of all Grass-type Pokémon")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
-        ASSUME(GetSpeciesType(SPECIES_TANGROWTH, 0) == TYPE_GRASS);
-        ASSUME(GetSpeciesType(SPECIES_SUNKERN, 0) == TYPE_GRASS);
-        ASSUME(GetSpeciesType(SPECIES_SUNFLORA, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_TANGROWTH, 0) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_SUNKERN, 0) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_SUNFLORA, 0) == TYPE_PLANT);
         PLAYER(SPECIES_TANGELA);
         PLAYER(SPECIES_TANGROWTH);
         OPPONENT(SPECIES_SUNKERN);

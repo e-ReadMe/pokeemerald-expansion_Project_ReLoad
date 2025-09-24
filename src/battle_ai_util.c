@@ -474,7 +474,7 @@ bool32 AI_CanBattlerEscape(u32 battler)
 {
     enum ItemHoldEffect holdEffect = gAiLogicData->holdEffects[battler];
 
-    if (B_GHOSTS_ESCAPE >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
+    if (B_GHOSTS_ESCAPE >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_UNDEAD))
         return TRUE;
     if (holdEffect == HOLD_EFFECT_SHED_SHELL)
         return TRUE;
@@ -501,7 +501,7 @@ bool32 IsBattlerTrapped(u32 battlerAtk, u32 battlerDef)
         && IsBattlerGrounded(battlerAtk))
         return TRUE;
     if (AI_IsAbilityOnSide(battlerAtk, ABILITY_MAGNET_PULL)
-        && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_STEEL))
+        && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_METAL))
         return TRUE;
 
     return FALSE;
@@ -538,7 +538,7 @@ bool32 IsTruantMonVulnerable(u32 battlerAI, u32 opposingBattler)
 bool32 IsAffectedByPowder(u32 battler, u32 ability, enum ItemHoldEffect holdEffect)
 {
     if (ability == ABILITY_OVERCOAT
-        || (B_POWDER_GRASS >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GRASS))
+        || (B_POWDER_GRASS >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_PLANT))
         || holdEffect == HOLD_EFFECT_SAFETY_GOGGLES)
         return FALSE;
     return TRUE;
@@ -2053,7 +2053,7 @@ bool32 CanLowerStat(u32 battlerAtk, u32 battlerDef, struct AiLogicData *aiData, 
 
     if (!DoesBattlerIgnoreAbilityChecks(battlerAtk, abilityAtk, move))
     {
-        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GRASS) && AI_IsAbilityOnSide(battlerDef, ABILITY_FLOWER_VEIL))
+        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_PLANT) && AI_IsAbilityOnSide(battlerDef, ABILITY_FLOWER_VEIL))
             return FALSE;
 
         switch (aiData->abilities[battlerDef])
@@ -3009,7 +3009,7 @@ static u32 GetPoisonDamage(u32 battlerId)
 
 static bool32 BattlerAffectedBySandstorm(u32 battlerId, u32 ability)
 {
-    if (!IS_BATTLER_ANY_TYPE(battlerId, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
+    if (!IS_BATTLER_ANY_TYPE(battlerId, TYPE_BEAST, TYPE_EARTH, TYPE_METAL)
       && ability != ABILITY_SAND_VEIL
       && ability != ABILITY_SAND_FORCE
       && ability != ABILITY_SAND_RUSH
@@ -3155,7 +3155,7 @@ static bool32 PartyBattlerShouldAvoidHazards(u32 currBattler, u32 switchBattler)
     if (IsHazardOnSide(side, HAZARDS_STEELSURGE))
         hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_SHARP_STEEL, type1, type2, type3, maxHp);
 
-    if (IsHazardOnSide(side, HAZARDS_SPIKES) && ((type1 != TYPE_FLYING && type2 != TYPE_FLYING && type3 != TYPE_FLYING
+    if (IsHazardOnSide(side, HAZARDS_SPIKES) && ((type1 != TYPE_WIND && type2 != TYPE_WIND && type3 != TYPE_WIND
         && ability != ABILITY_LEVITATE && holdEffect != HOLD_EFFECT_AIR_BALLOON)
         || holdEffect == HOLD_EFFECT_IRON_BALL || gFieldStatuses & STATUS_FIELD_GRAVITY))
     {

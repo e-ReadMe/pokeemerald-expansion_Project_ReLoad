@@ -47,8 +47,8 @@ SINGLE_BATTLE_TEST("Smack Down does not ground target if target is immune")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ELECTRIFY) == EFFECT_ELECTRIFY);
-        ASSUME(GetSpeciesType(SPECIES_GLISCOR, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_GLISCOR, 1) == TYPE_GROUND);
-        ASSUME(GetSpeciesType(SPECIES_GLISCOR, 0) == TYPE_FLYING || GetSpeciesType(SPECIES_GLISCOR, 1) == TYPE_FLYING);
+        ASSUME(GetSpeciesType(SPECIES_GLISCOR, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_GLISCOR, 1) == TYPE_EARTH);
+        ASSUME(GetSpeciesType(SPECIES_GLISCOR, 0) == TYPE_WIND || GetSpeciesType(SPECIES_GLISCOR, 1) == TYPE_WIND);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_GLISCOR);
     } WHEN {

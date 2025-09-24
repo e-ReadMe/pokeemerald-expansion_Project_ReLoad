@@ -243,12 +243,12 @@ static enum FieldEffectOutcome BenefitsFromSun(u32 battler)
 static enum FieldEffectOutcome BenefitsFromSandstorm(u32 battler)
 {
     if (DoesAbilityBenefitFromWeather(gAiLogicData->abilities[battler], B_WEATHER_SANDSTORM)
-     || IS_BATTLER_OF_TYPE(battler, TYPE_ROCK))
+     || IS_BATTLER_OF_TYPE(battler, TYPE_BEAST))
         return FIELD_EFFECT_POSITIVE;
 
-    if (gAiLogicData->holdEffects[battler] == HOLD_EFFECT_SAFETY_GOGGLES || IS_BATTLER_ANY_TYPE(battler, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL))
+    if (gAiLogicData->holdEffects[battler] == HOLD_EFFECT_SAFETY_GOGGLES || IS_BATTLER_ANY_TYPE(battler, TYPE_BEAST, TYPE_EARTH, TYPE_METAL))
     {
-        if (!(IS_BATTLER_ANY_TYPE(FOE(battler), TYPE_ROCK, TYPE_GROUND, TYPE_STEEL))
+        if (!(IS_BATTLER_ANY_TYPE(FOE(battler), TYPE_BEAST, TYPE_EARTH, TYPE_METAL))
          || gAiLogicData->holdEffects[FOE(battler)] == HOLD_EFFECT_SAFETY_GOGGLES
          || DoesAbilityBenefitFromWeather(gAiLogicData->abilities[FOE(battler)], B_WEATHER_SANDSTORM))
             return FIELD_EFFECT_POSITIVE;
@@ -346,7 +346,7 @@ static enum FieldEffectOutcome BenefitsFromGrassyTerrain(u32 battler)
     || HasBattlerSideMoveWithEffect(FOE(battler), EFFECT_MAGNITUDE)))
         return FIELD_EFFECT_POSITIVE;
 
-    if (grounded && HasDamagingMoveOfType(battler, TYPE_GRASS))
+    if (grounded && HasDamagingMoveOfType(battler, TYPE_PLANT))
         return FIELD_EFFECT_POSITIVE;
 
     if (HasBattlerSideMoveWithEffect(FOE(battler), EFFECT_GRASSY_GLIDE))
@@ -412,7 +412,7 @@ static enum FieldEffectOutcome BenefitsFromPsychicTerrain(u32 battler)
             return FIELD_EFFECT_POSITIVE;
     }
 
-    if (grounded && (HasDamagingMoveOfType(battler, TYPE_PSYCHIC)))
+    if (grounded && (HasDamagingMoveOfType(battler, TYPE_LIGHT)))
         return FIELD_EFFECT_POSITIVE;
 
     if (HasBattlerSideMoveWithEffect(FOE(battler), EFFECT_EXPANDING_FORCE))

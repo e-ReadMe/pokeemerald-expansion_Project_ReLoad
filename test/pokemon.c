@@ -408,7 +408,7 @@ TEST("checkteratype/setteratype work")
     RUN_OVERWORLD_SCRIPT(
         checkteratype 0;
     );
-    EXPECT(VarGet(VAR_RESULT) == TYPE_PSYCHIC);
+    EXPECT(VarGet(VAR_RESULT) == TYPE_LIGHT);
 
     RUN_OVERWORLD_SCRIPT(
         setteratype TYPE_FIRE, 0;

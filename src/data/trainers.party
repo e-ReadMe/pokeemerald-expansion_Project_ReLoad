@@ -6285,24 +6285,22 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
-Crabby (Corphish)  
-Ability: Hyper Cutter  
-Level: 5  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Bubble  
-- Vise Grip  
+Wobbuffet  
+Ability: Shadow Tag  
+Level: 20  
+IVs: 0 Atk  
+- Splash  
 
-Biscuit (Poochyena)  
-Ability: Run Away  
-Level: 5  
-Shiny: Yes  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Tackle  
-- Howl  
-- Leer  
+Wobbuffet  
+Ability: Shadow Tag  
+Level: 20  
+IVs: 0 Atk  
+- Splash  
+
+
 
 
 

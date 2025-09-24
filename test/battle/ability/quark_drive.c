@@ -104,7 +104,7 @@ SINGLE_BATTLE_TEST("Quark Drive activates on switch-in")
 SINGLE_BATTLE_TEST("Quark Drive activates on Electric Terrain even if not grounded")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_IRON_JUGULIS, 0) == TYPE_FLYING || GetSpeciesType(SPECIES_IRON_JUGULIS, 1) == TYPE_FLYING);
+        ASSUME(GetSpeciesType(SPECIES_IRON_JUGULIS, 0) == TYPE_WIND || GetSpeciesType(SPECIES_IRON_JUGULIS, 1) == TYPE_WIND);
         PLAYER(SPECIES_IRON_JUGULIS) { Ability(ABILITY_QUARK_DRIVE); }
         OPPONENT(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); };
     } WHEN {

@@ -89,7 +89,7 @@ SINGLE_BATTLE_TEST("Reflect Type fails if the target has no types")
         ASSUME(GetSpeciesType(SPECIES_ARCANINE, 0) == TYPE_FIRE);
         ASSUME(GetSpeciesType(SPECIES_ARCANINE, 1) == TYPE_FIRE);
         ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 0) == TYPE_WATER);
-        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) == TYPE_FIGHTING);
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) == TYPE_COMBAT);
         PLAYER(SPECIES_ARCANINE);
         OPPONENT(SPECIES_POLIWRATH);
     } WHEN {
@@ -110,7 +110,7 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's dual types")
         ASSUME(GetSpeciesType(SPECIES_ARCANINE, 0) == TYPE_FIRE);
         ASSUME(GetSpeciesType(SPECIES_ARCANINE, 1) == TYPE_FIRE);
         ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 0) == TYPE_WATER);
-        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) == TYPE_FIGHTING);
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) == TYPE_COMBAT);
         PLAYER(SPECIES_ARCANINE);
         OPPONENT(SPECIES_POLIWRATH);
     } WHEN {
@@ -121,7 +121,7 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's dual types")
         MESSAGE("Arcanine became the same type as the opposing Poliwrath!");
     } THEN {
         EXPECT_EQ(player->types[0], TYPE_WATER);
-        EXPECT_EQ(player->types[1], TYPE_FIGHTING);
+        EXPECT_EQ(player->types[1], TYPE_COMBAT);
         EXPECT_EQ(player->types[2], TYPE_MYSTERY);
     }
 }
@@ -131,8 +131,8 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's pure type")
     GIVEN {
         ASSUME(GetSpeciesType(SPECIES_ARCANINE, 0) == TYPE_FIRE);
         ASSUME(GetSpeciesType(SPECIES_ARCANINE, 1) == TYPE_FIRE);
-        ASSUME(GetSpeciesType(SPECIES_SUDOWOODO, 0) == TYPE_ROCK);
-        ASSUME(GetSpeciesType(SPECIES_SUDOWOODO, 1) == TYPE_ROCK);
+        ASSUME(GetSpeciesType(SPECIES_SUDOWOODO, 0) == TYPE_BEAST);
+        ASSUME(GetSpeciesType(SPECIES_SUDOWOODO, 1) == TYPE_BEAST);
         PLAYER(SPECIES_ARCANINE);
         OPPONENT(SPECIES_SUDOWOODO);
     } WHEN {
@@ -142,8 +142,8 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's pure type")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, player);
         MESSAGE("Arcanine became the same type as the opposing Sudowoodo!");
     } THEN {
-        EXPECT_EQ(player->types[0], TYPE_ROCK);
-        EXPECT_EQ(player->types[1], TYPE_ROCK);
+        EXPECT_EQ(player->types[0], TYPE_BEAST);
+        EXPECT_EQ(player->types[1], TYPE_BEAST);
         EXPECT_EQ(player->types[2], TYPE_MYSTERY);
     }
 }
@@ -151,8 +151,8 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's pure type")
 SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's 1st and 2nd types if the target only has a 3rd type")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_PSYCHIC);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) == TYPE_PSYCHIC);
+        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_LIGHT);
+        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) == TYPE_LIGHT);
         ASSUME(GetSpeciesType(SPECIES_ARCANINE, 0) == TYPE_FIRE);
         ASSUME(GetSpeciesType(SPECIES_ARCANINE, 1) == TYPE_FIRE);
         PLAYER(SPECIES_WOBBUFFET);
@@ -176,16 +176,16 @@ SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's 1st and 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, player);
         MESSAGE("Wobbuffet became the same type as the opposing Arcanine!");
     } THEN {
-        EXPECT_EQ(player->types[0], TYPE_NORMAL);
-        EXPECT_EQ(player->types[1], TYPE_NORMAL);
-        EXPECT_EQ(player->types[2], TYPE_GRASS);
+        EXPECT_EQ(player->types[0], TYPE_NULL);
+        EXPECT_EQ(player->types[1], TYPE_NULL);
+        EXPECT_EQ(player->types[2], TYPE_PLANT);
     }
 }
 
 SINGLE_BATTLE_TEST("Reflect Type fails if the user is Terastallized")
 {
     GIVEN {
-        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NORMAL); }
+        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NULL); }
         OPPONENT(SPECIES_POLIWRATH);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE, gimmick: GIMMICK_TERA); }
@@ -202,17 +202,17 @@ SINGLE_BATTLE_TEST("Reflect Type fails if the user is Terastallized")
 SINGLE_BATTLE_TEST("Reflect Type succeeds against a Terastallized target and copies its Tera type")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 0) != TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) != TYPE_NORMAL);
-        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NORMAL); }
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 0) != TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) != TYPE_NULL);
+        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NULL); }
         OPPONENT(SPECIES_POLIWRATH);
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_REFLECT_TYPE); }
     } SCENE {
         MESSAGE("The opposing Poliwrath used Reflect Type!");
     } THEN {
-        EXPECT_EQ(opponent->types[0], TYPE_NORMAL);
-        EXPECT_EQ(opponent->types[1], TYPE_NORMAL);
-        EXPECT_EQ(opponent->types[2], TYPE_NORMAL);
+        EXPECT_EQ(opponent->types[0], TYPE_NULL);
+        EXPECT_EQ(opponent->types[1], TYPE_NULL);
+        EXPECT_EQ(opponent->types[2], TYPE_NULL);
     }
 }

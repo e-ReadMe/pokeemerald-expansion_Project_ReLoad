@@ -57,7 +57,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .naturePower = MOVE_STUN_SPORE,
     #endif
         .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_4 ? MOVE_EFFECT_SLEEP : MOVE_EFFECT_POISON,
-        .camouflageType = TYPE_GRASS,
+        .camouflageType = TYPE_PLANT,
         .background = ENVIRONMENT_BACKGROUND(TallGrass),
     },
 
@@ -71,7 +71,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .naturePower = MOVE_RAZOR_LEAF,
     #endif
         .secretPowerEffect = MOVE_EFFECT_SLEEP,
-        .camouflageType = TYPE_GRASS,
+        .camouflageType = TYPE_PLANT,
         .background = ENVIRONMENT_BACKGROUND(LongGrass),
     },
 
@@ -79,7 +79,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     {
         .naturePower = B_NATURE_POWER_MOVES >= GEN_6 ? MOVE_EARTH_POWER : MOVE_EARTHQUAKE,
         .secretPowerEffect = MOVE_EFFECT_ACC_MINUS_1,
-        .camouflageType = TYPE_GROUND,
+        .camouflageType = TYPE_EARTH,
         .background = ENVIRONMENT_BACKGROUND(Sand),
     },
 
@@ -123,7 +123,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     #else
         .secretPowerEffect = MOVE_EFFECT_CONFUSION,
     #endif
-        .camouflageType = B_CAMOUFLAGE_TYPES >= GEN_5 ? TYPE_GROUND : TYPE_ROCK,
+        .camouflageType = B_CAMOUFLAGE_TYPES >= GEN_5 ? TYPE_EARTH : TYPE_BEAST,
         .background = ENVIRONMENT_BACKGROUND(Rock),
     },
 
@@ -139,7 +139,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .naturePower = MOVE_SHADOW_BALL,
     #endif
         .secretPowerEffect = MOVE_EFFECT_FLINCH,
-        .camouflageType = TYPE_ROCK,
+        .camouflageType = TYPE_BEAST,
         .background = ENVIRONMENT_BACKGROUND(Cave),
     },
 
@@ -147,7 +147,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     {
         .naturePower = B_NATURE_POWER_MOVES >= GEN_4 ? MOVE_TRI_ATTACK : MOVE_SWIFT,
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
-        .camouflageType = TYPE_NORMAL,
+        .camouflageType = TYPE_NULL,
         .background = ENVIRONMENT_BACKGROUND(Building),
     },
 
@@ -161,7 +161,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .naturePower = MOVE_SWIFT,
     #endif
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
-        .camouflageType = B_CAMOUFLAGE_TYPES >= GEN_4 ? TYPE_GROUND : TYPE_NORMAL,
+        .camouflageType = B_CAMOUFLAGE_TYPES >= GEN_4 ? TYPE_EARTH : TYPE_NULL,
         .background =
         {
             .tileset = gBattleEnvironmentTiles_Building,
@@ -332,42 +332,42 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     {
         .naturePower = MOVE_AIR_SLASH,
         .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
-        .camouflageType = TYPE_FLYING,
+        .camouflageType = TYPE_WIND,
     },
 
     [BATTLE_ENVIRONMENT_SKY_PILLAR] =
     {
         .naturePower = MOVE_AIR_SLASH,
         .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
-        .camouflageType = TYPE_FLYING,
+        .camouflageType = TYPE_WIND,
     },
 
     [BATTLE_ENVIRONMENT_BURIAL_GROUND] =
     {
         .naturePower = MOVE_SHADOW_BALL,
         .secretPowerEffect = MOVE_EFFECT_FLINCH,
-        .camouflageType = TYPE_GHOST,
+        .camouflageType = TYPE_UNDEAD,
     },
 
     [BATTLE_ENVIRONMENT_PUDDLE] =
     {
         .naturePower = MOVE_MUD_BOMB,
         .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_5 ? MOVE_EFFECT_SPD_MINUS_1 : MOVE_EFFECT_ACC_MINUS_1,
-        .camouflageType = TYPE_GROUND,
+        .camouflageType = TYPE_EARTH,
     },
 
     [BATTLE_ENVIRONMENT_MARSH] =
     {
         .naturePower = MOVE_MUD_BOMB,
         .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
-        .camouflageType = TYPE_GROUND,
+        .camouflageType = TYPE_EARTH,
     },
 
     [BATTLE_ENVIRONMENT_SWAMP] =
     {
         .naturePower = MOVE_MUD_BOMB,
         .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
-        .camouflageType = TYPE_GROUND,
+        .camouflageType = TYPE_EARTH,
     },
 
     [BATTLE_ENVIRONMENT_SNOW] =
@@ -401,7 +401,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     {
         .naturePower = MOVE_TRI_ATTACK,
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
-        .camouflageType = TYPE_NORMAL,
+        .camouflageType = TYPE_NULL,
     },
 
     [BATTLE_ENVIRONMENT_SPACE] =
@@ -415,7 +415,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     {
         .naturePower = MOVE_PSYSHOCK,
         .secretPowerEffect = MOVE_EFFECT_DEF_MINUS_1,
-        .camouflageType = TYPE_PSYCHIC,
+        .camouflageType = TYPE_LIGHT,
     },
 };
 

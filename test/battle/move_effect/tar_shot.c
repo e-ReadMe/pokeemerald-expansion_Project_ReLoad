@@ -14,9 +14,9 @@ SINGLE_BATTLE_TEST("Tar Shot doubles the effectiveness of Fire-type moves used o
     PARAMETRIZE { species = SPECIES_WOBBUFFET; }
     PARAMETRIZE { species = SPECIES_OMASTAR; } // Dual type with double resists
 
-    ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_PSYCHIC);
-    ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) == TYPE_PSYCHIC);
-    ASSUME(GetSpeciesType(SPECIES_OMASTAR, 0) == TYPE_ROCK);
+    ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_LIGHT);
+    ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) == TYPE_LIGHT);
+    ASSUME(GetSpeciesType(SPECIES_OMASTAR, 0) == TYPE_BEAST);
     ASSUME(GetSpeciesType(SPECIES_OMASTAR, 1) == TYPE_WATER);
     ASSUME(GetMoveType(MOVE_EMBER) == TYPE_FIRE);
 
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Tar Shot does not affect Pokemon that are Terastallized")
 {
     s16 damage[2];
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NORMAL); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NULL); }
         OPPONENT(SPECIES_WOBBUFFET) ;
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_EMBER); }
@@ -68,7 +68,7 @@ SINGLE_BATTLE_TEST("Tar Shot does affect Pokemon that Terastallized after Tar Sh
 {
     s16 damage[2];
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NORMAL); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NULL); }
         OPPONENT(SPECIES_WOBBUFFET) ;
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBER); }

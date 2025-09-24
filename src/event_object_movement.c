@@ -2481,10 +2481,10 @@ void GetFollowerAction(struct ScriptContext *ctx) // Essentially a big switch fo
         {
         case MAPSEC_RUSTBORO_CITY:
         case MAPSEC_PEWTER_CITY:
-            multi = TYPE_ROCK;
+            multi = TYPE_BEAST;
             break;
         case MAPSEC_DEWFORD_TOWN:
-            multi = TYPE_FIGHTING;
+            multi = TYPE_COMBAT;
             break;
         case MAPSEC_MAUVILLE_CITY:
         case MAPSEC_VERMILION_CITY:
@@ -2495,27 +2495,27 @@ void GetFollowerAction(struct ScriptContext *ctx) // Essentially a big switch fo
             multi = TYPE_FIRE;
             break;
         case MAPSEC_PETALBURG_CITY:
-            multi = TYPE_NORMAL;
+            multi = TYPE_NULL;
             break;
         case MAPSEC_FORTREE_CITY:
-            multi = TYPE_FLYING;
+            multi = TYPE_WIND;
             break;
         case MAPSEC_MOSSDEEP_CITY:
         case MAPSEC_SAFFRON_CITY:
-            multi = TYPE_PSYCHIC;
+            multi = TYPE_LIGHT;
             break;
         case MAPSEC_SOOTOPOLIS_CITY:
         case MAPSEC_CERULEAN_CITY:
             multi = TYPE_WATER;
             break;
         case MAPSEC_CELADON_CITY:
-            multi = TYPE_GRASS;
+            multi = TYPE_PLANT;
             break;
         case MAPSEC_FUCHSIA_CITY:
-            multi = TYPE_POISON;
+            multi = TYPE_FILTH;
             break;
         case MAPSEC_VIRIDIAN_CITY:
-            multi = TYPE_GROUND;
+            multi = TYPE_EARTH;
             break;
         default:
             multi = NUMBER_OF_MON_TYPES;

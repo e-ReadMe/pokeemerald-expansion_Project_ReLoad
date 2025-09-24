@@ -92,7 +92,7 @@ Now, to better understand Mewthree, we also need to understand Mew. Let's look a
         .baseSpeed     = 100,
         .baseSpAttack  = 100,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_PSYCHIC),
+        .types = MON_TYPES(TYPE_LIGHT),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 300,
@@ -200,7 +200,7 @@ Edit [src/data/pokemon/species_info.h](https://github.com/rh-hideout/pokeemerald
 +       .baseSpeed     = 140,
 +       .baseSpAttack  = 194,
 +       .baseSpDefense = 120,
-+       .types = MON_TYPES(TYPE_PSYCHIC),
++       .types = MON_TYPES(TYPE_LIGHT),
 +       .catchRate = 3,
 +       .expYield = 255,
 +       .evYield_SpAttack  = 3,
@@ -219,13 +219,13 @@ The `.` is the structure reference operator in C to refer to the member object o
 
 - `baseHP`, `baseAttack`, `baseDefense`, `baseSpeed`, `baseSpAttack` and `baseSpDefense` are the base stats. They can't go higher than 255.
 - `types` is using the macro `MON_TYPES` as a helper function for formatting so that only one type has to be input for species with a single type.
-    - To add a species with 2 types, use the format `MON_TYPES(TYPE_PSYCHIC, TYPE_NORMAL)`.
+    - To add a species with 2 types, use the format `MON_TYPES(TYPE_LIGHT, TYPE_NULL)`.
     - ***1.9 and earlier:*** The format for setting types is the following:
         ```c
         // Mono-type
-        .types = { TYPE_PSYCHIC, TYPE_PSYCHIC },
+        .types = { TYPE_LIGHT, TYPE_LIGHT },
         // Dual-type
-        .types = { TYPE_PSYCHIC, TYPE_DARK },
+        .types = { TYPE_LIGHT, TYPE_DARK },
         ```
 - `catchRate` is how likely it is to catch a Pokémon, the lower the value, the harder it is to catch. Legendaries generally have a catch rate of 3, so we put that here.
 - `expYield` is the base amount of experience that a Pokémon gives when defeated/caught. In vanilla, this value caps at 255, but we've increased it to a maximum of 65535 accomodate later gen's higher experience yields. (The highest official value is Blissey's with 608, so going beyond this point may cause exponential gains that could break the system 😱)

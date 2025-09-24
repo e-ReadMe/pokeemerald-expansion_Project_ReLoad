@@ -14806,9 +14806,9 @@ gBattleAnimMove_TerrainPulse::
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 7, RGB_BLACK
 	createvisualtask AnimTask_TerrainPulse, 0x5
 	jumpargeq 0x0, TYPE_ELECTRIC, TerrainPulseElectric
-	jumpargeq 0x0, TYPE_GRASS, TerrainPulseGrass
-	jumpargeq 0x0, TYPE_FAIRY, TerrainPulseFairy
-	jumpargeq 0x0, TYPE_PSYCHIC, TerrainPulsePsychic
+	jumpargeq 0x0, TYPE_PLANT, TerrainPulseGrass
+	jumpargeq 0x0, TYPE_PUPPET, TerrainPulseFairy
+	jumpargeq 0x0, TYPE_LIGHT, TerrainPulsePsychic
 TerrainPulseNormal:
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_DRAGON_PULSE, 0, 12, 12, RGB_WHITE
 	waitforvisualfinish
@@ -17870,7 +17870,7 @@ gBattleAnimMove_IvyCudgel::
 	playsewithpan SE_M_SWAGGER, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 12, 4, 2, 4
 	jumpifmovetypeequal TYPE_FIRE, IvyCudgelFire
-	jumpifmovetypeequal TYPE_ROCK, IvyCudgelRock
+	jumpifmovetypeequal TYPE_BEAST, IvyCudgelRock
 	jumpifmovetypeequal TYPE_WATER, IvyCudgelWater
 	createsprite gIvyCudgelSpriteTemplate, ANIM_TARGET, 2
 	delay 60
@@ -19502,24 +19502,24 @@ gBattleAnimMove_MagicalTorque::
 	end
 
 gBattleAnimMove_TeraBlast::
-	jumpifmovetypeequal TYPE_NORMAL, TeraBlastNormal
-	jumpifmovetypeequal TYPE_FIGHTING, TeraBlastFighting
-	jumpifmovetypeequal TYPE_FLYING, TeraBlastFlying
-	jumpifmovetypeequal TYPE_POISON, TeraBlastPoison
-	jumpifmovetypeequal TYPE_GROUND, TeraBlastGround
-	jumpifmovetypeequal TYPE_ROCK, TeraBlastRock
-	jumpifmovetypeequal TYPE_BUG, TeraBlastBug
-	jumpifmovetypeequal TYPE_GHOST, TeraBlastGhost
-	jumpifmovetypeequal TYPE_STEEL, TeraBlastSteel
+	jumpifmovetypeequal TYPE_NULL, TeraBlastNormal
+	jumpifmovetypeequal TYPE_COMBAT, TeraBlastFighting
+	jumpifmovetypeequal TYPE_WIND, TeraBlastFlying
+	jumpifmovetypeequal TYPE_FILTH, TeraBlastPoison
+	jumpifmovetypeequal TYPE_EARTH, TeraBlastGround
+	jumpifmovetypeequal TYPE_BEAST, TeraBlastRock
+	jumpifmovetypeequal TYPE_INSECT, TeraBlastBug
+	jumpifmovetypeequal TYPE_UNDEAD, TeraBlastGhost
+	jumpifmovetypeequal TYPE_METAL, TeraBlastSteel
 	jumpifmovetypeequal TYPE_FIRE, TeraBlastFire
 	jumpifmovetypeequal TYPE_WATER, TeraBlastWater
-	jumpifmovetypeequal TYPE_GRASS, TeraBlastGrass
+	jumpifmovetypeequal TYPE_PLANT, TeraBlastGrass
 	jumpifmovetypeequal TYPE_ELECTRIC, TeraBlastElectric
-	jumpifmovetypeequal TYPE_PSYCHIC, TeraBlastPsychic
+	jumpifmovetypeequal TYPE_LIGHT, TeraBlastPsychic
 	jumpifmovetypeequal TYPE_ICE, TeraBlastIce
 	jumpifmovetypeequal TYPE_DRAGON, TeraBlastDragon
 	jumpifmovetypeequal TYPE_DARK, TeraBlastDark
-	jumpifmovetypeequal TYPE_FAIRY, TeraBlastFairy
+	jumpifmovetypeequal TYPE_PUPPET, TeraBlastFairy
 	jumpifmovetypeequal TYPE_STELLAR, TeraBlastStellar
 	end
 TeraBlastNormal:

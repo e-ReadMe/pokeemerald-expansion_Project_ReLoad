@@ -23,7 +23,7 @@ NAMINGGFXDIR := graphics/naming_screen
 SPINDAGFXDIR := graphics/pokemon/spinda/spots
 TITLESCREENGFXDIR := graphics/title_screen
 
-types := none normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark fairy stellar vaccine data virus free light
+types := none null combat wind filth earth beast insect undead metal mystery fire water plant electric psychic ice dragon dark puppet stellar vaccine data virus free light
 contest_types := cool beauty cute smart tough
 
 ### Tilesets ###

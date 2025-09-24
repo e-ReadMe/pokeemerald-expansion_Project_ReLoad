@@ -81,7 +81,7 @@ SINGLE_BATTLE_TEST("Thunder Wave doesn't affect Electric types in Gen6+")
 SINGLE_BATTLE_TEST("Thunder Wave doesn't print an effectiveness message")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_PIDGEY].types[1] == TYPE_FLYING);
+        ASSUME(gSpeciesInfo[SPECIES_PIDGEY].types[1] == TYPE_WIND);
         PLAYER(SPECIES_PIDGEY);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

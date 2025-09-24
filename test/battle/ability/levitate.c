@@ -4,7 +4,7 @@
 SINGLE_BATTLE_TEST("Levitate activates when targeted by ground type moves")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_MUD_SLAP) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_MUD_SLAP) == TYPE_EARTH);
         PLAYER(SPECIES_LUNATONE) { Ability(ABILITY_LEVITATE); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Levitate activates when targeted by ground type moves")
 SINGLE_BATTLE_TEST("Levitate does not activate if protected")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_MUD_SLAP) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_MUD_SLAP) == TYPE_EARTH);
         PLAYER(SPECIES_LUNATONE) { Ability(ABILITY_LEVITATE); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -34,7 +34,7 @@ SINGLE_BATTLE_TEST("Levitate does not activate if protected")
 SINGLE_BATTLE_TEST("Levitate does not activate on status moves")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_SAND_ATTACK) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_SAND_ATTACK) == TYPE_EARTH);
         ASSUME(GetMoveCategory(MOVE_SAND_ATTACK) == DAMAGE_CATEGORY_STATUS);
         PLAYER(SPECIES_LUNATONE) { Ability(ABILITY_LEVITATE); }
         OPPONENT(SPECIES_WOBBUFFET);
@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Levitate does not activate on status moves")
 SINGLE_BATTLE_TEST("Levitate does not activate if attacked by an opponent with Mold Breaker")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_MUD_SLAP) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_MUD_SLAP) == TYPE_EARTH);
         PLAYER(SPECIES_LUNATONE) { Ability(ABILITY_LEVITATE); }
         OPPONENT(SPECIES_TINKATON) { Ability(ABILITY_MOLD_BREAKER); }
     } WHEN {
@@ -99,7 +99,7 @@ AI_SINGLE_BATTLE_TEST("Levitate is seen correctly by switch AI")
     PARAMETRIZE { ability = ABILITY_MOLD_BREAKER, item = ITEM_ABILITY_SHIELD ; }
 
     GIVEN {
-        ASSUME(GetMoveType(MOVE_MUD_SLAP) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_MUD_SLAP) == TYPE_EARTH);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_OMNISCIENT);
         PLAYER(SPECIES_TINKATON) { Ability(ability); Speed(3); }
         OPPONENT(SPECIES_PONYTA) { Level(1); Item(ITEM_EJECT_PACK); Moves(MOVE_OVERHEAT); Speed(4); } // Forces switchout

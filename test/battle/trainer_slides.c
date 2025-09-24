@@ -77,8 +77,8 @@ SINGLE_BATTLE_TEST("Trainer Slide: Player Lands First Super Effective Hit")
 
     GIVEN {
         ASSUME(GetMoveType(MOVE_BITE) == TYPE_DARK);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_PSYCHIC);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_PSYCHIC);
+        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_LIGHT);
+        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_LIGHT);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

@@ -93,7 +93,7 @@
  *   {
  *       GIVEN {
  *           ASSUME(IsPowderMove(MOVE_STUN_SPORE));
- *           ASSUME(GetSpeciesType(SPECIES_ODDISH, 0) == TYPE_GRASS);
+ *           ASSUME(GetSpeciesType(SPECIES_ODDISH, 0) == TYPE_PLANT);
  *           PLAYER(SPECIES_ODDISH); // 1.
  *           OPPONENT(SPECIES_ODDISH); // 2.
  *       } WHEN {

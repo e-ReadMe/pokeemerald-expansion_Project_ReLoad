@@ -3,32 +3,34 @@
 
 // Pokémon types
 #define TYPE_NONE             0
-#define TYPE_NORMAL           1
-#define TYPE_FIGHTING         2
-#define TYPE_FLYING           3
-#define TYPE_POISON           4
-#define TYPE_GROUND           5
-#define TYPE_ROCK             6
-#define TYPE_BUG              7
-#define TYPE_GHOST            8
-#define TYPE_STEEL            9
+#define TYPE_NULL           1// Null replaces Normal
+#define TYPE_COMBAT         2// Combat replaces Fighting
+#define TYPE_WIND           3// Wind Replaces Flying
+#define TYPE_FILTH           4// Filth Replaces Poison
+#define TYPE_EARTH           5// Earth Replaces Ground
+#define TYPE_BEAST             6// Beast Replaces Rock
+#define TYPE_INSECT              7// Insect Replaces Bug
+#define TYPE_UNDEAD            8// Undead Replaces Ghost
+#define TYPE_METAL            9// Metal Replaces Steel
 #define TYPE_MYSTERY          10
 #define TYPE_FIRE             11
 #define TYPE_WATER            12
-#define TYPE_GRASS            13
+#define TYPE_PLANT            13// Plant Replaces Grass
 #define TYPE_ELECTRIC         14
-#define TYPE_PSYCHIC          15
+#define TYPE_LIGHT          15// Light replaces psychic
 #define TYPE_ICE              16
 #define TYPE_DRAGON           17
 #define TYPE_DARK             18
-#define TYPE_FAIRY            19
+#define TYPE_PUPPET            19// Puppet Replaces Fairy
 #define TYPE_STELLAR          20
 #define TYPE_VACCINE		  21
 #define TYPE_VIRUS			  22
 #define TYPE_DATA			  23
 #define TYPE_FREE			  24
-#define TYPE_LIGHT			  25
-#define NUMBER_OF_MON_TYPES   26
+#define TYPE_NODAT			  25
+#define TYPE_UNKNOWN		  26
+#define TYPE_VARIABLE		  27
+#define NUMBER_OF_MON_TYPES   28
 
 // Pokémon egg groups
 #define EGG_GROUP_NONE                0
