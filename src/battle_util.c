@@ -8351,6 +8351,37 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
     if (IsFieldWaterSportAffected(ctx->moveType))
         modifier = uq4_12_multiply(modifier, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5));
 
+    //The attribute system. vaccine / data / virus type matchup multipliers that are independant of move type
+   
+
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_VACCINE)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_VIRUS))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+
+
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_VIRUS)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_DATA))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+            
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_DATA)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_VACCINE))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_VACCINE)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_DATA))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
+
+
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_VIRUS)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_VACCINE))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
+            
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_DATA)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_VIRUS))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
+
+
+
     // attacker's abilities
     switch (ctx->abilityAtk)
     {

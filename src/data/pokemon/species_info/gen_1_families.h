@@ -509,7 +509,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 100,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 109 : 85,
         .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_DARK, TYPE_PUPPET),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_FIRE, TYPE_PUPPET),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 267,
