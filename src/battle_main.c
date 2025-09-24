@@ -4090,6 +4090,8 @@ u8 IsRunningFromBattleImpossible(u32 battler)
         return BATTLE_RUN_SUCCESS;
     if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return BATTLE_RUN_SUCCESS;
+    if (GetBattlerAbility(battler) == ABILITY_TACTICAL_RETREAT)
+        return BATTLE_RUN_SUCCESS;
 
     if ((i = IsAbilityPreventingEscape(battler)))
     {

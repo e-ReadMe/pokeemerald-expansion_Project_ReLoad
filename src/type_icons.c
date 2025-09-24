@@ -183,7 +183,6 @@ const union AnimCmd sSpriteAnim_TypeIcon_Nodat[] =
     ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_NODAT), 0),
     ANIMCMD_END
 };
-
 const union AnimCmd sSpriteAnim_TypeIcon_Unknown[] =
 {
     ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_UNKNOWN), 0),

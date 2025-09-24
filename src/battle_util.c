@@ -8525,7 +8525,71 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
             break;
         case ABILITY_STEELY_SPIRIT:
             if (moveType == TYPE_METAL)
-                modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.15));
+            break;
+        case ABILITY_ANCIENT_WARRIOR:
+            if (moveType == TYPE_NEUTRAL)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_VIRUS_BUSTER:
+            if (moveType == TYPE_LIGHT)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_ANIMAL_COLOSSEUM:
+            if (moveType == TYPE_BEAST)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_VOLCANIC_BEAT:
+            if (moveType == TYPE_FIRE)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_DRAGONS_ROAR:
+            if (moveType == TYPE_DRAGON)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_DEEP_SAVERS:
+            if (moveType == TYPE_WATER)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_BLIZZARD_FANG:
+            if (moveType == TYPE_ICE)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_IMPULSE_CITY:
+            if (moveType == TYPE_ELECTRIC)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_WIND_GUARDIANS:
+            if (moveType == TYPE_WIND)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_TITAN_OF_DUST:
+            if (moveType == TYPE_EARTH)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_METAL_EMPIRE:
+            if (moveType == TYPE_METAL)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_NIGHT_SOLDIER:
+            if (moveType == TYPE_UNDEAD)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_FABLE_WALTZ:
+            if (moveType == TYPE_PUPPET)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_NATURE_SPIRIT:
+            if (moveType == TYPE_PLANT)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_JUNGLE_TROOPERS:
+            if (moveType == TYPE_INSECT)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
+            break;
+        case ABILITY_DYNASTY_OF_EVIL:
+            if (moveType == TYPE_DARK)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
             break;
         }
     }
@@ -8746,6 +8810,72 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
     case ABILITY_OVERGROW:
         if (moveType == TYPE_PLANT && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+
+        //digimon abilities that boost type damage
+    case ABILITY_ANCIENT_WARRIOR:
+        if (moveType == TYPE_NEUTRAL)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_VIRUS_BUSTER:
+        if (moveType == TYPE_LIGHT)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_ANIMAL_COLOSSEUM:
+        if (moveType == TYPE_BEAST)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_VOLCANIC_BEAT:
+        if (moveType == TYPE_FIRE)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_DRAGONS_ROAR:
+        if (moveType == TYPE_DRAGON)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_DEEP_SAVERS:
+        if (moveType == TYPE_WATER)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_BLIZZARD_FANG:
+        if (moveType == TYPE_ICE)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_IMPULSE_CITY:
+        if (moveType == TYPE_ELECTRIC)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_WIND_GUARDIANS:
+        if (moveType == TYPE_WIND)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_TITAN_OF_DUST:
+        if (moveType == TYPE_EARTH)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_METAL_EMPIRE:
+        if (moveType == TYPE_METAL)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_NIGHT_SOLDIER:
+        if (moveType == TYPE_UNDEAD)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_FABLE_WALTZ:
+        if (moveType == TYPE_PUPPET)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_NATURE_SPIRIT:
+        if (moveType == TYPE_PLANT)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_JUNGLE_TROOPERS:
+        if (moveType == TYPE_INSECT)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
+        break;
+    case ABILITY_DYNASTY_OF_EVIL:
+        if (moveType == TYPE_DARK)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
         break;
     case ABILITY_PLUS:
         if (IsBattleMoveSpecial(move) && IsBattlerAlive(BATTLE_PARTNER(battlerAtk)))
