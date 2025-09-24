@@ -5835,7 +5835,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
     enum Gimmick gimmick = GetActiveGimmick(battler);
 
     if (move == MOVE_STRUGGLE)
-        return TYPE_NULL;
+        return TYPE_NEUTRAL;
 
     if (state == MON_IN_BATTLE)
     {
@@ -5947,7 +5947,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
             else if (type2 != TYPE_MYSTERY && !(gDisableStructs[battler].roostActive && type2 == TYPE_WIND))
                 return type2;
             else if (gDisableStructs[battler].roostActive)
-                return (B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NULL : TYPE_MYSTERY);
+                return (B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NEUTRAL : TYPE_MYSTERY);
             else if (type3 != TYPE_MYSTERY)
                 return type3;
             else
@@ -6036,7 +6036,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
     {
         return TYPE_DARK;
     }
-    else if (moveType == TYPE_NULL
+    else if (moveType == TYPE_NEUTRAL
           && ability != ABILITY_NORMALIZE
           && gimmick != GIMMICK_DYNAMAX
           && gimmick != GIMMICK_Z_MOVE)
@@ -6056,7 +6056,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
     {
         if (state == MON_IN_BATTLE && gimmick != GIMMICK_DYNAMAX)
             gBattleStruct->battlerState[battler].ateBoost = TRUE;
-        return TYPE_NULL;
+        return TYPE_NEUTRAL;
     }
 
     return TYPE_NONE;
@@ -6081,7 +6081,7 @@ void SetTypeBeforeUsingMove(u32 move, u32 battler)
         gBattleStruct->dynamicMoveType = moveType | F_DYNAMIC_TYPE_SET;
 
     moveType = GetBattleMoveType(move);
-    if ((gFieldStatuses & STATUS_FIELD_ION_DELUGE && moveType == TYPE_NULL)
+    if ((gFieldStatuses & STATUS_FIELD_ION_DELUGE && moveType == TYPE_NEUTRAL)
      || gBattleMons[battler].volatiles.electrified)
         gBattleStruct->dynamicMoveType = TYPE_ELECTRIC | F_DYNAMIC_TYPE_SET;
 

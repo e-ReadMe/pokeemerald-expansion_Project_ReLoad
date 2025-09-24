@@ -59,7 +59,7 @@ const struct Coords16 sTypeIconPositions[][2] =
 
 const union AnimCmd sSpriteAnim_TypeIcon_Null[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_NULL), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_NEUTRAL), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Combat[] =
@@ -199,7 +199,7 @@ const union AnimCmd sSpriteAnim_TypeIcon_Variable[] =
 const union AnimCmd *const sSpriteAnimTable_TypeIcons[] =
 {
     [TYPE_NONE] =       sSpriteAnim_TypeIcon_Mystery,
-    [TYPE_NULL] =     sSpriteAnim_TypeIcon_Null,
+    [TYPE_NEUTRAL] =     sSpriteAnim_TypeIcon_Null,
     [TYPE_COMBAT] =   sSpriteAnim_TypeIcon_Combat,
     [TYPE_WIND] =     sSpriteAnim_TypeIcon_Wind,
     [TYPE_FILTH] =     sSpriteAnim_TypeIcon_Filth,

@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Tar Shot does not affect Pokemon that are Terastallized")
 {
     s16 damage[2];
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NULL); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_WOBBUFFET) ;
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_EMBER); }
@@ -68,7 +68,7 @@ SINGLE_BATTLE_TEST("Tar Shot does affect Pokemon that Terastallized after Tar Sh
 {
     s16 damage[2];
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NULL); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_WOBBUFFET) ;
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBER); }

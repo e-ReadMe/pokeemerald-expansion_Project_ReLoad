@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
+    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
     ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
 }
 

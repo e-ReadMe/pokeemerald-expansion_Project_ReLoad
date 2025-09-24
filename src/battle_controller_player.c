@@ -1691,7 +1691,7 @@ static void MoveSelectionDisplayMoveType(u32 battler)
     else if (GetMoveCategory(move) == DAMAGE_CATEGORY_STATUS
              && (GetActiveGimmick(battler) == GIMMICK_DYNAMAX || IsGimmickSelected(battler, GIMMICK_DYNAMAX)))
     {
-        type = TYPE_NULL; // Max Guard is always a Normal-type move
+        type = TYPE_NEUTRAL; // Max Guard is always a Normal-type move
     }
     else if (effect == EFFECT_TERA_STARSTORM)
     {

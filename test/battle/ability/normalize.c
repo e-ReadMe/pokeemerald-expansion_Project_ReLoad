@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(GetMoveType(MOVE_TACKLE) == TYPE_NULL);
+    ASSUME(GetMoveType(MOVE_TACKLE) == TYPE_NEUTRAL);
     ASSUME(GetMovePower(MOVE_TACKLE) > 0);
     ASSUME(GetMoveType(MOVE_WATER_GUN) == TYPE_WATER);
     ASSUME(GetMovePower(MOVE_WATER_GUN) > 0);
@@ -191,7 +191,7 @@ SINGLE_BATTLE_TEST("Normalize doesn't affect Weather Ball's type", s16 damage)
     PARAMETRIZE { move = MOVE_SUNNY_DAY; ability = ABILITY_NORMALIZE; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
-        ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NEUTRAL);
         ASSUME(GetSpeciesType(SPECIES_MEGANIUM, 0) == TYPE_PLANT);
         PLAYER(SPECIES_SKITTY) { Ability(ability); }
         OPPONENT(SPECIES_MEGANIUM);

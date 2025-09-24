@@ -176,8 +176,8 @@ SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's 1st and 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, player);
         MESSAGE("Wobbuffet became the same type as the opposing Arcanine!");
     } THEN {
-        EXPECT_EQ(player->types[0], TYPE_NULL);
-        EXPECT_EQ(player->types[1], TYPE_NULL);
+        EXPECT_EQ(player->types[0], TYPE_NEUTRAL);
+        EXPECT_EQ(player->types[1], TYPE_NEUTRAL);
         EXPECT_EQ(player->types[2], TYPE_PLANT);
     }
 }
@@ -185,7 +185,7 @@ SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's 1st and 
 SINGLE_BATTLE_TEST("Reflect Type fails if the user is Terastallized")
 {
     GIVEN {
-        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NULL); }
+        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_POLIWRATH);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE, gimmick: GIMMICK_TERA); }
@@ -202,17 +202,17 @@ SINGLE_BATTLE_TEST("Reflect Type fails if the user is Terastallized")
 SINGLE_BATTLE_TEST("Reflect Type succeeds against a Terastallized target and copies its Tera type")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 0) != TYPE_NULL);
-        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) != TYPE_NULL);
-        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NULL); }
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 0) != TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) != TYPE_NEUTRAL);
+        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_POLIWRATH);
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_REFLECT_TYPE); }
     } SCENE {
         MESSAGE("The opposing Poliwrath used Reflect Type!");
     } THEN {
-        EXPECT_EQ(opponent->types[0], TYPE_NULL);
-        EXPECT_EQ(opponent->types[1], TYPE_NULL);
-        EXPECT_EQ(opponent->types[2], TYPE_NULL);
+        EXPECT_EQ(opponent->types[0], TYPE_NEUTRAL);
+        EXPECT_EQ(opponent->types[1], TYPE_NEUTRAL);
+        EXPECT_EQ(opponent->types[2], TYPE_NEUTRAL);
     }
 }

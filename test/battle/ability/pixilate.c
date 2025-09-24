@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
+    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
     ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
 }
 
@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Pixilate doesn't affect Weather Ball's type", s16 damage)
     PARAMETRIZE { move = MOVE_SUNNY_DAY; ability = ABILITY_PIXILATE; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
-        ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NEUTRAL);
         ASSUME(GetSpeciesType(SPECIES_PINSIR, 0) == TYPE_INSECT);
         PLAYER(SPECIES_SYLVEON) { Level(5); Ability(ability); }
         OPPONENT(SPECIES_PINSIR);

@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Explosion causes the user to faint even if it misses")
 SINGLE_BATTLE_TEST("Explosion causes the user to faint even if it has no effect")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_EXPLOSION) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_EXPLOSION) == TYPE_NEUTRAL);
         ASSUME(GetSpeciesType(SPECIES_GASTLY, 0) == TYPE_UNDEAD);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_GASTLY);

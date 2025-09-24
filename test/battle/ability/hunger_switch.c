@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Hunger Switch does not switch a mon transformed into Morpeko
 SINGLE_BATTLE_TEST("Hunger Switch does not switch Morpeko's form when Terastallized")
 {
     GIVEN {
-        PLAYER(SPECIES_MORPEKO) { Ability(ABILITY_HUNGER_SWITCH); TeraType(TYPE_NULL); }
+        PLAYER(SPECIES_MORPEKO) { Ability(ABILITY_HUNGER_SWITCH); TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { }
@@ -56,7 +56,7 @@ SINGLE_BATTLE_TEST("Hunger Switch does not switch Morpeko's form after switching
     KNOWN_FAILING; // #7062
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ROAR) == EFFECT_ROAR);
-        PLAYER(SPECIES_MORPEKO) { Ability(ABILITY_HUNGER_SWITCH); TeraType(TYPE_NULL); }
+        PLAYER(SPECIES_MORPEKO) { Ability(ABILITY_HUNGER_SWITCH); TeraType(TYPE_NEUTRAL); }
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

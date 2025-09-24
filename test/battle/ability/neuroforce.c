@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Neuroforce increases the strength of super-effective moves b
     PARAMETRIZE { ability = ABILITY_KLUTZ; move = MOVE_SCRATCH; }
     GIVEN {
         ASSUME(GetMoveType(MOVE_SHADOW_BALL) == TYPE_UNDEAD);
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
         PLAYER(SPECIES_NECROZMA_ULTRA) { Ability(ability); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

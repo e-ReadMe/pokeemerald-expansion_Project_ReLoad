@@ -115,7 +115,7 @@ static const struct MenuInfoIcon sMenuInfoIcons[] =
 {   // { width, height, offset }
     { 12, 12, 0x00 },  // Unused
     [TYPE_NONE + 1]     = { 32, 12, 0xA4 }, // Copy of TYPE_MYSTERY's
-    [TYPE_NULL + 1]   = { 32, 12, 0x20 },
+    [TYPE_NEUTRAL + 1]   = { 32, 12, 0x20 },
     [TYPE_COMBAT + 1] = { 32, 12, 0x64 },
     [TYPE_WIND + 1]   = { 32, 12, 0x60 },
     [TYPE_FILTH + 1]   = { 32, 12, 0x80 },

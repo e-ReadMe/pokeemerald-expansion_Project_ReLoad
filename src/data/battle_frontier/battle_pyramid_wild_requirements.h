@@ -228,7 +228,7 @@ static const struct BattlePyramidRequirement sBattlePyramidRequirementsByRound[]
     },
     [19] = /* normal with powerful moves */
     {
-        .type = TYPE_NULL,
+        .type = TYPE_NEUTRAL,
         .moves = sPowerfulNormalMoves,
         .nMoves = NELEMS(sPowerfulNormalMoves),
     },

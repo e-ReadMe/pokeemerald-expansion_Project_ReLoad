@@ -6382,7 +6382,7 @@ const struct Item gItemsInfo[] =
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_NULL,
+        .secondaryId = TYPE_NEUTRAL,
         .iconPic = gItemIcon_NormalGem,
         .iconPalette = gItemIconPalette_NormalGem,
     },
@@ -6725,7 +6725,7 @@ const struct Item gItemsInfo[] =
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_NULL,
+        .secondaryId = TYPE_NEUTRAL,
         .iconPic = gItemIcon_NormaliumZ,
         .iconPalette = gItemIconPalette_NormaliumZ,
     },
@@ -7978,7 +7978,7 @@ const struct Item gItemsInfo[] =
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_NULL,
+        .secondaryId = TYPE_NEUTRAL,
         .flingPower = 10,
         .iconPic = gItemIcon_SilkScarf,
         .iconPalette = gItemIconPalette_SilkScarf,
@@ -10317,7 +10317,7 @@ const struct Item gItemsInfo[] =
         .pluralName = ITEM_PLURAL_NAME("Chilan Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
-        .holdEffectParam = TYPE_NULL,
+        .holdEffectParam = TYPE_NEUTRAL,
         .description = COMPOUND_STRING(
             "A hold item that\n"
             "weakens a Normal\n"

@@ -10784,7 +10784,7 @@ static void Cmd_tryconversiontypechange(void)
                 if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_UNDEAD))
                     moveType = TYPE_UNDEAD;
                 else
-                    moveType = TYPE_NULL;
+                    moveType = TYPE_NEUTRAL;
             }
             if (moveType != gBattleMons[gBattlerAttacker].types[0]
                 && moveType != gBattleMons[gBattlerAttacker].types[1]
@@ -10811,7 +10811,7 @@ static void Cmd_tryconversiontypechange(void)
                     if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_UNDEAD))
                         moveType = TYPE_UNDEAD;
                     else
-                        moveType = TYPE_NULL;
+                        moveType = TYPE_NEUTRAL;
                 }
             }
             while (moveType == gBattleMons[gBattlerAttacker].types[0] || moveType == gBattleMons[gBattlerAttacker].types[1] || moveType == gBattleMons[gBattlerAttacker].types[2]);
@@ -15299,8 +15299,8 @@ void BS_TryReflectType(void)
     }
     else if (targetTypes[0] == TYPE_MYSTERY && targetTypes[1] == TYPE_MYSTERY && targetTypes[2] != TYPE_MYSTERY)
     {
-        gBattleMons[gBattlerAttacker].types[0] = TYPE_NULL;
-        gBattleMons[gBattlerAttacker].types[1] = TYPE_NULL;
+        gBattleMons[gBattlerAttacker].types[0] = TYPE_NEUTRAL;
+        gBattleMons[gBattlerAttacker].types[1] = TYPE_NEUTRAL;
         gBattleMons[gBattlerAttacker].types[2] = targetTypes[2];
         gBattlescriptCurrInstr = cmd->nextInstr;
     }

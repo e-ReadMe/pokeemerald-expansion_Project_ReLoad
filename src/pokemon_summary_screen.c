@@ -832,7 +832,7 @@ static const union AnimCmd sSpriteAnim_TypeNone[] = {
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TypeNormal[] = {
-    ANIMCMD_FRAME(TYPE_NULL * 8, 0, FALSE, FALSE),
+    ANIMCMD_FRAME(TYPE_NEUTRAL * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TypeFighting[] = {
@@ -961,7 +961,7 @@ static const union AnimCmd sSpriteAnim_CategoryTough[] = {
 };
 static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES + CONTEST_CATEGORIES_COUNT] = {
     [TYPE_NONE] = sSpriteAnim_TypeNone,
-    [TYPE_NULL] = sSpriteAnim_TypeNormal,
+    [TYPE_NEUTRAL] = sSpriteAnim_TypeNormal,
     [TYPE_COMBAT] = sSpriteAnim_TypeFighting,
     [TYPE_WIND] = sSpriteAnim_TypeFlying,
     [TYPE_FILTH] = sSpriteAnim_TypePoison,

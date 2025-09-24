@@ -9,7 +9,7 @@ SINGLE_BATTLE_TEST("(TERA) Terastallizing into a different type preserves other 
     PARAMETRIZE { tera = GIMMICK_NONE; }
     PARAMETRIZE { tera = GIMMICK_TERA; }
     GIVEN {
-        PLAYER(SPECIES_BULBASAUR) { TeraType(TYPE_NULL); }
+        PLAYER(SPECIES_BULBASAUR) { TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_VINE_WHIP, gimmick: tera); }
@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("(TERA) Terastallizing into a different type gives that type 
     PARAMETRIZE { tera = GIMMICK_NONE; }
     PARAMETRIZE { tera = GIMMICK_TERA; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NULL); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_HEADBUTT, gimmick: tera); }
@@ -154,7 +154,7 @@ SINGLE_BATTLE_TEST("(TERA) Terastallization's 60 BP floor does not apply to mult
     PARAMETRIZE { tera = GIMMICK_NONE; }
     PARAMETRIZE { tera = GIMMICK_TERA; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NULL); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_FURY_SWIPES, gimmick: tera); }
@@ -173,7 +173,7 @@ SINGLE_BATTLE_TEST("(TERA) Terastallization's 60 BP floor does not apply to prio
     PARAMETRIZE { tera = GIMMICK_NONE; }
     PARAMETRIZE { tera = GIMMICK_TERA; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NULL); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_QUICK_ATTACK, gimmick: tera); }
@@ -396,7 +396,7 @@ SINGLE_BATTLE_TEST("(TERA) Revelation Dance uses a Terastallized Pokemon's Tera 
 {
     GIVEN {
         ASSUME(P_GEN_7_POKEMON);
-        PLAYER(SPECIES_ORICORIO) { TeraType(TYPE_NULL); }
+        PLAYER(SPECIES_ORICORIO) { TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_GENGAR);
     } WHEN {
         TURN { MOVE(player, MOVE_REVELATION_DANCE, gimmick: GIMMICK_TERA); }
@@ -685,7 +685,7 @@ SINGLE_BATTLE_TEST("(TERA) Stellar type's one-time boost factors in dynamically-
 {
     s16 damage[4];
     GIVEN {
-        ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NEUTRAL);
         PLAYER(SPECIES_PELIPPER) { Ability(ABILITY_DRIZZLE); TeraType(TYPE_STELLAR); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -728,8 +728,8 @@ SINGLE_BATTLE_TEST("(TERA) Terapagos retains the Stellar type boost at all times
     PARAMETRIZE { move = MOVE_SCRATCH; }
     PARAMETRIZE { move = MOVE_MACH_PUNCH; }
     GIVEN {
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
-        ASSUME(GetMoveType(MOVE_MACH_PUNCH) != TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
+        ASSUME(GetMoveType(MOVE_MACH_PUNCH) != TYPE_NEUTRAL);
         PLAYER(SPECIES_TERAPAGOS);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -824,7 +824,7 @@ SINGLE_BATTLE_TEST("(TERA) All type indicators function correctly")
 {
     u32 type;
     PARAMETRIZE { type = TYPE_NONE; }
-    PARAMETRIZE { type = TYPE_NULL; }
+    PARAMETRIZE { type = TYPE_NEUTRAL; }
     PARAMETRIZE { type = TYPE_COMBAT; }
     PARAMETRIZE { type = TYPE_WIND; }
     PARAMETRIZE { type = TYPE_FILTH; }
@@ -856,7 +856,7 @@ SINGLE_BATTLE_TEST("(TERA) All type indicators function correctly - Opponent")
 {
     u32 type;
     PARAMETRIZE { type = TYPE_NONE; }
-    PARAMETRIZE { type = TYPE_NULL; }
+    PARAMETRIZE { type = TYPE_NEUTRAL; }
     PARAMETRIZE { type = TYPE_COMBAT; }
     PARAMETRIZE { type = TYPE_WIND; }
     PARAMETRIZE { type = TYPE_FILTH; }

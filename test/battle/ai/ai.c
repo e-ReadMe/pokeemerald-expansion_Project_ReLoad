@@ -515,7 +515,7 @@ AI_SINGLE_BATTLE_TEST("AI will choose Scratch over Power-up Punch with Contrary"
     PARAMETRIZE {ability = ABILITY_CONTRARY; }
     GIVEN {
         ASSUME(GetMovePower(MOVE_SCRATCH) == 40);
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
         ASSUME(GetMovePower(MOVE_POWER_UP_PUNCH) == 40);
         ASSUME(GetMoveType(MOVE_POWER_UP_PUNCH) == TYPE_COMBAT);
         ASSUME(GetSpeciesType(SPECIES_SQUIRTLE, 0) == TYPE_WATER);

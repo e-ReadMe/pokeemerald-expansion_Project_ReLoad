@@ -13,9 +13,9 @@
 
 const uq4_12_t gTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPES] =
 {//                   Defender -->
- //  Attacker                None   Null    Combat   Wind   Filth   Earth    Beast   Insect  Undead  Metal  Mystery  Fire   Water   Plant  Electric Light    Ice   Dragon   Dark   Puppet   Stellar Vaccine Virus    Data    Free  NoData  Unknown  variable
+ //  Attacker              None   Neutral  Combat   Wind   Filth   Earth    Beast   Insect  Undead  Metal  Mystery  Fire   Water   Plant  Electric Light    Ice   Dragon   Dark   Puppet   Stellar Vaccine Virus    Data    Free  NoData  Unknown variable
     [TYPE_NONE]         = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
-    [TYPE_NULL]         = {______, ______, ______, ______, ______, ______, X(0.5), ______, X(0.0), X(0.5), ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
+    [TYPE_NEUTRAL]      = {______, ______, ______, ______, ______, ______, X(0.5), ______, X(0.0), X(0.5), ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
     [TYPE_COMBAT]       = {______, X(2.0), ______, X(0.5), X(0.5), ______, X(2.0), X(0.5), X(0.0), X(2.0), ______, ______, ______, ______, ______, X(0.5), X(2.0), ______, X(2.0), X(0.5), ______, ______, ______, ______, ______, ______, ______, ______},
     [TYPE_WIND]         = {______, ______, X(2.0), ______, ______, ______, X(0.5), X(2.0), ______, X(0.5), ______, ______, ______, X(2.0), X(0.5), ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
     [TYPE_FILTH]        = {______, ______, ______, ______, X(0.5), X(0.5), X(0.5), BUG_RS, X(0.5), X(0.0), ______, ______, ______, X(2.0), ______, ______, ______, ______, ______, X(2.0), ______, ______, ______, ______, ______, ______, ______, ______},
@@ -39,10 +39,11 @@ const uq4_12_t gTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPES]
     [TYPE_VIRUS]        = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, X(0.5), ______, X(2.0), ______, ______, ______, ______},
     [TYPE_DATA]         = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, X(2.0), X(0.5), ______, ______, ______, ______, ______},
     [TYPE_FREE]         = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
-    [TYPE_NODAT]       = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
+    [TYPE_NODAT]        = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
     [TYPE_UNKNOWN]      = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
+    [TYPE_VARIABLE]      = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
 };
-
+//IF YOUR ADDING NEW TYPES MAKE SURE TO UPDATE THE TYPE LIST IN GRAPHICS_FILE_RULES.MK
 #undef ______
 #undef X
 
@@ -66,10 +67,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         .isSpecialCaseType = TRUE,
         .isHiddenPowerType = FALSE,
     },
-    [TYPE_NULL] =
+    [TYPE_NEUTRAL] =
     {
-        .name = _("Null"),
-        .generic = _("a NULL move"),
+        .name = _("Neutral"),
+        .generic = _("a NEUTRAL move"),
         .palette = 13,
         .zMove = MOVE_BREAKNECK_BLITZ,
         .maxMove = MOVE_MAX_STRIKE,
@@ -112,7 +113,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Wind"),
         .generic = _("a WIND move"),
-        .palette = 14,
+        .palette = 15,
         .zMove = MOVE_SUPERSONIC_SKYSTRIKE,
         .maxMove = MOVE_MAX_AIRSTREAM,
         .teraTypeRGBValue = RGB(31, 26, 7),
@@ -134,7 +135,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Filth"),
         .generic = _("a FILTH move"),
-        .palette = 14,
+        .palette = 15,
         .zMove = MOVE_ACID_DOWNPOUR,
         .maxMove = MOVE_MAX_OOZE,
         .teraTypeRGBValue = RGB(26, 10, 25), // custom
@@ -156,7 +157,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Earth"),
         .generic = _("an EARTH move"),
-        .palette = 13,
+        .palette = 14,
         .zMove = MOVE_TECTONIC_RAGE,
         .maxMove = MOVE_MAX_QUAKE,
         .teraTypeRGBValue = RGB(25, 23, 18),
@@ -178,7 +179,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Beast"),
         .generic = _("a BEAST move"),
-        .palette = 13,
+        .palette = 14,
         .zMove = MOVE_CONTINENTAL_CRUSH,
         .maxMove = MOVE_MAX_ROCKFALL,
         .teraTypeRGBValue = RGB(18, 16, 8), // custom
@@ -200,7 +201,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Insect"),
         .generic = _("an INSECT move"),
-        .palette = 15,
+        .palette = 14,
         .zMove = MOVE_SAVAGE_SPIN_OUT,
         .maxMove = MOVE_MAX_FLUTTERBY,
         .teraTypeRGBValue = RGB(18, 24, 6),
@@ -222,7 +223,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Undead"),
         .generic = _("an UNDEAD move"),
-        .palette = 14,
+        .palette = 15,
         .zMove = MOVE_NEVER_ENDING_NIGHTMARE,
         .maxMove = MOVE_MAX_PHANTASM,
         .teraTypeRGBValue = RGB(12, 10, 16),
@@ -299,7 +300,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Water"),
         .generic = _("a WATER move"),
-        .palette = 14,
+        .palette = 15,
         .zMove = MOVE_HYDRO_VORTEX,
         .maxMove = MOVE_MAX_GEYSER,
         .teraTypeRGBValue = RGB(10, 18, 27),
@@ -321,7 +322,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Plant"),
         .generic = _("a PLANT move"),
-        .palette = 15,
+        .palette = 14,
         .zMove = MOVE_BLOOM_DOOM,
         .maxMove = MOVE_MAX_OVERGROWTH,
         .teraTypeRGBValue = RGB(12, 24, 11),
@@ -343,7 +344,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Electric"),
         .generic = _("an ELECTRIC move"),
-        .palette = 13,
+        .palette = 14,
         .zMove = MOVE_GIGAVOLT_HAVOC,
         .maxMove = MOVE_MAX_LIGHTNING,
         .teraTypeRGBValue = RGB(30, 26, 7),
@@ -365,7 +366,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Light"),
         .generic = _("a Light move"),
-        .palette = 13,
+        .palette = 14,
         .zMove = MOVE_SHATTERED_PSYCHE,
         .maxMove = MOVE_MAX_MINDSTORM,
         .teraTypeRGBValue = RGB(31, 14, 15),
@@ -387,7 +388,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Ice"),
         .generic = _("an ICE move"),
-        .palette = 14,
+        .palette = 15,
         .zMove = MOVE_SUBZERO_SLAMMER,
         .maxMove = MOVE_MAX_HAILSTORM,
         .teraTypeRGBValue = RGB(14, 26, 25),
@@ -409,7 +410,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Dragon"),
         .generic = _("a DRAGON move"),
-        .palette = 15,
+        .palette = 13,
         .zMove = MOVE_DEVASTATING_DRAKE,
         .maxMove = MOVE_MAX_WYRMWIND,
         .teraTypeRGBValue = RGB(10, 18, 27),
@@ -431,7 +432,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Dark"),
         .generic = _("a DARK move"),
-        .palette = 13,
+        .palette = 15,
         .zMove = MOVE_BLACK_HOLE_ECLIPSE,
         .maxMove = MOVE_MAX_DARKNESS,
         .teraTypeRGBValue = RGB(6, 5, 8),
@@ -453,7 +454,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Puppet"),
         .generic = _("a PUPPET move"),
-        .palette = 14,
+        .palette = 13,
         .zMove = MOVE_TWINKLE_TACKLE,
         .maxMove = MOVE_MAX_STARFALL,
         .teraTypeRGBValue = RGB(31, 15, 21),

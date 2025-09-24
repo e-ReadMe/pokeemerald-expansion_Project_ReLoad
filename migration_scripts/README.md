@@ -88,7 +88,7 @@ Refactors all battle animation move scripts, removing the list from `data/battle
             "forelegs or tail."),
         .effect = EFFECT_HIT,
         .power = 40,
-        .type = TYPE_NULL,
+        .type = TYPE_NEUTRAL,
         .accuracy = 100,
         .pp = 35,
         .target = MOVE_TARGET_SELECTED,

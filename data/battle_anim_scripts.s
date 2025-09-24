@@ -19502,7 +19502,7 @@ gBattleAnimMove_MagicalTorque::
 	end
 
 gBattleAnimMove_TeraBlast::
-	jumpifmovetypeequal TYPE_NULL, TeraBlastNormal
+	jumpifmovetypeequal TYPE_NEUTRAL, TeraBlastNormal
 	jumpifmovetypeequal TYPE_COMBAT, TeraBlastFighting
 	jumpifmovetypeequal TYPE_WIND, TeraBlastFlying
 	jumpifmovetypeequal TYPE_FILTH, TeraBlastPoison

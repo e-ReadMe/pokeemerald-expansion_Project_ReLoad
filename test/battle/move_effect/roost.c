@@ -7,7 +7,7 @@ ASSUMPTIONS
     ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_WIND);
     ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_WIND);
     // One attack of each type to verify typelessness
-    ASSUME(GetMoveType(MOVE_POUND) == TYPE_NULL);
+    ASSUME(GetMoveType(MOVE_POUND) == TYPE_NEUTRAL);
     ASSUME(GetMoveType(MOVE_KARATE_CHOP) == TYPE_COMBAT);
     ASSUME(GetMoveType(MOVE_GUST) == TYPE_WIND);
     ASSUME(GetMoveType(MOVE_POISON_STING) == TYPE_FILTH);
@@ -272,7 +272,7 @@ SINGLE_BATTLE_TEST("Roost prevents a Flying-type user from being protected by De
 SINGLE_BATTLE_TEST("Roost does not undo other type-changing effects at the end of the turn")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 0) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 0) == TYPE_NEUTRAL);
         ASSUME(GetSpeciesType(SPECIES_SWELLOW, 1) == TYPE_WIND);
         PLAYER(SPECIES_SWELLOW) { HP(1); }
         OPPONENT(SPECIES_WOBBUFFET);
@@ -296,7 +296,7 @@ SINGLE_BATTLE_TEST("Roost does not undo other type-changing effects at the end o
 SINGLE_BATTLE_TEST("Roost's effect is lifted after Grassy Terrain's healing")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 0) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 0) == TYPE_NEUTRAL);
         ASSUME(GetSpeciesType(SPECIES_SWELLOW, 1) == TYPE_WIND);
         PLAYER(SPECIES_SWELLOW) { HP(1); Ability(ABILITY_GRASSY_SURGE); }
         OPPONENT(SPECIES_WOBBUFFET);
@@ -315,7 +315,7 @@ SINGLE_BATTLE_TEST("Roost's effect is lifted after Grassy Terrain's healing")
 SINGLE_BATTLE_TEST("Roost's suppression prevents Reflect Type from copying any Flying typing")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 0) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 0) == TYPE_NEUTRAL);
         ASSUME(GetSpeciesType(SPECIES_SWELLOW, 1) == TYPE_WIND);
         ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_LIGHT);
         ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) == TYPE_LIGHT);

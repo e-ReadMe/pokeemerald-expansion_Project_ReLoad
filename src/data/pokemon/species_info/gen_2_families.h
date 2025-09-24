@@ -740,7 +740,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 35,
         .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 43 : 57,
         .evYield_Attack = 1,
@@ -810,7 +810,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 90,
         .baseSpAttack  = 45,
         .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 90,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 145 : 116,
         .evYield_Speed = 2,
@@ -878,7 +878,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 36,
         .baseSpDefense = 56,
-        .types = MON_TYPES(TYPE_NULL, TYPE_WIND),
+        .types = MON_TYPES(TYPE_NEUTRAL, TYPE_WIND),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 52 : 58,
         .evYield_HP = 1,
@@ -956,7 +956,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 70,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 86 : 76,
         .baseSpDefense = 96,
-        .types = MON_TYPES(TYPE_NULL, TYPE_WIND),
+        .types = MON_TYPES(TYPE_NEUTRAL, TYPE_WIND),
         .catchRate = 90,
     #if P_UPDATED_EXP_YIELDS >= GEN_7
         .expYield = 158,
@@ -1483,7 +1483,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_FAMILY_CHINCHOU
 
 #if P_FAMILY_TOGEPI
-#define TOGEPI_FAMILY_TYPE (P_UPDATED_TYPES >= GEN_6 ? TYPE_PUPPET : TYPE_NULL)
+#define TOGEPI_FAMILY_TYPE (P_UPDATED_TYPES >= GEN_6 ? TYPE_PUPPET : TYPE_NEUTRAL)
 
     [SPECIES_TOGEPI] =
     {
@@ -2170,9 +2170,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpAttack  = 20,
         .baseSpDefense = 40,
     #if P_UPDATED_TYPES >= GEN_6
-        .types = MON_TYPES(TYPE_NULL, TYPE_PUPPET),
+        .types = MON_TYPES(TYPE_NEUTRAL, TYPE_PUPPET),
     #else
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
     #endif
         .catchRate = 150,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 38 : 33,
@@ -2800,7 +2800,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 40,
         .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 72 : 94,
         .evYield_Speed = 1,
@@ -2884,7 +2884,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 115,
         .baseSpAttack  = 60,
         .baseSpDefense = 66,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 169 : 186,
         .evYield_Speed = 2,
@@ -4178,7 +4178,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 90,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_NULL, TYPE_LIGHT),
+        .types = MON_TYPES(TYPE_NEUTRAL, TYPE_LIGHT),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 159 : 149,
         .evYield_SpAttack = 2,
@@ -4263,7 +4263,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 60,
         .baseSpAttack  = 110,
         .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_NULL, TYPE_LIGHT),
+        .types = MON_TYPES(TYPE_NEUTRAL, TYPE_LIGHT),
         .catchRate = 45,
         .expYield = 260,
         .evYield_HP = 3,
@@ -4473,7 +4473,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 45,
         .baseSpAttack  = 65,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 190,
     #if P_UPDATED_EXP_YIELDS >= GEN_5
         .expYield = 145,
@@ -4554,7 +4554,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 55,
         .baseSpAttack  = 85,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 45,
         .expYield = 182,
         .evYield_HP = 2,
@@ -4618,7 +4618,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 55,
         .baseSpAttack  = 85,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 45,
         .expYield = 182,
         .evYield_HP = 2,
@@ -4846,7 +4846,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #if P_UPDATED_TYPES >= GEN_6
         .types = MON_TYPES(TYPE_PUPPET),
     #else
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
     #endif
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 63,
@@ -4918,7 +4918,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #if P_UPDATED_TYPES >= GEN_6
         .types = MON_TYPES(TYPE_PUPPET),
     #else
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
     #endif
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 158 : 178,
@@ -5768,7 +5768,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 40,
         .baseSpAttack  = 50,
         .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 120,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 124,
         .evYield_Attack = 1,
@@ -5842,7 +5842,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 55,
         .baseSpAttack  = 75,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 189,
         .evYield_Attack = 2,
@@ -5930,7 +5930,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 45,
         .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_EARTH, TYPE_NULL),
+        .types = MON_TYPES(TYPE_EARTH, TYPE_NEUTRAL),
         .catchRate = 20,
         .expYield = 275,
         .evYield_Attack = 3,
@@ -5993,7 +5993,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 52,
         .baseSpAttack  = 135,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_EARTH, TYPE_NULL),
+        .types = MON_TYPES(TYPE_EARTH, TYPE_NEUTRAL),
         .catchRate = 5,
         .expYield = 275,
         .evYield_SpAttack = 3,
@@ -7495,7 +7495,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 85,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 165,
         .evYield_Attack = 1,
@@ -7570,7 +7570,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 65,
         .baseSpAttack  = 105,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_NULL, TYPE_LIGHT),
+        .types = MON_TYPES(TYPE_NEUTRAL, TYPE_LIGHT),
         .catchRate = 45,
         .expYield = 263,
         .evYield_Attack = 1,
@@ -7637,7 +7637,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 75,
         .baseSpAttack  = 20,
         .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 88 : 106,
         .evYield_Speed = 1,
@@ -7712,7 +7712,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 100,
         .baseSpAttack  = 40,
         .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_NULL),
+        .types = MON_TYPES(TYPE_NEUTRAL),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 200,
         .evYield_Defense = 2,

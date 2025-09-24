@@ -9,7 +9,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Tera Blast changes from Normal-type to the user's Tera Type")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NEUTRAL);
         PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_DARK); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -34,7 +34,7 @@ SINGLE_BATTLE_TEST("Tera Blast has correct effectiveness for every Tera Type")
     PARAMETRIZE { species = SPECIES_CYNDAQUIL; type = TYPE_EARTH;   }
     PARAMETRIZE { species = SPECIES_CYNDAQUIL; type = TYPE_BEAST;     }
     PARAMETRIZE { species = SPECIES_CYNDAQUIL; type = TYPE_WATER;    }
-    PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_NULL;   }
+    PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_NEUTRAL;   }
     PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_UNDEAD;    }
     PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_LIGHT;  }
     PARAMETRIZE { species = SPECIES_TOTODILE;  type = TYPE_PLANT;    }
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Tera Blast has correct effectiveness for every Tera Type")
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: GIMMICK_TERA); }
     } SCENE {
-        if (species == SPECIES_GASTLY && type == TYPE_NULL)
+        if (species == SPECIES_GASTLY && type == TYPE_NEUTRAL)
             MESSAGE("It doesn't affect the opposing Gastly…");
         else
             MESSAGE("It's super effective!");
@@ -78,7 +78,7 @@ SINGLE_BATTLE_TEST("Tera Blast becomes a physical move if the user is Terastalli
     PARAMETRIZE { tera = GIMMICK_NONE; }
     PARAMETRIZE { tera = GIMMICK_TERA; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NULL); Attack(100); SpAttack(50); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NEUTRAL); Attack(100); SpAttack(50); }
         OPPONENT(SPECIES_WOBBUFFET) { Defense(200); SpDefense(200); }
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: tera); }
@@ -161,7 +161,7 @@ SINGLE_BATTLE_TEST("Stellar-type Tera Blast activates a Stellar-type Pokemon's W
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_STELLAR); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_WEAKNESS_POLICY); TeraType(TYPE_NULL); }
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_WEAKNESS_POLICY); TeraType(TYPE_NEUTRAL); }
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }
     } SCENE {

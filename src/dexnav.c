@@ -2087,7 +2087,7 @@ static void SetSpriteInvisibility(u8 spriteArrayId, bool8 invisible)
 #define TYPE_ICON_PAL_NUM_2     15
 static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES] =
 {
-    [TYPE_NULL] = TYPE_ICON_PAL_NUM_0,
+    [TYPE_NEUTRAL] = TYPE_ICON_PAL_NUM_0,
     [TYPE_COMBAT] = TYPE_ICON_PAL_NUM_0,
     [TYPE_WIND] = TYPE_ICON_PAL_NUM_1,
     [TYPE_FILTH] = TYPE_ICON_PAL_NUM_1,

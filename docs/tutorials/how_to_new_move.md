@@ -160,7 +160,7 @@ Each move can have up to 3 additional effects, allowing you to construct monstro
         "forelegs or tail."),
     .effect = EFFECT_HIT,
     .power = 40,
-    .type = TYPE_NULL,
+    .type = TYPE_NEUTRAL,
     .accuracy = 100,
     .pp = 35,
     .target = MOVE_TARGET_SELECTED,

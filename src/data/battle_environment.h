@@ -147,7 +147,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     {
         .naturePower = B_NATURE_POWER_MOVES >= GEN_4 ? MOVE_TRI_ATTACK : MOVE_SWIFT,
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
-        .camouflageType = TYPE_NULL,
+        .camouflageType = TYPE_NEUTRAL,
         .background = ENVIRONMENT_BACKGROUND(Building),
     },
 
@@ -161,7 +161,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .naturePower = MOVE_SWIFT,
     #endif
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
-        .camouflageType = B_CAMOUFLAGE_TYPES >= GEN_4 ? TYPE_EARTH : TYPE_NULL,
+        .camouflageType = B_CAMOUFLAGE_TYPES >= GEN_4 ? TYPE_EARTH : TYPE_NEUTRAL,
         .background =
         {
             .tileset = gBattleEnvironmentTiles_Building,
@@ -401,7 +401,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     {
         .naturePower = MOVE_TRI_ATTACK,
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
-        .camouflageType = TYPE_NULL,
+        .camouflageType = TYPE_NEUTRAL,
     },
 
     [BATTLE_ENVIRONMENT_SPACE] =

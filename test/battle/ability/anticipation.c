@@ -5,8 +5,8 @@ SINGLE_BATTLE_TEST("Anticipation causes notifies if an opponent has a super-effe
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_CLOSE_COMBAT) == TYPE_COMBAT);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NULL);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NEUTRAL);
         PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CLOSE_COMBAT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
@@ -46,8 +46,8 @@ SINGLE_BATTLE_TEST("Anticipation doesn't consider Normalize into their effective
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_CLOSE_COMBAT) == TYPE_COMBAT);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NULL);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NEUTRAL);
         PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_DELCATTY) { Ability(ABILITY_NORMALIZE); Moves(MOVE_CLOSE_COMBAT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
@@ -62,8 +62,8 @@ SINGLE_BATTLE_TEST("Anticipation doesn't consider Scrappy into their effectivene
     KNOWN_FAILING;
     GIVEN {
         ASSUME(GetMoveType(MOVE_CLOSE_COMBAT) == TYPE_COMBAT);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NULL);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NEUTRAL);
         PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_KANGASKHAN) { Ability(ABILITY_SCRAPPY); Moves(MOVE_CLOSE_COMBAT, MOVE_TRICK_OR_TREAT, MOVE_SKILL_SWAP, MOVE_CELEBRATE); }
     } WHEN {
@@ -96,7 +96,7 @@ SINGLE_BATTLE_TEST("Anticipation doesn't consider Gravity into their effectivene
 SINGLE_BATTLE_TEST("Anticipation counts Counter, Metal Burst or Mirror Coat as attacking moves of their types (Gen5+)")
 {
     u32 move, species, typeAtk, typeDef;
-    PARAMETRIZE { move = MOVE_COUNTER; species = SPECIES_RATICATE; typeAtk = TYPE_COMBAT; typeDef = TYPE_NULL; }
+    PARAMETRIZE { move = MOVE_COUNTER; species = SPECIES_RATICATE; typeAtk = TYPE_COMBAT; typeDef = TYPE_NEUTRAL; }
     PARAMETRIZE { move = MOVE_METAL_BURST; species = SPECIES_ROGGENROLA; typeAtk = TYPE_METAL; typeDef = TYPE_BEAST; }
     PARAMETRIZE { move = MOVE_MIRROR_COAT; species = SPECIES_NIDORINO; typeAtk = TYPE_LIGHT; typeDef = TYPE_FILTH; }
     GIVEN {
@@ -186,8 +186,8 @@ SINGLE_BATTLE_TEST("Anticipation treats dynamic move types as their base type (N
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_JUDGMENT) == EFFECT_CHANGE_TYPE_ON_ITEM);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NULL);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NEUTRAL);
         PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_ARCEUS) { Item(ITEM_FIST_PLATE); Moves(MOVE_JUDGMENT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
@@ -219,8 +219,8 @@ SINGLE_BATTLE_TEST("Anticipation treats dynamic move types as their base type (N
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_NATURAL_GIFT) == EFFECT_NATURAL_GIFT);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NULL);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NEUTRAL);
         PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LEPPA_BERRY); Moves(MOVE_NATURAL_GIFT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
@@ -265,8 +265,8 @@ SINGLE_BATTLE_TEST("Anticipation treats dynamic move types as their base type (N
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_MULTI_ATTACK) == EFFECT_CHANGE_TYPE_ON_ITEM);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NULL);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NEUTRAL);
         PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_SILVALLY) { Item(ITEM_FIGHTING_MEMORY); Moves(MOVE_MULTI_ATTACK, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
@@ -296,7 +296,7 @@ SINGLE_BATTLE_TEST("Anticipation does not consider Strong Winds on type matchups
 SINGLE_BATTLE_TEST("Anticipation does not consider ate-abilities")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
         ASSUME(GetSpeciesType(SPECIES_WORMADAM_PLANT, 0) == TYPE_INSECT);
         ASSUME(GetSpeciesType(SPECIES_WORMADAM_PLANT, 1) == TYPE_PLANT);
         PLAYER(SPECIES_WORMADAM_PLANT) { Ability(ABILITY_ANTICIPATION); }
@@ -312,8 +312,8 @@ SINGLE_BATTLE_TEST("Anticipation treats Hidden Power as its dynamic type (Gen6+)
 {
     KNOWN_FAILING;
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NULL);
-        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NEUTRAL);
         PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); Item(ITEM_CHOPLE_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_HIDDEN_POWER, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); HPIV(30); AttackIV(2); DefenseIV(31); SpAttackIV(30); SpDefenseIV(30); SpeedIV(30); }
     } WHEN {
@@ -331,7 +331,7 @@ SINGLE_BATTLE_TEST("Anticipation considers Inverse Battle types")
 {
     GIVEN {
         FLAG_SET(B_FLAG_INVERSE_BATTLE);
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
         ASSUME(GetSpeciesType(SPECIES_FERROTHORN, 0) == TYPE_PLANT);
         ASSUME(GetSpeciesType(SPECIES_FERROTHORN, 1) == TYPE_METAL);
         PLAYER(SPECIES_FERROTHORN) { Ability(ABILITY_ANTICIPATION); }

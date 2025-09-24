@@ -20,8 +20,8 @@ SINGLE_BATTLE_TEST("Color Change changes the type of a Pokemon being hit by a mo
 SINGLE_BATTLE_TEST("Color Change does not change the type when hit by a move that's the same type as itself")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_KECLEON, 0) == TYPE_NULL || GetSpeciesType(SPECIES_KECLEON, 1) == TYPE_NULL);
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
+        ASSUME(GetSpeciesType(SPECIES_KECLEON, 0) == TYPE_NEUTRAL || GetSpeciesType(SPECIES_KECLEON, 1) == TYPE_NEUTRAL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_KECLEON) { Ability(ABILITY_COLOR_CHANGE); }
     } WHEN {

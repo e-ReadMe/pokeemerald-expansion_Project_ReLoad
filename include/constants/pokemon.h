@@ -3,7 +3,7 @@
 
 // Pokémon types
 #define TYPE_NONE             0
-#define TYPE_NULL           1// Null replaces Normal
+#define TYPE_NEUTRAL           1// Neutral replaces Normal
 #define TYPE_COMBAT         2// Combat replaces Fighting
 #define TYPE_WIND           3// Wind Replaces Flying
 #define TYPE_FILTH           4// Filth Replaces Poison

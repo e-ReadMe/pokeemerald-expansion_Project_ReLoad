@@ -1881,7 +1881,7 @@ static const struct SearchOptionText sDexSearchColorOptions[] =
 static const struct SearchOptionText sDexSearchTypeOptions[] =
 {
     {gText_DexEmptyString, gTypesInfo[TYPE_NONE].name},
-    {gText_DexEmptyString, gTypesInfo[TYPE_NULL].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_NEUTRAL].name},
     {gText_DexEmptyString, gTypesInfo[TYPE_COMBAT].name},
     {gText_DexEmptyString, gTypesInfo[TYPE_WIND].name},
     {gText_DexEmptyString, gTypesInfo[TYPE_FILTH].name},
@@ -1916,7 +1916,7 @@ static const u8 sOrderOptions[] =
 static const u8 sDexSearchTypeIds[NUMBER_OF_MON_TYPES] =
 {
     TYPE_NONE,
-    TYPE_NULL,
+    TYPE_NEUTRAL,
     TYPE_COMBAT,
     TYPE_WIND,
     TYPE_FILTH,

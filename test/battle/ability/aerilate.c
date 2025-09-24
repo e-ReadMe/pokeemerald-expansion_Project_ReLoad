@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
+    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
     ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
 }
 
@@ -55,7 +55,7 @@ SINGLE_BATTLE_TEST("Aerilate boosts power of affected moves by 20% (Gen7+) or 30
 
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_ATE_MULTIPLIER, genConfig);
-        ASSUME(GetMoveType(MOVE_TACKLE) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_TACKLE) == TYPE_NEUTRAL);
         ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_SALAMENCE) { Ability(ABILITY_MOXIE); Item(ITEM_SALAMENCITE); }
@@ -80,7 +80,7 @@ SINGLE_BATTLE_TEST("Aerilate doesn't affect Weather Ball's type", s16 damage)
     PARAMETRIZE { move1 = MOVE_SUNNY_DAY; move2 = MOVE_SKILL_SWAP; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
-        ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NEUTRAL);
         ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
         ASSUME(GetSpeciesType(SPECIES_PINSIR, 0) == TYPE_INSECT);
         PLAYER(SPECIES_WOBBUFFET);

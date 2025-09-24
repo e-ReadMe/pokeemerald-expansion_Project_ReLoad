@@ -4546,7 +4546,7 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
             break;
         else if (gBattleMons[battlerDef].statStages[STAT_EVASION] > DEFAULT_STAT_STAGE
          || (IS_BATTLER_OF_TYPE(battlerDef, TYPE_UNDEAD)
-         && (HasMoveWithType(battlerAtk, TYPE_NULL)
+         && (HasMoveWithType(battlerAtk, TYPE_NEUTRAL)
          || HasMoveWithType(battlerAtk, TYPE_COMBAT))))
             ADJUST_SCORE(DECENT_EFFECT);
         break;
@@ -5215,7 +5215,7 @@ case EFFECT_GUARD_SPLIT:
         if ((aiData->abilities[battlerAtk] == ABILITY_VOLT_ABSORB
           || aiData->abilities[battlerAtk] == ABILITY_MOTOR_DRIVE
           || (B_REDIRECT_ABILITY_IMMUNITY >= GEN_5 && aiData->abilities[battlerAtk] == ABILITY_LIGHTNING_ROD))
-          && predictedType == TYPE_NULL)
+          && predictedType == TYPE_NEUTRAL)
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_FLING:

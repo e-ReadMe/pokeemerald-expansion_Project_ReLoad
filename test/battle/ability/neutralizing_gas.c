@@ -107,7 +107,7 @@ SINGLE_BATTLE_TEST("Neutralizing Gas ignores multipliers from target's ability",
     PARAMETRIZE { ability = ABILITY_LEVITATE; }
     GIVEN {
         ASSUME(MoveMakesContact(MOVE_SCRATCH) == TRUE);
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NULL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
         PLAYER(SPECIES_WEEZING) { Ability(ability); }
         OPPONENT(SPECIES_BEWEAR) { Ability(ABILITY_FLUFFY); }
     } WHEN {

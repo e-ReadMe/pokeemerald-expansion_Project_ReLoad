@@ -7913,7 +7913,7 @@ const struct TypePower gNaturalGiftTable[] =
     [ITEM_TO_BERRY(ITEM_HABAN_BERRY)] = {TYPE_DRAGON, 80},
     [ITEM_TO_BERRY(ITEM_COLBUR_BERRY)] = {TYPE_DARK, 80},
     [ITEM_TO_BERRY(ITEM_BABIRI_BERRY)] = {TYPE_METAL, 80},
-    [ITEM_TO_BERRY(ITEM_CHILAN_BERRY)] = {TYPE_NULL, 80},
+    [ITEM_TO_BERRY(ITEM_CHILAN_BERRY)] = {TYPE_NEUTRAL, 80},
     [ITEM_TO_BERRY(ITEM_ROSELI_BERRY)] = {TYPE_PUPPET, 80},
     [ITEM_TO_BERRY(ITEM_BLUK_BERRY)] = {TYPE_FIRE, 90},
     [ITEM_TO_BERRY(ITEM_NANAB_BERRY)] = {TYPE_WATER, 90},
@@ -8379,6 +8379,26 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
     if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_DATA)
     && IS_BATTLER_OF_TYPE(battlerDef, TYPE_VIRUS))
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
+            
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNKNOWN)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_VACCINE))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+            
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNKNOWN)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_VIRUS))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+            
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNKNOWN)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_DATA))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+            
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNKNOWN)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_FREE))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+            
+    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNKNOWN)
+    && IS_BATTLER_OF_TYPE(battlerDef, TYPE_NODAT))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
 
 
 
@@ -8461,7 +8481,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
             modifier = uq4_12_multiply(modifier, UQ_4_12(GetGenConfig(GEN_CONFIG_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3));
         break;
     case ABILITY_NORMALIZE:
-        if (moveType == TYPE_NULL && gBattleStruct->battlerState[battlerAtk].ateBoost && GetGenConfig(GEN_CONFIG_ATE_MULTIPLIER) >= GEN_7)
+        if (moveType == TYPE_NEUTRAL && gBattleStruct->battlerState[battlerAtk].ateBoost && GetGenConfig(GEN_CONFIG_ATE_MULTIPLIER) >= GEN_7)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
     case ABILITY_PUNK_ROCK:
@@ -9349,7 +9369,7 @@ static inline uq4_12_t GetDefenderItemsModifier(struct DamageContext *ctx)
     case HOLD_EFFECT_RESIST_BERRY:
         if (UnnerveOn(ctx->battlerDef, gBattleMons[ctx->battlerDef].item))
             return UQ_4_12(1.0);
-        if (ctx->moveType == GetBattlerHoldEffectParam(ctx->battlerDef) && (ctx->moveType == TYPE_NULL || ctx->typeEffectivenessModifier >= UQ_4_12(2.0)))
+        if (ctx->moveType == GetBattlerHoldEffectParam(ctx->battlerDef) && (ctx->moveType == TYPE_NEUTRAL || ctx->typeEffectivenessModifier >= UQ_4_12(2.0)))
         {
             if (ctx->updateFlags)
                 gSpecialStatuses[ctx->battlerDef].berryReduced = TRUE;
@@ -9632,11 +9652,11 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         if (ctx->updateFlags)
             RecordItemEffectBattle(ctx->battlerDef, HOLD_EFFECT_RING_TARGET);
     }
-    else if ((ctx->moveType == TYPE_COMBAT || ctx->moveType == TYPE_NULL) && defType == TYPE_UNDEAD && gBattleMons[ctx->battlerDef].volatiles.foresight && mod == UQ_4_12(0.0))
+    else if ((ctx->moveType == TYPE_COMBAT || ctx->moveType == TYPE_NEUTRAL) && defType == TYPE_UNDEAD && gBattleMons[ctx->battlerDef].volatiles.foresight && mod == UQ_4_12(0.0))
     {
         mod = UQ_4_12(1.0);
     }
-    else if ((ctx->moveType == TYPE_COMBAT || ctx->moveType == TYPE_NULL) && defType == TYPE_UNDEAD
+    else if ((ctx->moveType == TYPE_COMBAT || ctx->moveType == TYPE_NEUTRAL) && defType == TYPE_UNDEAD
         && (ctx->abilityAtk == ABILITY_SCRAPPY || ctx->abilityAtk == ABILITY_MINDS_EYE)
         && mod == UQ_4_12(0.0))
     {
@@ -11198,7 +11218,7 @@ void GetBattlerTypes(u32 battler, bool32 ignoreTera, u32 types[static 3])
     if (!isTera && gDisableStructs[battler].roostActive)
     {
         if (types[0] == TYPE_WIND && types[1] == TYPE_WIND)
-            types[0] = types[1] = B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NULL : TYPE_MYSTERY;
+            types[0] = types[1] = B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NEUTRAL : TYPE_MYSTERY;
         else if (types[0] == TYPE_WIND)
             types[0] = TYPE_MYSTERY;
         else if (types[1] == TYPE_WIND)

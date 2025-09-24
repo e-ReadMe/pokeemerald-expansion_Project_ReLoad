@@ -4,7 +4,7 @@
 ASSUMPTIONS
 {
     ASSUME(gTypesInfo[TYPE_NONE].isHiddenPowerType == FALSE);
-    ASSUME(gTypesInfo[TYPE_NULL].isHiddenPowerType == FALSE);
+    ASSUME(gTypesInfo[TYPE_NEUTRAL].isHiddenPowerType == FALSE);
     ASSUME(gTypesInfo[TYPE_COMBAT].isHiddenPowerType == TRUE);
     ASSUME(gTypesInfo[TYPE_WIND].isHiddenPowerType == TRUE);
     ASSUME(gTypesInfo[TYPE_FILTH].isHiddenPowerType == TRUE);
@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Hidden Power's type is determined by IVs")
     bool32 hidden;
 
     PARAMETRIZE { type = TYPE_NONE;     hidden = FALSE; }
-    PARAMETRIZE { type = TYPE_NULL;   hidden = FALSE; }
+    PARAMETRIZE { type = TYPE_NEUTRAL;   hidden = FALSE; }
     PARAMETRIZE { type = TYPE_COMBAT; hidden = TRUE;  foeType = TYPE_DARK;    foeSpecies = SPECIES_UMBREON;   foeItem = ITEM_CHOPLE_BERRY; hp = 30; atk =  2; def = 31; spAtk = 30; spDef = 30; speed = 30; }
     PARAMETRIZE { type = TYPE_COMBAT; hidden = TRUE;  foeType = TYPE_DARK;    foeSpecies = SPECIES_UMBREON;   foeItem = ITEM_CHOPLE_BERRY; hp = 31; atk = 15; def = 30; spAtk = 30; spDef = 30; speed = 30; }
     PARAMETRIZE { type = TYPE_COMBAT; hidden = TRUE;  foeType = TYPE_DARK;    foeSpecies = SPECIES_UMBREON;   foeItem = ITEM_CHOPLE_BERRY; hp = 30; atk = 22; def = 31; spAtk = 30; spDef = 30; speed = 30; }

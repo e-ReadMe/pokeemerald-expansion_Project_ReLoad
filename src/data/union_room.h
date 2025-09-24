@@ -869,7 +869,7 @@ static const struct WindowTemplate sWindowTemplate_TradingBoardRequestType = {
 
 // Subtract two from the total type count to handle in-battle types not for display
 static const struct ListMenuItem sTradingBoardTypes[NUMBER_OF_MON_TYPES - 2] = {
-    { gTypesInfo[TYPE_NULL].name,   TYPE_NULL         },
+    { gTypesInfo[TYPE_NEUTRAL].name,   TYPE_NEUTRAL         },
     { gTypesInfo[TYPE_FIRE].name,     TYPE_FIRE           },
     { gTypesInfo[TYPE_WATER].name,    TYPE_WATER          },
     { gTypesInfo[TYPE_ELECTRIC].name, TYPE_ELECTRIC       },
