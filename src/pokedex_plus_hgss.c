@@ -6779,6 +6779,10 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 dept
                     StringAppend(gStringVar4, gStringVar2);
                     StringAppend(gStringVar4, COMPOUND_STRING(" in bag"));
                     break;
+                case IF_ATKSTAT_BASED:
+                    break;
+                case IF_DEFSTAT_BASED:
+                    break;
                 case CONDITIONS_END:
                     break;
                 }

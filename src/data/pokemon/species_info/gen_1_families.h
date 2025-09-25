@@ -7506,7 +7506,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMankeyLevelUpLearnset,
         .teachableLearnset = sMankeyTeachableLearnset,
         .eggMoveLearnset = sMankeyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PRIMEAPE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PRIMEAPE},
+                                {EVO_LEVEL, 20, SPECIES_CHARIZARD_MEGA_X, CONDITIONS({IF_ATKSTAT_BASED, 45,21,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 20, SPECIES_HITMONLEE, CONDITIONS({IF_DEFSTAT_BASED, 28,25,50})}//def, spdef, hp
+                            ),
     },
 
     [SPECIES_PRIMEAPE] =

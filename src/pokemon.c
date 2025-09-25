@@ -4433,8 +4433,12 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
     u32 heldItem = GetMonData(mon, MON_DATA_HELD_ITEM);
     u32 gender = GetMonGender(mon);
     u32 friendship = GetMonData(mon, MON_DATA_FRIENDSHIP, 0);
+    u32 hp = GetMonData(mon, MON_DATA_HP, 0);
     u32 attack = GetMonData(mon, MON_DATA_ATK, 0);
     u32 defense = GetMonData(mon, MON_DATA_DEF, 0);
+    u32 specialattack = GetMonData(mon, MON_DATA_SPATK, 0);
+    u32 specialdefense = GetMonData(mon, MON_DATA_SPDEF, 0);
+    u32 speed = GetMonData(mon, MON_DATA_SPEED, 0);
     u32 personality = GetMonData(mon, MON_DATA_PERSONALITY, 0);
     u16 upperPersonality = personality >> 16;
     u32 weather = GetCurrentWeather();
@@ -4723,6 +4727,23 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
                     *canStopEvo = FALSE;
             }
             break;
+
+        //new digimon evolutions
+        case IF_ATKSTAT_BASED:
+            if ((attack >= params[i].arg1) &&
+                (specialattack >= params[i].arg2) &&
+                (speed >= params[i].arg3))
+                currentCondition = TRUE;
+        break;
+
+        case IF_DEFSTAT_BASED:
+            if ((defense >= params[i].arg1) &&
+                (specialdefense >= params[i].arg2) &&
+                (hp >= params[i].arg3))
+                currentCondition = TRUE;
+        break;
+
+
         case CONDITIONS_END:
             break;
         }
