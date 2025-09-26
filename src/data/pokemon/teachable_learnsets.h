@@ -35840,3 +35840,21 @@ static const u16 sPecharuntTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PECHARUNT
+
+
+//digimon list
+
+//botamon
+static const u16 sBotamonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+//bubbmon
+static const u16 sBubbmonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+//choromon
+static const u16 sChoromonTeachableLearnset[] = {
+	MOVE_UNAVAILABLE,
+};

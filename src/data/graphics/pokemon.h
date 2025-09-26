@@ -26732,6 +26732,61 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_PECHARUNT
 
+//DIGIMON LIST 1997 - 1999 -------------------------------------------------
+
+//BOTAMON
+    const u32 gMonFrontPic_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/1997/botamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Botamon[] = INCBIN_U16("graphics/pokemon/digimon/1997/botamon/normal.gbapal");
+    const u32 gMonBackPic_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/1997/botamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Botamon[] = INCBIN_U16("graphics/pokemon/digimon/1997/botamon/shiny.gbapal");
+    const u8 gMonIcon_Botamon[] = INCBIN_U8("graphics/pokemon/digimon/1997/botamon/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Botamon[] = INCBIN_U8("graphics/pokemon/digimon/1997/botamon/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Botamon[] = INCBIN_COMP("graphics/pokemon/digimon/1997/botamon/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Botamon[] = INCBIN_U16("graphics/pokemon/digimon/1997/botamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Botamon[] = INCBIN_U16("graphics/pokemon/digimon/1997/botamon/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+
+//BUBBMON
+    const u32 gMonFrontPic_Bubbmon[] = INCBIN_U32("graphics/pokemon/digimon/1997/bubbmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Bubbmon[] = INCBIN_U16("graphics/pokemon/digimon/1997/bubbmon/normal.gbapal");
+    const u32 gMonBackPic_Bubbmon[] = INCBIN_U32("graphics/pokemon/digimon/1997/bubbmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Bubbmon[] = INCBIN_U16("graphics/pokemon/digimon/1997/bubbmon/shiny.gbapal");
+    const u8 gMonIcon_Bubbmon[] = INCBIN_U8("graphics/pokemon/digimon/1997/bubbmon/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Bubbmon[] = INCBIN_U8("graphics/pokemon/digimon/1997/bubbmon/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Bubbmon[] = INCBIN_COMP("graphics/pokemon/digimon/1997/bubbmon/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Bubbmon[] = INCBIN_U16("graphics/pokemon/digimon/1997/bubbmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Bubbmon[] = INCBIN_U16("graphics/pokemon/digimon/1997/bubbmon/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+//CHOROMON
+
+const u32 gMonFrontPic_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/1997/choromon/anim_front.4bpp.smol");
+const u16 gMonPalette_Choromon[] = INCBIN_U16("graphics/pokemon/digimon/1997/choromon/normal.gbapal");
+const u32 gMonBackPic_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/1997/choromon/back.4bpp.smol");
+const u16 gMonShinyPalette_Choromon[] = INCBIN_U16("graphics/pokemon/digimon/1997/choromon/shiny.gbapal");
+const u8 gMonIcon_Choromon[] = INCBIN_U8("graphics/pokemon/digimon/1997/choromon/icon.4bpp");
+#if P_FOOTPRINTS
+const u8 gMonFootprint_Choromon[] = INCBIN_U8("graphics/pokemon/digimon/1997/choromon/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+const u32 gObjectEventPic_Choromon[] = INCBIN_COMP("graphics/pokemon/digimon/1997/choromon/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+const u16 gOverworldPalette_Choromon[] = INCBIN_U16("graphics/pokemon/digimon/1997/choromon/overworld_normal.gbapal");
+const u16 gShinyOverworldPalette_Choromon[] = INCBIN_U16("graphics/pokemon/digimon/1997/choromon/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
     const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.smol");
     const u16 gMonPalette_Egg[] = INCBIN_U16("graphics/pokemon/egg/normal.gbapal");
     const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");

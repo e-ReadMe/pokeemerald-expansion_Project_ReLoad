@@ -1646,8 +1646,12 @@
 #define SPECIES_SYAKOMON								1530
 #define SPECIES_GOMAMON									1531
 #define SPECIES_VEEMON									1532
+//digimon list 1997-1999
+#define SPECIES_BOTAMON									1533
+#define SPECIES_BUBBMON									1534
+#define SPECIES_CHOROMON								1535
 
-#define SPECIES_EGG                                     (SPECIES_VEEMON + 1)
+#define SPECIES_EGG                                     (SPECIES_CHOROMON + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

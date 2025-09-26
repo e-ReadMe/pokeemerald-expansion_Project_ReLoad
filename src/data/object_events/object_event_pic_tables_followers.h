@@ -6729,4 +6729,20 @@ static const struct SpriteFrameImage sPicTable_Pecharunt[] = {
 };
 #endif //P_FAMILY_PECHARUNT
 
+//botamon
+static const struct SpriteFrameImage sPicTable_Botamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Botamon, 4, 4),
+};
+
+//bubbmon
+static const struct SpriteFrameImage sPicTable_Bubbmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Bubbmon, 4, 4),
+};
+
+//choromon
+static const struct SpriteFrameImage sPicTable_Choromon[] = {
+overworld_ascending_frames(gObjectEventPic_Choromon, 4, 4),
+};
+
+
 #endif //OW_POKEMON_OBJECT_EVENTS

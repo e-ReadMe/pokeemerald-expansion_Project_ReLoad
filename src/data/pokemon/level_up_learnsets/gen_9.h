@@ -22392,3 +22392,21 @@ static const struct LevelUpMove sGomamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_LEER),
     LEVEL_UP_END
 };
+
+static const struct LevelUpMove sBotamonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_TACKLE),
+    LEVEL_UP_MOVE(3, MOVE_LEER),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBubbmonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_TACKLE),
+    LEVEL_UP_MOVE(3, MOVE_LEER),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sChoromonLevelUpLearnset[] = {
+	LEVEL_UP_MOVE(1, MOVE_TACKLE),
+	LEVEL_UP_MOVE(3, MOVE_LEER),
+	LEVEL_UP_END
+};
