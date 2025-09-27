@@ -26787,6 +26787,24 @@ const u16 gShinyOverworldPalette_Choromon[] = INCBIN_U16("graphics/pokemon/digim
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+//MOKUMON
+
+const u32 gMonFrontPic_Mokumon[] = INCBIN_U32("graphics/pokemon/digimon/1997/mokumon/anim_front.4bpp.smol");
+const u16 gMonPalette_Mokumon[] = INCBIN_U16("graphics/pokemon/digimon/1997/mokumon/normal.gbapal");
+const u32 gMonBackPic_Mokumon[] = INCBIN_U32("graphics/pokemon/digimon/1997/mokumon/back.4bpp.smol");
+const u16 gMonShinyPalette_Mokumon[] = INCBIN_U16("graphics/pokemon/digimon/1997/mokumon/shiny.gbapal");
+const u8 gMonIcon_Mokumon[] = INCBIN_U8("graphics/pokemon/digimon/1997/mokumon/icon.4bpp");
+#if P_FOOTPRINTS
+const u8 gMonFootprint_Mokumon[] = INCBIN_U8("graphics/pokemon/digimon/1997/mokumon/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+const u32 gObjectEventPic_Mokumon[] = INCBIN_COMP("graphics/pokemon/digimon/1997/mokumon/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+const u16 gOverworldPalette_Mokumon[] = INCBIN_U16("graphics/pokemon/digimon/1997/mokumon/overworld_normal.gbapal");
+const u16 gShinyOverworldPalette_Mokumon[] = INCBIN_U16("graphics/pokemon/digimon/1997/mokumon/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
     const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.smol");
     const u16 gMonPalette_Egg[] = INCBIN_U16("graphics/pokemon/egg/normal.gbapal");
     const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");

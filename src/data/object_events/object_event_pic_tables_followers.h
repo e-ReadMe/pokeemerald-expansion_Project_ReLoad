@@ -6744,5 +6744,10 @@ static const struct SpriteFrameImage sPicTable_Choromon[] = {
 overworld_ascending_frames(gObjectEventPic_Choromon, 4, 4),
 };
 
+//mokumon
+static const struct SpriteFrameImage sPicTable_Mokumon[] = {
+overworld_ascending_frames(gObjectEventPic_Mokumon, 4, 4),
+};
+
 
 #endif //OW_POKEMON_OBJECT_EVENTS

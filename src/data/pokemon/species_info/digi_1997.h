@@ -446,9 +446,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
     #if DubNames
-        .speciesName = _("Choromon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("MetalKoromon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("MetalKoromon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Choromon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Metal_Empire,
         .cryId = CRY_NONE,
@@ -499,6 +499,88 @@ const struct SpeciesInfo gSpeciesInfodigi_1997[] =
                                 {EVO_LEVEL, 5, SPECIES_BUKAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
         //.formChangeTable = sChoromonFormChangeTable,
+    },
+
+        [SPECIES_MOKUMON] =
+    {
+        .baseHP        = 20,
+        .baseAttack    = 20,
+        .baseDefense   = 20,
+        .baseSpeed     = 20,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 20,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .catchRate = 225,
+        .expYield = 100,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_ORAN_BERRY,
+        .itemRare = ITEM_ORAN_BERRY,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLACK,
+    #if DubNames
+        .speciesName = _("Mokumon"),//the digimon's dub name. e.g. gatomon
+    #else
+        .speciesName = _("Mokumon"),//the digimon's sub name. e.g. tailmon
+    #endif
+        //.field = field_Metal_Empire,
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_MOKUMON,
+        .categoryName = _("Smoke"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "Its DigiCore at the center of its being\n"
+            "lies bare, only protected by smoke.\n"
+            "When faced with danger it uses the\n"
+            "smoke to create an oppurtunity to flee."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Mokumon,
+        .frontPicSize = MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 1),
+            ANIMCMD_FRAME(1, 36),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_Choromon,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_Mokumon,
+        .shinyPalette = gMonShinyPalette_Mokumon,
+        .iconSprite = gMonIcon_Mokumon,
+        .iconPalIndex = 4,
+        SHADOW(1, 4, SHADOW_SIZE_S)
+        FOOTPRINT(Choromon)
+        OVERWORLD(
+            sPicTable_Mokumon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Mokumon,
+            gShinyOverworldPalette_Mokumon
+        ) // prevents a format error in python
+        .levelUpLearnset = sMokumonLevelUpLearnset,
+        .teachableLearnset = sMokumonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_BUKAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+                                ),
+        //.formChangeTable = sMokumonFormChangeTable,
     },
 
 

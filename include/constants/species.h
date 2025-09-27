@@ -1650,8 +1650,9 @@
 #define SPECIES_BOTAMON									1533
 #define SPECIES_BUBBMON									1534
 #define SPECIES_CHOROMON								1535
+#define SPECIES_MOKUMON								1536
 
-#define SPECIES_EGG                                     (SPECIES_CHOROMON + 1)
+#define SPECIES_EGG                                     (SPECIES_MOKUMON + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

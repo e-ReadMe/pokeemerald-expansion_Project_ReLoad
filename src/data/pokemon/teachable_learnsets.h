@@ -35858,3 +35858,8 @@ static const u16 sBubbmonTeachableLearnset[] = {
 static const u16 sChoromonTeachableLearnset[] = {
 	MOVE_UNAVAILABLE,
 };
+
+//mokumon
+static const u16 sMokumonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};

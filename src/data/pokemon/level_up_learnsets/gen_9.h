@@ -22410,3 +22410,9 @@ static const struct LevelUpMove sChoromonLevelUpLearnset[] = {
 	LEVEL_UP_MOVE(3, MOVE_LEER),
 	LEVEL_UP_END
 };
+
+static const struct LevelUpMove sMokumonLevelUpLearnset[] = {
+	LEVEL_UP_MOVE(1, MOVE_SMOG),
+	LEVEL_UP_MOVE(3, MOVE_SMOKESCREEN),
+	LEVEL_UP_END
+};
