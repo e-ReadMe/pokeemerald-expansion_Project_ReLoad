@@ -49,6 +49,8 @@
 #define CHAR_AMPERSAND         0x2D
 #define CHAR_PLUS              0x2E
 //
+#define CHAR_YUK               0x30
+#define CHAR_IMI               0x31
 #define CHAR_LV                0x34
 #define CHAR_EQUALS            0x35
 #define CHAR_SEMICOLON         0x36

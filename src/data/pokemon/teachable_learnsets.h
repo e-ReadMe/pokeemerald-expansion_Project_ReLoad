@@ -35863,3 +35863,1670 @@ static const u16 sChoromonTeachableLearnset[] = {
 static const u16 sMokumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
+
+//SPECIES_NYOKIMON
+static const u16 sNyokimonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PITCHMON
+static const u16 sPitchmonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_POYOMON
+static const u16 sPoyomonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PUNIMON
+static const u16 sPunimonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_YUKIMIBOTAMON
+static const u16 sYukimibotamonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_YURAMON
+static const u16 sYuramonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ZURUMON
+static const u16 sZurumonTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_CAPRIMON
+static const u16 sCaprimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KODOKUGUMON
+static const u16 sKodokugumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KOROMON
+static const u16 sKoromonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MOCHIMON
+static const u16 sMochimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_NYAROMON
+static const u16 sNyaromonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PAGUMON
+static const u16 sPagumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PETITMERAMON
+static const u16 sPetitmeramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PUKAMON
+static const u16 sPukamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PYOKOMON
+static const u16 sPyokomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TANEMON
+static const u16 sTanemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TOKOMON
+static const u16 sTokomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TSUNOMON
+static const u16 sTsunomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_AGUMON
+static const u16 sAgumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_YUKIAGUMON
+static const u16 sYukiagumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BAKUMON
+static const u16 sBakumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BETAMON
+static const u16 sBetamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MODOKIBETAMON
+static const u16 sModokibetamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_CANDMON
+static const u16 sCandmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_CHUUMON
+static const u16 sChuumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ELECMON
+static const u16 sElecmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_FLORAMON
+static const u16 sFloramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GABUMON
+static const u16 sGabumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PSYCHEMON
+static const u16 sPsychemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GANIMON
+static const u16 sGanimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GAZIMON
+static const u16 sGazimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GIZAMON
+static const u16 sGizamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GOBLIMON
+static const u16 sGoblimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SHAMAMON
+static const u16 sShamamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SNOWGOBLIMON
+static const u16 sSnowgoblimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GOMAMON
+static const u16 sGomamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GOTSUMON
+static const u16 sGotsumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_HAGURUMON
+static const u16 sHagurumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KOKUWAMON
+static const u16 sKokuwamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KUNEMON
+static const u16 sKunemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DOKUNEMON
+static const u16 sDokunemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MUSHMON
+static const u16 sMushmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_OTAMAMON
+static const u16 sOtamamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PALMON
+static const u16 sPalmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ALRAUMON
+static const u16 sAlraumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PATAMON
+static const u16 sPatamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TSUKAIMON
+static const u16 sTsukaimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PENMON
+static const u16 sPenmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MUCHOMON
+static const u16 sMuchomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PICODEVIMON
+static const u16 sPicodevimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PIYOMON
+static const u16 sPiyomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PLOTMON
+static const u16 sPlotmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SHAKOMON
+static const u16 sShakomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TENTOMON
+static const u16 sTentomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TOYAGUMON
+static const u16 sToyagumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_CLEARAGUMON
+static const u16 sClearagumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BUN
+static const u16 sBunTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_AIRDRAMON
+static const u16 sAirdramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ANGEMON
+static const u16 sAngemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PIDMON
+static const u16 sPidmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BAKEMON
+static const u16 sBakemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SOULMON
+static const u16 sSoulmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BIRDRAMON
+static const u16 sBirdramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SABERDRAMON
+static const u16 sSaberdramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_CENTARUMON
+static const u16 sCentarumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_CLOCKMON
+static const u16 sClockmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_COELAMON
+static const u16 sCoelamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_CYCLOMON
+static const u16 sCyclomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DARKTYRANNOMON
+static const u16 sDarktyrannomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DELTAMON
+static const u16 sDeltamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DEVIDRAMON
+static const u16 sDevidramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DEVIMON
+static const u16 sDevimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ICEDEVIMON
+static const u16 sIcedevimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DOKUGUMON
+static const u16 sDokugumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DRIMOGEMON
+static const u16 sDrimogemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_NISEDRIMOGEMON
+static const u16 sNisedrimogemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_EBIDRAMON
+static const u16 sEbidramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_EVILMON
+static const u16 sEvilmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_FLARELIZARMON
+static const u16 sFlarelizarmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DARKLIZARMON
+static const u16 sDarklizarmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_FLYMON
+static const u16 sFlymonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GARURUMON
+static const u16 sGarurumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GURURUMON
+static const u16 sGururumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GEKOMON
+static const u16 sGekomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GESOMON
+static const u16 sGesomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GOKIMON
+static const u16 sGokimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GOLEMON
+static const u16 sGolemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GORIMON
+static const u16 sGorimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GREYMON
+static const u16 sGreymonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GUARDROMON
+static const u16 sGuardromonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_HANUMON
+static const u16 sHanumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ICEMON
+static const u16 sIcemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_IGAMON
+static const u16 sIgamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_IKKAKUMON
+static const u16 sIkkakumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KABUTERIMON
+static const u16 sKabuterimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KARATUKINUMEMON
+static const u16 sKaratukinumemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KIWIMON
+static const u16 sKiwimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KOKATORIMON
+static const u16 sKokatorimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_AKATORIMON
+static const u16 sAkatorimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KUWAGAMON
+static const u16 sKuwagamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_LEOMON
+static const u16 sLeomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MECHANORIMON
+static const u16 sMechanorimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MERAMON
+static const u16 sMeramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MINOTAURMON
+static const u16 sMinotaurmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MOJYAMON
+static const u16 sMojyamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_JUNGLEMOJYAMON
+static const u16 sJunglemojyamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MONOCHROMON
+static const u16 sMonochromonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MUSYAMON
+static const u16 sMusyamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_NANIMON
+static const u16 sNanimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_NUMEMON
+static const u16 sNumemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GEREMON
+static const u16 sGeremonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_OCTOMON
+static const u16 sOctomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_OGREMON
+static const u16 sOgremonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_FUGAMON
+static const u16 sFugamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_HYOGAMON
+static const u16 sHyogamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_RAREMON
+static const u16 sRaremonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_REVOLMON
+static const u16 sRevolmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_RUKAMON
+static const u16 sRukamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SEADRAMON
+static const u16 sSeadramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SHELLMON
+static const u16 sShellmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MORISHELLMON
+static const u16 sMorishellmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SNIMON
+static const u16 sSnimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_STARMON
+static const u16 sStarmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SUKAMON
+static const u16 sSukamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PLATINUMSUKAMON
+static const u16 sPlatinumsukamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TAILMON
+static const u16 sTailmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TANKMON
+static const u16 sTankmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_THUNDERBALLMON
+static const u16 sThunderballmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TOGEMON
+static const u16 sTogemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TORTOMON
+static const u16 sTortomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TUSKMON
+static const u16 sTuskmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TYRANNOMON
+static const u16 sTyrannomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_UNIMON
+static const u16 sUnimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SHIMAUNIMON
+static const u16 sShimaunimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_VEEDRAMON
+static const u16 sVeedramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_VEGIMON
+static const u16 sVegimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ZASSOUMON
+static const u16 sZassoumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_REDVEGIMON
+static const u16 sRedvegimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_WHAMON_ADULT
+static const u16 sWhamon_adultTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_WIZARMON
+static const u16 sWizarmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_WOODMON
+static const u16 sWoodmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_YANMAMON
+static const u16 sYanmamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SANDYANMAMON
+static const u16 sSandyanmamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_YUKIDARUMON
+static const u16 sYukidarumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TSUCHIDARUMON
+static const u16 sTsuchidarumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_AEROVEEDRAMON
+static const u16 sAeroveedramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ANDROMON
+static const u16 sAndromonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ANGEWOMON
+static const u16 sAngewomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ANOMALOCARIMON
+static const u16 sAnomalocarimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ASURAMON
+static const u16 sAsuramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ATLURKABUTERIMONR
+static const u16 sAtlurkabuterimonrTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ATLURKABUTERIMONB
+static const u16 sAtlurkabuterimonbTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BIGMAMEMON
+static const u16 sBigmamemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BLOSSOMON
+static const u16 sBlossomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BLUEMERAMON
+static const u16 sBluemeramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BRACHIMON
+static const u16 sBrachimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_CHIMAIRAMON
+static const u16 sChimairamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_CYBERDRAMON
+static const u16 sCyberdramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DAGOMON
+static const u16 sDagomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DEATHMERAMON
+static const u16 sDeathmeramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DELUMON
+static const u16 sDelumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DIGITAMAMON
+static const u16 sDigitamamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ETEMON
+static const u16 sEtemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_EXTYRANNOMON
+static const u16 sExtyrannomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GARUDAMON
+static const u16 sGarudamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GERBEMON
+static const u16 sGerbemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GIGADRAMON
+static const u16 sGigadramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GIROMON
+static const u16 sGiromonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TEKKAMON
+static const u16 sTekkamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_HANGYOMON
+static const u16 sHangyomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_HOLYANGEMON
+static const u16 sHolyangemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_INSEKIMON
+static const u16 sInsekimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_JYAGAMON
+static const u16 sJyagamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_JYUREIMON
+static const u16 sJyureimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KNIGHTMON
+static const u16 sKnightmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_LADYDEVIMON
+static const u16 sLadydevimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_LILIMON
+static const u16 sLilimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MAMEMON
+static const u16 sMamemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MAMMON
+static const u16 sMammonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MARINEDEVIMON
+static const u16 sMarinedevimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MASTERTYRANNOMON
+static const u16 sMastertyrannomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MEGADRAMON
+static const u16 sMegadramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MEGASEADRAMON
+static const u16 sMegaseadramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_WARUSEADRAMON
+static const u16 sWaruseadramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_METALGREYMON
+static const u16 sMetalgreymonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_METALGREYMONV
+static const u16 sMetalgreymonvTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_METALMAMEMON
+static const u16 sMetalmamemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_METALTYRANNOMON
+static const u16 sMetaltyrannomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MONZAEMON
+static const u16 sMonzaemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MUMMYMON
+static const u16 sMummymonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_NANOMON
+static const u16 sNanomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_OKUWAMON
+static const u16 sOkuwamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_OROCHIMON
+static const u16 sOrochimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PANJYAMON
+static const u16 sPanjyamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PARROTMON
+static const u16 sParrotmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PHANTOMON
+static const u16 sPhantomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PICCOLOMON
+static const u16 sPiccolomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PUMPMON
+static const u16 sPumpmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SKULLGREYMON
+static const u16 sSkullgreymonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SKULLSATAMON
+static const u16 sSkullsatamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TONOSAMAGEKOMON
+static const u16 sTonosamagekomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_TRICERAMON
+static const u16 sTriceramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_VADERMON
+static const u16 sVadermonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_VAMDEMON
+static const u16 sVamdemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_VERMILIMON
+static const u16 sVermilimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_WARUMONZAEMON
+static const u16 sWarumonzaemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_WEREGARURUMON
+static const u16 sWeregarurumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_WHAMON_PERFECT
+static const u16 sWhamon_perfectTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ZUDOMON
+static const u16 sZudomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_APOCALYMON
+static const u16 sApocalymonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BABAMON
+static const u16 sBabamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_BOLTMON
+static const u16 sBoltmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DEMON
+static const u16 sDemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DEVITAMAMON
+static const u16 sDevitamamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_DIABLOMON
+static const u16 sDiablomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GODDRAMON
+static const u16 sGoddramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_GRIFFOMON
+static const u16 sGriffomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_HERAKLEKABUTERIMON
+static const u16 sHeraklekabuterimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_HOLYDRAMON
+static const u16 sHolydramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_HOUOUMON
+static const u16 sHououmonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_JIJIMON
+static const u16 sJijimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_KINGETEMON
+static const u16 sKingetemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MARINEANGEMON
+static const u16 sMarineangemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_METALETEMON
+static const u16 sMetaletemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_METALGARURUMON
+static const u16 sMetalgarurumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_METALSEADRAMON
+static const u16 sMetalseadramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MILLENNIUMMON
+static const u16 sMillenniummonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_MUGENDRAMON
+static const u16 sMugendramonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_OMEGAMON
+static const u16 sOmegamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PIEMON
+static const u16 sPiemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PINOCCHIMON
+static const u16 sPinocchimonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PLESIOMON
+static const u16 sPlesiomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_PUKUMON
+static const u16 sPukumonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ROSEMON
+static const u16 sRosemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SABERLEOMON
+static const u16 sSaberleomonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_SKULLMAMMON
+static const u16 sSkullmammonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_VENOMVAMDEMON
+static const u16 sVenomvamdemonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_WARGREYMON
+static const u16 sWargreymonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+
+//SPECIES_ZANBAMON
+static const u16 sZanbamonTeachableLearnset[] = {
+    MOVE_DEFENSE_CURL,
+    MOVE_ENDURE,
+    MOVE_UNAVAILABLE,
+};
+

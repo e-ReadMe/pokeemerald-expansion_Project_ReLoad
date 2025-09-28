@@ -2195,3 +2195,11 @@ static const u16 sTerapagosFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_TERAPAGOS
+
+static const u16 sBotamonFormSpeciesIdTable[] = {
+    SPECIES_BOTAMON,
+    SPECIES_NYOKIMON,
+    SPECIES_YUKIMIBOTAMON,
+    FORM_SPECIES_END,
+};
+

@@ -4351,7 +4351,7 @@ static void SetTypeIconPosAndPal(u8 typeId, u8 x, u8 y, u8 spriteArrayId)
 }
 static void PrintCurrentSpeciesTypeInfo(u8 newEntry, u16 species)
 {
-    u8 type1, type2;
+    u8 type1, type2, type3;//shows three types on the pokedex
 
     if (!newEntry)
     {
@@ -4361,22 +4361,27 @@ static void PrintCurrentSpeciesTypeInfo(u8 newEntry, u16 species)
     #ifdef TX_RANDOMIZER_AND_CHALLENGES
         type1 = GetTypeBySpecies(species, 1);
         type2 = GetTypeBySpecies(species, 2);
+        type3 = GetTypeBySpecies(species, 3);
     #else
         type1 = GetSpeciesType(species, 0);
         type2 = GetSpeciesType(species, 1);
+        type3 = GetSpeciesType(species, 2);
     #endif
     if (species == SPECIES_NONE)
         type1 = type2 = TYPE_MYSTERY;
 
-    if (type1 == type2)
+    if (type2 == type3)
     {
-        SetTypeIconPosAndPal(type1, 147, 48, 0);
+        SetTypeIconPosAndPal(type1, 140, 48, 0);
         SetSpriteInvisibility(1, TRUE);
+        SetTypeIconPosAndPal(type2, 171, 48, 1);//added for three types
+        SetSpriteInvisibility(1, FALSE);
     }
     else
     {
-        SetTypeIconPosAndPal(type1, 147, 48, 0);
-        SetTypeIconPosAndPal(type2, 147 + 33, 48, 1);
+        SetTypeIconPosAndPal(type1, 140, 48, 0);
+        SetTypeIconPosAndPal(type2, 173, 48, 1);
+        SetTypeIconPosAndPal(type3, 206, 48, 2);
     }
 
 }
