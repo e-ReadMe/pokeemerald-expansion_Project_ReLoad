@@ -1,6 +1,42 @@
 #ifndef GUARD_CHARACTERS_H
 #define GUARD_CHARACTERS_H
 
+//#define DIGIMON characters
+//remember to add the characters to charmap.txt 
+// AND define the width in Fonts.c
+
+#define CHAR_YUKI              0x30
+#define CHAR_MI                0x31
+#define CHAR_BLA               0x32
+#define CHAR_CK                0x33
+#define CHAR_SKU               0x39
+#define CHAR_LL                0x3A
+#define CHAR_DA                0x45
+#define CHAR_RK                0x46
+#define CHAR_MO                0x4D
+#define CHAR_ON                0x4E
+#define CHAR_TY                0x73
+#define CHAR_RA                0x72
+#define CHAR_NNO               0x74
+#define CHAR_RI                0x62
+#define CHAR_KA                0x60
+#define CHAR_RA                0x72
+#define CHAR_UN                0x94
+#define CHAR_PLA               0x8D
+#define CHAR_TIN               0x8E
+#define CHAR_UM                0x8F
+#define CHAR_THU               0x87
+#define CHAR_ND                0x88
+#define CHAR_ER                0x89
+#define CHAR_BA                0x8A
+#define CHAR_DRA               0x75
+#define CHAR_AN                0x70
+#define CHAR_CA                0x8C
+#define CHAR_KA                0x60
+#define CHAR_BU                0x61
+#define CHAR_TE                0x44
+#define CHAR_RI                0x62
+//#define vanilla characters
 #define CHAR_SPACE             0x00
 #define CHAR_A_GRAVE           0x01
 #define CHAR_A_ACUTE           0x02
@@ -49,7 +85,6 @@
 #define CHAR_AMPERSAND         0x2D
 #define CHAR_PLUS              0x2E
 //
-#define CHAR_YUK               0x30
 #define CHAR_IMI               0x31
 #define CHAR_LV                0x34
 #define CHAR_EQUALS            0x35
@@ -75,7 +110,7 @@
 //
 #define CHAR_i_ACUTE           0x6F
 //
-#define CHAR_SPACER            0x77 // Empty space
+#define CHAR_SPACER            0x00 // Empty space
 //
 #define CHAR_UP_ARROW          0x79
 #define CHAR_DOWN_ARROW        0x7A

@@ -1,3 +1,18 @@
+YUKIMI      = 30 31
+BLACK       = 32 33
+SKULL       = 39 3A
+MON         = 4D 4E
+DARKTYRANNOMON  = 45 46 73 72 74 4D 4E
+RI          = 62
+KARA        = 60 72
+UN          = 94
+PLATINUM    = 8D 8E 8F
+THUNDERBA   = 87 88 89 8A
+DRA         = 75
+DRAMON      = 75 4D 4E
+AN          = 70
+KABUTERIMON = 60 61 44 62 4D 4E
+CA          = 8C
 ' '         = 00
 'À'         = 01
 'Á'         = 02
@@ -42,7 +57,6 @@
 SUPER_ER    = 2C
 '&'         = 2D
 '+'         = 2E
-YUKIMI      = 30 31
 LV          = 34
 '='         = 35
 ';'         = 36
@@ -60,7 +74,7 @@ POKEBLOCK   = 55 56 57 58 59
 ')'         = 5D
 'â'         = 68
 'í'         = 6F
-UNK_SPACER  = 77
+UNK_SPACER  = 00
 UP_ARROW    = 79
 DOWN_ARROW  = 7A
 LEFT_ARROW  = 7B

@@ -330,8 +330,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sBotamonLevelUpLearnset,
         .teachableLearnset = sBotamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_TOKOMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PAGUMON, CONDITIONS({IF_DEFSTAT_BASED, 20,1,1})}//def, spdef, hp
                                 ),
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -413,8 +414,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sBubbmonLevelUpLearnset,
         .teachableLearnset = sBubbmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CAPRIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_MOCHIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_PAGUMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})}//atk, spatk, speed
                                 ),
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -495,8 +497,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sChoromonLevelUpLearnset,
         .teachableLearnset = sChoromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CAPRIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_MOCHIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_PAGUMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})}//atk, spatk, speed
                                 ),
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -577,8 +580,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sMokumonLevelUpLearnset,
         .teachableLearnset = sMokumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_PETITMERAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_CAPRIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})}//atk, spatk, speed
                                 ),
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -659,8 +663,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sNyokimonLevelUpLearnset,
         .teachableLearnset = sNyokimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_PETITMERAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_CAPRIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})}//atk, spatk, speed
                                 ),
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -742,8 +747,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sPitchmonLevelUpLearnset,
         .teachableLearnset = sPitchmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_PUKAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_NYAROMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,35})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_TOKOMON, CONDITIONS({IF_DEFSTAT_BASED, 1,20,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_TSUNOMON, CONDITIONS({IF_DEFSTAT_BASED, 20,1,1})}//def, spdef, hp
                                 ),
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -825,8 +832,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sPoyomonLevelUpLearnset,
         .teachableLearnset = sPoyomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_NYAROMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_MOCHIMON, CONDITIONS({IF_DEFSTAT_BASED, 20,1,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_PUKAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,20,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_PYOKOMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,35})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_TOKOMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})}//atk, spatk, speed
                                 ),
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -907,8 +917,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sPunimonLevelUpLearnset,
         .teachableLearnset = sPunimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_NYAROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,20})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_TSUNOMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PETITMERAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PUKAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})}//def, spdef, hp
                                 ),
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -990,8 +1002,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sYukimibotamonLevelUpLearnset,
         .teachableLearnset = sYukimibotamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_NYAROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,20})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_TSUNOMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PETITMERAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PUKAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})}//def, spdef, hp
                                 ),
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -1073,8 +1087,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sYuramonLevelUpLearnset,
         .teachableLearnset = sYuramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_NYAROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,20})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_TSUNOMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PETITMERAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PUKAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})}//def, spdef, hp
                                 ),
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -1156,8 +1172,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sZurumonLevelUpLearnset,
         .teachableLearnset = sZurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ZURUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CAPRIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,20})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_MOCHIMON, CONDITIONS({IF_DEFSTAT_BASED, 20,1,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PAGUMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})}//atk, spatk, speed
                                 ),
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -1171,7 +1189,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_METAL),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -1188,16 +1206,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_GRAY,
     #if DubNames
-        .speciesName = _("Caprimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Kapurimon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Caprimon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_CAPRIMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -1239,10 +1257,12 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sCaprimonLevelUpLearnset,
         .teachableLearnset = sCaprimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_GOTSUMON, CONDITIONS({IF_DEFSTAT_BASED, 20,1,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_HAGURUMON, CONDITIONS({IF_DEFSTAT_BASED, 15,15,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_KOKUWAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,20,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_TOYAGUMON, CONDITIONS({IF_ATKSTAT_BASED, 40,1,1})}//atk, spatk, speed
                                 ),
-        //.formChangeTable = sCaprimonFormChangeTable,
+        //.formSpeciesIdTable = sCaprimonFormSpeciesIdTable,
     },
 
 
@@ -1254,7 +1274,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_INSECT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -1280,7 +1300,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_KODOKUGUMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -1322,10 +1342,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sKodokugumonLevelUpLearnset,
         .teachableLearnset = sKodokugumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
-        //.formChangeTable = sKodokugumonFormChangeTable,
+        //.formSpeciesIdTable = sKodokugumonFormSpeciesIdTable,
     },
 
 
@@ -1337,7 +1354,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -1354,7 +1371,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PINK,
     #if DubNames
         .speciesName = _("Koromon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -1363,7 +1380,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_KOROMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -1405,10 +1422,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sKoromonLevelUpLearnset,
         .teachableLearnset = sKoromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_AGUMON, CONDITIONS({IF_ATKSTAT_BASED, 30,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_BETAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,30,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_GABUMON, CONDITIONS({IF_ATKSTAT_BASED, 20,20,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_CANDMON, CONDITIONS({IF_DEFSTAT_BASED, 1,30,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_GOBLIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,30})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_TOYAGUMON, CONDITIONS({IF_DEFSTAT_BASED, 30,1,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_CHUUMON, CONDITIONS({IF_DEFSTAT_BASED, 15,15,20})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_PICODEVIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,35})}//atk, spatk, speed
                                 ),
-        //.formChangeTable = sKoromonFormChangeTable,
+        //.formSpeciesIdTable = sKoromonFormSpeciesIdTable,
     },
 
 
@@ -1437,16 +1460,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PINK,
     #if DubNames
-        .speciesName = _("Mochimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Motimon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Mochimon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_MOCHIMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -1488,10 +1511,18 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sMochimonLevelUpLearnset,
         .teachableLearnset = sMochimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CANDMON, CONDITIONS({IF_ATKSTAT_BASED, 1,30,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_DOKUNEMON, CONDITIONS({IF_DEFSTAT_BASED, 15,15,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_KUNEMON, CONDITIONS({IF_ATKSTAT_BASED, 15,15,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_ELECMON, CONDITIONS({IF_ATKSTAT_BASED, 1,35,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_GOBLIMON, CONDITIONS({IF_ATKSTAT_BASED, 35,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_OTAMAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,35,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_PENMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,35})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PIYOMON, CONDITIONS({IF_ATKSTAT_BASED, 1,35,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_TENTOMON, CONDITIONS({IF_ATKSTAT_BASED, 1,32,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_CHUUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMochimonFormChangeTable,
+        //.formSpeciesIdTable = sMochimonFormSpeciesIdTable,
     },
 
 
@@ -1503,7 +1534,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_LIGHT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -1529,7 +1560,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_NYAROMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -1571,10 +1602,17 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sNyaromonLevelUpLearnset,
         .teachableLearnset = sNyaromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_AGUMON, CONDITIONS({IF_ATKSTAT_BASED, 30,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_BAKUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,30,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_ELECMON, CONDITIONS({IF_ATKSTAT_BASED, 1,30,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PIYOMON, CONDITIONS({IF_ATKSTAT_BASED, 25,25,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PLOTMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,50})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_YUKIAGUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,30,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_GABUMON, CONDITIONS({IF_ATKSTAT_BASED, 1,35,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_GOTSUMON, CONDITIONS({IF_DEFSTAT_BASED, 35,1,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_GIZAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,30})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sNyaromonFormChangeTable,
+        //.formSpeciesIdTable = sNyaromonFormSpeciesIdTable,
     },
 
 
@@ -1586,7 +1624,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -1603,7 +1641,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PURPLE,
     #if DubNames
         .speciesName = _("Pagumon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -1612,7 +1650,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PAGUMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -1654,10 +1692,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sPagumonLevelUpLearnset,
         .teachableLearnset = sPagumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_GAZIMON, CONDITIONS({IF_ATKSTAT_BASED, 30,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_GIZAMON, CONDITIONS({IF_DEFSTAT_BASED, 30,1,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_GOBLIMON, CONDITIONS({IF_ATKSTAT_BASED, 35,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_TSUKAIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,35,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_GOTSUMON, CONDITIONS({IF_DEFSTAT_BASED, 35,1,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_OTAMAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,35,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_CHUUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_PICODEVIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,35})}//atk, spatk, speed
                                 ),
-        //.formChangeTable = sPagumonFormChangeTable,
+        //.formSpeciesIdTable = sPagumonFormSpeciesIdTable,
     },
 
 
@@ -1669,7 +1713,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -1686,16 +1730,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_RED,
     #if DubNames
-        .speciesName = _("Petitmeramon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("DemiMeramon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Petitmeramon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("PetitMeramon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PETITMERAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -1737,10 +1781,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sPetitmeramonLevelUpLearnset,
         .teachableLearnset = sPetitmeramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CANDMON, CONDITIONS({IF_ATKSTAT_BASED, 1,30,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_GABUMON, CONDITIONS({IF_ATKSTAT_BASED, 30,1,1})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_BAKUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,30,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_GOTSUMON, CONDITIONS({IF_DEFSTAT_BASED, 30,1,1})},//def, spdef, hp
+                                {EVO_LEVEL, 5, SPECIES_PICODEVIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,30})},//atk, spatk, speed
+                                {EVO_LEVEL, 5, SPECIES_PLOTMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,50})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPetitmeramonFormChangeTable,
+        //.formSpeciesIdTable = sPetitmeramonFormSpeciesIdTable,
     },
 
 
@@ -1752,7 +1800,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_WATER),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -1769,16 +1817,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BROWN,
     #if DubNames
-        .speciesName = _("Pukamon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Bukamon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Pukamon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PUKAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -1823,7 +1871,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPukamonFormChangeTable,
+        //.formSpeciesIdTable = sPukamonFormSpeciesIdTable,
     },
 
 
@@ -1835,7 +1883,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_WIND),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -1852,16 +1900,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PINK,
     #if DubNames
-        .speciesName = _("Pyokomon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Yokomon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Pyokomon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PYOKOMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Bulb"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -1906,7 +1954,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPyokomonFormChangeTable,
+        //.formSpeciesIdTable = sPyokomonFormSpeciesIdTable,
     },
 
 
@@ -1918,7 +1966,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_PLANT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -1944,7 +1992,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_TANEMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Bulb"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -1989,7 +2037,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTanemonFormChangeTable,
+        //.formSpeciesIdTable = sTanemonFormSpeciesIdTable,
     },
 
 
@@ -2001,7 +2049,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_LIGHT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2018,7 +2066,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_GRAY,
     #if DubNames
         .speciesName = _("Tokomon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -2027,7 +2075,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_TOKOMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2072,7 +2120,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTokomonFormChangeTable,
+        //.formSpeciesIdTable = sTokomonFormSpeciesIdTable,
     },
 
 
@@ -2084,7 +2132,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_BEAST),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2101,16 +2149,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
-        .speciesName = _("Tsunomon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Tunomon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Tsunomon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_TSUNOMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2155,7 +2203,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTsunomonFormChangeTable,
+        //.formSpeciesIdTable = sTsunomonFormSpeciesIdTable,
     },
 
     [SPECIES_AGUMON] =
@@ -2166,7 +2214,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_FIRE, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2183,16 +2231,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
         .speciesName = _("Agumon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Agumon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_DR,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_AGUMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Reptile"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2237,7 +2285,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAgumonFormChangeTable,
+        .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
     },
 
 
@@ -2249,7 +2297,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_ICE, TYPE_ICE),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2266,16 +2314,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_WHITE,
     #if DubNames
-        .speciesName = _("Yukiagumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("SnowAgumon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Yukiagumon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("YukiAgumon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_YUKIAGUMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_AGUMON,
+        .categoryName = _("Dinosaur"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2320,7 +2368,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sYukiagumonFormChangeTable,
+        .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
     },
 
 
@@ -2332,7 +2380,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_DARK, TYPE_LIGHT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2349,16 +2397,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BROWN,
     #if DubNames
-        .speciesName = _("Bakumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Tapirmon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Bakumon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_BAKUMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Holy Beast"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2403,7 +2451,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBakumonFormChangeTable,
+        //.formSpeciesIdTable = sBakumonFormSpeciesIdTable,
     },
 
 
@@ -2415,7 +2463,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_WATER, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2441,7 +2489,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_BETAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Amphibian"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2486,7 +2534,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBetamonFormChangeTable,
+        .formSpeciesIdTable = sBetamonFormSpeciesIdTable,
     },
 
 
@@ -2498,7 +2546,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_WATER, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2517,14 +2565,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Mbetamon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Modokibeta{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Mbetamon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Modokibeta{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_MODOKIBETAMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_BETAMON,
+        .categoryName = _("Amphibian"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2569,7 +2617,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sModokibetamonFormChangeTable,
+        .formSpeciesIdTable = sBetamonFormSpeciesIdTable,
     },
 
 
@@ -2581,7 +2629,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_FIRE, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2598,16 +2646,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_WHITE,
     #if DubNames
-        .speciesName = _("Candmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Candlemon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Candmon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_CANDMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Flame"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2652,7 +2700,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sCandmonFormChangeTable,
+        //.formSpeciesIdTable = sCandmonFormSpeciesIdTable,
     },
 
 
@@ -2681,16 +2729,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PINK,
     #if DubNames
         .speciesName = _("Chuumon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Chuumon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_CHUUMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Beast"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2735,7 +2783,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sChuumonFormChangeTable,
+        //.formSpeciesIdTable = sChuumonFormSpeciesIdTable,
     },
 
 
@@ -2747,7 +2795,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_ELECTRIC, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2764,7 +2812,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_RED,
     #if DubNames
         .speciesName = _("Elecmon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -2773,7 +2821,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_ELECMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Mammal"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2818,7 +2866,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sElecmonFormChangeTable,
+        .formSpeciesIdTable = sElecmonFormSpeciesIdTable,
     },
 
 
@@ -2830,7 +2878,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_PLANT, TYPE_PLANT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2853,10 +2901,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #else
         .speciesName = _("Floramon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_WG,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_FLORAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Vegetation"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2901,7 +2949,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sFloramonFormChangeTable,
+        //.formSpeciesIdTable = sFloramonFormSpeciesIdTable,
     },
 
 
@@ -2913,7 +2961,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_ICE, TYPE_ICE),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -2930,7 +2978,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLUE,
     #if DubNames
         .speciesName = _("Gabumon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -2939,7 +2987,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GABUMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Reptile"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -2984,7 +3032,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGabumonFormChangeTable,
+        .formSpeciesIdTable = sGabumonFormSpeciesIdTable,
     },
 
 
@@ -2996,7 +3044,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_ELECTRIC, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3013,7 +3061,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PURPLE,
     #if DubNames
         .speciesName = _("Psychemon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -3021,8 +3069,8 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_PSYCHEMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_GABUMON,
+        .categoryName = _("Reptile"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3067,7 +3115,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPsychemonFormChangeTable,
+        .formSpeciesIdTable = sGabumonFormSpeciesIdTable,
     },
 
 
@@ -3079,7 +3127,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_WATER, TYPE_WATER),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3096,16 +3144,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_GRAY,
     #if DubNames
-        .speciesName = _("Ganimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Crabmon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Ganimon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_DS,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GANIMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Crustacean"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3150,7 +3198,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGanimonFormChangeTable,
+        //.formSpeciesIdTable = sGanimonFormSpeciesIdTable,
     },
 
 
@@ -3162,7 +3210,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3179,16 +3227,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PURPLE,
     #if DubNames
         .speciesName = _("Gazimon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Gazimon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GAZIMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Mammal"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3233,7 +3281,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGazimonFormChangeTable,
+        //.formSpeciesIdTable = sGazimonFormSpeciesIdTable,
     },
 
 
@@ -3245,7 +3293,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_WATER, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3262,16 +3310,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
         .speciesName = _("Gizamon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Gizamon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GIZAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Sea Animal"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3316,7 +3364,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGizamonFormChangeTable,
+        //.formSpeciesIdTable = sGizamonFormSpeciesIdTable,
     },
 
 
@@ -3328,7 +3376,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_COMBAT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3351,10 +3399,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #else
         .speciesName = _("Goblimon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GOBLIMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Oni"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3399,7 +3447,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGoblimonFormChangeTable,
+        .formSpeciesIdTable = sGoblimonFormSpeciesIdTable,
     },
 
 
@@ -3411,7 +3459,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_EARTH, TYPE_COMBAT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3434,10 +3482,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #else
         .speciesName = _("Shamamon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_SHAMAMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_GOBLIMON,
+        .categoryName = _("Oni"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3482,7 +3530,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sShamamonFormChangeTable,
+        .formSpeciesIdTable = sGoblimonFormSpeciesIdTable,
     },
 
 
@@ -3494,7 +3542,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_ICE, TYPE_COMBAT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3511,16 +3559,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_GRAY,
     #if DubNames
-        .speciesName = _("Snowgoblimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("SnowGoblimon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Snowgoblimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("SnowGoblimon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_SNOWGOBLIMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_GOBLIMON,
+        .categoryName = _("Oni"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3565,7 +3613,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSnowgoblimonFormChangeTable,
+        .formSpeciesIdTable = sGoblimonFormSpeciesIdTable,
     },
 
 
@@ -3577,7 +3625,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_WATER, TYPE_ICE),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3603,7 +3651,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GOMAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Sea Beast"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3648,7 +3696,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGomamonFormChangeTable,
+        //.formSpeciesIdTable = sGomamonFormSpeciesIdTable,
     },
 
 
@@ -3660,7 +3708,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_EARTH, TYPE_EARTH),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3677,7 +3725,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLACK,
     #if DubNames
         .speciesName = _("Gotsumon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -3686,7 +3734,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GOTSUMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Mineral"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3731,7 +3779,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGotsumonFormChangeTable,
+        .formSpeciesIdTable = sGotsumonFormSpeciesIdTable,
     },
 
 
@@ -3743,7 +3791,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_METAL, TYPE_METAL),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3760,16 +3808,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLACK,
     #if DubNames
         .speciesName = _("Hagurumon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Hagurumon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_ME,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_HAGURUMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Machine"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3814,7 +3862,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sHagurumonFormChangeTable,
+        .formSpeciesIdTable = sHagurumonFormSpeciesIdTable,
     },
 
 
@@ -3826,7 +3874,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_METAL, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3843,16 +3891,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLACK,
     #if DubNames
         .speciesName = _("Kokuwamon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Kokuwamon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_ME,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_KOKUWAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Machine"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3897,7 +3945,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sKokuwamonFormChangeTable,
+        //.formSpeciesIdTable = sKokuwamonFormSpeciesIdTable,
     },
 
 
@@ -3909,7 +3957,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_INSECT, TYPE_INSECT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -3926,7 +3974,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
         .speciesName = _("Kunemon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -3935,7 +3983,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_KUNEMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Larva"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -3980,7 +4028,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sKunemonFormChangeTable,
+        .formSpeciesIdTable = sKunemonFormSpeciesIdTable,
     },
 
 
@@ -3992,7 +4040,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_INSECT, TYPE_FILTH),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4017,8 +4065,8 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_DOKUNEMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_KUNEMON,
+        .categoryName = _("Larva"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4063,7 +4111,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDokunemonFormChangeTable,
+        .formSpeciesIdTable = sKunemonFormSpeciesIdTable,
     },
 
 
@@ -4075,7 +4123,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_PLANT, TYPE_FILTH),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4092,16 +4140,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PURPLE,
     #if DubNames
-        .speciesName = _("Mushmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Mushroomon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Mushmon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_JT,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_MUSHMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Vegetation"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4146,7 +4194,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMushmonFormChangeTable,
+        //.formSpeciesIdTable = sMushmonFormSpeciesIdTable,
     },
 
 
@@ -4158,7 +4206,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_WATER, TYPE_WATER),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4175,7 +4223,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLUE,
     #if DubNames
         .speciesName = _("Otamamon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -4184,7 +4232,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_OTAMAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Amphibian"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4229,7 +4277,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sOtamamonFormChangeTable,
+        //.formSpeciesIdTable = sOtamamonFormSpeciesIdTable,
     },
 
 
@@ -4241,7 +4289,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_PLANT, TYPE_PLANT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4264,10 +4312,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #else
         .speciesName = _("Palmon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_JT,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PALMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Vegetation"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4312,7 +4360,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPalmonFormChangeTable,
+        .formSpeciesIdTable = sPalmonFormSpeciesIdTable,
     },
 
 
@@ -4324,7 +4372,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_PLANT, TYPE_FILTH),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4343,14 +4391,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Alraumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Aruraumon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Alraumon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_JT,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_ALRAUMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_PALMON,
+        .categoryName = _("Vegetation"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4395,7 +4443,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAlraumonFormChangeTable,
+        .formSpeciesIdTable = sPalmonFormSpeciesIdTable,
     },
 
 
@@ -4407,7 +4455,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_WIND, TYPE_WIND),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4424,16 +4472,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
         .speciesName = _("Patamon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Patamon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_VB,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PATAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Mammal"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4478,7 +4526,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPatamonFormChangeTable,
+        .formSpeciesIdTable = sPatamonFormSpeciesIdTable,
     },
 
 
@@ -4490,7 +4538,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_WIND, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4507,16 +4555,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PURPLE,
     #if DubNames
-        .speciesName = _("Tsukaimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Tukaimon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Tsukaimon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_TSUKAIMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_PATAMON,
+        .categoryName = _("Mammal"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4561,7 +4609,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTsukaimonFormChangeTable,
+        .formSpeciesIdTable = sPatamonFormSpeciesIdTable,
     },
 
 
@@ -4573,7 +4621,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_ICE, TYPE_ICE),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4590,16 +4638,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PURPLE,
     #if DubNames
-        .speciesName = _("Penmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Penguinmon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Penmon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PENMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Avian"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4644,7 +4692,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPenmonFormChangeTable,
+        .formSpeciesIdTable = sPenmonFormSpeciesIdTable,
     },
 
 
@@ -4656,7 +4704,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_WIND, TYPE_WIND),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4673,7 +4721,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_RED,
     #if DubNames
         .speciesName = _("Muchomon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -4681,8 +4729,8 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_MUCHOMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_PENMON,
+        .categoryName = _("Avian"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4727,7 +4775,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMuchomonFormChangeTable,
+        .formSpeciesIdTable = sPenmonFormSpeciesIdTable,
     },
 
 
@@ -4739,7 +4787,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4758,14 +4806,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Picodevimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("DemiDevimon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Picodevimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("PicoDevimon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PICODEVIMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Evil"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4810,7 +4858,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPicodevimonFormChangeTable,
+        //.formSpeciesIdTable = sPicodevimonFormSpeciesIdTable,
     },
 
 
@@ -4822,7 +4870,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_WIND, TYPE_WIND),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4839,16 +4887,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PINK,
     #if DubNames
-        .speciesName = _("Piyomon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Biyomon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Piyomon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PIYOMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Baby Bird"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4893,7 +4941,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPiyomonFormChangeTable,
+        //.formSpeciesIdTable = sPiyomonFormSpeciesIdTable,
     },
 
 
@@ -4905,7 +4953,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_LIGHT, TYPE_LIGHT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -4924,14 +4972,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Plotmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Salamon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Plotmon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_VB,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PLOTMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Mammal"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -4976,7 +5024,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPlotmonFormChangeTable,
+        //.formSpeciesIdTable = sPlotmonFormSpeciesIdTable,
     },
 
 
@@ -4988,7 +5036,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_WATER, TYPE_WATER),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5005,16 +5053,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_PINK,
     #if DubNames
-        .speciesName = _("Shakomon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Syakomon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Shakomon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_SHAKOMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Crustacean"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5059,7 +5107,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sShakomonFormChangeTable,
+        //.formSpeciesIdTable = sShakomonFormSpeciesIdTable,
     },
 
 
@@ -5071,7 +5119,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_INSECT, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5088,7 +5136,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_RED,
     #if DubNames
         .speciesName = _("Tentomon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -5097,7 +5145,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_TENTOMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Insectoid"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5142,7 +5190,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTentomonFormChangeTable,
+        //.formSpeciesIdTable = sTentomonFormSpeciesIdTable,
     },
 
 
@@ -5154,7 +5202,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_PUPPET, TYPE_PUPPET),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5171,16 +5219,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
-        .speciesName = _("Toyagumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("ToyAgumon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Toyagumon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("ToyAgumon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_ME,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_TOYAGUMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_AGUMON,
+        .categoryName = _("Puppet"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5225,7 +5273,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sToyagumonFormChangeTable,
+        .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
     },
 
 
@@ -5237,7 +5285,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_PUPPET, TYPE_PUPPET),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5254,16 +5302,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_GRAY,
     #if DubNames
-        .speciesName = _("Clearagumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("ClearAgumon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Clearagumon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("ClearAgumon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_ME,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_CLEARAGUMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_AGUMON,
+        .categoryName = _("Puppet"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5308,7 +5356,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sClearagumonFormChangeTable,
+        .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
     },
 
 
@@ -5346,14 +5394,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_BUN,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Capering"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "A mysterious digimon that doesn't seem\n"
+            "to have the ability to evolve. It's\n"
+            "real name is unknown; 'bun' is the\n"
+            "name given to it by a famous tamer."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5391,7 +5439,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBunFormChangeTable,
+        //.formSpeciesIdTable = sBunFormSpeciesIdTable,
     },
 
     [SPECIES_AIRDRAMON] =
@@ -5402,7 +5450,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_WIND, TYPE_DRAGON),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5419,7 +5467,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLUE,
     #if DubNames
         .speciesName = _("Airdramon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -5428,7 +5476,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_AIRDRAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Mythical"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5473,7 +5521,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAirdramonFormChangeTable,
+        //.formSpeciesIdTable = sAirdramonFormSpeciesIdTable,
     },
 
 
@@ -5485,7 +5533,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_LIGHT, TYPE_LIGHT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5502,16 +5550,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_WHITE,
     #if DubNames
         .speciesName = _("Angemon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Angemon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_VB,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_ANGEMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Angel"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5556,7 +5604,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAngemonFormChangeTable,
+        .formSpeciesIdTable = sAngemonFormSpeciesIdTable,
     },
 
 
@@ -5568,7 +5616,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_LIGHT, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5587,14 +5635,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Pidmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Pidddomon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Pidmon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_VB,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_PIDMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_ANGEMON,
+        .categoryName = _("Angel"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5639,7 +5687,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPidmonFormChangeTable,
+        .formSpeciesIdTable = sAngemonFormSpeciesIdTable,
     },
 
 
@@ -5651,7 +5699,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_UNDEAD, TYPE_UNDEAD),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5668,16 +5716,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_WHITE,
     #if DubNames
         .speciesName = _("Bakemon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Bakemon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_BAKEMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Ghost"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5722,7 +5770,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBakemonFormChangeTable,
+        .formSpeciesIdTable = sBakemonFormSpeciesIdTable,
     },
 
 
@@ -5734,7 +5782,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_UNDEAD, TYPE_UNDEAD),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5751,16 +5799,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_WHITE,
     #if DubNames
         .speciesName = _("Soulmon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Soulmon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_NSo,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_SOULMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_BAKEMON,
+        .categoryName = _("Ghost"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5805,7 +5853,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSoulmonFormChangeTable,
+        .formSpeciesIdTable = sBakemonFormSpeciesIdTable,
     },
 
 
@@ -5817,7 +5865,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_WIND, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5834,16 +5882,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_RED,
     #if DubNames
         .speciesName = _("Birdramon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Birdramon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_WG,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_BIRDRAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Giant Bird"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5888,7 +5936,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBirdramonFormChangeTable,
+        .formSpeciesIdTable = sBirdramonFormSpeciesIdTable,
     },
 
 
@@ -5900,7 +5948,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_WIND, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 1,
@@ -5917,16 +5965,16 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLACK,
     #if DubNames
         .speciesName = _("Saberdramon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Saberdramon"),//the digimon's sub name. e.g. tailmon
     #endif
-        //.field = field_Nsp,
+        //.field = field_WG,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_SABERDRAMON,
-        .categoryName = _("Unknown"),
+        .natDexNum = NATIONAL_DEX_BIRDRAMON,
+        .categoryName = _("Giant Bird"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -5971,7 +6019,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSaberdramonFormChangeTable,
+        .formSpeciesIdTable = sBirdramonFormSpeciesIdTable,
     },
 
 
@@ -6054,7 +6102,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sCentarumonFormChangeTable,
+        //.formSpeciesIdTable = sCentarumonFormSpeciesIdTable,
     },
 
 
@@ -6137,7 +6185,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sClockmonFormChangeTable,
+        //.formSpeciesIdTable = sClockmonFormSpeciesIdTable,
     },
 
 
@@ -6220,7 +6268,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sCoelamonFormChangeTable,
+        //.formSpeciesIdTable = sCoelamonFormSpeciesIdTable,
     },
 
 
@@ -6303,7 +6351,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sCyclomonFormChangeTable,
+        //.formSpeciesIdTable = sCyclomonFormSpeciesIdTable,
     },
 
 
@@ -6334,9 +6382,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("nnomon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("{DARKTYRANNOMON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("nomon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("{DARKTYRANNOMON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -6386,7 +6434,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDarktyrannomonFormChangeTable,
+        //.formSpeciesIdTable = sDarktyrannomonFormSpeciesIdTable,
     },
 
 
@@ -6469,7 +6517,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDeltamonFormChangeTable,
+        //.formSpeciesIdTable = sDeltamonFormSpeciesIdTable,
     },
 
 
@@ -6552,7 +6600,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDevidramonFormChangeTable,
+        //.formSpeciesIdTable = sDevidramonFormSpeciesIdTable,
     },
 
 
@@ -6635,7 +6683,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDevimonFormChangeTable,
+        .formSpeciesIdTable = sDevimonFormSpeciesIdTable,
     },
 
 
@@ -6672,7 +6720,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_ICEDEVIMON,
+        .natDexNum = NATIONAL_DEX_DEVIMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -6718,7 +6766,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sIcedevimonFormChangeTable,
+        .formSpeciesIdTable = sDevimonFormSpeciesIdTable,
     },
 
 
@@ -6801,7 +6849,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDokugumonFormChangeTable,
+        //.formSpeciesIdTable = sDokugumonFormSpeciesIdTable,
     },
 
 
@@ -6884,7 +6932,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDrimogemonFormChangeTable,
+        .formSpeciesIdTable = sDrimogemonFormSpeciesIdTable,
     },
 
 
@@ -6915,13 +6963,13 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Nised"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("NiseD{RI}moge{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Nisedr"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("NiseD{RI}moge{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_NISEDRIMOGEMON,
+        .natDexNum = NATIONAL_DEX_DRIMOGEMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -6967,7 +7015,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sNisedrimogemonFormChangeTable,
+        .formSpeciesIdTable = sDrimogemonFormSpeciesIdTable,
     },
 
 
@@ -7050,7 +7098,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sEbidramonFormChangeTable,
+        //.formSpeciesIdTable = sEbidramonFormSpeciesIdTable,
     },
 
 
@@ -7133,7 +7181,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sEvilmonFormChangeTable,
+        //.formSpeciesIdTable = sEvilmonFormSpeciesIdTable,
     },
 
 
@@ -7164,9 +7212,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Flare"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Flareriza{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Flare"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("FlareLizar{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -7216,7 +7264,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sFlarelizarmonFormChangeTable,
+        .formSpeciesIdTable = sFlarelizarmonFormSpeciesIdTable,
     },
 
 
@@ -7253,7 +7301,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_DARKLIZARMON,
+        .natDexNum = NATIONAL_DEX_FLARELIZARMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -7299,7 +7347,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDarklizarmonFormChangeTable,
+        .formSpeciesIdTable = sFlarelizarmonFormSpeciesIdTable,
     },
 
 
@@ -7382,7 +7430,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sFlymonFormChangeTable,
+        //.formSpeciesIdTable = sFlymonFormSpeciesIdTable,
     },
 
 
@@ -7465,7 +7513,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGarurumonFormChangeTable,
+        .formSpeciesIdTable = sGarurumonFormSpeciesIdTable,
     },
 
 
@@ -7502,7 +7550,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_GURURUMON,
+        .natDexNum = NATIONAL_DEX_GARURUMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -7548,7 +7596,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGururumonFormChangeTable,
+        .formSpeciesIdTable = sGarurumonFormSpeciesIdTable,
     },
 
 
@@ -7631,7 +7679,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGekomonFormChangeTable,
+        //.formSpeciesIdTable = sGekomonFormSpeciesIdTable,
     },
 
 
@@ -7714,7 +7762,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGesomonFormChangeTable,
+        //.formSpeciesIdTable = sGesomonFormSpeciesIdTable,
     },
 
 
@@ -7745,7 +7793,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Gokimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Roachmon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Gokimon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -7797,7 +7845,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGokimonFormChangeTable,
+        //.formSpeciesIdTable = sGokimonFormSpeciesIdTable,
     },
 
 
@@ -7880,7 +7928,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGolemonFormChangeTable,
+        //.formSpeciesIdTable = sGolemonFormSpeciesIdTable,
     },
 
 
@@ -7911,7 +7959,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Gorimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Gorillamon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Gorimon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -7963,7 +8011,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGorimonFormChangeTable,
+        //.formSpeciesIdTable = sGorimonFormSpeciesIdTable,
     },
 
 
@@ -8046,7 +8094,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGreymonFormChangeTable,
+        .formSpeciesIdTable = sGreymonFormSpeciesIdTable,
     },
 
 
@@ -8129,7 +8177,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGuardromonFormChangeTable,
+        //.formSpeciesIdTable = sGuardromonFormSpeciesIdTable,
     },
 
 
@@ -8160,7 +8208,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Hanumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Apemon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Hanumon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -8212,7 +8260,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sHanumonFormChangeTable,
+        //.formSpeciesIdTable = sHanumonFormSpeciesIdTable,
     },
 
 
@@ -8249,7 +8297,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_ICEMON,
+        .natDexNum = NATIONAL_DEX_GOTSUMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -8295,7 +8343,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sIcemonFormChangeTable,
+        .formSpeciesIdTable = sGotsumonFormSpeciesIdTable,
     },
 
 
@@ -8326,7 +8374,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Igamon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Ninjamon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Igamon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -8378,7 +8426,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sIgamonFormChangeTable,
+        //.formSpeciesIdTable = sIgamonFormSpeciesIdTable,
     },
 
 
@@ -8461,7 +8509,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sIkkakumonFormChangeTable,
+        //.formSpeciesIdTable = sIkkakumonFormSpeciesIdTable,
     },
 
 
@@ -8544,7 +8592,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sKabuterimonFormChangeTable,
+        //.formSpeciesIdTable = sKabuterimonFormSpeciesIdTable,
     },
 
 
@@ -8575,13 +8623,13 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Karn"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("ShellNumemon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Karon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("{KARA}tukiNume{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_KARATUKINUMEMON,
+        .natDexNum = NATIONAL_DEX_NUMEMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -8627,7 +8675,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sKaratukinumemonFormChangeTable,
+        .formSpeciesIdTable = sNumemonFormSpeciesIdTable,
     },
 
 
@@ -8710,7 +8758,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sKiwimonFormChangeTable,
+        //.formSpeciesIdTable = sKiwimonFormSpeciesIdTable,
     },
 
 
@@ -8741,7 +8789,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Kokatorimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Cockatrimon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Kokatorimon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -8793,7 +8841,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sKokatorimonFormChangeTable,
+        .formSpeciesIdTable = sKokatorimonFormSpeciesIdTable,
     },
 
 
@@ -8830,7 +8878,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_AKATORIMON,
+        .natDexNum = NATIONAL_DEX_KOKATORIMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -8876,7 +8924,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAkatorimonFormChangeTable,
+        .formSpeciesIdTable = sKokatorimonFormSpeciesIdTable,
     },
 
 
@@ -8959,7 +9007,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sKuwagamonFormChangeTable,
+        //.formSpeciesIdTable = sKuwagamonFormSpeciesIdTable,
     },
 
 
@@ -9042,7 +9090,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sLeomonFormChangeTable,
+        //.formSpeciesIdTable = sLeomonFormSpeciesIdTable,
     },
 
 
@@ -9125,7 +9173,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMechanorimonFormChangeTable,
+        //.formSpeciesIdTable = sMechanorimonFormSpeciesIdTable,
     },
 
 
@@ -9208,7 +9256,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMeramonFormChangeTable,
+        //.formSpeciesIdTable = sMeramonFormSpeciesIdTable,
     },
 
 
@@ -9291,7 +9339,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMinotaurmonFormChangeTable,
+        //.formSpeciesIdTable = sMinotaurmonFormSpeciesIdTable,
     },
 
 
@@ -9374,7 +9422,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMojyamonFormChangeTable,
+        .formSpeciesIdTable = sMojyamonFormSpeciesIdTable,
     },
 
 
@@ -9405,9 +9453,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Juon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("J{UN}gleMojya{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Jungmon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("J{UN}gleMojya{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -9457,7 +9505,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sJunglemojyamonFormChangeTable,
+        //.formSpeciesIdTable = sJunglemojyamonFormSpeciesIdTable,
     },
 
 
@@ -9540,7 +9588,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMonochromonFormChangeTable,
+        //.formSpeciesIdTable = sMonochromonFormSpeciesIdTable,
     },
 
 
@@ -9623,7 +9671,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMusyamonFormChangeTable,
+        //.formSpeciesIdTable = sMusyamonFormSpeciesIdTable,
     },
 
 
@@ -9706,7 +9754,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sNanimonFormChangeTable,
+        //.formSpeciesIdTable = sNanimonFormSpeciesIdTable,
     },
 
 
@@ -9789,7 +9837,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sNumemonFormChangeTable,
+        .formSpeciesIdTable = sNumemonFormSpeciesIdTable,
     },
 
 
@@ -9826,7 +9874,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_GEREMON,
+        .natDexNum = NATIONAL_DEX_NUMEMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -9872,7 +9920,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGeremonFormChangeTable,
+        .formSpeciesIdTable = sNumemonFormSpeciesIdTable,
     },
 
 
@@ -9955,7 +10003,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sOctomonFormChangeTable,
+        //.formSpeciesIdTable = sOctomonFormSpeciesIdTable,
     },
 
 
@@ -10038,7 +10086,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sOgremonFormChangeTable,
+        .formSpeciesIdTable = sOgremonFormSpeciesIdTable,
     },
 
 
@@ -10075,7 +10123,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_FUGAMON,
+        .natDexNum = NATIONAL_DEX_OGREMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -10121,7 +10169,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sFugamonFormChangeTable,
+        .formSpeciesIdTable = sOgremonFormSpeciesIdTable,
     },
 
 
@@ -10158,7 +10206,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_HYOGAMON,
+        .natDexNum = NATIONAL_DEX_OGREMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -10204,7 +10252,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sHyogamonFormChangeTable,
+        .formSpeciesIdTable = sOgremonFormSpeciesIdTable,
     },
 
 
@@ -10287,7 +10335,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sRaremonFormChangeTable,
+        //.formSpeciesIdTable = sRaremonFormSpeciesIdTable,
     },
 
 
@@ -10318,7 +10366,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Revolmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Deputymon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Revolmon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -10370,7 +10418,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sRevolmonFormChangeTable,
+        //.formSpeciesIdTable = sRevolmonFormSpeciesIdTable,
     },
 
 
@@ -10401,7 +10449,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Rukamon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Dolphmon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Rukamon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -10453,7 +10501,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sRukamonFormChangeTable,
+        //.formSpeciesIdTable = sRukamonFormSpeciesIdTable,
     },
 
 
@@ -10536,7 +10584,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSeadramonFormChangeTable,
+        //.formSpeciesIdTable = sSeadramonFormSpeciesIdTable,
     },
 
 
@@ -10619,7 +10667,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sShellmonFormChangeTable,
+        .formSpeciesIdTable = sShellmonFormSpeciesIdTable,
     },
 
 
@@ -10650,13 +10698,13 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Morishellmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("MoriShellmon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Morishellmon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("MoriShellmon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_MORISHELLMON,
+        .natDexNum = NATIONAL_DEX_SHELLMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -10702,7 +10750,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMorishellmonFormChangeTable,
+        .formSpeciesIdTable = sShellmonFormSpeciesIdTable,
     },
 
 
@@ -10785,7 +10833,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSnimonFormChangeTable,
+        //.formSpeciesIdTable = sSnimonFormSpeciesIdTable,
     },
 
 
@@ -10868,7 +10916,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sStarmonFormChangeTable,
+        //.formSpeciesIdTable = sStarmonFormSpeciesIdTable,
     },
 
 
@@ -10901,7 +10949,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #if DubNames
         .speciesName = _("Sukamon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Sukamon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Scumon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -10951,7 +10999,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSukamonFormChangeTable,
+        .formSpeciesIdTable = sSukamonFormSpeciesIdTable,
     },
 
 
@@ -10982,13 +11030,13 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Plamon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("{PLATINUM}Sukamon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Plaon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("{PLATINUM}Scumon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_PLATINUMSUKAMON,
+        .natDexNum = NATIONAL_DEX_SUKAMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -11034,7 +11082,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPlatinumsukamonFormChangeTable,
+        .formSpeciesIdTable = sSukamonFormSpeciesIdTable,
     },
 
 
@@ -11065,7 +11113,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Tailmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Gatomon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Tailmon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -11117,7 +11165,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTailmonFormChangeTable,
+        .formSpeciesIdTable = sTailmonFormSpeciesIdTable,
     },
 
 
@@ -11200,7 +11248,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTankmonFormChangeTable,
+        //.formSpeciesIdTable = sTankmonFormSpeciesIdTable,
     },
 
 
@@ -11231,9 +11279,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Thon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("{THUNDERBA}llmon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Thunmon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("{THUNDERBA}llmon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -11283,7 +11331,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sThunderballmonFormChangeTable,
+        //.formSpeciesIdTable = sThunderballmonFormSpeciesIdTable,
     },
 
 
@@ -11366,7 +11414,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTogemonFormChangeTable,
+        //.formSpeciesIdTable = sTogemonFormSpeciesIdTable,
     },
 
 
@@ -11449,7 +11497,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTortomonFormChangeTable,
+        //.formSpeciesIdTable = sTortomonFormSpeciesIdTable,
     },
 
 
@@ -11532,7 +11580,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTuskmonFormChangeTable,
+        //.formSpeciesIdTable = sTuskmonFormSpeciesIdTable,
     },
 
 
@@ -11615,7 +11663,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTyrannomonFormChangeTable,
+        //.formSpeciesIdTable = sTyrannomonFormSpeciesIdTable,
     },
 
 
@@ -11698,7 +11746,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sUnimonFormChangeTable,
+        .formSpeciesIdTable = sUnimonFormSpeciesIdTable,
     },
 
 
@@ -11729,9 +11777,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Shimaunimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("ShimaUnimon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Shimaunimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("ShimaUnimon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -11781,7 +11829,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sShimaunimonFormChangeTable,
+        .formSpeciesIdTable = sUnimonFormSpeciesIdTable,
     },
 
 
@@ -11864,7 +11912,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sVeedramonFormChangeTable,
+        //.formSpeciesIdTable = sVeedramonFormSpeciesIdTable,
     },
 
 
@@ -11895,7 +11943,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Vegimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Vegiemon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Vegimon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -11947,7 +11995,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sVegimonFormChangeTable,
+        .formSpeciesIdTable = sVegimonFormSpeciesIdTable,
     },
 
 
@@ -11978,13 +12026,13 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Zassoumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Weedmon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Zassoumon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_ZASSOUMON,
+        .natDexNum = NATIONAL_DEX_VEGIMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -12030,7 +12078,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sZassoumonFormChangeTable,
+        .formSpeciesIdTable = sVegimonFormSpeciesIdTable,
     },
 
 
@@ -12061,9 +12109,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Redvegimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("RedVegimon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Redvegimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("RedVegimon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -12113,7 +12161,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sRedvegimonFormChangeTable,
+        .formSpeciesIdTable = sVegimonFormSpeciesIdTable,
     },
 
 
@@ -12144,9 +12192,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Whamon Adult"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Whamon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Whamon Adult"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Whamon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -12196,7 +12244,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sWhamon_adultFormChangeTable,
+        .formSpeciesIdTable = sWhamonFormSpeciesIdTable,
     },
 
 
@@ -12227,7 +12275,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Wizarmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Wizardmon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Wizarmon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -12279,7 +12327,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sWizarmonFormChangeTable,
+        .formSpeciesIdTable = sWizarmonFormSpeciesIdTable,
     },
 
 
@@ -12362,7 +12410,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sWoodmonFormChangeTable,
+        //.formSpeciesIdTable = sWoodmonFormSpeciesIdTable,
     },
 
 
@@ -12445,7 +12493,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sYanmamonFormChangeTable,
+        .formSpeciesIdTable = sYanmamonFormSpeciesIdTable,
     },
 
 
@@ -12476,13 +12524,13 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Sandyanmamon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("SandYanmamon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Sandyanmamon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("SandYanmamon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_SANDYANMAMON,
+        .natDexNum = NATIONAL_DEX_YANMAMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -12528,7 +12576,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSandyanmamonFormChangeTable,
+        .formSpeciesIdTable = sYanmamonFormSpeciesIdTable,
     },
 
 
@@ -12559,7 +12607,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Yukidarumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Frigimon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Yukidarumon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -12611,7 +12659,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sYukidarumonFormChangeTable,
+        .formSpeciesIdTable = sYukidarumonFormSpeciesIdTable,
     },
 
 
@@ -12642,13 +12690,13 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Tsucumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("MudFrigimon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Tsucmon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Tuchidaru{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_TSUCHIDARUMON,
+        .natDexNum = NATIONAL_DEX_YUKIDARUMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -12694,7 +12742,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTsuchidarumonFormChangeTable,
+        .formSpeciesIdTable = sYukidarumonFormSpeciesIdTable,
     },
 
 
@@ -12725,9 +12773,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Aemon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("AeroVee{DRAMON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Aeroon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("AeroVee{DRAMON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -12777,7 +12825,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAeroveedramonFormChangeTable,
+        //.formSpeciesIdTable = sAeroveedramonFormSpeciesIdTable,
     },
 
 
@@ -12860,7 +12908,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAndromonFormChangeTable,
+        //.formSpeciesIdTable = sAndromonFormSpeciesIdTable,
     },
 
 
@@ -12943,7 +12991,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAngewomonFormChangeTable,
+        //.formSpeciesIdTable = sAngewomonFormSpeciesIdTable,
     },
 
 
@@ -12974,9 +13022,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Anon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Scorpiomon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Anrimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("{AN}omalo{CA}ri{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -13026,7 +13074,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAnomalocarimonFormChangeTable,
+        //.formSpeciesIdTable = sAnomalocarimonFormSpeciesIdTable,
     },
 
 
@@ -13109,7 +13157,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAsuramonFormChangeTable,
+        //.formSpeciesIdTable = sAsuramonFormSpeciesIdTable,
     },
 
 
@@ -13140,9 +13188,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Atlonr"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Mega{KABUTERIMON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Atluonr"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Atlur{KABUTERIMON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -13192,7 +13240,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAtlurkabuterimonrFormChangeTable,
+        .formSpeciesIdTable = sAtlurkabuterimonrFormSpeciesIdTable,
     },
 
 
@@ -13223,13 +13271,13 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Atluonb"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Mega{KABUTERIMON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Atlnb"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Atlur{KABUTERIMON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_ATLURKABUTERIMONB,
+        .natDexNum = NATIONAL_DEX_ATLURKABUTERIMONR,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -13275,7 +13323,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sAtlurkabuterimonbFormChangeTable,
+        .formSpeciesIdTable = sAtlurkabuterimonrFormSpeciesIdTable,
     },
 
 
@@ -13312,7 +13360,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_BIGMAMEMON,
+        .natDexNum = NATIONAL_DEX_MAMEMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -13358,7 +13406,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBigmamemonFormChangeTable,
+        .formSpeciesIdTable = sMamemonFormSpeciesIdTable,
     },
 
 
@@ -13441,7 +13489,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBlossomonFormChangeTable,
+        //.formSpeciesIdTable = sBlossomonFormSpeciesIdTable,
     },
 
 
@@ -13524,7 +13572,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBluemeramonFormChangeTable,
+        //.formSpeciesIdTable = sBluemeramonFormSpeciesIdTable,
     },
 
 
@@ -13607,7 +13655,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBrachimonFormChangeTable,
+        //.formSpeciesIdTable = sBrachimonFormSpeciesIdTable,
     },
 
 
@@ -13690,7 +13738,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sChimairamonFormChangeTable,
+        //.formSpeciesIdTable = sChimairamonFormSpeciesIdTable,
     },
 
 
@@ -13773,7 +13821,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sCyberdramonFormChangeTable,
+        //.formSpeciesIdTable = sCyberdramonFormSpeciesIdTable,
     },
 
 
@@ -13856,7 +13904,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDagomonFormChangeTable,
+        //.formSpeciesIdTable = sDagomonFormSpeciesIdTable,
     },
 
 
@@ -13939,7 +13987,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDeathmeramonFormChangeTable,
+        //.formSpeciesIdTable = sDeathmeramonFormSpeciesIdTable,
     },
 
 
@@ -14022,7 +14070,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDelumonFormChangeTable,
+        //.formSpeciesIdTable = sDelumonFormSpeciesIdTable,
     },
 
 
@@ -14105,7 +14153,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDigitamamonFormChangeTable,
+        //.formSpeciesIdTable = sDigitamamonFormSpeciesIdTable,
     },
 
 
@@ -14188,7 +14236,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sEtemonFormChangeTable,
+        //.formSpeciesIdTable = sEtemonFormSpeciesIdTable,
     },
 
 
@@ -14271,7 +14319,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sExtyrannomonFormChangeTable,
+        //.formSpeciesIdTable = sExtyrannomonFormSpeciesIdTable,
     },
 
 
@@ -14354,7 +14402,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGarudamonFormChangeTable,
+        //.formSpeciesIdTable = sGarudamonFormSpeciesIdTable,
     },
 
 
@@ -14437,7 +14485,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGerbemonFormChangeTable,
+        //.formSpeciesIdTable = sGerbemonFormSpeciesIdTable,
     },
 
 
@@ -14520,7 +14568,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGigadramonFormChangeTable,
+        //.formSpeciesIdTable = sGigadramonFormSpeciesIdTable,
     },
 
 
@@ -14603,7 +14651,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGiromonFormChangeTable,
+        //.formSpeciesIdTable = sGiromonFormSpeciesIdTable,
     },
 
 
@@ -14686,7 +14734,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTekkamonFormChangeTable,
+        //.formSpeciesIdTable = sTekkamonFormSpeciesIdTable,
     },
 
 
@@ -14769,7 +14817,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sHangyomonFormChangeTable,
+        //.formSpeciesIdTable = sHangyomonFormSpeciesIdTable,
     },
 
 
@@ -14852,7 +14900,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sHolyangemonFormChangeTable,
+        //.formSpeciesIdTable = sHolyangemonFormSpeciesIdTable,
     },
 
 
@@ -14889,7 +14937,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_INSEKIMON,
+        .natDexNum = NATIONAL_DEX_GOTSUMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -14935,7 +14983,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sInsekimonFormChangeTable,
+        .formSpeciesIdTable = sGotsumonFormSpeciesIdTable,
     },
 
 
@@ -15018,7 +15066,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sJyagamonFormChangeTable,
+        //.formSpeciesIdTable = sJyagamonFormSpeciesIdTable,
     },
 
 
@@ -15101,7 +15149,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sJyureimonFormChangeTable,
+        //.formSpeciesIdTable = sJyureimonFormSpeciesIdTable,
     },
 
 
@@ -15184,7 +15232,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sKnightmonFormChangeTable,
+        //.formSpeciesIdTable = sKnightmonFormSpeciesIdTable,
     },
 
 
@@ -15267,7 +15315,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sLadydevimonFormChangeTable,
+        //.formSpeciesIdTable = sLadydevimonFormSpeciesIdTable,
     },
 
 
@@ -15350,7 +15398,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sLilimonFormChangeTable,
+        //.formSpeciesIdTable = sLilimonFormSpeciesIdTable,
     },
 
 
@@ -15433,7 +15481,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMamemonFormChangeTable,
+        //.formSpeciesIdTable = sMamemonFormSpeciesIdTable,
     },
 
 
@@ -15516,7 +15564,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMammonFormChangeTable,
+        //.formSpeciesIdTable = sMammonFormSpeciesIdTable,
     },
 
 
@@ -15553,7 +15601,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_MARINEDEVIMON,
+        .natDexNum = NATIONAL_DEX_DEVIMON,
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
@@ -15599,7 +15647,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMarinedevimonFormChangeTable,
+        .formSpeciesIdTable = sDevimonFormSpeciesIdTable,
     },
 
 
@@ -15682,7 +15730,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMastertyrannomonFormChangeTable,
+        //.formSpeciesIdTable = sMastertyrannomonFormSpeciesIdTable,
     },
 
 
@@ -15765,7 +15813,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMegadramonFormChangeTable,
+        //.formSpeciesIdTable = sMegadramonFormSpeciesIdTable,
     },
 
 
@@ -15848,7 +15896,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMegaseadramonFormChangeTable,
+        //.formSpeciesIdTable = sMegaseadramonFormSpeciesIdTable,
     },
 
 
@@ -15931,7 +15979,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sWaruseadramonFormChangeTable,
+        //.formSpeciesIdTable = sWaruseadramonFormSpeciesIdTable,
     },
 
 
@@ -16014,7 +16062,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMetalgreymonFormChangeTable,
+        //.formSpeciesIdTable = sMetalgreymonFormSpeciesIdTable,
     },
 
 
@@ -16097,7 +16145,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMetalgreymonvFormChangeTable,
+        //.formSpeciesIdTable = sMetalgreymonvFormSpeciesIdTable,
     },
 
 
@@ -16180,7 +16228,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMetalmamemonFormChangeTable,
+        //.formSpeciesIdTable = sMetalmamemonFormSpeciesIdTable,
     },
 
 
@@ -16263,7 +16311,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMetaltyrannomonFormChangeTable,
+        //.formSpeciesIdTable = sMetaltyrannomonFormSpeciesIdTable,
     },
 
 
@@ -16346,7 +16394,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMonzaemonFormChangeTable,
+        //.formSpeciesIdTable = sMonzaemonFormSpeciesIdTable,
     },
 
 
@@ -16429,7 +16477,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMummymonFormChangeTable,
+        //.formSpeciesIdTable = sMummymonFormSpeciesIdTable,
     },
 
 
@@ -16512,7 +16560,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sNanomonFormChangeTable,
+        //.formSpeciesIdTable = sNanomonFormSpeciesIdTable,
     },
 
 
@@ -16595,7 +16643,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sOkuwamonFormChangeTable,
+        //.formSpeciesIdTable = sOkuwamonFormSpeciesIdTable,
     },
 
 
@@ -16678,7 +16726,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sOrochimonFormChangeTable,
+        //.formSpeciesIdTable = sOrochimonFormSpeciesIdTable,
     },
 
 
@@ -16761,7 +16809,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPanjyamonFormChangeTable,
+        //.formSpeciesIdTable = sPanjyamonFormSpeciesIdTable,
     },
 
 
@@ -16844,7 +16892,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sParrotmonFormChangeTable,
+        //.formSpeciesIdTable = sParrotmonFormSpeciesIdTable,
     },
 
 
@@ -16927,7 +16975,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPhantomonFormChangeTable,
+        //.formSpeciesIdTable = sPhantomonFormSpeciesIdTable,
     },
 
 
@@ -17010,7 +17058,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPiccolomonFormChangeTable,
+        //.formSpeciesIdTable = sPiccolomonFormSpeciesIdTable,
     },
 
 
@@ -17093,7 +17141,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPumpmonFormChangeTable,
+        //.formSpeciesIdTable = sPumpmonFormSpeciesIdTable,
     },
 
 
@@ -17176,7 +17224,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSkullgreymonFormChangeTable,
+        //.formSpeciesIdTable = sSkullgreymonFormSpeciesIdTable,
     },
 
 
@@ -17259,7 +17307,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSkullsatamonFormChangeTable,
+        //.formSpeciesIdTable = sSkullsatamonFormSpeciesIdTable,
     },
 
 
@@ -17342,7 +17390,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTonosamagekomonFormChangeTable,
+        //.formSpeciesIdTable = sTonosamagekomonFormSpeciesIdTable,
     },
 
 
@@ -17425,7 +17473,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sTriceramonFormChangeTable,
+        //.formSpeciesIdTable = sTriceramonFormSpeciesIdTable,
     },
 
 
@@ -17508,7 +17556,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sVadermonFormChangeTable,
+        //.formSpeciesIdTable = sVadermonFormSpeciesIdTable,
     },
 
 
@@ -17591,7 +17639,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sVamdemonFormChangeTable,
+        //.formSpeciesIdTable = sVamdemonFormSpeciesIdTable,
     },
 
 
@@ -17674,7 +17722,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sVermilimonFormChangeTable,
+        //.formSpeciesIdTable = sVermilimonFormSpeciesIdTable,
     },
 
 
@@ -17757,7 +17805,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sWarumonzaemonFormChangeTable,
+        //.formSpeciesIdTable = sWarumonzaemonFormSpeciesIdTable,
     },
 
 
@@ -17840,7 +17888,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sWeregarurumonFormChangeTable,
+        //.formSpeciesIdTable = sWeregarurumonFormSpeciesIdTable,
     },
 
 
@@ -17923,7 +17971,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sWhamon_perfectFormChangeTable,
+        //.formSpeciesIdTable = sWhamon_perfectFormSpeciesIdTable,
     },
 
 
@@ -18006,7 +18054,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sZudomonFormChangeTable,
+        //.formSpeciesIdTable = sZudomonFormSpeciesIdTable,
     },
 
 
@@ -18089,7 +18137,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sApocalymonFormChangeTable,
+        //.formSpeciesIdTable = sApocalymonFormSpeciesIdTable,
     },
 
 
@@ -18172,7 +18220,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBabamonFormChangeTable,
+        //.formSpeciesIdTable = sBabamonFormSpeciesIdTable,
     },
 
 
@@ -18255,7 +18303,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sBoltmonFormChangeTable,
+        //.formSpeciesIdTable = sBoltmonFormSpeciesIdTable,
     },
 
 
@@ -18338,7 +18386,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDemonFormChangeTable,
+        //.formSpeciesIdTable = sDemonFormSpeciesIdTable,
     },
 
 
@@ -18421,7 +18469,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDevitamamonFormChangeTable,
+        //.formSpeciesIdTable = sDevitamamonFormSpeciesIdTable,
     },
 
 
@@ -18504,7 +18552,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sDiablomonFormChangeTable,
+        //.formSpeciesIdTable = sDiablomonFormSpeciesIdTable,
     },
 
 
@@ -18587,7 +18635,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGoddramonFormChangeTable,
+        //.formSpeciesIdTable = sGoddramonFormSpeciesIdTable,
     },
 
 
@@ -18670,7 +18718,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sGriffomonFormChangeTable,
+        //.formSpeciesIdTable = sGriffomonFormSpeciesIdTable,
     },
 
 
@@ -18753,7 +18801,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sHeraklekabuterimonFormChangeTable,
+        //.formSpeciesIdTable = sHeraklekabuterimonFormSpeciesIdTable,
     },
 
 
@@ -18836,7 +18884,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sHolydramonFormChangeTable,
+        //.formSpeciesIdTable = sHolydramonFormSpeciesIdTable,
     },
 
 
@@ -18919,7 +18967,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sHououmonFormChangeTable,
+        //.formSpeciesIdTable = sHououmonFormSpeciesIdTable,
     },
 
 
@@ -19002,7 +19050,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sJijimonFormChangeTable,
+        //.formSpeciesIdTable = sJijimonFormSpeciesIdTable,
     },
 
 
@@ -19085,7 +19133,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sKingetemonFormChangeTable,
+        //.formSpeciesIdTable = sKingetemonFormSpeciesIdTable,
     },
 
 
@@ -19168,7 +19216,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMarineangemonFormChangeTable,
+        //.formSpeciesIdTable = sMarineangemonFormSpeciesIdTable,
     },
 
 
@@ -19251,7 +19299,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMetaletemonFormChangeTable,
+        //.formSpeciesIdTable = sMetaletemonFormSpeciesIdTable,
     },
 
 
@@ -19334,7 +19382,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMetalgarurumonFormChangeTable,
+        //.formSpeciesIdTable = sMetalgarurumonFormSpeciesIdTable,
     },
 
 
@@ -19417,7 +19465,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMetalseadramonFormChangeTable,
+        //.formSpeciesIdTable = sMetalseadramonFormSpeciesIdTable,
     },
 
 
@@ -19500,7 +19548,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMillenniummonFormChangeTable,
+        //.formSpeciesIdTable = sMillenniummonFormSpeciesIdTable,
     },
 
 
@@ -19583,7 +19631,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sMugendramonFormChangeTable,
+        //.formSpeciesIdTable = sMugendramonFormSpeciesIdTable,
     },
 
 
@@ -19666,7 +19714,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sOmegamonFormChangeTable,
+        //.formSpeciesIdTable = sOmegamonFormSpeciesIdTable,
     },
 
 
@@ -19749,7 +19797,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPiemonFormChangeTable,
+        //.formSpeciesIdTable = sPiemonFormSpeciesIdTable,
     },
 
 
@@ -19832,7 +19880,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPinocchimonFormChangeTable,
+        //.formSpeciesIdTable = sPinocchimonFormSpeciesIdTable,
     },
 
 
@@ -19915,7 +19963,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPlesiomonFormChangeTable,
+        //.formSpeciesIdTable = sPlesiomonFormSpeciesIdTable,
     },
 
 
@@ -19998,7 +20046,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sPukumonFormChangeTable,
+        //.formSpeciesIdTable = sPukumonFormSpeciesIdTable,
     },
 
 
@@ -20081,7 +20129,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sRosemonFormChangeTable,
+        //.formSpeciesIdTable = sRosemonFormSpeciesIdTable,
     },
 
 
@@ -20164,7 +20212,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSaberleomonFormChangeTable,
+        //.formSpeciesIdTable = sSaberleomonFormSpeciesIdTable,
     },
 
 
@@ -20247,7 +20295,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sSkullmammonFormChangeTable,
+        //.formSpeciesIdTable = sSkullmammonFormSpeciesIdTable,
     },
 
 
@@ -20330,7 +20378,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sVenomvamdemonFormChangeTable,
+        //.formSpeciesIdTable = sVenomvamdemonFormSpeciesIdTable,
     },
 
 
@@ -20413,7 +20461,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sWargreymonFormChangeTable,
+        //.formSpeciesIdTable = sWargreymonFormSpeciesIdTable,
     },
 
 
@@ -20496,7 +20544,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
                                 ),
-        //.formChangeTable = sZanbamonFormChangeTable,
+        //.formSpeciesIdTable = sZanbamonFormSpeciesIdTable,
     },
 
 

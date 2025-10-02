@@ -2203,3 +2203,209 @@ static const u16 sBotamonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
+static const u16 sAgumonFormSpeciesIdTable[] = {
+    SPECIES_AGUMON,
+    SPECIES_YUKIAGUMON,
+    SPECIES_TOYAGUMON,
+    SPECIES_CLEARAGUMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sBetamonFormSpeciesIdTable[] = {
+    SPECIES_BETAMON,
+    SPECIES_MODOKIBETAMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sElecmonFormSpeciesIdTable[] = {
+    SPECIES_ELECMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sGabumonFormSpeciesIdTable[] = {
+    SPECIES_GABUMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sGoblimonFormSpeciesIdTable[] = {
+    SPECIES_GOBLIMON,
+    SPECIES_SHAMAMON,
+    SPECIES_SNOWGOBLIMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sGotsumonFormSpeciesIdTable[] = {
+    SPECIES_GOTSUMON,
+    SPECIES_ICEMON,
+    SPECIES_INSEKIMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sHagurumonFormSpeciesIdTable[] = {
+    SPECIES_HAGURUMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sKunemonFormSpeciesIdTable[] = {
+    SPECIES_KUNEMON,
+    SPECIES_DOKUNEMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sPalmonFormSpeciesIdTable[] = {
+    SPECIES_PALMON,
+    SPECIES_ALRAUMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sPatamonFormSpeciesIdTable[] = {
+    SPECIES_PATAMON,
+    SPECIES_TSUKAIMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sPenmonFormSpeciesIdTable[] = {
+    SPECIES_PENMON,
+    SPECIES_MUCHOMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sAngemonFormSpeciesIdTable[] = {
+    SPECIES_ANGEMON,
+    SPECIES_PIDMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sBakemonFormSpeciesIdTable[] = {
+    SPECIES_BAKEMON,
+    SPECIES_SOULMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sBirdramonFormSpeciesIdTable[] = {
+    SPECIES_BIRDRAMON,
+    SPECIES_SABERDRAMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sDevimonFormSpeciesIdTable[] = {
+    SPECIES_DEVIMON,
+    SPECIES_ICEDEVIMON,
+    SPECIES_MARINEDEVIMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sDrimogemonFormSpeciesIdTable[] = {
+    SPECIES_DRIMOGEMON,
+    SPECIES_NISEDRIMOGEMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sFlarelizarmonFormSpeciesIdTable[] = {
+    SPECIES_FLARELIZARMON,
+    SPECIES_DARKLIZARMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sGarurumonFormSpeciesIdTable[] = {
+    SPECIES_GARURUMON,
+    SPECIES_GURURUMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sGreymonFormSpeciesIdTable[] = {
+    SPECIES_GREYMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sNumemonFormSpeciesIdTable[] = {
+    SPECIES_NUMEMON,
+    SPECIES_KARATUKINUMEMON,
+    SPECIES_GEREMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sKokatorimonFormSpeciesIdTable[] = {
+    SPECIES_KOKATORIMON,
+    SPECIES_AKATORIMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sMojyamonFormSpeciesIdTable[] = {
+    SPECIES_MOJYAMON,
+    SPECIES_JUNGLEMOJYAMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sOgremonFormSpeciesIdTable[] = {
+    SPECIES_OGREMON,
+    SPECIES_FUGAMON,
+    SPECIES_HYOGAMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sShellmonFormSpeciesIdTable[] = {
+    SPECIES_SHELLMON,
+    SPECIES_MORISHELLMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sSukamonFormSpeciesIdTable[] = {
+    SPECIES_SUKAMON,
+    SPECIES_PLATINUMSUKAMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sTailmonFormSpeciesIdTable[] = {
+    SPECIES_TAILMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sUnimonFormSpeciesIdTable[] = {
+    SPECIES_UNIMON,
+    SPECIES_SHIMAUNIMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sVegimonFormSpeciesIdTable[] = {
+    SPECIES_VEGIMON,
+    SPECIES_ZASSOUMON,
+    SPECIES_REDVEGIMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sWhamonFormSpeciesIdTable[] = {
+    SPECIES_WHAMON_ADULT,
+    SPECIES_WHAMON_PERFECT,
+    FORM_SPECIES_END,
+};
+
+static const u16 sWizarmonFormSpeciesIdTable[] = {
+    SPECIES_WIZARMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sYanmamonFormSpeciesIdTable[] = {
+    SPECIES_YANMAMON,
+    SPECIES_SANDYANMAMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sYukidarumonFormSpeciesIdTable[] = {
+    SPECIES_YUKIDARUMON,
+    SPECIES_TSUCHIDARUMON,
+    FORM_SPECIES_END,
+};
+
+static const u16 sAtlurkabuterimonrFormSpeciesIdTable[] = {
+    SPECIES_ATLURKABUTERIMONR,
+    SPECIES_ATLURKABUTERIMONB,
+    FORM_SPECIES_END,
+};
+
+static const u16 sMamemonFormSpeciesIdTable[] = {
+    SPECIES_BIGMAMEMON,
+    FORM_SPECIES_END,
+};
+
+//remember! remove all subspecies from the national dex order list
