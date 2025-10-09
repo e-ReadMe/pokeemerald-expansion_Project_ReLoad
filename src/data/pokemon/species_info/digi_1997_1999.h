@@ -13024,7 +13024,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #if DubNames
         .speciesName = _("Scorpiomon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("{AN}omalo{CA}ri{MON}"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("{AN}omalocari{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -13188,9 +13188,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Mega{KABUTERIMON}"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Mega{KABUTERI}mon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Atlur{KABUTERIMON}"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Atlur{KABUTERI}mon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -13271,9 +13271,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Mega{KABUTERIMON}"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Mega{KABUTERI}mon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Atlur{KABUTERIMON}"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Atlur{KABUTERI}mon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
