@@ -82,6 +82,8 @@
 
 extern struct Evolution gEvolutionTable[];
 
+extern struct Evolution gEvolutionTable[];
+
 enum {
     MENU_SUMMARY,
     MENU_STAT_EDIT,
