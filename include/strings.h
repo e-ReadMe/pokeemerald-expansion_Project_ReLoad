@@ -400,6 +400,7 @@ extern const u8 gText_SpDef[];
 extern const u8 gText_Speed[];
 extern const u8 gText_Dash[];
 extern const u8 gText_Plus[];
+extern const u8 gText_StatEditor[];
 
 //Pokédex text
 extern const u8 gText_CryOf[];
@@ -2403,6 +2404,9 @@ extern const u8 gText_YourName[];
 extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
+
+//evolution party screen option
+extern const u8 gText_Evolution[];
 
 // Exp. Share
 extern const u8 gText_ExpShareOn[];
