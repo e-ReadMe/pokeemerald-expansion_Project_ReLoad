@@ -987,6 +987,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sBlastoiseTeachableLearnset,
         .formSpeciesIdTable = sBlastoiseFormSpeciesIdTable,
         .formChangeTable = sBlastoiseFormChangeTable,
+        .digivolutions = sBlastoiseDigivolveTable,
     },
 
 #if P_MEGA_EVOLUTIONS

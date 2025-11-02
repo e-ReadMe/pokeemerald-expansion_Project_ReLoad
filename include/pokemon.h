@@ -69,6 +69,14 @@ enum MonData {
     MON_DATA_SPEED_IV,
     MON_DATA_SPATK_IV,
     MON_DATA_SPDEF_IV,
+    // Digivolution requirement fields (virtual fields used by UI/features)
+    MON_DATA_DIGIVOLVE_HP,
+    MON_DATA_DIGIVOLVE_ATK,
+    MON_DATA_DIGIVOLVE_DEF,
+    MON_DATA_DIGIVOLVE_SPEED,
+    MON_DATA_DIGIVOLVE_SPATK,
+    MON_DATA_DIGIVOLVE_SPDEF,
+    MON_DATA_DIGIVOLVE_TARGET_SPECIES,
     MON_DATA_IS_EGG,
     MON_DATA_ABILITY_NUM,
     MON_DATA_TOUGH,
@@ -517,6 +525,7 @@ struct SpeciesInfo /*0xC4*/
     const struct Evolution *evolutions;
     const u16 *formSpeciesIdTable;
     const struct FormChange *formChangeTable;
+    const struct Digivolution *digivolutions;
 #if OW_POKEMON_OBJECT_EVENTS
     struct ObjectEventGraphicsInfo overworldData;
 #if P_GENDER_DIFFERENCES

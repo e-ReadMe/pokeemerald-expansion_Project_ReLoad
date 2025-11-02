@@ -699,6 +699,7 @@ struct
 {
     [MENU_SUMMARY]         = {COMPOUND_STRING("SUMMARY"),         CursorCb_Summary},
     [MENU_STAT_EDIT]       = {gText_StatEditor,                   CursorCb_StatEdit},
+    [MENU_DIGIVICE]        = {gText_Digivice,                     CursorCb_Digivice},
     [MENU_SWITCH]          = {COMPOUND_STRING("SWITCH"),          CursorCb_Switch},
     [MENU_CANCEL1]         = {gText_Cancel2,                      CursorCb_Cancel1},
     [MENU_ITEM]            = {COMPOUND_STRING("ITEM"),            CursorCb_Item},

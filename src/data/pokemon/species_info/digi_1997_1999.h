@@ -1172,6 +1172,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         ) // prevents a format error in python
         .levelUpLearnset = sZurumonLevelUpLearnset,
         .teachableLearnset = sZurumonTeachableLearnset,
+        .digivolutions = sZurumonDigivolveTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CAPRIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,20})},//atk, spatk, speed
                                 {EVO_LEVEL, 5, SPECIES_MOCHIMON, CONDITIONS({IF_DEFSTAT_BASED, 20,1,1})},//def, spdef, hp
                                 {EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
