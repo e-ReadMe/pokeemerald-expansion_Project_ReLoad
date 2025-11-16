@@ -27,6 +27,7 @@
 #include "constants/songs.h"
 #include "constants/trainers.h"
 #include "constants/rgb.h"
+#include "item_menu.h"
 
 static void SafariHandleDrawTrainerPic(u32 battler);
 static void SafariHandleSuccessBallThrowAnim(u32 battler);
@@ -127,10 +128,10 @@ static void HandleInputChooseAction(u32 battler)
         switch (gActionSelectionCursor[battler])
         {
         case 0:
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_SAFARI_BALL, 0);
+            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_ITEM, 0);
             break;
         case 1:
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_SAFARI_POKEBLOCK, 0);
+            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_SAFARI_WATCH_CAREFULLY, 0);
             break;
         case 2:
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_SAFARI_GO_NEAR, 0);
@@ -212,7 +213,8 @@ static void SafariOpenPokeblockCase(u32 battler)
     {
         gBattlerControllerFuncs[battler] = CompleteWhenChosePokeblock;
         FreeAllWindowBuffers();
-        OpenPokeblockCaseInBattle();
+        //OpenPokeblockCaseInBattle();
+        CB2_BagMenuFromBattle();// i've replaced the pokeblock case with the bag menu. not very sophisticated but allows you to use the bag in the safari mode
     }
 }
 

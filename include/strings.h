@@ -2433,4 +2433,7 @@ extern const u8 gText_CannotSendMonToBoxHM[];
 extern const u8 gText_CannotSendMonToBoxActive[];
 extern const u8 gText_CannotSendMonToBoxPartner[];
 
+// digimon mod strings
+extern const u8 gText_Stage1SafariText1[];
+
 #endif // GUARD_STRINGS_H

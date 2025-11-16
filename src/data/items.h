@@ -14589,6 +14589,167 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+//Digimon Items
+
+    [ITEM_SMALL_RECOVERY_DISK] =
+    {
+        .name = ITEM_NAME("Small Recovery Disk"),
+        .price = (I_PRICE >= GEN_7) ? 200 : 200,
+        .holdEffectParam = 30,
+        .description = COMPOUND_STRING(
+            "Restores the HP of\n"
+            "a Digimon by\n"
+            "30 points."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_Potion,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeshiDoll,
+        .iconPalette = gItemIconPalette_PokeshiDoll,
+    },    
+
+    [ITEM_MEDIUM_RECOVERY_DISK] =
+    {
+        .name = ITEM_NAME("Med Recovery Disk"),
+        .price = (I_PRICE >= GEN_7) ? 300 : 300,
+        .holdEffectParam = 50,
+        .description = COMPOUND_STRING(
+            "Restores the HP of\n"
+            "a Digimon by\n"
+            "50 points."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_Potion,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeshiDoll,
+        .iconPalette = gItemIconPalette_PokeshiDoll,
+    },    
+
+    [ITEM_LARGE_RECOVERY_DISK] =
+    {
+        .name = ITEM_NAME("Large Recovery Disk"),
+        .price = (I_PRICE >= GEN_7) ? 550 : 550,
+        .holdEffectParam = 100,
+        .description = COMPOUND_STRING(
+            "Restores the HP of\n"
+            "a Digimon by\n"
+            "100 points."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_Potion,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeshiDoll,
+        .iconPalette = gItemIconPalette_PokeshiDoll,
+    },    
+
+    [ITEM_SUPER_RECOVERY_DISK] =
+    {
+        .name = ITEM_NAME("Super Recovery Disk"),
+        .price = (I_PRICE >= GEN_7) ? 1000 : 1000,
+        .holdEffectParam = 200,
+        .description = COMPOUND_STRING(
+            "Restores the HP of\n"
+            "a Digimon by\n"
+            "200 points."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_Potion,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeshiDoll,
+        .iconPalette = gItemIconPalette_PokeshiDoll,
+    },    
+
+    [ITEM_SMALL_MP_DISK] =
+    {
+        .name = ITEM_NAME("Small MP Disk"),
+        .price = (I_PRICE >= GEN_7) ? 100 : 100,
+        .holdEffectParam = 10,
+        .description = COMPOUND_STRING(
+            "Restores the MP of\n"
+            "a Digimon's attack\n"
+            "by 10 points."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PP_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
+        .battleUsage = EFFECT_ITEM_RESTORE_PP,
+        .effect = gItemEffect_Ether,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeshiDoll,
+        .iconPalette = gItemIconPalette_PokeshiDoll,
+    }, 
+
+    [ITEM_MEDIUM_MP_DISK] =
+    {
+        .name = ITEM_NAME("Med MP Disk"),
+        .price = (I_PRICE >= GEN_7) ? 300 : 300,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Completely restores\n"
+            "MP of a Digimon's\n"
+            "attack."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PP_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
+        .battleUsage = EFFECT_ITEM_RESTORE_PP,
+        .effect = gItemEffect_Ether,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeshiDoll,
+        .iconPalette = gItemIconPalette_PokeshiDoll,
+    }, 
+
+    [ITEM_LARGE_MP_DISK] =
+    {
+        .name = ITEM_NAME("Large MP Disk"),
+        .price = (I_PRICE >= GEN_7) ? 600 : 600,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Completely restores\n"
+            "all of a Digimon's\n"
+            "MP."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PP_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
+        .battleUsage = EFFECT_ITEM_RESTORE_PP,
+        .effect = gItemEffect_MaxElixir,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeshiDoll,
+        .iconPalette = gItemIconPalette_PokeshiDoll,
+    }, 
+
+    [ITEM_OMNIPOTENT_DISK] =
+    {
+        .name = ITEM_NAME("Omnipotent Disk"),
+        .price = (I_PRICE >= GEN_7) ? 1200 : 1200,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Completely restores\n"
+            "a Digimon's HP and\n"
+            "MP."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PP_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
+        .battleUsage = EFFECT_ITEM_RESTORE_PP,
+        .effect = gItemEffect_MaxElixir,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeshiDoll,
+        .iconPalette = gItemIconPalette_PokeshiDoll,
+    }, 
 };
 
 #undef ITEM_NAME

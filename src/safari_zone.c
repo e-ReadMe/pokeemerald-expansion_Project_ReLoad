@@ -94,28 +94,31 @@ void SafariZoneRetirePrompt(void)
     ScriptContext_SetupScript(SafariZone_EventScript_RetirePrompt);
 }
 
-void CB2_EndSafariBattle(void)
+void CB2_EndSafariBattle(void)// edited so that it doesnt try to end your safari game and teleport you to teh safari zone entrance
 {
-    sSafariZonePkblkUses += gBattleResults.pokeblockThrows;
-    if (gBattleOutcome == B_OUTCOME_CAUGHT)
-        sSafariZoneCaughtMons++;
-    if (gNumSafariBalls != 0)
-    {
+//    sSafariZonePkblkUses += gBattleResults.pokeblockThrows;
+//    if (gBattleOutcome == B_OUTCOME_CAUGHT)
+//        sSafariZoneCaughtMons++;
+//    if (gNumSafariBalls != 0)
+//    {
+//        SetMainCallback2(CB2_ReturnToField);
+//    }
+//    else if (gBattleOutcome == B_OUTCOME_NO_SAFARI_BALLS)
+//    {
+//        RunScriptImmediately(SafariZone_EventScript_OutOfBallsMidBattle);
+//        WarpIntoMap();
+//        gFieldCallback = FieldCB_ReturnToFieldNoScriptCheckMusic;
+//        SetMainCallback2(CB2_LoadMap);
+//    }
+//    else if (gBattleOutcome == B_OUTCOME_CAUGHT)
+//    {
+//        ScriptContext_SetupScript(SafariZone_EventScript_OutOfBalls);
+//        ScriptContext_Stop();
+//        SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+//    }
+//the following is copy-pasted from CB2_EndWildBattle, with any extraneous stuff cut out. 
         SetMainCallback2(CB2_ReturnToField);
-    }
-    else if (gBattleOutcome == B_OUTCOME_NO_SAFARI_BALLS)
-    {
-        RunScriptImmediately(SafariZone_EventScript_OutOfBallsMidBattle);
-        WarpIntoMap();
         gFieldCallback = FieldCB_ReturnToFieldNoScriptCheckMusic;
-        SetMainCallback2(CB2_LoadMap);
-    }
-    else if (gBattleOutcome == B_OUTCOME_CAUGHT)
-    {
-        ScriptContext_SetupScript(SafariZone_EventScript_OutOfBalls);
-        ScriptContext_Stop();
-        SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
-    }
 }
 
 static void ClearPokeblockFeeder(u8 index)

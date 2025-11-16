@@ -1,6 +1,6 @@
 YUKIMI      = 30 31
 BLACK       = 32 33
-SKULL       = 39 3A
+SKULL       = 95 3A
 MON         = 4D 4E
 DARKTYRANNOMON  = 45 46 73 72 74 4D 4E
 RI          = 62

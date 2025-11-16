@@ -85,62 +85,62 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_BOTAMON"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_PITCHMON"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_NYOKIMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_BOTAMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_PITCHMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_NYOKIMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_BOTAMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_PITCHMON"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_NYOKIMON"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_BOTAMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_PITCHMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_NYOKIMON"
               }
             ]
           }
@@ -154,62 +154,62 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_SEEDOT"
+                "species": "SPECIES_KOROMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_LOTAD"
+                "species": "SPECIES_MOCHIMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_NYAROMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_TSUNOMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_LOTAD"
+                "species": "SPECIES_KOROMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_LOTAD"
+                "species": "SPECIES_MOCHIMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_SEEDOT"
+                "species": "SPECIES_NYAROMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_SEEDOT"
+                "species": "SPECIES_TSUNOMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_KOROMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_MOCHIMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_NYAROMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_SEEDOT"
+                "species": "SPECIES_TSUNOMON"
               }
             ]
           },
@@ -219,27 +219,27 @@
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 10,
                 "max_level": 20,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_GOLDEEN"
+                "species": "SPECIES_PUKAMON"
               }
             ]
           },
@@ -249,52 +249,52 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PUKAMON"
               },
               {
                 "min_level": 40,
                 "max_level": 45,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PUKAMON"
               }
             ]
           }
@@ -308,62 +308,62 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_POYOMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_PUNIMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_YUKIMIBOTAMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_POYOMON"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_PUNIMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_YUKIMIBOTAMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_YURAMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_YURAMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_YURAMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_YURAMON"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_YURAMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_YURAMON"
               }
             ]
           },
@@ -462,62 +462,62 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_KODOKUGUMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_CATERPIE"
+                "species": "SPECIES_PYOKOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_WEEDLE"
+                "species": "SPECIES_TANEMON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_KODOKUGUMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_CATERPIE"
+                "species": "SPECIES_PYOKOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_WEEDLE"
+                "species": "SPECIES_TANEMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_KODOKUGUMON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_PYOKOMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_CATERPIE"
+                "species": "SPECIES_TANEMON"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_WEEDLE"
+                "species": "SPECIES_KODOKUGUMON"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_CATERPIE"
+                "species": "SPECIES_PYOKOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_WEEDLE"
+                "species": "SPECIES_TANEMON"
               }
             ]
           },
@@ -9185,62 +9185,62 @@
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_MUDKIP"
+                "species": "SPECIES_CAPRIMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_MUDKIP"
+                "species": "SPECIES_PAGUMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PETITMERAMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_TOKOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_TEDDIURSA"
+                "species": "SPECIES_CAPRIMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_TEDDIURSA"
+                "species": "SPECIES_PAGUMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_MUDKIP"
+                "species": "SPECIES_PETITMERAMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_TOKOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_TEDDIURSA"
+                "species": "SPECIES_CAPRIMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_MUDKIP"
+                "species": "SPECIES_PAGUMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_PETITMERAMON"
               },
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_TEDDIURSA"
+                "species": "SPECIES_TOKOMON"
               }
             ]
           },
@@ -11716,7 +11716,32 @@
               {
                 "min_level": 2,
                 "max_level": 5,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_BUBBMON"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_CHOROMON"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_MOKUMON"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_BUBBMON"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_CHOROMON"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_MOKUMON"
               },
               {
                 "min_level": 2,
@@ -11726,12 +11751,7 @@
               {
                 "min_level": 2,
                 "max_level": 5,
-                "species": "SPECIES_PYOKOMON"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_ZURUMON"
               },
               {
                 "min_level": 2,
@@ -11741,12 +11761,7 @@
               {
                 "min_level": 2,
                 "max_level": 5,
-                "species": "SPECIES_PYOKOMON"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_KOROMON"
+                "species": "SPECIES_ZURUMON"
               },
               {
                 "min_level": 2,
@@ -11756,22 +11771,7 @@
               {
                 "min_level": 2,
                 "max_level": 5,
-                "species": "SPECIES_PYOKOMON"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_KOROMON"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
                 "species": "SPECIES_ZURUMON"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_PYOKOMON"
               }
             ]
           }

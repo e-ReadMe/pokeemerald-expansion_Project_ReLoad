@@ -994,10 +994,36 @@
 
 #define ITEM_STRANGE_BALL 828
 
+// digimon items
+#define ITEM_SMALL_RECOVERY_DISK 829 //heals 30 hp
+#define ITEM_MEDIUM_RECOVERY_DISK 830 //heals 50hp
+#define ITEM_LARGE_RECOVERY_DISK 831 //heals 100hp
+#define ITEM_SUPER_RECOVERY_DISK 832 //heals 200hp
+#define ITEM_SMALL_MP_DISK 833 //heals 10mp for one move
+#define ITEM_MEDIUM_MP_DISK 834 //fully heals mp for one move
+#define ITEM_LARGE_MP_DISK 835 //fully heals mp for all moves
+#define ITEM_OMNIPOTENT_DISK 836 //fully heals mp and hp
+#define ITEM_VARIOUS_DISK 837
+#define ITEM_DOUBLE_FLOPPY_DISK 838
+#define ITEM_RESTORE_DISK 839
+#define ITEM_SUPER_RESTORE_DISK 840
+#define ITEM_BRAIN_CHIP 841
+#define ITEM_DEFENSE_CHIP 842
+#define ITEM_HP_CHIP 843
+#define ITEM_MP_CHIP 844
+#define ITEM_OFFENSE_CHIP 845
+#define ITEM_QUICK_CHIP 846
+#define ITEM_DISINFECTANT 847 // cures poison
+#define ITEM_COFFEE 848 // cures sleep
+#define ITEM_VITAMINS 849 // cures paralysis
+#define ITEM_SEDATIVE 850 // cures confusion
+
+
+
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 829
+#define ITEMS_COUNT 847
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

@@ -20,6 +20,7 @@
 #include "constants/moves.h"
 #include "constants/item_effects.h"
 #include "constants/hold_effects.h"
+#include "battle.h"
 
 #define DUMMY_PC_BAG_POCKET                 \
 {                                           \
@@ -881,7 +882,15 @@ u8 GetItemBattleUsage(u16 itemId)
         }
     }
     else
-        return gItemsInfo[item].battleUsage;
+    {
+        u8 usage = gItemsInfo[item].battleUsage;
+
+        // If we're in a Safari battle, prevent x-items from being used. 
+        if ((gBattleTypeFlags & BATTLE_TYPE_SAFARI) && usage == EFFECT_ITEM_INCREASE_STAT)
+            return 0;
+
+        return usage;
+    }
 }
 
 u32 GetItemSecondaryId(u32 itemId)
