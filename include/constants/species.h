@@ -1882,7 +1882,7 @@
 #define SPECIES_VENOMVAMDEMON                    1765
 #define SPECIES_WARGREYMON                       1766
 #define SPECIES_ZANBAMON                         1767
-#define SPECIES_EGG                                                  ( SPECIES_ZANBAMON + 1 )
+#define SPECIES_EGG                            ( SPECIES_ZANBAMON + 1 )
 
 #define NUM_SPECIES SPECIES_EGG
 

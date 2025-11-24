@@ -14594,7 +14594,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SMALL_RECOVERY_DISK] =
     {
         .name = ITEM_NAME("Small Recovery Disk"),
-        .price = (I_PRICE >= GEN_7) ? 200 : 200,
+        .price = 200,
         .holdEffectParam = 30,
         .description = COMPOUND_STRING(
             "Restores the HP of\n"
@@ -14607,14 +14607,14 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        .iconPic = gItemIcon_PokeshiDoll,
-        .iconPalette = gItemIconPalette_PokeshiDoll,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
     },    
 
     [ITEM_MEDIUM_RECOVERY_DISK] =
     {
         .name = ITEM_NAME("Med Recovery Disk"),
-        .price = (I_PRICE >= GEN_7) ? 300 : 300,
+        .price = 300,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(
             "Restores the HP of\n"
@@ -14627,14 +14627,14 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        .iconPic = gItemIcon_PokeshiDoll,
-        .iconPalette = gItemIconPalette_PokeshiDoll,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
     },    
 
     [ITEM_LARGE_RECOVERY_DISK] =
     {
         .name = ITEM_NAME("Large Recovery Disk"),
-        .price = (I_PRICE >= GEN_7) ? 550 : 550,
+        .price = 550,
         .holdEffectParam = 100,
         .description = COMPOUND_STRING(
             "Restores the HP of\n"
@@ -14647,14 +14647,14 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        .iconPic = gItemIcon_PokeshiDoll,
-        .iconPalette = gItemIconPalette_PokeshiDoll,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
     },    
 
     [ITEM_SUPER_RECOVERY_DISK] =
     {
         .name = ITEM_NAME("Super Recovery Disk"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 1000,
+        .price = 1000,
         .holdEffectParam = 200,
         .description = COMPOUND_STRING(
             "Restores the HP of\n"
@@ -14667,14 +14667,14 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        .iconPic = gItemIcon_PokeshiDoll,
-        .iconPalette = gItemIconPalette_PokeshiDoll,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
     },    
 
     [ITEM_SMALL_MP_DISK] =
     {
         .name = ITEM_NAME("Small MP Disk"),
-        .price = (I_PRICE >= GEN_7) ? 100 : 100,
+        .price = 100,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
             "Restores the MP of\n"
@@ -14687,14 +14687,14 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
         .effect = gItemEffect_Ether,
         .flingPower = 30,
-        .iconPic = gItemIcon_PokeshiDoll,
-        .iconPalette = gItemIconPalette_PokeshiDoll,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
     }, 
 
     [ITEM_MEDIUM_MP_DISK] =
     {
         .name = ITEM_NAME("Med MP Disk"),
-        .price = (I_PRICE >= GEN_7) ? 300 : 300,
+        .price = 300,
         .holdEffectParam = 255,
         .description = COMPOUND_STRING(
             "Completely restores\n"
@@ -14707,14 +14707,14 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
         .effect = gItemEffect_Ether,
         .flingPower = 30,
-        .iconPic = gItemIcon_PokeshiDoll,
-        .iconPalette = gItemIconPalette_PokeshiDoll,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
     }, 
 
     [ITEM_LARGE_MP_DISK] =
     {
         .name = ITEM_NAME("Large MP Disk"),
-        .price = (I_PRICE >= GEN_7) ? 600 : 600,
+        .price = 600,
         .holdEffectParam = 255,
         .description = COMPOUND_STRING(
             "Completely restores\n"
@@ -14727,14 +14727,14 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
         .effect = gItemEffect_MaxElixir,
         .flingPower = 30,
-        .iconPic = gItemIcon_PokeshiDoll,
-        .iconPalette = gItemIconPalette_PokeshiDoll,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
     }, 
 
     [ITEM_OMNIPOTENT_DISK] =
     {
         .name = ITEM_NAME("Omnipotent Disk"),
-        .price = (I_PRICE >= GEN_7) ? 1200 : 1200,
+        .price = 1200,
         .holdEffectParam = 255,
         .description = COMPOUND_STRING(
             "Completely restores\n"
@@ -14747,9 +14747,903 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
         .effect = gItemEffect_MaxElixir,
         .flingPower = 30,
-        .iconPic = gItemIcon_PokeshiDoll,
-        .iconPalette = gItemIconPalette_PokeshiDoll,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
     }, 
+
+    [ITEM_VARIOUS_DISK] =
+    {
+        .name = ITEM_NAME("Various Disk"),
+        .price = 600,
+        .description = COMPOUND_STRING(
+            "Completely restores\n"
+            "all status\n"
+            "conditions."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_CURE_STATUS,
+        .effect = gItemEffect_FullHeal,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
+    }, 
+
+    [ITEM_DOUBLE_FLOPPY_DISK] =
+    {
+        .name = ITEM_NAME("Double Floppy"),
+        .price = 500,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Your not completely\n"
+            "certain what this\n"
+            "does."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
+    }, 
+
+    [ITEM_RESTORE_DISK] =
+    {
+        .name = ITEM_NAME("Restore Disk"),
+        .price = 500,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Your not completely\n"
+            "certain what this\n"
+            "does."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
+    }, 
+
+    [ITEM_SUPER_RESTORE_DISK] =
+    {
+        .name = ITEM_NAME("Super Restore"),
+        .price = 500,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Your not completely\n"
+            "certain what this\n"
+            "does."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
+    }, 
+
+    [ITEM_BRAIN_CHIP] =
+    {
+        .name = ITEM_NAME("Brain Chip"),
+        .price = 500,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Adds a little to the\n"
+            "special attack stat\n"
+            "of one digimon"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_Calcium,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
+    }, 
+
+    [ITEM_DEFENSE_CHIP] =
+    {
+        .name = ITEM_NAME("Defense Chip"),
+        .price = 500,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Adds a little to the\n"
+            "defence stat of one\n"
+            "digimon"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_Iron,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
+    }, 
+
+    [ITEM_OFFENSE_CHIP] =
+    {
+        .name = ITEM_NAME("Offense Chip"),
+        .price = 500,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Adds a little to the\n"
+            "attack stat of one\n"
+            "digimon"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_Protein,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
+    }, 
+
+    [ITEM_QUICK_CHIP] =
+    {
+        .name = ITEM_NAME("Quick Chip"),
+        .price = 500,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Adds a little to the\n"
+            "speed stat of one\n"
+            "digimon"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_Carbos,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
+    }, 
+
+    [ITEM_HP_CHIP] =
+    {
+        .name = ITEM_NAME("HP Chip"),
+        .price = 500,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Adds a little HP to\n"
+            "one of your digimon."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_HPUp,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
+    }, 
+
+    [ITEM_MP_CHIP] =
+    {
+        .name = ITEM_NAME("MP Chip"),
+        .price = 500,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Adds a little MP to\n"
+            "one of your digimon's\n"
+            "attacks."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_PPUp,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DubiousDisc,
+        .iconPalette = gItemIconPalette_DubiousDisc,
+    }, 
+
+    [ITEM_DISINFECTANT] =
+    {
+        .name = ITEM_NAME("Disinfectant"),
+        .price = 100,
+        .description = COMPOUND_STRING(
+            "Cleans filth from\n"
+            "surfaces and cures\n"
+            "poison from Digimon."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_CURE_STATUS,
+        .effect = gItemEffect_Antidote,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Antidote,
+        .iconPalette = gItemIconPalette_Antidote,
+    },
+
+    [ITEM_VITAMINS] =
+    {
+        .name = ITEM_NAME("Vitamins"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "Promotes general\n"
+            "welbeing, also frees\n"
+            "paralyzed digimon."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_CURE_STATUS,
+        .effect = gItemEffect_ParalyzeHeal,
+        .flingPower = 30,
+        .iconPic = gItemIcon_StatusHeal,
+        .iconPalette = gItemIconPalette_ParalyzeHeal,
+    },
+
+    [ITEM_COFFEE] =
+    {
+        .name = ITEM_NAME("Coffee"),
+        .price = (I_PRICE >= GEN_2 && I_PRICE <= GEN_6) ? 250 : ((I_PRICE == GEN_7) ? 100 : 200),
+        .description = COMPOUND_STRING(
+            "Good for students and\n"
+            "truck drivers. Wakes\n"
+            "sleeping digimon."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_CURE_STATUS,
+        .effect = gItemEffect_Awakening,
+        .flingPower = 30,
+        .iconPic = gItemIcon_StatusHeal,
+        .iconPalette = gItemIconPalette_Awakening,
+    },
+
+    [ITEM_SEDATIVE] =
+    {
+        .name = ITEM_NAME("Sedative"),
+        .price = 300,
+        .description = COMPOUND_STRING(
+            "Calms you down when\n"
+            "heightened. Good for\n"
+            "curing confusion."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_CURE_STATUS,
+        .effect = gItemEffect_YellowFlute,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Potion,
+        .iconPalette = gItemIconPalette_Potion,
+    },
+
+    [ITEM_BANDAGE] =
+    {
+        .name = ITEM_NAME("Bandage"),
+        .price = 300,
+        .holdEffectParam = 10,
+        .description = COMPOUND_STRING(
+            "A simple bandage.\n"
+            "Can restore up to\n"
+            "10 HP."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_Potion,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Potion,
+        .iconPalette = gItemIconPalette_Potion,
+    },
+
+    [ITEM_BIG_BANDAGE] =
+    {
+        .name = ITEM_NAME("Big Potion"),
+        .price = 700,
+        .holdEffectParam = 60,
+        .description = COMPOUND_STRING(
+            "A large bandage.\n"
+            "Can restore up to\n"
+            "80 HP."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_SuperPotion,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Potion,
+        .iconPalette = gItemIconPalette_SuperPotion,
+    },
+
+    [ITEM_CLEAN_DRESSING] =
+    {
+        .name = ITEM_NAME("Clean Dressing"),
+        .price = 300,
+        .holdEffectParam = 10,
+        .description = COMPOUND_STRING(
+            "A bandage soaked in\n"
+            "antibiotics. It can\n"
+            "restore up to 10 MP"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PP_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
+        .battleUsage = EFFECT_ITEM_RESTORE_PP,
+        .effect = gItemEffect_Elixir,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Ether,
+        .iconPalette = gItemIconPalette_Elixir,
+    },
+
+    [ITEM_ALL_PURPOSE_OINTMENT] =
+    {
+        .name = ITEM_NAME("All-Purpose Oint"),
+        .price = 600,
+        .description = COMPOUND_STRING(
+            "It'll cure what ails\n"
+            "Ya! Can heal all\n"
+            "status conditions."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_CURE_STATUS,
+        .effect = gItemEffect_FullHeal,
+        .flingPower = 30,
+        .iconPic = gItemIcon_FullHeal,
+        .iconPalette = gItemIconPalette_FullHeal,
+    },
+
+    [ITEM_MEAT] =
+    {
+        .name = ITEM_NAME("Meat"),
+        .price = 100,
+        .holdEffect = HOLD_EFFECT_RESTORE_HP,
+        .holdEffectParam = 10,
+        .description = COMPOUND_STRING(
+            "Standard Digi-Food,\n"
+            "grown in fields.\n"
+            "Restores 10 HP."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_OranBerry,
+        .flingPower = 10,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_CHOICE_MEAT] =
+    {
+        .name = ITEM_NAME("Choice Meat"),
+        .price = 200,
+        .holdEffect = HOLD_EFFECT_RESTORE_PCT_HP,
+        .holdEffectParam = 25,
+        .description = COMPOUND_STRING(
+            "Organically grown\n"
+            "meat. Top notch.\n"
+            "Restores 25% HP."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_SitrusBerry,
+        .flingPower = 10,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_SNAKEHEAD] =
+    {
+        .name = ITEM_NAME("Snakehead"),
+        .price = 200,
+        .holdEffect = HOLD_EFFECT_CURE_STATUS,
+        .description = COMPOUND_STRING(
+            "A fish legendary for\n"
+            "increasing life.\n"
+            "Heals status conditions."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_CURE_STATUS,
+        .effect = gItemEffect_FullHeal,
+        .flingPower = 10,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_MUSHROOM] =
+    {
+        .name = ITEM_NAME("Mushroom"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Mush."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_CARROT] =
+    {
+        .name = ITEM_NAME("Carrot"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Carrot."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_APPLE] =
+    {
+        .name = ITEM_NAME("Apple"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Apple."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_MELON] =
+    {
+        .name = ITEM_NAME("Melon"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Melon."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_PINEAPPLE] =
+    {
+        .name = ITEM_NAME("Pineapple"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Pineapple."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_BANANA] =
+    {
+        .name = ITEM_NAME("Banana"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Banana."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_ODD_MUSHROOM] =
+    {
+        .name = ITEM_NAME("Odd Mushroom"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A strange food.\n"
+            "Plant in loamy soil\n"
+            "to grow Mush."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_CURVY_CARROT] =
+    {
+        .name = ITEM_NAME("Curvy Carrot"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A strange food.\n"
+            "Plant in loamy soil\n"
+            "to grow Carrot."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_SOFT_APPLE] =
+    {
+        .name = ITEM_NAME("Soft Apple"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A strange food.\n"
+            "Plant in loamy soil\n"
+            "to grow apple."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_JEALOUSY_MELON] =
+    {
+        .name = ITEM_NAME("Jealousy Melon"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A strange food.\n"
+            "Plant in loamy soil\n"
+            "to grow melon."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_BARBED_PINEAPPLE] =
+    {
+        .name = ITEM_NAME("Barbed Pineapple"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A strange food.\n"
+            "Plant in loamy soil\n"
+            "to grow pineapple."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_CONNIVING_BANANA] =
+    {
+        .name = ITEM_NAME("Conniving Banana"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A strange food.\n"
+            "Plant in loamy soil\n"
+            "to grow banana."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_CELEBRATION_MUSHROOM] =
+    {
+        .name = ITEM_NAME("Celebrating Mush"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A wonderful food.\n"
+            "Plant in loamy soil\n"
+            "to grow mush."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_CLOBBER_CARROT] =
+    {
+        .name = ITEM_NAME("Clobber Carrot"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A wonderful food.\n"
+            "Plant in loamy soil\n"
+            "to grow carrot."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_CRISPY_APPLE] =
+    {
+        .name = ITEM_NAME("Crispy Apple"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A wonderful food.\n"
+            "Plant in loamy soil\n"
+            "to grow apple."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_SINCERITY_MELON] =
+    {
+        .name = ITEM_NAME("Sincerity Melon"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A wonderful food.\n"
+            "Plant in loamy soil\n"
+            "to grow Melon."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_SUPERPOWER_PINEAPPLE] =
+    {
+        .name = ITEM_NAME("SuperPwr Pine"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A wonderful food.\n"
+            "Plant in loamy soil\n"
+            "to grow pineapple."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_EARNEST_BANANA] =
+    {
+        .name = ITEM_NAME("Earnest Banana"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A wonderful food.\n"
+            "Plant in loamy soil\n"
+            "to grow Banana."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MaxMushrooms,
+        .iconPalette = gItemIconPalette_MaxMushrooms,
+    },
+
+    [ITEM_CD_PLAYER] =
+    {
+        .name = ITEM_NAME("CD Player"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment,\n"
+            "It helps Digimon\n"
+            "boost their stats"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_DUMBELL] =
+    {
+        .name = ITEM_NAME("Dumbell"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment,\n"
+            "It helps Digimon\n"
+            "boost their stats"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_JUMP_ROPE] =
+    {
+        .name = ITEM_NAME("Jump Rope"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment,\n"
+            "It helps Digimon\n"
+            "boost their stats"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_PUNCHING_BAG] =
+    {
+        .name = ITEM_NAME("Punging Bag"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment,\n"
+            "It helps Digimon\n"
+            "boost their stats"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_TREADMILL] =
+    {
+        .name = ITEM_NAME("Treadmill"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment,\n"
+            "It helps Digimon\n"
+            "boost their stats"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_YOGA_MAT] =
+    {
+        .name = ITEM_NAME("Yoga Mat"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment,\n"
+            "It helps Digimon\n"
+            "boost their stats"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_BOOMBOX] =
+    {
+        .name = ITEM_NAME("Boombox"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment that\n"
+            "boosts a Digimon's\n"
+            "stats by a lot!"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_HEAVY_DUMBELL] =
+    {
+        .name = ITEM_NAME("Heavy Dumbell"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment that\n"
+            "boosts a Digimon's\n"
+            "stats by a lot!"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_WEIGHTED_JUMP_ROPE] =
+    {
+        .name = ITEM_NAME("Weighted JR"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment that\n"
+            "boosts a Digimon's\n"
+            "stats by a lot!"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_SPEED_BAG] =
+    {
+        .name = ITEM_NAME("Speed Bag"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment that\n"
+            "boosts a Digimon's\n"
+            "stats by a lot!"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_ADVANCED_TREADMILL] =
+    {
+        .name = ITEM_NAME("Adv Treadmill"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment that\n"
+            "boosts a Digimon's\n"
+            "stats by a lot!"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_PRO_YOGA_MAT] =
+    {
+        .name = ITEM_NAME("Pro Yoga Mat"),
+        .price = 1000,
+        .description = COMPOUND_STRING(
+            "Gym Equiptment that\n"
+            "boosts a Digimon's\n"
+            "stats by a lot!"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PokeDoll,
+        .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+
 };
 
 #undef ITEM_NAME

@@ -3,7 +3,7 @@
 
 static const u16 sMoveItemTable[][4] =
 {
-    { TYPE_NORMAL,   MOVE_SCRATCH,         ITEM_CHILAN_BERRY, SPECIES_WOBBUFFET },
+    { TYPE_NEUTRAL,   MOVE_SCRATCH,         ITEM_CHILAN_BERRY, SPECIES_WOBBUFFET },
     { TYPE_FIGHTING, MOVE_KARATE_CHOP,     ITEM_CHOPLE_BERRY, SPECIES_RAMPARDOS },
     { TYPE_FLYING,   MOVE_WING_ATTACK,     ITEM_COBA_BERRY,   SPECIES_HARIYAMA },
     { TYPE_POISON,   MOVE_POISON_STING,    ITEM_KEBIA_BERRY,  SPECIES_GOGOAT },
@@ -14,7 +14,7 @@ static const u16 sMoveItemTable[][4] =
     { TYPE_STEEL,    MOVE_METAL_CLAW,      ITEM_BABIRI_BERRY, SPECIES_RAMPARDOS },
     { TYPE_FIRE,     MOVE_EMBER,           ITEM_OCCA_BERRY,   SPECIES_GOGOAT },
     { TYPE_WATER,    MOVE_WATER_GUN,       ITEM_PASSHO_BERRY, SPECIES_RAMPARDOS },
-    { TYPE_GRASS,    MOVE_VINE_WHIP,       ITEM_RINDO_BERRY,  SPECIES_RAMPARDOS },
+    { TYPE_PLANT,    MOVE_VINE_WHIP,       ITEM_RINDO_BERRY,  SPECIES_RAMPARDOS },
     { TYPE_ELECTRIC, MOVE_THUNDER_SHOCK,   ITEM_WACAN_BERRY,  SPECIES_CORVISQUIRE },
     { TYPE_PSYCHIC,  MOVE_CONFUSION,       ITEM_PAYAPA_BERRY, SPECIES_HARIYAMA },
     { TYPE_ICE,      MOVE_AURORA_BEAM,     ITEM_YACHE_BERRY,  SPECIES_DRAGONAIR },
@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("Weakness berries decrease the base power of moves by half", 
         ASSUME(GetMovePower(move) > 0);
         ASSUME(GetMoveType(move) == type);
         ASSUME(GetSpeciesType(defender, 0) == GetSpeciesType(defender, 1));
-        if (type != TYPE_NORMAL) {
+        if (type != TYPE_NEUTRAL) {
             ASSUME(gTypeEffectivenessTable[type][GetSpeciesType(defender, 0)] > UQ_4_12(1.0));
         }
         if (item != ITEM_NONE) {
@@ -66,7 +66,7 @@ SINGLE_BATTLE_TEST("Weakness berries do not activate unless a move is super effe
 
     for (u32 j = 0; j < ARRAY_COUNT(sMoveItemTable); j++)
     {
-        if (TYPE_NORMAL == type)
+        if (TYPE_NEUTRAL == type)
         {
             // ITEM_CHILAN_BERRY activates without a weakness
         }
@@ -105,7 +105,7 @@ SINGLE_BATTLE_TEST("Weakness berries do not decrease the power of Struggle", s16
     GIVEN {
         if (item != ITEM_NONE) {
             ASSUME(GetItemHoldEffect(item) == HOLD_EFFECT_RESIST_BERRY);
-            ASSUME(GetItemHoldEffectParam(item) == TYPE_NORMAL);
+            ASSUME(GetItemHoldEffectParam(item) == TYPE_NEUTRAL);
         }
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { Item(item); }

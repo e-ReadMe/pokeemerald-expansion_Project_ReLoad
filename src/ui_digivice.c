@@ -100,7 +100,7 @@ static void Digivice_InitWindows(void);
 static void PrintTitleToWindowMainState();
 static void Task_DigiviceWaitFadeIn(u8 taskId);
 static void Task_DigiviceMain(u8 taskId);
-static void Task_MenuEditingStat(u8 taskId);
+//static void Task_MenuEditingStat(u8 taskId);
 static void SampleUi_DrawMonIcon(u16 dexNum);
 static void PrintMonStats(void);
 static void SelectorCallback(struct Sprite *sprite);
@@ -108,7 +108,7 @@ static struct Pokemon *ReturnPartyMon();
 static u8 CreateSelector();
 static void DestroySelector();
 static void LoadDigivolutionRequirements(void);
-static void Task_CloseDigiviceAfterMessage(u8 taskId);
+//static void Task_CloseDigiviceAfterMessage(u8 taskId);
 static void CB2_ReopenDigiviceAfterEvolution(void);
 
 //==========CONST=DATA==========//
@@ -649,21 +649,6 @@ static void PrintTitleToWindowMainState()
     CopyWindowToVram(WINDOW_1, 3);
 }
 
-static void PrintTitleToWindowEditState()
-{
-    FillWindowPixelBuffer(WINDOW_1, PIXEL_FILL(TEXT_COLOR_TRANSPARENT));
-    
-    AddTextPrinterParameterized4(WINDOW_1, FONT_NORMAL, 1, 0, 0, 0, sMenuWindowFontColors[FONT_WHITE], TEXT_SKIP_DRAW, sText_MenuTitle);
-
-    BlitBitmapToWindow(WINDOW_1, sDPad_ButtonGfx, 75, (BUTTON_Y), 24, 8);
-    AddTextPrinterParameterized4(WINDOW_1, FONT_NARROW, 102, 0, 0, 0, sMenuWindowFontColors[FONT_WHITE], TEXT_SKIP_DRAW, sText_MenuDPadButtonTextMain);
-
-    BlitBitmapToWindow(WINDOW_1, sB_ButtonGfx, 160, (BUTTON_Y), 8, 8);
-    AddTextPrinterParameterized4(WINDOW_1, FONT_NARROW, 172, 0, 0, 0, sMenuWindowFontColors[FONT_WHITE], TEXT_SKIP_DRAW, sText_MenuBButtonTextMain);
-
-    PutWindowTilemap(WINDOW_1);
-    CopyWindowToVram(WINDOW_1, 3);
-}
 
 static void PrintMonStats()
 {
@@ -1008,36 +993,6 @@ static void Task_DigiviceMain(u8 taskId) // input control when first loaded into
 
 }
 
-static void ChangeAndUpdateStat()
-{
-    u16 currentStatEnum = selectedStatToStatEnum[sDigiviceDataPtr->selectedStat];
-    u32 currentHP = 0;
-    u32 oldMaxHP = 0;
-    u32 amountHPLost = 0;
-    s32 tempDifference = 0;
-    u32 newDifference = 0;
-
-    if (currentStatEnum == MON_DATA_HP_EV || currentStatEnum == MON_DATA_HP_IV)
-    {
-        currentHP = GetMonData(ReturnPartyMon(), MON_DATA_HP);
-        oldMaxHP = GetMonData(ReturnPartyMon(), MON_DATA_MAX_HP);
-        amountHPLost = oldMaxHP - currentHP;
-    }
-
-    SetMonData(ReturnPartyMon(), currentStatEnum, &(sDigiviceDataPtr->editingStat));
-    CalculateMonStats(ReturnPartyMon());
-
-    if ((amountHPLost > 0) && (currentHP != 0))
-    {
-        tempDifference = GetMonData(ReturnPartyMon(), MON_DATA_MAX_HP) - amountHPLost;
-        if (tempDifference < 0)
-            tempDifference = 0;
-        newDifference = (u32) tempDifference;
-        SetMonData(ReturnPartyMon(), MON_DATA_HP, &newDifference);
-    }
-
-    PrintMonStats();
-}
 
 #define EDIT_INPUT_INCREASE_STATE           0
 #define EDIT_INPUT_MAX_INCREASE_STATE       1
@@ -1070,103 +1025,7 @@ TLDR: Stat can't increase if you're either: at the maximum amount a stat can hav
  | ((sDigiviceDataPtr->selector_x == EDITING_EVS) && (sDigiviceDataPtr->evTotal == EV_MAX_TOTAL))
   \> Together, these two check if you're editing an EV and already at the maximum amount of EVs
 */
-static void HandleEditingStatInput(u32 input)
-{
-    u16 iterator = 0;
-    if((input <= EDIT_INPUT_MAX_INCREASE_STATE) && CHECK_IF_STAT_CANT_INCREASE)
-    {
-        StartSpriteAnim(&gSprites[sDigiviceDataPtr->selectorSpriteId], 2);
-        return;
-    }
 
-    if((input >= EDIT_INPUT_DECREASE_STATE) && (sDigiviceDataPtr->editingStat == STAT_MINIMUM))
-    {
-        StartSpriteAnim(&gSprites[sDigiviceDataPtr->selectorSpriteId], 1);
-        return;
-    }
-
-    #define INCREASE_DECREASE_AMOUNT 1
-
-    switch(input)
-    {
-        case EDIT_INPUT_DECREASE_STATE:
-            for (iterator = 0; iterator < INCREASE_DECREASE_AMOUNT; iterator++)
-            {
-                if(!(sDigiviceDataPtr->editingStat == STAT_MINIMUM))
-                    sDigiviceDataPtr->editingStat--;
-                else
-                    break;
-            }
-            break;
-       case EDIT_INPUT_MAX_DECREASE_STATE:
-            sDigiviceDataPtr->editingStat = STAT_MINIMUM;
-            break;
-        case EDIT_INPUT_INCREASE_STATE:
-            for (iterator = 0; iterator < INCREASE_DECREASE_AMOUNT; iterator++)
-            {
-                if(!CHECK_IF_STAT_CANT_INCREASE)
-                    sDigiviceDataPtr->editingStat++;
-                else
-                    break;
-            }
-            break;
-        case EDIT_INPUT_MAX_INCREASE_STATE:
-            if((sDigiviceDataPtr->selector_x == EDITING_EVS))
-            {
-                if (EV_MAX_TOTAL - sDigiviceDataPtr->evTotal < EV_MAX_SINGLE_STAT)
-                    sDigiviceDataPtr->editingStat += EV_MAX_TOTAL - sDigiviceDataPtr->evTotal;
-                else
-                    sDigiviceDataPtr->editingStat = EV_MAX_SINGLE_STAT;
-                if(sDigiviceDataPtr->editingStat > EV_MAX_SINGLE_STAT)
-                    sDigiviceDataPtr->editingStat = EV_MAX_SINGLE_STAT;
-            }
-            else
-            {
-                sDigiviceDataPtr->editingStat = IV_MAX_SINGLE_STAT;
-            }
-    }
-
-    ChangeAndUpdateStat();
-
-    if(CHECK_IF_STAT_CANT_INCREASE)
-        StartSpriteAnim(&gSprites[sDigiviceDataPtr->selectorSpriteId], 2);
-    else if(sDigiviceDataPtr->editingStat == STAT_MINIMUM)
-        StartSpriteAnim(&gSprites[sDigiviceDataPtr->selectorSpriteId], 1); 
-    else
-        StartSpriteAnim(&gSprites[sDigiviceDataPtr->selectorSpriteId], 3);       
-}
-
-static void Task_MenuEditingStat(u8 taskId) // This function should be refactored to not be a hot mess
-{
-    if (JOY_NEW(B_BUTTON))
-    {
-        gTasks[taskId].func = Task_DigiviceMain;
-        StartSpriteAnim(&gSprites[sDigiviceDataPtr->selectorSpriteId], 0);
-        PlaySE(SE_SELECT);
-        sDigiviceDataPtr->inputMode = INPUT_SELECT_STAT;
-        PrintTitleToWindowMainState();
-        return;
-    }
-    if (JOY_NEW(DPAD_LEFT))
-        HandleEditingStatInput(EDIT_INPUT_DECREASE_STATE);
-    else if (JOY_NEW(DPAD_RIGHT))
-        HandleEditingStatInput(EDIT_INPUT_INCREASE_STATE);
-    else if (JOY_NEW(DPAD_UP) || JOY_NEW(R_BUTTON))
-        HandleEditingStatInput(EDIT_INPUT_MAX_INCREASE_STATE);
-    else if (JOY_NEW(DPAD_DOWN) || JOY_NEW(L_BUTTON))
-        HandleEditingStatInput(EDIT_INPUT_MAX_DECREASE_STATE);
-
-}
-
-/* Yes/No handling removed: A now either triggers evolution immediately if requirements are met,
-   or does nothing if they aren't. */
-
-static void Task_CloseDigiviceAfterMessage(u8 taskId)
-{
-    // Fade out and return to saved callback (close menu)
-    Digivice_FadeAndBail();
-    DestroyTask(taskId);
-}
 
 static void CB2_ReopenDigiviceAfterEvolution(void)
 {

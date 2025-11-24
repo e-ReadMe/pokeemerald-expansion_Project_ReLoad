@@ -995,35 +995,84 @@
 #define ITEM_STRANGE_BALL 828
 
 // digimon items
-#define ITEM_SMALL_RECOVERY_DISK 829 //heals 30 hp
-#define ITEM_MEDIUM_RECOVERY_DISK 830 //heals 50hp
-#define ITEM_LARGE_RECOVERY_DISK 831 //heals 100hp
-#define ITEM_SUPER_RECOVERY_DISK 832 //heals 200hp
-#define ITEM_SMALL_MP_DISK 833 //heals 10mp for one move
-#define ITEM_MEDIUM_MP_DISK 834 //fully heals mp for one move
-#define ITEM_LARGE_MP_DISK 835 //fully heals mp for all moves
-#define ITEM_OMNIPOTENT_DISK 836 //fully heals mp and hp
-#define ITEM_VARIOUS_DISK 837
-#define ITEM_DOUBLE_FLOPPY_DISK 838
-#define ITEM_RESTORE_DISK 839
-#define ITEM_SUPER_RESTORE_DISK 840
-#define ITEM_BRAIN_CHIP 841
-#define ITEM_DEFENSE_CHIP 842
-#define ITEM_HP_CHIP 843
-#define ITEM_MP_CHIP 844
-#define ITEM_OFFENSE_CHIP 845
-#define ITEM_QUICK_CHIP 846
-#define ITEM_DISINFECTANT 847 // cures poison
-#define ITEM_COFFEE 848 // cures sleep
-#define ITEM_VITAMINS 849 // cures paralysis
-#define ITEM_SEDATIVE 850 // cures confusion
+// artificial healing items that work better but lower happiness
+#define ITEM_SMALL_RECOVERY_DISK 829 //heals 30hp but lowers happiness
+#define ITEM_MEDIUM_RECOVERY_DISK 830 //heals 50hp but lowers happiness
+#define ITEM_LARGE_RECOVERY_DISK 831 //heals 100hp but lowers happiness
+#define ITEM_SUPER_RECOVERY_DISK 832 //heals 200hp but lowers happiness
+#define ITEM_SMALL_MP_DISK 833 //heals 10mp for one move but lowers happiness
+#define ITEM_MEDIUM_MP_DISK 834 //fully heals mp for one move but lowers happiness
+#define ITEM_LARGE_MP_DISK 835 //fully heals mp for all moves but lowers happiness
+#define ITEM_OMNIPOTENT_DISK 836 //fully heals mp and hp but lowers happiness
+#define ITEM_VARIOUS_DISK 837 // heals all status conditions but lowers happiness
+#define ITEM_DOUBLE_FLOPPY_DISK 838 //¯\_(ツ)_/¯
+#define ITEM_RESTORE_DISK 839 //¯\_(ツ)_/¯
+#define ITEM_SUPER_RESTORE_DISK 840 //¯\_(ツ)_/¯
+#define ITEM_BRAIN_CHIP 841 // increases SpA Evs by 10 (a spa up vitamin)
+#define ITEM_DEFENSE_CHIP 842 // increases Def Evs by 10 (a def up vitamin)
+#define ITEM_HP_CHIP 843 // increases HP Evs by 10 (a hp up vitamin)
+#define ITEM_MP_CHIP 844 // increases PP of a single move by 2 (a pp up vitamin)
+#define ITEM_OFFENSE_CHIP 845 // increases Atk Evs by 10 (an atk up vitamin)
+#define ITEM_QUICK_CHIP 846 // increases Spe Evs by 10 (a spe up vitamin)
+// im not married to the chips being vitamins. because its redundant but also cause theres no sp-def one
+#define ITEM_DISINFECTANT 847 // cures poison but lowers happiness
+#define ITEM_COFFEE 848 // cures sleep but lowers happiness
+#define ITEM_VITAMINS 849 // cures paralysis but lowers happiness
+#define ITEM_SEDATIVE 850 // cures confusion but lowers happiness
+// no versions of ice heal, burn heal, and needs a new one for healing dot, if ever i implement that
 
+//'natural' healing items that dont lower happiness, but arent as good. 
+#define ITEM_BANDAGE 851 // heals 10hp
+#define ITEM_BIG_BANDAGE 852 // heals 80hp
+#define ITEM_CLEAN_DRESSING 853 //heals 10 Mp
+#define ITEM_ALL_PURPOSE_OINTMENT 854 // heals all status conditions
+
+// meat and berries
+#define ITEM_MEAT 855 // heals 10hp in battle
+#define ITEM_CHOICE_MEAT 856 // heals 25% of your HP in battle
+#define ITEM_SNAKEHEAD 857 // heals status conditions in battle
+
+#define ITEM_MUSHROOM 858 // +5 HP EVs
+#define ITEM_CARROT 859 // +5 ATK EVs
+#define ITEM_APPLE 860 // +5 DEF EVs
+#define ITEM_MELON 861 // +5 SPA EVs
+#define ITEM_PINEAPPLE 862 // +5 SPD EVs
+#define ITEM_BANANA 863 // +5 SPE EVs
+
+#define ITEM_ODD_MUSHROOM 864 // -10 HP EVs
+#define ITEM_CURVY_CARROT 865 // -10 ATK EVs
+#define ITEM_SOFT_APPLE 866 // -10 DEF EVs
+#define ITEM_JEALOUSY_MELON 867 // -10 SPA EVs
+#define ITEM_BARBED_PINEAPPLE 868 // -10 SPD EVs
+#define ITEM_CONNIVING_BANANA 869 // -10 SPE EVs
+
+#define ITEM_CELEBRATION_MUSHROOM 870 // +5 HP IVs
+#define ITEM_CLOBBER_CARROT 871 // +5 ATK IVs
+#define ITEM_CRISPY_APPLE 872 // +5 DEF IVs
+#define ITEM_SINCERITY_MELON 873 // +5 SPA IVs
+#define ITEM_SUPERPOWER_PINEAPPLE 874 // +5 SPD IVs
+#define ITEM_EARNEST_BANANA 875 // +5 SPE IVs
+
+// gym items
+#define ITEM_CD_PLAYER 876 // +5HP EVs
+#define ITEM_DUMBELL 877 // +5ATK EVs
+#define ITEM_JUMP_ROPE 878 // +5DEF EVs
+#define ITEM_PUNCHING_BAG 879 // +5SPA EVs
+#define ITEM_TREADMILL 880 // +5SPD EVs
+#define ITEM_YOGA_MAT 881 // +5SPE EVs
+
+#define ITEM_BOOMBOX 882 // +10HP EVs
+#define ITEM_HEAVY_DUMBELL 883 // +10ATK EVs
+#define ITEM_WEIGHTED_JUMP_ROPE 884 // +10DEF EVs
+#define ITEM_SPEED_BAG 885 // +10SPA EVs
+#define ITEM_ADVANCED_TREADMILL 886 // +10SPD EVs
+#define ITEM_PRO_YOGA_MAT 887 // +10SPE EVs
 
 
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 847
+#define ITEMS_COUNT 888
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

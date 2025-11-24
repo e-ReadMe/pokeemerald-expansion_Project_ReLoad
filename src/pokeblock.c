@@ -64,7 +64,7 @@ struct PokeblockMenuStruct
     u8 tilemap[BG_SCREEN_SIZE];
     MainCallback callbackOnUse;
     const u8 *pokeblockActionIds;
-    u8 numActions;/
+    u8 numActions;
     u8 caseId;
     u8 itemsNo;
     u8 maxShowed;

@@ -88,7 +88,7 @@ SINGLE_BATTLE_TEST("Rest doesn't fail if the user is protected by Safeguard")
 DOUBLE_BATTLE_TEST("Rest doesn't fail if the user is protected by Flower Veil")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_CHIKORITA, 0) == TYPE_GRASS || GetSpeciesType(SPECIES_CHIKORITA, 1) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_CHIKORITA, 0) == TYPE_PLANT || GetSpeciesType(SPECIES_CHIKORITA, 1) == TYPE_PLANT);
         PLAYER(SPECIES_CHIKORITA) { HP(1); }
         PLAYER(SPECIES_FLORGES) { Ability(ABILITY_FLOWER_VEIL); }
         OPPONENT(SPECIES_WOBBUFFET);

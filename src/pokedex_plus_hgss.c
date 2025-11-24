@@ -4403,7 +4403,7 @@ static void CreateTypeIconSprites(void)
     u8 i;
 
     LoadCompressedSpriteSheet(&gSpriteSheet_MoveTypes);
-    u32 paletteNum = gTypesInfo[TYPE_NORMAL].palette + TYPE_INFO_PALETTE_NUM_OFFSET;
+    u32 paletteNum = gTypesInfo[TYPE_NEUTRAL].palette + TYPE_INFO_PALETTE_NUM_OFFSET;
     LoadPalette(gMoveTypes_Pal, OBJ_PLTT_ID(paletteNum), 3 * PLTT_SIZE_4BPP);
     for (i = 0; i < 2; i++)
     {
