@@ -327,14 +327,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Botamon,
             gShinyOverworldPalette_Botamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBotamonLevelUpLearnset,
         .teachableLearnset = sBotamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_TOKOMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PAGUMON, CONDITIONS({IF_DEFSTAT_BASED, 20,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
+        .digivolutions = sBotamonDigivolveTable,
     },
 
 
@@ -411,13 +408,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Bubbmon,
             gShinyOverworldPalette_Bubbmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBubbmonLevelUpLearnset,
         .teachableLearnset = sBubbmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CAPRIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_MOCHIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_PAGUMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})}//atk, spatk, speed
-                                ),
+        .digivolutions = sBubbmonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -494,13 +488,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Choromon,
             gShinyOverworldPalette_Choromon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sChoromonLevelUpLearnset,
         .teachableLearnset = sChoromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CAPRIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_MOCHIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_PAGUMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})}//atk, spatk, speed
-                                ),
+        .digivolutions = sChoromonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -577,13 +568,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Mokumon,
             gShinyOverworldPalette_Mokumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMokumonLevelUpLearnset,
         .teachableLearnset = sMokumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_PETITMERAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_CAPRIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})}//atk, spatk, speed
-                                ),
+        .digivolutions = sZurumonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -660,14 +648,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Nyokimon,
             gShinyOverworldPalette_Nyokimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sNyokimonLevelUpLearnset,
         .teachableLearnset = sNyokimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_PETITMERAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_CAPRIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_KOROMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})}//atk, spatk, speed
-                                ),
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
+        .digivolutions = sNyokimonDigivolveTable,
     },
 
 
@@ -744,14 +729,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Pitchmon,
             gShinyOverworldPalette_Pitchmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPitchmonLevelUpLearnset,
         .teachableLearnset = sPitchmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_PUKAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYAROMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,35})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_TOKOMON, CONDITIONS({IF_DEFSTAT_BASED, 1,20,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_TSUNOMON, CONDITIONS({IF_DEFSTAT_BASED, 20,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sPitchmonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -829,15 +810,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Poyomon,
             gShinyOverworldPalette_Poyomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPoyomonLevelUpLearnset,
         .teachableLearnset = sPoyomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_NYAROMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_MOCHIMON, CONDITIONS({IF_DEFSTAT_BASED, 20,1,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_PUKAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,20,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_PYOKOMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,35})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_TOKOMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})}//atk, spatk, speed
-                                ),
+        .digivolutions = sPoyomonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -914,14 +890,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Punimon,
             gShinyOverworldPalette_Punimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPunimonLevelUpLearnset,
         .teachableLearnset = sPunimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_NYAROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,20})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_TSUNOMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PETITMERAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PUKAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})}//def, spdef, hp
-                                ),
+        .digivolutions = sPunimonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -999,14 +971,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Yukimibotamon,
             gShinyOverworldPalette_Yukimibotamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sYukimibotamonLevelUpLearnset,
         .teachableLearnset = sYukimibotamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_NYAROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,20})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_TSUNOMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PETITMERAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PUKAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})}//def, spdef, hp
-                                ),
+        .digivolutions = sYukimibotamonDigivolveTable,
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -1084,14 +1052,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Yuramon,
             gShinyOverworldPalette_Yuramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sYuramonLevelUpLearnset,
         .teachableLearnset = sYuramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_NYAROMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,20})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_TSUNOMON, CONDITIONS({IF_ATKSTAT_BASED, 20,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PETITMERAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,20,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PUKAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,20})}//def, spdef, hp
-                                ),
+        .digivolutions = sYuramonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -1169,7 +1133,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Zurumon,
             gShinyOverworldPalette_Zurumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sZurumonLevelUpLearnset,
         .teachableLearnset = sZurumonTeachableLearnset,
         .digivolutions = sZurumonDigivolveTable,
@@ -1250,14 +1214,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Caprimon,
             gShinyOverworldPalette_Caprimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sCaprimonLevelUpLearnset,
         .teachableLearnset = sCaprimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_GOTSUMON, CONDITIONS({IF_DEFSTAT_BASED, 20,1,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_HAGURUMON, CONDITIONS({IF_DEFSTAT_BASED, 15,15,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_KOKUWAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,20,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_TOYAGUMON, CONDITIONS({IF_ATKSTAT_BASED, 40,1,1})}//atk, spatk, speed
-                                ),
+        .digivolutions = sCaprimonDigivolveTable,
         //.formSpeciesIdTable = sCaprimonFormSpeciesIdTable,
     },
 
@@ -1335,9 +1295,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Kodokugumon,
             gShinyOverworldPalette_Kodokugumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKodokugumonLevelUpLearnset,
         .teachableLearnset = sKodokugumonTeachableLearnset,
+        .digivolutions = sKodokugumonDigivolveTable,
         //.formSpeciesIdTable = sKodokugumonFormSpeciesIdTable,
     },
 
@@ -1415,18 +1376,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Koromon,
             gShinyOverworldPalette_Koromon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKoromonLevelUpLearnset,
         .teachableLearnset = sKoromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_AGUMON, CONDITIONS({IF_ATKSTAT_BASED, 30,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_BETAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,30,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_GABUMON, CONDITIONS({IF_ATKSTAT_BASED, 20,20,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_CANDMON, CONDITIONS({IF_DEFSTAT_BASED, 1,30,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_GOBLIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,30})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_TOYAGUMON, CONDITIONS({IF_DEFSTAT_BASED, 30,1,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_CHUUMON, CONDITIONS({IF_DEFSTAT_BASED, 15,15,20})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_PICODEVIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,35})}//atk, spatk, speed
-                                ),
+        .digivolutions = sKoromonDigivolveTable,
         //.formSpeciesIdTable = sKoromonFormSpeciesIdTable,
     },
 
@@ -1504,20 +1457,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Mochimon,
             gShinyOverworldPalette_Mochimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMochimonLevelUpLearnset,
         .teachableLearnset = sMochimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CANDMON, CONDITIONS({IF_ATKSTAT_BASED, 1,30,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_DOKUNEMON, CONDITIONS({IF_DEFSTAT_BASED, 15,15,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_KUNEMON, CONDITIONS({IF_ATKSTAT_BASED, 15,15,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_ELECMON, CONDITIONS({IF_ATKSTAT_BASED, 1,35,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_GOBLIMON, CONDITIONS({IF_ATKSTAT_BASED, 35,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_OTAMAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,35,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_PENMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,35})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PIYOMON, CONDITIONS({IF_ATKSTAT_BASED, 1,35,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_TENTOMON, CONDITIONS({IF_ATKSTAT_BASED, 1,32,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_CHUUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sCMochimonDigivolveTable,
         //.formSpeciesIdTable = sMochimonFormSpeciesIdTable,
     },
 
@@ -1595,19 +1538,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Nyaromon,
             gShinyOverworldPalette_Nyaromon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sNyaromonLevelUpLearnset,
         .teachableLearnset = sNyaromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_AGUMON, CONDITIONS({IF_ATKSTAT_BASED, 30,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_BAKUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,30,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_ELECMON, CONDITIONS({IF_ATKSTAT_BASED, 1,30,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PIYOMON, CONDITIONS({IF_ATKSTAT_BASED, 25,25,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PLOTMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,50})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_YUKIAGUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,30,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_GABUMON, CONDITIONS({IF_ATKSTAT_BASED, 1,35,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_GOTSUMON, CONDITIONS({IF_DEFSTAT_BASED, 35,1,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_GIZAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,30})}//def, spdef, hp
-                                ),
+        .digivolutions = sNyaromonDigivolveTable,
         //.formSpeciesIdTable = sNyaromonFormSpeciesIdTable,
     },
 
@@ -1685,18 +1619,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Pagumon,
             gShinyOverworldPalette_Pagumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPagumonLevelUpLearnset,
         .teachableLearnset = sPagumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_GAZIMON, CONDITIONS({IF_ATKSTAT_BASED, 30,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_GIZAMON, CONDITIONS({IF_DEFSTAT_BASED, 30,1,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_GOBLIMON, CONDITIONS({IF_ATKSTAT_BASED, 35,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_TSUKAIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,35,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_GOTSUMON, CONDITIONS({IF_DEFSTAT_BASED, 35,1,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_OTAMAMON, CONDITIONS({IF_DEFSTAT_BASED, 1,35,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_CHUUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_PICODEVIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,35})}//atk, spatk, speed
-                                ),
+        .digivolutions = sPagumonDigivolveTable,
         //.formSpeciesIdTable = sPagumonFormSpeciesIdTable,
     },
 
@@ -1774,16 +1700,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Petitmeramon,
             gShinyOverworldPalette_Petitmeramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPetitmeramonLevelUpLearnset,
         .teachableLearnset = sPetitmeramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CANDMON, CONDITIONS({IF_ATKSTAT_BASED, 1,30,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_GABUMON, CONDITIONS({IF_ATKSTAT_BASED, 30,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_BAKUMON, CONDITIONS({IF_DEFSTAT_BASED, 1,30,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_GOTSUMON, CONDITIONS({IF_DEFSTAT_BASED, 30,1,1})},//def, spdef, hp
-                                {EVO_LEVEL, 5, SPECIES_PICODEVIMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,30})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_PLOTMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,50})}//def, spdef, hp
-                                ),
+        .digivolutions = sPetitmeramonDigivolveTable,
         //.formSpeciesIdTable = sPetitmeramonFormSpeciesIdTable,
     },
 
@@ -1861,12 +1781,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Pukamon,
             gShinyOverworldPalette_Pukamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPukamonLevelUpLearnset,
         .teachableLearnset = sPukamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sPukamonDigivolveTable,
         //.formSpeciesIdTable = sPukamonFormSpeciesIdTable,
     },
 
@@ -1944,12 +1862,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Pyokomon,
             gShinyOverworldPalette_Pyokomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPyokomonLevelUpLearnset,
         .teachableLearnset = sPyokomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sPyokomonDigivolveTable,
         //.formSpeciesIdTable = sPyokomonFormSpeciesIdTable,
     },
 
@@ -2027,12 +1943,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tanemon,
             gShinyOverworldPalette_Tanemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTanemonLevelUpLearnset,
         .teachableLearnset = sTanemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sTanemonDigivolveTable,
         //.formSpeciesIdTable = sTanemonFormSpeciesIdTable,
     },
 
@@ -2110,12 +2024,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tokomon,
             gShinyOverworldPalette_Tokomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTokomonLevelUpLearnset,
         .teachableLearnset = sTokomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sTokomonDigivolveTable,
         //.formSpeciesIdTable = sTokomonFormSpeciesIdTable,
     },
 
@@ -2193,12 +2105,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tsunomon,
             gShinyOverworldPalette_Tsunomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTsunomonLevelUpLearnset,
         .teachableLearnset = sTsunomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sTsunomonDigivolveTable,
         //.formSpeciesIdTable = sTsunomonFormSpeciesIdTable,
     },
 
@@ -2264,7 +2174,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Agumon,
         .shinyPalette = gMonShinyPalette_Agumon,
         .iconSprite = gMonIcon_Agumon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Agumon)
         OVERWORLD(
@@ -2275,13 +2185,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Agumon,
             gShinyOverworldPalette_Agumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAgumonLevelUpLearnset,
         .teachableLearnset = sAgumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
+        .digivolutions = sAgumonDigivolveTable,
     },
 
 
@@ -2358,13 +2266,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Yukiagumon,
             gShinyOverworldPalette_Yukiagumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sYukiagumonLevelUpLearnset,
         .teachableLearnset = sYukiagumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
+        .digivolutions = sYukiagumonDigivolveTable,
     },
 
 
@@ -2441,12 +2347,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Bakumon,
             gShinyOverworldPalette_Bakumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBakumonLevelUpLearnset,
         .teachableLearnset = sBakumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sBakumonDigivolveTable,
         //.formSpeciesIdTable = sBakumonFormSpeciesIdTable,
     },
 
@@ -2524,13 +2428,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Betamon,
             gShinyOverworldPalette_Betamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBetamonLevelUpLearnset,
         .teachableLearnset = sBetamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sBetamonFormSpeciesIdTable,
+        .digivolutions = sBetamonDigivolveTable,
     },
 
 
@@ -2607,13 +2509,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Modokibetamon,
             gShinyOverworldPalette_Modokibetamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sModokibetamonLevelUpLearnset,
         .teachableLearnset = sModokibetamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sBetamonFormSpeciesIdTable,
+        .digivolutions = sModokibetamonDigivolveTable,
     },
 
 
@@ -2690,12 +2590,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Candmon,
             gShinyOverworldPalette_Candmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sCandmonLevelUpLearnset,
         .teachableLearnset = sCandmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sCandmonDigivolveTable,
         //.formSpeciesIdTable = sCandmonFormSpeciesIdTable,
     },
 
@@ -2773,12 +2671,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Chuumon,
             gShinyOverworldPalette_Chuumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sChuumonLevelUpLearnset,
         .teachableLearnset = sChuumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sChuumonDigivolveTable,
         //.formSpeciesIdTable = sChuumonFormSpeciesIdTable,
     },
 
@@ -2856,12 +2752,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Elecmon,
             gShinyOverworldPalette_Elecmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sElecmonLevelUpLearnset,
         .teachableLearnset = sElecmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sElecmonDigivolveTable,
         .formSpeciesIdTable = sElecmonFormSpeciesIdTable,
     },
 
@@ -2939,12 +2833,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Floramon,
             gShinyOverworldPalette_Floramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sFloramonLevelUpLearnset,
         .teachableLearnset = sFloramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sFloramonDigivolveTable,
         //.formSpeciesIdTable = sFloramonFormSpeciesIdTable,
     },
 
@@ -3022,12 +2914,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gabumon,
             gShinyOverworldPalette_Gabumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGabumonLevelUpLearnset,
         .teachableLearnset = sGabumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGabumonDigivolveTable,
         .formSpeciesIdTable = sGabumonFormSpeciesIdTable,
     },
 
@@ -3105,12 +2995,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Psychemon,
             gShinyOverworldPalette_Psychemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPsychemonLevelUpLearnset,
         .teachableLearnset = sPsychemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sPsychemonDigivolveTable,
         .formSpeciesIdTable = sGabumonFormSpeciesIdTable,
     },
 
@@ -3188,12 +3076,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Ganimon,
             gShinyOverworldPalette_Ganimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGanimonLevelUpLearnset,
         .teachableLearnset = sGanimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGanimonDigivolveTable,
         //.formSpeciesIdTable = sGanimonFormSpeciesIdTable,
     },
 
@@ -3271,12 +3157,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gazimon,
             gShinyOverworldPalette_Gazimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGazimonLevelUpLearnset,
         .teachableLearnset = sGazimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGazimonDigivolveTable,
         //.formSpeciesIdTable = sGazimonFormSpeciesIdTable,
     },
 
@@ -3354,12 +3238,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gizamon,
             gShinyOverworldPalette_Gizamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGizamonLevelUpLearnset,
         .teachableLearnset = sGizamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGizamonDigivolveTable,
         //.formSpeciesIdTable = sGizamonFormSpeciesIdTable,
     },
 
@@ -3437,12 +3319,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Goblimon,
             gShinyOverworldPalette_Goblimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGoblimonLevelUpLearnset,
         .teachableLearnset = sGoblimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGoblimonDigivolveTable,
         .formSpeciesIdTable = sGoblimonFormSpeciesIdTable,
     },
 
@@ -3520,12 +3400,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Shamamon,
             gShinyOverworldPalette_Shamamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sShamamonLevelUpLearnset,
         .teachableLearnset = sShamamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sShamamonDigivolveTable,
         .formSpeciesIdTable = sGoblimonFormSpeciesIdTable,
     },
 
@@ -3603,13 +3481,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Snowgoblimon,
             gShinyOverworldPalette_Snowgoblimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSnowgoblimonLevelUpLearnset,
         .teachableLearnset = sSnowgoblimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sGoblimonFormSpeciesIdTable,
+        .digivolutions = sSnowgoblimonDigivolveTable,
     },
 
 
@@ -3686,12 +3562,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gomamon,
             gShinyOverworldPalette_Gomamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGomamonLevelUpLearnset,
         .teachableLearnset = sGomamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGomamonDigivolveTable,
         //.formSpeciesIdTable = sGomamonFormSpeciesIdTable,
     },
 
@@ -3769,13 +3643,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gotsumon,
             gShinyOverworldPalette_Gotsumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGotsumonLevelUpLearnset,
         .teachableLearnset = sGotsumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sGotsumonFormSpeciesIdTable,
+        .digivolutions = sGotsumonDigivolveTable,
     },
 
 
@@ -3852,13 +3724,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Hagurumon,
             gShinyOverworldPalette_Hagurumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sHagurumonLevelUpLearnset,
         .teachableLearnset = sHagurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sHagurumonFormSpeciesIdTable,
+        .digivolutions = sHagurumonDigivolveTable,
     },
 
 
@@ -3935,12 +3805,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Kokuwamon,
             gShinyOverworldPalette_Kokuwamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKokuwamonLevelUpLearnset,
         .teachableLearnset = sKokuwamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sKokuwamonDigivolveTable,
         //.formSpeciesIdTable = sKokuwamonFormSpeciesIdTable,
     },
 
@@ -4018,13 +3886,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Kunemon,
             gShinyOverworldPalette_Kunemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKunemonLevelUpLearnset,
         .teachableLearnset = sKunemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sKunemonFormSpeciesIdTable,
+        .digivolutions = sKunemonDigivolveTable,
     },
 
 
@@ -4101,13 +3967,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Dokunemon,
             gShinyOverworldPalette_Dokunemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDokunemonLevelUpLearnset,
         .teachableLearnset = sDokunemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sKunemonFormSpeciesIdTable,
+        .digivolutions = sDokunemonDigivolveTable,
     },
 
 
@@ -4184,12 +4048,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Mushmon,
             gShinyOverworldPalette_Mushmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMushmonLevelUpLearnset,
         .teachableLearnset = sMushmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sMushmonDigivolveTable,
         //.formSpeciesIdTable = sMushmonFormSpeciesIdTable,
     },
 
@@ -4267,13 +4129,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Otamamon,
             gShinyOverworldPalette_Otamamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sOtamamonLevelUpLearnset,
         .teachableLearnset = sOtamamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sOtamamonFormSpeciesIdTable,
+        .digivolutions = sOtamamonDigivolveTable,
     },
 
 
@@ -4350,13 +4210,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Palmon,
             gShinyOverworldPalette_Palmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPalmonLevelUpLearnset,
         .teachableLearnset = sPalmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sPalmonFormSpeciesIdTable,
+        .digivolutions = sPalmonDigivolveTable,
     },
 
 
@@ -4422,7 +4280,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Alraumon,
         .shinyPalette = gMonShinyPalette_Alraumon,
         .iconSprite = gMonIcon_Alraumon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 2,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Alraumon)
         OVERWORLD(
@@ -4433,13 +4291,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Alraumon,
             gShinyOverworldPalette_Alraumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAlraumonLevelUpLearnset,
         .teachableLearnset = sAlraumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sPalmonFormSpeciesIdTable,
+        .digivolutions = sAlraumonDigivolveTable,
     },
 
 
@@ -4516,13 +4372,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Patamon,
             gShinyOverworldPalette_Patamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPatamonLevelUpLearnset,
         .teachableLearnset = sPatamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sPatamonFormSpeciesIdTable,
+        .digivolutions = sPatamonDigivolveTable,
     },
 
 
@@ -4599,13 +4453,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tsukaimon,
             gShinyOverworldPalette_Tsukaimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTsukaimonLevelUpLearnset,
         .teachableLearnset = sTsukaimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sPatamonFormSpeciesIdTable,
+        .digivolutions = sTsukaimonDigivolveTable,
     },
 
 
@@ -4682,13 +4534,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Penmon,
             gShinyOverworldPalette_Penmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPenmonLevelUpLearnset,
         .teachableLearnset = sPenmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sPenmonFormSpeciesIdTable,
+        .digivolutions = sPenmonDigivolveTable,
     },
 
 
@@ -4765,13 +4615,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Muchomon,
             gShinyOverworldPalette_Muchomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMuchomonLevelUpLearnset,
         .teachableLearnset = sMuchomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sPenmonFormSpeciesIdTable,
+        .digivolutions = sMuchomonDigivolveTable,
     },
 
 
@@ -4848,12 +4696,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Picodevimon,
             gShinyOverworldPalette_Picodevimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPicodevimonLevelUpLearnset,
         .teachableLearnset = sPicodevimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sPicodevimonDigivolveTable,
         //.formSpeciesIdTable = sPicodevimonFormSpeciesIdTable,
     },
 
@@ -4931,12 +4777,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Piyomon,
             gShinyOverworldPalette_Piyomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPiyomonLevelUpLearnset,
         .teachableLearnset = sPiyomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sPiyomonDigivolveTable,
         //.formSpeciesIdTable = sPiyomonFormSpeciesIdTable,
     },
 
@@ -5014,12 +4858,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Plotmon,
             gShinyOverworldPalette_Plotmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPlotmonLevelUpLearnset,
         .teachableLearnset = sPlotmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sPlotmonDigivolveTable,
         //.formSpeciesIdTable = sPlotmonFormSpeciesIdTable,
     },
 
@@ -5097,12 +4939,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Shakomon,
             gShinyOverworldPalette_Shakomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sShakomonLevelUpLearnset,
         .teachableLearnset = sShakomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sShakomonDigivolveTable,
         //.formSpeciesIdTable = sShakomonFormSpeciesIdTable,
     },
 
@@ -5180,12 +5020,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tentomon,
             gShinyOverworldPalette_Tentomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTentomonLevelUpLearnset,
         .teachableLearnset = sTentomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sTentomonDigivolveTable,
         //.formSpeciesIdTable = sTentomonFormSpeciesIdTable,
     },
 
@@ -5263,13 +5101,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Toyagumon,
             gShinyOverworldPalette_Toyagumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sToyagumonLevelUpLearnset,
         .teachableLearnset = sToyagumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
+        .digivolutions = sToyagumonDigivolveTable,
     },
 
 
@@ -5346,13 +5182,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Clearagumon,
             gShinyOverworldPalette_Clearagumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sClearagumonLevelUpLearnset,
         .teachableLearnset = sClearagumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
+        .digivolutions = sClearagumonDigivolveTable,
     },
 
 
@@ -5429,12 +5263,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Bun,
             gShinyOverworldPalette_Bun
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBunLevelUpLearnset,
         .teachableLearnset = sBunTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sBunDigivolveTable,
         //.formSpeciesIdTable = sBunFormSpeciesIdTable,
     },
 
@@ -5500,7 +5332,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Airdramon,
         .shinyPalette = gMonShinyPalette_Airdramon,
         .iconSprite = gMonIcon_Airdramon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Airdramon)
         OVERWORLD(
@@ -5511,12 +5343,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Airdramon,
             gShinyOverworldPalette_Airdramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAirdramonLevelUpLearnset,
         .teachableLearnset = sAirdramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sAirdramonDigivolveTable,
         //.formSpeciesIdTable = sAirdramonFormSpeciesIdTable,
     },
 
@@ -5583,7 +5413,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Angemon,
         .shinyPalette = gMonShinyPalette_Angemon,
         .iconSprite = gMonIcon_Angemon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 5,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Angemon)
         OVERWORLD(
@@ -5594,13 +5424,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Angemon,
             gShinyOverworldPalette_Angemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAngemonLevelUpLearnset,
         .teachableLearnset = sAngemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sAngemonFormSpeciesIdTable,
+        .digivolutions = sAngemonDigivolveTable,
     },
 
 
@@ -5677,13 +5505,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Pidmon,
             gShinyOverworldPalette_Pidmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPidmonLevelUpLearnset,
         .teachableLearnset = sPidmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sAngemonFormSpeciesIdTable,
+        .digivolutions = sPidmonDigivolveTable,
     },
 
 
@@ -5760,13 +5586,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Bakemon,
             gShinyOverworldPalette_Bakemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBakemonLevelUpLearnset,
         .teachableLearnset = sBakemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sBakemonFormSpeciesIdTable,
+        .digivolutions = sBakemonDigivolveTable,
     },
 
 
@@ -5843,13 +5667,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Soulmon,
             gShinyOverworldPalette_Soulmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSoulmonLevelUpLearnset,
         .teachableLearnset = sSoulmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sBakemonFormSpeciesIdTable,
+        .digivolutions = sSoulmonDigivolveTable,
     },
 
 
@@ -5926,13 +5748,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Birdramon,
             gShinyOverworldPalette_Birdramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBirdramonLevelUpLearnset,
         .teachableLearnset = sBirdramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sBirdramonFormSpeciesIdTable,
+        .digivolutions = sBirdramonDigivolveTable,
     },
 
 
@@ -6009,13 +5829,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Saberdramon,
             gShinyOverworldPalette_Saberdramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSaberdramonLevelUpLearnset,
         .teachableLearnset = sSaberdramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sBirdramonFormSpeciesIdTable,
+        .digivolutions = sSaberdramonDigivolveTable,
     },
 
 
@@ -6092,12 +5910,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Centarumon,
             gShinyOverworldPalette_Centarumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sCentarumonLevelUpLearnset,
         .teachableLearnset = sCentarumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sCentaurmonDigivolveTable,
         //.formSpeciesIdTable = sCentarumonFormSpeciesIdTable,
     },
 
@@ -6175,12 +5991,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Clockmon,
             gShinyOverworldPalette_Clockmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sClockmonLevelUpLearnset,
         .teachableLearnset = sClockmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sClockmonDigivolveTable,
         //.formSpeciesIdTable = sClockmonFormSpeciesIdTable,
     },
 
@@ -6258,12 +6072,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Coelamon,
             gShinyOverworldPalette_Coelamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sCoelamonLevelUpLearnset,
         .teachableLearnset = sCoelamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sCoelamonDigivolveTable,
         //.formSpeciesIdTable = sCoelamonFormSpeciesIdTable,
     },
 
@@ -6341,12 +6153,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Cyclomon,
             gShinyOverworldPalette_Cyclomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sCyclomonLevelUpLearnset,
         .teachableLearnset = sCyclomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sCyclomonDigivolveTable,
         //.formSpeciesIdTable = sCyclomonFormSpeciesIdTable,
     },
 
@@ -6424,12 +6234,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Darktyrannomon,
             gShinyOverworldPalette_Darktyrannomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDarktyrannomonLevelUpLearnset,
         .teachableLearnset = sDarktyrannomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sDarktyrannomonDigivolveTable,
         //.formSpeciesIdTable = sDarktyrannomonFormSpeciesIdTable,
     },
 
@@ -6507,12 +6315,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Deltamon,
             gShinyOverworldPalette_Deltamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDeltamonLevelUpLearnset,
         .teachableLearnset = sDeltamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sDeltamonDigivolveTable,
         //.formSpeciesIdTable = sDeltamonFormSpeciesIdTable,
     },
 
@@ -6590,12 +6396,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Devidramon,
             gShinyOverworldPalette_Devidramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDevidramonLevelUpLearnset,
         .teachableLearnset = sDevidramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sDevidramonDigivolveTable,
         //.formSpeciesIdTable = sDevidramonFormSpeciesIdTable,
     },
 
@@ -6673,13 +6477,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Devimon,
             gShinyOverworldPalette_Devimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDevimonLevelUpLearnset,
         .teachableLearnset = sDevimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sDevimonFormSpeciesIdTable,
+        .digivolutions = sDevimonDigivolveTable,
     },
 
 
@@ -6756,13 +6558,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Icedevimon,
             gShinyOverworldPalette_Icedevimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sIcedevimonLevelUpLearnset,
         .teachableLearnset = sIcedevimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sDevimonFormSpeciesIdTable,
+        .digivolutions = sIcedevimonDigivolveTable,
     },
 
 
@@ -6839,12 +6639,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Dokugumon,
             gShinyOverworldPalette_Dokugumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDokugumonLevelUpLearnset,
         .teachableLearnset = sDokugumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sDokugumonDigivolveTable,
         //.formSpeciesIdTable = sDokugumonFormSpeciesIdTable,
     },
 
@@ -6922,13 +6720,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Drimogemon,
             gShinyOverworldPalette_Drimogemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDrimogemonLevelUpLearnset,
         .teachableLearnset = sDrimogemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sDrimogemonFormSpeciesIdTable,
+        .digivolutions = sDrimogemonDigivolveTable,
     },
 
 
@@ -7005,13 +6801,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Nisedrimogemon,
             gShinyOverworldPalette_Nisedrimogemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sNisedrimogemonLevelUpLearnset,
         .teachableLearnset = sNisedrimogemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sDrimogemonFormSpeciesIdTable,
+        .digivolutions = sNisedrimogemonDigivolveTable,
     },
 
 
@@ -7088,12 +6882,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Ebidramon,
             gShinyOverworldPalette_Ebidramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sEbidramonLevelUpLearnset,
         .teachableLearnset = sEbidramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sEbidramonDigivolveTable,
         //.formSpeciesIdTable = sEbidramonFormSpeciesIdTable,
     },
 
@@ -7171,12 +6963,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Evilmon,
             gShinyOverworldPalette_Evilmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sEvilmonLevelUpLearnset,
         .teachableLearnset = sEvilmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sEvilmonDigivolveTable,
         //.formSpeciesIdTable = sEvilmonFormSpeciesIdTable,
     },
 
@@ -7254,12 +7044,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Flarelizarmon,
             gShinyOverworldPalette_Flarelizarmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sFlarelizarmonLevelUpLearnset,
         .teachableLearnset = sFlarelizarmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sFlarelizarmonDigivolveTable,
         .formSpeciesIdTable = sFlarelizarmonFormSpeciesIdTable,
     },
 
@@ -7337,12 +7125,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Darklizarmon,
             gShinyOverworldPalette_Darklizarmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDarklizarmonLevelUpLearnset,
         .teachableLearnset = sDarklizarmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sDarklizarmonDigivolveTable,
         .formSpeciesIdTable = sFlarelizarmonFormSpeciesIdTable,
     },
 
@@ -7420,12 +7206,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Flymon,
             gShinyOverworldPalette_Flymon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sFlymonLevelUpLearnset,
         .teachableLearnset = sFlymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sFlymonDigivolveTable,
         //.formSpeciesIdTable = sFlymonFormSpeciesIdTable,
     },
 
@@ -7503,12 +7287,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Garurumon,
             gShinyOverworldPalette_Garurumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGarurumonLevelUpLearnset,
         .teachableLearnset = sGarurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGarurumonDigivolveTable,
         .formSpeciesIdTable = sGarurumonFormSpeciesIdTable,
     },
 
@@ -7586,12 +7368,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gururumon,
             gShinyOverworldPalette_Gururumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGururumonLevelUpLearnset,
         .teachableLearnset = sGururumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGururumonDigivolveTable,
         .formSpeciesIdTable = sGarurumonFormSpeciesIdTable,
     },
 
@@ -7669,12 +7449,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gekomon,
             gShinyOverworldPalette_Gekomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGekomonLevelUpLearnset,
         .teachableLearnset = sGekomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGekomonDigivolveTable,
         //.formSpeciesIdTable = sGekomonFormSpeciesIdTable,
     },
 
@@ -7752,12 +7530,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gesomon,
             gShinyOverworldPalette_Gesomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGesomonLevelUpLearnset,
         .teachableLearnset = sGesomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGesomonDigivolveTable,
         //.formSpeciesIdTable = sGesomonFormSpeciesIdTable,
     },
 
@@ -7835,12 +7611,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gokimon,
             gShinyOverworldPalette_Gokimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGokimonLevelUpLearnset,
         .teachableLearnset = sGokimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGokimonDigivolveTable,
         //.formSpeciesIdTable = sGokimonFormSpeciesIdTable,
     },
 
@@ -7918,12 +7692,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Golemon,
             gShinyOverworldPalette_Golemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGolemonLevelUpLearnset,
         .teachableLearnset = sGolemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGolemonDigivolveTable,
         //.formSpeciesIdTable = sGolemonFormSpeciesIdTable,
     },
 
@@ -8001,12 +7773,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gorimon,
             gShinyOverworldPalette_Gorimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGorimonLevelUpLearnset,
         .teachableLearnset = sGorimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGorimonDigivolveTable,
         //.formSpeciesIdTable = sGorimonFormSpeciesIdTable,
     },
 
@@ -8084,12 +7854,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Greymon,
             gShinyOverworldPalette_Greymon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGreymonLevelUpLearnset,
         .teachableLearnset = sGreymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGreymonDigivolveTable,
         .formSpeciesIdTable = sGreymonFormSpeciesIdTable,
     },
 
@@ -8167,12 +7935,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Guardromon,
             gShinyOverworldPalette_Guardromon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGuardromonLevelUpLearnset,
         .teachableLearnset = sGuardromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGardromonDigivolveTable,
         //.formSpeciesIdTable = sGuardromonFormSpeciesIdTable,
     },
 
@@ -8250,12 +8016,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Hanumon,
             gShinyOverworldPalette_Hanumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sHanumonLevelUpLearnset,
         .teachableLearnset = sHanumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sHanumonDigivolveTable,
         //.formSpeciesIdTable = sHanumonFormSpeciesIdTable,
     },
 
@@ -8333,12 +8097,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Icemon,
             gShinyOverworldPalette_Icemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sIcemonLevelUpLearnset,
         .teachableLearnset = sIcemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sIcemonDigivolveTable,
         .formSpeciesIdTable = sGotsumonFormSpeciesIdTable,
     },
 
@@ -8416,12 +8178,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Igamon,
             gShinyOverworldPalette_Igamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sIgamonLevelUpLearnset,
         .teachableLearnset = sIgamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sIgamonDigivolveTable,
         //.formSpeciesIdTable = sIgamonFormSpeciesIdTable,
     },
 
@@ -8499,12 +8259,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Ikkakumon,
             gShinyOverworldPalette_Ikkakumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sIkkakumonLevelUpLearnset,
         .teachableLearnset = sIkkakumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sIkkakumonDigivolveTable,
         //.formSpeciesIdTable = sIkkakumonFormSpeciesIdTable,
     },
 
@@ -8582,12 +8340,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Kabuterimon,
             gShinyOverworldPalette_Kabuterimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKabuterimonLevelUpLearnset,
         .teachableLearnset = sKabuterimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sKabuterimonDigivolveTable,
         //.formSpeciesIdTable = sKabuterimonFormSpeciesIdTable,
     },
 
@@ -8665,12 +8421,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Karatukinumemon,
             gShinyOverworldPalette_Karatukinumemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKaratukinumemonLevelUpLearnset,
         .teachableLearnset = sKaratukinumemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sKaratukinumemonDigivolveTable,
         .formSpeciesIdTable = sNumemonFormSpeciesIdTable,
     },
 
@@ -8748,12 +8502,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Kiwimon,
             gShinyOverworldPalette_Kiwimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKiwimonLevelUpLearnset,
         .teachableLearnset = sKiwimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sKiwimonDigivolveTable,
         //.formSpeciesIdTable = sKiwimonFormSpeciesIdTable,
     },
 
@@ -8831,13 +8583,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Kokatorimon,
             gShinyOverworldPalette_Kokatorimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKokatorimonLevelUpLearnset,
         .teachableLearnset = sKokatorimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sKokatorimonFormSpeciesIdTable,
+        .digivolutions = sKokatorimonDigivolveTable,
     },
 
 
@@ -8914,13 +8664,11 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Akatorimon,
             gShinyOverworldPalette_Akatorimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAkatorimonLevelUpLearnset,
         .teachableLearnset = sAkatorimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sKokatorimonFormSpeciesIdTable,
+        .digivolutions = sAkatorimonDigivolveTable,
     },
 
 
@@ -8997,12 +8745,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Kuwagamon,
             gShinyOverworldPalette_Kuwagamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKuwagamonLevelUpLearnset,
         .teachableLearnset = sKuwagamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sKuwagamonDigivolveTable,
         //.formSpeciesIdTable = sKuwagamonFormSpeciesIdTable,
     },
 
@@ -9080,12 +8826,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Leomon,
             gShinyOverworldPalette_Leomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sLeomonLevelUpLearnset,
         .teachableLearnset = sLeomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sLeomonDigivolveTable,
         //.formSpeciesIdTable = sLeomonFormSpeciesIdTable,
     },
 
@@ -9163,12 +8907,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Mechanorimon,
             gShinyOverworldPalette_Mechanorimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMechanorimonLevelUpLearnset,
         .teachableLearnset = sMechanorimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sMechanorimonDigivolveTable,
         //.formSpeciesIdTable = sMechanorimonFormSpeciesIdTable,
     },
 
@@ -9246,12 +8988,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Meramon,
             gShinyOverworldPalette_Meramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMeramonLevelUpLearnset,
         .teachableLearnset = sMeramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sMeramonDigivolveTable,
         //.formSpeciesIdTable = sMeramonFormSpeciesIdTable,
     },
 
@@ -9329,12 +9069,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Minotaurmon,
             gShinyOverworldPalette_Minotaurmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMinotaurmonLevelUpLearnset,
         .teachableLearnset = sMinotaurmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sMinotaurmonDigivolveTable,
         //.formSpeciesIdTable = sMinotaurmonFormSpeciesIdTable,
     },
 
@@ -9412,12 +9150,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Mojyamon,
             gShinyOverworldPalette_Mojyamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMojyamonLevelUpLearnset,
         .teachableLearnset = sMojyamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sMojyamonDigivolveTable,
         .formSpeciesIdTable = sMojyamonFormSpeciesIdTable,
     },
 
@@ -9495,12 +9231,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Junglemojyamon,
             gShinyOverworldPalette_Junglemojyamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sJunglemojyamonLevelUpLearnset,
         .teachableLearnset = sJunglemojyamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sJunglemojyamonDigivolveTable,
         //.formSpeciesIdTable = sJunglemojyamonFormSpeciesIdTable,
     },
 
@@ -9578,12 +9312,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Monochromon,
             gShinyOverworldPalette_Monochromon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMonochromonLevelUpLearnset,
         .teachableLearnset = sMonochromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sMonochromonDigivolveTable,
         //.formSpeciesIdTable = sMonochromonFormSpeciesIdTable,
     },
 
@@ -9661,12 +9393,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Musyamon,
             gShinyOverworldPalette_Musyamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMusyamonLevelUpLearnset,
         .teachableLearnset = sMusyamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sMusyamonDigivolveTable,
         //.formSpeciesIdTable = sMusyamonFormSpeciesIdTable,
     },
 
@@ -9744,12 +9474,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Nanimon,
             gShinyOverworldPalette_Nanimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sNanimonLevelUpLearnset,
         .teachableLearnset = sNanimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sNanimonDigivolveTable,
         //.formSpeciesIdTable = sNanimonFormSpeciesIdTable,
     },
 
@@ -9827,12 +9555,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Numemon,
             gShinyOverworldPalette_Numemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sNumemonLevelUpLearnset,
         .teachableLearnset = sNumemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sNumemonDigivolveTable,
         .formSpeciesIdTable = sNumemonFormSpeciesIdTable,
     },
 
@@ -9910,12 +9636,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Geremon,
             gShinyOverworldPalette_Geremon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGeremonLevelUpLearnset,
         .teachableLearnset = sGeremonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sGeremonDigivolveTable,
         .formSpeciesIdTable = sNumemonFormSpeciesIdTable,
     },
 
@@ -9993,12 +9717,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Octomon,
             gShinyOverworldPalette_Octomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sOctomonLevelUpLearnset,
         .teachableLearnset = sOctomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sOctomonDigivolveTable,
         //.formSpeciesIdTable = sOctomonFormSpeciesIdTable,
     },
 
@@ -10076,12 +9798,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Ogremon,
             gShinyOverworldPalette_Ogremon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sOgremonLevelUpLearnset,
         .teachableLearnset = sOgremonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sOgremonDigivolveTable,
         .formSpeciesIdTable = sOgremonFormSpeciesIdTable,
     },
 
@@ -10159,12 +9879,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Fugamon,
             gShinyOverworldPalette_Fugamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sFugamonLevelUpLearnset,
         .teachableLearnset = sFugamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sFugamonDigivolveTable,
         .formSpeciesIdTable = sOgremonFormSpeciesIdTable,
     },
 
@@ -10242,12 +9960,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Hyogamon,
             gShinyOverworldPalette_Hyogamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sHyogamonLevelUpLearnset,
         .teachableLearnset = sHyogamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
+        .digivolutions = sHyogamonDigivolveTable,
         .formSpeciesIdTable = sOgremonFormSpeciesIdTable,
     },
 
@@ -10325,12 +10041,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Raremon,
             gShinyOverworldPalette_Raremon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sRaremonLevelUpLearnset,
         .teachableLearnset = sRaremonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sRaremonFormSpeciesIdTable,
     },
 
@@ -10408,12 +10121,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Revolmon,
             gShinyOverworldPalette_Revolmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sRevolmonLevelUpLearnset,
         .teachableLearnset = sRevolmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sRevolmonFormSpeciesIdTable,
     },
 
@@ -10491,12 +10201,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Rukamon,
             gShinyOverworldPalette_Rukamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sRukamonLevelUpLearnset,
         .teachableLearnset = sRukamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sRukamonFormSpeciesIdTable,
     },
 
@@ -10574,12 +10281,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Seadramon,
             gShinyOverworldPalette_Seadramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSeadramonLevelUpLearnset,
         .teachableLearnset = sSeadramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sSeadramonFormSpeciesIdTable,
     },
 
@@ -10657,12 +10361,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Shellmon,
             gShinyOverworldPalette_Shellmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sShellmonLevelUpLearnset,
         .teachableLearnset = sShellmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sShellmonFormSpeciesIdTable,
     },
 
@@ -10740,12 +10441,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Morishellmon,
             gShinyOverworldPalette_Morishellmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMorishellmonLevelUpLearnset,
         .teachableLearnset = sMorishellmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sShellmonFormSpeciesIdTable,
     },
 
@@ -10823,12 +10521,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Snimon,
             gShinyOverworldPalette_Snimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSnimonLevelUpLearnset,
         .teachableLearnset = sSnimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sSnimonFormSpeciesIdTable,
     },
 
@@ -10906,12 +10601,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Starmon,
             gShinyOverworldPalette_Starmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sStarmonLevelUpLearnset,
         .teachableLearnset = sStarmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sStarmonFormSpeciesIdTable,
     },
 
@@ -10989,12 +10681,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Sukamon,
             gShinyOverworldPalette_Sukamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSukamonLevelUpLearnset,
         .teachableLearnset = sSukamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sSukamonFormSpeciesIdTable,
     },
 
@@ -11072,12 +10761,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Platinumsukamon,
             gShinyOverworldPalette_Platinumsukamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPlatinumsukamonLevelUpLearnset,
         .teachableLearnset = sPlatinumsukamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sSukamonFormSpeciesIdTable,
     },
 
@@ -11155,12 +10841,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tailmon,
             gShinyOverworldPalette_Tailmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTailmonLevelUpLearnset,
         .teachableLearnset = sTailmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sTailmonFormSpeciesIdTable,
     },
 
@@ -11238,12 +10921,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tankmon,
             gShinyOverworldPalette_Tankmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTankmonLevelUpLearnset,
         .teachableLearnset = sTankmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sTankmonFormSpeciesIdTable,
     },
 
@@ -11321,12 +11001,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Thunderballmon,
             gShinyOverworldPalette_Thunderballmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sThunderballmonLevelUpLearnset,
         .teachableLearnset = sThunderballmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sThunderballmonFormSpeciesIdTable,
     },
 
@@ -11404,12 +11081,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Togemon,
             gShinyOverworldPalette_Togemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTogemonLevelUpLearnset,
         .teachableLearnset = sTogemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sTogemonFormSpeciesIdTable,
     },
 
@@ -11487,12 +11161,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tortomon,
             gShinyOverworldPalette_Tortomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTortomonLevelUpLearnset,
         .teachableLearnset = sTortomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sTortomonFormSpeciesIdTable,
     },
 
@@ -11570,12 +11241,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tuskmon,
             gShinyOverworldPalette_Tuskmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTuskmonLevelUpLearnset,
         .teachableLearnset = sTuskmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sTuskmonFormSpeciesIdTable,
     },
 
@@ -11653,12 +11321,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tyrannomon,
             gShinyOverworldPalette_Tyrannomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTyrannomonLevelUpLearnset,
         .teachableLearnset = sTyrannomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sTyrannomonFormSpeciesIdTable,
     },
 
@@ -11736,12 +11401,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Unimon,
             gShinyOverworldPalette_Unimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sUnimonLevelUpLearnset,
         .teachableLearnset = sUnimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sUnimonFormSpeciesIdTable,
     },
 
@@ -11819,12 +11481,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Shimaunimon,
             gShinyOverworldPalette_Shimaunimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sShimaunimonLevelUpLearnset,
         .teachableLearnset = sShimaunimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sUnimonFormSpeciesIdTable,
     },
 
@@ -11902,12 +11561,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Veedramon,
             gShinyOverworldPalette_Veedramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sVeedramonLevelUpLearnset,
         .teachableLearnset = sVeedramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sVeedramonFormSpeciesIdTable,
     },
 
@@ -11985,12 +11641,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Vegimon,
             gShinyOverworldPalette_Vegimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sVegimonLevelUpLearnset,
         .teachableLearnset = sVegimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sVegimonFormSpeciesIdTable,
     },
 
@@ -12068,12 +11721,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Zassoumon,
             gShinyOverworldPalette_Zassoumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sZassoumonLevelUpLearnset,
         .teachableLearnset = sZassoumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sVegimonFormSpeciesIdTable,
     },
 
@@ -12151,12 +11801,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Redvegimon,
             gShinyOverworldPalette_Redvegimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sRedvegimonLevelUpLearnset,
         .teachableLearnset = sRedvegimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sVegimonFormSpeciesIdTable,
     },
 
@@ -12234,12 +11881,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Whamon_adult,
             gShinyOverworldPalette_Whamon_adult
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sWhamon_adultLevelUpLearnset,
         .teachableLearnset = sWhamon_adultTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sWhamonFormSpeciesIdTable,
     },
 
@@ -12317,12 +11961,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Wizarmon,
             gShinyOverworldPalette_Wizarmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sWizarmonLevelUpLearnset,
         .teachableLearnset = sWizarmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sWizarmonFormSpeciesIdTable,
     },
 
@@ -12400,12 +12041,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Woodmon,
             gShinyOverworldPalette_Woodmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sWoodmonLevelUpLearnset,
         .teachableLearnset = sWoodmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sWoodmonFormSpeciesIdTable,
     },
 
@@ -12483,12 +12121,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Yanmamon,
             gShinyOverworldPalette_Yanmamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sYanmamonLevelUpLearnset,
         .teachableLearnset = sYanmamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sYanmamonFormSpeciesIdTable,
     },
 
@@ -12566,12 +12201,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Sandyanmamon,
             gShinyOverworldPalette_Sandyanmamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSandyanmamonLevelUpLearnset,
         .teachableLearnset = sSandyanmamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sYanmamonFormSpeciesIdTable,
     },
 
@@ -12649,12 +12281,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Yukidarumon,
             gShinyOverworldPalette_Yukidarumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sYukidarumonLevelUpLearnset,
         .teachableLearnset = sYukidarumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sYukidarumonFormSpeciesIdTable,
     },
 
@@ -12732,12 +12361,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tsuchidarumon,
             gShinyOverworldPalette_Tsuchidarumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTsuchidarumonLevelUpLearnset,
         .teachableLearnset = sTsuchidarumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sYukidarumonFormSpeciesIdTable,
     },
 
@@ -12815,12 +12441,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Aeroveedramon,
             gShinyOverworldPalette_Aeroveedramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAeroveedramonLevelUpLearnset,
         .teachableLearnset = sAeroveedramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sAeroveedramonFormSpeciesIdTable,
     },
 
@@ -12887,7 +12510,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Andromon,
         .shinyPalette = gMonShinyPalette_Andromon,
         .iconSprite = gMonIcon_Andromon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Andromon)
         OVERWORLD(
@@ -12898,12 +12521,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Andromon,
             gShinyOverworldPalette_Andromon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAndromonLevelUpLearnset,
         .teachableLearnset = sAndromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sAndromonFormSpeciesIdTable,
     },
 
@@ -12970,7 +12590,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Angewomon,
         .shinyPalette = gMonShinyPalette_Angewomon,
         .iconSprite = gMonIcon_Angewomon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 5,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Angewomon)
         OVERWORLD(
@@ -12981,12 +12601,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Angewomon,
             gShinyOverworldPalette_Angewomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAngewomonLevelUpLearnset,
         .teachableLearnset = sAngewomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sAngewomonFormSpeciesIdTable,
     },
 
@@ -13053,7 +12670,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Anomalocarimon,
         .shinyPalette = gMonShinyPalette_Anomalocarimon,
         .iconSprite = gMonIcon_Anomalocarimon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 5,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Anomalocarimon)
         OVERWORLD(
@@ -13064,12 +12681,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Anomalocarimon,
             gShinyOverworldPalette_Anomalocarimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAnomalocarimonLevelUpLearnset,
         .teachableLearnset = sAnomalocarimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sAnomalocarimonFormSpeciesIdTable,
     },
 
@@ -13147,12 +12761,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Asuramon,
             gShinyOverworldPalette_Asuramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAsuramonLevelUpLearnset,
         .teachableLearnset = sAsuramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sAsuramonFormSpeciesIdTable,
     },
 
@@ -13230,12 +12841,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Atlurkabuterimonr,
             gShinyOverworldPalette_Atlurkabuterimonr
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAtlurkabuterimonrLevelUpLearnset,
         .teachableLearnset = sAtlurkabuterimonrTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sAtlurkabuterimonrFormSpeciesIdTable,
     },
 
@@ -13313,12 +12921,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Atlurkabuterimonb,
             gShinyOverworldPalette_Atlurkabuterimonb
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sAtlurkabuterimonbLevelUpLearnset,
         .teachableLearnset = sAtlurkabuterimonbTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sAtlurkabuterimonrFormSpeciesIdTable,
     },
 
@@ -13396,12 +13001,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Bigmamemon,
             gShinyOverworldPalette_Bigmamemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBigmamemonLevelUpLearnset,
         .teachableLearnset = sBigmamemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sMamemonFormSpeciesIdTable,
     },
 
@@ -13479,12 +13081,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Blossomon,
             gShinyOverworldPalette_Blossomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBlossomonLevelUpLearnset,
         .teachableLearnset = sBlossomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sBlossomonFormSpeciesIdTable,
     },
 
@@ -13562,12 +13161,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Bluemeramon,
             gShinyOverworldPalette_Bluemeramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBluemeramonLevelUpLearnset,
         .teachableLearnset = sBluemeramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sBluemeramonFormSpeciesIdTable,
     },
 
@@ -13645,12 +13241,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Brachimon,
             gShinyOverworldPalette_Brachimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBrachimonLevelUpLearnset,
         .teachableLearnset = sBrachimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sBrachimonFormSpeciesIdTable,
     },
 
@@ -13728,12 +13321,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Chimairamon,
             gShinyOverworldPalette_Chimairamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sChimairamonLevelUpLearnset,
         .teachableLearnset = sChimairamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sChimairamonFormSpeciesIdTable,
     },
 
@@ -13811,12 +13401,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Cyberdramon,
             gShinyOverworldPalette_Cyberdramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sCyberdramonLevelUpLearnset,
         .teachableLearnset = sCyberdramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sCyberdramonFormSpeciesIdTable,
     },
 
@@ -13894,12 +13481,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Dagomon,
             gShinyOverworldPalette_Dagomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDagomonLevelUpLearnset,
         .teachableLearnset = sDagomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sDagomonFormSpeciesIdTable,
     },
 
@@ -13977,12 +13561,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Deathmeramon,
             gShinyOverworldPalette_Deathmeramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDeathmeramonLevelUpLearnset,
         .teachableLearnset = sDeathmeramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sDeathmeramonFormSpeciesIdTable,
     },
 
@@ -14060,12 +13641,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Delumon,
             gShinyOverworldPalette_Delumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDelumonLevelUpLearnset,
         .teachableLearnset = sDelumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sDelumonFormSpeciesIdTable,
     },
 
@@ -14143,12 +13721,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Digitamamon,
             gShinyOverworldPalette_Digitamamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDigitamamonLevelUpLearnset,
         .teachableLearnset = sDigitamamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sDigitamamonFormSpeciesIdTable,
     },
 
@@ -14226,12 +13801,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Etemon,
             gShinyOverworldPalette_Etemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sEtemonLevelUpLearnset,
         .teachableLearnset = sEtemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sEtemonFormSpeciesIdTable,
     },
 
@@ -14309,12 +13881,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Extyrannomon,
             gShinyOverworldPalette_Extyrannomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sExtyrannomonLevelUpLearnset,
         .teachableLearnset = sExtyrannomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sExtyrannomonFormSpeciesIdTable,
     },
 
@@ -14392,12 +13961,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Garudamon,
             gShinyOverworldPalette_Garudamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGarudamonLevelUpLearnset,
         .teachableLearnset = sGarudamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sGarudamonFormSpeciesIdTable,
     },
 
@@ -14475,12 +14041,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gerbemon,
             gShinyOverworldPalette_Gerbemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGerbemonLevelUpLearnset,
         .teachableLearnset = sGerbemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sGerbemonFormSpeciesIdTable,
     },
 
@@ -14558,12 +14121,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Gigadramon,
             gShinyOverworldPalette_Gigadramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGigadramonLevelUpLearnset,
         .teachableLearnset = sGigadramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sGigadramonFormSpeciesIdTable,
     },
 
@@ -14641,12 +14201,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Giromon,
             gShinyOverworldPalette_Giromon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGiromonLevelUpLearnset,
         .teachableLearnset = sGiromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sGiromonFormSpeciesIdTable,
     },
 
@@ -14724,12 +14281,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tekkamon,
             gShinyOverworldPalette_Tekkamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTekkamonLevelUpLearnset,
         .teachableLearnset = sTekkamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sTekkamonFormSpeciesIdTable,
     },
 
@@ -14807,12 +14361,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Hangyomon,
             gShinyOverworldPalette_Hangyomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sHangyomonLevelUpLearnset,
         .teachableLearnset = sHangyomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sHangyomonFormSpeciesIdTable,
     },
 
@@ -14890,12 +14441,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Holyangemon,
             gShinyOverworldPalette_Holyangemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sHolyangemonLevelUpLearnset,
         .teachableLearnset = sHolyangemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sHolyangemonFormSpeciesIdTable,
     },
 
@@ -14973,12 +14521,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Insekimon,
             gShinyOverworldPalette_Insekimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sInsekimonLevelUpLearnset,
         .teachableLearnset = sInsekimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sGotsumonFormSpeciesIdTable,
     },
 
@@ -15056,12 +14601,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Jyagamon,
             gShinyOverworldPalette_Jyagamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sJyagamonLevelUpLearnset,
         .teachableLearnset = sJyagamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sJyagamonFormSpeciesIdTable,
     },
 
@@ -15139,12 +14681,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Jyureimon,
             gShinyOverworldPalette_Jyureimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sJyureimonLevelUpLearnset,
         .teachableLearnset = sJyureimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sJyureimonFormSpeciesIdTable,
     },
 
@@ -15222,12 +14761,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Knightmon,
             gShinyOverworldPalette_Knightmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKnightmonLevelUpLearnset,
         .teachableLearnset = sKnightmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sKnightmonFormSpeciesIdTable,
     },
 
@@ -15305,12 +14841,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Ladydevimon,
             gShinyOverworldPalette_Ladydevimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sLadydevimonLevelUpLearnset,
         .teachableLearnset = sLadydevimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sLadydevimonFormSpeciesIdTable,
     },
 
@@ -15388,12 +14921,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Lilimon,
             gShinyOverworldPalette_Lilimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sLilimonLevelUpLearnset,
         .teachableLearnset = sLilimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sLilimonFormSpeciesIdTable,
     },
 
@@ -15471,12 +15001,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Mamemon,
             gShinyOverworldPalette_Mamemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMamemonLevelUpLearnset,
         .teachableLearnset = sMamemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMamemonFormSpeciesIdTable,
     },
 
@@ -15554,12 +15081,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Mammon,
             gShinyOverworldPalette_Mammon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMammonLevelUpLearnset,
         .teachableLearnset = sMammonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMammonFormSpeciesIdTable,
     },
 
@@ -15637,12 +15161,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Marinedevimon,
             gShinyOverworldPalette_Marinedevimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMarinedevimonLevelUpLearnset,
         .teachableLearnset = sMarinedevimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         .formSpeciesIdTable = sDevimonFormSpeciesIdTable,
     },
 
@@ -15720,12 +15241,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Mastertyrannomon,
             gShinyOverworldPalette_Mastertyrannomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMastertyrannomonLevelUpLearnset,
         .teachableLearnset = sMastertyrannomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMastertyrannomonFormSpeciesIdTable,
     },
 
@@ -15803,12 +15321,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Megadramon,
             gShinyOverworldPalette_Megadramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMegadramonLevelUpLearnset,
         .teachableLearnset = sMegadramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMegadramonFormSpeciesIdTable,
     },
 
@@ -15886,12 +15401,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Megaseadramon,
             gShinyOverworldPalette_Megaseadramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMegaseadramonLevelUpLearnset,
         .teachableLearnset = sMegaseadramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMegaseadramonFormSpeciesIdTable,
     },
 
@@ -15969,12 +15481,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Waruseadramon,
             gShinyOverworldPalette_Waruseadramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sWaruseadramonLevelUpLearnset,
         .teachableLearnset = sWaruseadramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sWaruseadramonFormSpeciesIdTable,
     },
 
@@ -16052,12 +15561,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Metalgreymon,
             gShinyOverworldPalette_Metalgreymon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMetalgreymonLevelUpLearnset,
         .teachableLearnset = sMetalgreymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMetalgreymonFormSpeciesIdTable,
     },
 
@@ -16135,12 +15641,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Metalgreymonv,
             gShinyOverworldPalette_Metalgreymonv
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMetalgreymonvLevelUpLearnset,
         .teachableLearnset = sMetalgreymonvTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMetalgreymonvFormSpeciesIdTable,
     },
 
@@ -16218,12 +15721,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Metalmamemon,
             gShinyOverworldPalette_Metalmamemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMetalmamemonLevelUpLearnset,
         .teachableLearnset = sMetalmamemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMetalmamemonFormSpeciesIdTable,
     },
 
@@ -16301,12 +15801,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Metaltyrannomon,
             gShinyOverworldPalette_Metaltyrannomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMetaltyrannomonLevelUpLearnset,
         .teachableLearnset = sMetaltyrannomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMetaltyrannomonFormSpeciesIdTable,
     },
 
@@ -16384,12 +15881,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Monzaemon,
             gShinyOverworldPalette_Monzaemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMonzaemonLevelUpLearnset,
         .teachableLearnset = sMonzaemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMonzaemonFormSpeciesIdTable,
     },
 
@@ -16467,12 +15961,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Mummymon,
             gShinyOverworldPalette_Mummymon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMummymonLevelUpLearnset,
         .teachableLearnset = sMummymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMummymonFormSpeciesIdTable,
     },
 
@@ -16550,12 +16041,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Nanomon,
             gShinyOverworldPalette_Nanomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sNanomonLevelUpLearnset,
         .teachableLearnset = sNanomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sNanomonFormSpeciesIdTable,
     },
 
@@ -16633,12 +16121,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Okuwamon,
             gShinyOverworldPalette_Okuwamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sOkuwamonLevelUpLearnset,
         .teachableLearnset = sOkuwamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sOkuwamonFormSpeciesIdTable,
     },
 
@@ -16716,12 +16201,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Orochimon,
             gShinyOverworldPalette_Orochimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sOrochimonLevelUpLearnset,
         .teachableLearnset = sOrochimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sOrochimonFormSpeciesIdTable,
     },
 
@@ -16799,12 +16281,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Panjyamon,
             gShinyOverworldPalette_Panjyamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPanjyamonLevelUpLearnset,
         .teachableLearnset = sPanjyamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sPanjyamonFormSpeciesIdTable,
     },
 
@@ -16882,12 +16361,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Parrotmon,
             gShinyOverworldPalette_Parrotmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sParrotmonLevelUpLearnset,
         .teachableLearnset = sParrotmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sParrotmonFormSpeciesIdTable,
     },
 
@@ -16965,12 +16441,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Phantomon,
             gShinyOverworldPalette_Phantomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPhantomonLevelUpLearnset,
         .teachableLearnset = sPhantomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sPhantomonFormSpeciesIdTable,
     },
 
@@ -17048,12 +16521,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Piccolomon,
             gShinyOverworldPalette_Piccolomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPiccolomonLevelUpLearnset,
         .teachableLearnset = sPiccolomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sPiccolomonFormSpeciesIdTable,
     },
 
@@ -17131,12 +16601,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Pumpmon,
             gShinyOverworldPalette_Pumpmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPumpmonLevelUpLearnset,
         .teachableLearnset = sPumpmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sPumpmonFormSpeciesIdTable,
     },
 
@@ -17214,12 +16681,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Skullgreymon,
             gShinyOverworldPalette_Skullgreymon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSkullgreymonLevelUpLearnset,
         .teachableLearnset = sSkullgreymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sSkullgreymonFormSpeciesIdTable,
     },
 
@@ -17297,12 +16761,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Skullsatamon,
             gShinyOverworldPalette_Skullsatamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSkullsatamonLevelUpLearnset,
         .teachableLearnset = sSkullsatamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sSkullsatamonFormSpeciesIdTable,
     },
 
@@ -17380,12 +16841,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Tonosamagekomon,
             gShinyOverworldPalette_Tonosamagekomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTonosamagekomonLevelUpLearnset,
         .teachableLearnset = sTonosamagekomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sTonosamagekomonFormSpeciesIdTable,
     },
 
@@ -17463,12 +16921,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Triceramon,
             gShinyOverworldPalette_Triceramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sTriceramonLevelUpLearnset,
         .teachableLearnset = sTriceramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sTriceramonFormSpeciesIdTable,
     },
 
@@ -17546,12 +17001,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Vadermon,
             gShinyOverworldPalette_Vadermon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sVadermonLevelUpLearnset,
         .teachableLearnset = sVadermonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sVadermonFormSpeciesIdTable,
     },
 
@@ -17629,12 +17081,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Vamdemon,
             gShinyOverworldPalette_Vamdemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sVamdemonLevelUpLearnset,
         .teachableLearnset = sVamdemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sVamdemonFormSpeciesIdTable,
     },
 
@@ -17712,12 +17161,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Vermilimon,
             gShinyOverworldPalette_Vermilimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sVermilimonLevelUpLearnset,
         .teachableLearnset = sVermilimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sVermilimonFormSpeciesIdTable,
     },
 
@@ -17795,12 +17241,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Warumonzaemon,
             gShinyOverworldPalette_Warumonzaemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sWarumonzaemonLevelUpLearnset,
         .teachableLearnset = sWarumonzaemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sWarumonzaemonFormSpeciesIdTable,
     },
 
@@ -17878,12 +17321,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Weregarurumon,
             gShinyOverworldPalette_Weregarurumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sWeregarurumonLevelUpLearnset,
         .teachableLearnset = sWeregarurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sWeregarurumonFormSpeciesIdTable,
     },
 
@@ -17961,12 +17401,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Whamon_perfect,
             gShinyOverworldPalette_Whamon_perfect
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sWhamon_perfectLevelUpLearnset,
         .teachableLearnset = sWhamon_perfectTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sWhamon_perfectFormSpeciesIdTable,
     },
 
@@ -18044,12 +17481,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Zudomon,
             gShinyOverworldPalette_Zudomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sZudomonLevelUpLearnset,
         .teachableLearnset = sZudomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sZudomonFormSpeciesIdTable,
     },
 
@@ -18116,7 +17550,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Apocalymon,
         .shinyPalette = gMonShinyPalette_Apocalymon,
         .iconSprite = gMonIcon_Apocalymon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 5,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Apocalymon)
         OVERWORLD(
@@ -18127,12 +17561,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Apocalymon,
             gShinyOverworldPalette_Apocalymon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sApocalymonLevelUpLearnset,
         .teachableLearnset = sApocalymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sApocalymonFormSpeciesIdTable,
     },
 
@@ -18210,12 +17641,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Babamon,
             gShinyOverworldPalette_Babamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBabamonLevelUpLearnset,
         .teachableLearnset = sBabamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sBabamonFormSpeciesIdTable,
     },
 
@@ -18293,12 +17721,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Boltmon,
             gShinyOverworldPalette_Boltmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sBoltmonLevelUpLearnset,
         .teachableLearnset = sBoltmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sBoltmonFormSpeciesIdTable,
     },
 
@@ -18376,12 +17801,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Demon,
             gShinyOverworldPalette_Demon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDemonLevelUpLearnset,
         .teachableLearnset = sDemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sDemonFormSpeciesIdTable,
     },
 
@@ -18459,12 +17881,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Devitamamon,
             gShinyOverworldPalette_Devitamamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDevitamamonLevelUpLearnset,
         .teachableLearnset = sDevitamamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sDevitamamonFormSpeciesIdTable,
     },
 
@@ -18542,12 +17961,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Diablomon,
             gShinyOverworldPalette_Diablomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sDiablomonLevelUpLearnset,
         .teachableLearnset = sDiablomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sDiablomonFormSpeciesIdTable,
     },
 
@@ -18625,12 +18041,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Goddramon,
             gShinyOverworldPalette_Goddramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGoddramonLevelUpLearnset,
         .teachableLearnset = sGoddramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sGoddramonFormSpeciesIdTable,
     },
 
@@ -18708,12 +18121,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Griffomon,
             gShinyOverworldPalette_Griffomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sGriffomonLevelUpLearnset,
         .teachableLearnset = sGriffomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sGriffomonFormSpeciesIdTable,
     },
 
@@ -18791,12 +18201,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Heraklekabuterimon,
             gShinyOverworldPalette_Heraklekabuterimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sHeraklekabuterimonLevelUpLearnset,
         .teachableLearnset = sHeraklekabuterimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sHeraklekabuterimonFormSpeciesIdTable,
     },
 
@@ -18874,12 +18281,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Holydramon,
             gShinyOverworldPalette_Holydramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sHolydramonLevelUpLearnset,
         .teachableLearnset = sHolydramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sHolydramonFormSpeciesIdTable,
     },
 
@@ -18957,12 +18361,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Hououmon,
             gShinyOverworldPalette_Hououmon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sHououmonLevelUpLearnset,
         .teachableLearnset = sHououmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sHououmonFormSpeciesIdTable,
     },
 
@@ -19040,12 +18441,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Jijimon,
             gShinyOverworldPalette_Jijimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sJijimonLevelUpLearnset,
         .teachableLearnset = sJijimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sJijimonFormSpeciesIdTable,
     },
 
@@ -19123,12 +18521,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Kingetemon,
             gShinyOverworldPalette_Kingetemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sKingetemonLevelUpLearnset,
         .teachableLearnset = sKingetemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sKingetemonFormSpeciesIdTable,
     },
 
@@ -19206,12 +18601,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Marineangemon,
             gShinyOverworldPalette_Marineangemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMarineangemonLevelUpLearnset,
         .teachableLearnset = sMarineangemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMarineangemonFormSpeciesIdTable,
     },
 
@@ -19289,12 +18681,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Metaletemon,
             gShinyOverworldPalette_Metaletemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMetaletemonLevelUpLearnset,
         .teachableLearnset = sMetaletemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMetaletemonFormSpeciesIdTable,
     },
 
@@ -19372,12 +18761,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Metalgarurumon,
             gShinyOverworldPalette_Metalgarurumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMetalgarurumonLevelUpLearnset,
         .teachableLearnset = sMetalgarurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMetalgarurumonFormSpeciesIdTable,
     },
 
@@ -19455,12 +18841,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Metalseadramon,
             gShinyOverworldPalette_Metalseadramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMetalseadramonLevelUpLearnset,
         .teachableLearnset = sMetalseadramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMetalseadramonFormSpeciesIdTable,
     },
 
@@ -19538,12 +18921,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Millenniummon,
             gShinyOverworldPalette_Millenniummon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMillenniummonLevelUpLearnset,
         .teachableLearnset = sMillenniummonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMillenniummonFormSpeciesIdTable,
     },
 
@@ -19621,12 +19001,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Mugendramon,
             gShinyOverworldPalette_Mugendramon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sMugendramonLevelUpLearnset,
         .teachableLearnset = sMugendramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sMugendramonFormSpeciesIdTable,
     },
 
@@ -19704,12 +19081,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Omegamon,
             gShinyOverworldPalette_Omegamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sOmegamonLevelUpLearnset,
         .teachableLearnset = sOmegamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sOmegamonFormSpeciesIdTable,
     },
 
@@ -19787,12 +19161,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Piemon,
             gShinyOverworldPalette_Piemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPiemonLevelUpLearnset,
         .teachableLearnset = sPiemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sPiemonFormSpeciesIdTable,
     },
 
@@ -19870,12 +19241,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Pinocchimon,
             gShinyOverworldPalette_Pinocchimon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPinocchimonLevelUpLearnset,
         .teachableLearnset = sPinocchimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sPinocchimonFormSpeciesIdTable,
     },
 
@@ -19953,12 +19321,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Plesiomon,
             gShinyOverworldPalette_Plesiomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPlesiomonLevelUpLearnset,
         .teachableLearnset = sPlesiomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sPlesiomonFormSpeciesIdTable,
     },
 
@@ -20036,12 +19401,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Pukumon,
             gShinyOverworldPalette_Pukumon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sPukumonLevelUpLearnset,
         .teachableLearnset = sPukumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sPukumonFormSpeciesIdTable,
     },
 
@@ -20119,12 +19481,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Rosemon,
             gShinyOverworldPalette_Rosemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sRosemonLevelUpLearnset,
         .teachableLearnset = sRosemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sRosemonFormSpeciesIdTable,
     },
 
@@ -20202,12 +19561,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Saberleomon,
             gShinyOverworldPalette_Saberleomon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSaberleomonLevelUpLearnset,
         .teachableLearnset = sSaberleomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sSaberleomonFormSpeciesIdTable,
     },
 
@@ -20285,12 +19641,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Skullmammon,
             gShinyOverworldPalette_Skullmammon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sSkullmammonLevelUpLearnset,
         .teachableLearnset = sSkullmammonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sSkullmammonFormSpeciesIdTable,
     },
 
@@ -20368,12 +19721,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Venomvamdemon,
             gShinyOverworldPalette_Venomvamdemon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sVenomvamdemonLevelUpLearnset,
         .teachableLearnset = sVenomvamdemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sVenomvamdemonFormSpeciesIdTable,
     },
 
@@ -20451,12 +19801,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Wargreymon,
             gShinyOverworldPalette_Wargreymon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sWargreymonLevelUpLearnset,
         .teachableLearnset = sWargreymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sWargreymonFormSpeciesIdTable,
     },
 
@@ -20534,12 +19881,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             sAnimTable_Following,
             gOverworldPalette_Zanbamon,
             gShinyOverworldPalette_Zanbamon
-        ) // prevents a format error in python
+        ) 
         .levelUpLearnset = sZanbamonLevelUpLearnset,
         .teachableLearnset = sZanbamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_BOTAMON, CONDITIONS({IF_ATKSTAT_BASED, 1,1,1})},//atk, spatk, speed
-                                {EVO_LEVEL, 5, SPECIES_NYOKIMON, CONDITIONS({IF_DEFSTAT_BASED, 1,1,1})}//def, spdef, hp
-                                ),
         //.formSpeciesIdTable = sZanbamonFormSpeciesIdTable,
     },
 
