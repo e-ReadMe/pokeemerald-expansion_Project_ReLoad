@@ -633,7 +633,7 @@ bool32 TryRunFromBattle(u32 battler)
     {
         effect++;
     }
-    else if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
+    else if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY || ABILITY_TACTICAL_RETREAT)
     {
         if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
         {
@@ -642,14 +642,14 @@ bool32 TryRunFromBattle(u32 battler)
             speedVar = (gBattleMons[battler].speed * pyramidMultiplier) / (gBattleMons[BATTLE_OPPOSITE(battler)].speed) + (gBattleStruct->runTries * 30);
             if (speedVar > (Random() & 0xFF))
             {
-                gLastUsedAbility = ABILITY_RUN_AWAY;
+                gLastUsedAbility = ABILITY_RUN_AWAY || ABILITY_TACTICAL_RETREAT;
                 gProtectStructs[battler].fleeType = FLEE_ABILITY;
                 effect++;
             }
         }
         else
         {
-            gLastUsedAbility = ABILITY_RUN_AWAY;
+            gLastUsedAbility = ABILITY_RUN_AWAY || ABILITY_TACTICAL_RETREAT;
             gProtectStructs[battler].fleeType = FLEE_ABILITY;
             effect++;
         }
@@ -739,7 +739,7 @@ void HandleAction_Run(void)
         else
         {
             if (GetBattlerHoldEffect(gBattlerAttacker, TRUE) != HOLD_EFFECT_CAN_ALWAYS_RUN
-             && GetBattlerAbility(gBattlerAttacker) != ABILITY_RUN_AWAY
+             && GetBattlerAbility(gBattlerAttacker) != ( ABILITY_RUN_AWAY || ABILITY_TACTICAL_RETREAT )
              && !CanBattlerEscape(gBattlerAttacker))
             {
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ATTACKER_CANT_ESCAPE;
