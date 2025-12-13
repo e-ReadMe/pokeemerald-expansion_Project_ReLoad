@@ -648,11 +648,11 @@ SINGLE_BATTLE_TEST("(TERA) Protean/Libero cannot change the type of a Terastalli
         PLAYER(species) { Ability(ability); TeraType(TYPE_PLANT); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_BUBBLE, gimmick: GIMMICK_TERA);
+        TURN { MOVE(player, MOVE_BUBBLES, gimmick: GIMMICK_TERA);
                MOVE(opponent, MOVE_EMBER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_TERA_ACTIVATE, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_BUBBLE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_BUBBLES, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, opponent);
         MESSAGE("It's super effective!");
     }

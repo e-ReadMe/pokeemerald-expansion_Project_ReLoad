@@ -15396,7 +15396,7 @@ static const struct LevelUpMove sDelphoxLevelUpLearnset[] = {
 static const struct LevelUpMove sFroakieLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 5, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 5, MOVE_BUBBLES),
     LEVEL_UP_MOVE( 8, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_LICK),
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
@@ -15414,8 +15414,8 @@ static const struct LevelUpMove sFroakieLevelUpLearnset[] = {
 static const struct LevelUpMove sFrogadierLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
-    LEVEL_UP_MOVE( 5, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLES),
+    LEVEL_UP_MOVE( 5, MOVE_BUBBLES),
     LEVEL_UP_MOVE( 8, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_LICK),
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
@@ -15439,9 +15439,9 @@ static const struct LevelUpMove sGreninjaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MAT_BLOCK),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLES),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 5, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 5, MOVE_BUBBLES),
     LEVEL_UP_MOVE( 8, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_LICK),
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
@@ -16420,7 +16420,7 @@ static const struct LevelUpMove sGoodraLevelUpLearnset[] = {
 
 #if P_HISUIAN_FORMS
 static const struct LevelUpMove sSliggooHisuiLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLES),
     LEVEL_UP_MOVE( 6, MOVE_ACID_SPRAY),
     LEVEL_UP_MOVE(11, MOVE_ACID_ARMOR),
     LEVEL_UP_MOVE(18, MOVE_WATER_PULSE),
@@ -16432,7 +16432,7 @@ static const struct LevelUpMove sSliggooHisuiLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sGoodraHisuiLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLES),
     LEVEL_UP_MOVE( 6, MOVE_ACID_SPRAY),
     LEVEL_UP_MOVE(11, MOVE_ACID_ARMOR),
     LEVEL_UP_MOVE(18, MOVE_WATER_PULSE),
@@ -17190,7 +17190,7 @@ static const struct LevelUpMove sVikavoltLevelUpLearnset[] = {
 
 #if P_FAMILY_CRABRAWLER
 static const struct LevelUpMove sCrabrawlerLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLES),
     LEVEL_UP_MOVE( 5, MOVE_ROCK_SMASH),
     LEVEL_UP_MOVE( 9, MOVE_LEER),
     LEVEL_UP_MOVE(13, MOVE_PURSUIT),
@@ -17209,7 +17209,7 @@ static const struct LevelUpMove sCrabrawlerLevelUpLearnset[] = {
 static const struct LevelUpMove sCrabominableLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_ICE_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_ICE_PUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLES),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_PURSUIT),

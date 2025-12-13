@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Drizzle summons rain", s16 damage)
         PLAYER(SPECIES_POLITOED) { Ability(ability); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_BUBBLE); }
+        TURN { MOVE(player, MOVE_BUBBLES); }
     } SCENE {
         if (ability == ABILITY_DRIZZLE) {
             ABILITY_POPUP(player, ABILITY_DRIZZLE);

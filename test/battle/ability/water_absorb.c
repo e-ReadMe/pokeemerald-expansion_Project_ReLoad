@@ -4,11 +4,11 @@
 SINGLE_BATTLE_TEST("Water Absorb heals 25% when hit by water type moves")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_BUBBLE) == TYPE_WATER);
+        ASSUME(GetMoveType(MOVE_BUBBLES) == TYPE_WATER);
         PLAYER(SPECIES_POLIWAG) { Ability(ABILITY_WATER_ABSORB); HP(1); MaxHP(100); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_BUBBLE); }
+        TURN { MOVE(opponent, MOVE_BUBBLES); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_WATER_ABSORB);
         HP_BAR(player, damage: -25);
@@ -19,11 +19,11 @@ SINGLE_BATTLE_TEST("Water Absorb heals 25% when hit by water type moves")
 SINGLE_BATTLE_TEST("Water Absorb does not activate if protected")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_BUBBLE) == TYPE_WATER);
+        ASSUME(GetMoveType(MOVE_BUBBLES) == TYPE_WATER);
         PLAYER(SPECIES_POLIWAG) { Ability(ABILITY_WATER_ABSORB); HP(1); MaxHP(100); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_PROTECT); MOVE(opponent, MOVE_BUBBLE); }
+        TURN { MOVE(player, MOVE_PROTECT); MOVE(opponent, MOVE_BUBBLES); }
     } SCENE {
         NONE_OF { ABILITY_POPUP(player, ABILITY_WATER_ABSORB); HP_BAR(player); MESSAGE("Poliwag restored HP using its Water Absorb!"); }
     }
@@ -67,11 +67,11 @@ SINGLE_BATTLE_TEST("Water Absorb prevents Absorb Bulb and Luminous Moss from act
     PARAMETRIZE { item = ITEM_ABSORB_BULB; }
     PARAMETRIZE { item = ITEM_LUMINOUS_MOSS; }
     GIVEN {
-        ASSUME(GetMoveType(MOVE_BUBBLE) == TYPE_WATER);
+        ASSUME(GetMoveType(MOVE_BUBBLES) == TYPE_WATER);
         PLAYER(SPECIES_POLIWAG) { Ability(ABILITY_WATER_ABSORB); HP(1); MaxHP(100); Item(item); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_BUBBLE); }
+        TURN { MOVE(opponent, MOVE_BUBBLES); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_WATER_ABSORB);
         HP_BAR(player, damage: -25);

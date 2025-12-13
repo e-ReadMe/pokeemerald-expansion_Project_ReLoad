@@ -885,8 +885,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Jabs the foe with sharp\n"
             "horns."),
         .effect = EFFECT_HIT,
-        .power = 65,
-        .type = TYPE_NEUTRAL,
+        .power = 50,
+        .type = TYPE_BEAST,
         .accuracy = 100,
         .pp = 25,
         .target = MOVE_TARGET_SELECTED,
@@ -1210,7 +1210,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "leer to lower Defense."),
         .effect = EFFECT_DEFENSE_DOWN,
         .power = 0,
-        .type = TYPE_NEUTRAL,
+        .type = TYPE_DARK,
         .accuracy = 100,
         .pp = 30,
         .target = MOVE_TARGET_BOTH,
@@ -1232,7 +1232,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Bites with vicious fangs.\n"
             "May cause flinching."),
         .effect = EFFECT_HIT,
-        .power = 60,
+        .power = 40,
         .type = TYPE_DARK,
         .accuracy = 100,
         .pp = 25,
@@ -2897,10 +2897,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Smokescreen"),
         .description = COMPOUND_STRING(
             "Lowers the foe's accuracy\n"
-            "using smoke, ink, etc."),
-        .effect = EFFECT_ACCURACY_DOWN,
+            "by two stages."),
+        .effect = EFFECT_ACCURACY_DOWN_2,
         .power = 0,
-        .type = TYPE_NEUTRAL,
+        .type = TYPE_FILTH,
         .accuracy = 100,
         .pp = 20,
         .target = MOVE_TARGET_SELECTED,
@@ -3872,14 +3872,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_BUBBLE] =
+    [MOVE_BUBBLES] =
     {
-        .name = COMPOUND_STRING("Bubble"),
+        .name = COMPOUND_STRING("Bubbles"),
         .description = COMPOUND_STRING(
             "An attack using bubbles.\n"
             "It doesn't do much damage."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 40 : 20,
+        .power = 30,
         .type = TYPE_FREE,
         .accuracy = 100,
         .pp = 30,
@@ -5218,9 +5218,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A chilling attack that\n"
             "lowers the foe's Speed."),
         .effect = EFFECT_HIT,
-        .power = 55,
+        .power = 40,
         .type = TYPE_ICE,
-        .accuracy = 95,
+        .accuracy = 100,
         .pp = 15,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
@@ -6092,16 +6092,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Sweet Scent"),
         .description = COMPOUND_STRING(
-        #if B_UPDATED_MOVE_DATA >= GEN_6
             "Allures the foes to harshly\n"
-            "reduce evasiveness."),
-        #else
-            "Allures the foes to reduce\n"
-            "evasiveness."),
-        #endif
-        .effect = B_UPDATED_MOVE_DATA >= GEN_6 ? EFFECT_EVASION_DOWN_2 : EFFECT_EVASION_DOWN,
+            "reduce attack."),
+        .effect = EFFECT_ATTACK_DOWN_2,
         .power = 0,
-        .type = TYPE_NEUTRAL,
+        .type = TYPE_WIND,
         .accuracy = 100,
         .pp = 20,
         .target = MOVE_TARGET_BOTH,
@@ -16374,10 +16369,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Lunges at the foe to lower\n"
             "its Attack stat."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 40,
         .type = TYPE_INSECT,
         .accuracy = 100,
-        .pp = 15,
+        .pp = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -22742,5 +22737,47 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .ignoresProtect = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxRapidFlow,
+    },
+
+    [MOVE_HERTZ_HOWL] =
+    {
+        .name = COMPOUND_STRING("Hertz Howl"),
+        .description = COMPOUND_STRING(
+            "Attacks with a resonance\n"
+            "that hurts the ears."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_METAL,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_MetalSound,
+    },
+
+    [MOVE_FOX_TAIL] =
+    {
+        .name = COMPOUND_STRING("Fox Tail"),
+        .description = COMPOUND_STRING(
+            "Puffs up its tail to\n"
+            "strike the opponent."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_PUPPET,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_TailWhip,
     },
 };

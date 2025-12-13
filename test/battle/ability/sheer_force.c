@@ -406,7 +406,7 @@ static inline bool32 IsMoveSheerForceBoosted(u32 move)
         case MOVE_BODY_SLAM:
         case MOVE_BOUNCE:
         case MOVE_BREAKING_SWIPE:
-        case MOVE_BUBBLE:
+        case MOVE_BUBBLES:
         case MOVE_BUBBLE_BEAM:
         case MOVE_BUG_BUZZ:
         case MOVE_BULLDOZE:

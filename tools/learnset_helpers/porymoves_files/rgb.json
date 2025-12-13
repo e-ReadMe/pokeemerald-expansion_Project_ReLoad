@@ -414,7 +414,7 @@
       },
       {
         "Level": 8,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 15,
@@ -479,11 +479,11 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 8,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 15,
@@ -548,7 +548,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
@@ -556,7 +556,7 @@
       },
       {
         "Level": 8,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 15,
@@ -3353,7 +3353,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 16,
@@ -3408,7 +3408,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
@@ -3505,7 +3505,7 @@
     ],
     "PreEvoMoves": [
       "MOVE_AMNESIA",
-      "MOVE_BUBBLE",
+      "MOVE_BUBBLES",
       "MOVE_HYDRO_PUMP"
     ],
     "TMMoves": [
@@ -5647,7 +5647,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
@@ -5702,7 +5702,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
@@ -6734,7 +6734,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 19,
@@ -6783,7 +6783,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,

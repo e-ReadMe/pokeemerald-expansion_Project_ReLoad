@@ -10,20 +10,20 @@ AI_SINGLE_BATTLE_TEST("AI prefers Bubble over Water Gun if it's slower")
     PARAMETRIZE { speedPlayer = 10; speedAi = 200; }
 
     GIVEN {
-        ASSUME(GetMovePower(MOVE_WATER_GUN) == GetMovePower(MOVE_BUBBLE));
+        ASSUME(GetMovePower(MOVE_WATER_GUN) == GetMovePower(MOVE_BUBBLES));
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_SCIZOR) { Speed(speedPlayer); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_WATER_GUN, MOVE_BUBBLE); Speed(speedAi); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_WATER_GUN, MOVE_BUBBLES); Speed(speedAi); }
     } WHEN {
         if (speedPlayer > speedAi)
         {
-            TURN { SCORE_GT(opponent, MOVE_BUBBLE, MOVE_WATER_GUN); }
-            TURN { SCORE_GT(opponent, MOVE_BUBBLE, MOVE_WATER_GUN); }
+            TURN { SCORE_GT(opponent, MOVE_BUBBLES, MOVE_WATER_GUN); }
+            TURN { SCORE_GT(opponent, MOVE_BUBBLES, MOVE_WATER_GUN); }
         }
         else
         {
-            TURN { SCORE_EQ(opponent, MOVE_BUBBLE, MOVE_WATER_GUN); }
-            TURN { SCORE_EQ(opponent, MOVE_BUBBLE, MOVE_WATER_GUN); }
+            TURN { SCORE_EQ(opponent, MOVE_BUBBLES, MOVE_WATER_GUN); }
+            TURN { SCORE_EQ(opponent, MOVE_BUBBLES, MOVE_WATER_GUN); }
         }
     }
 }
@@ -35,15 +35,15 @@ AI_SINGLE_BATTLE_TEST("AI prefers Water Gun over Bubble if it knows that foe has
     PARAMETRIZE { abilityAI = ABILITY_MOXIE; }
     PARAMETRIZE { abilityAI = ABILITY_MOLD_BREAKER; } // Mold Breaker ignores Contrary.
     GIVEN {
-        ASSUME(GetMovePower(MOVE_BUBBLE) == GetMovePower(MOVE_WATER_GUN));
+        ASSUME(GetMovePower(MOVE_BUBBLES) == GetMovePower(MOVE_WATER_GUN));
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_SHUCKLE) { Ability(ABILITY_CONTRARY); }
-        OPPONENT(SPECIES_PINSIR) { Moves(MOVE_WATER_GUN, MOVE_BUBBLE); Ability(abilityAI); }
+        OPPONENT(SPECIES_PINSIR) { Moves(MOVE_WATER_GUN, MOVE_BUBBLES); Ability(abilityAI); }
     } WHEN {
             TURN { MOVE(player, MOVE_DEFENSE_CURL); }
             TURN { MOVE(player, MOVE_DEFENSE_CURL);
-                   if (abilityAI == ABILITY_MOLD_BREAKER) { SCORE_EQ(opponent, MOVE_WATER_GUN, MOVE_BUBBLE); }
-                   else { SCORE_GT(opponent, MOVE_WATER_GUN, MOVE_BUBBLE); }}
+                   if (abilityAI == ABILITY_MOLD_BREAKER) { SCORE_EQ(opponent, MOVE_WATER_GUN, MOVE_BUBBLES); }
+                   else { SCORE_GT(opponent, MOVE_WATER_GUN, MOVE_BUBBLES); }}
     } SCENE {
         MESSAGE("Shuckle's Defense fell!"); // Contrary activates
     } THEN {

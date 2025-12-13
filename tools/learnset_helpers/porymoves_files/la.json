@@ -844,7 +844,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -896,7 +896,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -1333,7 +1333,7 @@
       },
       {
         "Level": 6,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 11,
@@ -1377,7 +1377,7 @@
       },
       {
         "Level": 6,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 11,
@@ -2878,7 +2878,7 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
@@ -4837,7 +4837,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -4887,7 +4887,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -4949,7 +4949,7 @@
       },
       {
         "Level": 5,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 9,
@@ -7460,7 +7460,7 @@
       },
       {
         "Level": 6,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 11,
@@ -7505,7 +7505,7 @@
       },
       {
         "Level": 6,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 11,
@@ -7555,7 +7555,7 @@
       },
       {
         "Level": 6,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 11,
@@ -10645,7 +10645,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -10690,7 +10690,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -10742,7 +10742,7 @@
       },
       {
         "Level": 5,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 9,
@@ -12593,7 +12593,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -12642,7 +12642,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -14733,7 +14733,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -18491,7 +18491,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -18543,7 +18543,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,

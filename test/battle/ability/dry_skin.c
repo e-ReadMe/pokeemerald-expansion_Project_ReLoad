@@ -64,11 +64,11 @@ SINGLE_BATTLE_TEST("Dry Skin increases damage taken from Fire-type moves by 25%"
 SINGLE_BATTLE_TEST("Dry Skin heals 25% when hit by water type moves")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_BUBBLE) == TYPE_WATER);
+        ASSUME(GetMoveType(MOVE_BUBBLES) == TYPE_WATER);
         PLAYER(SPECIES_PARASECT) { Ability(ABILITY_DRY_SKIN); HP(100); MaxHP(200); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_BUBBLE); }
+        TURN { MOVE(opponent, MOVE_BUBBLES); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_DRY_SKIN);
         HP_BAR(player, damage: -50);
@@ -79,11 +79,11 @@ SINGLE_BATTLE_TEST("Dry Skin heals 25% when hit by water type moves")
 SINGLE_BATTLE_TEST("Dry Skin does not activate if protected")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_BUBBLE) == TYPE_WATER);
+        ASSUME(GetMoveType(MOVE_BUBBLES) == TYPE_WATER);
         PLAYER(SPECIES_PARASECT) { Ability(ABILITY_DRY_SKIN); HP(100); MaxHP(200); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_PROTECT); MOVE(opponent, MOVE_BUBBLE); }
+        TURN { MOVE(player, MOVE_PROTECT); MOVE(opponent, MOVE_BUBBLES); }
     } SCENE {
         NONE_OF { ABILITY_POPUP(player, ABILITY_DRY_SKIN); HP_BAR(player); MESSAGE("Parasect restored HP using its Dry Skin!"); }
     }
@@ -111,11 +111,11 @@ SINGLE_BATTLE_TEST("Dry Skin prevents Absorb Bulb and Luminous Moss from activat
     PARAMETRIZE { item = ITEM_ABSORB_BULB; }
     PARAMETRIZE { item = ITEM_LUMINOUS_MOSS; }
     GIVEN {
-        ASSUME(GetMoveType(MOVE_BUBBLE) == TYPE_WATER);
+        ASSUME(GetMoveType(MOVE_BUBBLES) == TYPE_WATER);
         PLAYER(SPECIES_PARASECT) { Ability(ABILITY_DRY_SKIN); HP(100); MaxHP(200); Item(item); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_BUBBLE); }
+        TURN { MOVE(opponent, MOVE_BUBBLES); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_DRY_SKIN);
         HP_BAR(player, damage: -50);

@@ -655,7 +655,7 @@ static void AnimAcidPoisonDroplet(struct Sprite *sprite)
 
 // Animates a bubble by rising upward, swaying side to side, and
 // enlarging the sprite. This is used as an after-effect by poison-type
-// moves, along with MOVE_BUBBLE, and MOVE_BUBBLEBEAM.
+// moves, along with MOVE_BUBBLES, and MOVE_BUBBLEBEAM.
 // arg 0: initial x pixel offset
 // arg 1: initial y pixel offset
 // arg 2: 0 = single-target, 1 = multi-target

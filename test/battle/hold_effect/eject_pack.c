@@ -220,14 +220,14 @@ DOUBLE_BATTLE_TEST("Eject Pack: Only the fastest Eject Pack will activate after 
         OPPONENT(SPECIES_WOBBUFFET)  { Speed(5); }
     } WHEN {
         TURN {
-            MOVE(opponentLeft, MOVE_BUBBLE);
+            MOVE(opponentLeft, MOVE_BUBBLES);
             if (speed == 11)
                 SEND_OUT(playerRight, 2);
             else
                 SEND_OUT(playerLeft, 2);
         }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_BUBBLE, opponentLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_BUBBLES, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
         if (speed == 11) {

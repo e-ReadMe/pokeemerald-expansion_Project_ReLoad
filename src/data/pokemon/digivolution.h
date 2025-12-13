@@ -20,117 +20,143 @@ struct Digivolution
 
 //SPECIES_BOTAMON
 static const struct Digivolution sBotamonDigivolveTable[] = {
+    {30, 10, 9, 9, 9, 9, SPECIES_KOROMON},//should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
     DIGIVOLUTION_END
 };
 
 //SPECIES_BUBBMON
 static const struct Digivolution sBubbmonDigivolveTable[] = {
+    {28, 8, 7, 11, 8, 7, SPECIES_MOCHIMON}, //slightly higher special attack and lower attack
+    {28, 9, 7, 10, 8, 7, SPECIES_NYAROMON}, //slightly higher attack and lower special attack
     DIGIVOLUTION_END
 };
 
 //SPECIES_CHOROMON
 static const struct Digivolution sChoromonDigivolveTable[] = {
+    {26, 9, 19, 7, 10, 9, SPECIES_CAPRIMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
     DIGIVOLUTION_END
 };
 
 //SPECIES_MOKUMON
 static const struct Digivolution sMokumonDigivolveTable[] = {
+    {22, 7, 7, 11, 17, 7, SPECIES_PETITMERAMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
     DIGIVOLUTION_END
 };
 
 //SPECIES_NYOKIMON
 static const struct Digivolution sNyokimonDigivolveTable[] = {
+    {30, 10, 6, 6, 6, 6, SPECIES_TANEMON},//slightly higher attack and lower sp attack
+    {30, 6, 6, 10, 6, 6, SPECIES_PYOKOMON},//slightly higher sp attack and lower attack
     DIGIVOLUTION_END
 };
 
 //SPECIES_PITCHMON
 static const struct Digivolution sPitchmonDigivolveTable[] = {
+    {26, 8, 7, 8, 13, 7, SPECIES_PUKAMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
     DIGIVOLUTION_END
 };
 
 //SPECIES_POYOMON
 static const struct Digivolution sPoyomonDigivolveTable[] = {
+    {32, 7, 6, 7, 6, 14, SPECIES_TOKOMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
     DIGIVOLUTION_END
 };
 
 //SPECIES_PUNIMON
 static const struct Digivolution sPunimonDigivolveTable[] = {
+    {28, 13, 11, 6, 6, 7, SPECIES_TSUNOMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
     DIGIVOLUTION_END
 };
 
 //SPECIES_YUKIMIBOTAMON
 static const struct Digivolution sYukimibotamonDigivolveTable[] = {
+    {30, 7, 6, 15, 7, 6, SPECIES_NYAROMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
     DIGIVOLUTION_END
 };
 
 //SPECIES_YURAMON
 static const struct Digivolution sYuramonDigivolveTable[] = {
+    {28, 7, 8, 9, 8, 13, SPECIES_TANEMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
     DIGIVOLUTION_END
 };
 
 //SPECIES_ZURUMON
 static const struct Digivolution sZurumonDigivolveTable[] = {
+    {22, 12, 12, 12, 12, 7, SPECIES_PAGUMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
+    {23, 15, 15, 15, 15, 15, SPECIES_KODOKUGUMON}, 
     DIGIVOLUTION_END
 };
 //-----------------------------------------------------------------
 // stage 2
 //SPECIES_CAPRIMON
 static const struct Digivolution sCaprimonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_CHOROMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_KODOKUGUMON
 static const struct Digivolution sKodokugumonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_ZURUMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_KOROMON
 static const struct Digivolution sKoromonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_BOTAMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_MOCHIMON
 static const struct Digivolution sMochimonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_BUBBMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_NYAROMON
 static const struct Digivolution sNyaromonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_YUKIMIBOTAMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_PAGUMON
 static const struct Digivolution sPagumonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_ZURUMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_PETITMERAMON
 static const struct Digivolution sPetitmeramonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_MOKUMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_PUKAMON
 static const struct Digivolution sPukamonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_PITCHMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_PYOKOMON
 static const struct Digivolution sPyokomonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_NYOKIMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_TANEMON
 static const struct Digivolution sTanemonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_YURAMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_TOKOMON
 static const struct Digivolution sTokomonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_POYOMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_TSUNOMON
 static const struct Digivolution sTsunomonDigivolveTable[] = {
+    {0, 0, 0, 0, 0, 0, SPECIES_PUNIMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 

@@ -7,11 +7,11 @@ SINGLE_BATTLE_TEST("Torrent boosts Water-type moves in a pinch", s16 damage)
     PARAMETRIZE { hp = 99; }
     PARAMETRIZE { hp = 33; }
     GIVEN {
-        ASSUME(GetMoveType(MOVE_BUBBLE) == TYPE_WATER);
+        ASSUME(GetMoveType(MOVE_BUBBLES) == TYPE_WATER);
         PLAYER(SPECIES_SQUIRTLE) { Ability(ABILITY_TORRENT); MaxHP(99); HP(hp); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_BUBBLE); }
+        TURN { MOVE(player, MOVE_BUBBLES); }
     } SCENE {
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {

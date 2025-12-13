@@ -486,7 +486,7 @@
       },
       {
         "Level": 9,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 14,
@@ -559,7 +559,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
@@ -571,7 +571,7 @@
       },
       {
         "Level": 9,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 14,
@@ -656,7 +656,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
@@ -668,7 +668,7 @@
       },
       {
         "Level": 9,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 14,
@@ -4210,7 +4210,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 4,
@@ -4269,7 +4269,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
@@ -4364,7 +4364,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
@@ -7146,7 +7146,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 5,
@@ -7218,7 +7218,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
@@ -8506,7 +8506,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 6,
@@ -8577,7 +8577,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_BUBBLE"
+        "Move": "MOVE_BUBBLES"
       },
       {
         "Level": 1,
