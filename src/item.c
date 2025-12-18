@@ -820,7 +820,7 @@ const u8 *GetItemEffect(u32 itemId)
         return gItemsInfo[SanitizeItemId(itemId)].effect;
 }
 
-u32 GetItemHoldEffect(u32 itemId)
+enum HoldEffect GetItemHoldEffect(u32 itemId)
 {
     return gItemsInfo[SanitizeItemId(itemId)].holdEffect;
 }
@@ -951,7 +951,7 @@ u32 GetItemSellPrice(u32 itemId)
     return GetItemPrice(itemId) / ITEM_SELL_FACTOR;
 }
 
-bool32 IsHoldEffectChoice(enum ItemHoldEffect holdEffect)
+bool32 IsHoldEffectChoice(enum HoldEffect holdEffect)
 {
     return holdEffect == HOLD_EFFECT_CHOICE_BAND
         || holdEffect == HOLD_EFFECT_CHOICE_SCARF

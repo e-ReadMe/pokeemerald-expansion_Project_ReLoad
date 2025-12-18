@@ -100,7 +100,8 @@ SINGLE_BATTLE_TEST("Anticipation doesn't consider Gravity into their effectivene
 
 SINGLE_BATTLE_TEST("Anticipation counts Counter, Metal Burst or Mirror Coat as attacking moves of their types (Gen5+)")
 {
-    u32 move, species, typeAtk, typeDef;
+    u32 move, species;
+    enum Type typeAtk, typeDef;
     PARAMETRIZE { move = MOVE_COUNTER; species = SPECIES_RATICATE; typeAtk = TYPE_COMBAT; typeDef = TYPE_NEUTRAL; }
     PARAMETRIZE { move = MOVE_METAL_BURST; species = SPECIES_ROGGENROLA; typeAtk = TYPE_METAL; typeDef = TYPE_BEAST; }
     PARAMETRIZE { move = MOVE_MIRROR_COAT; species = SPECIES_NIDORINO; typeAtk = TYPE_LIGHT; typeDef = TYPE_FILTH; }

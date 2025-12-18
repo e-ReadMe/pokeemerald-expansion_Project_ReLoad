@@ -2,35 +2,38 @@
 #define GUARD_CONSTANTS_POKEMON_H
 
 // Pokémon types
-#define TYPE_NONE             0
-#define TYPE_NEUTRAL           1// Neutral replaces Normal
-#define TYPE_COMBAT         2// Combat replaces Fighting
-#define TYPE_WIND           3// Wind Replaces Flying
-#define TYPE_FILTH           4// Filth Replaces Poison
-#define TYPE_EARTH           5// Earth Replaces Ground
-#define TYPE_BEAST             6// Beast Replaces Rock
-#define TYPE_INSECT              7// Insect Replaces Bug
-#define TYPE_UNDEAD            8// Undead Replaces Ghost
-#define TYPE_METAL            9// Metal Replaces Steel
-#define TYPE_MYSTERY          10
-#define TYPE_FIRE             11
-#define TYPE_WATER            12
-#define TYPE_PLANT            13// Plant Replaces Grass
-#define TYPE_ELECTRIC         14
-#define TYPE_LIGHT          15// Light replaces psychic
-#define TYPE_ICE              16
-#define TYPE_DRAGON           17
-#define TYPE_DARK             18
-#define TYPE_PUPPET            19// Puppet Replaces Fairy
-#define TYPE_STELLAR          20
-#define TYPE_VACCINE		  21
-#define TYPE_VIRUS			  22
-#define TYPE_DATA			  23
-#define TYPE_FREE			  24
-#define TYPE_NODAT			  25
-#define TYPE_UNKNOWN		  26
-#define TYPE_VARIABLE		  27
-#define NUMBER_OF_MON_TYPES   28
+enum __attribute__((packed)) Type
+{
+    TYPE_NONE = 0,
+    TYPE_NEUTRAL = 1,   // Neutral replaces Normal
+    TYPE_COMBAT = 2,    // Combat replaces Fighting
+    TYPE_WIND = 3,      // Wind Replaces Flying
+    TYPE_FILTH = 4,     // Filth Replaces Poison
+    TYPE_EARTH = 5,     // Earth Replaces Ground
+    TYPE_BEAST = 6,     // Beast Replaces Rock
+    TYPE_INSECT = 7,    // Insect Replaces Bug
+    TYPE_UNDEAD = 8,    // Undead Replaces Ghost
+    TYPE_METAL = 9,     // Metal Replaces Steel 
+    TYPE_MYSTERY = 10,
+    TYPE_FIRE = 11,
+    TYPE_WATER = 12,
+    TYPE_PLANT = 13,   // Plant Replaces Grass
+    TYPE_ELECTRIC = 14,
+    TYPE_LIGHT = 15,   // Light replaces psychic
+    TYPE_ICE = 16,
+    TYPE_DRAGON = 17,
+    TYPE_DARK = 18,
+    TYPE_PUPPET = 19,   // Puppet Replaces Fairy
+    TYPE_STELLAR = 20,
+    TYPE_VACCINE = 21,
+    TYPE_VIRUS = 22,
+    TYPE_DATA = 23,
+    TYPE_FREE = 24,
+    TYPE_NODAT = 25,
+    TYPE_UNKNOWN = 26,
+    TYPE_VARIABLE = 27,
+    NUMBER_OF_MON_TYPES
+};
 
 // Pokémon egg groups
 #define EGG_GROUP_NONE                0
@@ -81,16 +84,18 @@
 #define NUM_NATURES     25
 
 // Pokémon Stats
-#define STAT_HP      0
-#define STAT_ATK     1
-#define STAT_DEF     2
-#define STAT_SPEED   3
-#define STAT_SPATK   4
-#define STAT_SPDEF   5
-#define NUM_STATS    6
-
-#define STAT_ACC     6 // Only in battles.
-#define STAT_EVASION 7 // Only in battles.
+enum __attribute__((packed)) Stat
+{
+    STAT_HP,
+    STAT_ATK,
+    STAT_DEF,
+    STAT_SPEED,
+    STAT_SPATK,
+    STAT_SPDEF,
+    NUM_STATS,
+    STAT_ACC = NUM_STATS, // Only in battles.
+    STAT_EVASION,         // Only in battles.
+};
 
 #define NUM_NATURE_STATS (NUM_STATS - 1) // excludes HP
 #define NUM_BATTLE_STATS (NUM_STATS + 2) // includes Accuracy and Evasion
@@ -176,7 +181,6 @@
 #define LEVEL_UP_MOVE_END  0xFFFF
 
 #define MAX_LEVEL_UP_MOVES       20
-#define MAX_RELEARNER_MOVES      max(MAX_LEVEL_UP_MOVES, 25)
 
 #define MON_MALE       0x00
 #define MON_FEMALE     0xFE
@@ -225,7 +229,7 @@
 #define EV_ITEM_RAISE_LIMIT ((I_VITAMIN_EV_CAP >= GEN_8) ? MAX_PER_STAT_EVS : 100)
 
 // Move category defines.
-enum DamageCategory
+enum __attribute__((packed)) DamageCategory
 {
     DAMAGE_CATEGORY_PHYSICAL,
     DAMAGE_CATEGORY_SPECIAL,
@@ -309,6 +313,8 @@ enum EvolutionConditions {
     IF_BAG_ITEM_COUNT,                  // The Player has the specific amount of an item in the bag. It then removes those items.
     IF_ATKSTAT_BASED,                   // for digimon. requires a specified ATK, SPATK, and SPEED stat
     IF_DEFSTAT_BASED,                   // for digimon. requires a specified DEF, SPDEF, and HP stat
+    IF_REGION,                          // The Player is in the specific region.
+    IF_NOT_REGION,                      // The Player is NOT in the specific region.
     CONDITIONS_END
 };
 
