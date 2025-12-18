@@ -2576,4 +2576,18 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Makes escaping easier."),
         .aiRating = 0,
     },
+
+    [ABILITY_HOLY_RING] =
+    {
+        .name = _("Holy Ring"),
+        .description = COMPOUND_STRING("Quickly heals status conditions."),
+        .aiRating = 0,
+    },
+
+    [ABILITY_MYSTERY_SCALE] =
+    {
+        .name = _("Mystery Scale"),
+        .description = COMPOUND_STRING("Prevents stat reductions."),
+        .aiRating = 0,
+    },
 };

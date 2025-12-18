@@ -2247,9 +2247,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Traps the foe in a ring of\n"
             "fire for "BINDING_TURNS" turns."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 35 : 15,
+        .power = 35,
         .type = TYPE_FIRE,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 85 : 70,
+        .accuracy = 85,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -2554,7 +2554,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "may induce sleep."),
         .effect = EFFECT_NON_VOLATILE_STATUS,
         .power = 0,
-        .type = TYPE_LIGHT,
+        .type = TYPE_DARK,
         .accuracy = 60,
         .pp = 20,
         .target = MOVE_TARGET_SELECTED,
@@ -3290,9 +3290,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "An exhaust-gas attack\n"
             "that may also poison."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 30 : 20,
+        .power = 30,
         .type = TYPE_FILTH,
-        .accuracy = 70,
+        .accuracy = 100,
         .pp = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -3686,8 +3686,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Takes one half the damage\n"
             "inflicted on a sleeping foe."),
         .effect = EFFECT_DREAM_EATER,
-        .power = 100,
-        .type = TYPE_LIGHT,
+        .power = 80,
+        .type = TYPE_DARK,
         .accuracy = 100,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
@@ -4105,7 +4105,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Rakes the foe with sharp\n"
             "claws, etc., 2 to 5 times."),
         .effect = EFFECT_MULTI_HIT,
-        .power = 18,
+        .power = 25,
         .type = TYPE_NEUTRAL,
         .accuracy = 80,
         .pp = 15,
@@ -4568,7 +4568,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "sleeping foe every turn."),
         .effect = EFFECT_NIGHTMARE,
         .power = 0,
-        .type = TYPE_UNDEAD,
+        .type = TYPE_DARK,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_4 ? 100 : 0,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
@@ -6630,9 +6630,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Traps and hurts the foe in\n"
             "a whirlpool for "BINDING_TURNS" turns."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 35 : 15,
+        .power = 35,
         .type = TYPE_WATER,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 85 : 70,
+        .accuracy = 85,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -22779,5 +22779,121 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_GROWTH},
         .battleAnimScript = gBattleAnimMove_TailWhip,
+    },
+
+    [MOVE_NIGHTMARE_SYNDROME] =
+    {
+        .name = COMPOUND_STRING("Nightmare Syndrome"),
+        .description = COMPOUND_STRING(
+            "Attacks with captured\n"
+            " nightmares. Damages the foe."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_ConfuseRay,
+    },
+
+    [MOVE_CANDLE_SLASH] =
+    {
+        .name = COMPOUND_STRING("Candle Slash"),
+        .description = COMPOUND_STRING(
+            "Strikes out with a cutlass of\n"
+            " wax. Can crit or burn easily."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_UNDEAD,
+        .accuracy = 90,
+        .criticalHitStage = 1,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 10,
+        }),
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_Slash,
+    },
+
+    [MOVE_CHEESE_BOMB] =
+    {
+        .name = COMPOUND_STRING("Cheese Bomb"),
+        .description = COMPOUND_STRING(
+            "Throws cheese at the foe,\n"
+            "whether they like it or not."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_FILTH,
+        .accuracy = 75,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ballisticMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_EggBomb,
+    },
+
+    [MOVE_POOP_THROW] =
+    {
+        .name = COMPOUND_STRING("Poop Throw"),
+        .description = COMPOUND_STRING(
+            "Just what it sounds like.\n"
+            "Foe can no longer eat food."),
+        .effect = EFFECT_EMBARGO,
+        .power = 40,
+        .type = TYPE_FILTH,
+        .accuracy = 75,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ballisticMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_EggBomb,
+    },
+
+    [MOVE_PEPPER_BREATH] =
+    {
+        .name = COMPOUND_STRING("Pepper Breath"),
+        .description = COMPOUND_STRING(
+            "Shoots a fireball from\n"
+            "its mouth. Can cause burns."),
+        .power = 50,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 20,
+        }),
+        .ballisticMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_Incinerate,
     },
 };

@@ -14936,6 +14936,7 @@ static bool32 CanAbilityPreventStatLoss(u32 abilityDef)
     {
     case ABILITY_CLEAR_BODY:
     case ABILITY_FULL_METAL_BODY:
+    case ABILITY_MYSTERY_SCALE:
     case ABILITY_WHITE_SMOKE:
         return TRUE;
     }

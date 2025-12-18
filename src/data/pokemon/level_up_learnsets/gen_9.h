@@ -22478,8 +22478,8 @@ static const struct LevelUpMove sTsunomonLevelUpLearnset[] = {
 
 //SPECIES_AGUMON
 static const struct LevelUpMove sAgumonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_TACKLE),
-    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_MOVE(0, MOVE_PEPPER_BREATH),
+    LEVEL_UP_MOVE(12, MOVE_FURY_SWIPES),
     LEVEL_UP_END
 };
 
@@ -22492,36 +22492,48 @@ static const struct LevelUpMove sYukiagumonLevelUpLearnset[] = {
 
 //SPECIES_BAKUMON
 static const struct LevelUpMove sBakumonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_TACKLE),
-    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_MOVE(0, MOVE_HYPNOSIS),
+    LEVEL_UP_MOVE(0, MOVE_DREAM_EATER),
+    LEVEL_UP_MOVE(12, MOVE_YAWN),
+    LEVEL_UP_MOVE(18, MOVE_NIGHTMARE_SYNDROME),
+    LEVEL_UP_MOVE(15, MOVE_NIGHTMARE),
     LEVEL_UP_END
 };
 
 //SPECIES_BETAMON
 static const struct LevelUpMove sBetamonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_TACKLE),
-    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_MOVE(0, MOVE_THUNDER_SHOCK),
+    LEVEL_UP_MOVE(11, MOVE_WHIRLPOOL),
+    LEVEL_UP_MOVE(15, MOVE_FURY_SWIPES),
+    LEVEL_UP_MOVE(19, MOVE_WATER_PULSE),
     LEVEL_UP_END
 };
 
 //SPECIES_MODOKIBETAMON
 static const struct LevelUpMove sModokibetamonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_TACKLE),
-    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_MOVE(0, MOVE_THUNDER_SHOCK),
+    LEVEL_UP_MOVE(11, MOVE_WHIRLPOOL),
+    LEVEL_UP_MOVE(15, MOVE_FURY_SWIPES),
+    LEVEL_UP_MOVE(19, MOVE_WATER_PULSE),
     LEVEL_UP_END
 };
 
 //SPECIES_CANDMON
 static const struct LevelUpMove sCandmonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_TACKLE),
-    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_MOVE(0, MOVE_EMBER),
+    LEVEL_UP_MOVE(11, MOVE_NIGHT_SHADE),
+    LEVEL_UP_MOVE(13, MOVE_WILL_O_WISP),
+    LEVEL_UP_MOVE(16, MOVE_FIRE_SPIN),
+    LEVEL_UP_MOVE(20, MOVE_CANDLE_SLASH),
     LEVEL_UP_END
 };
 
 //SPECIES_CHUUMON
 static const struct LevelUpMove sChuumonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_TACKLE),
-    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_MOVE(0, MOVE_CHEESE_BOMB),
+    LEVEL_UP_MOVE(12, MOVE_POOP_THROW),
+    LEVEL_UP_MOVE(15, MOVE_TICKLE),
+    LEVEL_UP_MOVE(19, MOVE_TRICK),
     LEVEL_UP_END
 };
 

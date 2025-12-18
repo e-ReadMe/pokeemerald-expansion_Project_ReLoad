@@ -2127,6 +2127,7 @@ bool32 CanLowerStat(u32 battlerAtk, u32 battlerDef, struct AiLogicData *aiData, 
         case ABILITY_CONTRARY:
         case ABILITY_CLEAR_BODY:
         case ABILITY_WHITE_SMOKE:
+        case ABILITY_MYSTERY_SCALE:
         case ABILITY_FULL_METAL_BODY:
             return FALSE;
         default:
@@ -5710,6 +5711,7 @@ s32 BattlerBenefitsFromAbilityScore(u32 battler, u32 ability, struct AiLogicData
     case ABILITY_MOODY:
     case ABILITY_PURIFYING_SALT:
     case ABILITY_SPEED_BOOST:
+    case ABILITY_MYSTERY_SCALE:
     case ABILITY_WHITE_SMOKE:
         return GOOD_EFFECT;
     // Conditional ability logic goes here.

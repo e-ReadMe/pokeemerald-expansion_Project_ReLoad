@@ -26747,7 +26747,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_Botamon[] = INCBIN_COMP("graphics/pokemon/digimon/1997_1999/botamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u16 gOverworldPalette_Botamon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/botamon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Botamon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/botamon/overworld_shiny.gbapal");
+        const u16 gShinyOverworldPalette_Botamon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/botamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -26961,7 +26961,7 @@ const u16 gShinyOverworldPalette_Kodokugumon[] = INCBIN_U16("graphics/pokemon/di
 
 
 
-//SPECIES_KOROMON
+//SPECIES_Koromon
 const u32 gMonFrontPic_Koromon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/koromon/anim_front.4bpp.smol");
 const u16 gMonPalette_Koromon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/koromon/normal.gbapal");
 const u32 gMonBackPic_Koromon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/koromon/back.4bpp.smol");

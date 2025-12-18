@@ -911,8 +911,13 @@
 //digimon moves
 #define MOVE_HERTZ_HOWL     848
 #define MOVE_FOX_TAIL       849
+#define MOVE_NIGHTMARE_SYNDROME       850
+#define MOVE_CANDLE_SLASH  851
+#define MOVE_CHEESE_BOMB  852
+#define MOVE_POOP_THROW  853
+#define MOVE_PEPPER_BREATH  854
 
-#define MOVES_COUNT_GEN9 850
+#define MOVES_COUNT_GEN9 855
 
 #define MOVES_COUNT         MOVES_COUNT_GEN9
 
