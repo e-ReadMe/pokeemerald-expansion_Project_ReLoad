@@ -3646,7 +3646,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "user's maximum HP."),
         .effect = EFFECT_SOFTBOILED,
         .power = 0,
-        .type = TYPE_NOEUTRAL,
+        .type = TYPE_NEUTRAL,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_9 ? 5 : 10,
         .target = MOVE_TARGET_USER,

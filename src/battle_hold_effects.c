@@ -1179,7 +1179,7 @@ enum ItemEffect ItemBattleEffects(u32 itemBattler, u32 battler, enum HoldEffect 
         effect = TryLeftovers(itemBattler, holdEffect);
         break;
     case HOLD_EFFECT_BLACK_SLUDGE:
-        if (IS_BATTLER_OF_TYPE(itemBattler, TYPE_POISON))
+        if (IS_BATTLER_OF_TYPE(itemBattler, TYPE_FILTH))
             effect = TryLeftovers(itemBattler, holdEffect);
         else
             effect = TryBlackSludgeDamage(itemBattler, holdEffect);

@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Weakness Policy does not activate if Disguise blocks the dam
     PARAMETRIZE { species = SPECIES_MIMIKYU_DISGUISED; }
 
     GIVEN {
-        ASSUME(GetMoveType(MOVE_METAL_CLAW) == TYPE_STEEL);
+        ASSUME(GetMoveType(MOVE_METAL_CLAW) == TYPE_METAL);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species) { Item(ITEM_WEAKNESS_POLICY); Ability(ABILITY_DISGUISE); }
     } WHEN {

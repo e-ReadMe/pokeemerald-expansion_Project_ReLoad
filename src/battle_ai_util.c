@@ -5168,7 +5168,7 @@ bool32 ShouldUseZMove(u32 battlerAtk, u32 battlerDef, u32 chosenMove)
 
             if (zEffect == Z_EFFECT_CURSE)
             {
-                if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GHOST))
+                if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNDEAD))
                     zEffect = Z_EFFECT_RECOVER_HP;
                 else
                     zEffect = Z_EFFECT_ATK_UP_1;

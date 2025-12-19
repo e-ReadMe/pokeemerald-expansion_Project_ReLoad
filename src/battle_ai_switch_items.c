@@ -1993,21 +1993,9 @@ static u32 GetSwitchinHitsToKO(s32 damageTaken, u32 battler)
 static u32 GetBattleMonTypeMatchup(struct BattlePokemon opposingBattleMon, struct BattlePokemon battleMon)
 {
     // Check type matchup
-//---------------------------------------------------old three types type effectiveness section
-//    u16 typeEffectiveness = UQ_4_12(1.0);
-//    u8 atkType1 = gSpeciesInfo[gBattleMons[opposingBattler].species].types[0], atkType2 = gSpeciesInfo[gBattleMons[opposingBattler].species].types[1], atkType3 = gSpeciesInfo[gBattleMons[opposingBattler].species].types[2],
-//    defType1 = battleMon.types[0], defType2 = battleMon.types[1], defType3 = battleMon.types[2];
-
-    // Multiply type effectiveness by a factor depending on type matchup
-//    typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType1)));
-//    if (atkType2 != atkType1)
-///        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType1)));
-//    if (atkType3 != atkType1 && atkType3 != atkType2)
-//        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType3, defType1)));
-//----------------------------------------------------------
     u32 typeEffectiveness1 = UQ_4_12(1.0), typeEffectiveness2 = UQ_4_12(1.0);
-    enum Type atkType1 = opposingBattleMon.types[1], atkType2 = opposingBattleMon.types[2],//only checks types 2 and 3, ignores the first type because its the attribute which isn't involved in teh calculation;
-    enum Type defType1 = battleMon.types[1], defType2 = battleMon.types[2];//only checks types 2 and 3, ignores the first type because its the attribute which isn't involved in teh calculation;
+    enum Type atkType1 = opposingBattleMon.types[1], atkType2 = opposingBattleMon.types[2];//checks types 2 and 3, because type 1 isnt used in the calculation
+    enum Type defType1 = battleMon.types[1], defType2 = battleMon.types[2];//checks types 2 and 3, because type 1 isnt used in the calculation
 
     // Add each independent defensive type matchup together
     typeEffectiveness1 = uq4_12_multiply(typeEffectiveness1, (GetTypeModifier(atkType1, defType1)));
@@ -2018,24 +2006,9 @@ static u32 GetBattleMonTypeMatchup(struct BattlePokemon opposingBattleMon, struc
 
     if (atkType2 != atkType1)
     {
-//---------------------------------------------------old three types type effectiveness section
-//        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType2)));
-//        if (atkType2 != atkType1)
-//            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType2)));
-//        if (atkType3 != atkType1 && atkType3 != atkType2)
-//            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType3, defType2)));
-//    }
-//    if (defType3 != defType1 && defType3 != defType2)
-//    {
-//        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType2)));
-//        if (atkType2 != atkType1)
-//            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType3)));
-//        if (atkType3 != atkType1 && atkType3 != atkType2)
-//            typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType3, defType3)));
-//----------------------------------------------------------
-        typeEffectiveness2 = uq4_12_multiply(typeEffectiveness2, (GetTypeModifier(atkType2, defType1)));//only checks types 2 and 3, ignores the first type because its the attribute which isn't involved in teh calculation
+        typeEffectiveness2 = uq4_12_multiply(typeEffectiveness2, (GetTypeModifier(atkType2, defType1)));
         if (defType2 != defType1)
-            typeEffectiveness2 = uq4_12_multiply(typeEffectiveness2, (GetTypeModifier(atkType2, defType2)));//only checks types 2 and 3, ignores the first type because its the attribute which isn't involved in teh calculation
+            typeEffectiveness2 = uq4_12_multiply(typeEffectiveness2, (GetTypeModifier(atkType2, defType2)));
         if (typeEffectiveness2 == 0) // Immunity
             typeEffectiveness2 = UQ_4_12(0.1);
     }

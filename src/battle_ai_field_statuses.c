@@ -444,14 +444,14 @@ static enum FieldEffectOutcome BenefitsFromGravity(u32 battler)
     if (IsBattlerAlive(LEFT_FOE(battler)))
     {
         if (HasMoveWithLowAccuracy(battler, LEFT_FOE(battler), LOW_ACCURACY_THRESHOLD, FALSE)
-         || (!AI_IsBattlerGrounded(LEFT_FOE(battler)) && HasDamagingMoveOfType(battler, TYPE_GROUND)))
+         || (!AI_IsBattlerGrounded(LEFT_FOE(battler)) && HasDamagingMoveOfType(battler, TYPE_EARTH)))
             return FIELD_EFFECT_POSITIVE;
     }
 
     if (IsBattlerAlive(RIGHT_FOE(battler)))
     {
         if (HasMoveWithLowAccuracy(battler, RIGHT_FOE(battler), LOW_ACCURACY_THRESHOLD, FALSE)
-         || (!AI_IsBattlerGrounded(RIGHT_FOE(battler)) && HasDamagingMoveOfType(battler, TYPE_GROUND)))
+         || (!AI_IsBattlerGrounded(RIGHT_FOE(battler)) && HasDamagingMoveOfType(battler, TYPE_EARTH)))
             return FIELD_EFFECT_POSITIVE;
     }
 

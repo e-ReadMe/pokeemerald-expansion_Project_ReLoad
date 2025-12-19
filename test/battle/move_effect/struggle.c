@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Struggle deals recoil 1/4 of user's hp (Gen 4+)")
 
 SINGLE_BATTLE_TEST("Struggle can hit ghost types")
 {
-    ASSUME(GetSpeciesType(SPECIES_DRIFBLIM, 0) == TYPE_GHOST);
+    ASSUME(GetSpeciesType(SPECIES_DRIFBLIM, 0) == TYPE_UNDEAD);
 
     s16 damage;
 

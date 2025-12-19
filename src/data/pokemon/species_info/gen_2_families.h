@@ -238,7 +238,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 80,
         .baseSpAttack  = 143,
         .baseSpDefense = 115,
-        .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
+        .types = MON_TYPES(TYPE_PLANT, TYPE_PUPPET),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 263,
@@ -7288,7 +7288,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 110,
         .baseSpAttack  = 40,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_METAL, TYPE_WIND),
         .catchRate = 25,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 168,
         .evYield_Defense = 2,

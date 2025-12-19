@@ -7447,7 +7447,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_PIXILATE:
-        if (moveType == TYPE_FPUPPET && gBattleStruct->battlerState[battlerAtk].ateBoost)
+        if (moveType == TYPE_PUPPET && gBattleStruct->battlerState[battlerAtk].ateBoost)
             modifier = uq4_12_multiply(modifier, UQ_4_12(GetConfig(CONFIG_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3));
         break;
     case ABILITY_GALVANIZE:
@@ -9069,8 +9069,9 @@ uq4_12_t GetOverworldTypeEffectiveness(struct Pokemon *mon, enum Type moveType)
     uq4_12_t modifier = UQ_4_12(1.0);
     enum Ability abilityDef = GetMonAbility(mon);
     u16 speciesDef = GetMonData(mon, MON_DATA_SPECIES);
-    enum Type type1 = GetSpeciesType(speciesDef, 0);
+    //enum Type type1 = GetSpeciesType(speciesDef, 0); re-enable this if your getting issues. the compiler doesnt like it because its currently not used.
     enum Type type2 = GetSpeciesType(speciesDef, 1);
+    enum Type type3 = GetSpeciesType(speciesDef, 2);
 
     if (moveType == TYPE_MYSTERY)
         return modifier;
@@ -9080,9 +9081,9 @@ uq4_12_t GetOverworldTypeEffectiveness(struct Pokemon *mon, enum Type moveType)
     ctx.moveType = moveType;
     ctx.updateFlags = FALSE;
 
-    MulByTypeEffectiveness(&ctx, &modifier, type1);
-    if (type2 != type1)
-        MulByTypeEffectiveness(&ctx, &modifier, type2);
+    MulByTypeEffectiveness(&ctx, &modifier, type2);//checks types 2 and 3 because type 1 will be the attribute and not used for damage calc
+    if (type2 != type3)
+        MulByTypeEffectiveness(&ctx, &modifier, type3);
 
     if ((modifier <= UQ_4_12(1.0) && abilityDef == ABILITY_WONDER_GUARD)
      || CanAbilityAbsorbMove(0, 0, abilityDef, MOVE_NONE, moveType, CHECK_TRIGGER))
@@ -9098,16 +9099,14 @@ uq4_12_t GetTypeModifier(enum Type atkType, enum Type defType)
     return gTypeEffectivenessTable[atkType][defType];
 }
 
-s32 GetStealthHazardDamageByTypesAndHP(enum TypeSideHazard hazardType, enum Type type1, enum Type type2, u8 type3, u32 maxHp)
+s32 GetStealthHazardDamageByTypesAndHP(enum TypeSideHazard hazardType, enum Type type1, enum Type type2, enum Type type3, u32 maxHp)
 {
     s32 dmg = 0;
     uq4_12_t modifier = UQ_4_12(1.0);
 
-    modifier = uq4_12_multiply(modifier, GetTypeModifier((u8)hazardType, type1));
-    if (type2 != type1)
-        modifier = uq4_12_multiply(modifier, GetTypeModifier((u8)hazardType, type2));
-    if (type3 != type2 && type3 != type1)
-        modifier = uq4_12_multiply(modifier, GetTypeModifier(hazardType, type3));
+    modifier = uq4_12_multiply(modifier, GetTypeModifier((u8)hazardType, type2));
+    if (type3 != type2)
+        modifier = uq4_12_multiply(modifier, GetTypeModifier((u8)hazardType, type3));
 
     switch (modifier)
     {
