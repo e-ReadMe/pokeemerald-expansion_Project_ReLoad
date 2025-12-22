@@ -109,3 +109,66 @@ Route102_Text_RouteSignOldale:
 Route102_Text_RouteSignPetalburg:
 	.string "ROUTE 102\n"
 	.string "{LEFT_ARROW} PETALBURG CITY$"
+
+
+//Calvin battle code --------------------------------------------------------------------
+.set LOCALID_TRAINERCALVIN, 2
+
+TrainerBattleCALVIN::
+	applymovement LOCALID_TRAINERCALVIN, Common_Movement_ExclamationMark
+	waitmovement 0
+	faceplayer
+	goto_if_not_defeated TRAINER_CALVIN_1 CALVIN_AskforInitialBattle //if you haven't beaten them, jump to that code
+	msgbox CALVINReBattle_Text_Ask, MSGBOX_YESNO //if you've beaten them before, ask to battle
+	compare VAR_RESULT, TRUE
+	goto_if_eq CALVINBattleStart
+	goto_if_ne CALVINDecline
+	end
+
+//if you haven't battled them before
+CALVIN_AskforInitialBattle:
+	msgbox CALVINInitialBattle_Text_ask, MSGBOX_YESNO
+	compare VAR_RESULT, TRUE
+	goto_if_eq CALVINBattleStart
+	goto_if_ne CALVINDecline
+	releaseall
+	end
+//regardless, this is the start of the battle. 
+CALVINBattleStart:
+	cleartrainerflag TRAINER_CALVIN_1 //you need this or rebattling wont work
+	trainerbattle_single TRAINER_CALVIN_1, CALVINBattle_Text_BattleBegin, CALVINBattle_Text_BattleEnd
+	releaseall
+	end
+	
+//if you decline the battle	
+CALVINDecline:
+	msgbox CALVIN_Text_Decline, MSGBOX_DEFAULT
+	settrainerflag(TRAINER_CALVIN_1)//this means they'll remember you
+    releaseall
+    end
+
+//what they say if they HAVEN"T battled before
+CALVINInitialBattle_Text_ask:
+	.string "Have you just started playing? Do you\n"
+	.string "want to have a battle?$"
+
+//what you say if you HAVE battled before
+CALVINReBattle_Text_Ask:
+	.string "Hey, your back! Do you want to have a\n"
+	.string "battle?$"
+
+//what they say once you've agreed to battle
+CALVINBattle_Text_BattleBegin:
+	.string "Trainer battles are great for\n"
+	.string "experience!$"
+	
+//what they say after you beat them	
+CALVINBattle_Text_BattleEnd:
+	.string "If you ever want to rebattle, just let\n"
+	.string "me know!$"
+	
+//what they say if you decline to battle	
+CALVIN_Text_Decline:
+	.string "Oh, okay. If you change your mind, just\n"
+	.string "speak to me again. I'm always up for a\n"
+	.string "battle!$"

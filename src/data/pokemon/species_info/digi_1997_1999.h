@@ -5413,7 +5413,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Angemon,
         .shinyPalette = gMonShinyPalette_Angemon,
         .iconSprite = gMonIcon_Angemon,
-        .iconPalIndex = 5,
+        .iconPalIndex = 3,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Angemon)
         OVERWORLD(
@@ -5494,7 +5494,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Pidmon,
         .shinyPalette = gMonShinyPalette_Pidmon,
         .iconSprite = gMonIcon_Pidmon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 5,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Pidmon)
         OVERWORLD(
@@ -5575,7 +5575,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Bakemon,
         .shinyPalette = gMonShinyPalette_Bakemon,
         .iconSprite = gMonIcon_Bakemon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Bakemon)
         OVERWORLD(
@@ -5737,7 +5737,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Birdramon,
         .shinyPalette = gMonShinyPalette_Birdramon,
         .iconSprite = gMonIcon_Birdramon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Birdramon)
         OVERWORLD(
@@ -5806,11 +5806,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 1),
             ANIMCMD_FRAME(1, 36),
             ANIMCMD_FRAME(0, 10),
         ),
-        .frontAnimId = ANIM_V_STRETCH,
+        .frontAnimId = ANIM_V_SHAKE_BACK,
         .backPic = gMonBackPic_Saberdramon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 10,
@@ -5818,7 +5817,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Saberdramon,
         .shinyPalette = gMonShinyPalette_Saberdramon,
         .iconSprite = gMonIcon_Saberdramon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Saberdramon)
         OVERWORLD(
@@ -5845,7 +5844,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_ELECTRIC, TYPE_BEAST),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 3,
@@ -5871,7 +5870,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_CENTARUMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Beast Man"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -6007,7 +6006,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .types = MON_TYPES(TYPE_DATA, TYPE_WATER, TYPE_BEAST),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 3,
@@ -6024,7 +6023,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_WHITE,
     #if DubNames
         .speciesName = _("Coelamon"),//the digimon's dub name. e.g. gatomon
     #else
@@ -6033,7 +6032,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_COELAMON,
-        .categoryName = _("Unknown"),
+        .categoryName = _("Ancient Fish"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
@@ -6223,7 +6222,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Darktyrannomon,
         .shinyPalette = gMonShinyPalette_Darktyrannomon,
         .iconSprite = gMonIcon_Darktyrannomon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Darktyrannomon)
         OVERWORLD(
