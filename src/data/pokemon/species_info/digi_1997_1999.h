@@ -6303,7 +6303,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Deltamon,
         .shinyPalette = gMonShinyPalette_Deltamon,
         .iconSprite = gMonIcon_Deltamon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Deltamon)
         OVERWORLD(
@@ -6384,7 +6384,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Devidramon,
         .shinyPalette = gMonShinyPalette_Devidramon,
         .iconSprite = gMonIcon_Devidramon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Devidramon)
         OVERWORLD(
@@ -6465,7 +6465,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Devimon,
         .shinyPalette = gMonShinyPalette_Devimon,
         .iconSprite = gMonIcon_Devimon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Devimon)
         OVERWORLD(
@@ -6708,7 +6708,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Drimogemon,
         .shinyPalette = gMonShinyPalette_Drimogemon,
         .iconSprite = gMonIcon_Drimogemon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Drimogemon)
         OVERWORLD(
@@ -6870,7 +6870,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Ebidramon,
         .shinyPalette = gMonShinyPalette_Ebidramon,
         .iconSprite = gMonIcon_Ebidramon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 1,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Ebidramon)
         OVERWORLD(
@@ -7032,7 +7032,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Flarelizarmon,
         .shinyPalette = gMonShinyPalette_Flarelizarmon,
         .iconSprite = gMonIcon_Flarelizarmon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Flarelizarmon)
         OVERWORLD(
@@ -7113,7 +7113,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Darklizarmon,
         .shinyPalette = gMonShinyPalette_Darklizarmon,
         .iconSprite = gMonIcon_Darklizarmon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 1,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Darklizarmon)
         OVERWORLD(
@@ -7194,7 +7194,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Flymon,
         .shinyPalette = gMonShinyPalette_Flymon,
         .iconSprite = gMonIcon_Flymon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 1,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Flymon)
         OVERWORLD(
@@ -7356,7 +7356,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Gururumon,
         .shinyPalette = gMonShinyPalette_Gururumon,
         .iconSprite = gMonIcon_Gururumon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Gururumon)
         OVERWORLD(
@@ -7437,7 +7437,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Gekomon,
         .shinyPalette = gMonShinyPalette_Gekomon,
         .iconSprite = gMonIcon_Gekomon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 2,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Gekomon)
         OVERWORLD(
@@ -7518,7 +7518,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Gesomon,
         .shinyPalette = gMonShinyPalette_Gesomon,
         .iconSprite = gMonIcon_Gesomon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Gesomon)
         OVERWORLD(
@@ -7599,7 +7599,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Gokimon,
         .shinyPalette = gMonShinyPalette_Gokimon,
         .iconSprite = gMonIcon_Gokimon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 1,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Gokimon)
         OVERWORLD(
@@ -7680,7 +7680,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Golemon,
         .shinyPalette = gMonShinyPalette_Golemon,
         .iconSprite = gMonIcon_Golemon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Golemon)
         OVERWORLD(
@@ -7842,7 +7842,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Greymon,
         .shinyPalette = gMonShinyPalette_Greymon,
         .iconSprite = gMonIcon_Greymon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Greymon)
         OVERWORLD(
@@ -7923,7 +7923,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Guardromon,
         .shinyPalette = gMonShinyPalette_Guardromon,
         .iconSprite = gMonIcon_Guardromon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 1,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Guardromon)
         OVERWORLD(
@@ -8004,7 +8004,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Hanumon,
         .shinyPalette = gMonShinyPalette_Hanumon,
         .iconSprite = gMonIcon_Hanumon,
-        .iconPalIndex = 3,
+        .iconPalIndex =4,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Hanumon)
         OVERWORLD(
@@ -8166,7 +8166,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Igamon,
         .shinyPalette = gMonShinyPalette_Igamon,
         .iconSprite = gMonIcon_Igamon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 1,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Igamon)
         OVERWORLD(
