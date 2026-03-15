@@ -255,14 +255,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
 //"SPECIES_WARGREYMON",
 //"SPECIES_ZANBAMON",
 
-	    [SPECIES_BOTAMON] =
+	[SPECIES_BOTAMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 25,
-        .baseDefense   = 20,
+        .baseHP        = 35,
+        .baseAttack    = 46,
+        .baseDefense   = 34,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 45,
         .baseSpeed     = 20,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 20,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -335,14 +335,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-	    [SPECIES_BUBBMON] =
+	[SPECIES_BUBBMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 20,
-        .baseDefense   = 10,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 15,
+        .baseHP        = 45,
+        .baseAttack    = 30,
+        .baseDefense   = 35,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 20,
+        .baseSpeed     = 45,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -415,14 +415,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
-        [SPECIES_CHOROMON] =
+	[SPECIES_CHOROMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 20,
-        .baseDefense   = 70,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 10,
-        .baseSpDefense = 25,
+        .baseHP        = 10,
+        .baseAttack    = 55,
+        .baseDefense   = 30,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 45,
+        .baseSpeed     = 90,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -495,14 +495,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
-        [SPECIES_MOKUMON] =
+	[SPECIES_MOKUMON] =
     {
-        .baseHP        = 10,
-        .baseAttack    = 10,
-        .baseDefense   = 10,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 60,
+        .baseHP        = 43,
+        .baseAttack    = 29,
+        .baseDefense   = 31,
+        .baseSpAttack  = 29,
+        .baseSpDefense = 31,
+        .baseSpeed     = 37,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -575,14 +575,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
-    [SPECIES_NYOKIMON] =
+	[SPECIES_NYOKIMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 20,
-        .baseDefense   = 5,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 40,
+        .baseHP        = 30,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 30,
+        .baseSpeed     = 30,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -656,14 +656,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PITCHMON] =
+	[SPECIES_PITCHMON] =
     {
-        .baseHP        = 30,
+        .baseHP        = 20,
         .baseAttack    = 15,
-        .baseDefense   = 10,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 15,
-        .baseSpDefense = 40,
+        .baseDefense   = 20,
+        .baseSpAttack  = 10,
+        .baseSpDefense = 55,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -737,14 +737,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_POYOMON] =
+	[SPECIES_POYOMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 10,
-        .baseDefense   = 5,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 10,
-        .baseSpDefense = 5,
+        .baseHP        = 50,
+        .baseAttack    = 20,
+        .baseDefense   = 40,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 40,
+        .baseSpeed     = 20,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -818,14 +818,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PUNIMON] =
+	[SPECIES_PUNIMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 40,
-        .baseDefense   = 30,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 5,
-        .baseSpDefense = 5,
+        .baseHP        = 35,
+        .baseAttack    = 35,
+        .baseDefense   = 35,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
+        .baseSpeed     = 35,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -898,14 +898,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_YUKIMIBOTAMON] =
+	[SPECIES_YUKIMIBOTAMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 10,
-        .baseDefense   = 5,
-        .baseSpeed     = 5,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 10,
+        .baseHP        = 30,
+        .baseAttack    = 25,
+        .baseDefense   = 35,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 30,
+        .baseSpeed     = 20,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -979,14 +979,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_YURAMON] =
+	[SPECIES_YURAMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 10,
-        .baseDefense   = 15,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 15,
+        .baseHP        = 42,
+        .baseAttack    = 30,
+        .baseDefense   = 38,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 38,
+        .baseSpeed     = 32,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -1060,14 +1060,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ZURUMON] =
+	[SPECIES_ZURUMON] =
     {
-        .baseHP        = 10,
-        .baseAttack    = 35,
+        .baseHP        = 35,
+        .baseAttack    = 55,
         .baseDefense   = 35,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 35,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 30,
+        .baseSpeed     = 35,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -1141,14 +1141,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 //-----------------------------------------------------------------------
 //stage 2s
-    [SPECIES_CAPRIMON] =
+	[SPECIES_CAPRIMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 45,
+        .baseHP        = 46,
+        .baseAttack    = 65,
         .baseDefense   = 65,
-        .baseSpeed     = 15,
-        .baseSpAttack  = 15,
-        .baseSpDefense = 15,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 35,
+        .baseSpeed     = 34,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_METAL),
         .catchRate = 225,
         .expYield = 100,
@@ -1222,14 +1222,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KODOKUGUMON] =
+	[SPECIES_KODOKUGUMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 60,
         .baseDefense   = 40,
-        .baseSpeed     = 40,
         .baseSpAttack  = 40,
-        .baseSpDefense = 30,
+        .baseSpDefense = 40,
+        .baseSpeed     = 30,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_INSECT),
         .catchRate = 225,
         .expYield = 100,
@@ -1303,14 +1303,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KOROMON] =
+	[SPECIES_KOROMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 30,
-        .baseDefense   = 35,
+        .baseHP        = 60,
+        .baseAttack    = 60,
+        .baseDefense   = 40,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 45,
         .baseSpeed     = 35,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -1384,14 +1384,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MOCHIMON] =
+	[SPECIES_MOCHIMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 30,
-        .baseDefense   = 35,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
+        .baseHP        = 40,
+        .baseAttack    = 20,
+        .baseDefense   = 30,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 80,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -1465,14 +1465,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_NYAROMON] =
+	[SPECIES_NYAROMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 35,
-        .baseDefense   = 30,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 25,
+        .baseHP        = 45,
+        .baseAttack    = 60,
+        .baseDefense   = 45,
+        .baseSpAttack  = 25,
+        .baseSpDefense = 45,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_LIGHT),
         .catchRate = 225,
         .expYield = 100,
@@ -1546,14 +1546,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PAGUMON] =
+	[SPECIES_PAGUMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 30,
-        .baseDefense   = 35,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 30,
+        .baseHP        = 41,
+        .baseAttack    = 50,
+        .baseDefense   = 37,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 37,
+        .baseSpeed     = 66,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
@@ -1627,14 +1627,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PETITMERAMON] =
+	[SPECIES_PETITMERAMON] =
     {
-        .baseHP        = 25,
+        .baseHP        = 50,
         .baseAttack    = 30,
-        .baseDefense   = 20,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 25,
+        .baseDefense   = 55,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 55,
+        .baseSpeed     = 20,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
@@ -1708,14 +1708,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PUKAMON] =
+	[SPECIES_PUKAMON] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 30,
-        .baseDefense   = 30,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 35,
+        .baseHP        = 70,
+        .baseAttack    = 40,
+        .baseDefense   = 50,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 50,
+        .baseSpeed     = 25,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_WATER),
         .catchRate = 225,
         .expYield = 100,
@@ -1789,14 +1789,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PYOKOMON] =
+	[SPECIES_PYOKOMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 20,
-        .baseDefense   = 45,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 45,
+        .baseHP        = 40,
+        .baseAttack    = 55,
+        .baseDefense   = 30,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 30,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_WIND),
         .catchRate = 225,
         .expYield = 100,
@@ -1870,14 +1870,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TANEMON] =
+	[SPECIES_TANEMON] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 35,
-        .baseDefense   = 40,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 35,
+        .baseHP        = 40,
+        .baseAttack    = 30,
+        .baseDefense   = 35,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 70,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_PLANT),
         .catchRate = 225,
         .expYield = 100,
@@ -1951,14 +1951,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TOKOMON] =
+	[SPECIES_TOKOMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 35,
-        .baseDefense   = 30,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 30,
+        .baseHP        = 45,
+        .baseAttack    = 50,
+        .baseDefense   = 43,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 38,
+        .baseSpeed     = 62,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_LIGHT),
         .catchRate = 225,
         .expYield = 100,
@@ -2032,14 +2032,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TSUNOMON] =
+	[SPECIES_TSUNOMON] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 40,
-        .baseDefense   = 35,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
+        .baseHP        = 46,
+        .baseAttack    = 57,
+        .baseDefense   = 40,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 40,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_BEAST),
         .catchRate = 225,
         .expYield = 100,
@@ -2112,23 +2112,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.formSpeciesIdTable = sTsunomonFormSpeciesIdTable,
     },
 
-    [SPECIES_AGUMON] =
+	[SPECIES_AGUMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 65,
-        .baseDefense   = 50,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 50,
+        .baseHP        = 58,
+        .baseAttack    = 64,
+        .baseDefense   = 58,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 65,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_FIRE, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
-        .evYield_HP = 3,
+        .evYield_HP = 0,
         .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .evYield_Defense = 0,
+        .evYield_SpAttack = 0,
+        .evYield_SpDefense = 0,
+        .evYield_Speed = 0,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -2150,10 +2150,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Since it hasn't fully matured, it still\n"
+            "lacks strength, but its firece\n"
+            "disposition makes it reckless."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2193,23 +2192,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_YUKIAGUMON] =
+	[SPECIES_YUKIAGUMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 65,
-        .baseDefense   = 50,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 50,
+        .baseHP        = 90,
+        .baseAttack    = 95,
+        .baseDefense   = 66,
+        .baseSpAttack  = 45,
         .baseSpDefense = 65,
+        .baseSpeed     = 62,
         .types = MON_TYPES(TYPE_DATA, TYPE_ICE, TYPE_ICE),
         .catchRate = 225,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
+        .evYield_HP = 0,
+        .evYield_Attack = 0,
+        .evYield_Defense = 0,
         .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .evYield_SpDefense = 0,
+        .evYield_Speed = 0,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -2231,10 +2230,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It inherited Agumon's mischievousness,\n"
+            "and can be seen frolicking like a child\n"
+            "during a frehs snowfall. It sneaks up on\n"
+            "enemies to attack."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2274,23 +2273,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BAKUMON] =
+	[SPECIES_BAKUMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 50,
-        .baseDefense   = 50,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 60,
+        .baseHP        = 60,
+        .baseAttack    = 45,
+        .baseDefense   = 70,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 85,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_DARK, TYPE_LIGHT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .evYield_Attack = 0,
+        .evYield_Defense = 0,
+        .evYield_SpAttack = 0,
+        .evYield_SpDefense = 0,
+        .evYield_Speed = 0,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -2312,10 +2311,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Born from a medical computer that\n"
+            "montiors brainwaves, it has the ability\n"
+            "to return nightmares and computer\n"
+            "viruses to a benign state."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2355,23 +2354,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BETAMON] =
+	[SPECIES_BETAMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 50,
-        .baseDefense   = 50,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 55,
+        .baseHP        = 70,
+        .baseAttack    = 85,
+        .baseDefense   = 70,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 70,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_WATER, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
+        .evYield_HP = 0,
+        .evYield_Attack = 0,
+        .evYield_Defense = 0,
         .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .evYield_SpDefense = 0,
+        .evYield_Speed = 0,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -2393,10 +2392,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Although Betamon has a gentle, docile\n"
+            "personality, once it is angered, it emits\n"
+            "more than 1MV of electricity from its\n"
+            "body to strike the foe."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2436,14 +2435,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MODOKIBETAMON] =
+	[SPECIES_MODOKIBETAMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 50,
-        .baseDefense   = 50,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 55,
+        .baseHP        = 64,
+        .baseAttack    = 66,
+        .baseDefense   = 68,
+        .baseSpAttack  = 81,
+        .baseSpDefense = 76,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_DATA, TYPE_WATER, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
@@ -2474,10 +2473,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Its a rare species with a very small\n"
+            "population. With its calm personality, it\n"
+            "inhabits quiet swampland, and skillfully\n"
+            "controls water currents."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2517,14 +2516,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_CANDMON] =
+	[SPECIES_CANDMON] =
     {
-        .baseHP        = 35,
+        .baseHP        = 60,
         .baseAttack    = 40,
-        .baseDefense   = 40,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 65,
+        .baseDefense   = 60,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 60,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_DATA, TYPE_FIRE, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
@@ -2598,14 +2597,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_CHUUMON] =
+	[SPECIES_CHUUMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 40,
-        .baseDefense   = 35,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 50,
+        .baseHP        = 55,
+        .baseAttack    = 70,
+        .baseDefense   = 55,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 55,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_FILTH, TYPE_FILTH),
         .catchRate = 225,
         .expYield = 100,
@@ -2679,14 +2678,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ELECMON] =
+	[SPECIES_ELECMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 40,
+        .baseDefense   = 50,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 85,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_DATA, TYPE_ELECTRIC, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
@@ -2760,23 +2759,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_FLORAMON] =
+	[SPECIES_FLORAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 62,
+        .baseDefense   = 80,
+        .baseSpAttack  = 63,
+        .baseSpDefense = 80,
+        .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_DATA, TYPE_PLANT, TYPE_PLANT),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .evYield_Attack = 0,
+        .evYield_Defense = 0,
+        .evYield_SpAttack = 0,
+        .evYield_SpDefense = 0,
+        .evYield_Speed = 0,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -2784,7 +2783,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_OVERGROW, ABILITY_OVERGROW, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
         .speciesName = _("Floramon"),//the digimon's dub name. e.g. gatomon
@@ -2798,10 +2797,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It sees Palmon as it's rival, and has a\n"
+            "high opinion of itself. It's helmet\n"
+            "opens and it can store things inside."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2841,14 +2839,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GABUMON] =
+	[SPECIES_GABUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 79,
+        .baseAttack    = 85,
+        .baseDefense   = 60,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 60,
+        .baseSpeed     = 71,
         .types = MON_TYPES(TYPE_DATA, TYPE_ICE, TYPE_ICE),
         .catchRate = 225,
         .expYield = 100,
@@ -2922,14 +2920,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PSYCHEMON] =
+	[SPECIES_PSYCHEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 65,
+        .baseDefense   = 65,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 55,
+        .baseSpeed     = 90,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_ELECTRIC, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
@@ -3003,14 +3001,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GANIMON] =
+	[SPECIES_GANIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 55,
+        .baseDefense   = 95,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 95,
+        .baseSpeed     = 35,
         .types = MON_TYPES(TYPE_DATA, TYPE_WATER, TYPE_WATER),
         .catchRate = 225,
         .expYield = 100,
@@ -3084,14 +3082,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GAZIMON] =
+	[SPECIES_GAZIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 71,
+        .baseDefense   = 70,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 80,
+        .baseSpeed     = 77,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
@@ -3165,14 +3163,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GIZAMON] =
+	[SPECIES_GIZAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 75,
+        .baseDefense   = 60,
+        .baseSpAttack  = 83,
+        .baseSpDefense = 60,
+        .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_WATER, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
@@ -3246,14 +3244,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GOBLIMON] =
+	[SPECIES_GOBLIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 50,
+        .baseAttack    = 75,
+        .baseDefense   = 75,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 65,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_COMBAT),
         .catchRate = 225,
         .expYield = 100,
@@ -3327,14 +3325,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SHAMAMON] =
+	[SPECIES_SHAMAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 50,
+        .baseDefense   = 70,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 90,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_EARTH, TYPE_COMBAT),
         .catchRate = 225,
         .expYield = 100,
@@ -3407,15 +3405,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .formSpeciesIdTable = sGoblimonFormSpeciesIdTable,
     },
 
-
-    [SPECIES_SNOWGOBLIMON] =
+	[SPECIES_SNOWGOBLIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 51,
+        .baseAttack    = 65,
+        .baseDefense   = 65,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 75,
+        .baseSpeed     = 59,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_ICE, TYPE_COMBAT),
         .catchRate = 225,
         .expYield = 100,
@@ -3489,14 +3486,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GOMAMON] =
+	[SPECIES_GOMAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 85,
+        .baseDefense   = 65,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 60,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_WATER, TYPE_ICE),
         .catchRate = 225,
         .expYield = 100,
@@ -3570,14 +3567,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GOTSUMON] =
+	[SPECIES_GOTSUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 55,
+        .baseAttack    = 95,
+        .baseDefense   = 115,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 45,
+        .baseSpeed     = 35,
         .types = MON_TYPES(TYPE_DATA, TYPE_EARTH, TYPE_EARTH),
         .catchRate = 225,
         .expYield = 100,
@@ -3651,14 +3648,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_HAGURUMON] =
+	[SPECIES_HAGURUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 55,
+        .baseDefense   = 55,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 82,
+        .baseSpeed     = 78,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_METAL, TYPE_METAL),
         .catchRate = 225,
         .expYield = 100,
@@ -3732,14 +3729,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KOKUWAMON] =
+	[SPECIES_KOKUWAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 69,
+        .baseDefense   = 95,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 95,
+        .baseSpeed     = 36,
         .types = MON_TYPES(TYPE_DATA, TYPE_METAL, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
@@ -3813,14 +3810,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KUNEMON] =
+	[SPECIES_KUNEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 65,
+        .baseDefense   = 45,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 45,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_INSECT, TYPE_INSECT),
         .catchRate = 225,
         .expYield = 100,
@@ -3894,14 +3891,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DOKUNEMON] =
+	[SPECIES_DOKUNEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 70,
+        .baseDefense   = 50,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 50,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_INSECT, TYPE_FILTH),
         .catchRate = 225,
         .expYield = 100,
@@ -3975,14 +3972,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MUSHMON] =
+	[SPECIES_MUSHMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 95,
+        .baseDefense   = 80,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 80,
+        .baseSpeed     = 30,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_PLANT, TYPE_FILTH),
         .catchRate = 225,
         .expYield = 100,
@@ -4056,14 +4053,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_OTAMAMON] =
+	[SPECIES_OTAMAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 65,
+        .baseDefense   = 55,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 55,
+        .baseSpeed     = 69,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_WATER, TYPE_WATER),
         .catchRate = 225,
         .expYield = 100,
@@ -4137,14 +4134,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PALMON] =
+	[SPECIES_PALMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 62,
+        .baseDefense   = 63,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 80,
+        .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_DATA, TYPE_PLANT, TYPE_PLANT),
         .catchRate = 225,
         .expYield = 100,
@@ -4218,14 +4215,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ALRAUMON] =
+	[SPECIES_ALRAUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 61,
+        .baseAttack    = 78,
+        .baseDefense   = 95,
+        .baseSpAttack  = 56,
+        .baseSpDefense = 58,
+        .baseSpeed     = 57,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_PLANT, TYPE_FILTH),
         .catchRate = 225,
         .expYield = 100,
@@ -4299,14 +4296,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PATAMON] =
+	[SPECIES_PATAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 55,
+        .baseAttack    = 40,
+        .baseDefense   = 85,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 105,
+        .baseSpeed     = 40,
         .types = MON_TYPES(TYPE_DATA, TYPE_WIND, TYPE_WIND),
         .catchRate = 225,
         .expYield = 100,
@@ -4380,14 +4377,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TSUKAIMON] =
+	[SPECIES_TSUKAIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 85,
+        .baseDefense   = 42,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 42,
+        .baseSpeed     = 91,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_WIND, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
@@ -4461,14 +4458,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PENMON] =
+	[SPECIES_PENMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 83,
+        .baseDefense   = 50,
+        .baseSpAttack  = 37,
+        .baseSpDefense = 50,
+        .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_ICE, TYPE_ICE),
         .catchRate = 225,
         .expYield = 100,
@@ -4542,14 +4539,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MUCHOMON] =
+	[SPECIES_MUCHOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 55,
+        .baseDefense   = 75,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 65,
+        .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_DATA, TYPE_WIND, TYPE_WIND),
         .catchRate = 225,
         .expYield = 100,
@@ -4623,14 +4620,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PICODEVIMON] =
+	[SPECIES_PICODEVIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 45,
+        .baseAttack    = 50,
+        .baseDefense   = 45,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 55,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
@@ -4704,14 +4701,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PIYOMON] =
+	[SPECIES_PIYOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 78,
+        .baseAttack    = 75,
+        .baseDefense   = 75,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 70,
+        .baseSpeed     = 52,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_WIND, TYPE_WIND),
         .catchRate = 225,
         .expYield = 100,
@@ -4785,14 +4782,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PLOTMON] =
+	[SPECIES_PLOTMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 65,
+        .baseDefense   = 65,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 55,
+        .baseSpeed     = 90,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_LIGHT, TYPE_LIGHT),
         .catchRate = 225,
         .expYield = 100,
@@ -4866,14 +4863,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SHAKOMON] =
+	[SPECIES_SHAKOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 55,
+        .baseAttack    = 60,
+        .baseDefense   = 130,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 130,
+        .baseSpeed     = 5,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_WATER, TYPE_WATER),
         .catchRate = 225,
         .expYield = 100,
@@ -4947,14 +4944,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TENTOMON] =
+	[SPECIES_TENTOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 94,
+        .baseDefense   = 50,
+        .baseSpAttack  = 94,
+        .baseSpDefense = 50,
+        .baseSpeed     = 66,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_INSECT, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
@@ -5028,14 +5025,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TOYAGUMON] =
+	[SPECIES_TOYAGUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 100,
+        .baseDefense   = 70,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 55,
+        .baseSpeed     = 45,
         .types = MON_TYPES(TYPE_DATA, TYPE_PUPPET, TYPE_PUPPET),
         .catchRate = 225,
         .expYield = 100,
@@ -5109,14 +5106,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_CLEARAGUMON] =
+	[SPECIES_CLEARAGUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
+        .baseHP        = 70,
+        .baseAttack    = 105,
+        .baseDefense   = 105,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 40,
         .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_PUPPET, TYPE_PUPPET),
         .catchRate = 225,
         .expYield = 100,
@@ -5190,14 +5187,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BUN] =
+	[SPECIES_BUN] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 135,
+        .baseAttack    = 85,
+        .baseDefense   = 40,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 85,
+        .baseSpeed     = 5,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -5270,14 +5267,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.formSpeciesIdTable = sBunFormSpeciesIdTable,
     },
 
-    [SPECIES_AIRDRAMON] =
+	[SPECIES_AIRDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 70,
+        .baseDefense   = 90,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 105,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_DATA, TYPE_WIND, TYPE_DRAGON),
         .catchRate = 225,
         .expYield = 100,
@@ -5351,14 +5348,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ANGEMON] =
+	[SPECIES_ANGEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 83,
+        .baseAttack    = 80,
+        .baseDefense   = 75,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 70,
+        .baseSpeed     = 101,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_LIGHT, TYPE_LIGHT),
         .catchRate = 225,
         .expYield = 100,
@@ -5432,14 +5429,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PIDMON] =
+	[SPECIES_PIDMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 70,
+        .baseDefense   = 70,
+        .baseSpAttack  = 98,
+        .baseSpDefense = 70,
+        .baseSpeed     = 93,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_LIGHT, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
@@ -5513,14 +5510,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BAKEMON] =
+	[SPECIES_BAKEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 89,
+        .baseAttack    = 124,
+        .baseDefense   = 80,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 80,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_UNDEAD, TYPE_UNDEAD),
         .catchRate = 225,
         .expYield = 100,
@@ -5594,14 +5591,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SOULMON] =
+	[SPECIES_SOULMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 58,
+        .baseAttack    = 95,
+        .baseDefense   = 145,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 105,
+        .baseSpeed     = 30,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_UNDEAD, TYPE_UNDEAD),
         .catchRate = 225,
         .expYield = 100,
@@ -5675,14 +5672,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BIRDRAMON] =
+	[SPECIES_BIRDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 65,
+        .baseDefense   = 55,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 95,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_WIND, TYPE_FIRE),
         .catchRate = 225,
         .expYield = 100,
@@ -5756,14 +5753,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SABERDRAMON] =
+	[SPECIES_SABERDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 55,
+        .baseDefense   = 65,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 105,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_WIND, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,
@@ -5836,14 +5833,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_CENTARUMON] =
+	[SPECIES_CENTARUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 75,
+        .baseDefense   = 60,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 60,
+        .baseSpeed     = 105,
         .types = MON_TYPES(TYPE_DATA, TYPE_ELECTRIC, TYPE_BEAST),
         .catchRate = 225,
         .expYield = 100,
@@ -5917,14 +5914,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_CLOCKMON] =
+	[SPECIES_CLOCKMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 85,
+        .baseDefense   = 145,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 55,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -5998,14 +5995,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_COELAMON] =
+	[SPECIES_COELAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 69,
+        .baseAttack    = 69,
+        .baseDefense   = 76,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 86,
+        .baseSpeed     = 91,
         .types = MON_TYPES(TYPE_DATA, TYPE_WATER, TYPE_BEAST),
         .catchRate = 225,
         .expYield = 100,
@@ -6079,14 +6076,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_CYCLOMON] =
+	[SPECIES_CYCLOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 77,
+        .baseAttack    = 120,
+        .baseDefense   = 90,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 90,
+        .baseSpeed     = 48,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6160,14 +6157,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DARKTYRANNOMON] =
+	[SPECIES_DARKTYRANNOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 110,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 80,
+        .baseSpeed     = 40,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6241,14 +6238,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DELTAMON] =
+	[SPECIES_DELTAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 78,
+        .baseDefense   = 135,
+        .baseSpAttack  = 91,
+        .baseSpDefense = 85,
+        .baseSpeed     = 36,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6322,14 +6319,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DEVIDRAMON] =
+	[SPECIES_DEVIDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 103,
+        .baseDefense   = 85,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 85,
+        .baseSpeed     = 82,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6403,14 +6400,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DEVIMON] =
+	[SPECIES_DEVIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 90,
+        .baseDefense   = 115,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 115,
+        .baseSpeed     = 58,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6484,14 +6481,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ICEDEVIMON] =
+	[SPECIES_ICEDEVIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 80,
+        .baseDefense   = 70,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 70,
+        .baseSpeed     = 110,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6565,14 +6562,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DOKUGUMON] =
+	[SPECIES_DOKUGUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 80,
+        .baseDefense   = 102,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 102,
+        .baseSpeed     = 40,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6646,14 +6643,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DRIMOGEMON] =
+	[SPECIES_DRIMOGEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 100,
+        .baseDefense   = 66,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 66,
+        .baseSpeed     = 115,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6727,14 +6724,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_NISEDRIMOGEMON] =
+	[SPECIES_NISEDRIMOGEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 76,
+        .baseDefense   = 84,
+        .baseSpAttack  = 54,
+        .baseSpDefense = 96,
+        .baseSpeed     = 105,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6808,14 +6805,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_EBIDRAMON] =
+	[SPECIES_EBIDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 55,
+        .baseAttack    = 130,
+        .baseDefense   = 115,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
+        .baseSpeed     = 75,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6889,14 +6886,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_EVILMON] =
+	[SPECIES_EVILMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 60,
+        .baseDefense   = 60,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 65,
+        .baseSpeed     = 115,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -6970,14 +6967,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_FLARELIZARMON] =
+	[SPECIES_FLARELIZARMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 100,
+        .baseDefense   = 60,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 60,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7051,14 +7048,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DARKLIZARMON] =
+	[SPECIES_DARKLIZARMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 86,
+        .baseAttack    = 92,
+        .baseDefense   = 88,
+        .baseSpAttack  = 68,
+        .baseSpDefense = 75,
+        .baseSpeed     = 73,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7132,14 +7129,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_FLYMON] =
+	[SPECIES_FLYMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 70,
+        .baseDefense   = 40,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 60,
+        .baseSpeed     = 145,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7213,14 +7210,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GARURUMON] =
+	[SPECIES_GARURUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 110,
+        .baseDefense   = 70,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 60,
+        .baseSpeed     = 110,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7294,14 +7291,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GURURUMON] =
+	[SPECIES_GURURUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 74,
+        .baseAttack    = 75,
+        .baseDefense   = 70,
+        .baseSpAttack  = 64,
+        .baseSpDefense = 75,
+        .baseSpeed     = 111,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7375,14 +7372,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GEKOMON] =
+	[SPECIES_GEKOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 95,
+        .baseAttack    = 85,
+        .baseDefense   = 85,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 65,
+        .baseSpeed     = 35,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7456,14 +7453,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GESOMON] =
+	[SPECIES_GESOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 63,
+        .baseAttack    = 120,
+        .baseDefense   = 85,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 55,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7537,14 +7534,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GOKIMON] =
+	[SPECIES_GOKIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 73,
+        .baseDefense   = 75,
+        .baseSpAttack  = 47,
+        .baseSpDefense = 85,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7618,14 +7615,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GOLEMON] =
+	[SPECIES_GOLEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 105,
+        .baseAttack    = 130,
+        .baseDefense   = 120,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 45,
+        .baseSpeed     = 40,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7699,14 +7696,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GORIMON] =
+	[SPECIES_GORIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 100,
+        .baseAttack    = 120,
+        .baseDefense   = 90,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 60,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7780,14 +7777,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GREYMON] =
+	[SPECIES_GREYMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 115,
+        .baseDefense   = 90,
+        .baseSpAttack  = 48,
+        .baseSpDefense = 68,
+        .baseSpeed     = 74,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7861,14 +7858,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GUARDROMON] =
+	[SPECIES_GUARDROMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 80,
+        .baseDefense   = 140,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 70,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -7942,14 +7939,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_HANUMON] =
+	[SPECIES_HANUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 125,
+        .baseDefense   = 75,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 75,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8023,14 +8020,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ICEMON] =
+	[SPECIES_ICEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 80,
+        .baseDefense   = 110,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 90,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8104,14 +8101,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_IGAMON] =
+	[SPECIES_IGAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 100,
+        .baseDefense   = 120,
+        .baseSpAttack  = 25,
+        .baseSpDefense = 65,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8185,14 +8182,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_IKKAKUMON] =
+	[SPECIES_IKKAKUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 95,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8247,7 +8244,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Ikkakumon,
         .shinyPalette = gMonShinyPalette_Ikkakumon,
         .iconSprite = gMonIcon_Ikkakumon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 1,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Ikkakumon)
         OVERWORLD(
@@ -8266,14 +8263,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KABUTERIMON] =
+	[SPECIES_KABUTERIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 58,
+        .baseAttack    = 109,
+        .baseDefense   = 112,
+        .baseSpAttack  = 48,
+        .baseSpDefense = 48,
+        .baseSpeed     = 109,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8328,7 +8325,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .palette = gMonPalette_Kabuterimon,
         .shinyPalette = gMonShinyPalette_Kabuterimon,
         .iconSprite = gMonIcon_Kabuterimon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Kabuterimon)
         OVERWORLD(
@@ -8347,14 +8344,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KARATUKINUMEMON] =
+	[SPECIES_KARATUKINUMEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 57,
+        .baseAttack    = 82,
+        .baseDefense   = 95,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 75,
+        .baseSpeed     = 36,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8428,14 +8425,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KIWIMON] =
+	[SPECIES_KIWIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 130,
+        .baseDefense   = 80,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 60,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8509,14 +8506,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KOKATORIMON] =
+	[SPECIES_KOKATORIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 75,
+        .baseDefense   = 70,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 75,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8590,14 +8587,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_AKATORIMON] =
+	[SPECIES_AKATORIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 87,
+        .baseDefense   = 63,
+        .baseSpAttack  = 87,
+        .baseSpDefense = 63,
+        .baseSpeed     = 98,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8671,14 +8668,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KUWAGAMON] =
+	[SPECIES_KUWAGAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 100,
+        .baseDefense   = 89,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 69,
+        .baseSpeed     = 112,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8752,14 +8749,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_LEOMON] =
+	[SPECIES_LEOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 105,
+        .baseDefense   = 75,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 75,
+        .baseSpeed     = 105,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8833,14 +8830,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MECHANORIMON] =
+	[SPECIES_MECHANORIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
+        .baseHP        = 70,
+        .baseAttack    = 60,
+        .baseDefense   = 105,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 105,
         .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8914,14 +8911,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MERAMON] =
+	[SPECIES_MERAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 85,
+        .baseAttack    = 97,
+        .baseDefense   = 66,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 66,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -8995,14 +8992,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MINOTAURMON] =
+	[SPECIES_MINOTAURMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 95,
+        .baseAttack    = 69,
+        .baseDefense   = 78,
+        .baseSpAttack  = 124,
+        .baseSpDefense = 71,
+        .baseSpeed     = 58,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9076,14 +9073,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MOJYAMON] =
+	[SPECIES_MOJYAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 80,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9157,14 +9154,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_JUNGLEMOJYAMON] =
+	[SPECIES_JUNGLEMOJYAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 99,
+        .baseAttack    = 68,
+        .baseDefense   = 83,
+        .baseSpAttack  = 72,
+        .baseSpDefense = 87,
+        .baseSpeed     = 71,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9238,14 +9235,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MONOCHROMON] =
+	[SPECIES_MONOCHROMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 120,
+        .baseDefense   = 130,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 65,
+        .baseSpeed     = 45,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9319,14 +9316,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MUSYAMON] =
+	[SPECIES_MUSYAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 105,
+        .baseDefense   = 60,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 70,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9400,14 +9397,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_NANIMON] =
+	[SPECIES_NANIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 100,
+        .baseDefense   = 70,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 60,
+        .baseSpeed     = 45,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9481,14 +9478,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_NUMEMON] =
+	[SPECIES_NUMEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 90,
+        .baseDefense   = 50,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 45,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9562,14 +9559,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GEREMON] =
+	[SPECIES_GEREMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 65,
+        .baseDefense   = 70,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 75,
+        .baseSpeed     = 40,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9643,14 +9640,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_OCTOMON] =
+	[SPECIES_OCTOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 95,
+        .baseDefense   = 100,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 70,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9724,14 +9721,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_OGREMON] =
+	[SPECIES_OGREMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 73,
+        .baseAttack    = 100,
+        .baseDefense   = 60,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 60,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9805,14 +9802,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_FUGAMON] =
+	[SPECIES_FUGAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 73,
+        .baseAttack    = 115,
+        .baseDefense   = 60,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 60,
+        .baseSpeed     = 90,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9886,14 +9883,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_HYOGAMON] =
+	[SPECIES_HYOGAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 80,
+        .baseDefense   = 65,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 65,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -9967,14 +9964,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_RAREMON] =
+	[SPECIES_RAREMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
+        .baseHP        = 130,
+        .baseAttack    = 75,
+        .baseDefense   = 60,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 100,
         .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10047,14 +10044,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_REVOLMON] =
+	[SPECIES_REVOLMON] =
     {
-        .baseHP        = 20,
+        .baseHP        = 100,
         .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
+        .baseDefense   = 135,
+        .baseSpAttack  = 125,
         .baseSpDefense = 20,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10127,14 +10124,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_RUKAMON] =
+	[SPECIES_RUKAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 68,
+        .baseAttack    = 50,
+        .baseDefense   = 60,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 95,
+        .baseSpeed     = 82,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10207,14 +10204,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SEADRAMON] =
+	[SPECIES_SEADRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 95,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10287,14 +10284,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SHELLMON] =
+	[SPECIES_SHELLMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 100,
+        .baseAttack    = 60,
+        .baseDefense   = 70,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 105,
+        .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10367,14 +10364,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MORISHELLMON] =
+	[SPECIES_MORISHELLMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 103,
+        .baseAttack    = 93,
+        .baseDefense   = 67,
+        .baseSpAttack  = 71,
+        .baseSpDefense = 84,
+        .baseSpeed     = 61,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10447,14 +10444,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SNIMON] =
+	[SPECIES_SNIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 105,
+        .baseDefense   = 60,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 60,
+        .baseSpeed     = 125,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10527,14 +10524,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_STARMON] =
+	[SPECIES_STARMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 95,
+        .baseDefense   = 60,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 60,
+        .baseSpeed     = 115,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10607,14 +10604,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SUKAMON] =
+	[SPECIES_SUKAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 45,
+        .baseDefense   = 70,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 85,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10687,14 +10684,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PLATINUMSUKAMON] =
+	[SPECIES_PLATINUMSUKAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 60,
+        .baseDefense   = 70,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 75,
+        .baseSpeed     = 40,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10767,14 +10764,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TAILMON] =
+	[SPECIES_TAILMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 73,
+        .baseAttack    = 95,
+        .baseDefense   = 62,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 65,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10847,14 +10844,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TANKMON] =
+	[SPECIES_TANKMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 50,
+        .baseAttack    = 60,
+        .baseDefense   = 95,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 70,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -10927,14 +10924,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_THUNDERBALLMON] =
+	[SPECIES_THUNDERBALLMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 55,
+        .baseDefense   = 60,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 70,
+        .baseSpeed     = 124,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11007,14 +11004,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TOGEMON] =
+	[SPECIES_TOGEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 120,
+        .baseAttack    = 100,
+        .baseDefense   = 85,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 85,
+        .baseSpeed     = 45,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11087,14 +11084,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TORTOMON] =
+	[SPECIES_TORTOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 90,
+        .baseDefense   = 140,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 60,
+        .baseSpeed     = 40,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11167,14 +11164,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TUSKMON] =
+	[SPECIES_TUSKMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 115,
+        .baseDefense   = 60,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 60,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11247,14 +11244,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TYRANNOMON] =
+	[SPECIES_TYRANNOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 110,
+        .baseDefense   = 80,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 60,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11327,14 +11324,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_UNIMON] =
+	[SPECIES_UNIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 100,
+        .baseDefense   = 70,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 70,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11407,14 +11404,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SHIMAUNIMON] =
+	[SPECIES_SHIMAUNIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 115,
+        .baseDefense   = 65,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 65,
+        .baseSpeed     = 112,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11487,14 +11484,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_VEEDRAMON] =
+	[SPECIES_VEEDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 85,
+        .baseAttack    = 120,
+        .baseDefense   = 70,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 60,
+        .baseSpeed     = 100,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11567,14 +11564,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_VEGIMON] =
+	[SPECIES_VEGIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 55,
+        .baseAttack    = 63,
+        .baseDefense   = 90,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 80,
+        .baseSpeed     = 42,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11647,14 +11644,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ZASSOUMON] =
+	[SPECIES_ZASSOUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 54,
+        .baseAttack    = 45,
+        .baseDefense   = 47,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 98,
+        .baseSpeed     = 52,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11727,14 +11724,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_REDVEGIMON] =
+	[SPECIES_REDVEGIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 77,
+        .baseAttack    = 85,
+        .baseDefense   = 51,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 51,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11807,14 +11804,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_WHAMON_ADULT] =
+	[SPECIES_WHAMON_ADULT] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 70,
+        .baseDefense   = 70,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 100,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11887,14 +11884,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_WIZARMON] =
+	[SPECIES_WIZARMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 85,
+        .baseAttack    = 73,
+        .baseDefense   = 70,
+        .baseSpAttack  = 73,
+        .baseSpDefense = 115,
+        .baseSpeed     = 67,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -11967,14 +11964,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_WOODMON] =
+	[SPECIES_WOODMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 85,
+        .baseAttack    = 110,
+        .baseDefense   = 76,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 82,
+        .baseSpeed     = 56,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12047,14 +12044,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_YANMAMON] =
+	[SPECIES_YANMAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 90,
+        .baseDefense   = 65,
+        .baseSpAttack  = 61,
+        .baseSpDefense = 61,
+        .baseSpeed     = 100,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12127,14 +12124,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SANDYANMAMON] =
+	[SPECIES_SANDYANMAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 64,
+        .baseAttack    = 88,
+        .baseDefense   = 50,
+        .baseSpAttack  = 88,
+        .baseSpDefense = 50,
+        .baseSpeed     = 106,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12207,14 +12204,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_YUKIDARUMON] =
+	[SPECIES_YUKIDARUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 97,
+        .baseAttack    = 132,
+        .baseDefense   = 77,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 67,
+        .baseSpeed     = 43,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12287,14 +12284,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TSUCHIDARUMON] =
+	[SPECIES_TSUCHIDARUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 118,
+        .baseDefense   = 90,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 80,
+        .baseSpeed     = 42,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12367,14 +12364,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_AEROVEEDRAMON] =
+	[SPECIES_AEROVEEDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 105,
+        .baseDefense   = 65,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 75,
+        .baseSpeed     = 130,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12447,14 +12444,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ANDROMON] =
+	[SPECIES_ANDROMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 130,
+        .baseDefense   = 80,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 85,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12527,14 +12524,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ANGEWOMON] =
+	[SPECIES_ANGEWOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 75,
+        .baseDefense   = 85,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 85,
+        .baseSpeed     = 115,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12607,14 +12604,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ANOMALOCARIMON] =
+	[SPECIES_ANOMALOCARIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 100,
+        .baseAttack    = 115,
+        .baseDefense   = 65,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 90,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12687,14 +12684,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ASURAMON] =
+	[SPECIES_ASURAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 105,
+        .baseAttack    = 95,
+        .baseDefense   = 75,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 75,
+        .baseSpeed     = 74,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12767,14 +12764,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ATLURKABUTERIMONR] =
+	[SPECIES_ATLURKABUTERIMONR] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 95,
+        .baseAttack    = 117,
+        .baseDefense   = 184,
+        .baseSpAttack  = 44,
+        .baseSpDefense = 46,
+        .baseSpeed     = 28,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12847,14 +12844,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ATLURKABUTERIMONB] =
+	[SPECIES_ATLURKABUTERIMONB] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 95,
+        .baseAttack    = 127,
+        .baseDefense   = 184,
+        .baseSpAttack  = 34,
+        .baseSpDefense = 36,
+        .baseSpeed     = 38,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -12927,14 +12924,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BIGMAMEMON] =
+	[SPECIES_BIGMAMEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 170,
+        .baseAttack    = 113,
+        .baseDefense   = 65,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 55,
+        .baseSpeed     = 73,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13007,14 +13004,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BLOSSOMON] =
+	[SPECIES_BLOSSOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 82,
+        .baseDefense   = 83,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13087,14 +13084,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BLUEMERAMON] =
+	[SPECIES_BLUEMERAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 130,
+        .baseDefense   = 60,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 110,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13167,14 +13164,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BRACHIMON] =
+	[SPECIES_BRACHIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 123,
+        .baseAttack    = 77,
+        .baseDefense   = 72,
+        .baseSpAttack  = 99,
+        .baseSpDefense = 92,
+        .baseSpeed     = 58,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13247,14 +13244,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_CHIMAIRAMON] =
+	[SPECIES_CHIMAIRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 85,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
+        .baseSpAttack  = 97,
+        .baseSpDefense = 80,
+        .baseSpeed     = 123,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13327,14 +13324,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_CYBERDRAMON] =
+	[SPECIES_CYBERDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 110,
+        .baseAttack    = 115,
+        .baseDefense   = 80,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 90,
+        .baseSpeed     = 90,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13407,14 +13404,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DAGOMON] =
+	[SPECIES_DAGOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 160,
+        .baseAttack    = 110,
+        .baseDefense   = 65,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 110,
+        .baseSpeed     = 30,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13487,14 +13484,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DEATHMERAMON] =
+	[SPECIES_DEATHMERAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 104,
+        .baseAttack    = 75,
+        .baseDefense   = 100,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 75,
+        .baseSpeed     = 66,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13567,14 +13564,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DELUMON] =
+	[SPECIES_DELUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 70,
+        .baseDefense   = 65,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 105,
+        .baseSpeed     = 90,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13647,14 +13644,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DIGITAMAMON] =
+	[SPECIES_DIGITAMAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 50,
+        .baseAttack    = 50,
+        .baseDefense   = 150,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 150,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13727,14 +13724,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ETEMON] =
+	[SPECIES_ETEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 130,
+        .baseDefense   = 60,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 80,
+        .baseSpeed     = 120,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13807,14 +13804,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_EXTYRANNOMON] =
+	[SPECIES_EXTYRANNOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 110,
+        .baseAttack    = 85,
+        .baseDefense   = 95,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 95,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13887,14 +13884,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GARUDAMON] =
+	[SPECIES_GARUDAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 100,
+        .baseDefense   = 80,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 80,
+        .baseSpeed     = 100,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -13967,14 +13964,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GERBEMON] =
+	[SPECIES_GERBEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 100,
+        .baseDefense   = 115,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 85,
+        .baseSpeed     = 90,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14047,14 +14044,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GIGADRAMON] =
+	[SPECIES_GIGADRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 78,
+        .baseAttack    = 107,
+        .baseDefense   = 75,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14127,14 +14124,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GIROMON] =
+	[SPECIES_GIROMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 130,
+        .baseDefense   = 95,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 75,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14207,14 +14204,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TEKKAMON] =
+	[SPECIES_TEKKAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 130,
+        .baseDefense   = 100,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 80,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14287,14 +14284,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_HANGYOMON] =
+	[SPECIES_HANGYOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 90,
+        .baseDefense   = 100,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 90,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14367,14 +14364,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_HOLYANGEMON] =
+	[SPECIES_HOLYANGEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 93,
+        .baseAttack    = 90,
+        .baseDefense   = 101,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 81,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14447,14 +14444,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_INSEKIMON] =
+	[SPECIES_INSEKIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 85,
+        .baseAttack    = 135,
+        .baseDefense   = 130,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 80,
+        .baseSpeed     = 25,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14527,14 +14524,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_JYAGAMON] =
+	[SPECIES_JYAGAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 105,
+        .baseAttack    = 95,
+        .baseDefense   = 75,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 75,
+        .baseSpeed     = 74,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14607,14 +14604,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_JYUREIMON] =
+	[SPECIES_JYUREIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 95,
+        .baseAttack    = 109,
+        .baseDefense   = 105,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 85,
+        .baseSpeed     = 56,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14687,14 +14684,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KNIGHTMON] =
+	[SPECIES_KNIGHTMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 110,
+        .baseDefense   = 180,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 60,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14767,14 +14764,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_LADYDEVIMON] =
+	[SPECIES_LADYDEVIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 55,
+        .baseDefense   = 90,
+        .baseSpAttack  = 145,
+        .baseSpDefense = 80,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14847,14 +14844,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_LILIMON] =
+	[SPECIES_LILIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 85,
+        .baseAttack    = 75,
+        .baseDefense   = 77,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 105,
+        .baseSpeed     = 94,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -14927,14 +14924,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MAMEMON] =
+	[SPECIES_MAMEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 100,
+        .baseDefense   = 60,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 60,
+        .baseSpeed     = 120,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15007,14 +15004,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MAMMON] =
+	[SPECIES_MAMMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 122,
+        .baseAttack    = 130,
+        .baseDefense   = 69,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 69,
+        .baseSpeed     = 30,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15087,14 +15084,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MARINEDEVIMON] =
+	[SPECIES_MARINEDEVIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 69,
+        .baseDefense   = 72,
+        .baseSpAttack  = 114,
+        .baseSpDefense = 100,
+        .baseSpeed     = 104,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15167,14 +15164,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MASTERTYRANNOMON] =
+	[SPECIES_MASTERTYRANNOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 115,
+        .baseAttack    = 140,
+        .baseDefense   = 130,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 55,
+        .baseSpeed     = 40,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15247,14 +15244,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MEGADRAMON] =
+	[SPECIES_MEGADRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 88,
+        .baseAttack    = 112,
+        .baseDefense   = 80,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 95,
+        .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15327,14 +15324,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MEGASEADRAMON] =
+	[SPECIES_MEGASEADRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 120,
+        .baseAttack    = 112,
+        .baseDefense   = 65,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 75,
+        .baseSpeed     = 78,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15407,14 +15404,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_WARUSEADRAMON] =
+	[SPECIES_WARUSEADRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 120,
+        .baseAttack    = 92,
+        .baseDefense   = 65,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 75,
+        .baseSpeed     = 78,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15487,14 +15484,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_METALGREYMON] =
+	[SPECIES_METALGREYMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 78,
+        .baseAttack    = 84,
+        .baseDefense   = 78,
+        .baseSpAttack  = 109,
+        .baseSpDefense = 85,
+        .baseSpeed     = 100,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15567,14 +15564,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_METALGREYMONV] =
+	[SPECIES_METALGREYMONV] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 73,
+        .baseAttack    = 84,
+        .baseDefense   = 78,
+        .baseSpAttack  = 119,
+        .baseSpDefense = 85,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15647,14 +15644,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_METALMAMEMON] =
+	[SPECIES_METALMAMEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 50,
+        .baseAttack    = 50,
+        .baseDefense   = 150,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 150,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15727,14 +15724,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_METALTYRANNOMON] =
+	[SPECIES_METALTYRANNOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 70,
+        .baseDefense   = 115,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 90,
+        .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15807,14 +15804,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MONZAEMON] =
+	[SPECIES_MONZAEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 100,
+        .baseAttack    = 100,
+        .baseDefense   = 125,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 50,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15887,14 +15884,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MUMMYMON] =
+	[SPECIES_MUMMYMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 85,
+        .baseDefense   = 75,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 100,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -15967,14 +15964,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_NANOMON] =
+	[SPECIES_NANOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 109,
+        .baseAttack    = 64,
+        .baseDefense   = 91,
+        .baseSpAttack  = 103,
+        .baseSpDefense = 83,
+        .baseSpeed     = 45,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16047,14 +16044,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_OKUWAMON] =
+	[SPECIES_OKUWAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 86,
+        .baseAttack    = 76,
+        .baseDefense   = 86,
+        .baseSpAttack  = 116,
+        .baseSpDefense = 56,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16127,14 +16124,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_OROCHIMON] =
+	[SPECIES_OROCHIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 70,
+        .baseDefense   = 65,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 120,
+        .baseSpeed     = 100,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16207,14 +16204,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PANJYAMON] =
+	[SPECIES_PANJYAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 45,
+        .baseAttack    = 100,
+        .baseDefense   = 135,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 135,
+        .baseSpeed     = 45,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16287,14 +16284,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PARROTMON] =
+	[SPECIES_PARROTMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 95,
+        .baseDefense   = 125,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 75,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16367,14 +16364,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PHANTOMON] =
+	[SPECIES_PHANTOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 65,
+        .baseDefense   = 65,
+        .baseSpAttack  = 134,
+        .baseSpDefense = 114,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16447,14 +16444,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PICCOLOMON] =
+	[SPECIES_PICCOLOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 65,
+        .baseAttack    = 60,
+        .baseDefense   = 75,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 121,
+        .baseSpeed     = 64,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16527,14 +16524,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PUMPMON] =
+	[SPECIES_PUMPMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 74,
+        .baseAttack    = 108,
+        .baseDefense   = 133,
+        .baseSpAttack  = 83,
+        .baseSpDefense = 65,
+        .baseSpeed     = 32,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16607,14 +16604,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SKULLGREYMON] =
+	[SPECIES_SKULLGREYMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 110,
+        .baseAttack    = 130,
+        .baseDefense   = 80,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 60,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16687,14 +16684,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SKULLSATAMON] =
+	[SPECIES_SKULLSATAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 125,
+        .baseDefense   = 80,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 100,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16767,14 +16764,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TONOSAMAGEKOMON] =
+	[SPECIES_TONOSAMAGEKOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 105,
+        .baseAttack    = 30,
+        .baseDefense   = 105,
+        .baseSpAttack  = 140,
+        .baseSpDefense = 105,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16847,14 +16844,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_TRICERAMON] =
+	[SPECIES_TRICERAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 76,
+        .baseAttack    = 147,
+        .baseDefense   = 90,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 70,
+        .baseSpeed     = 97,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -16927,14 +16924,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_VADERMON] =
+	[SPECIES_VADERMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 60,
+        .baseAttack    = 45,
+        .baseDefense   = 110,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 120,
+        .baseSpeed     = 90,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17007,14 +17004,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_VAMDEMON] =
+	[SPECIES_VAMDEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 85,
+        .baseDefense   = 65,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 65,
+        .baseSpeed     = 120,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17087,14 +17084,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_VERMILIMON] =
+	[SPECIES_VERMILIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 110,
+        .baseAttack    = 80,
+        .baseDefense   = 120,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 90,
+        .baseSpeed     = 30,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17167,14 +17164,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_WARUMONZAEMON] =
+	[SPECIES_WARUMONZAEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 100,
+        .baseAttack    = 110,
+        .baseDefense   = 50,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 125,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17247,14 +17244,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_WEREGARURUMON] =
+	[SPECIES_WEREGARURUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 76,
+        .baseAttack    = 104,
+        .baseDefense   = 71,
+        .baseSpAttack  = 104,
+        .baseSpDefense = 71,
+        .baseSpeed     = 108,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17327,14 +17324,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_WHAMON_PERFECT] =
+	[SPECIES_WHAMON_PERFECT] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 110,
+        .baseAttack    = 80,
+        .baseDefense   = 90,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 90,
+        .baseSpeed     = 65,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17407,14 +17404,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ZUDOMON] =
+	[SPECIES_ZUDOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 84,
+        .baseAttack    = 86,
+        .baseDefense   = 88,
+        .baseSpAttack  = 111,
+        .baseSpDefense = 101,
+        .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17487,14 +17484,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_APOCALYMON] =
+	[SPECIES_APOCALYMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 160,
+        .baseDefense   = 60,
+        .baseSpAttack  = 170,
+        .baseSpDefense = 130,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17567,14 +17564,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BABAMON] =
+	[SPECIES_BABAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 103,
+        .baseAttack    = 60,
+        .baseDefense   = 126,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 126,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17647,14 +17644,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_BOLTMON] =
+	[SPECIES_BOLTMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 185,
+        .baseDefense   = 115,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 105,
+        .baseSpeed     = 75,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17727,14 +17724,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DEMON] =
+	[SPECIES_DEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 97,
+        .baseAttack    = 107,
+        .baseDefense   = 101,
+        .baseSpAttack  = 127,
+        .baseSpDefense = 89,
+        .baseSpeed     = 79,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17807,14 +17804,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DEVITAMAMON] =
+	[SPECIES_DEVITAMAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 95,
+        .baseAttack    = 75,
+        .baseDefense   = 180,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 80,
+        .baseSpeed     = 30,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17887,14 +17884,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_DIABLOMON] =
+	[SPECIES_DIABLOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 92,
+        .baseAttack    = 120,
+        .baseDefense   = 115,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 115,
+        .baseSpeed     = 138,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -17967,14 +17964,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GODDRAMON] =
+	[SPECIES_GODDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 85,
+        .baseDefense   = 100,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 125,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18047,14 +18044,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_GRIFFOMON] =
+	[SPECIES_GRIFFOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 79,
+        .baseAttack    = 100,
+        .baseDefense   = 80,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 90,
+        .baseSpeed     = 121,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18127,14 +18124,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_HERAKLEKABUTERIMON] =
+	[SPECIES_HERAKLEKABUTERIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 135,
+        .baseAttack    = 143,
+        .baseDefense   = 143,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 65,
+        .baseSpeed     = 34,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18207,14 +18204,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_HOLYDRAMON] =
+	[SPECIES_HOLYDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 85,
+        .baseDefense   = 85,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 100,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18287,14 +18284,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_HOUOUMON] =
+	[SPECIES_HOUOUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 100,
+        .baseDefense   = 90,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 85,
+        .baseSpeed     = 90,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18367,14 +18364,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_JIJIMON] =
+	[SPECIES_JIJIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 160,
+        .baseAttack    = 110,
+        .baseDefense   = 65,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 110,
+        .baseSpeed     = 30,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18447,14 +18444,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_KINGETEMON] =
+	[SPECIES_KINGETEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 75,
+        .baseDefense   = 150,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 150,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18527,14 +18524,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MARINEANGEMON] =
+	[SPECIES_MARINEANGEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 75,
+        .baseDefense   = 130,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 130,
+        .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18607,14 +18604,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_METALETEMON] =
+	[SPECIES_METALETEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 70,
+        .baseAttack    = 150,
+        .baseDefense   = 140,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 100,
+        .baseSpeed     = 75,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18687,14 +18684,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_METALGARURUMON] =
+	[SPECIES_METALGARURUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 100,
+        .baseAttack    = 150,
+        .baseDefense   = 110,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 110,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18767,14 +18764,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_METALSEADRAMON] =
+	[SPECIES_METALSEADRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 50,
+        .baseAttack    = 100,
+        .baseDefense   = 150,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 150,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18847,14 +18844,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MILLENNIUMMON] =
+	[SPECIES_MILLENNIUMMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 130,
+        .baseDefense   = 100,
+        .baseSpAttack  = 160,
+        .baseSpDefense = 120,
+        .baseSpeed     = 110,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -18927,14 +18924,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_MUGENDRAMON] =
+	[SPECIES_MUGENDRAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 105,
+        .baseDefense   = 130,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 65,
+        .baseSpeed     = 85,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19007,14 +19004,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_OMEGAMON] =
+	[SPECIES_OMEGAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 50,
+        .baseAttack    = 160,
+        .baseDefense   = 110,
+        .baseSpAttack  = 160,
+        .baseSpDefense = 110,
+        .baseSpeed     = 110,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19087,14 +19084,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PIEMON] =
+	[SPECIES_PIEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 90,
+        .baseDefense   = 80,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 110,
+        .baseSpeed     = 110,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19167,14 +19164,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PINOCCHIMON] =
+	[SPECIES_PINOCCHIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 105,
+        .baseAttack    = 120,
+        .baseDefense   = 105,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 95,
+        .baseSpeed     = 105,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19247,14 +19244,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PLESIOMON] =
+	[SPECIES_PLESIOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 100,
+        .baseDefense   = 70,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 150,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19327,14 +19324,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_PUKUMON] =
+	[SPECIES_PUKUMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 80,
+        .baseAttack    = 110,
+        .baseDefense   = 60,
+        .baseSpAttack  = 150,
+        .baseSpDefense = 130,
+        .baseSpeed     = 70,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19407,14 +19404,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ROSEMON] =
+	[SPECIES_ROSEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 130,
+        .baseDefense   = 88,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 108,
+        .baseSpeed     = 104,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19487,14 +19484,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SABERLEOMON] =
+	[SPECIES_SABERLEOMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 75,
+        .baseAttack    = 90,
+        .baseDefense   = 90,
+        .baseSpAttack  = 140,
+        .baseSpDefense = 90,
+        .baseSpeed     = 115,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19567,14 +19564,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_SKULLMAMMON] =
+	[SPECIES_SKULLMAMMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 120,
+        .baseDefense   = 80,
+        .baseSpAttack  = 68,
+        .baseSpDefense = 108,
+        .baseSpeed     = 124,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19647,14 +19644,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_VENOMVAMDEMON] =
+	[SPECIES_VENOMVAMDEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 150,
+        .baseAttack    = 160,
+        .baseDefense   = 100,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 65,
+        .baseSpeed     = 100,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19727,14 +19724,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_WARGREYMON] =
+	[SPECIES_WARGREYMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 78,
+        .baseAttack    = 104,
+        .baseDefense   = 78,
+        .baseSpAttack  = 159,
+        .baseSpDefense = 115,
+        .baseSpeed     = 100,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19807,14 +19804,14 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     },
 
 
-    [SPECIES_ZANBAMON] =
+	[SPECIES_ZANBAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseHP        = 90,
+        .baseAttack    = 72,
+        .baseDefense   = 100,
+        .baseSpAttack  = 122,
+        .baseSpDefense = 108,
+        .baseSpeed     = 98,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -19885,12 +19882,6 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .teachableLearnset = sZanbamonTeachableLearnset,
         //.formSpeciesIdTable = sZanbamonFormSpeciesIdTable,
     },
-
-
-
-
-
-
 
 
 

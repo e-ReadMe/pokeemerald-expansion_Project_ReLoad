@@ -7361,7 +7361,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
     if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_DATA)
     && IS_BATTLER_OF_TYPE(battlerDef, TYPE_VIRUS))
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
-            
+
+// unknown type is strong against all types            
     if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNKNOWN)
     && IS_BATTLER_OF_TYPE(battlerDef, TYPE_VACCINE))
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
