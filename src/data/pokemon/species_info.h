@@ -1,4 +1,5 @@
 #include "constants/abilities.h"
+#include "constants/teaching_types.h"
 #include "species_info/shared_dex_text.h"
 #include "species_info/shared_front_pic_anims.h"
 
@@ -63,7 +64,6 @@
     .subspriteTables = (_size == SIZE_32x32 ? sOamTables_32x32 : sOamTables_64x64),                                                     \
     .anims = _anims,                                                                                                                    \
     .images = picTable,                                                                                                                 \
-    .affineAnims = gDummySpriteAffineAnimTable,                                                                                         \
 }
 
 #define OVERWORLD(objEventPic, _size, shadow, _tracks, _anims, ...)                                 \
@@ -100,7 +100,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_NONE] =
     {
         .speciesName = _("??????????"),
-        .cryId = CRY_NONE,
+        .cryId = CRY_PORYGON,
         .natDexNum = NATIONAL_DEX_NONE,
         .categoryName = _("Unknown"),
         .height = 0,
@@ -143,7 +143,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .subspriteTables = sOamTables_32x32,
             .anims = sAnimTable_Following,
             .images = sPicTable_Substitute,
-            .affineAnims = gDummySpriteAffineAnimTable,
         },
     #endif
         .levelUpLearnset = sNoneLevelUpLearnset,
@@ -174,6 +173,83 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonPalette_Egg,
         .iconSprite = gMonIcon_Egg,
         .iconPalIndex = 1,
-    },  
-	
-} ;
+    },
+
+    /* You may add any custom species below this point based on the following structure: */
+
+    /*
+    [SPECIES_NONE] =
+    {
+        .baseHP        = 1,
+        .baseAttack    = 1,
+        .baseDefense   = 1,
+        .baseSpeed     = 1,
+        .baseSpAttack  = 1,
+        .baseSpDefense = 1,
+        .types = MON_TYPES(TYPE_MYSTERY),
+        .catchRate = 255,
+        .expYield = 67,
+        .evYield_HP = 1,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_NONE, ABILITY_CURSED_BODY, ABILITY_DAMP },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("??????????"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_NONE,
+        .categoryName = _("Unknown"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "This is a newly discovered Pokémon.\n"
+            "It is currently under investigation.\n"
+            "No detailed information is available\n"
+            "at this time."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_CircledQuestionMark,
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
+        .backPicFemale = gMonBackPic_CircledQuestionMarkF,
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
+        .paletteFemale = gMonPalette_CircledQuestionMarkF,
+        .shinyPaletteFemale = gMonShinyPalette_CircledQuestionMarkF,
+        .iconSpriteFemale = gMonIcon_QuestionMarkF,
+        .iconPalIndexFemale = 1,
+#endif //P_GENDER_DIFFERENCES
+        .backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 0,
+        FOOTPRINT(QuestionMark)
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 100, SPECIES_NONE},
+                                {EVO_ITEM, ITEM_MOOMOO_MILK, SPECIES_NONE}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+    */
+};
+
+const struct EggData gEggDatas[EGG_ID_COUNT] =
+{
+#include "egg_data.h"
+};
