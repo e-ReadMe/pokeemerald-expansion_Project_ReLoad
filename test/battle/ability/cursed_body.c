@@ -92,7 +92,7 @@ SINGLE_BATTLE_TEST("Cursed Body disables the move that called another move inste
     PASSES_RANDOMLY(3, 10, RNG_CURSED_BODY);
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_SLEEP_TALK) == EFFECT_SLEEP_TALK);
-        ASSUME(GetMoveType(MOVE_SHADOW_BALL) == TYPE_GHOST);
+        ASSUME(GetMoveType(MOVE_SHADOW_BALL) == TYPE_UNDEAD);
         ASSUME(IsMoveSleepTalkBanned(MOVE_FLY));
         ASSUME(IsMoveSleepTalkBanned(MOVE_DIG));
         PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_SLEEP); Moves(MOVE_SLEEP_TALK, MOVE_SHADOW_BALL, MOVE_FLY, MOVE_DIG); }

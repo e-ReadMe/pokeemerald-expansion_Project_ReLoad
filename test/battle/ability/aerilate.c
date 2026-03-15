@@ -176,7 +176,7 @@ SINGLE_BATTLE_TEST("Aerilate doesn't override Electrify")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ELECTRIFY) == EFFECT_ELECTRIFY);
-        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_EARTH);
         PLAYER(SPECIES_PINSIR) { Item(ITEM_PINSIRITE); Speed(1); }
         OPPONENT(SPECIES_SANDSHREW) { Moves(MOVE_ELECTRIFY); Speed(10); }
     } WHEN {
@@ -192,7 +192,7 @@ SINGLE_BATTLE_TEST("Aerilate overrides Ion Deluge")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ION_DELUGE) == EFFECT_ION_DELUGE);
-        ASSUME(GetSpeciesType(SPECIES_MACHOP, 0) == TYPE_FIGHTING || GetSpeciesType(SPECIES_MACHOP, 1) == TYPE_FIGHTING);
+        ASSUME(GetSpeciesType(SPECIES_MACHOP, 0) == TYPE_COMBAT || GetSpeciesType(SPECIES_MACHOP, 1) == TYPE_COMBAT);
         PLAYER(SPECIES_PINSIR) { Item(ITEM_PINSIRITE); Speed(1); }
         OPPONENT(SPECIES_MACHOP) { Moves(MOVE_ION_DELUGE); Speed(10); }
     } WHEN {
@@ -208,8 +208,8 @@ SINGLE_BATTLE_TEST("Aerilate changes Tera Blast's type when not Terastallized")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
-        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_MACHOP, 0) == TYPE_FIGHTING || GetSpeciesType(SPECIES_MACHOP, 1) == TYPE_FIGHTING);
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_MACHOP, 0) == TYPE_COMBAT || GetSpeciesType(SPECIES_MACHOP, 1) == TYPE_COMBAT);
         ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_SALAMENCE) { Item(ITEM_SALAMENCITE); Moves(MOVE_SKILL_SWAP); }
@@ -227,10 +227,10 @@ SINGLE_BATTLE_TEST("Aerilate doesn't change Tera Blast's type when Terastallized
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
-        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_GHOST);
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_UNDEAD);
         ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NORMAL); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_SALAMENCE) { Item(ITEM_SALAMENCITE); Moves(MOVE_SKILL_SWAP); }
         OPPONENT(SPECIES_MISDREAVUS);
     } WHEN {
@@ -246,9 +246,9 @@ SINGLE_BATTLE_TEST("Aerilate doesn't affect Terrain Pulse's type")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERRAIN_PULSE) == EFFECT_TERRAIN_PULSE);
-        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NORMAL);
+        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NEUTRAL);
         ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
-        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_EARTH);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_SALAMENCE) { Item(ITEM_SALAMENCITE); Moves(MOVE_SKILL_SWAP); }
         OPPONENT(SPECIES_SANDSHREW);
@@ -265,8 +265,8 @@ SINGLE_BATTLE_TEST("Aerilate doesn't affect Terrain Pulse's type")
 SINGLE_BATTLE_TEST("Aerilate doesn't affect damaging Z-Move types")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_MACHOP, 0) == TYPE_FIGHTING || GetSpeciesType(SPECIES_MACHOP, 1) == TYPE_FIGHTING);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_MACHOP, 0) == TYPE_COMBAT || GetSpeciesType(SPECIES_MACHOP, 1) == TYPE_COMBAT);
         ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_NORMALIUM_Z); }
         OPPONENT(SPECIES_SALAMENCE) { Item(ITEM_SALAMENCITE); Moves(MOVE_SKILL_SWAP); }

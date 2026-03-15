@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("(TERA) Adaptability does not increase non-Tera base STAB bey
     PARAMETRIZE { move = MOVE_GUST; }
     PARAMETRIZE { move = MOVE_WATER_GUN; }
     GIVEN {
-        PLAYER(SPECIES_CRAWDAUNT) { Ability(ABILITY_ADAPTABILITY); TeraType(TYPE_NORMAL); }
+        PLAYER(SPECIES_CRAWDAUNT) { Ability(ABILITY_ADAPTABILITY); TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move, gimmick: GIMMICK_TERA); }

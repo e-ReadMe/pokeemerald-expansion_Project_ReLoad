@@ -2149,7 +2149,7 @@ const struct ContestPokemon gContestOpponents[] =
         .moves =
         {
             MOVE_TAIL_WHIP,
-            MOVE_BUBBLES,
+            MOVE_BUBBLE,
             MOVE_FOCUS_PUNCH,
             MOVE_WITHDRAW
         },

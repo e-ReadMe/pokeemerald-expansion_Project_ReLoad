@@ -1052,65 +1052,65 @@ enum __attribute__((packed)) Item
     ITEM_GLIMMORANITE = 873,
 
 //digimon items
-    ITEM_SMALL_RECOVERY_DISK	    (ITEM_GLIMMORANITE + 1)	//heals	30hp	but	lowers	happiness								
-    ITEM_MEDIUM_RECOVERY_DISK	    (ITEM_SMALL_RECOVERY_DISK + 1 )	//heals	50hp	but	lowers	happiness								
-    ITEM_LARGE_RECOVERY_DISK	    (ITEM_MEDIUM_RECOVERY_DISK + 1 )	//heals	100hp	but	lowers	happiness								
-    ITEM_SUPER_RECOVERY_DISK	    (ITEM_LARGE_RECOVERY_DISK + 1 )	//heals	200hp	but	lowers	happiness								
-    ITEM_SMALL_MP_DISK	            (ITEM_SUPER_RECOVERY_DISK + 1 )	//heals	10mp	for	one	move	but	lowers	happiness					
-    ITEM_MEDIUM_MP_DISK	            (ITEM_SMALL_MP_DISK + 1 )	//fully	heals	mp	for	one	move	but	lowers	happiness				
-    ITEM_LARGE_MP_DISK	            (ITEM_MEDIUM_MP_DISK + 1 )	//fully	heals	mp	for	all	moves	but	lowers	happiness				
-    ITEM_OMNIPOTENT_DISK	        (ITEM_LARGE_MP_DISK + 1 )	//fully	heals	mp	and	hp	but	lowers	happiness					
-    ITEM_VARIOUS_DISK	            (ITEM_OMNIPOTENT_DISK + 1 )	//	heals	all	status	conditions	but	lowers	happiness					
-    ITEM_DOUBLE_FLOPPY_DISK	        (ITEM_VARIOUS_DISK + 1 )	//¯\_(ツ)_/¯												
-    ITEM_RESTORE_DISK	            (ITEM_DOUBLE_FLOPPY_DISK + 1 )	//¯\_(ツ)_/¯												
-    ITEM_SUPER_RESTORE_DISK	        (ITEM_RESTORE_DISK + 1 )	//¯\_(ツ)_/¯												
-    ITEM_BRAIN_CHIP	                (ITEM_SUPER_RESTORE_DISK + 1 )	//	increases	SpA	Evs	by	10	(a	spa	up	vitamin)			
-    ITEM_DEFENSE_CHIP	            (ITEM_BRAIN_CHIP + 1 )	//	increases	Def	Evs	by	10	(a	def	up	vitamin)			
-    ITEM_HP_CHIP	                (ITEM_DEFENSE_CHIP + 1 )	//	increases	HP	Evs	by	10	(a	hp	up	vitamin)			
-    ITEM_MP_CHIP	                (ITEM_HP_CHIP + 1 )	//	increases	PP	of	a	single	move	by	2	(a	pp	up	vitamin)
-    ITEM_OFFENSE_CHIP	            (ITEM_MP_CHIP + 1 )	//	increases	Atk	Evs	by	10	(an	atk	up	vitamin)			
-    ITEM_QUICK_CHIP	                (ITEM_OFFENSE_CHIP + 1 )	//	increases	Spe	Evs	by	10	(a	spe	up	vitamin)			
-    ITEM_DISINFECTANT	            (ITEM_QUICK_CHIP + 1 )	//	cures	poison	but	lowers	happiness							
-    ITEM_COFFEE	                    (ITEM_DISINFECTANT + 1 )	//	cures	sleep	but	lowers	happiness							
-    ITEM_VITAMINS	                (ITEM_COFFEE + 1 )	//	cures	paralysis	but	lowers	happiness							
-    ITEM_SEDATIVE	                (ITEM_VITAMINS + 1 )	//	cures	confusion	but	lowers	happiness							
-    ITEM_BANDAGE	                (ITEM_SEDATIVE + 1 )	//	heals	10hp										
-    ITEM_BIG_BANDAGE	            (ITEM_BANDAGE + 1 )	//	heals	80hp										
-    ITEM_CLEAN_DRESSING	            (ITEM_BIG_BANDAGE + 1 )	//heals	10	Mp										
-    ITEM_ALL_PURPOSE_OINTMENT	    (ITEM_CLEAN_DRESSING + 1 )	//	heals	all	status	conditions								
-    ITEM_MEAT	                    (ITEM_ALL_PURPOSE_OINTMENT + 1 )	//	heals	10hp	in	battle								
-    ITEM_CHOICE_MEAT	            (ITEM_MEAT + 1 )	//	heals	25%	of	your	HP	in	battle					
-    ITEM_SNAKEHEAD	                (ITEM_CHOICE_MEAT + 1 )	//	heals	status	conditions	in	battle							
-    ITEM_MUSHROOM	                (ITEM_SNAKEHEAD + 1 )	//	5	HP	EVs									
-    ITEM_CARROT	                    (ITEM_MUSHROOM + 1 )	//	5	ATK	EVs									
-    ITEM_APPLE	                    (ITEM_CARROT + 1 )	//	5	DEF	EVs									
-    ITEM_MELON	                    (ITEM_APPLE + 1 )	//	5	SPA	EVs									
-    ITEM_PINEAPPLE	                (ITEM_MELON + 1 )	//	5	SPD	EVs									
-    ITEM_BANANA	                    (ITEM_PINEAPPLE + 1 )	//	5	SPE	EVs									
-    ITEM_ODD_MUSHROOM	            (ITEM_BANANA + 1 )	//	-10	HP	EVs									
-    ITEM_CURVY_CARROT	            (ITEM_ODD_MUSHROOM + 1 )	//	-10	ATK	EVs									
-    ITEM_SOFT_APPLE	                (ITEM_CURVY_CARROT + 1 )	//	-10	DEF	EVs									
-    ITEM_JEALOUSY_MELON	            (ITEM_SOFT_APPLE + 1 )	//	-10	SPA	EVs									
-    ITEM_BARBED_PINEAPPLE	        (ITEM_JEALOUSY_MELON + 1 )	//	-10	SPD	EVs									
-    ITEM_CONNIVING_BANANA	        (ITEM_BARBED_PINEAPPLE + 1 )	//	-10	SPE	EVs									
-    ITEM_CELEBRATION_MUSHROOM	    (ITEM_CONNIVING_BANANA + 1 )	//	5	HP	IVs									
-    ITEM_CLOBBER_CARROT	            (ITEM_CELEBRATION_MUSHROOM + 1 )	//	5	ATK	IVs									
-    ITEM_CRISPY_APPLE	            (ITEM_CLOBBER_CARROT + 1 )	//	5	DEF	IVs									
-    ITEM_SINCERITY_MELON	        (ITEM_CRISPY_APPLE + 1 )	//	5	SPA	IVs									
-    ITEM_SUPERPOWER_PINEAPPLE	    (ITEM_SINCERITY_MELON + 1 )	//	5	SPD	IVs									
-    ITEM_EARNEST_BANANA	            (ITEM_SUPERPOWER_PINEAPPLE + 1 )	//	5	SPE	IVs									
-    ITEM_CD_PLAYER	                (ITEM_EARNEST_BANANA + 1 )	//	+5HP	EVs										
-    ITEM_DUMBELL	                (ITEM_CD_PLAYER + 1 )	//	+5ATK	EVs										
-    ITEM_JUMP_ROPE	                (ITEM_DUMBELL + 1 )	//	+5DEF	EVs										
-    ITEM_PUNCHING_BAG	            (ITEM_JUMP_ROPE + 1 )	//	+5SPA	EVs										
-    ITEM_TREADMILL	                (ITEM_PUNCHING_BAG + 1 )	//	+5SPD	EVs										
-    ITEM_YOGA_MAT	                (ITEM_TREADMILL + 1 )	//	+5SPE	EVs										
-    ITEM_BOOMBOX	                (ITEM_YOGA_MAT + 1 )	//	+10HP	EVs										
-    ITEM_HEAVY_DUMBELL	            (ITEM_BOOMBOX + 1 )	//	+10ATK	EVs										
-    ITEM_WEIGHTED_JUMP_ROPE	        (ITEM_HEAVY_DUMBELL + 1 )	//	+10DEF	EVs										
-    ITEM_SPEED_BAG	                (ITEM_WEIGHTED_JUMP_ROPE + 1 )	//	+10SPA	EVs										
-    ITEM_ADVANCED_TREADMILL	        (ITEM_SPEED_BAG + 1 )	//	+10SPD	EVs										
-    ITEM_PRO_YOGA_MAT	            (ITEM_ADVANCED_TREADMILL + 1 )	//	+10SPE	EVs										
+    ITEM_SMALL_RECOVERY_DISK = (ITEM_GLIMMORANITE + 1),	//heals	30hp	but	lowers	happiness								
+    ITEM_MEDIUM_RECOVERY_DISK = (ITEM_SMALL_RECOVERY_DISK + 1),	//heals	50hp	but	lowers	happiness								
+    ITEM_LARGE_RECOVERY_DISK = (ITEM_MEDIUM_RECOVERY_DISK + 1),	//heals	100hp	but	lowers	happiness								
+    ITEM_SUPER_RECOVERY_DISK = (ITEM_LARGE_RECOVERY_DISK + 1),	//heals	200hp	but	lowers	happiness								
+    ITEM_SMALL_MP_DISK = (ITEM_SUPER_RECOVERY_DISK + 1),	//heals	10mp	for	one	move	but	lowers	happiness					
+    ITEM_MEDIUM_MP_DISK = (ITEM_SMALL_MP_DISK + 1),	//fully	heals	mp	for	one	move	but	lowers	happiness				
+    ITEM_LARGE_MP_DISK = (ITEM_MEDIUM_MP_DISK + 1),	//fully	heals	mp	for	all	moves	but	lowers	happiness				
+    ITEM_OMNIPOTENT_DISK = (ITEM_LARGE_MP_DISK + 1),	//fully	heals	mp	and	hp	but	lowers	happiness					
+    ITEM_VARIOUS_DISK = (ITEM_OMNIPOTENT_DISK + 1),	//	heals	all	status	conditions	but	lowers	happiness					
+    ITEM_DOUBLE_FLOPPY_DISK = (ITEM_VARIOUS_DISK + 1),	//¯\_(ツ)_/¯												
+    ITEM_RESTORE_DISK = (ITEM_DOUBLE_FLOPPY_DISK + 1),	//¯\_(ツ)_/¯												
+    ITEM_SUPER_RESTORE_DISK = (ITEM_RESTORE_DISK + 1),	//¯\_(ツ)_/¯												
+    ITEM_BRAIN_CHIP = (ITEM_SUPER_RESTORE_DISK + 1),	//	increases	SpA	Evs	by	10	(a	spa	up	vitamin)			
+    ITEM_DEFENSE_CHIP = (ITEM_BRAIN_CHIP + 1),	//	increases	Def	Evs	by	10	(a	def	up	vitamin)			
+    ITEM_HP_CHIP = (ITEM_DEFENSE_CHIP + 1),	//	increases	HP	Evs	by	10	(a	hp	up	vitamin)			
+    ITEM_MP_CHIP = (ITEM_HP_CHIP + 1),	//	increases	PP	of	a	single	move	by	2	(a	pp	up	vitamin)
+    ITEM_OFFENSE_CHIP = (ITEM_MP_CHIP + 1),	//	increases	Atk	Evs	by	10	(an	atk	up	vitamin)			
+    ITEM_QUICK_CHIP = (ITEM_OFFENSE_CHIP + 1),	//	increases	Spe	Evs	by	10	(a	spe	up	vitamin)			
+    ITEM_DISINFECTANT = (ITEM_QUICK_CHIP + 1),	//	cures	poison	but	lowers	happiness							
+    ITEM_COFFEE = (ITEM_DISINFECTANT + 1),	//	cures	sleep	but	lowers	happiness							
+    ITEM_VITAMINS = (ITEM_COFFEE + 1),	//	cures	paralysis	but	lowers	happiness							
+    ITEM_SEDATIVE = (ITEM_VITAMINS + 1),	//	cures	confusion	but	lowers	happiness							
+    ITEM_BANDAGE = (ITEM_SEDATIVE + 1),	//	heals	10hp										
+    ITEM_BIG_BANDAGE = (ITEM_BANDAGE + 1),	//	heals	80hp										
+    ITEM_CLEAN_DRESSING = (ITEM_BIG_BANDAGE + 1),	//heals	10	Mp										
+    ITEM_ALL_PURPOSE_OINTMENT = (ITEM_CLEAN_DRESSING + 1),	//	heals	all	status	conditions								
+    ITEM_MEAT = (ITEM_ALL_PURPOSE_OINTMENT + 1 ),	//	heals	10hp	in	battle								
+    ITEM_CHOICE_MEAT = (ITEM_MEAT + 1 ),	//	heals	25%	of	your	HP	in	battle					
+    ITEM_SNAKEHEAD = (ITEM_CHOICE_MEAT + 1 ),	//	heals	status	conditions	in	battle							
+    ITEM_MUSHROOM = (ITEM_SNAKEHEAD + 1 ),	//	5	HP	EVs									
+    ITEM_CARROT = (ITEM_MUSHROOM + 1 ),	//	5	ATK	EVs									
+    ITEM_APPLE = (ITEM_CARROT + 1 ),	//	5	DEF	EVs									
+    ITEM_MELON = (ITEM_APPLE + 1 ),	//	5	SPA	EVs									
+    ITEM_PINEAPPLE = (ITEM_MELON + 1 ),	//	5	SPD	EVs									
+    ITEM_BANANA = (ITEM_PINEAPPLE + 1 ),	//	5	SPE	EVs									
+    ITEM_ODD_MUSHROOM = (ITEM_BANANA + 1 ),	//	-10	HP	EVs									
+    ITEM_CURVY_CARROT = (ITEM_ODD_MUSHROOM + 1 ),	//	-10	ATK	EVs									
+    ITEM_SOFT_APPLE = (ITEM_CURVY_CARROT + 1 ),	//	-10	DEF	EVs									
+    ITEM_JEALOUSY_MELON = (ITEM_SOFT_APPLE + 1 ),	//	-10	SPA	EVs									
+    ITEM_BARBED_PINEAPPLE = (ITEM_JEALOUSY_MELON + 1 ),	//	-10	SPD	EVs									
+    ITEM_CONNIVING_BANANA = (ITEM_BARBED_PINEAPPLE + 1 ),	//	-10	SPE	EVs									
+    ITEM_CELEBRATION_MUSHROOM = (ITEM_CONNIVING_BANANA + 1 ),	//	5	HP	IVs									
+    ITEM_CLOBBER_CARROT = (ITEM_CELEBRATION_MUSHROOM + 1 ),	//	5	ATK	IVs									
+    ITEM_CRISPY_APPLE = (ITEM_CLOBBER_CARROT + 1 ),	//	5	DEF	IVs									
+    ITEM_SINCERITY_MELON = (ITEM_CRISPY_APPLE + 1 ),	//	5	SPA	IVs									
+    ITEM_SUPERPOWER_PINEAPPLE = (ITEM_SINCERITY_MELON + 1 ),	//	5	SPD	IVs									
+    ITEM_EARNEST_BANANA = (ITEM_SUPERPOWER_PINEAPPLE + 1 ),	//	5	SPE	IVs									
+    ITEM_CD_PLAYER = (ITEM_EARNEST_BANANA + 1 ),	//	+5HP	EVs										
+    ITEM_DUMBELL = (ITEM_CD_PLAYER + 1 ),	//	+5ATK	EVs										
+    ITEM_JUMP_ROPE = (ITEM_DUMBELL + 1 ),	//	+5DEF	EVs										
+    ITEM_PUNCHING_BAG = (ITEM_JUMP_ROPE + 1 ),	//	+5SPA	EVs										
+    ITEM_TREADMILL = (ITEM_PUNCHING_BAG + 1 ),	//	+5SPD	EVs										
+    ITEM_YOGA_MAT = (ITEM_TREADMILL + 1 ),	//	+5SPE	EVs										
+    ITEM_BOOMBOX = (ITEM_YOGA_MAT + 1 ),	//	+10HP	EVs										
+    ITEM_HEAVY_DUMBELL = (ITEM_BOOMBOX + 1 ),	//	+10ATK	EVs										
+    ITEM_WEIGHTED_JUMP_ROPE = (ITEM_HEAVY_DUMBELL + 1 ),	//	+10DEF	EVs										
+    ITEM_SPEED_BAG = (ITEM_WEIGHTED_JUMP_ROPE + 1 ),	//	+10SPA	EVs										
+    ITEM_ADVANCED_TREADMILL = (ITEM_SPEED_BAG + 1 ),	//	+10SPD	EVs										
+    ITEM_PRO_YOGA_MAT = (ITEM_ADVANCED_TREADMILL + 1 ),	//	+10SPE	EVs										
 
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,

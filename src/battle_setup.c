@@ -327,6 +327,22 @@ static bool8 CheckSilphScopeInPokemonTower(u16 mapGroup, u16 mapNum)
         return FALSE;
 }
 
+//checks to see if the opponent wild mon is a stage 1. if so, stars a safari battle
+
+static bool8 IsStage1Species(u16 species)
+{
+    static const u16 sStage1Species[] =
+    {
+#include "data/pokemon/stage1list.h"
+        SPECIES_NONE
+    };
+
+    for (int i = 0; sStage1Species[i] != SPECIES_NONE; ++i)
+        if (sStage1Species[i] == species)
+            return TRUE;
+    return FALSE;
+}
+
 void BattleSetup_StartWildBattle(void)
 {
     u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);

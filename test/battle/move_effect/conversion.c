@@ -12,7 +12,7 @@ TO_DO_BATTLE_TEST("Conversion can change the user's types to Conversion's type")
 SINGLE_BATTLE_TEST("(TERA) Conversion fails if used by a Terastallized Pokemon")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_PSYCHIC); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_LIGHT); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_CONVERSION, gimmick: GIMMICK_TERA); }

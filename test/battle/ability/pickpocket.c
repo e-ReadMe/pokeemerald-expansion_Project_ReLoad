@@ -10,7 +10,7 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Pickpocket checks contact/effect per target for spread moves")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_CLEFAIRY, 0) == TYPE_FAIRY);
+        ASSUME(GetSpeciesType(SPECIES_CLEFAIRY, 0) == TYPE_PUPPET);
         ASSUME(GetMoveType(MOVE_BREAKING_SWIPE) == TYPE_DRAGON);
         ASSUME(GetMoveTarget(MOVE_BREAKING_SWIPE) == TARGET_BOTH);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_MAGOST_BERRY); }

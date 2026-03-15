@@ -168,8 +168,8 @@ SINGLE_BATTLE_TEST("Galvanize changes Tera Blast's type when not Terastallized")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
-        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_ROOKIDEE, 0) == TYPE_FLYING || GetSpeciesType(SPECIES_ROOKIDEE, 1) == TYPE_FLYING);
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_ROOKIDEE, 0) == TYPE_WIND || GetSpeciesType(SPECIES_ROOKIDEE, 1) == TYPE_WIND);
         PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); }
         OPPONENT(SPECIES_ROOKIDEE);
     } WHEN {
@@ -184,9 +184,9 @@ SINGLE_BATTLE_TEST("Galvanize doesn't change Tera Blast's type when Terastallize
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
-        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
-        PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); TeraType(TYPE_NORMAL); }
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_EARTH);
+        PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_SANDSHREW);
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: GIMMICK_TERA); }
@@ -200,8 +200,8 @@ SINGLE_BATTLE_TEST("Galvanize doesn't affect Terrain Pulse's type")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERRAIN_PULSE) == EFFECT_TERRAIN_PULSE);
-        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_EARTH);
         PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); }
         OPPONENT(SPECIES_SANDSHREW);
     } WHEN {
@@ -217,7 +217,7 @@ SINGLE_BATTLE_TEST("Galvanize doesn't affect Terrain Pulse's type")
 SINGLE_BATTLE_TEST("Galvanize doesn't affect damaging Z-Move types")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
         ASSUME(GetSpeciesType(SPECIES_GYARADOS, 0) == TYPE_WATER || GetSpeciesType(SPECIES_GYARADOS, 1) == TYPE_WATER);
         PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); Item(ITEM_NORMALIUM_Z); }
         OPPONENT(SPECIES_GYARADOS);

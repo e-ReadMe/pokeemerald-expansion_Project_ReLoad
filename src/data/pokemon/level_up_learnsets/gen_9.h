@@ -22319,19 +22319,19 @@ static const struct LevelUpMove sPecharuntLevelUpLearnset[] = {
 #endif //P_FAMILY_PECHARUNT
 //sPECIES_BOTAMON
 static const struct LevelUpMove sBotamonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_BUBBLES),
+    LEVEL_UP_MOVE(1, MOVE_BUBBLE),
     LEVEL_UP_MOVE(3, MOVE_GROWL),
     LEVEL_UP_END
 };
 //SPECIES_BUBBMON
 static const struct LevelUpMove sBubbmonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_BUBBLES),
+    LEVEL_UP_MOVE(1, MOVE_BUBBLE),
     LEVEL_UP_MOVE(3, MOVE_TEARFUL_LOOK),
     LEVEL_UP_END
 };
 //SPECIES_CHOROMON
 static const struct LevelUpMove sChoromonLevelUpLearnset[] = {
-	LEVEL_UP_MOVE(1, MOVE_BUBBLES),
+	LEVEL_UP_MOVE(1, MOVE_BUBBLE),
 	LEVEL_UP_MOVE(3, MOVE_GROWL),
 	LEVEL_UP_END
 };
@@ -22344,49 +22344,49 @@ static const struct LevelUpMove sMokumonLevelUpLearnset[] = {
 
 //SPECIES_NYOKIMON
 static const struct LevelUpMove sNyokimonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_BUBBLES),
+    LEVEL_UP_MOVE(1, MOVE_BUBBLE),
     LEVEL_UP_MOVE(5, MOVE_COTTON_SPORE),
     LEVEL_UP_END
 };
 
 //SPECIES_PITCHMON
 static const struct LevelUpMove sPitchmonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_BUBBLES),
+    LEVEL_UP_MOVE(1, MOVE_BUBBLE),
     LEVEL_UP_MOVE(5, MOVE_TEARFUL_LOOK),
     LEVEL_UP_END
 };
 
 //SPECIES_POYOMON
 static const struct LevelUpMove sPoyomonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_BUBBLES),
+    LEVEL_UP_MOVE(1, MOVE_BUBBLE),
     LEVEL_UP_MOVE(5, MOVE_LEER),
     LEVEL_UP_END
 };
 
 //SPECIES_PUNIMON
 static const struct LevelUpMove sPunimonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_BUBBLES),
+    LEVEL_UP_MOVE(1, MOVE_BUBBLE),
     LEVEL_UP_MOVE(5, MOVE_LEER),
     LEVEL_UP_END
 };
 
 //SPECIES_YUKIMIBOTAMON
 static const struct LevelUpMove sYukimibotamonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_BUBBLES),
+    LEVEL_UP_MOVE(1, MOVE_BUBBLE),
     LEVEL_UP_MOVE(5, MOVE_ICY_WIND),
     LEVEL_UP_END
 };
 
 //SPECIES_YURAMON
 static const struct LevelUpMove sYuramonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_BUBBLES),
+    LEVEL_UP_MOVE(1, MOVE_BUBBLE),
     LEVEL_UP_MOVE(5, MOVE_COTTON_SPORE),
     LEVEL_UP_END
 };
 
 //SPECIES_ZURUMON
 static const struct LevelUpMove sZurumonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(1, MOVE_BUBBLES),
+    LEVEL_UP_MOVE(1, MOVE_BUBBLE),
     LEVEL_UP_MOVE(5, MOVE_FAKE_TEARS),
     LEVEL_UP_END
 };

@@ -9,7 +9,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Miracle Eye removes Dark-type immunity to Psychic-type moves")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_PSYCHIC) == TYPE_PSYCHIC);
+        ASSUME(GetMoveType(MOVE_PSYCHIC) == TYPE_LIGHT);
         ASSUME(GetSpeciesType(SPECIES_UMBREON, 0) == TYPE_DARK);
         PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_MIRACLE_EYE, MOVE_PSYCHIC); }
         OPPONENT(SPECIES_UMBREON) { Moves(MOVE_SPLASH); }

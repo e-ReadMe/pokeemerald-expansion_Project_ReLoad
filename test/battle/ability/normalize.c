@@ -278,8 +278,8 @@ SINGLE_BATTLE_TEST("Normalize doesn't change Tera Blast's type when Terastallize
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
-        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_GHOST);
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_UNDEAD);
         PLAYER(SPECIES_SKITTY) { Ability(ABILITY_NORMALIZE); TeraType(TYPE_DARK); }
         OPPONENT(SPECIES_MISDREAVUS);
     } WHEN {
@@ -296,7 +296,7 @@ SINGLE_BATTLE_TEST("Normalize makes Flying Press do Normal/Flying damage")
     PARAMETRIZE { ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { ability = ABILITY_NORMALIZE; }
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_GOLEM, 0) == TYPE_ROCK || GetSpeciesType(SPECIES_GOLEM, 1) == TYPE_ROCK);
+        ASSUME(GetSpeciesType(SPECIES_GOLEM, 0) == TYPE_BEAST || GetSpeciesType(SPECIES_GOLEM, 1) == TYPE_BEAST);
         PLAYER(SPECIES_SKITTY) { Ability(ability); Moves(MOVE_FLYING_PRESS); }
         OPPONENT(SPECIES_GOLEM);
     } WHEN {
@@ -314,8 +314,8 @@ SINGLE_BATTLE_TEST("Normalize doesn't affect Terrain Pulse's type")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERRAIN_PULSE) == EFFECT_TERRAIN_PULSE);
-        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_EARTH);
         PLAYER(SPECIES_SKITTY) { Ability(ABILITY_NORMALIZE); }
         OPPONENT(SPECIES_SANDSHREW);
     } WHEN {
@@ -332,7 +332,7 @@ SINGLE_BATTLE_TEST("Normalize doesn't affect damaging Z-Move types")
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_WATER_GUN) == TYPE_WATER);
-        ASSUME(GetSpeciesType(SPECIES_GOLEM, 0) == TYPE_ROCK || GetSpeciesType(SPECIES_GOLEM, 1) == TYPE_ROCK);
+        ASSUME(GetSpeciesType(SPECIES_GOLEM, 0) == TYPE_BEAST || GetSpeciesType(SPECIES_GOLEM, 1) == TYPE_BEAST);
         PLAYER(SPECIES_SKITTY) { Ability(ABILITY_NORMALIZE); Item(ITEM_WATERIUM_Z); Moves(MOVE_WATER_GUN); }
         OPPONENT(SPECIES_GOLEM);
     } WHEN {

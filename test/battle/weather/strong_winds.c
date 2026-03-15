@@ -16,9 +16,9 @@ DOUBLE_BATTLE_TEST("Strong winds remove Flying-type weaknesses of all battlers")
     GIVEN {
         ASSUME(GetMoveType(MOVE_THUNDER_SHOCK) == TYPE_ELECTRIC);
         ASSUME(GetMoveType(MOVE_ICE_BEAM) == TYPE_ICE);
-        ASSUME(GetMoveType(MOVE_ROCK_THROW) == TYPE_ROCK);
-        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 0) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_FLYING);
+        ASSUME(GetMoveType(MOVE_ROCK_THROW) == TYPE_BEAST);
+        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_WIND);
         PLAYER(SPECIES_RAYQUAZA) { Ability(ABILITY_DELTA_STREAM); }
         PLAYER(SPECIES_PIDGEY);
         OPPONENT(SPECIES_PIDGEY);
@@ -65,11 +65,11 @@ DOUBLE_BATTLE_TEST("Strong winds remove Flying-type weaknesses of all battlers -
 
     GIVEN {
         FLAG_SET(B_FLAG_INVERSE_BATTLE);
-        ASSUME(GetMoveType(MOVE_BUG_BITE) == TYPE_BUG);
-        ASSUME(GetMoveType(MOVE_KARATE_CHOP) == TYPE_FIGHTING);
-        ASSUME(GetMoveType(MOVE_VINE_WHIP) == TYPE_GRASS);
-        ASSUME(GetSpeciesType(SPECIES_TORNADUS, 0) == TYPE_FLYING);
-        ASSUME(GetSpeciesType(SPECIES_TORNADUS, 1) == TYPE_FLYING);
+        ASSUME(GetMoveType(MOVE_BUG_BITE) == TYPE_INSECT);
+        ASSUME(GetMoveType(MOVE_KARATE_CHOP) == TYPE_COMBAT);
+        ASSUME(GetMoveType(MOVE_VINE_WHIP) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_TORNADUS, 0) == TYPE_WIND);
+        ASSUME(GetSpeciesType(SPECIES_TORNADUS, 1) == TYPE_WIND);
         if (strongWinds)
             PLAYER(SPECIES_RAYQUAZA) { Ability(ABILITY_DELTA_STREAM); }
         else
@@ -100,8 +100,8 @@ SINGLE_BATTLE_TEST("Strong winds prevent Weakness Policy from activating on Flyi
     GIVEN {
         ASSUME(GetItemHoldEffect(ITEM_WEAKNESS_POLICY) == HOLD_EFFECT_WEAKNESS_POLICY);
         ASSUME(GetMoveType(MOVE_THUNDER_SHOCK) == TYPE_ELECTRIC);
-        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 0) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_FLYING);
+        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_WIND);
         PLAYER(SPECIES_RAYQUAZA) { Ability(ABILITY_DELTA_STREAM); Moves(MOVE_THUNDER_SHOCK); }
         OPPONENT(SPECIES_PIDGEY) { Item(ITEM_WEAKNESS_POLICY); }
     } WHEN {
@@ -119,8 +119,8 @@ SINGLE_BATTLE_TEST("Anticipation still triggers with Strong Winds active")
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_THUNDER_SHOCK) == TYPE_ELECTRIC);
-        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 0) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_FLYING);
+        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_WIND);
         PLAYER(SPECIES_RAYQUAZA) { Ability(ABILITY_DELTA_STREAM); Moves(MOVE_THUNDER_SHOCK, MOVE_CELEBRATE); }
         OPPONENT(SPECIES_PIDGEY) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_CELEBRATE); }
     } WHEN {
@@ -136,9 +136,9 @@ SINGLE_BATTLE_TEST("Anticipation still triggers with Strong Winds active in Inve
 {
     GIVEN {
         FLAG_SET(B_FLAG_INVERSE_BATTLE);
-        ASSUME(GetMoveType(MOVE_VINE_WHIP) == TYPE_GRASS);
-        ASSUME(GetSpeciesType(SPECIES_TORNADUS, 0) == TYPE_FLYING);
-        ASSUME(GetSpeciesType(SPECIES_TORNADUS, 1) == TYPE_FLYING);
+        ASSUME(GetMoveType(MOVE_VINE_WHIP) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_TORNADUS, 0) == TYPE_WIND);
+        ASSUME(GetSpeciesType(SPECIES_TORNADUS, 1) == TYPE_WIND);
         PLAYER(SPECIES_RAYQUAZA) { Ability(ABILITY_DELTA_STREAM); Moves(MOVE_VINE_WHIP, MOVE_CELEBRATE); }
         OPPONENT(SPECIES_TORNADUS) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_CELEBRATE); }
     } WHEN {
@@ -154,8 +154,8 @@ SINGLE_BATTLE_TEST("Strong winds don't affect Stealth Rock's damage")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_STEALTH_ROCK) == EFFECT_STEALTH_ROCK);
-        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 0) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_FLYING);
+        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 0) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_WIND);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_PIDGEY);
         OPPONENT(SPECIES_RAYQUAZA) { Ability(ABILITY_DELTA_STREAM); }

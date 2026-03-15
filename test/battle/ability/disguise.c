@@ -123,7 +123,7 @@ SINGLE_BATTLE_TEST("Disguised Mimikyu takes damage from secondary damage without
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_SANDSTORM) == EFFECT_WEATHER);
         ASSUME(GetMoveWeatherType(MOVE_SANDSTORM) == BATTLE_WEATHER_SANDSTORM);
-        ASSUME(GetSpeciesType(SPECIES_GEODUDE, 0) == TYPE_ROCK || GetSpeciesType(SPECIES_GEODUDE, 1) == TYPE_ROCK);
+        ASSUME(GetSpeciesType(SPECIES_GEODUDE, 0) == TYPE_BEAST || GetSpeciesType(SPECIES_GEODUDE, 1) == TYPE_BEAST);
         PLAYER(SPECIES_GEODUDE);
         PLAYER(SPECIES_MIMIKYU_DISGUISED) { Ability(ABILITY_DISGUISE); }
         OPPONENT(SPECIES_GEODUDE);

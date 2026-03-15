@@ -112,7 +112,7 @@ WILD_BATTLE_TEST("Arena Trap prevents switching but Smoke Ball allows fleeing")
 SINGLE_BATTLE_TEST("Arena Trap prevents switch outs from Ghost-type Pokémon (Gen3-5)")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_SHUPPET, 0) == TYPE_GHOST);
+        ASSUME(GetSpeciesType(SPECIES_SHUPPET, 0) == TYPE_UNDEAD);
         WITH_CONFIG(B_GHOSTS_ESCAPE, GEN_5);
         PLAYER(SPECIES_SHUPPET);
         OPPONENT(SPECIES_DIGLETT) { Ability(ABILITY_ARENA_TRAP); }
@@ -128,7 +128,7 @@ SINGLE_BATTLE_TEST("Arena Trap prevents switch outs from Ghost-type Pokémon (Ge
 SINGLE_BATTLE_TEST("Arena Trap doesn't prevent switch outs from Ghost-type Pokémon (Gen6+)")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_SHUPPET, 0) == TYPE_GHOST);
+        ASSUME(GetSpeciesType(SPECIES_SHUPPET, 0) == TYPE_UNDEAD);
         WITH_CONFIG(B_GHOSTS_ESCAPE, GEN_6);
         PLAYER(SPECIES_SHUPPET);
         OPPONENT(SPECIES_DIGLETT) { Ability(ABILITY_ARENA_TRAP); }

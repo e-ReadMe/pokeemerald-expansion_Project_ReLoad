@@ -107,8 +107,8 @@ SINGLE_BATTLE_TEST("Magic Coat reflection doesn't activate Protean/Libero")
 
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_SPIKES) == EFFECT_SPIKES);
-        ASSUME(GetMoveType(MOVE_MAGIC_COAT) == TYPE_PSYCHIC);
-        ASSUME(GetMoveType(MOVE_SPIKES) != TYPE_PSYCHIC);
+        ASSUME(GetMoveType(MOVE_MAGIC_COAT) == TYPE_LIGHT);
+        ASSUME(GetMoveType(MOVE_SPIKES) != TYPE_LIGHT);
         PLAYER(species) { Ability(ability); }
         OPPONENT(SPECIES_ZIGZAGOON);
     } WHEN {
@@ -123,7 +123,7 @@ SINGLE_BATTLE_TEST("Magic Coat reflection doesn't activate Protean/Libero")
         NOT ABILITY_POPUP(player, ability);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIKES, player);
     } THEN {
-        EXPECT_EQ(player->types[0], TYPE_PSYCHIC);
-        EXPECT_EQ(player->types[1], TYPE_PSYCHIC);
+        EXPECT_EQ(player->types[0], TYPE_LIGHT);
+        EXPECT_EQ(player->types[1], TYPE_LIGHT);
     }
 }

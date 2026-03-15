@@ -652,7 +652,7 @@ static const u16 sTentacoolEggMoveLearnset[] = {
     MOVE_KNOCK_OFF,
     MOVE_ACUPRESSURE,
     MOVE_MUDDY_WATER,
-    MOVE_BUBBLES,
+    MOVE_BUBBLE,
     MOVE_AQUA_RING,
     MOVE_TICKLE,
     MOVE_UNAVAILABLE,

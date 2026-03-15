@@ -288,7 +288,7 @@ SINGLE_BATTLE_TEST("Corrosion can poison Poison/Steel types if the Pokémon uses
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_FLING) == EFFECT_FLING);
         ASSUME(gItemsInfo[ITEM_POISON_BARB].holdEffect == HOLD_EFFECT_TYPE_POWER);
-        ASSUME(gItemsInfo[ITEM_POISON_BARB].secondaryId == TYPE_POISON);
+        ASSUME(gItemsInfo[ITEM_POISON_BARB].secondaryId == TYPE_FILTH);
         PLAYER(SPECIES_SALANDIT) { Ability(ABILITY_CORROSION); Item(ITEM_POISON_BARB); }
         OPPONENT(species);
     } WHEN {

@@ -43,6 +43,21 @@ const uq4_12_t gTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPES]
     [TYPE_UNKNOWN]      = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
     [TYPE_VARIABLE]      = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
 };
+//type changes
+//normal -> neutral
+//fighting -> combat
+//flying -> wind
+//poison -> filth
+//ground -> earth
+//rock -> beast
+//bug -> insect
+//ghost -> undead
+//steel -> metal
+//psychic -> light
+//fairy -> puppet
+//grass -> plant
+
+
 //IF YOUR ADDING NEW TYPES MAKE SURE TO UPDATE THE TYPE LIST IN GRAPHICS_FILE_RULES.MK
 #undef ______
 #undef X

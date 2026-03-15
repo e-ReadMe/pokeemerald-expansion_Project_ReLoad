@@ -83,7 +83,6 @@
 #include "ui_stat_editor.h"
 #include "ui_digivice.h"
 
-extern struct Evolution gEvolutionTable[];
 
 extern struct Evolution gEvolutionTable[];
 

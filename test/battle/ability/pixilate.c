@@ -142,7 +142,7 @@ SINGLE_BATTLE_TEST("Pixilate doesn't override Electrify")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ELECTRIFY) == EFFECT_ELECTRIFY);
-        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_EARTH);
         PLAYER(SPECIES_SYLVEON) { Ability(ABILITY_PIXILATE); }
         OPPONENT(SPECIES_SANDSHREW);
     } WHEN {
@@ -174,8 +174,8 @@ SINGLE_BATTLE_TEST("Pixilate changes Tera Blast's type when not Terastallized")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
-        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_MACHOP, 0) == TYPE_FIGHTING || GetSpeciesType(SPECIES_MACHOP, 1) == TYPE_FIGHTING);
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_MACHOP, 0) == TYPE_COMBAT || GetSpeciesType(SPECIES_MACHOP, 1) == TYPE_COMBAT);
         PLAYER(SPECIES_SYLVEON) { Ability(ABILITY_PIXILATE); }
         OPPONENT(SPECIES_MACHOP);
     } WHEN {
@@ -190,9 +190,9 @@ SINGLE_BATTLE_TEST("Pixilate doesn't change Tera Blast's type when Terastallized
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
-        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_GHOST);
-        PLAYER(SPECIES_SYLVEON) { Ability(ABILITY_PIXILATE); TeraType(TYPE_NORMAL); }
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_UNDEAD);
+        PLAYER(SPECIES_SYLVEON) { Ability(ABILITY_PIXILATE); TeraType(TYPE_NEUTRAL); }
         OPPONENT(SPECIES_MISDREAVUS);
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: GIMMICK_TERA); }
@@ -206,8 +206,8 @@ SINGLE_BATTLE_TEST("Pixilate doesn't affect Terrain Pulse's type")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERRAIN_PULSE) == EFFECT_TERRAIN_PULSE);
-        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NORMAL);
-        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NEUTRAL);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_EARTH);
         PLAYER(SPECIES_SYLVEON) { Ability(ABILITY_PIXILATE); }
         OPPONENT(SPECIES_SANDSHREW);
     } WHEN {
@@ -223,7 +223,7 @@ SINGLE_BATTLE_TEST("Pixilate doesn't affect Terrain Pulse's type")
 SINGLE_BATTLE_TEST("Pixilate doesn't affect damaging Z-Move types")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
         ASSUME(GetSpeciesType(SPECIES_BAGON, 0) == TYPE_DRAGON || GetSpeciesType(SPECIES_BAGON, 1) == TYPE_DRAGON);
         PLAYER(SPECIES_SYLVEON) { Ability(ABILITY_PIXILATE); Item(ITEM_NORMALIUM_Z); }
         OPPONENT(SPECIES_BAGON);

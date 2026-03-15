@@ -9,9 +9,9 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Foresight removes Ghost's type immunity to Normal and Fighting types")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
-        ASSUME(GetMoveType(MOVE_LOW_KICK) == TYPE_FIGHTING);
-        ASSUME(GetSpeciesType(SPECIES_GENGAR, 0) == TYPE_GHOST);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
+        ASSUME(GetMoveType(MOVE_LOW_KICK) == TYPE_COMBAT);
+        ASSUME(GetSpeciesType(SPECIES_GENGAR, 0) == TYPE_UNDEAD);
         PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_FORESIGHT, MOVE_SCRATCH, MOVE_LOW_KICK); }
         OPPONENT(SPECIES_GENGAR) { Moves(MOVE_SPLASH); }
     } WHEN {

@@ -140,19 +140,19 @@ SINGLE_BATTLE_TEST("Hidden Power always triggers Counter instead of Mirror Coat 
 {
     u8 hp, atk, def, spa, spd, spe;
 
-    PARAMETRIZE { hp = 31; atk = 30; def = 30; spa = 30; spd = 30; spe = 30; } // TYPE_FIGHTING
-    PARAMETRIZE { hp = 31; atk = 30; def = 31; spa = 30; spd = 30; spe = 30; } // TYPE_FLYING
-    PARAMETRIZE { hp = 31; atk = 30; def = 30; spa = 30; spd = 30; spe = 31; } // TYPE_POISON
-    PARAMETRIZE { hp = 31; atk = 30; def = 31; spa = 30; spd = 30; spe = 31; } // TYPE_GROUND
-    PARAMETRIZE { hp = 31; atk = 30; def = 30; spa = 31; spd = 30; spe = 30; } // TYPE_ROCK
-    PARAMETRIZE { hp = 31; atk = 30; def = 31; spa = 31; spd = 30; spe = 30; } // TYPE_BUG
-    PARAMETRIZE { hp = 31; atk = 31; def = 30; spa = 31; spd = 30; spe = 31; } // TYPE_GHOST
-    PARAMETRIZE { hp = 31; atk = 31; def = 31; spa = 31; spd = 30; spe = 31; } // TYPE_STEEL
+    PARAMETRIZE { hp = 31; atk = 30; def = 30; spa = 30; spd = 30; spe = 30; } // TYPE_COMBAT
+    PARAMETRIZE { hp = 31; atk = 30; def = 31; spa = 30; spd = 30; spe = 30; } // TYPE_WIND
+    PARAMETRIZE { hp = 31; atk = 30; def = 30; spa = 30; spd = 30; spe = 31; } // TYPE_FILTH
+    PARAMETRIZE { hp = 31; atk = 30; def = 31; spa = 30; spd = 30; spe = 31; } // TYPE_EARTH
+    PARAMETRIZE { hp = 31; atk = 30; def = 30; spa = 31; spd = 30; spe = 30; } // TYPE_BEAST
+    PARAMETRIZE { hp = 31; atk = 30; def = 31; spa = 31; spd = 30; spe = 30; } // TYPE_INSECT
+    PARAMETRIZE { hp = 31; atk = 31; def = 30; spa = 31; spd = 30; spe = 31; } // TYPE_UNDEAD
+    PARAMETRIZE { hp = 31; atk = 31; def = 31; spa = 31; spd = 30; spe = 31; } // TYPE_METAL
     PARAMETRIZE { hp = 31; atk = 31; def = 30; spa = 30; spd = 31; spe = 30; } // TYPE_FIRE
     PARAMETRIZE { hp = 31; atk = 31; def = 31; spa = 30; spd = 31; spe = 30; } // TYPE_WATER
-    PARAMETRIZE { hp = 31; atk = 31; def = 30; spa = 30; spd = 31; spe = 31; } // TYPE_GRASS
+    PARAMETRIZE { hp = 31; atk = 31; def = 30; spa = 30; spd = 31; spe = 31; } // TYPE_PLANT
     PARAMETRIZE { hp = 31; atk = 31; def = 31; spa = 30; spd = 31; spe = 31; } // TYPE_ELECTRIC
-    PARAMETRIZE { hp = 31; atk = 31; def = 30; spa = 31; spd = 31; spe = 30; } // TYPE_PSYCHIC
+    PARAMETRIZE { hp = 31; atk = 31; def = 30; spa = 31; spd = 31; spe = 30; } // TYPE_LIGHT
     PARAMETRIZE { hp = 31; atk = 31; def = 31; spa = 31; spd = 31; spe = 30; } // TYPE_ICE
     PARAMETRIZE { hp = 31; atk = 31; def = 30; spa = 31; spd = 31; spe = 31; } // TYPE_DRAGON
     PARAMETRIZE { hp = 31; atk = 31; def = 31; spa = 31; spd = 31; spe = 31; } // TYPE_DARK

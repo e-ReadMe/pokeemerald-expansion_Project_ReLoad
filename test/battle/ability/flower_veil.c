@@ -67,7 +67,7 @@ DOUBLE_BATTLE_TEST("Flower Veil's stat reduction protection considers Contrary")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_SWAGGER) == EFFECT_SWAGGER);
-        ASSUME(GetSpeciesType(SPECIES_SNIVY, 0) == TYPE_GRASS || GetSpeciesType(SPECIES_SNIVY, 1) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_SNIVY, 0) == TYPE_PLANT || GetSpeciesType(SPECIES_SNIVY, 1) == TYPE_PLANT);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_COMFEY) { Ability(ABILITY_FLOWER_VEIL); }

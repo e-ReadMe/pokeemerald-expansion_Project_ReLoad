@@ -16191,7 +16191,7 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_Antidote,
         .flingPower = 30,
-        .iconPic = gItemIcon_Antidote,
+        .iconPic = gItemIcon_Potion,
         .iconPalette = gItemIconPalette_Antidote,
     },
 
