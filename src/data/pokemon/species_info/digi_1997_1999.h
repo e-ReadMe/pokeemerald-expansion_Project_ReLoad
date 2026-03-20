@@ -735,6 +735,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .levelUpLearnset = sPitchmonLevelUpLearnset,
         //.teachableLearnset = sPitchmonTeachableLearnset,
         .digivolutions = sPitchmonDigivolveTable,
+        .eggId = EGG_ID_PITCHMON,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 

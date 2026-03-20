@@ -27608,6 +27608,11 @@ const u16 gMonPalette_Pitchmon[] = INCBIN_U16("graphics/pokemon/digimon/1997_199
 const u32 gMonBackPic_Pitchmon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/pitchmon/back.4bpp.smol");
 const u16 gMonShinyPalette_Pitchmon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/pitchmon/shiny.gbapal");
 const u8 gMonIcon_Pitchmon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/pitchmon/icon.4bpp");
+const u8 gMonEggIcon_Pitchmon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/pitchmon/icon_egg.4bpp");
+const u32 gMonEggGfx_Pitchmon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/pitchmon/egg_sprite.4bpp.smol");
+const u16 gMonEggPal_Pitchmon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/pitchmon/egg_sprite.gbapal");
+const u32 gMonHatchGfx_Pitchmon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/pitchmon/hatch.4bpp.smol");
+const u16 gMonHatchPal_Pitchmon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/pitchmon/hatch.gbapal");
 #if P_FOOTPRINTS
 const u8 gMonFootprint_Pitchmon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/pitchmon/footprint.1bpp");
 #endif //P_FOOTPRINTS

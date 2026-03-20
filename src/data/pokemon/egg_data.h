@@ -28,3 +28,13 @@
     .eggHatchPal = gMonHatchPal_Bubbmon,
     .eggIconPalIndex = 1,
 },
+
+[EGG_ID_PITCHMON] =
+{
+    .eggIcon = gMonEggIcon_Pitchmon,
+    .eggSprite = gMonEggGfx_Pitchmon,
+    .eggPalette = gMonEggPal_Pitchmon,
+    .eggHatchGfx = gMonHatchGfx_Pitchmon,
+    .eggHatchPal = gMonHatchPal_Pitchmon,
+    .eggIconPalIndex = 3,
+},
