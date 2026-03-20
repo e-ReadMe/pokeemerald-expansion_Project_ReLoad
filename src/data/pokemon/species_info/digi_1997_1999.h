@@ -413,6 +413,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .levelUpLearnset = sBubbmonLevelUpLearnset,
         //.teachableLearnset = sBubbmonTeachableLearnset,
         .digivolutions = sBubbmonDigivolveTable,
+        .eggId = EGG_ID_BUBBMON,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 

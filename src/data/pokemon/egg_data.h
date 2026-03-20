@@ -18,3 +18,13 @@
     .eggHatchPal = gMonHatchPal_Botamon,
     .eggIconPalIndex = 1,
 },
+
+[EGG_ID_BUBBMON] =
+{
+    .eggIcon = gMonEggIcon_Bubbmon,
+    .eggSprite = gMonEggGfx_Bubbmon,
+    .eggPalette = gMonEggPal_Bubbmon,
+    .eggHatchGfx = gMonHatchGfx_Bubbmon,
+    .eggHatchPal = gMonHatchPal_Bubbmon,
+    .eggIconPalIndex = 1,
+},

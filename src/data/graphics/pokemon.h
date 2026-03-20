@@ -27534,6 +27534,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Bubbmon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/bubbmon/back.4bpp.smol");
     const u16 gMonShinyPalette_Bubbmon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/bubbmon/shiny.gbapal");
     const u8 gMonIcon_Bubbmon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/bubbmon/icon.4bpp");
+    const u8 gMonEggIcon_Bubbmon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/bubbmon/icon_egg.4bpp");
+    const u32 gMonEggGfx_Bubbmon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/bubbmon/egg_sprite.4bpp.smol");
+    const u16 gMonEggPal_Bubbmon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/bubbmon/egg_sprite.gbapal");
+    const u32 gMonHatchGfx_Bubbmon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/bubbmon/hatch.4bpp.smol");
+    const u16 gMonHatchPal_Bubbmon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/bubbmon/hatch.gbapal");
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Bubbmon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/bubbmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
