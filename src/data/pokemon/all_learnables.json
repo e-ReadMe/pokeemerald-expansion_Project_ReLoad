@@ -60,6 +60,981 @@
     "MOVE_WATER_GUN",
     "MOVE_WILD_CHARGE",
     "MOVE_ZING_ZAP"
+  ],  "BOTAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BUBBMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "CHOROMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MOKUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "NYOKIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PITCHMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "POYOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PUNIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "YUKIMIBOTAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "YURAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ZURUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "CAPRIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KODOKUGUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KOROMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MOCHIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "NYAROMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PAGUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PETITMERAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PUKAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PYOKOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TANEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TOKOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TSUNOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "AGUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "YUKIAGUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BAKUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BETAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MODOKIBETAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "CANDMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "CHUUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ELECMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "FLORAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GABUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PSYCHEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GANIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GAZIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GIZAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GOBLIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SHAMAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SNOWGOBLIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GOMAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GOTSUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "HAGURUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KOKUWAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KUNEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DOKUNEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MUSHMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "OTAMAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PALMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ALRAUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PATAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TSUKAIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PENMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MUCHOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PICODEVIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PIYOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PLOTMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SHAKOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TENTOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TOYAGUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "CLEARAGUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BUN": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "AIRDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ANGEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PIDMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BAKEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SOULMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BIRDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SABERDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "CENTARUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "CLOCKMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "COELAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "CYCLOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DARKTYRANNOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DELTAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DEVIDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DEVIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ICEDEVIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DOKUGUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DRIMOGEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "NISEDRIMOGEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "EBIDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "EVILMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "FLARELIZARMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DARKLIZARMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "FLYMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GARURUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GURURUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GEKOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GESOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GOKIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GOLEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GORIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GREYMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GUARDROMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "HANUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ICEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "IGAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "IKKAKUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KABUTERIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KARATUKINUMEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KIWIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KOKATORIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "AKATORIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KUWAGAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "LEOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MECHANORIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MERAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MINOTAURMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MOJYAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "JUNGLEMOJYAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MONOCHROMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MUSYAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "NANIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "NUMEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GEREMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "OCTOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "OGREMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "FUGAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "HYOGAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "RAREMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "REVOLMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "RUKAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SEADRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SHELLMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MORISHELLMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SNIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "STARMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SUKAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PLATINUMSUKAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TAILMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TANKMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "THUNDERBALLMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TOGEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TORTOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TUSKMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TYRANNOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "UNIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SHIMAUNIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "VEEDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "VEGIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ZASSOUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "REDVEGIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "WHAMON_ADULT": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "WIZARMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "WOODMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "YANMAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SANDYANMAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "YUKIDARUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TSUCHIDARUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "AEROVEEDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ANDROMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ANGEWOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ANOMALOCARIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ASURAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ATLURKABUTERIMONR": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ATLURKABUTERIMONB": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BIGMAMEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BLOSSOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BLUEMERAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BRACHIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "CHIMAIRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "CYBERDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DAGOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DEATHMERAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DELUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DIGITAMAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ETEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "EXTYRANNOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GARUDAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GERBEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GIGADRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GIROMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TEKKAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "HANGYOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "HOLYANGEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "INSEKIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "JYAGAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "JYUREIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KNIGHTMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "LADYDEVIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "LILIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MAMEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MAMMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MARINEDEVIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MASTERTYRANNOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MEGADRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MEGASEADRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "WARUSEADRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "METALGREYMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "METALGREYMONV": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "METALMAMEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "METALTYRANNOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MONZAEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MUMMYMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "NANOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "OKUWAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "OROCHIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PANJYAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PARROTMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PHANTOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PICCOLOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PUMPMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SKULLGREYMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SKULLSATAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TONOSAMAGEKOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "TRICERAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "VADERMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "VAMDEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "VERMILIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "WARUMONZAEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "WEREGARURUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "WHAMON_PERFECT": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ZUDOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "APOCALYMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BABAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "BOLTMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DEVITAMAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "DIABLOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GODDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "GRIFFOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "HERAKLEKABUTERIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "HOLYDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "HOUOUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "JIJIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "KINGETEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MARINEANGEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "METALETEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "METALGARURUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "METALSEADRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MILLENNIUMMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "MUGENDRAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "OMEGAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PIEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PINOCCHIMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PLESIOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "PUKUMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ROSEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SABERLEOMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "SKULLMAMMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "VENOMVAMDEMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "WARGREYMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
+  ],
+  "ZANBAMON": [
+    "MOVE_DEFENSE_CURL",
+    "MOVE_ENDURE"
   ],
   "ARCHALUDON": [
     "MOVE_AURA_SPHERE",
