@@ -6,6 +6,7 @@ enum EggIds
 {
     EGG_ID_NONE,
     EGG_ID_MANAPHY,
+    EGG_ID_BOTAMON,
     EGG_ID_COUNT
 };
 

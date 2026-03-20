@@ -329,9 +329,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Botamon
         ) 
         .levelUpLearnset = sBotamonLevelUpLearnset,
-        .teachableLearnset = sBotamonTeachableLearnset,
+        //.teachableLearnset = sBotamonTeachableLearnset,
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
         .digivolutions = sBotamonDigivolveTable,
+        .eggId = EGG_ID_BOTAMON,
     },
 
 
@@ -410,7 +411,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Bubbmon
         ) 
         .levelUpLearnset = sBubbmonLevelUpLearnset,
-        .teachableLearnset = sBubbmonTeachableLearnset,
+        //.teachableLearnset = sBubbmonTeachableLearnset,
         .digivolutions = sBubbmonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -490,7 +491,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Choromon
         ) 
         .levelUpLearnset = sChoromonLevelUpLearnset,
-        .teachableLearnset = sChoromonTeachableLearnset,
+        //.teachableLearnset = sChoromonTeachableLearnset,
         .digivolutions = sChoromonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -570,7 +571,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Mokumon
         ) 
         .levelUpLearnset = sMokumonLevelUpLearnset,
-        .teachableLearnset = sMokumonTeachableLearnset,
+        //.teachableLearnset = sMokumonTeachableLearnset,
         .digivolutions = sMokumonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -650,7 +651,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Nyokimon
         ) 
         .levelUpLearnset = sNyokimonLevelUpLearnset,
-        .teachableLearnset = sNyokimonTeachableLearnset,
+        //.teachableLearnset = sNyokimonTeachableLearnset,
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
         .digivolutions = sNyokimonDigivolveTable,
     },
@@ -731,7 +732,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Pitchmon
         ) 
         .levelUpLearnset = sPitchmonLevelUpLearnset,
-        .teachableLearnset = sPitchmonTeachableLearnset,
+        //.teachableLearnset = sPitchmonTeachableLearnset,
         .digivolutions = sPitchmonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -812,7 +813,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Poyomon
         ) 
         .levelUpLearnset = sPoyomonLevelUpLearnset,
-        .teachableLearnset = sPoyomonTeachableLearnset,
+        //.teachableLearnset = sPoyomonTeachableLearnset,
         .digivolutions = sPoyomonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -892,7 +893,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Punimon
         ) 
         .levelUpLearnset = sPunimonLevelUpLearnset,
-        .teachableLearnset = sPunimonTeachableLearnset,
+        //.teachableLearnset = sPunimonTeachableLearnset,
         .digivolutions = sPunimonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -973,7 +974,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Yukimibotamon
         ) 
         .levelUpLearnset = sYukimibotamonLevelUpLearnset,
-        .teachableLearnset = sYukimibotamonTeachableLearnset,
+        //.teachableLearnset = sYukimibotamonTeachableLearnset,
         .digivolutions = sYukimibotamonDigivolveTable,
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -1054,7 +1055,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Yuramon
         ) 
         .levelUpLearnset = sYuramonLevelUpLearnset,
-        .teachableLearnset = sYuramonTeachableLearnset,
+        //.teachableLearnset = sYuramonTeachableLearnset,
         .digivolutions = sYuramonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -1135,7 +1136,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Zurumon
         ) 
         .levelUpLearnset = sZurumonLevelUpLearnset,
-        .teachableLearnset = sZurumonTeachableLearnset,
+        //.teachableLearnset = sZurumonTeachableLearnset,
         .digivolutions = sZurumonDigivolveTable,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
@@ -1216,7 +1217,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Caprimon
         ) 
         .levelUpLearnset = sCaprimonLevelUpLearnset,
-        .teachableLearnset = sCaprimonTeachableLearnset,
+        //.teachableLearnset = sCaprimonTeachableLearnset,
         .digivolutions = sCaprimonDigivolveTable,
         //.formSpeciesIdTable = sCaprimonFormSpeciesIdTable,
     },
@@ -1297,7 +1298,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Kodokugumon
         ) 
         .levelUpLearnset = sKodokugumonLevelUpLearnset,
-        .teachableLearnset = sKodokugumonTeachableLearnset,
+        //.teachableLearnset = sKodokugumonTeachableLearnset,
         .digivolutions = sKodokugumonDigivolveTable,
         //.formSpeciesIdTable = sKodokugumonFormSpeciesIdTable,
     },
@@ -1378,7 +1379,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Koromon
         ) 
         .levelUpLearnset = sKoromonLevelUpLearnset,
-        .teachableLearnset = sKoromonTeachableLearnset,
+        //.teachableLearnset = sKoromonTeachableLearnset,
         .digivolutions = sKoromonDigivolveTable,
         //.formSpeciesIdTable = sKoromonFormSpeciesIdTable,
     },
@@ -1459,7 +1460,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Mochimon
         ) 
         .levelUpLearnset = sMochimonLevelUpLearnset,
-        .teachableLearnset = sMochimonTeachableLearnset,
+        //.teachableLearnset = sMochimonTeachableLearnset,
         .digivolutions = sMochimonDigivolveTable,
         //.formSpeciesIdTable = sMochimonFormSpeciesIdTable,
     },
@@ -1540,7 +1541,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Nyaromon
         ) 
         .levelUpLearnset = sNyaromonLevelUpLearnset,
-        .teachableLearnset = sNyaromonTeachableLearnset,
+        //.teachableLearnset = sNyaromonTeachableLearnset,
         .digivolutions = sNyaromonDigivolveTable,
         //.formSpeciesIdTable = sNyaromonFormSpeciesIdTable,
     },
@@ -1621,7 +1622,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Pagumon
         ) 
         .levelUpLearnset = sPagumonLevelUpLearnset,
-        .teachableLearnset = sPagumonTeachableLearnset,
+        //.teachableLearnset = sPagumonTeachableLearnset,
         .digivolutions = sPagumonDigivolveTable,
         //.formSpeciesIdTable = sPagumonFormSpeciesIdTable,
     },
@@ -1702,7 +1703,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Petitmeramon
         ) 
         .levelUpLearnset = sPetitmeramonLevelUpLearnset,
-        .teachableLearnset = sPetitmeramonTeachableLearnset,
+        //.teachableLearnset = sPetitmeramonTeachableLearnset,
         .digivolutions = sPetitmeramonDigivolveTable,
         //.formSpeciesIdTable = sPetitmeramonFormSpeciesIdTable,
     },
@@ -1783,7 +1784,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Pukamon
         ) 
         .levelUpLearnset = sPukamonLevelUpLearnset,
-        .teachableLearnset = sPukamonTeachableLearnset,
+        //.teachableLearnset = sPukamonTeachableLearnset,
         .digivolutions = sPukamonDigivolveTable,
         //.formSpeciesIdTable = sPukamonFormSpeciesIdTable,
     },
@@ -1864,7 +1865,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Pyokomon
         ) 
         .levelUpLearnset = sPyokomonLevelUpLearnset,
-        .teachableLearnset = sPyokomonTeachableLearnset,
+        //.teachableLearnset = sPyokomonTeachableLearnset,
         .digivolutions = sPyokomonDigivolveTable,
         //.formSpeciesIdTable = sPyokomonFormSpeciesIdTable,
     },
@@ -1945,7 +1946,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tanemon
         ) 
         .levelUpLearnset = sTanemonLevelUpLearnset,
-        .teachableLearnset = sTanemonTeachableLearnset,
+        //.teachableLearnset = sTanemonTeachableLearnset,
         .digivolutions = sTanemonDigivolveTable,
         //.formSpeciesIdTable = sTanemonFormSpeciesIdTable,
     },
@@ -2026,7 +2027,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tokomon
         ) 
         .levelUpLearnset = sTokomonLevelUpLearnset,
-        .teachableLearnset = sTokomonTeachableLearnset,
+        //.teachableLearnset = sTokomonTeachableLearnset,
         .digivolutions = sTokomonDigivolveTable,
         //.formSpeciesIdTable = sTokomonFormSpeciesIdTable,
     },
@@ -2107,7 +2108,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tsunomon
         ) 
         .levelUpLearnset = sTsunomonLevelUpLearnset,
-        .teachableLearnset = sTsunomonTeachableLearnset,
+        //.teachableLearnset = sTsunomonTeachableLearnset,
         .digivolutions = sTsunomonDigivolveTable,
         //.formSpeciesIdTable = sTsunomonFormSpeciesIdTable,
     },
@@ -2186,7 +2187,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Agumon
         ) 
         .levelUpLearnset = sAgumonLevelUpLearnset,
-        .teachableLearnset = sAgumonTeachableLearnset,
+        //.teachableLearnset = sAgumonTeachableLearnset,
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
         .digivolutions = sAgumonDigivolveTable,
     },
@@ -2267,7 +2268,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Yukiagumon
         ) 
         .levelUpLearnset = sYukiagumonLevelUpLearnset,
-        .teachableLearnset = sYukiagumonTeachableLearnset,
+        //.teachableLearnset = sYukiagumonTeachableLearnset,
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
         .digivolutions = sYukiagumonDigivolveTable,
     },
@@ -2348,7 +2349,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Bakumon
         ) 
         .levelUpLearnset = sBakumonLevelUpLearnset,
-        .teachableLearnset = sBakumonTeachableLearnset,
+        //.teachableLearnset = sBakumonTeachableLearnset,
         .digivolutions = sBakumonDigivolveTable,
         //.formSpeciesIdTable = sBakumonFormSpeciesIdTable,
     },
@@ -2429,7 +2430,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Betamon
         ) 
         .levelUpLearnset = sBetamonLevelUpLearnset,
-        .teachableLearnset = sBetamonTeachableLearnset,
+        //.teachableLearnset = sBetamonTeachableLearnset,
         .formSpeciesIdTable = sBetamonFormSpeciesIdTable,
         .digivolutions = sBetamonDigivolveTable,
     },
@@ -2510,7 +2511,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Modokibetamon
         ) 
         .levelUpLearnset = sModokibetamonLevelUpLearnset,
-        .teachableLearnset = sModokibetamonTeachableLearnset,
+        //.teachableLearnset = sModokibetamonTeachableLearnset,
         .formSpeciesIdTable = sBetamonFormSpeciesIdTable,
         .digivolutions = sModokibetamonDigivolveTable,
     },
@@ -2591,7 +2592,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Candmon
         ) 
         .levelUpLearnset = sCandmonLevelUpLearnset,
-        .teachableLearnset = sCandmonTeachableLearnset,
+        //.teachableLearnset = sCandmonTeachableLearnset,
         .digivolutions = sCandmonDigivolveTable,
         //.formSpeciesIdTable = sCandmonFormSpeciesIdTable,
     },
@@ -2672,7 +2673,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Chuumon
         ) 
         .levelUpLearnset = sChuumonLevelUpLearnset,
-        .teachableLearnset = sChuumonTeachableLearnset,
+        //.teachableLearnset = sChuumonTeachableLearnset,
         .digivolutions = sChuumonDigivolveTable,
         //.formSpeciesIdTable = sChuumonFormSpeciesIdTable,
     },
@@ -2753,7 +2754,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Elecmon
         ) 
         .levelUpLearnset = sElecmonLevelUpLearnset,
-        .teachableLearnset = sElecmonTeachableLearnset,
+        //.teachableLearnset = sElecmonTeachableLearnset,
         .digivolutions = sElecmonDigivolveTable,
         .formSpeciesIdTable = sElecmonFormSpeciesIdTable,
     },
@@ -2833,7 +2834,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Floramon
         ) 
         .levelUpLearnset = sFloramonLevelUpLearnset,
-        .teachableLearnset = sFloramonTeachableLearnset,
+        //.teachableLearnset = sFloramonTeachableLearnset,
         .digivolutions = sFloramonDigivolveTable,
         //.formSpeciesIdTable = sFloramonFormSpeciesIdTable,
     },
@@ -2914,7 +2915,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gabumon
         ) 
         .levelUpLearnset = sGabumonLevelUpLearnset,
-        .teachableLearnset = sGabumonTeachableLearnset,
+        //.teachableLearnset = sGabumonTeachableLearnset,
         .digivolutions = sGabumonDigivolveTable,
         .formSpeciesIdTable = sGabumonFormSpeciesIdTable,
     },
@@ -2995,7 +2996,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Psychemon
         ) 
         .levelUpLearnset = sPsychemonLevelUpLearnset,
-        .teachableLearnset = sPsychemonTeachableLearnset,
+        //.teachableLearnset = sPsychemonTeachableLearnset,
         .digivolutions = sPsychemonDigivolveTable,
         .formSpeciesIdTable = sGabumonFormSpeciesIdTable,
     },
@@ -3076,7 +3077,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Ganimon
         ) 
         .levelUpLearnset = sGanimonLevelUpLearnset,
-        .teachableLearnset = sGanimonTeachableLearnset,
+        //.teachableLearnset = sGanimonTeachableLearnset,
         .digivolutions = sGanimonDigivolveTable,
         //.formSpeciesIdTable = sGanimonFormSpeciesIdTable,
     },
@@ -3157,7 +3158,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gazimon
         ) 
         .levelUpLearnset = sGazimonLevelUpLearnset,
-        .teachableLearnset = sGazimonTeachableLearnset,
+        //.teachableLearnset = sGazimonTeachableLearnset,
         .digivolutions = sGazimonDigivolveTable,
         //.formSpeciesIdTable = sGazimonFormSpeciesIdTable,
     },
@@ -3238,7 +3239,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gizamon
         ) 
         .levelUpLearnset = sGizamonLevelUpLearnset,
-        .teachableLearnset = sGizamonTeachableLearnset,
+        //.teachableLearnset = sGizamonTeachableLearnset,
         .digivolutions = sGizamonDigivolveTable,
         //.formSpeciesIdTable = sGizamonFormSpeciesIdTable,
     },
@@ -3319,7 +3320,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Goblimon
         ) 
         .levelUpLearnset = sGoblimonLevelUpLearnset,
-        .teachableLearnset = sGoblimonTeachableLearnset,
+        //.teachableLearnset = sGoblimonTeachableLearnset,
         .digivolutions = sGoblimonDigivolveTable,
         .formSpeciesIdTable = sGoblimonFormSpeciesIdTable,
     },
@@ -3400,7 +3401,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Shamamon
         ) 
         .levelUpLearnset = sShamamonLevelUpLearnset,
-        .teachableLearnset = sShamamonTeachableLearnset,
+        //.teachableLearnset = sShamamonTeachableLearnset,
         .digivolutions = sShamamonDigivolveTable,
         .formSpeciesIdTable = sGoblimonFormSpeciesIdTable,
     },
@@ -3480,7 +3481,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Snowgoblimon
         ) 
         .levelUpLearnset = sSnowgoblimonLevelUpLearnset,
-        .teachableLearnset = sSnowgoblimonTeachableLearnset,
+        //.teachableLearnset = sSnowgoblimonTeachableLearnset,
         .formSpeciesIdTable = sGoblimonFormSpeciesIdTable,
         .digivolutions = sSnowgoblimonDigivolveTable,
     },
@@ -3561,7 +3562,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gomamon
         ) 
         .levelUpLearnset = sGomamonLevelUpLearnset,
-        .teachableLearnset = sGomamonTeachableLearnset,
+        //.teachableLearnset = sGomamonTeachableLearnset,
         .digivolutions = sGomamonDigivolveTable,
         //.formSpeciesIdTable = sGomamonFormSpeciesIdTable,
     },
@@ -3642,7 +3643,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gotsumon
         ) 
         .levelUpLearnset = sGotsumonLevelUpLearnset,
-        .teachableLearnset = sGotsumonTeachableLearnset,
+        //.teachableLearnset = sGotsumonTeachableLearnset,
         .formSpeciesIdTable = sGotsumonFormSpeciesIdTable,
         .digivolutions = sGotsumonDigivolveTable,
     },
@@ -3723,7 +3724,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Hagurumon
         ) 
         .levelUpLearnset = sHagurumonLevelUpLearnset,
-        .teachableLearnset = sHagurumonTeachableLearnset,
+        //.teachableLearnset = sHagurumonTeachableLearnset,
         .formSpeciesIdTable = sHagurumonFormSpeciesIdTable,
         .digivolutions = sHagurumonDigivolveTable,
     },
@@ -3804,7 +3805,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Kokuwamon
         ) 
         .levelUpLearnset = sKokuwamonLevelUpLearnset,
-        .teachableLearnset = sKokuwamonTeachableLearnset,
+        //.teachableLearnset = sKokuwamonTeachableLearnset,
         .digivolutions = sKokuwamonDigivolveTable,
         //.formSpeciesIdTable = sKokuwamonFormSpeciesIdTable,
     },
@@ -3885,7 +3886,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Kunemon
         ) 
         .levelUpLearnset = sKunemonLevelUpLearnset,
-        .teachableLearnset = sKunemonTeachableLearnset,
+        //.teachableLearnset = sKunemonTeachableLearnset,
         .formSpeciesIdTable = sKunemonFormSpeciesIdTable,
         .digivolutions = sKunemonDigivolveTable,
     },
@@ -3966,7 +3967,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Dokunemon
         ) 
         .levelUpLearnset = sDokunemonLevelUpLearnset,
-        .teachableLearnset = sDokunemonTeachableLearnset,
+        //.teachableLearnset = sDokunemonTeachableLearnset,
         .formSpeciesIdTable = sKunemonFormSpeciesIdTable,
         .digivolutions = sDokunemonDigivolveTable,
     },
@@ -4047,7 +4048,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Mushmon
         ) 
         .levelUpLearnset = sMushmonLevelUpLearnset,
-        .teachableLearnset = sMushmonTeachableLearnset,
+        //.teachableLearnset = sMushmonTeachableLearnset,
         .digivolutions = sMushmonDigivolveTable,
         //.formSpeciesIdTable = sMushmonFormSpeciesIdTable,
     },
@@ -4128,7 +4129,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Otamamon
         ) 
         .levelUpLearnset = sOtamamonLevelUpLearnset,
-        .teachableLearnset = sOtamamonTeachableLearnset,
+        //.teachableLearnset = sOtamamonTeachableLearnset,
         //.formSpeciesIdTable = sOtamamonFormSpeciesIdTable,
         .digivolutions = sOtamamonDigivolveTable,
     },
@@ -4209,7 +4210,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Palmon
         ) 
         .levelUpLearnset = sPalmonLevelUpLearnset,
-        .teachableLearnset = sPalmonTeachableLearnset,
+        //.teachableLearnset = sPalmonTeachableLearnset,
         .formSpeciesIdTable = sPalmonFormSpeciesIdTable,
         .digivolutions = sPalmonDigivolveTable,
     },
@@ -4290,7 +4291,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Alraumon
         ) 
         .levelUpLearnset = sAlraumonLevelUpLearnset,
-        .teachableLearnset = sAlraumonTeachableLearnset,
+        //.teachableLearnset = sAlraumonTeachableLearnset,
         .formSpeciesIdTable = sPalmonFormSpeciesIdTable,
         .digivolutions = sAlraumonDigivolveTable,
     },
@@ -4371,7 +4372,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Patamon
         ) 
         .levelUpLearnset = sPatamonLevelUpLearnset,
-        .teachableLearnset = sPatamonTeachableLearnset,
+        //.teachableLearnset = sPatamonTeachableLearnset,
         .formSpeciesIdTable = sPatamonFormSpeciesIdTable,
         .digivolutions = sPatamonDigivolveTable,
     },
@@ -4452,7 +4453,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tsukaimon
         ) 
         .levelUpLearnset = sTsukaimonLevelUpLearnset,
-        .teachableLearnset = sTsukaimonTeachableLearnset,
+        //.teachableLearnset = sTsukaimonTeachableLearnset,
         .formSpeciesIdTable = sPatamonFormSpeciesIdTable,
         .digivolutions = sTsukaimonDigivolveTable,
     },
@@ -4533,7 +4534,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Penmon
         ) 
         .levelUpLearnset = sPenmonLevelUpLearnset,
-        .teachableLearnset = sPenmonTeachableLearnset,
+        //.teachableLearnset = sPenmonTeachableLearnset,
         .formSpeciesIdTable = sPenmonFormSpeciesIdTable,
         .digivolutions = sPenmonDigivolveTable,
     },
@@ -4614,7 +4615,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Muchomon
         ) 
         .levelUpLearnset = sMuchomonLevelUpLearnset,
-        .teachableLearnset = sMuchomonTeachableLearnset,
+        //.teachableLearnset = sMuchomonTeachableLearnset,
         .formSpeciesIdTable = sPenmonFormSpeciesIdTable,
         .digivolutions = sMuchomonDigivolveTable,
     },
@@ -4695,7 +4696,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Picodevimon
         ) 
         .levelUpLearnset = sPicodevimonLevelUpLearnset,
-        .teachableLearnset = sPicodevimonTeachableLearnset,
+        //.teachableLearnset = sPicodevimonTeachableLearnset,
         .digivolutions = sPicodevimonDigivolveTable,
         //.formSpeciesIdTable = sPicodevimonFormSpeciesIdTable,
     },
@@ -4776,7 +4777,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Piyomon
         ) 
         .levelUpLearnset = sPiyomonLevelUpLearnset,
-        .teachableLearnset = sPiyomonTeachableLearnset,
+        //.teachableLearnset = sPiyomonTeachableLearnset,
         .digivolutions = sPiyomonDigivolveTable,
         //.formSpeciesIdTable = sPiyomonFormSpeciesIdTable,
     },
@@ -4857,7 +4858,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Plotmon
         ) 
         .levelUpLearnset = sPlotmonLevelUpLearnset,
-        .teachableLearnset = sPlotmonTeachableLearnset,
+        //.teachableLearnset = sPlotmonTeachableLearnset,
         .digivolutions = sPlotmonDigivolveTable,
         //.formSpeciesIdTable = sPlotmonFormSpeciesIdTable,
     },
@@ -4938,7 +4939,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Shakomon
         ) 
         .levelUpLearnset = sShakomonLevelUpLearnset,
-        .teachableLearnset = sShakomonTeachableLearnset,
+        //.teachableLearnset = sShakomonTeachableLearnset,
         .digivolutions = sShakomonDigivolveTable,
         //.formSpeciesIdTable = sShakomonFormSpeciesIdTable,
     },
@@ -5019,7 +5020,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tentomon
         ) 
         .levelUpLearnset = sTentomonLevelUpLearnset,
-        .teachableLearnset = sTentomonTeachableLearnset,
+        //.teachableLearnset = sTentomonTeachableLearnset,
         .digivolutions = sTentomonDigivolveTable,
         //.formSpeciesIdTable = sTentomonFormSpeciesIdTable,
     },
@@ -5100,7 +5101,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Toyagumon
         ) 
         .levelUpLearnset = sToyagumonLevelUpLearnset,
-        .teachableLearnset = sToyagumonTeachableLearnset,
+        //.teachableLearnset = sToyagumonTeachableLearnset,
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
         .digivolutions = sToyagumonDigivolveTable,
     },
@@ -5181,7 +5182,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Clearagumon
         ) 
         .levelUpLearnset = sClearagumonLevelUpLearnset,
-        .teachableLearnset = sClearagumonTeachableLearnset,
+        //.teachableLearnset = sClearagumonTeachableLearnset,
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
         .digivolutions = sClearagumonDigivolveTable,
     },
@@ -5262,7 +5263,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Bun
         ) 
         .levelUpLearnset = sBunLevelUpLearnset,
-        .teachableLearnset = sBunTeachableLearnset,
+        //.teachableLearnset = sBunTeachableLearnset,
         .digivolutions = sBunDigivolveTable,
         //.formSpeciesIdTable = sBunFormSpeciesIdTable,
     },
@@ -5342,7 +5343,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Airdramon
         ) 
         .levelUpLearnset = sAirdramonLevelUpLearnset,
-        .teachableLearnset = sAirdramonTeachableLearnset,
+        //.teachableLearnset = sAirdramonTeachableLearnset,
         .digivolutions = sAirdramonDigivolveTable,
         //.formSpeciesIdTable = sAirdramonFormSpeciesIdTable,
     },
@@ -5423,7 +5424,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Angemon
         ) 
         .levelUpLearnset = sAngemonLevelUpLearnset,
-        .teachableLearnset = sAngemonTeachableLearnset,
+        //.teachableLearnset = sAngemonTeachableLearnset,
         .formSpeciesIdTable = sAngemonFormSpeciesIdTable,
         .digivolutions = sAngemonDigivolveTable,
     },
@@ -5504,7 +5505,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Pidmon
         ) 
         .levelUpLearnset = sPidmonLevelUpLearnset,
-        .teachableLearnset = sPidmonTeachableLearnset,
+        //.teachableLearnset = sPidmonTeachableLearnset,
         .formSpeciesIdTable = sAngemonFormSpeciesIdTable,
         .digivolutions = sPidmonDigivolveTable,
     },
@@ -5585,7 +5586,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Bakemon
         ) 
         .levelUpLearnset = sBakemonLevelUpLearnset,
-        .teachableLearnset = sBakemonTeachableLearnset,
+        //.teachableLearnset = sBakemonTeachableLearnset,
         .formSpeciesIdTable = sBakemonFormSpeciesIdTable,
         .digivolutions = sBakemonDigivolveTable,
     },
@@ -5666,7 +5667,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Soulmon
         ) 
         .levelUpLearnset = sSoulmonLevelUpLearnset,
-        .teachableLearnset = sSoulmonTeachableLearnset,
+        //.teachableLearnset = sSoulmonTeachableLearnset,
         .formSpeciesIdTable = sBakemonFormSpeciesIdTable,
         .digivolutions = sSoulmonDigivolveTable,
     },
@@ -5747,7 +5748,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Birdramon
         ) 
         .levelUpLearnset = sBirdramonLevelUpLearnset,
-        .teachableLearnset = sBirdramonTeachableLearnset,
+        //.teachableLearnset = sBirdramonTeachableLearnset,
         .formSpeciesIdTable = sBirdramonFormSpeciesIdTable,
         .digivolutions = sBirdramonDigivolveTable,
     },
@@ -5827,7 +5828,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Saberdramon
         ) 
         .levelUpLearnset = sSaberdramonLevelUpLearnset,
-        .teachableLearnset = sSaberdramonTeachableLearnset,
+        //.teachableLearnset = sSaberdramonTeachableLearnset,
         .formSpeciesIdTable = sBirdramonFormSpeciesIdTable,
         .digivolutions = sSaberdramonDigivolveTable,
     },
@@ -5908,7 +5909,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Centarumon
         ) 
         .levelUpLearnset = sCentarumonLevelUpLearnset,
-        .teachableLearnset = sCentarumonTeachableLearnset,
+        //.teachableLearnset = sCentarumonTeachableLearnset,
         .digivolutions = sCentarumonDigivolveTable,
         //.formSpeciesIdTable = sCentarumonFormSpeciesIdTable,
     },
@@ -5989,7 +5990,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Clockmon
         ) 
         .levelUpLearnset = sClockmonLevelUpLearnset,
-        .teachableLearnset = sClockmonTeachableLearnset,
+        //.teachableLearnset = sClockmonTeachableLearnset,
         .digivolutions = sClockmonDigivolveTable,
         //.formSpeciesIdTable = sClockmonFormSpeciesIdTable,
     },
@@ -6070,7 +6071,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Coelamon
         ) 
         .levelUpLearnset = sCoelamonLevelUpLearnset,
-        .teachableLearnset = sCoelamonTeachableLearnset,
+        //.teachableLearnset = sCoelamonTeachableLearnset,
         .digivolutions = sCoelamonDigivolveTable,
         //.formSpeciesIdTable = sCoelamonFormSpeciesIdTable,
     },
@@ -6151,7 +6152,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Cyclomon
         ) 
         .levelUpLearnset = sCyclomonLevelUpLearnset,
-        .teachableLearnset = sCyclomonTeachableLearnset,
+        //.teachableLearnset = sCyclomonTeachableLearnset,
         .digivolutions = sCyclomonDigivolveTable,
         //.formSpeciesIdTable = sCyclomonFormSpeciesIdTable,
     },
@@ -6232,7 +6233,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Darktyrannomon
         ) 
         .levelUpLearnset = sDarktyrannomonLevelUpLearnset,
-        .teachableLearnset = sDarktyrannomonTeachableLearnset,
+        //.teachableLearnset = sDarktyrannomonTeachableLearnset,
         .digivolutions = sDarktyrannomonDigivolveTable,
         //.formSpeciesIdTable = sDarktyrannomonFormSpeciesIdTable,
     },
@@ -6313,7 +6314,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Deltamon
         ) 
         .levelUpLearnset = sDeltamonLevelUpLearnset,
-        .teachableLearnset = sDeltamonTeachableLearnset,
+        //.teachableLearnset = sDeltamonTeachableLearnset,
         .digivolutions = sDeltamonDigivolveTable,
         //.formSpeciesIdTable = sDeltamonFormSpeciesIdTable,
     },
@@ -6394,7 +6395,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Devidramon
         ) 
         .levelUpLearnset = sDevidramonLevelUpLearnset,
-        .teachableLearnset = sDevidramonTeachableLearnset,
+        //.teachableLearnset = sDevidramonTeachableLearnset,
         .digivolutions = sDevidramonDigivolveTable,
         //.formSpeciesIdTable = sDevidramonFormSpeciesIdTable,
     },
@@ -6475,7 +6476,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Devimon
         ) 
         .levelUpLearnset = sDevimonLevelUpLearnset,
-        .teachableLearnset = sDevimonTeachableLearnset,
+        //.teachableLearnset = sDevimonTeachableLearnset,
         .formSpeciesIdTable = sDevimonFormSpeciesIdTable,
         .digivolutions = sDevimonDigivolveTable,
     },
@@ -6556,7 +6557,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Icedevimon
         ) 
         .levelUpLearnset = sIcedevimonLevelUpLearnset,
-        .teachableLearnset = sIcedevimonTeachableLearnset,
+        //.teachableLearnset = sIcedevimonTeachableLearnset,
         .formSpeciesIdTable = sDevimonFormSpeciesIdTable,
         .digivolutions = sIcedevimonDigivolveTable,
     },
@@ -6637,7 +6638,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Dokugumon
         ) 
         .levelUpLearnset = sDokugumonLevelUpLearnset,
-        .teachableLearnset = sDokugumonTeachableLearnset,
+        //.teachableLearnset = sDokugumonTeachableLearnset,
         .digivolutions = sDokugumonDigivolveTable,
         //.formSpeciesIdTable = sDokugumonFormSpeciesIdTable,
     },
@@ -6718,7 +6719,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Drimogemon
         ) 
         .levelUpLearnset = sDrimogemonLevelUpLearnset,
-        .teachableLearnset = sDrimogemonTeachableLearnset,
+        //.teachableLearnset = sDrimogemonTeachableLearnset,
         .formSpeciesIdTable = sDrimogemonFormSpeciesIdTable,
         .digivolutions = sDrimogemonDigivolveTable,
     },
@@ -6799,7 +6800,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Nisedrimogemon
         ) 
         .levelUpLearnset = sNisedrimogemonLevelUpLearnset,
-        .teachableLearnset = sNisedrimogemonTeachableLearnset,
+        //.teachableLearnset = sNisedrimogemonTeachableLearnset,
         .formSpeciesIdTable = sDrimogemonFormSpeciesIdTable,
         .digivolutions = sNisedrimogemonDigivolveTable,
     },
@@ -6880,7 +6881,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Ebidramon
         ) 
         .levelUpLearnset = sEbidramonLevelUpLearnset,
-        .teachableLearnset = sEbidramonTeachableLearnset,
+        //.teachableLearnset = sEbidramonTeachableLearnset,
         .digivolutions = sEbidramonDigivolveTable,
         //.formSpeciesIdTable = sEbidramonFormSpeciesIdTable,
     },
@@ -6961,7 +6962,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Evilmon
         ) 
         .levelUpLearnset = sEvilmonLevelUpLearnset,
-        .teachableLearnset = sEvilmonTeachableLearnset,
+        //.teachableLearnset = sEvilmonTeachableLearnset,
         .digivolutions = sEvilmonDigivolveTable,
         //.formSpeciesIdTable = sEvilmonFormSpeciesIdTable,
     },
@@ -7042,7 +7043,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Flarelizarmon
         ) 
         .levelUpLearnset = sFlarelizarmonLevelUpLearnset,
-        .teachableLearnset = sFlarelizarmonTeachableLearnset,
+        //.teachableLearnset = sFlarelizarmonTeachableLearnset,
         .digivolutions = sFlarelizarmonDigivolveTable,
         .formSpeciesIdTable = sFlarelizarmonFormSpeciesIdTable,
     },
@@ -7123,7 +7124,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Darklizarmon
         ) 
         .levelUpLearnset = sDarklizarmonLevelUpLearnset,
-        .teachableLearnset = sDarklizarmonTeachableLearnset,
+        //.teachableLearnset = sDarklizarmonTeachableLearnset,
         .digivolutions = sDarklizarmonDigivolveTable,
         .formSpeciesIdTable = sFlarelizarmonFormSpeciesIdTable,
     },
@@ -7204,7 +7205,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Flymon
         ) 
         .levelUpLearnset = sFlymonLevelUpLearnset,
-        .teachableLearnset = sFlymonTeachableLearnset,
+        //.teachableLearnset = sFlymonTeachableLearnset,
         .digivolutions = sFlymonDigivolveTable,
         //.formSpeciesIdTable = sFlymonFormSpeciesIdTable,
     },
@@ -7285,7 +7286,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Garurumon
         ) 
         .levelUpLearnset = sGarurumonLevelUpLearnset,
-        .teachableLearnset = sGarurumonTeachableLearnset,
+        //.teachableLearnset = sGarurumonTeachableLearnset,
         .digivolutions = sGarurumonDigivolveTable,
         .formSpeciesIdTable = sGarurumonFormSpeciesIdTable,
     },
@@ -7366,7 +7367,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gururumon
         ) 
         .levelUpLearnset = sGururumonLevelUpLearnset,
-        .teachableLearnset = sGururumonTeachableLearnset,
+        //.teachableLearnset = sGururumonTeachableLearnset,
         .digivolutions = sGururumonDigivolveTable,
         .formSpeciesIdTable = sGarurumonFormSpeciesIdTable,
     },
@@ -7447,7 +7448,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gekomon
         ) 
         .levelUpLearnset = sGekomonLevelUpLearnset,
-        .teachableLearnset = sGekomonTeachableLearnset,
+        //.teachableLearnset = sGekomonTeachableLearnset,
         .digivolutions = sGekomonDigivolveTable,
         //.formSpeciesIdTable = sGekomonFormSpeciesIdTable,
     },
@@ -7528,7 +7529,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gesomon
         ) 
         .levelUpLearnset = sGesomonLevelUpLearnset,
-        .teachableLearnset = sGesomonTeachableLearnset,
+        //.teachableLearnset = sGesomonTeachableLearnset,
         .digivolutions = sGesomonDigivolveTable,
         //.formSpeciesIdTable = sGesomonFormSpeciesIdTable,
     },
@@ -7609,7 +7610,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gokimon
         ) 
         .levelUpLearnset = sGokimonLevelUpLearnset,
-        .teachableLearnset = sGokimonTeachableLearnset,
+        //.teachableLearnset = sGokimonTeachableLearnset,
         .digivolutions = sGokimonDigivolveTable,
         //.formSpeciesIdTable = sGokimonFormSpeciesIdTable,
     },
@@ -7690,7 +7691,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Golemon
         ) 
         .levelUpLearnset = sGolemonLevelUpLearnset,
-        .teachableLearnset = sGolemonTeachableLearnset,
+        //.teachableLearnset = sGolemonTeachableLearnset,
         .digivolutions = sGolemonDigivolveTable,
         //.formSpeciesIdTable = sGolemonFormSpeciesIdTable,
     },
@@ -7771,7 +7772,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gorimon
         ) 
         .levelUpLearnset = sGorimonLevelUpLearnset,
-        .teachableLearnset = sGorimonTeachableLearnset,
+        //.teachableLearnset = sGorimonTeachableLearnset,
         .digivolutions = sGorimonDigivolveTable,
         //.formSpeciesIdTable = sGorimonFormSpeciesIdTable,
     },
@@ -7852,7 +7853,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Greymon
         ) 
         .levelUpLearnset = sGreymonLevelUpLearnset,
-        .teachableLearnset = sGreymonTeachableLearnset,
+        //.teachableLearnset = sGreymonTeachableLearnset,
         .digivolutions = sGreymonDigivolveTable,
         .formSpeciesIdTable = sGreymonFormSpeciesIdTable,
     },
@@ -7933,7 +7934,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Guardromon
         ) 
         .levelUpLearnset = sGuardromonLevelUpLearnset,
-        .teachableLearnset = sGuardromonTeachableLearnset,
+        //.teachableLearnset = sGuardromonTeachableLearnset,
         .digivolutions = sGuardromonDigivolveTable,
         //.formSpeciesIdTable = sGuardromonFormSpeciesIdTable,
     },
@@ -8014,7 +8015,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Hanumon
         ) 
         .levelUpLearnset = sHanumonLevelUpLearnset,
-        .teachableLearnset = sHanumonTeachableLearnset,
+        //.teachableLearnset = sHanumonTeachableLearnset,
         .digivolutions = sHanumonDigivolveTable,
         //.formSpeciesIdTable = sHanumonFormSpeciesIdTable,
     },
@@ -8095,7 +8096,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Icemon
         ) 
         .levelUpLearnset = sIcemonLevelUpLearnset,
-        .teachableLearnset = sIcemonTeachableLearnset,
+        //.teachableLearnset = sIcemonTeachableLearnset,
         .digivolutions = sIcemonDigivolveTable,
         .formSpeciesIdTable = sGotsumonFormSpeciesIdTable,
     },
@@ -8176,7 +8177,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Igamon
         ) 
         .levelUpLearnset = sIgamonLevelUpLearnset,
-        .teachableLearnset = sIgamonTeachableLearnset,
+        //.teachableLearnset = sIgamonTeachableLearnset,
         .digivolutions = sIgamonDigivolveTable,
         //.formSpeciesIdTable = sIgamonFormSpeciesIdTable,
     },
@@ -8257,7 +8258,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Ikkakumon
         ) 
         .levelUpLearnset = sIkkakumonLevelUpLearnset,
-        .teachableLearnset = sIkkakumonTeachableLearnset,
+        //.teachableLearnset = sIkkakumonTeachableLearnset,
         .digivolutions = sIkkakumonDigivolveTable,
         //.formSpeciesIdTable = sIkkakumonFormSpeciesIdTable,
     },
@@ -8338,7 +8339,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Kabuterimon
         ) 
         .levelUpLearnset = sKabuterimonLevelUpLearnset,
-        .teachableLearnset = sKabuterimonTeachableLearnset,
+        //.teachableLearnset = sKabuterimonTeachableLearnset,
         .digivolutions = sKabuterimonDigivolveTable,
         //.formSpeciesIdTable = sKabuterimonFormSpeciesIdTable,
     },
@@ -8419,7 +8420,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Karatukinumemon
         ) 
         .levelUpLearnset = sKaratukinumemonLevelUpLearnset,
-        .teachableLearnset = sKaratukinumemonTeachableLearnset,
+        //.teachableLearnset = sKaratukinumemonTeachableLearnset,
         .digivolutions = sKaratukinumemonDigivolveTable,
         .formSpeciesIdTable = sNumemonFormSpeciesIdTable,
     },
@@ -8500,7 +8501,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Kiwimon
         ) 
         .levelUpLearnset = sKiwimonLevelUpLearnset,
-        .teachableLearnset = sKiwimonTeachableLearnset,
+        //.teachableLearnset = sKiwimonTeachableLearnset,
         .digivolutions = sKiwimonDigivolveTable,
         //.formSpeciesIdTable = sKiwimonFormSpeciesIdTable,
     },
@@ -8581,7 +8582,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Kokatorimon
         ) 
         .levelUpLearnset = sKokatorimonLevelUpLearnset,
-        .teachableLearnset = sKokatorimonTeachableLearnset,
+        //.teachableLearnset = sKokatorimonTeachableLearnset,
         .formSpeciesIdTable = sKokatorimonFormSpeciesIdTable,
         .digivolutions = sKokatorimonDigivolveTable,
     },
@@ -8662,7 +8663,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Akatorimon
         ) 
         .levelUpLearnset = sAkatorimonLevelUpLearnset,
-        .teachableLearnset = sAkatorimonTeachableLearnset,
+        //.teachableLearnset = sAkatorimonTeachableLearnset,
         .formSpeciesIdTable = sKokatorimonFormSpeciesIdTable,
         .digivolutions = sAkatorimonDigivolveTable,
     },
@@ -8743,7 +8744,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Kuwagamon
         ) 
         .levelUpLearnset = sKuwagamonLevelUpLearnset,
-        .teachableLearnset = sKuwagamonTeachableLearnset,
+        //.teachableLearnset = sKuwagamonTeachableLearnset,
         .digivolutions = sKuwagamonDigivolveTable,
         //.formSpeciesIdTable = sKuwagamonFormSpeciesIdTable,
     },
@@ -8824,7 +8825,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Leomon
         ) 
         .levelUpLearnset = sLeomonLevelUpLearnset,
-        .teachableLearnset = sLeomonTeachableLearnset,
+        //.teachableLearnset = sLeomonTeachableLearnset,
         .digivolutions = sLeomonDigivolveTable,
         //.formSpeciesIdTable = sLeomonFormSpeciesIdTable,
     },
@@ -8905,7 +8906,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Mechanorimon
         ) 
         .levelUpLearnset = sMechanorimonLevelUpLearnset,
-        .teachableLearnset = sMechanorimonTeachableLearnset,
+        //.teachableLearnset = sMechanorimonTeachableLearnset,
         .digivolutions = sMechanorimonDigivolveTable,
         //.formSpeciesIdTable = sMechanorimonFormSpeciesIdTable,
     },
@@ -8986,7 +8987,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Meramon
         ) 
         .levelUpLearnset = sMeramonLevelUpLearnset,
-        .teachableLearnset = sMeramonTeachableLearnset,
+        //.teachableLearnset = sMeramonTeachableLearnset,
         .digivolutions = sMeramonDigivolveTable,
         //.formSpeciesIdTable = sMeramonFormSpeciesIdTable,
     },
@@ -9067,7 +9068,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Minotaurmon
         ) 
         .levelUpLearnset = sMinotaurmonLevelUpLearnset,
-        .teachableLearnset = sMinotaurmonTeachableLearnset,
+        //.teachableLearnset = sMinotaurmonTeachableLearnset,
         .digivolutions = sMinotaurmonDigivolveTable,
         //.formSpeciesIdTable = sMinotaurmonFormSpeciesIdTable,
     },
@@ -9148,7 +9149,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Mojyamon
         ) 
         .levelUpLearnset = sMojyamonLevelUpLearnset,
-        .teachableLearnset = sMojyamonTeachableLearnset,
+        //.teachableLearnset = sMojyamonTeachableLearnset,
         .digivolutions = sMojyamonDigivolveTable,
         .formSpeciesIdTable = sMojyamonFormSpeciesIdTable,
     },
@@ -9229,7 +9230,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Junglemojyamon
         ) 
         .levelUpLearnset = sJunglemojyamonLevelUpLearnset,
-        .teachableLearnset = sJunglemojyamonTeachableLearnset,
+        //.teachableLearnset = sJunglemojyamonTeachableLearnset,
         .digivolutions = sJunglemojyamonDigivolveTable,
         //.formSpeciesIdTable = sJunglemojyamonFormSpeciesIdTable,
     },
@@ -9310,7 +9311,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Monochromon
         ) 
         .levelUpLearnset = sMonochromonLevelUpLearnset,
-        .teachableLearnset = sMonochromonTeachableLearnset,
+        //.teachableLearnset = sMonochromonTeachableLearnset,
         .digivolutions = sMonochromonDigivolveTable,
         //.formSpeciesIdTable = sMonochromonFormSpeciesIdTable,
     },
@@ -9391,7 +9392,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Musyamon
         ) 
         .levelUpLearnset = sMusyamonLevelUpLearnset,
-        .teachableLearnset = sMusyamonTeachableLearnset,
+        //.teachableLearnset = sMusyamonTeachableLearnset,
         .digivolutions = sMusyamonDigivolveTable,
         //.formSpeciesIdTable = sMusyamonFormSpeciesIdTable,
     },
@@ -9472,7 +9473,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Nanimon
         ) 
         .levelUpLearnset = sNanimonLevelUpLearnset,
-        .teachableLearnset = sNanimonTeachableLearnset,
+        //.teachableLearnset = sNanimonTeachableLearnset,
         .digivolutions = sNanimonDigivolveTable,
         //.formSpeciesIdTable = sNanimonFormSpeciesIdTable,
     },
@@ -9553,7 +9554,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Numemon
         ) 
         .levelUpLearnset = sNumemonLevelUpLearnset,
-        .teachableLearnset = sNumemonTeachableLearnset,
+        //.teachableLearnset = sNumemonTeachableLearnset,
         .digivolutions = sNumemonDigivolveTable,
         .formSpeciesIdTable = sNumemonFormSpeciesIdTable,
     },
@@ -9634,7 +9635,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Geremon
         ) 
         .levelUpLearnset = sGeremonLevelUpLearnset,
-        .teachableLearnset = sGeremonTeachableLearnset,
+        //.teachableLearnset = sGeremonTeachableLearnset,
         .digivolutions = sGeremonDigivolveTable,
         .formSpeciesIdTable = sNumemonFormSpeciesIdTable,
     },
@@ -9715,7 +9716,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Octomon
         ) 
         .levelUpLearnset = sOctomonLevelUpLearnset,
-        .teachableLearnset = sOctomonTeachableLearnset,
+        //.teachableLearnset = sOctomonTeachableLearnset,
         .digivolutions = sOctomonDigivolveTable,
         //.formSpeciesIdTable = sOctomonFormSpeciesIdTable,
     },
@@ -9796,7 +9797,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Ogremon
         ) 
         .levelUpLearnset = sOgremonLevelUpLearnset,
-        .teachableLearnset = sOgremonTeachableLearnset,
+        //.teachableLearnset = sOgremonTeachableLearnset,
         .digivolutions = sOgremonDigivolveTable,
         .formSpeciesIdTable = sOgremonFormSpeciesIdTable,
     },
@@ -9877,7 +9878,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Fugamon
         ) 
         .levelUpLearnset = sFugamonLevelUpLearnset,
-        .teachableLearnset = sFugamonTeachableLearnset,
+        //.teachableLearnset = sFugamonTeachableLearnset,
         .digivolutions = sFugamonDigivolveTable,
         .formSpeciesIdTable = sOgremonFormSpeciesIdTable,
     },
@@ -9958,7 +9959,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Hyogamon
         ) 
         .levelUpLearnset = sHyogamonLevelUpLearnset,
-        .teachableLearnset = sHyogamonTeachableLearnset,
+        //.teachableLearnset = sHyogamonTeachableLearnset,
         .digivolutions = sHyogamonDigivolveTable,
         .formSpeciesIdTable = sOgremonFormSpeciesIdTable,
     },
@@ -10039,7 +10040,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Raremon
         ) 
         .levelUpLearnset = sRaremonLevelUpLearnset,
-        .teachableLearnset = sRaremonTeachableLearnset,
+        //.teachableLearnset = sRaremonTeachableLearnset,
         //.formSpeciesIdTable = sRaremonFormSpeciesIdTable,
     },
 
@@ -10119,7 +10120,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Revolmon
         ) 
         .levelUpLearnset = sRevolmonLevelUpLearnset,
-        .teachableLearnset = sRevolmonTeachableLearnset,
+        //.teachableLearnset = sRevolmonTeachableLearnset,
         //.formSpeciesIdTable = sRevolmonFormSpeciesIdTable,
     },
 
@@ -10199,7 +10200,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Rukamon
         ) 
         .levelUpLearnset = sRukamonLevelUpLearnset,
-        .teachableLearnset = sRukamonTeachableLearnset,
+        //.teachableLearnset = sRukamonTeachableLearnset,
         //.formSpeciesIdTable = sRukamonFormSpeciesIdTable,
     },
 
@@ -10279,7 +10280,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Seadramon
         ) 
         .levelUpLearnset = sSeadramonLevelUpLearnset,
-        .teachableLearnset = sSeadramonTeachableLearnset,
+        //.teachableLearnset = sSeadramonTeachableLearnset,
         //.formSpeciesIdTable = sSeadramonFormSpeciesIdTable,
     },
 
@@ -10359,7 +10360,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Shellmon
         ) 
         .levelUpLearnset = sShellmonLevelUpLearnset,
-        .teachableLearnset = sShellmonTeachableLearnset,
+        //.teachableLearnset = sShellmonTeachableLearnset,
         .formSpeciesIdTable = sShellmonFormSpeciesIdTable,
     },
 
@@ -10439,7 +10440,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Morishellmon
         ) 
         .levelUpLearnset = sMorishellmonLevelUpLearnset,
-        .teachableLearnset = sMorishellmonTeachableLearnset,
+        //.teachableLearnset = sMorishellmonTeachableLearnset,
         .formSpeciesIdTable = sShellmonFormSpeciesIdTable,
     },
 
@@ -10519,7 +10520,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Snimon
         ) 
         .levelUpLearnset = sSnimonLevelUpLearnset,
-        .teachableLearnset = sSnimonTeachableLearnset,
+        //.teachableLearnset = sSnimonTeachableLearnset,
         //.formSpeciesIdTable = sSnimonFormSpeciesIdTable,
     },
 
@@ -10599,7 +10600,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Starmon
         ) 
         .levelUpLearnset = sStarmonLevelUpLearnset,
-        .teachableLearnset = sStarmonTeachableLearnset,
+        //.teachableLearnset = sStarmonTeachableLearnset,
         //.formSpeciesIdTable = sStarmonFormSpeciesIdTable,
     },
 
@@ -10679,7 +10680,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Sukamon
         ) 
         .levelUpLearnset = sSukamonLevelUpLearnset,
-        .teachableLearnset = sSukamonTeachableLearnset,
+        //.teachableLearnset = sSukamonTeachableLearnset,
         .formSpeciesIdTable = sSukamonFormSpeciesIdTable,
     },
 
@@ -10759,7 +10760,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Platinumsukamon
         ) 
         .levelUpLearnset = sPlatinumsukamonLevelUpLearnset,
-        .teachableLearnset = sPlatinumsukamonTeachableLearnset,
+        //.teachableLearnset = sPlatinumsukamonTeachableLearnset,
         .formSpeciesIdTable = sSukamonFormSpeciesIdTable,
     },
 
@@ -10839,7 +10840,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tailmon
         ) 
         .levelUpLearnset = sTailmonLevelUpLearnset,
-        .teachableLearnset = sTailmonTeachableLearnset,
+        //.teachableLearnset = sTailmonTeachableLearnset,
         .formSpeciesIdTable = sTailmonFormSpeciesIdTable,
     },
 
@@ -10919,7 +10920,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tankmon
         ) 
         .levelUpLearnset = sTankmonLevelUpLearnset,
-        .teachableLearnset = sTankmonTeachableLearnset,
+        //.teachableLearnset = sTankmonTeachableLearnset,
         //.formSpeciesIdTable = sTankmonFormSpeciesIdTable,
     },
 
@@ -10999,7 +11000,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Thunderballmon
         ) 
         .levelUpLearnset = sThunderballmonLevelUpLearnset,
-        .teachableLearnset = sThunderballmonTeachableLearnset,
+        //.teachableLearnset = sThunderballmonTeachableLearnset,
         //.formSpeciesIdTable = sThunderballmonFormSpeciesIdTable,
     },
 
@@ -11079,7 +11080,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Togemon
         ) 
         .levelUpLearnset = sTogemonLevelUpLearnset,
-        .teachableLearnset = sTogemonTeachableLearnset,
+        //.teachableLearnset = sTogemonTeachableLearnset,
         //.formSpeciesIdTable = sTogemonFormSpeciesIdTable,
     },
 
@@ -11159,7 +11160,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tortomon
         ) 
         .levelUpLearnset = sTortomonLevelUpLearnset,
-        .teachableLearnset = sTortomonTeachableLearnset,
+        //.teachableLearnset = sTortomonTeachableLearnset,
         //.formSpeciesIdTable = sTortomonFormSpeciesIdTable,
     },
 
@@ -11239,7 +11240,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tuskmon
         ) 
         .levelUpLearnset = sTuskmonLevelUpLearnset,
-        .teachableLearnset = sTuskmonTeachableLearnset,
+        //.teachableLearnset = sTuskmonTeachableLearnset,
         //.formSpeciesIdTable = sTuskmonFormSpeciesIdTable,
     },
 
@@ -11319,7 +11320,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tyrannomon
         ) 
         .levelUpLearnset = sTyrannomonLevelUpLearnset,
-        .teachableLearnset = sTyrannomonTeachableLearnset,
+        //.teachableLearnset = sTyrannomonTeachableLearnset,
         //.formSpeciesIdTable = sTyrannomonFormSpeciesIdTable,
     },
 
@@ -11399,7 +11400,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Unimon
         ) 
         .levelUpLearnset = sUnimonLevelUpLearnset,
-        .teachableLearnset = sUnimonTeachableLearnset,
+        //.teachableLearnset = sUnimonTeachableLearnset,
         .formSpeciesIdTable = sUnimonFormSpeciesIdTable,
     },
 
@@ -11479,7 +11480,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Shimaunimon
         ) 
         .levelUpLearnset = sShimaunimonLevelUpLearnset,
-        .teachableLearnset = sShimaunimonTeachableLearnset,
+        //.teachableLearnset = sShimaunimonTeachableLearnset,
         .formSpeciesIdTable = sUnimonFormSpeciesIdTable,
     },
 
@@ -11559,7 +11560,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Veedramon
         ) 
         .levelUpLearnset = sVeedramonLevelUpLearnset,
-        .teachableLearnset = sVeedramonTeachableLearnset,
+        //.teachableLearnset = sVeedramonTeachableLearnset,
         //.formSpeciesIdTable = sVeedramonFormSpeciesIdTable,
     },
 
@@ -11639,7 +11640,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Vegimon
         ) 
         .levelUpLearnset = sVegimonLevelUpLearnset,
-        .teachableLearnset = sVegimonTeachableLearnset,
+        //.teachableLearnset = sVegimonTeachableLearnset,
         .formSpeciesIdTable = sVegimonFormSpeciesIdTable,
     },
 
@@ -11719,7 +11720,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Zassoumon
         ) 
         .levelUpLearnset = sZassoumonLevelUpLearnset,
-        .teachableLearnset = sZassoumonTeachableLearnset,
+        //.teachableLearnset = sZassoumonTeachableLearnset,
         .formSpeciesIdTable = sVegimonFormSpeciesIdTable,
     },
 
@@ -11799,7 +11800,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Redvegimon
         ) 
         .levelUpLearnset = sRedvegimonLevelUpLearnset,
-        .teachableLearnset = sRedvegimonTeachableLearnset,
+        //.teachableLearnset = sRedvegimonTeachableLearnset,
         .formSpeciesIdTable = sVegimonFormSpeciesIdTable,
     },
 
@@ -11879,7 +11880,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Whamon_adult
         ) 
         .levelUpLearnset = sWhamon_adultLevelUpLearnset,
-        .teachableLearnset = sWhamon_adultTeachableLearnset,
+        //.teachableLearnset = sWhamon_adultTeachableLearnset,
         .formSpeciesIdTable = sWhamonFormSpeciesIdTable,
     },
 
@@ -11959,7 +11960,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Wizarmon
         ) 
         .levelUpLearnset = sWizarmonLevelUpLearnset,
-        .teachableLearnset = sWizarmonTeachableLearnset,
+        //.teachableLearnset = sWizarmonTeachableLearnset,
         .formSpeciesIdTable = sWizarmonFormSpeciesIdTable,
     },
 
@@ -12039,7 +12040,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Woodmon
         ) 
         .levelUpLearnset = sWoodmonLevelUpLearnset,
-        .teachableLearnset = sWoodmonTeachableLearnset,
+        //.teachableLearnset = sWoodmonTeachableLearnset,
         //.formSpeciesIdTable = sWoodmonFormSpeciesIdTable,
     },
 
@@ -12119,7 +12120,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Yanmamon
         ) 
         .levelUpLearnset = sYanmamonLevelUpLearnset,
-        .teachableLearnset = sYanmamonTeachableLearnset,
+        //.teachableLearnset = sYanmamonTeachableLearnset,
         .formSpeciesIdTable = sYanmamonFormSpeciesIdTable,
     },
 
@@ -12199,7 +12200,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Sandyanmamon
         ) 
         .levelUpLearnset = sSandyanmamonLevelUpLearnset,
-        .teachableLearnset = sSandyanmamonTeachableLearnset,
+        //.teachableLearnset = sSandyanmamonTeachableLearnset,
         .formSpeciesIdTable = sYanmamonFormSpeciesIdTable,
     },
 
@@ -12279,7 +12280,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Yukidarumon
         ) 
         .levelUpLearnset = sYukidarumonLevelUpLearnset,
-        .teachableLearnset = sYukidarumonTeachableLearnset,
+        //.teachableLearnset = sYukidarumonTeachableLearnset,
         .formSpeciesIdTable = sYukidarumonFormSpeciesIdTable,
     },
 
@@ -12359,7 +12360,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tsuchidarumon
         ) 
         .levelUpLearnset = sTsuchidarumonLevelUpLearnset,
-        .teachableLearnset = sTsuchidarumonTeachableLearnset,
+        //.teachableLearnset = sTsuchidarumonTeachableLearnset,
         .formSpeciesIdTable = sYukidarumonFormSpeciesIdTable,
     },
 
@@ -12439,7 +12440,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Aeroveedramon
         ) 
         .levelUpLearnset = sAeroveedramonLevelUpLearnset,
-        .teachableLearnset = sAeroveedramonTeachableLearnset,
+        //.teachableLearnset = sAeroveedramonTeachableLearnset,
         //.formSpeciesIdTable = sAeroveedramonFormSpeciesIdTable,
     },
 
@@ -12519,7 +12520,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Andromon
         ) 
         .levelUpLearnset = sAndromonLevelUpLearnset,
-        .teachableLearnset = sAndromonTeachableLearnset,
+        //.teachableLearnset = sAndromonTeachableLearnset,
         //.formSpeciesIdTable = sAndromonFormSpeciesIdTable,
     },
 
@@ -12599,7 +12600,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Angewomon
         ) 
         .levelUpLearnset = sAngewomonLevelUpLearnset,
-        .teachableLearnset = sAngewomonTeachableLearnset,
+        //.teachableLearnset = sAngewomonTeachableLearnset,
         //.formSpeciesIdTable = sAngewomonFormSpeciesIdTable,
     },
 
@@ -12679,7 +12680,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Anomalocarimon
         ) 
         .levelUpLearnset = sAnomalocarimonLevelUpLearnset,
-        .teachableLearnset = sAnomalocarimonTeachableLearnset,
+        //.teachableLearnset = sAnomalocarimonTeachableLearnset,
         //.formSpeciesIdTable = sAnomalocarimonFormSpeciesIdTable,
     },
 
@@ -12759,7 +12760,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Asuramon
         ) 
         .levelUpLearnset = sAsuramonLevelUpLearnset,
-        .teachableLearnset = sAsuramonTeachableLearnset,
+        //.teachableLearnset = sAsuramonTeachableLearnset,
         //.formSpeciesIdTable = sAsuramonFormSpeciesIdTable,
     },
 
@@ -12839,7 +12840,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Atlurkabuterimonr
         ) 
         .levelUpLearnset = sAtlurkabuterimonrLevelUpLearnset,
-        .teachableLearnset = sAtlurkabuterimonrTeachableLearnset,
+        //.teachableLearnset = sAtlurkabuterimonrTeachableLearnset,
         .formSpeciesIdTable = sAtlurkabuterimonrFormSpeciesIdTable,
     },
 
@@ -12919,7 +12920,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Atlurkabuterimonb
         ) 
         .levelUpLearnset = sAtlurkabuterimonbLevelUpLearnset,
-        .teachableLearnset = sAtlurkabuterimonbTeachableLearnset,
+        //.teachableLearnset = sAtlurkabuterimonbTeachableLearnset,
         .formSpeciesIdTable = sAtlurkabuterimonrFormSpeciesIdTable,
     },
 
@@ -12999,7 +13000,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Bigmamemon
         ) 
         .levelUpLearnset = sBigmamemonLevelUpLearnset,
-        .teachableLearnset = sBigmamemonTeachableLearnset,
+        //.teachableLearnset = sBigmamemonTeachableLearnset,
         .formSpeciesIdTable = sMamemonFormSpeciesIdTable,
     },
 
@@ -13079,7 +13080,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Blossomon
         ) 
         .levelUpLearnset = sBlossomonLevelUpLearnset,
-        .teachableLearnset = sBlossomonTeachableLearnset,
+        //.teachableLearnset = sBlossomonTeachableLearnset,
         //.formSpeciesIdTable = sBlossomonFormSpeciesIdTable,
     },
 
@@ -13159,7 +13160,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Bluemeramon
         ) 
         .levelUpLearnset = sBluemeramonLevelUpLearnset,
-        .teachableLearnset = sBluemeramonTeachableLearnset,
+        //.teachableLearnset = sBluemeramonTeachableLearnset,
         //.formSpeciesIdTable = sBluemeramonFormSpeciesIdTable,
     },
 
@@ -13239,7 +13240,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Brachimon
         ) 
         .levelUpLearnset = sBrachimonLevelUpLearnset,
-        .teachableLearnset = sBrachimonTeachableLearnset,
+        //.teachableLearnset = sBrachimonTeachableLearnset,
         //.formSpeciesIdTable = sBrachimonFormSpeciesIdTable,
     },
 
@@ -13319,7 +13320,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Chimairamon
         ) 
         .levelUpLearnset = sChimairamonLevelUpLearnset,
-        .teachableLearnset = sChimairamonTeachableLearnset,
+        //.teachableLearnset = sChimairamonTeachableLearnset,
         //.formSpeciesIdTable = sChimairamonFormSpeciesIdTable,
     },
 
@@ -13399,7 +13400,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Cyberdramon
         ) 
         .levelUpLearnset = sCyberdramonLevelUpLearnset,
-        .teachableLearnset = sCyberdramonTeachableLearnset,
+        //.teachableLearnset = sCyberdramonTeachableLearnset,
         //.formSpeciesIdTable = sCyberdramonFormSpeciesIdTable,
     },
 
@@ -13479,7 +13480,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Dagomon
         ) 
         .levelUpLearnset = sDagomonLevelUpLearnset,
-        .teachableLearnset = sDagomonTeachableLearnset,
+        //.teachableLearnset = sDagomonTeachableLearnset,
         //.formSpeciesIdTable = sDagomonFormSpeciesIdTable,
     },
 
@@ -13559,7 +13560,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Deathmeramon
         ) 
         .levelUpLearnset = sDeathmeramonLevelUpLearnset,
-        .teachableLearnset = sDeathmeramonTeachableLearnset,
+        //.teachableLearnset = sDeathmeramonTeachableLearnset,
         //.formSpeciesIdTable = sDeathmeramonFormSpeciesIdTable,
     },
 
@@ -13639,7 +13640,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Delumon
         ) 
         .levelUpLearnset = sDelumonLevelUpLearnset,
-        .teachableLearnset = sDelumonTeachableLearnset,
+        //.teachableLearnset = sDelumonTeachableLearnset,
         //.formSpeciesIdTable = sDelumonFormSpeciesIdTable,
     },
 
@@ -13719,7 +13720,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Digitamamon
         ) 
         .levelUpLearnset = sDigitamamonLevelUpLearnset,
-        .teachableLearnset = sDigitamamonTeachableLearnset,
+        //.teachableLearnset = sDigitamamonTeachableLearnset,
         //.formSpeciesIdTable = sDigitamamonFormSpeciesIdTable,
     },
 
@@ -13799,7 +13800,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Etemon
         ) 
         .levelUpLearnset = sEtemonLevelUpLearnset,
-        .teachableLearnset = sEtemonTeachableLearnset,
+        //.teachableLearnset = sEtemonTeachableLearnset,
         //.formSpeciesIdTable = sEtemonFormSpeciesIdTable,
     },
 
@@ -13879,7 +13880,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Extyrannomon
         ) 
         .levelUpLearnset = sExtyrannomonLevelUpLearnset,
-        .teachableLearnset = sExtyrannomonTeachableLearnset,
+        //.teachableLearnset = sExtyrannomonTeachableLearnset,
         //.formSpeciesIdTable = sExtyrannomonFormSpeciesIdTable,
     },
 
@@ -13959,7 +13960,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Garudamon
         ) 
         .levelUpLearnset = sGarudamonLevelUpLearnset,
-        .teachableLearnset = sGarudamonTeachableLearnset,
+        //.teachableLearnset = sGarudamonTeachableLearnset,
         //.formSpeciesIdTable = sGarudamonFormSpeciesIdTable,
     },
 
@@ -14039,7 +14040,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gerbemon
         ) 
         .levelUpLearnset = sGerbemonLevelUpLearnset,
-        .teachableLearnset = sGerbemonTeachableLearnset,
+        //.teachableLearnset = sGerbemonTeachableLearnset,
         //.formSpeciesIdTable = sGerbemonFormSpeciesIdTable,
     },
 
@@ -14119,7 +14120,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Gigadramon
         ) 
         .levelUpLearnset = sGigadramonLevelUpLearnset,
-        .teachableLearnset = sGigadramonTeachableLearnset,
+        //.teachableLearnset = sGigadramonTeachableLearnset,
         //.formSpeciesIdTable = sGigadramonFormSpeciesIdTable,
     },
 
@@ -14199,7 +14200,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Giromon
         ) 
         .levelUpLearnset = sGiromonLevelUpLearnset,
-        .teachableLearnset = sGiromonTeachableLearnset,
+        //.teachableLearnset = sGiromonTeachableLearnset,
         //.formSpeciesIdTable = sGiromonFormSpeciesIdTable,
     },
 
@@ -14279,7 +14280,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tekkamon
         ) 
         .levelUpLearnset = sTekkamonLevelUpLearnset,
-        .teachableLearnset = sTekkamonTeachableLearnset,
+        //.teachableLearnset = sTekkamonTeachableLearnset,
         //.formSpeciesIdTable = sTekkamonFormSpeciesIdTable,
     },
 
@@ -14359,7 +14360,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Hangyomon
         ) 
         .levelUpLearnset = sHangyomonLevelUpLearnset,
-        .teachableLearnset = sHangyomonTeachableLearnset,
+        //.teachableLearnset = sHangyomonTeachableLearnset,
         //.formSpeciesIdTable = sHangyomonFormSpeciesIdTable,
     },
 
@@ -14439,7 +14440,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Holyangemon
         ) 
         .levelUpLearnset = sHolyangemonLevelUpLearnset,
-        .teachableLearnset = sHolyangemonTeachableLearnset,
+        //.teachableLearnset = sHolyangemonTeachableLearnset,
         //.formSpeciesIdTable = sHolyangemonFormSpeciesIdTable,
     },
 
@@ -14519,7 +14520,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Insekimon
         ) 
         .levelUpLearnset = sInsekimonLevelUpLearnset,
-        .teachableLearnset = sInsekimonTeachableLearnset,
+        //.teachableLearnset = sInsekimonTeachableLearnset,
         .formSpeciesIdTable = sGotsumonFormSpeciesIdTable,
     },
 
@@ -14599,7 +14600,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Jyagamon
         ) 
         .levelUpLearnset = sJyagamonLevelUpLearnset,
-        .teachableLearnset = sJyagamonTeachableLearnset,
+        //.teachableLearnset = sJyagamonTeachableLearnset,
         //.formSpeciesIdTable = sJyagamonFormSpeciesIdTable,
     },
 
@@ -14679,7 +14680,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Jyureimon
         ) 
         .levelUpLearnset = sJyureimonLevelUpLearnset,
-        .teachableLearnset = sJyureimonTeachableLearnset,
+        //.teachableLearnset = sJyureimonTeachableLearnset,
         //.formSpeciesIdTable = sJyureimonFormSpeciesIdTable,
     },
 
@@ -14759,7 +14760,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Knightmon
         ) 
         .levelUpLearnset = sKnightmonLevelUpLearnset,
-        .teachableLearnset = sKnightmonTeachableLearnset,
+        //.teachableLearnset = sKnightmonTeachableLearnset,
         //.formSpeciesIdTable = sKnightmonFormSpeciesIdTable,
     },
 
@@ -14839,7 +14840,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Ladydevimon
         ) 
         .levelUpLearnset = sLadydevimonLevelUpLearnset,
-        .teachableLearnset = sLadydevimonTeachableLearnset,
+        //.teachableLearnset = sLadydevimonTeachableLearnset,
         //.formSpeciesIdTable = sLadydevimonFormSpeciesIdTable,
     },
 
@@ -14919,7 +14920,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Lilimon
         ) 
         .levelUpLearnset = sLilimonLevelUpLearnset,
-        .teachableLearnset = sLilimonTeachableLearnset,
+        //.teachableLearnset = sLilimonTeachableLearnset,
         //.formSpeciesIdTable = sLilimonFormSpeciesIdTable,
     },
 
@@ -14999,7 +15000,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Mamemon
         ) 
         .levelUpLearnset = sMamemonLevelUpLearnset,
-        .teachableLearnset = sMamemonTeachableLearnset,
+        //.teachableLearnset = sMamemonTeachableLearnset,
         //.formSpeciesIdTable = sMamemonFormSpeciesIdTable,
     },
 
@@ -15079,7 +15080,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Mammon
         ) 
         .levelUpLearnset = sMammonLevelUpLearnset,
-        .teachableLearnset = sMammonTeachableLearnset,
+        //.teachableLearnset = sMammonTeachableLearnset,
         //.formSpeciesIdTable = sMammonFormSpeciesIdTable,
     },
 
@@ -15159,7 +15160,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Marinedevimon
         ) 
         .levelUpLearnset = sMarinedevimonLevelUpLearnset,
-        .teachableLearnset = sMarinedevimonTeachableLearnset,
+        //.teachableLearnset = sMarinedevimonTeachableLearnset,
         .formSpeciesIdTable = sDevimonFormSpeciesIdTable,
     },
 
@@ -15239,7 +15240,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Mastertyrannomon
         ) 
         .levelUpLearnset = sMastertyrannomonLevelUpLearnset,
-        .teachableLearnset = sMastertyrannomonTeachableLearnset,
+        //.teachableLearnset = sMastertyrannomonTeachableLearnset,
         //.formSpeciesIdTable = sMastertyrannomonFormSpeciesIdTable,
     },
 
@@ -15319,7 +15320,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Megadramon
         ) 
         .levelUpLearnset = sMegadramonLevelUpLearnset,
-        .teachableLearnset = sMegadramonTeachableLearnset,
+        //.teachableLearnset = sMegadramonTeachableLearnset,
         //.formSpeciesIdTable = sMegadramonFormSpeciesIdTable,
     },
 
@@ -15399,7 +15400,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Megaseadramon
         ) 
         .levelUpLearnset = sMegaseadramonLevelUpLearnset,
-        .teachableLearnset = sMegaseadramonTeachableLearnset,
+        //.teachableLearnset = sMegaseadramonTeachableLearnset,
         //.formSpeciesIdTable = sMegaseadramonFormSpeciesIdTable,
     },
 
@@ -15479,7 +15480,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Waruseadramon
         ) 
         .levelUpLearnset = sWaruseadramonLevelUpLearnset,
-        .teachableLearnset = sWaruseadramonTeachableLearnset,
+        //.teachableLearnset = sWaruseadramonTeachableLearnset,
         //.formSpeciesIdTable = sWaruseadramonFormSpeciesIdTable,
     },
 
@@ -15559,7 +15560,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Metalgreymon
         ) 
         .levelUpLearnset = sMetalgreymonLevelUpLearnset,
-        .teachableLearnset = sMetalgreymonTeachableLearnset,
+        //.teachableLearnset = sMetalgreymonTeachableLearnset,
         //.formSpeciesIdTable = sMetalgreymonFormSpeciesIdTable,
     },
 
@@ -15639,7 +15640,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Metalgreymonv
         ) 
         .levelUpLearnset = sMetalgreymonvLevelUpLearnset,
-        .teachableLearnset = sMetalgreymonvTeachableLearnset,
+        //.teachableLearnset = sMetalgreymonvTeachableLearnset,
         //.formSpeciesIdTable = sMetalgreymonvFormSpeciesIdTable,
     },
 
@@ -15719,7 +15720,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Metalmamemon
         ) 
         .levelUpLearnset = sMetalmamemonLevelUpLearnset,
-        .teachableLearnset = sMetalmamemonTeachableLearnset,
+        //.teachableLearnset = sMetalmamemonTeachableLearnset,
         //.formSpeciesIdTable = sMetalmamemonFormSpeciesIdTable,
     },
 
@@ -15799,7 +15800,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Metaltyrannomon
         ) 
         .levelUpLearnset = sMetaltyrannomonLevelUpLearnset,
-        .teachableLearnset = sMetaltyrannomonTeachableLearnset,
+        //.teachableLearnset = sMetaltyrannomonTeachableLearnset,
         //.formSpeciesIdTable = sMetaltyrannomonFormSpeciesIdTable,
     },
 
@@ -15879,7 +15880,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Monzaemon
         ) 
         .levelUpLearnset = sMonzaemonLevelUpLearnset,
-        .teachableLearnset = sMonzaemonTeachableLearnset,
+        //.teachableLearnset = sMonzaemonTeachableLearnset,
         //.formSpeciesIdTable = sMonzaemonFormSpeciesIdTable,
     },
 
@@ -15959,7 +15960,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Mummymon
         ) 
         .levelUpLearnset = sMummymonLevelUpLearnset,
-        .teachableLearnset = sMummymonTeachableLearnset,
+        //.teachableLearnset = sMummymonTeachableLearnset,
         //.formSpeciesIdTable = sMummymonFormSpeciesIdTable,
     },
 
@@ -16039,7 +16040,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Nanomon
         ) 
         .levelUpLearnset = sNanomonLevelUpLearnset,
-        .teachableLearnset = sNanomonTeachableLearnset,
+        //.teachableLearnset = sNanomonTeachableLearnset,
         //.formSpeciesIdTable = sNanomonFormSpeciesIdTable,
     },
 
@@ -16119,7 +16120,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Okuwamon
         ) 
         .levelUpLearnset = sOkuwamonLevelUpLearnset,
-        .teachableLearnset = sOkuwamonTeachableLearnset,
+        //.teachableLearnset = sOkuwamonTeachableLearnset,
         //.formSpeciesIdTable = sOkuwamonFormSpeciesIdTable,
     },
 
@@ -16199,7 +16200,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Orochimon
         ) 
         .levelUpLearnset = sOrochimonLevelUpLearnset,
-        .teachableLearnset = sOrochimonTeachableLearnset,
+        //.teachableLearnset = sOrochimonTeachableLearnset,
         //.formSpeciesIdTable = sOrochimonFormSpeciesIdTable,
     },
 
@@ -16279,7 +16280,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Panjyamon
         ) 
         .levelUpLearnset = sPanjyamonLevelUpLearnset,
-        .teachableLearnset = sPanjyamonTeachableLearnset,
+        //.teachableLearnset = sPanjyamonTeachableLearnset,
         //.formSpeciesIdTable = sPanjyamonFormSpeciesIdTable,
     },
 
@@ -16359,7 +16360,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Parrotmon
         ) 
         .levelUpLearnset = sParrotmonLevelUpLearnset,
-        .teachableLearnset = sParrotmonTeachableLearnset,
+        //.teachableLearnset = sParrotmonTeachableLearnset,
         //.formSpeciesIdTable = sParrotmonFormSpeciesIdTable,
     },
 
@@ -16439,7 +16440,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Phantomon
         ) 
         .levelUpLearnset = sPhantomonLevelUpLearnset,
-        .teachableLearnset = sPhantomonTeachableLearnset,
+        //.teachableLearnset = sPhantomonTeachableLearnset,
         //.formSpeciesIdTable = sPhantomonFormSpeciesIdTable,
     },
 
@@ -16519,7 +16520,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Piccolomon
         ) 
         .levelUpLearnset = sPiccolomonLevelUpLearnset,
-        .teachableLearnset = sPiccolomonTeachableLearnset,
+        //.teachableLearnset = sPiccolomonTeachableLearnset,
         //.formSpeciesIdTable = sPiccolomonFormSpeciesIdTable,
     },
 
@@ -16599,7 +16600,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Pumpmon
         ) 
         .levelUpLearnset = sPumpmonLevelUpLearnset,
-        .teachableLearnset = sPumpmonTeachableLearnset,
+        //.teachableLearnset = sPumpmonTeachableLearnset,
         //.formSpeciesIdTable = sPumpmonFormSpeciesIdTable,
     },
 
@@ -16679,7 +16680,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Skullgreymon
         ) 
         .levelUpLearnset = sSkullgreymonLevelUpLearnset,
-        .teachableLearnset = sSkullgreymonTeachableLearnset,
+        //.teachableLearnset = sSkullgreymonTeachableLearnset,
         //.formSpeciesIdTable = sSkullgreymonFormSpeciesIdTable,
     },
 
@@ -16759,7 +16760,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Skullsatamon
         ) 
         .levelUpLearnset = sSkullsatamonLevelUpLearnset,
-        .teachableLearnset = sSkullsatamonTeachableLearnset,
+        //.teachableLearnset = sSkullsatamonTeachableLearnset,
         //.formSpeciesIdTable = sSkullsatamonFormSpeciesIdTable,
     },
 
@@ -16839,7 +16840,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Tonosamagekomon
         ) 
         .levelUpLearnset = sTonosamagekomonLevelUpLearnset,
-        .teachableLearnset = sTonosamagekomonTeachableLearnset,
+        //.teachableLearnset = sTonosamagekomonTeachableLearnset,
         //.formSpeciesIdTable = sTonosamagekomonFormSpeciesIdTable,
     },
 
@@ -16919,7 +16920,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Triceramon
         ) 
         .levelUpLearnset = sTriceramonLevelUpLearnset,
-        .teachableLearnset = sTriceramonTeachableLearnset,
+        //.teachableLearnset = sTriceramonTeachableLearnset,
         //.formSpeciesIdTable = sTriceramonFormSpeciesIdTable,
     },
 
@@ -16999,7 +17000,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Vadermon
         ) 
         .levelUpLearnset = sVadermonLevelUpLearnset,
-        .teachableLearnset = sVadermonTeachableLearnset,
+        //.teachableLearnset = sVadermonTeachableLearnset,
         //.formSpeciesIdTable = sVadermonFormSpeciesIdTable,
     },
 
@@ -17079,7 +17080,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Vamdemon
         ) 
         .levelUpLearnset = sVamdemonLevelUpLearnset,
-        .teachableLearnset = sVamdemonTeachableLearnset,
+        //.teachableLearnset = sVamdemonTeachableLearnset,
         //.formSpeciesIdTable = sVamdemonFormSpeciesIdTable,
     },
 
@@ -17159,7 +17160,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Vermilimon
         ) 
         .levelUpLearnset = sVermilimonLevelUpLearnset,
-        .teachableLearnset = sVermilimonTeachableLearnset,
+        //.teachableLearnset = sVermilimonTeachableLearnset,
         //.formSpeciesIdTable = sVermilimonFormSpeciesIdTable,
     },
 
@@ -17239,7 +17240,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Warumonzaemon
         ) 
         .levelUpLearnset = sWarumonzaemonLevelUpLearnset,
-        .teachableLearnset = sWarumonzaemonTeachableLearnset,
+        //.teachableLearnset = sWarumonzaemonTeachableLearnset,
         //.formSpeciesIdTable = sWarumonzaemonFormSpeciesIdTable,
     },
 
@@ -17319,7 +17320,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Weregarurumon
         ) 
         .levelUpLearnset = sWeregarurumonLevelUpLearnset,
-        .teachableLearnset = sWeregarurumonTeachableLearnset,
+        //.teachableLearnset = sWeregarurumonTeachableLearnset,
         //.formSpeciesIdTable = sWeregarurumonFormSpeciesIdTable,
     },
 
@@ -17399,7 +17400,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Whamon_perfect
         ) 
         .levelUpLearnset = sWhamon_perfectLevelUpLearnset,
-        .teachableLearnset = sWhamon_perfectTeachableLearnset,
+        //.teachableLearnset = sWhamon_perfectTeachableLearnset,
         //.formSpeciesIdTable = sWhamon_perfectFormSpeciesIdTable,
     },
 
@@ -17479,7 +17480,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Zudomon
         ) 
         .levelUpLearnset = sZudomonLevelUpLearnset,
-        .teachableLearnset = sZudomonTeachableLearnset,
+        //.teachableLearnset = sZudomonTeachableLearnset,
         //.formSpeciesIdTable = sZudomonFormSpeciesIdTable,
     },
 
@@ -17559,7 +17560,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Apocalymon
         ) 
         .levelUpLearnset = sApocalymonLevelUpLearnset,
-        .teachableLearnset = sApocalymonTeachableLearnset,
+        //.teachableLearnset = sApocalymonTeachableLearnset,
         //.formSpeciesIdTable = sApocalymonFormSpeciesIdTable,
     },
 
@@ -17639,7 +17640,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Babamon
         ) 
         .levelUpLearnset = sBabamonLevelUpLearnset,
-        .teachableLearnset = sBabamonTeachableLearnset,
+        //.teachableLearnset = sBabamonTeachableLearnset,
         //.formSpeciesIdTable = sBabamonFormSpeciesIdTable,
     },
 
@@ -17719,7 +17720,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Boltmon
         ) 
         .levelUpLearnset = sBoltmonLevelUpLearnset,
-        .teachableLearnset = sBoltmonTeachableLearnset,
+        //.teachableLearnset = sBoltmonTeachableLearnset,
         //.formSpeciesIdTable = sBoltmonFormSpeciesIdTable,
     },
 
@@ -17799,7 +17800,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Demon
         ) 
         .levelUpLearnset = sDemonLevelUpLearnset,
-        .teachableLearnset = sDemonTeachableLearnset,
+        //.teachableLearnset = sDemonTeachableLearnset,
         //.formSpeciesIdTable = sDemonFormSpeciesIdTable,
     },
 
@@ -17879,7 +17880,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Devitamamon
         ) 
         .levelUpLearnset = sDevitamamonLevelUpLearnset,
-        .teachableLearnset = sDevitamamonTeachableLearnset,
+        //.teachableLearnset = sDevitamamonTeachableLearnset,
         //.formSpeciesIdTable = sDevitamamonFormSpeciesIdTable,
     },
 
@@ -17959,7 +17960,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Diablomon
         ) 
         .levelUpLearnset = sDiablomonLevelUpLearnset,
-        .teachableLearnset = sDiablomonTeachableLearnset,
+        //.teachableLearnset = sDiablomonTeachableLearnset,
         //.formSpeciesIdTable = sDiablomonFormSpeciesIdTable,
     },
 
@@ -18039,7 +18040,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Goddramon
         ) 
         .levelUpLearnset = sGoddramonLevelUpLearnset,
-        .teachableLearnset = sGoddramonTeachableLearnset,
+        //.teachableLearnset = sGoddramonTeachableLearnset,
         //.formSpeciesIdTable = sGoddramonFormSpeciesIdTable,
     },
 
@@ -18119,7 +18120,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Griffomon
         ) 
         .levelUpLearnset = sGriffomonLevelUpLearnset,
-        .teachableLearnset = sGriffomonTeachableLearnset,
+        //.teachableLearnset = sGriffomonTeachableLearnset,
         //.formSpeciesIdTable = sGriffomonFormSpeciesIdTable,
     },
 
@@ -18199,7 +18200,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Heraklekabuterimon
         ) 
         .levelUpLearnset = sHeraklekabuterimonLevelUpLearnset,
-        .teachableLearnset = sHeraklekabuterimonTeachableLearnset,
+        //.teachableLearnset = sHeraklekabuterimonTeachableLearnset,
         //.formSpeciesIdTable = sHeraklekabuterimonFormSpeciesIdTable,
     },
 
@@ -18279,7 +18280,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Holydramon
         ) 
         .levelUpLearnset = sHolydramonLevelUpLearnset,
-        .teachableLearnset = sHolydramonTeachableLearnset,
+        //.teachableLearnset = sHolydramonTeachableLearnset,
         //.formSpeciesIdTable = sHolydramonFormSpeciesIdTable,
     },
 
@@ -18359,7 +18360,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Hououmon
         ) 
         .levelUpLearnset = sHououmonLevelUpLearnset,
-        .teachableLearnset = sHououmonTeachableLearnset,
+        //.teachableLearnset = sHououmonTeachableLearnset,
         //.formSpeciesIdTable = sHououmonFormSpeciesIdTable,
     },
 
@@ -18439,7 +18440,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Jijimon
         ) 
         .levelUpLearnset = sJijimonLevelUpLearnset,
-        .teachableLearnset = sJijimonTeachableLearnset,
+        //.teachableLearnset = sJijimonTeachableLearnset,
         //.formSpeciesIdTable = sJijimonFormSpeciesIdTable,
     },
 
@@ -18519,7 +18520,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Kingetemon
         ) 
         .levelUpLearnset = sKingetemonLevelUpLearnset,
-        .teachableLearnset = sKingetemonTeachableLearnset,
+        //.teachableLearnset = sKingetemonTeachableLearnset,
         //.formSpeciesIdTable = sKingetemonFormSpeciesIdTable,
     },
 
@@ -18599,7 +18600,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Marineangemon
         ) 
         .levelUpLearnset = sMarineangemonLevelUpLearnset,
-        .teachableLearnset = sMarineangemonTeachableLearnset,
+        //.teachableLearnset = sMarineangemonTeachableLearnset,
         //.formSpeciesIdTable = sMarineangemonFormSpeciesIdTable,
     },
 
@@ -18679,7 +18680,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Metaletemon
         ) 
         .levelUpLearnset = sMetaletemonLevelUpLearnset,
-        .teachableLearnset = sMetaletemonTeachableLearnset,
+        //.teachableLearnset = sMetaletemonTeachableLearnset,
         //.formSpeciesIdTable = sMetaletemonFormSpeciesIdTable,
     },
 
@@ -18759,7 +18760,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Metalgarurumon
         ) 
         .levelUpLearnset = sMetalgarurumonLevelUpLearnset,
-        .teachableLearnset = sMetalgarurumonTeachableLearnset,
+        //.teachableLearnset = sMetalgarurumonTeachableLearnset,
         //.formSpeciesIdTable = sMetalgarurumonFormSpeciesIdTable,
     },
 
@@ -18839,7 +18840,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Metalseadramon
         ) 
         .levelUpLearnset = sMetalseadramonLevelUpLearnset,
-        .teachableLearnset = sMetalseadramonTeachableLearnset,
+        //.teachableLearnset = sMetalseadramonTeachableLearnset,
         //.formSpeciesIdTable = sMetalseadramonFormSpeciesIdTable,
     },
 
@@ -18919,7 +18920,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Millenniummon
         ) 
         .levelUpLearnset = sMillenniummonLevelUpLearnset,
-        .teachableLearnset = sMillenniummonTeachableLearnset,
+        //.teachableLearnset = sMillenniummonTeachableLearnset,
         //.formSpeciesIdTable = sMillenniummonFormSpeciesIdTable,
     },
 
@@ -18999,7 +19000,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Mugendramon
         ) 
         .levelUpLearnset = sMugendramonLevelUpLearnset,
-        .teachableLearnset = sMugendramonTeachableLearnset,
+        //.teachableLearnset = sMugendramonTeachableLearnset,
         //.formSpeciesIdTable = sMugendramonFormSpeciesIdTable,
     },
 
@@ -19079,7 +19080,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Omegamon
         ) 
         .levelUpLearnset = sOmegamonLevelUpLearnset,
-        .teachableLearnset = sOmegamonTeachableLearnset,
+        //.teachableLearnset = sOmegamonTeachableLearnset,
         //.formSpeciesIdTable = sOmegamonFormSpeciesIdTable,
     },
 
@@ -19159,7 +19160,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Piemon
         ) 
         .levelUpLearnset = sPiemonLevelUpLearnset,
-        .teachableLearnset = sPiemonTeachableLearnset,
+        //.teachableLearnset = sPiemonTeachableLearnset,
         //.formSpeciesIdTable = sPiemonFormSpeciesIdTable,
     },
 
@@ -19239,7 +19240,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Pinocchimon
         ) 
         .levelUpLearnset = sPinocchimonLevelUpLearnset,
-        .teachableLearnset = sPinocchimonTeachableLearnset,
+        //.teachableLearnset = sPinocchimonTeachableLearnset,
         //.formSpeciesIdTable = sPinocchimonFormSpeciesIdTable,
     },
 
@@ -19319,7 +19320,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Plesiomon
         ) 
         .levelUpLearnset = sPlesiomonLevelUpLearnset,
-        .teachableLearnset = sPlesiomonTeachableLearnset,
+        //.teachableLearnset = sPlesiomonTeachableLearnset,
         //.formSpeciesIdTable = sPlesiomonFormSpeciesIdTable,
     },
 
@@ -19399,7 +19400,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Pukumon
         ) 
         .levelUpLearnset = sPukumonLevelUpLearnset,
-        .teachableLearnset = sPukumonTeachableLearnset,
+        //.teachableLearnset = sPukumonTeachableLearnset,
         //.formSpeciesIdTable = sPukumonFormSpeciesIdTable,
     },
 
@@ -19479,7 +19480,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Rosemon
         ) 
         .levelUpLearnset = sRosemonLevelUpLearnset,
-        .teachableLearnset = sRosemonTeachableLearnset,
+        //.teachableLearnset = sRosemonTeachableLearnset,
         //.formSpeciesIdTable = sRosemonFormSpeciesIdTable,
     },
 
@@ -19559,7 +19560,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Saberleomon
         ) 
         .levelUpLearnset = sSaberleomonLevelUpLearnset,
-        .teachableLearnset = sSaberleomonTeachableLearnset,
+        //.teachableLearnset = sSaberleomonTeachableLearnset,
         //.formSpeciesIdTable = sSaberleomonFormSpeciesIdTable,
     },
 
@@ -19639,7 +19640,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Skullmammon
         ) 
         .levelUpLearnset = sSkullmammonLevelUpLearnset,
-        .teachableLearnset = sSkullmammonTeachableLearnset,
+        //.teachableLearnset = sSkullmammonTeachableLearnset,
         //.formSpeciesIdTable = sSkullmammonFormSpeciesIdTable,
     },
 
@@ -19719,7 +19720,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Venomvamdemon
         ) 
         .levelUpLearnset = sVenomvamdemonLevelUpLearnset,
-        .teachableLearnset = sVenomvamdemonTeachableLearnset,
+        //.teachableLearnset = sVenomvamdemonTeachableLearnset,
         //.formSpeciesIdTable = sVenomvamdemonFormSpeciesIdTable,
     },
 
@@ -19799,7 +19800,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Wargreymon
         ) 
         .levelUpLearnset = sWargreymonLevelUpLearnset,
-        .teachableLearnset = sWargreymonTeachableLearnset,
+        //.teachableLearnset = sWargreymonTeachableLearnset,
         //.formSpeciesIdTable = sWargreymonFormSpeciesIdTable,
     },
 
@@ -19879,7 +19880,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
             gShinyOverworldPalette_Zanbamon
         ) 
         .levelUpLearnset = sZanbamonLevelUpLearnset,
-        .teachableLearnset = sZanbamonTeachableLearnset,
+        //.teachableLearnset = sZanbamonTeachableLearnset,
         //.formSpeciesIdTable = sZanbamonFormSpeciesIdTable,
     },
 

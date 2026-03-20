@@ -27511,6 +27511,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/botamon/back.4bpp.smol");
     const u16 gMonShinyPalette_Botamon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/botamon/shiny.gbapal");
     const u8 gMonIcon_Botamon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/botamon/icon.4bpp");
+    const u8 gMonEggIcon_Botamon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/botamon/icon_egg.4bpp");
+    const u32 gMonEggGfx_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/botamon/egg_sprite.4bpp.smol");
+    const u16 gMonEggPal_Botamon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/botamon/egg_sprite.gbapal");
+    const u32 gMonHatchGfx_Botamon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/botamon/hatch.4bpp.smol");
+    const u16 gMonHatchPal_Botamon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/botamon/hatch.gbapal");
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Botamon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/botamon/footprint.1bpp");
 #endif //P_FOOTPRINTS

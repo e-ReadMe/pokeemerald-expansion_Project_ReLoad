@@ -9,3 +9,12 @@
     .eggIconPalIndex = 2,
 },
 #endif //P_FAMILY_MANAPHY
+[EGG_ID_BOTAMON] =
+{
+    .eggIcon = gMonEggIcon_Botamon,
+    .eggSprite = gMonEggGfx_Botamon,
+    .eggPalette = gMonEggPal_Botamon,
+    .eggHatchGfx = gMonHatchGfx_Botamon,
+    .eggHatchPal = gMonHatchPal_Botamon,
+    .eggIconPalIndex = 1,
+},
