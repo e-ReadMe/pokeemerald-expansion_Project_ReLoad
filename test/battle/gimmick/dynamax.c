@@ -1601,8 +1601,8 @@ SINGLE_BATTLE_TEST("Dynamax: Max Moves don't bypass absorbing abilities")
         ASSUME(GetMoveType(MOVE_WATER_GUN) == TYPE_WATER);
         ASSUME(GetMoveType(MOVE_SPARK) == TYPE_ELECTRIC);
         ASSUME(GetMoveType(MOVE_EMBER) == TYPE_FIRE);
-        ASSUME(GetMoveType(MOVE_MUD_BOMB) == TYPE_EARTH);
-        ASSUME(GetMoveType(MOVE_VINE_WHIP) == TYPE_PLANT);
+        ASSUME(GetMoveType(MOVE_MUD_BOMB) == TYPE_GROUND);
+        ASSUME(GetMoveType(MOVE_VINE_WHIP) == TYPE_GRASS);
         WITH_CONFIG(B_REDIRECT_ABILITY_IMMUNITY, GEN_5);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species) { Ability(ability); }

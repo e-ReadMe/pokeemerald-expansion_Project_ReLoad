@@ -80,7 +80,7 @@ static bool32 AI_CanBattlerHitBothFoesInTerrain(enum BattlerId battler, enum Mov
 enum MoveTarget AI_GetBattlerMoveTargetType(enum BattlerId battler, enum Move move)
 {
     enum BattleMoveEffects effect = GetMoveEffect(move);
-    if (effect == EFFECT_CURSE && !IS_BATTLER_OF_TYPE(battler, TYPE_UNDEAD))
+    if (effect == EFFECT_CURSE && !IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
         return TARGET_USER;
     if (AI_CanBattlerHitBothFoesInTerrain(battler, move, effect))
         return TARGET_BOTH;
@@ -474,7 +474,7 @@ bool32 AI_CanBattlerEscape(enum BattlerId battler)
 {
     enum HoldEffect holdEffect = gAiLogicData->holdEffects[battler];
 
-    if (GetConfig(B_GHOSTS_ESCAPE) >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_UNDEAD))
+    if (GetConfig(B_GHOSTS_ESCAPE) >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
         return TRUE;
     if (holdEffect == HOLD_EFFECT_SHED_SHELL)
         return TRUE;
@@ -504,7 +504,7 @@ bool32 IsBattlerTrapped(enum BattlerId battlerAtk, enum BattlerId battlerDef)
         && AI_IsBattlerGrounded(battlerDef))
         return TRUE;
     if (AI_IsAbilityOnSide(battlerAtk, ABILITY_MAGNET_PULL)
-        && IS_BATTLER_OF_TYPE(battlerDef, TYPE_METAL))
+        && IS_BATTLER_OF_TYPE(battlerDef, TYPE_STEEL))
         return TRUE;
 
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && CountUsablePartyMons(battlerDef) == 0)
@@ -2348,7 +2348,7 @@ bool32 CanLowerStat(enum BattlerId battlerAtk, enum BattlerId battlerDef, struct
 
     if (!DoesBattlerIgnoreAbilityChecks(battlerAtk, abilityAtk, move))
     {
-        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_PLANT) && AI_IsAbilityOnSide(battlerDef, ABILITY_FLOWER_VEIL))
+        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GRASS) && AI_IsAbilityOnSide(battlerDef, ABILITY_FLOWER_VEIL))
             return FALSE;
 
         switch (aiData->abilities[battlerDef])
@@ -2372,7 +2372,6 @@ bool32 CanLowerStat(enum BattlerId battlerAtk, enum BattlerId battlerDef, struct
         case ABILITY_CONTRARY:
         case ABILITY_CLEAR_BODY:
         case ABILITY_WHITE_SMOKE:
-        case ABILITY_MYSTERY_SCALE:
         case ABILITY_FULL_METAL_BODY:
             return FALSE;
         case ABILITY_SHIELD_DUST:
@@ -3363,7 +3362,7 @@ static bool32 DoesBattlerTakeSandstormDamage(enum BattlerId battlerId, enum Abil
     if (!(AI_GetWeather() & B_WEATHER_SANDSTORM))
         return FALSE;
 
-    if (!IS_BATTLER_ANY_TYPE(battlerId, TYPE_BEAST, TYPE_EARTH, TYPE_METAL)
+    if (!IS_BATTLER_ANY_TYPE(battlerId, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
       && ability != ABILITY_SAND_VEIL
       && ability != ABILITY_SAND_FORCE
       && ability != ABILITY_SAND_RUSH
@@ -5269,7 +5268,7 @@ bool32 ShouldUseZMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum
 
             if (zEffect == Z_EFFECT_CURSE)
             {
-                if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNDEAD))
+                if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GHOST))
                     zEffect = Z_EFFECT_RECOVER_HP;
                 else
                     zEffect = Z_EFFECT_ATK_UP_1;
@@ -6154,7 +6153,6 @@ enum AIScore BattlerBenefitsFromAbilityScore(enum BattlerId battler, enum Abilit
     case ABILITY_MOODY:
     case ABILITY_PURIFYING_SALT:
     case ABILITY_SPEED_BOOST:
-    case ABILITY_MYSTERY_SCALE:
     case ABILITY_WHITE_SMOKE:
         return GOOD_EFFECT;
     // Conditional ability logic goes here.

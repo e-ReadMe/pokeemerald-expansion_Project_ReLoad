@@ -9,10 +9,10 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Flower Shield raises the defense of all Grass-type Pokémon")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_TANGROWTH, 0) == TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_SUNKERN, 0) == TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_SUNFLORA, 0) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_TANGROWTH, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_SUNKERN, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_SUNFLORA, 0) == TYPE_GRASS);
         PLAYER(SPECIES_TANGELA);
         PLAYER(SPECIES_TANGROWTH);
         OPPONENT(SPECIES_SUNKERN);
@@ -72,9 +72,9 @@ DOUBLE_BATTLE_TEST("Flower Shield doesn't affect Grass-type Pokémon that are in
 AI_DOUBLE_BATTLE_TEST("AI uses Flower Shield")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_GRASS);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
         PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
         PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_POUND, MOVE_CELEBRATE); }

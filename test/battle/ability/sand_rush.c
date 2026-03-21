@@ -6,9 +6,9 @@ SINGLE_BATTLE_TEST("Sand Rush prevents damage from sandstorm")
     enum Type type1 = GetSpeciesType(SPECIES_STOUTLAND, 0);
     enum Type type2 = GetSpeciesType(SPECIES_STOUTLAND, 1);
     GIVEN {
-        ASSUME(type1 != TYPE_BEAST && type2 != TYPE_BEAST);
-        ASSUME(type1 != TYPE_EARTH && type2 != TYPE_EARTH);
-        ASSUME(type1 != TYPE_METAL && type2 != TYPE_METAL);
+        ASSUME(type1 != TYPE_ROCK && type2 != TYPE_ROCK);
+        ASSUME(type1 != TYPE_GROUND && type2 != TYPE_GROUND);
+        ASSUME(type1 != TYPE_STEEL && type2 != TYPE_STEEL);
         PLAYER(SPECIES_STOUTLAND) { Ability(ABILITY_SAND_RUSH); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

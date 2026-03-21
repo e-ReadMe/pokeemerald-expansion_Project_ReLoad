@@ -800,10 +800,10 @@ DOUBLE_BATTLE_TEST("Crafty Shield does not protect against moves that target all
     PARAMETRIZE { move = MOVE_PERISH_SONG; }
 
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_TANGROWTH, 0) == TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_SUNKERN, 0) == TYPE_PLANT);
-        ASSUME(GetSpeciesType(SPECIES_SUNFLORA, 0) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_TANGROWTH, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_SUNKERN, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_SUNFLORA, 0) == TYPE_GRASS);
         PLAYER(SPECIES_TANGELA);
         PLAYER(SPECIES_TANGROWTH);
         OPPONENT(SPECIES_SUNKERN);
@@ -870,7 +870,7 @@ SINGLE_BATTLE_TEST("Protect: Quick Guard, Wide Guard and Crafty Shield don't red
     PARAMETRIZE { protected = FALSE; move = MOVE_CRAFTY_SHIELD; }
 
     GIVEN {
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_NORMALIUM_Z); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

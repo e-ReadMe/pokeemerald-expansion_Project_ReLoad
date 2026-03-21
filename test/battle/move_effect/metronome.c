@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Metronome's called powder move fails against Grass Types")
     GIVEN {
         WITH_CONFIG(B_POWDER_GRASS, GEN_6);
         ASSUME(IsPowderMove(MOVE_POISON_POWDER));
-        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
         ASSUME(GetMoveEffect(MOVE_POISON_POWDER) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_POISON_POWDER) == MOVE_EFFECT_POISON);
         PLAYER(SPECIES_WOBBUFFET);

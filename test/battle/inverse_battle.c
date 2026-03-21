@@ -9,44 +9,44 @@ static bool32 IsSpeciesMonotypeOf(u32 species, enum Type type)
 ASSUMPTIONS
 {
     // Pokemon Types
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_EEVEE,    TYPE_NEUTRAL));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_MACHAMP,  TYPE_COMBAT));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_TORNADUS, TYPE_WIND));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_ARBOK,    TYPE_FILTH));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_DUGTRIO,  TYPE_EARTH));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_SUDOWOODO,TYPE_BEAST));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_PINSIR,   TYPE_INSECT));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_DUSKULL,  TYPE_UNDEAD));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_REGISTEEL,TYPE_METAL));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_EEVEE,    TYPE_NORMAL));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_MACHAMP,  TYPE_FIGHTING));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_TORNADUS, TYPE_FLYING));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_ARBOK,    TYPE_POISON));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_DUGTRIO,  TYPE_GROUND));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_SUDOWOODO,TYPE_ROCK));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_PINSIR,   TYPE_BUG));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_DUSKULL,  TYPE_GHOST));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_REGISTEEL,TYPE_STEEL));
     ASSUME(IsSpeciesMonotypeOf(SPECIES_FLAREON,  TYPE_FIRE));
     ASSUME(IsSpeciesMonotypeOf(SPECIES_VAPOREON, TYPE_WATER));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_LEAFEON,  TYPE_PLANT));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_LEAFEON,  TYPE_GRASS));
     ASSUME(IsSpeciesMonotypeOf(SPECIES_JOLTEON,  TYPE_ELECTRIC));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_ESPEON,   TYPE_LIGHT));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_ESPEON,   TYPE_PSYCHIC));
     ASSUME(IsSpeciesMonotypeOf(SPECIES_GLACEON,  TYPE_ICE));
     ASSUME(IsSpeciesMonotypeOf(SPECIES_DRUDDIGON,TYPE_DRAGON));
     ASSUME(IsSpeciesMonotypeOf(SPECIES_UMBREON,  TYPE_DARK));
-    ASSUME(IsSpeciesMonotypeOf(SPECIES_SYLVEON,  TYPE_PUPPET));
+    ASSUME(IsSpeciesMonotypeOf(SPECIES_SYLVEON,  TYPE_FAIRY));
 
     // Move types
-    ASSUME(GetMoveType(MOVE_TACKLE)        == TYPE_NEUTRAL);
-    ASSUME(GetMoveType(MOVE_KARATE_CHOP)   == TYPE_COMBAT);
-    ASSUME(GetMoveType(MOVE_GUST)          == TYPE_WIND);
-    ASSUME(GetMoveType(MOVE_POISON_STING)  == TYPE_FILTH);
-    ASSUME(GetMoveType(MOVE_MUD_SLAP)      == TYPE_EARTH);
-    ASSUME(GetMoveType(MOVE_ROCK_THROW)    == TYPE_BEAST);
-    ASSUME(GetMoveType(MOVE_BUG_BITE)      == TYPE_INSECT);
-    ASSUME(GetMoveType(MOVE_SHADOW_BALL)   == TYPE_UNDEAD);
-    ASSUME(GetMoveType(MOVE_METAL_CLAW)    == TYPE_METAL);
+    ASSUME(GetMoveType(MOVE_TACKLE)        == TYPE_NORMAL);
+    ASSUME(GetMoveType(MOVE_KARATE_CHOP)   == TYPE_FIGHTING);
+    ASSUME(GetMoveType(MOVE_GUST)          == TYPE_FLYING);
+    ASSUME(GetMoveType(MOVE_POISON_STING)  == TYPE_POISON);
+    ASSUME(GetMoveType(MOVE_MUD_SLAP)      == TYPE_GROUND);
+    ASSUME(GetMoveType(MOVE_ROCK_THROW)    == TYPE_ROCK);
+    ASSUME(GetMoveType(MOVE_BUG_BITE)      == TYPE_BUG);
+    ASSUME(GetMoveType(MOVE_SHADOW_BALL)   == TYPE_GHOST);
+    ASSUME(GetMoveType(MOVE_METAL_CLAW)    == TYPE_STEEL);
     ASSUME(GetMoveType(MOVE_EMBER)         == TYPE_FIRE);
     ASSUME(GetMoveType(MOVE_WATER_GUN)     == TYPE_WATER);
-    ASSUME(GetMoveType(MOVE_VINE_WHIP)     == TYPE_PLANT);
+    ASSUME(GetMoveType(MOVE_VINE_WHIP)     == TYPE_GRASS);
     ASSUME(GetMoveType(MOVE_THUNDER_SHOCK) == TYPE_ELECTRIC);
-    ASSUME(GetMoveType(MOVE_CONFUSION)     == TYPE_LIGHT);
+    ASSUME(GetMoveType(MOVE_CONFUSION)     == TYPE_PSYCHIC);
     ASSUME(GetMoveType(MOVE_ICE_BEAM)      == TYPE_ICE);
     ASSUME(GetMoveType(MOVE_DRAGON_BREATH) == TYPE_DRAGON);
     ASSUME(GetMoveType(MOVE_BITE)          == TYPE_DARK);
-    ASSUME(GetMoveType(MOVE_FAIRY_WIND)    == TYPE_PUPPET);
+    ASSUME(GetMoveType(MOVE_FAIRY_WIND)    == TYPE_FAIRY);
 }
 
 SINGLE_BATTLE_TEST("Inverse battle reverses type matchups")

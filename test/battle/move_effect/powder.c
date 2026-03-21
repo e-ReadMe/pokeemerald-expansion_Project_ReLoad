@@ -153,7 +153,7 @@ SINGLE_BATTLE_TEST("Powder fails if the target is Grass type (Gen6+)")
 {
     GIVEN {
         WITH_CONFIG(B_POWDER_GRASS, GEN_6);
-        ASSUME(GetSpeciesType(SPECIES_VENUSAUR, 0) == TYPE_PLANT || GetSpeciesType(SPECIES_VENUSAUR, 1) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_VENUSAUR, 0) == TYPE_GRASS || GetSpeciesType(SPECIES_VENUSAUR, 1) == TYPE_GRASS);
         PLAYER(SPECIES_VENUSAUR);
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
@@ -184,7 +184,7 @@ DOUBLE_BATTLE_TEST("Powder still blocks the target's Fire type moves even if it 
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_FORESTS_CURSE) == EFFECT_THIRD_TYPE);
-        ASSUME(GetMoveArgType(MOVE_FORESTS_CURSE) == TYPE_PLANT);
+        ASSUME(GetMoveArgType(MOVE_FORESTS_CURSE) == TYPE_GRASS);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_TREVENANT);

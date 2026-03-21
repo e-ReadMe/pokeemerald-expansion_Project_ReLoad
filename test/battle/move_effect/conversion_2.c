@@ -214,7 +214,7 @@ SINGLE_BATTLE_TEST("Conversion 2 fails if the targeted move is Stellar Type")
 SINGLE_BATTLE_TEST("Conversion 2 fails if used by a Terastallized Pokemon")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_LIGHT); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_PSYCHIC); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }

@@ -140,7 +140,7 @@ static bool32 HandleEndTurnWeatherDamage(enum BattlerId battler)
          && ability != ABILITY_SAND_FORCE
          && ability != ABILITY_SAND_RUSH
          && ability != ABILITY_OVERCOAT
-         && !IS_BATTLER_ANY_TYPE(battler, TYPE_BEAST, TYPE_EARTH, TYPE_METAL)
+         && !IS_BATTLER_ANY_TYPE(battler, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
          && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
          && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
          && GetBattlerHoldEffect(battler) != HOLD_EFFECT_SAFETY_GOGGLES
@@ -370,7 +370,6 @@ static bool32 HandleEndTurnFirstEventBlock(enum BattlerId battler)
         {
         case ABILITY_HEALER:
         case ABILITY_HYDRATION:
-        case ABILITY_HOLY_RING:
         case ABILITY_SHED_SKIN:
             if (AbilityBattleEffects(ABILITYEFFECT_ENDTURN, battler, ability, MOVE_NONE, TRUE))
                 effect = TRUE;
@@ -647,7 +646,7 @@ static bool32 HandleEndTurnSaltCure(enum BattlerId battler)
      && !IsAbilityAndRecord(battler, GetBattlerAbility(battler), ABILITY_MAGIC_GUARD))
     {
         s32 saltCureDamage = 0;
-        if (IS_BATTLER_ANY_TYPE(battler, TYPE_METAL, TYPE_WATER))
+        if (IS_BATTLER_ANY_TYPE(battler, TYPE_STEEL, TYPE_WATER))
             saltCureDamage = GetNonDynamaxMaxHP(battler) / 4;
         else
             saltCureDamage = GetNonDynamaxMaxHP(battler) / 8;

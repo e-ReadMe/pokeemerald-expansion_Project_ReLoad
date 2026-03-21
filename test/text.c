@@ -537,7 +537,7 @@ TEST("Type names fit on Battle Screen")
 {
     u32 i;
     const u32 fontId = FONT_NARROWER, widthPx = 39;
-    enum Type type = TYPE_NEUTRAL;
+    enum Type type = TYPE_NORMAL;
     for (i = 0; i < NUMBER_OF_MON_TYPES; i++)
     {
         PARAMETRIZE_LABEL("%S", gTypesInfo[i].name) { type = i; }
@@ -549,7 +549,7 @@ TEST("Type names fit on Pokedex Search Screen")
 {
     u32 i;
     const u32 fontId = FONT_NARROWER, widthPx = 38;
-    enum Type type = TYPE_NEUTRAL;
+    enum Type type = TYPE_NORMAL;
     for (i = 0; i < NUMBER_OF_MON_TYPES; i++)
     {
         PARAMETRIZE_LABEL("%S", gTypesInfo[i].name) { type = i; }

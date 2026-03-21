@@ -258,12 +258,12 @@ static enum FieldEffectOutcome BenefitsFromSun(enum BattlerId battler)
 static enum FieldEffectOutcome BenefitsFromSandstorm(enum BattlerId battler)
 {
     if (DoesAbilityBenefitFromWeather(gAiLogicData->abilities[battler], B_WEATHER_SANDSTORM)
-     || IS_BATTLER_OF_TYPE(battler, TYPE_BEAST))
+     || IS_BATTLER_OF_TYPE(battler, TYPE_ROCK))
         return FIELD_EFFECT_POSITIVE;
 
-    if (gAiLogicData->holdEffects[battler] == HOLD_EFFECT_SAFETY_GOGGLES || IS_BATTLER_ANY_TYPE(battler, TYPE_BEAST, TYPE_EARTH, TYPE_METAL))
+    if (gAiLogicData->holdEffects[battler] == HOLD_EFFECT_SAFETY_GOGGLES || IS_BATTLER_ANY_TYPE(battler, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL))
     {
-        if (!(IS_BATTLER_ANY_TYPE(LEFT_FOE(battler), TYPE_BEAST, TYPE_EARTH, TYPE_METAL))
+        if (!(IS_BATTLER_ANY_TYPE(LEFT_FOE(battler), TYPE_ROCK, TYPE_GROUND, TYPE_STEEL))
          || gAiLogicData->holdEffects[LEFT_FOE(battler)] == HOLD_EFFECT_SAFETY_GOGGLES
          || DoesAbilityBenefitFromWeather(gAiLogicData->abilities[LEFT_FOE(battler)], B_WEATHER_SANDSTORM))
             return FIELD_EFFECT_POSITIVE;
@@ -362,7 +362,7 @@ static enum FieldEffectOutcome BenefitsFromGrassyTerrain(enum BattlerId battler)
     || HasBattlerSideMoveWithEffect(LEFT_FOE(battler), EFFECT_MAGNITUDE)))
         return FIELD_EFFECT_POSITIVE;
 
-    if (grounded && HasDamagingMoveOfType(battler, TYPE_PLANT))
+    if (grounded && HasDamagingMoveOfType(battler, TYPE_GRASS))
         return FIELD_EFFECT_POSITIVE;
 
     if (HasBattlerSideMoveWithEffect(LEFT_FOE(battler), EFFECT_GRASSY_GLIDE))
@@ -431,7 +431,7 @@ static enum FieldEffectOutcome BenefitsFromPsychicTerrain(enum BattlerId battler
             return FIELD_EFFECT_POSITIVE;
     }
 
-    if (grounded && HasDamagingMoveOfType(battler, TYPE_LIGHT))
+    if (grounded && HasDamagingMoveOfType(battler, TYPE_PSYCHIC))
         return FIELD_EFFECT_POSITIVE;
 
     if (HasBattlerTerrainBoostMove(LEFT_FOE(battler), STATUS_FIELD_PSYCHIC_TERRAIN)
@@ -460,14 +460,14 @@ static enum FieldEffectOutcome BenefitsFromGravity(enum BattlerId battler)
     if (IsBattlerAlive(LEFT_FOE(battler)))
     {
         if (HasMoveWithLowAccuracy(battler, LEFT_FOE(battler), LOW_ACCURACY_THRESHOLD, FALSE)
-         || (!AI_IsBattlerGrounded(LEFT_FOE(battler)) && HasDamagingMoveOfType(battler, TYPE_EARTH)))
+         || (!AI_IsBattlerGrounded(LEFT_FOE(battler)) && HasDamagingMoveOfType(battler, TYPE_GROUND)))
             return FIELD_EFFECT_POSITIVE;
     }
 
     if (IsBattlerAlive(RIGHT_FOE(battler)))
     {
         if (HasMoveWithLowAccuracy(battler, RIGHT_FOE(battler), LOW_ACCURACY_THRESHOLD, FALSE)
-         || (!AI_IsBattlerGrounded(RIGHT_FOE(battler)) && HasDamagingMoveOfType(battler, TYPE_EARTH)))
+         || (!AI_IsBattlerGrounded(RIGHT_FOE(battler)) && HasDamagingMoveOfType(battler, TYPE_GROUND)))
             return FIELD_EFFECT_POSITIVE;
     }
 

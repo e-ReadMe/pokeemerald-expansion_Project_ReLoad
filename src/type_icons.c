@@ -59,47 +59,47 @@ const struct Coords16 sTypeIconPositions[][2] =
 
 const union AnimCmd sSpriteAnim_TypeIcon_Null[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_NEUTRAL), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_NORMAL), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Combat[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_COMBAT), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_FIGHTING), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Wind[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_WIND), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_FLYING), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Filth[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_FILTH), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_POISON), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Earth[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_EARTH), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_GROUND), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Beast[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_BEAST), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_ROCK), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Insect[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_INSECT), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_BUG), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Undead[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_UNDEAD), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_GHOST), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Metal[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_METAL), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_STEEL), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Mystery[] =
@@ -129,7 +129,7 @@ const union AnimCmd sSpriteAnim_TypeIcon_Free[] =
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Light[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_LIGHT), 0),
+    ANIMCMD_FRAME(TYPE_ICON_1_FRAME(TYPE_PSYCHIC), 0),
     ANIMCMD_END
 };
 
@@ -145,7 +145,7 @@ const union AnimCmd sSpriteAnim_TypeIcon_Water[] =
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Plant[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_PLANT), 0),
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_GRASS), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Electric[] =
@@ -155,7 +155,7 @@ const union AnimCmd sSpriteAnim_TypeIcon_Electric[] =
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Psychic[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_LIGHT), 0),
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_PSYCHIC), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Ice[] =
@@ -175,7 +175,7 @@ const union AnimCmd sSpriteAnim_TypeIcon_Dark[] =
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Puppet[] =
 {
-    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_PUPPET), 0),
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_FAIRY), 0),
     ANIMCMD_END
 };
 const union AnimCmd sSpriteAnim_TypeIcon_Nodat[] =
@@ -198,25 +198,25 @@ const union AnimCmd sSpriteAnim_TypeIcon_Variable[] =
 const union AnimCmd *const sSpriteAnimTable_TypeIcons[] =
 {
     [TYPE_NONE] =       sSpriteAnim_TypeIcon_Mystery,
-    [TYPE_NEUTRAL] =     sSpriteAnim_TypeIcon_Null,
-    [TYPE_COMBAT] =   sSpriteAnim_TypeIcon_Combat,
-    [TYPE_WIND] =     sSpriteAnim_TypeIcon_Wind,
-    [TYPE_FILTH] =     sSpriteAnim_TypeIcon_Filth,
-    [TYPE_EARTH] =     sSpriteAnim_TypeIcon_Earth,
-    [TYPE_BEAST] =       sSpriteAnim_TypeIcon_Beast,
-    [TYPE_INSECT] =        sSpriteAnim_TypeIcon_Insect,
-    [TYPE_UNDEAD] =      sSpriteAnim_TypeIcon_Undead,
-    [TYPE_METAL] =      sSpriteAnim_TypeIcon_Metal,
+    [TYPE_NORMAL] =     sSpriteAnim_TypeIcon_Null,
+    [TYPE_FIGHTING] =   sSpriteAnim_TypeIcon_Combat,
+    [TYPE_FLYING] =     sSpriteAnim_TypeIcon_Wind,
+    [TYPE_POISON] =     sSpriteAnim_TypeIcon_Filth,
+    [TYPE_GROUND] =     sSpriteAnim_TypeIcon_Earth,
+    [TYPE_ROCK] =       sSpriteAnim_TypeIcon_Beast,
+    [TYPE_BUG] =        sSpriteAnim_TypeIcon_Insect,
+    [TYPE_GHOST] =      sSpriteAnim_TypeIcon_Undead,
+    [TYPE_STEEL] =      sSpriteAnim_TypeIcon_Metal,
     [TYPE_MYSTERY] =    sSpriteAnim_TypeIcon_Mystery,
     [TYPE_FIRE] =       sSpriteAnim_TypeIcon_Fire,
     [TYPE_WATER] =      sSpriteAnim_TypeIcon_Water,
-    [TYPE_PLANT] =      sSpriteAnim_TypeIcon_Plant,
+    [TYPE_GRASS] =      sSpriteAnim_TypeIcon_Plant,
     [TYPE_ELECTRIC] =   sSpriteAnim_TypeIcon_Electric,
-    [TYPE_LIGHT] =    sSpriteAnim_TypeIcon_Psychic,
+    [TYPE_PSYCHIC] =    sSpriteAnim_TypeIcon_Psychic,
     [TYPE_ICE] =        sSpriteAnim_TypeIcon_Ice,
     [TYPE_DRAGON] =     sSpriteAnim_TypeIcon_Dragon,
     [TYPE_DARK] =       sSpriteAnim_TypeIcon_Dark,
-    [TYPE_PUPPET] =      sSpriteAnim_TypeIcon_Puppet,
+    [TYPE_FAIRY] =      sSpriteAnim_TypeIcon_Puppet,
     [TYPE_STELLAR] =    sSpriteAnim_TypeIcon_Mystery,
     [TYPE_VACCINE] =    sSpriteAnim_TypeIcon_Vaccine,
     [TYPE_DATA] =       sSpriteAnim_TypeIcon_Data,

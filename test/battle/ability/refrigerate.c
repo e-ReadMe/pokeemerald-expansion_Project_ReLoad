@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
+    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
     ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
 }
 
@@ -56,7 +56,7 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't affect Weather Ball's type", s16 damage)
     GIVEN {
         WITH_CONFIG(B_SNOW_WARNING, GEN_9); //To prevent capturing hail damage
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
-        ASSUME(GetSpeciesType(SPECIES_PINSIR, 0) == TYPE_INSECT);
+        ASSUME(GetSpeciesType(SPECIES_PINSIR, 0) == TYPE_BUG);
         PLAYER(SPECIES_AMAURA) { Ability(ability); }
         OPPONENT(SPECIES_PINSIR);
     } WHEN {
@@ -81,8 +81,8 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't affect Natural Gift's type")
     PARAMETRIZE { ability = ABILITY_REFRIGERATE; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_NATURAL_GIFT) == EFFECT_NATURAL_GIFT);
-        ASSUME(gNaturalGiftTable[ITEM_TO_BERRY(ITEM_ORAN_BERRY)].type == TYPE_FILTH);
-        ASSUME(GetSpeciesType(SPECIES_BELDUM, 0) == TYPE_METAL);
+        ASSUME(gNaturalGiftTable[ITEM_TO_BERRY(ITEM_ORAN_BERRY)].type == TYPE_POISON);
+        ASSUME(GetSpeciesType(SPECIES_BELDUM, 0) == TYPE_STEEL);
         PLAYER(SPECIES_AMAURA) { Ability(ability); Item(ITEM_ORAN_BERRY); }
         OPPONENT(SPECIES_BELDUM);
     } WHEN {
@@ -110,7 +110,7 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't affect Judgment / Techno Blast / Multi-A
         ASSUME(gItemsInfo[ITEM_SHOCK_DRIVE].secondaryId == TYPE_ELECTRIC);
         ASSUME(gItemsInfo[ITEM_ELECTRIC_MEMORY].holdEffect == HOLD_EFFECT_MEMORY);
         ASSUME(gItemsInfo[ITEM_ELECTRIC_MEMORY].secondaryId == TYPE_ELECTRIC);
-        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_EARTH);
+        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_GROUND);
         PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); Item(item); }
         OPPONENT(SPECIES_DIGLETT);
     } WHEN {
@@ -126,7 +126,7 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't affect Hidden Power's type")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_HIDDEN_POWER) == EFFECT_HIDDEN_POWER);
         ASSUME(gTypesInfo[TYPE_ELECTRIC].isHiddenPowerType == TRUE);
-        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_EARTH);
+        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_GROUND);
         PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); HPIV(31); AttackIV(31); DefenseIV(31); SpAttackIV(30); SpDefenseIV(31); SpeedIV(31); } // HP Electric
         OPPONENT(SPECIES_DIGLETT);
     } WHEN {
@@ -141,7 +141,7 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't override Electrify")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ELECTRIFY) == EFFECT_ELECTRIFY);
-        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_EARTH);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
         PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); }
         OPPONENT(SPECIES_SANDSHREW);
     } WHEN {
@@ -157,7 +157,7 @@ SINGLE_BATTLE_TEST("Refrigerate overrides Ion Deluge")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ION_DELUGE) == EFFECT_ION_DELUGE);
-        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_EARTH);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
         PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); }
         OPPONENT(SPECIES_SANDSHREW);
     } WHEN {
@@ -173,7 +173,7 @@ SINGLE_BATTLE_TEST("Refrigerate changes Tera Blast's type when not Terastallized
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
-        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NEUTRAL);
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NORMAL);
         ASSUME(GetSpeciesType(SPECIES_CHARMANDER, 0) == TYPE_FIRE || GetSpeciesType(SPECIES_CHARMANDER, 1) == TYPE_FIRE);
         PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); }
         OPPONENT(SPECIES_CHARMANDER);
@@ -189,9 +189,9 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't change Tera Blast's type when Terastalli
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
-        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NEUTRAL);
-        ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_UNDEAD);
-        PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); TeraType(TYPE_NEUTRAL); }
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_GHOST);
+        PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); TeraType(TYPE_NORMAL); }
         OPPONENT(SPECIES_MISDREAVUS);
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: GIMMICK_TERA); }
@@ -205,8 +205,8 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't affect Terrain Pulse's type")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERRAIN_PULSE) == EFFECT_TERRAIN_PULSE);
-        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NEUTRAL);
-        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_EARTH || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_EARTH);
+        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
         PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); }
         OPPONENT(SPECIES_SANDSHREW);
     } WHEN {
@@ -222,7 +222,7 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't affect Terrain Pulse's type")
 SINGLE_BATTLE_TEST("Refrigerate doesn't affect damaging Z-Move types")
 {
     GIVEN {
-        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NEUTRAL);
+        ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
         ASSUME(GetSpeciesType(SPECIES_BAGON, 0) == TYPE_DRAGON || GetSpeciesType(SPECIES_BAGON, 1) == TYPE_DRAGON);
         PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); Item(ITEM_NORMALIUM_Z); }
         OPPONENT(SPECIES_BAGON);

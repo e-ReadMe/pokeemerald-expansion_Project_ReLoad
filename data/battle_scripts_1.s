@@ -1153,7 +1153,7 @@ BattleScript_EffectFlowerShield::
 	selectfirstvalidtarget
 BattleScript_FlowerShieldIsAnyValidTarget:
 	jumpifvolatile BS_TARGET, VOLATILE_SEMI_INVULNERABLE, BattleScript_FlowerShieldCheckNextTarget
-	jumpiftype BS_TARGET, TYPE_PLANT, BattleScript_FlowerShieldLoopStart
+	jumpiftype BS_TARGET, TYPE_GRASS, BattleScript_FlowerShieldLoopStart
 BattleScript_FlowerShieldCheckNextTarget:
 	jumpifnexttargetvalid BattleScript_FlowerShieldIsAnyValidTarget
 	goto BattleScript_RestoreTargetButItFailed
@@ -1162,7 +1162,7 @@ BattleScript_FlowerShieldLoopStart:
 BattleScript_FlowerShieldLoop:
 	movevaluescleanup
 	jumpifvolatile BS_TARGET, VOLATILE_SEMI_INVULNERABLE, BattleScript_FlowerShieldMoveTargetEnd
-	jumpiftype BS_TARGET, TYPE_PLANT, BattleScript_FlowerShieldLoop2
+	jumpiftype BS_TARGET, TYPE_GRASS, BattleScript_FlowerShieldLoop2
 	goto BattleScript_FlowerShieldMoveTargetEnd
 BattleScript_FlowerShieldLoop2:
 	setstatchanger STAT_DEF, 1, FALSE
@@ -3092,7 +3092,7 @@ BattleScript_EffectMeanLook::
 	jumpifvolatile BS_TARGET, VOLATILE_ESCAPE_PREVENTION, BattleScript_ButItFailed
 	jumpifsubstituteblocks BattleScript_ButItFailed
 	jumpifgenconfiglowerthan CONFIG_B_GHOSTS_ESCAPE, GEN_6, BattleScript_EffectMeanLookGen5
-	jumpiftype BS_TARGET, TYPE_UNDEAD, BattleScript_ButItFailed
+	jumpiftype BS_TARGET, TYPE_GHOST, BattleScript_ButItFailed
 BattleScript_EffectMeanLookGen5:
 	attackanimation
 	waitanimation
@@ -3128,9 +3128,9 @@ BattleScript_EffectMinimizeGen4:
 	goto BattleScript_EffectStatUpAfterAtkCanceler
 
 BattleScript_EffectCurse::
-	jumpiftype BS_ATTACKER, TYPE_UNDEAD, BattleScript_GhostCurse
+	jumpiftype BS_ATTACKER, TYPE_GHOST, BattleScript_GhostCurse
 	attackcanceler
-	jumpiftype BS_ATTACKER, TYPE_UNDEAD, BattleScript_DoGhostCurse
+	jumpiftype BS_ATTACKER, TYPE_GHOST, BattleScript_DoGhostCurse
 	jumpifstat BS_ATTACKER, CMP_GREATER_THAN, STAT_SPEED, MIN_STAT_STAGE, BattleScript_CurseTrySpeed
 	jumpifstat BS_ATTACKER, CMP_NOT_EQUAL, STAT_ATK, MAX_STAT_STAGE, BattleScript_CurseTrySpeed
 	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_DEF, MAX_STAT_STAGE, BattleScript_ButItFailed
@@ -5694,7 +5694,7 @@ BattleScript_MoveUsedIsParalyzed::
 
 BattleScript_PowderMoveNoEffect::
 	pause B_WAIT_TIME_SHORT
-	jumpiftype BS_SCRIPTING, TYPE_PLANT, BattleScript_PowderMoveNoEffectPrint
+	jumpiftype BS_SCRIPTING, TYPE_GRASS, BattleScript_PowderMoveNoEffectPrint
 	jumpifability BS_SCRIPTING, ABILITY_OVERCOAT, BattleScript_PowderMoveNoEffectOvercoat
 	setlastuseditem BS_SCRIPTING
 	printstring STRINGID_SAFETYGOGGLESPROTECTED

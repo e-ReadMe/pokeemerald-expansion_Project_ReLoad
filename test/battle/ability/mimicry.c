@@ -4,9 +4,9 @@
 static const u16 terrainData[][2] =
 {
     { MOVE_ELECTRIC_TERRAIN, TYPE_ELECTRIC, },
-    { MOVE_PSYCHIC_TERRAIN,  TYPE_LIGHT, },
-    { MOVE_GRASSY_TERRAIN,   TYPE_PLANT, },
-    { MOVE_MISTY_TERRAIN,    TYPE_PUPPET, },
+    { MOVE_PSYCHIC_TERRAIN,  TYPE_PSYCHIC, },
+    { MOVE_GRASSY_TERRAIN,   TYPE_GRASS, },
+    { MOVE_MISTY_TERRAIN,    TYPE_FAIRY, },
 };
 
 SINGLE_BATTLE_TEST("Mimicry changes the battler's type based on Terrain")
@@ -52,8 +52,8 @@ SINGLE_BATTLE_TEST("Mimicry restores the battler's types when terrain is removed
     }
 
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_STUNFISK_GALAR, 0) == TYPE_EARTH);
-        ASSUME(GetSpeciesType(SPECIES_STUNFISK_GALAR, 1) == TYPE_METAL);
+        ASSUME(GetSpeciesType(SPECIES_STUNFISK_GALAR, 0) == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_STUNFISK_GALAR, 1) == TYPE_STEEL);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_STUNFISK_GALAR) { Ability(ABILITY_MIMICRY); }
     } WHEN {
@@ -68,8 +68,8 @@ SINGLE_BATTLE_TEST("Mimicry restores the battler's types when terrain is removed
         default: break;
         }
     } THEN {
-        EXPECT_EQ(gBattleMons[B_POSITION_OPPONENT_LEFT].types[0], TYPE_EARTH);
-        EXPECT_EQ(gBattleMons[B_POSITION_OPPONENT_LEFT].types[1], TYPE_METAL);
+        EXPECT_EQ(gBattleMons[B_POSITION_OPPONENT_LEFT].types[0], TYPE_GROUND);
+        EXPECT_EQ(gBattleMons[B_POSITION_OPPONENT_LEFT].types[1], TYPE_STEEL);
     }
 }
 
@@ -91,8 +91,8 @@ DOUBLE_BATTLE_TEST("Mimicry can trigger multiple times in a turn")
         ABILITY_POPUP(playerLeft, ABILITY_MIMICRY);
         MESSAGE("Stunfisk's type changed to Fairy!");
     } THEN {
-        EXPECT_EQ(gBattleMons[0].types[0], TYPE_PUPPET);
-        EXPECT_EQ(gBattleMons[0].types[1], TYPE_PUPPET);
+        EXPECT_EQ(gBattleMons[0].types[0], TYPE_FAIRY);
+        EXPECT_EQ(gBattleMons[0].types[1], TYPE_FAIRY);
         EXPECT_EQ(gBattleMons[0].types[2], TYPE_MYSTERY);
     }
 }
@@ -120,9 +120,9 @@ DOUBLE_BATTLE_TEST("Mimicry triggers after Skill Swap")
         MESSAGE("Shiftry's type changed to Grass!");
         MESSAGE("Stunfisk used Splash!"); // make sure popup occurs before the subsequent move
     } THEN {
-        EXPECT_EQ(playerLeft->types[0], TYPE_PLANT);
-        EXPECT_EQ(playerLeft->types[1], TYPE_PLANT);
-        EXPECT_EQ(playerRight->types[0], TYPE_PLANT);
-        EXPECT_EQ(playerRight->types[1], TYPE_PLANT);
+        EXPECT_EQ(playerLeft->types[0], TYPE_GRASS);
+        EXPECT_EQ(playerLeft->types[1], TYPE_GRASS);
+        EXPECT_EQ(playerRight->types[0], TYPE_GRASS);
+        EXPECT_EQ(playerRight->types[1], TYPE_GRASS);
     }
 }

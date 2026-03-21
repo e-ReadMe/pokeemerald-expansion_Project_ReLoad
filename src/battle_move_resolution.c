@@ -1774,7 +1774,7 @@ static enum CancelerResult CancelerTargetFailure(struct BattleContext *ctx)
         }
         else if (GetMoveEffect(ctx->move) == EFFECT_SKY_DROP
               && !gProtectStructs[ctx->battlerAtk].chargingTurn
-              && IS_BATTLER_OF_TYPE(ctx->battlerDef, TYPE_WIND))
+              && IS_BATTLER_OF_TYPE(ctx->battlerDef, TYPE_FLYING))
         {
             gBattleStruct->moveResultFlags[ctx->battlerDef] = MOVE_RESULT_NO_EFFECT;
             BattleScriptCall(BattleScript_SkyDropFlyingType);

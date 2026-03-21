@@ -10,7 +10,7 @@ SINGLE_BATTLE_TEST("Sky Drop does no damage to Flying type Pokémon")
 {
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_PIDGEY].weight < 2000);
-        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_WIND);
+        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_FLYING);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_PIDGEY);
     } WHEN {

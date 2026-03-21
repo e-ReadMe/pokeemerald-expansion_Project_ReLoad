@@ -38,13 +38,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
-    [ABILITY_STURDY] =
-    {
-        .name = _("Sturdy"),
-        .description = COMPOUND_STRING("Negates 1-hit KO attacks."),
-        .aiRating = 6,
-        .breakable = TRUE,
-    },
+    //[ABILITY_STURDY] =
+    //{
+    //    .name = _("Sturdy"),
+    //    .description = COMPOUND_STRING("Negates 1-hit KO attacks."),
+    //    .aiRating = 6,
+    //    .breakable = TRUE,
+    //},
 
     [ABILITY_DAMP] =
     {
@@ -146,13 +146,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
-    [ABILITY_SHIELD_DUST] =
-    {
-        .name = _("Shield Dust"),
-        .description = COMPOUND_STRING("Prevents added effects."),
-        .aiRating = 5,
-        .breakable = TRUE,
-    },
+    //[ABILITY_SHIELD_DUST] =
+    //{
+    //    .name = _("Shield Dust"),
+    //    .description = COMPOUND_STRING("Prevents added effects."),
+    //    .aiRating = 5,
+    //    .breakable = TRUE,
+    //},
 
     [ABILITY_OWN_TEMPO] =
     {
@@ -380,12 +380,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 4,
     },
 
-    [ABILITY_RUN_AWAY] =
-    {
-        .name = _("Run Away"),
-        .description = COMPOUND_STRING("Makes escaping easier."),
-        .aiRating = 0,
-    },
+    //[ABILITY_RUN_AWAY] =
+    //{
+    //    .name = _("Run Away"),
+    //    .description = COMPOUND_STRING("Makes escaping easier."),
+    //    .aiRating = 0,
+    //},
 
     [ABILITY_KEEN_EYE] =
     {
@@ -463,12 +463,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
-    [ABILITY_SHED_SKIN] =
-    {
-        .name = _("Shed Skin"),
-        .description = COMPOUND_STRING("Heals the body by shedding."),
-        .aiRating = 7,
-    },
+    //[ABILITY_SHED_SKIN] =
+    //{
+    //    .name = _("Shed Skin"),
+    //    .description = COMPOUND_STRING("Heals the body by shedding."),
+    //    .aiRating = 7,
+    //},
 
     [ABILITY_GUTS] =
     {
@@ -2592,6 +2592,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Mystery Scale"),
         .description = COMPOUND_STRING("Prevents stat reductions."),
+        .aiRating = 0,
+    },
+
+    [ABILITY_BABY_PROOF] =
+    {
+        .name = _("Baby Proof"),
+        .description = COMPOUND_STRING("Survives OHKO's with 1 HP."),
         .aiRating = 0,
     },
 };

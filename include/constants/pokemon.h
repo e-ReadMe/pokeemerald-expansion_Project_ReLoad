@@ -35,6 +35,20 @@ enum __attribute__((packed)) Type
     NUMBER_OF_MON_TYPES
 };
 
+// Type name aliases
+#define TYPE_NORMAL TYPE_NEUTRAL
+#define TYPE_FIGHTING TYPE_COMBAT
+#define TYPE_FLYING TYPE_WIND
+#define TYPE_POISON TYPE_FILTH
+#define TYPE_GROUND TYPE_EARTH
+#define TYPE_ROCK TYPE_BEAST
+#define TYPE_BUG TYPE_INSECT
+#define TYPE_GHOST TYPE_UNDEAD
+#define TYPE_STEEL TYPE_METAL
+#define TYPE_PSYCHIC TYPE_LIGHT
+#define TYPE_FAIRY TYPE_PUPPET
+#define TYPE_GRASS TYPE_PLANT
+
 // Pokémon egg groups
 #define EGG_GROUP_NONE                0
 #define EGG_GROUP_MONSTER             1

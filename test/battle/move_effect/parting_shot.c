@@ -251,7 +251,7 @@ SINGLE_BATTLE_TEST("Parting Shot: Mist prevents stat drops and does not switch (
 DOUBLE_BATTLE_TEST("Parting Shot: Flower Veil prevents stat drops and does not switch (Gen7+)")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_BULBASAUR, 0) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_BULBASAUR, 0) == TYPE_GRASS);
         WITH_CONFIG(B_PARTING_SHOT_SWITCH, GEN_7);
         PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_PARTING_SHOT); }
         PLAYER(SPECIES_WYNAUT);
@@ -366,7 +366,7 @@ DOUBLE_BATTLE_TEST("Parting Shot: Flower Veil prevents stat drops and switches (
 {
     GIVEN {
         WITH_CONFIG(B_PARTING_SHOT_SWITCH, GEN_6);
-        ASSUME(GetSpeciesType(SPECIES_BULBASAUR, 0) == TYPE_PLANT);
+        ASSUME(GetSpeciesType(SPECIES_BULBASAUR, 0) == TYPE_GRASS);
         PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_PARTING_SHOT); }
         PLAYER(SPECIES_WYNAUT);
         PLAYER(SPECIES_PIKACHU);

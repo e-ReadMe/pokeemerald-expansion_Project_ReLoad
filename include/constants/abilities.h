@@ -8,7 +8,8 @@ enum __attribute__((packed)) Ability
     ABILITY_DRIZZLE = 2,
     ABILITY_SPEED_BOOST = 3,
     ABILITY_BATTLE_ARMOR = 4,
-    ABILITY_STURDY = 5,
+    //ABILITY_STURDY = 5,
+    ABILITY_BABY_PROOF = 5, // Replaces Sturdy
     ABILITY_DAMP = 6,
     ABILITY_LIMBER = 7,
     ABILITY_SAND_VEIL = 8,
@@ -22,7 +23,8 @@ enum __attribute__((packed)) Ability
     ABILITY_COLOR_CHANGE = 16,
     ABILITY_IMMUNITY = 17,
     ABILITY_FLASH_FIRE = 18,
-    ABILITY_SHIELD_DUST = 19,
+    //ABILITY_SHIELD_DUST = 19,
+    ABILITY_MYSTERY_SCALE = 19, // Replaces Shield Dust
     ABILITY_OWN_TEMPO = 20,
     ABILITY_SUCTION_CUPS = 21,
     ABILITY_INTIMIDATE = 22,
@@ -53,7 +55,8 @@ enum __attribute__((packed)) Ability
     ABILITY_THICK_FAT = 47,
     ABILITY_EARLY_BIRD = 48,
     ABILITY_FLAME_BODY = 49,
-    ABILITY_RUN_AWAY = 50,
+    //ABILITY_RUN_AWAY = 50,
+    ABILITY_TACTICAL_RETREAT = 50, // Replaces Run Away
     ABILITY_KEEN_EYE = 51,
     ABILITY_HYPER_CUTTER = 52,
     ABILITY_PICKUP = 53,
@@ -64,7 +67,8 @@ enum __attribute__((packed)) Ability
     ABILITY_MINUS = 58,
     ABILITY_FORECAST = 59,
     ABILITY_STICKY_HOLD = 60,
-    ABILITY_SHED_SKIN = 61,
+    //ABILITY_SHED_SKIN = 61,
+    ABILITY_HOLY_RING = 61, // Replaces Shed Skin
     ABILITY_GUTS = 62,
     ABILITY_MARVEL_SCALE = 63,
     ABILITY_LIQUID_OOZE = 64,
@@ -353,15 +357,15 @@ enum __attribute__((packed)) Ability
     ABILITY_JUNGLE_TROOPERS = 325,
     ABILITY_DYNASTY_OF_EVIL = 326,
 
-//variants on existing abilities
-    ABILITY_TACTICAL_RETREAT = 327,
-    ABILITY_HOLY_RING = 328,
-    ABILITY_MYSTERY_SCALE = 329,
-
-
 
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };
+
+//variants on existing abilities. these just overwrite existing abilities. for convenience, they take the number spot of the ability they replace. 
+#define ABILITY_STURDY ABILITY_BABY_PROOF
+#define ABILITY_RUN_AWAY ABILITY_TACTICAL_RETREAT
+#define ABILITY_SHIELD_DUST ABILITY_MYSTERY_SCALE
+#define ABILITY_SHED_SKIN ABILITY_HOLY_RING
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

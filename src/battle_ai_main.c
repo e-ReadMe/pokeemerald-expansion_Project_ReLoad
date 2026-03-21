@@ -1260,7 +1260,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 ADJUST_SCORE(-5);
                 break;
             case EFFECT_CURSE:
-                if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNDEAD)) // Don't use Curse if you're a ghost type vs a Magic Guard user, they'll take no damage.
+                if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GHOST)) // Don't use Curse if you're a ghost type vs a Magic Guard user, they'll take no damage.
                     ADJUST_SCORE(-5);
                 break;
             default:
@@ -1288,7 +1288,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             break;
         case ABILITY_RATTLED:
             if (!IsBattleMoveStatus(move)
-              && (moveType == TYPE_DARK || moveType == TYPE_UNDEAD || moveType == TYPE_INSECT))
+              && (moveType == TYPE_DARK || moveType == TYPE_GHOST || moveType == TYPE_BUG))
                 RETURN_SCORE_MINUS(10);
             break;
         case ABILITY_AROMA_VEIL:
@@ -1300,7 +1300,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 RETURN_SCORE_MINUS(10);
             break;
         case ABILITY_FLOWER_VEIL:
-            if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_PLANT) && (IsNonVolatileStatusMove(move)))
+            if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GRASS) && (IsNonVolatileStatusMove(move)))
                 RETURN_SCORE_MINUS(10);
             break;
         case ABILITY_MAGIC_BOUNCE:
@@ -1351,7 +1351,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                     RETURN_SCORE_MINUS(20);
                 break;
             case ABILITY_FLOWER_VEIL:
-                if ((IS_BATTLER_OF_TYPE(battlerDef, TYPE_PLANT)) && (IsNonVolatileStatusMove(move) || IsStatLoweringEffect(moveEffect)))
+                if ((IS_BATTLER_OF_TYPE(battlerDef, TYPE_GRASS)) && (IsNonVolatileStatusMove(move) || IsStatLoweringEffect(moveEffect)))
                     RETURN_SCORE_MINUS(10);
                 break;
             case ABILITY_AROMA_VEIL:
@@ -1590,10 +1590,10 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
     case EFFECT_ROTOTILLER:
         if (hasPartner)
         {
-            if (!(IS_BATTLER_OF_TYPE(battlerAtk, TYPE_PLANT)
+            if (!(IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GRASS)
               && AI_IsBattlerGrounded(battlerAtk)
               && (BattlerStatCanRise(battlerAtk, aiData->abilities[battlerAtk], STAT_ATK) || BattlerStatCanRise(battlerAtk, aiData->abilities[battlerAtk], STAT_SPATK)))
-              && !(IS_BATTLER_OF_TYPE(BATTLE_PARTNER(battlerAtk), TYPE_PLANT)
+              && !(IS_BATTLER_OF_TYPE(BATTLE_PARTNER(battlerAtk), TYPE_GRASS)
               && AI_IsBattlerGrounded(BATTLE_PARTNER(battlerAtk))
               && aiData->abilities[BATTLE_PARTNER(battlerAtk)] != ABILITY_CONTRARY
               && (BattlerStatCanRise(BATTLE_PARTNER(battlerAtk), aiData->abilities[BATTLE_PARTNER(battlerAtk)], STAT_ATK)
@@ -1602,7 +1602,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 ADJUST_SCORE(-10);
             }
         }
-        else if (!(IS_BATTLER_OF_TYPE(battlerAtk, TYPE_PLANT)
+        else if (!(IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GRASS)
           && AI_IsBattlerGrounded(battlerAtk)
           && (BattlerStatCanRise(battlerAtk, aiData->abilities[battlerAtk], STAT_ATK) || BattlerStatCanRise(battlerAtk, aiData->abilities[battlerAtk], STAT_SPATK))))
         {
@@ -1854,7 +1854,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         break;
     case EFFECT_LEECH_SEED:
         if (gBattleMons[battlerDef].volatiles.leechSeed
-         || IS_BATTLER_OF_TYPE(battlerDef, TYPE_PLANT)
+         || IS_BATTLER_OF_TYPE(battlerDef, TYPE_GRASS)
          || DoesPartnerHaveSameMoveEffect(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove))
             ADJUST_SCORE(-10);
         else if (aiData->abilities[battlerDef] == ABILITY_LIQUID_OOZE)
@@ -1924,7 +1924,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
         break;
     case EFFECT_CURSE:
-        if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNDEAD))
+        if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GHOST))
         {
             if (gBattleMons[battlerDef].volatiles.cursed
               || DoesPartnerHaveSameMoveEffect(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove))
@@ -1968,7 +1968,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         if (gBattleMons[battlerDef].volatiles.foresight)
             ADJUST_SCORE(-10);
         else if (gBattleMons[battlerDef].statStages[STAT_EVASION] <= DEFAULT_STAT_STAGE - 2
-          || !(IS_BATTLER_OF_TYPE(battlerDef, TYPE_UNDEAD))
+          || !(IS_BATTLER_OF_TYPE(battlerDef, TYPE_GHOST))
           || DoesPartnerHaveSameMoveEffect(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove))
             ADJUST_SCORE(-9);
         break;
@@ -2214,8 +2214,8 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
         break;
     case EFFECT_FLOWER_SHIELD:
-        if (!IS_BATTLER_OF_TYPE(battlerAtk, TYPE_PLANT)
-          && !(hasPartner && IS_BATTLER_OF_TYPE(BATTLE_PARTNER(battlerAtk), TYPE_PLANT)))
+        if (!IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GRASS)
+          && !(hasPartner && IS_BATTLER_OF_TYPE(BATTLE_PARTNER(battlerAtk), TYPE_GRASS)))
             ADJUST_SCORE(-10);
         break;
     case EFFECT_AROMATIC_MIST:
@@ -2751,7 +2751,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         break;
     case EFFECT_GRAVITY:
         if ((gFieldStatuses & STATUS_FIELD_GRAVITY
-          && !IS_BATTLER_OF_TYPE(battlerAtk, TYPE_WIND)
+          && !IS_BATTLER_OF_TYPE(battlerAtk, TYPE_FLYING)
           && aiData->holdEffects[battlerAtk] != HOLD_EFFECT_AIR_BALLOON) // Should revert Gravity in this case
           || PartnerMoveIsSameNoTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove))
             ADJUST_SCORE(-10);
@@ -2972,7 +2972,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
     //case EFFECT_BEAK_BLAST:
         //break;
     case EFFECT_SKY_DROP:
-        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_WIND))
+        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_FLYING))
             ADJUST_SCORE(-10);
         if (BattlerWillFaintFromWeather(battlerAtk, aiData->abilities[battlerAtk])
         ||  DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
@@ -3532,7 +3532,7 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 break;
             case ABILITY_EARTH_EATER:
             case ABILITY_LEVITATE:
-                if (moveType == TYPE_EARTH)
+                if (moveType == TYPE_GROUND)
                 {
                     if (moveTarget == TARGET_FOES_AND_ALLY)
                     {
@@ -3651,7 +3651,7 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 }
                 break;
             case ABILITY_SAP_SIPPER:
-                if (moveType == TYPE_PLANT)
+                if (moveType == TYPE_GRASS)
                 {
                     if (moveTarget == TARGET_FOES_AND_ALLY)
                     {
@@ -3692,7 +3692,7 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 break;
             case ABILITY_RATTLED:
                 if (!IsBattleMoveStatus(move) && isFriendlyFireOK
-                    && (moveType == TYPE_DARK || moveType == TYPE_UNDEAD || moveType == TYPE_INSECT)
+                    && (moveType == TYPE_DARK || moveType == TYPE_GHOST || moveType == TYPE_BUG)
                     && ShouldTriggerAbility(battlerAtk, battlerAtkPartner, atkPartnerAbility))
                 {
                     if (moveTarget == TARGET_FOES_AND_ALLY)
@@ -4552,24 +4552,24 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPATK));
         break;
     case EFFECT_ROTOTILLER:
-        if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_PLANT) && AI_IsBattlerGrounded(battlerAtk))
+        if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GRASS) && AI_IsBattlerGrounded(battlerAtk))
         {
             ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ATK));
             ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPATK));
         }
-        if (hasPartner && IS_BATTLER_OF_TYPE(BATTLE_PARTNER(battlerAtk), TYPE_PLANT) && AI_IsBattlerGrounded(BATTLE_PARTNER(battlerAtk)))
+        if (hasPartner && IS_BATTLER_OF_TYPE(BATTLE_PARTNER(battlerAtk), TYPE_GRASS) && AI_IsBattlerGrounded(BATTLE_PARTNER(battlerAtk)))
         {
             ADJUST_SCORE(IncreaseStatUpScore(BATTLE_PARTNER(battlerAtk), battlerDef, STAT_CHANGE_ATK));
             ADJUST_SCORE(IncreaseStatUpScore(BATTLE_PARTNER(battlerAtk), battlerDef, STAT_CHANGE_SPATK));
         }
-        if (IS_BATTLER_OF_TYPE(LEFT_FOE(battlerAtk), TYPE_PLANT) && AI_IsBattlerGrounded(LEFT_FOE(battlerAtk)))
+        if (IS_BATTLER_OF_TYPE(LEFT_FOE(battlerAtk), TYPE_GRASS) && AI_IsBattlerGrounded(LEFT_FOE(battlerAtk)))
         {
             if (aiData->abilities[LEFT_FOE(battlerAtk)] == ABILITY_CONTRARY)
                 ADJUST_SCORE(WEAK_EFFECT);
             else
                 ADJUST_SCORE(AWFUL_EFFECT);
         }
-        if (IS_BATTLER_OF_TYPE(RIGHT_FOE(battlerAtk), TYPE_PLANT) && AI_IsBattlerGrounded(RIGHT_FOE(battlerAtk)))
+        if (IS_BATTLER_OF_TYPE(RIGHT_FOE(battlerAtk), TYPE_GRASS) && AI_IsBattlerGrounded(RIGHT_FOE(battlerAtk)))
         {
             if (aiData->abilities[RIGHT_FOE(battlerAtk)] == ABILITY_CONTRARY)
                 ADJUST_SCORE(WEAK_EFFECT);
@@ -4578,22 +4578,22 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         }
         break;
     case EFFECT_FLOWER_SHIELD:
-        if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_PLANT))
+        if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GRASS))
         {
             ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_DEF));
         }
-        if (hasPartner && IS_BATTLER_OF_TYPE(BATTLE_PARTNER(battlerAtk), TYPE_PLANT))
+        if (hasPartner && IS_BATTLER_OF_TYPE(BATTLE_PARTNER(battlerAtk), TYPE_GRASS))
         {
             ADJUST_SCORE(IncreaseStatUpScore(BATTLE_PARTNER(battlerAtk), battlerDef, STAT_CHANGE_DEF));
         }
-        if (IS_BATTLER_OF_TYPE(LEFT_FOE(battlerAtk), TYPE_PLANT))
+        if (IS_BATTLER_OF_TYPE(LEFT_FOE(battlerAtk), TYPE_GRASS))
         {
             if (aiData->abilities[LEFT_FOE(battlerAtk)] == ABILITY_CONTRARY)
                 ADJUST_SCORE(WEAK_EFFECT);
             else
                 ADJUST_SCORE(AWFUL_EFFECT);
         }
-        if (IS_BATTLER_OF_TYPE(RIGHT_FOE(battlerAtk), TYPE_PLANT))
+        if (IS_BATTLER_OF_TYPE(RIGHT_FOE(battlerAtk), TYPE_GRASS))
         {
             if (aiData->abilities[RIGHT_FOE(battlerAtk)] == ABILITY_CONTRARY)
                 ADJUST_SCORE(WEAK_EFFECT);
@@ -4688,7 +4688,6 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
               || aiData->holdEffects[battlerAtk] == HOLD_EFFECT_CURE_STATUS
               || HasUsableWhileAsleepMove(battlerAtk)
               || aiData->abilities[battlerAtk] == ABILITY_SHED_SKIN
-              || aiData->abilities[battlerAtk] == ABILITY_HOLY_RING
               || aiData->abilities[battlerAtk] == ABILITY_EARLY_BIRD
               || (AI_GetWeather() & B_WEATHER_RAIN && gBattleStruct->weatherDuration != 1 && aiData->abilities[battlerAtk] == ABILITY_HYDRATION && aiData->holdEffects[battlerAtk] != HOLD_EFFECT_UTILITY_UMBRELLA))
                 ADJUST_SCORE(GOOD_EFFECT);
@@ -4728,7 +4727,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         }
         break;
     case EFFECT_LEECH_SEED:
-        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_PLANT)
+        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GRASS)
           || gBattleMons[battlerDef].volatiles.leechSeed
           || HasMoveWithEffect(battlerDef, EFFECT_RAPID_SPIN)
           || aiData->abilities[battlerDef] == ABILITY_LIQUID_OOZE
@@ -4845,7 +4844,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         }
         break;
     case EFFECT_CURSE:
-        if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_UNDEAD))
+        if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GHOST))
         {
             if (IsBattlerTrapped(battlerAtk, battlerDef))
                 ADJUST_SCORE(GOOD_EFFECT);
@@ -4937,14 +4936,14 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         if (aiData->abilities[battlerAtk] == ABILITY_SCRAPPY || aiData->abilities[battlerAtk] == ABILITY_MINDS_EYE)
             break;
         else if (gBattleMons[battlerDef].statStages[STAT_EVASION] > DEFAULT_STAT_STAGE
-         || (IS_BATTLER_OF_TYPE(battlerDef, TYPE_UNDEAD)
-         && (HasMoveWithType(battlerAtk, TYPE_NEUTRAL)
-         || HasMoveWithType(battlerAtk, TYPE_COMBAT))))
+         || (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GHOST)
+         && (HasMoveWithType(battlerAtk, TYPE_NORMAL)
+         || HasMoveWithType(battlerAtk, TYPE_FIGHTING))))
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_MIRACLE_EYE:
         if (gBattleMons[battlerDef].statStages[STAT_EVASION] > DEFAULT_STAT_STAGE
-          || (IS_BATTLER_OF_TYPE(battlerDef, TYPE_DARK) && (HasMoveWithType(battlerAtk, TYPE_LIGHT))))
+          || (IS_BATTLER_OF_TYPE(battlerDef, TYPE_DARK) && (HasMoveWithType(battlerAtk, TYPE_PSYCHIC))))
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_PERISH_SONG:
@@ -5146,7 +5145,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             }
             break;
         case HOLD_EFFECT_BLACK_SLUDGE:
-            if (!IS_BATTLER_OF_TYPE(battlerDef, TYPE_FILTH) && aiData->abilities[battlerDef] != ABILITY_MAGIC_GUARD)
+            if (!IS_BATTLER_OF_TYPE(battlerDef, TYPE_POISON) && aiData->abilities[battlerDef] != ABILITY_MAGIC_GUARD)
                 ADJUST_SCORE(DECENT_EFFECT);
             break;
         case HOLD_EFFECT_IRON_BALL:
@@ -5188,7 +5187,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
                         ADJUST_SCORE(DECENT_EFFECT);
                     break;
                 case HOLD_EFFECT_BLACK_SLUDGE:
-                    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_FILTH) || aiData->abilities[battlerAtk] == ABILITY_MAGIC_GUARD)
+                    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_POISON) || aiData->abilities[battlerAtk] == ABILITY_MAGIC_GUARD)
                         ADJUST_SCORE(DECENT_EFFECT);
                     break;
                 case HOLD_EFFECT_IRON_BALL:
@@ -5570,7 +5569,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         if ((aiData->abilities[battlerAtk] == ABILITY_VOLT_ABSORB
           || aiData->abilities[battlerAtk] == ABILITY_MOTOR_DRIVE
           || (GetConfig(B_REDIRECT_ABILITY_IMMUNITY) >= GEN_5 && aiData->abilities[battlerAtk] == ABILITY_LIGHTNING_ROD))
-          && predictedType == TYPE_NEUTRAL)
+          && predictedType == TYPE_NORMAL)
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_FLING:
@@ -5613,12 +5612,12 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         if (AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY) && predictedMove != MOVE_NONE && IsHealingMove(predictedMove))
             ADJUST_SCORE(DECENT_EFFECT); // Try to cancel healing move
         else if (HasHealingEffect(battlerDef) || aiData->holdEffects[battlerDef] == HOLD_EFFECT_LEFTOVERS
-          || (aiData->holdEffects[battlerDef] == HOLD_EFFECT_BLACK_SLUDGE && IS_BATTLER_OF_TYPE(battlerDef, TYPE_FILTH)))
+          || (aiData->holdEffects[battlerDef] == HOLD_EFFECT_BLACK_SLUDGE && IS_BATTLER_OF_TYPE(battlerDef, TYPE_POISON)))
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_SOAK:
-        if (HasMoveWithType(battlerAtk, TYPE_ELECTRIC) || HasMoveWithType(battlerAtk, TYPE_PLANT)
-        || HasMoveWithType(BATTLE_PARTNER(battlerAtk), TYPE_ELECTRIC) || HasMoveWithType(BATTLE_PARTNER(battlerAtk), TYPE_PLANT)
+        if (HasMoveWithType(battlerAtk, TYPE_ELECTRIC) || HasMoveWithType(battlerAtk, TYPE_GRASS)
+        || HasMoveWithType(BATTLE_PARTNER(battlerAtk), TYPE_ELECTRIC) || HasMoveWithType(BATTLE_PARTNER(battlerAtk), TYPE_GRASS)
         || (HasBattlerSideMoveWithEffect(battlerAtk, EFFECT_SUPER_EFFECTIVE_ON_ARG) && GetMoveArgType(move) == TYPE_WATER) )
             ADJUST_SCORE(DECENT_EFFECT); // Get some super effective moves
         break;
@@ -5711,12 +5710,12 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             ADJUST_SCORE(GOOD_EFFECT);
         break;
     case EFFECT_MAGNET_RISE:
-        if (AI_IsBattlerGrounded(battlerAtk) && HasDamagingMoveOfType(battlerDef, TYPE_EARTH)
+        if (AI_IsBattlerGrounded(battlerAtk) && HasDamagingMoveOfType(battlerDef, TYPE_GROUND)
           && !(effectiveness == UQ_4_12(0.0))) // Doesn't resist ground move
         {
             if (AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY)) // Attacker goes first
            {
-                if (predictedType == TYPE_EARTH)
+                if (predictedType == TYPE_GROUND)
                     ADJUST_SCORE(GOOD_EFFECT); // Cause the enemy's move to fail
                 break;
             }
@@ -5803,7 +5802,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             ADJUST_SCORE(GOOD_EFFECT);
         break;
     case EFFECT_SMACK_DOWN:
-        if (!AI_IsBattlerGrounded(battlerDef) && HasDamagingMoveOfType(battlerAtk, TYPE_EARTH) && !CanTargetFaintAi(battlerDef, battlerAtk))
+        if (!AI_IsBattlerGrounded(battlerDef) && HasDamagingMoveOfType(battlerAtk, TYPE_GROUND) && !CanTargetFaintAi(battlerDef, battlerAtk))
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_KNOCK_OFF:
@@ -5859,7 +5858,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
                         ADJUST_SCORE(DECENT_EFFECT);
                     break;
                 case HOLD_EFFECT_BLACK_SLUDGE:
-                    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_FILTH))
+                    if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_POISON))
                         ADJUST_SCORE(DECENT_EFFECT);
                     break;
                 case HOLD_EFFECT_IRON_BALL:
@@ -6135,7 +6134,7 @@ static s32 AI_CalcAdditionalEffectScore(enum BattlerId battlerAtk, enum BattlerI
                     ADJUST_SCORE(BEST_EFFECT);
                 break;
             case MOVE_EFFECT_SALT_CURE:
-                if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_WATER) || IS_BATTLER_OF_TYPE(battlerDef, TYPE_METAL))
+                if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_WATER) || IS_BATTLER_OF_TYPE(battlerDef, TYPE_STEEL))
                     ADJUST_SCORE(DECENT_EFFECT);
                 break;
             case MOVE_EFFECT_SUN:
@@ -6556,7 +6555,7 @@ static s32 AI_HPAware(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum
     {
         if ((effect == EFFECT_HEAL_PULSE || effect == EFFECT_HIT_ENEMY_HEAL_ALLY)
          || (moveType == TYPE_ELECTRIC && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_VOLT_ABSORB)
-         || (moveType == TYPE_EARTH && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_EARTH_EATER)
+         || (moveType == TYPE_GROUND && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_EARTH_EATER)
          || (moveType == TYPE_WATER && (gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_DRY_SKIN || gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_WATER_ABSORB)))
         {
             if (gBattleMons[battlerDef].volatiles.healBlock)

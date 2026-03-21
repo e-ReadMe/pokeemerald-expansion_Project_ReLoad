@@ -1448,8 +1448,8 @@ static inline bool32 TryStrongWindsWeakenAttack(enum BattlerId battlerDef, enum 
     if (gBattleWeather & B_WEATHER_STRONG_WINDS && HasWeatherEffect())
     {
         if (GetMoveCategory(gCurrentMove) != DAMAGE_CATEGORY_STATUS
-         && IS_BATTLER_OF_TYPE(battlerDef, TYPE_WIND)
-         && gTypeEffectivenessTable[moveType][TYPE_WIND] >= UQ_4_12(2.0)
+         && IS_BATTLER_OF_TYPE(battlerDef, TYPE_FLYING)
+         && gTypeEffectivenessTable[moveType][TYPE_FLYING] >= UQ_4_12(2.0)
          && !gBattleStruct->printedStrongWindsWeakenedAttack)
         {
             gBattleStruct->printedStrongWindsWeakenedAttack = TRUE;
@@ -3119,7 +3119,7 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
         gBattlescriptCurrInstr = BattleScript_MoveEffectHaze;
         break;
     case MOVE_EFFECT_LEECH_SEED:
-        if (!IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_PLANT) && !gBattleMons[gBattlerTarget].volatiles.leechSeed)
+        if (!IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_GRASS) && !gBattleMons[gBattlerTarget].volatiles.leechSeed)
         {
             gBattleMons[gBattlerTarget].volatiles.leechSeed = LEECHSEEDED_BY(gBattlerAttacker);
             BattleScriptPush(battleScript);
@@ -7176,7 +7176,7 @@ static bool32 TryTidyUpClear(enum BattlerId battlerAtk, bool32 clear)
 
 u32 IsFlowerVeilProtected(enum BattlerId battler)
 {
-    if (IS_BATTLER_OF_TYPE(battler, TYPE_PLANT))
+    if (IS_BATTLER_OF_TYPE(battler, TYPE_GRASS))
         return IsAbilityOnSide(battler, ABILITY_FLOWER_VEIL);
     else
         return 0;
@@ -7407,7 +7407,7 @@ static void Cmd_setseeded(void)
         gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LEECH_SEED_MISS;
     }
-    else if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_PLANT))
+    else if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_GRASS))
     {
         gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LEECH_SEED_FAIL;
@@ -8332,10 +8332,10 @@ static void Cmd_tryconversiontypechange(void)
 
             if (moveType == TYPE_MYSTERY)
             {
-                if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_UNDEAD))
-                    moveType = TYPE_UNDEAD;
+                if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST))
+                    moveType = TYPE_GHOST;
                 else
-                    moveType = TYPE_NEUTRAL;
+                    moveType = TYPE_NORMAL;
             }
             if (moveType != gBattleMons[gBattlerAttacker].types[0]
                 && moveType != gBattleMons[gBattlerAttacker].types[1]
@@ -8359,10 +8359,10 @@ static void Cmd_tryconversiontypechange(void)
 
                 if (moveType == TYPE_MYSTERY)
                 {
-                    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_UNDEAD))
-                        moveType = TYPE_UNDEAD;
+                    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST))
+                        moveType = TYPE_GHOST;
                     else
-                        moveType = TYPE_NEUTRAL;
+                        moveType = TYPE_NORMAL;
                 }
             }
             while (moveType == gBattleMons[gBattlerAttacker].types[0] || moveType == gBattleMons[gBattlerAttacker].types[1] || moveType == gBattleMons[gBattlerAttacker].types[2]);
@@ -8832,7 +8832,7 @@ static void Cmd_settypetorandomresistance(void)
     {
         moveToCheck = gLastLandedMoves[gBattlerAttacker];
         if (GetMoveEffect(moveToCheck) == EFFECT_STRUGGLE)
-            typeToCheck = TYPE_NEUTRAL;
+            typeToCheck = TYPE_NORMAL;
         else
             typeToCheck = gLastHitByType[gBattlerAttacker];
     }
@@ -10447,13 +10447,13 @@ static void Cmd_settypetoenvironment(void)
         environmentType = TYPE_ELECTRIC;
         break;
     case STATUS_FIELD_GRASSY_TERRAIN:
-        environmentType = TYPE_PLANT;
+        environmentType = TYPE_GRASS;
         break;
     case STATUS_FIELD_MISTY_TERRAIN:
-        environmentType = TYPE_PUPPET;
+        environmentType = TYPE_FAIRY;
         break;
     case STATUS_FIELD_PSYCHIC_TERRAIN:
-        environmentType = TYPE_LIGHT;
+        environmentType = TYPE_PSYCHIC;
         break;
     default:
         environmentType = gBattleEnvironmentInfo[gBattleEnvironment].camouflageType;
@@ -10601,7 +10601,7 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
         ball->guaranteedCapture = TRUE;
         break;
     case BALL_NET:
-        if (IS_BATTLER_ANY_TYPE(wildMonBattler, TYPE_WATER, TYPE_INSECT))
+        if (IS_BATTLER_ANY_TYPE(wildMonBattler, TYPE_WATER, TYPE_BUG))
             ball->multiplier = B_NET_BALL_MODIFIER >= GEN_7 ? 350 : 300;
         break;
     case BALL_NEST:
@@ -11675,7 +11675,6 @@ static bool32 CanAbilityPreventStatLoss(enum Ability abilityDef)
     {
     case ABILITY_CLEAR_BODY:
     case ABILITY_FULL_METAL_BODY:
-    case ABILITY_MYSTERY_SCALE:
     case ABILITY_WHITE_SMOKE:
         return TRUE;
     default:
@@ -12183,8 +12182,8 @@ void BS_TryReflectType(void)
     }
     else if (targetTypes[0] == TYPE_MYSTERY && targetTypes[1] == TYPE_MYSTERY && targetTypes[2] != TYPE_MYSTERY)
     {
-        gBattleMons[gBattlerAttacker].types[0] = TYPE_NEUTRAL;
-        gBattleMons[gBattlerAttacker].types[1] = TYPE_NEUTRAL;
+        gBattleMons[gBattlerAttacker].types[0] = TYPE_NORMAL;
+        gBattleMons[gBattlerAttacker].types[1] = TYPE_NORMAL;
         gBattleMons[gBattlerAttacker].types[2] = targetTypes[2];
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
@@ -13285,7 +13284,7 @@ void BS_TryFlingHoldEffect(void)
         SetMoveEffect(gBattlerAttacker, gBattlerTarget, MOVE_EFFECT_PARALYSIS, cmd->nextInstr, NO_FLAGS);
         break;
     case HOLD_EFFECT_TYPE_POWER:
-        if (GetItemSecondaryId(gBattleStruct->flingItem) != TYPE_FILTH)
+        if (GetItemSecondaryId(gBattleStruct->flingItem) != TYPE_POISON)
             gBattlescriptCurrInstr = cmd->nextInstr;
         else
             SetMoveEffect(gBattlerAttacker, gBattlerTarget, MOVE_EFFECT_POISON, cmd->nextInstr, NO_FLAGS);
@@ -14712,7 +14711,7 @@ static bool32 IsRototillerAffected(enum BattlerId battler, u32 move)
         return FALSE;
     if (!IsBattlerGrounded(battler, GetBattlerAbility(battler), GetBattlerHoldEffect(battler)))
         return FALSE;   // Only grounded battlers affected
-    if (!IS_BATTLER_OF_TYPE(battler, TYPE_PLANT))
+    if (!IS_BATTLER_OF_TYPE(battler, TYPE_GRASS))
         return FALSE;   // Only grass types affected
     return TRUE;
 }

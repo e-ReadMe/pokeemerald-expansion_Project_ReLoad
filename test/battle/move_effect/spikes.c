@@ -94,7 +94,7 @@ SINGLE_BATTLE_TEST("Spikes do not damage airborne Pokemon")
     enum Move move2 = MOVE_CELEBRATE;
     bool32 airborne;
 
-    ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_WIND);
+    ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_FLYING);
     PARAMETRIZE { species = SPECIES_PIDGEY; airborne = TRUE; }
     PARAMETRIZE { species = SPECIES_PIDGEY; item = ITEM_IRON_BALL; airborne = FALSE; }
     PARAMETRIZE { species = SPECIES_PIDGEY; move1 = MOVE_GRAVITY; airborne = FALSE; }

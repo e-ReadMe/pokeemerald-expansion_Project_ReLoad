@@ -151,7 +151,7 @@ SINGLE_BATTLE_TEST("Seeds get consumed in Terrain even if holder is not affected
     PARAMETRIZE { species = SPECIES_TAPU_FINI; ability = ABILITY_MISTY_SURGE; item = ITEM_MISTY_SEED; }
     PARAMETRIZE { species = SPECIES_TAPU_LELE; ability = ABILITY_PSYCHIC_SURGE; item = ITEM_PSYCHIC_SEED; }
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 0) == TYPE_WIND || GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_WIND);
+        ASSUME(GetSpeciesType(SPECIES_PIDGEY, 0) == TYPE_FLYING || GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_FLYING);
         PLAYER(SPECIES_PIDGEY) { Item(item); }
         OPPONENT(species) { Ability(ability); }
     } WHEN {
