@@ -27557,6 +27557,11 @@ const u16 gMonPalette_Choromon[] = INCBIN_U16("graphics/pokemon/digimon/1997_199
 const u32 gMonBackPic_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/choromon/back.4bpp.smol");
 const u16 gMonShinyPalette_Choromon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/choromon/shiny.gbapal");
 const u8 gMonIcon_Choromon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/choromon/icon.4bpp");
+const u8 gMonEggIcon_Choromon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/choromon/icon_egg.4bpp");
+const u32 gMonEggGfx_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/choromon/egg_sprite.4bpp.smol");
+const u16 gMonEggPal_Choromon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/choromon/egg_sprite.gbapal");
+const u32 gMonHatchGfx_Choromon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/choromon/hatch.4bpp.smol");
+const u16 gMonHatchPal_Choromon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/choromon/hatch.gbapal");
 #if P_FOOTPRINTS
 const u8 gMonFootprint_Choromon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/choromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
@@ -27574,6 +27579,11 @@ const u16 gMonPalette_Mokumon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999
 const u32 gMonBackPic_Mokumon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/mokumon/back.4bpp.smol");
 const u16 gMonShinyPalette_Mokumon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/mokumon/shiny.gbapal");
 const u8 gMonIcon_Mokumon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/mokumon/icon.4bpp");
+const u8 gMonEggIcon_Mokumon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/mokumon/icon_egg.4bpp");
+const u32 gMonEggGfx_Mokumon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/mokumon/egg_sprite.4bpp.smol");
+const u16 gMonEggPal_Mokumon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/mokumon/egg_sprite.gbapal");
+const u32 gMonHatchGfx_Mokumon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/mokumon/hatch.4bpp.smol");
+const u16 gMonHatchPal_Mokumon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/mokumon/hatch.gbapal");
 #if P_FOOTPRINTS
 const u8 gMonFootprint_Mokumon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/mokumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
@@ -27591,6 +27601,11 @@ const u16 gMonPalette_Nyokimon[] = INCBIN_U16("graphics/pokemon/digimon/1997_199
 const u32 gMonBackPic_Nyokimon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/nyokimon/back.4bpp.smol");
 const u16 gMonShinyPalette_Nyokimon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/nyokimon/shiny.gbapal");
 const u8 gMonIcon_Nyokimon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/nyokimon/icon.4bpp");
+const u8 gMonEggIcon_Nyokimon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/nyokimon/icon_egg.4bpp");
+const u32 gMonEggGfx_Nyokimon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/nyokimon/egg_sprite.4bpp.smol");
+const u16 gMonEggPal_Nyokimon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/nyokimon/egg_sprite.gbapal");
+const u32 gMonHatchGfx_Nyokimon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/nyokimon/hatch.4bpp.smol");
+const u16 gMonHatchPal_Nyokimon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/nyokimon/hatch.gbapal");
 #if P_FOOTPRINTS
 const u8 gMonFootprint_Nyokimon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/nyokimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
@@ -27630,6 +27645,11 @@ const u16 gMonPalette_Poyomon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999
 const u32 gMonBackPic_Poyomon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/poyomon/back.4bpp.smol");
 const u16 gMonShinyPalette_Poyomon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/poyomon/shiny.gbapal");
 const u8 gMonIcon_Poyomon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/poyomon/icon.4bpp");
+const u8 gMonEggIcon_Poyomon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/poyomon/icon_egg.4bpp");
+const u32 gMonEggGfx_Poyomon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/poyomon/egg_sprite.4bpp.smol");
+const u16 gMonEggPal_Poyomon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/poyomon/egg_sprite.gbapal");
+const u32 gMonHatchGfx_Poyomon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/poyomon/hatch.4bpp.smol");
+const u16 gMonHatchPal_Poyomon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/poyomon/hatch.gbapal");
 #if P_FOOTPRINTS
 const u8 gMonFootprint_Poyomon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/poyomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
@@ -27647,6 +27667,11 @@ const u16 gMonPalette_Punimon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999
 const u32 gMonBackPic_Punimon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/punimon/back.4bpp.smol");
 const u16 gMonShinyPalette_Punimon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/punimon/shiny.gbapal");
 const u8 gMonIcon_Punimon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/punimon/icon.4bpp");
+const u8 gMonEggIcon_Punimon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/punimon/icon_egg.4bpp");
+const u32 gMonEggGfx_Punimon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/punimon/egg_sprite.4bpp.smol");
+const u16 gMonEggPal_Punimon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/punimon/egg_sprite.gbapal");
+const u32 gMonHatchGfx_Punimon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/punimon/hatch.4bpp.smol");
+const u16 gMonHatchPal_Punimon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/punimon/hatch.gbapal");
 #if P_FOOTPRINTS
 const u8 gMonFootprint_Punimon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/punimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
@@ -27664,6 +27689,11 @@ const u16 gMonPalette_Yukimibotamon[] = INCBIN_U16("graphics/pokemon/digimon/199
 const u32 gMonBackPic_Yukimibotamon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/yukimibotamon/back.4bpp.smol");
 const u16 gMonShinyPalette_Yukimibotamon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/yukimibotamon/shiny.gbapal");
 const u8 gMonIcon_Yukimibotamon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/yukimibotamon/icon.4bpp");
+const u8 gMonEggIcon_Yukimibotamon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/yukimibotamon/icon_egg.4bpp");
+const u32 gMonEggGfx_Yukimibotamon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/yukimibotamon/egg_sprite.4bpp.smol");
+const u16 gMonEggPal_Yukimibotamon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/yukimibotamon/egg_sprite.gbapal");
+const u32 gMonHatchGfx_Yukimibotamon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/yukimibotamon/hatch.4bpp.smol");
+const u16 gMonHatchPal_Yukimibotamon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/yukimibotamon/hatch.gbapal");
 #if P_FOOTPRINTS
 const u8 gMonFootprint_Yukimibotamon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/yukimibotamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
@@ -27681,6 +27711,11 @@ const u16 gMonPalette_Yuramon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999
 const u32 gMonBackPic_Yuramon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/yuramon/back.4bpp.smol");
 const u16 gMonShinyPalette_Yuramon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/yuramon/shiny.gbapal");
 const u8 gMonIcon_Yuramon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/yuramon/icon.4bpp");
+const u8 gMonEggIcon_Yuramon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/yuramon/icon_egg.4bpp");
+const u32 gMonEggGfx_Yuramon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/yuramon/egg_sprite.4bpp.smol");
+const u16 gMonEggPal_Yuramon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/yuramon/egg_sprite.gbapal");
+const u32 gMonHatchGfx_Yuramon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/yuramon/hatch.4bpp.smol");
+const u16 gMonHatchPal_Yuramon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/yuramon/hatch.gbapal");
 #if P_FOOTPRINTS
 const u8 gMonFootprint_Yuramon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/yuramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
@@ -27698,6 +27733,11 @@ const u16 gMonPalette_Zurumon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999
 const u32 gMonBackPic_Zurumon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/zurumon/back.4bpp.smol");
 const u16 gMonShinyPalette_Zurumon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/zurumon/shiny.gbapal");
 const u8 gMonIcon_Zurumon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/zurumon/icon.4bpp");
+const u8 gMonEggIcon_Zurumon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/zurumon/icon_egg.4bpp");
+const u32 gMonEggGfx_Zurumon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/zurumon/egg_sprite.4bpp.smol");
+const u16 gMonEggPal_Zurumon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/zurumon/egg_sprite.gbapal");
+const u32 gMonHatchGfx_Zurumon[] = INCBIN_U32("graphics/pokemon/digimon/1997_1999/zurumon/hatch.4bpp.smol");
+const u16 gMonHatchPal_Zurumon[] = INCBIN_U16("graphics/pokemon/digimon/1997_1999/zurumon/hatch.gbapal");
 #if P_FOOTPRINTS
 const u8 gMonFootprint_Zurumon[] = INCBIN_U8("graphics/pokemon/digimon/1997_1999/zurumon/footprint.1bpp");
 #endif //P_FOOTPRINTS

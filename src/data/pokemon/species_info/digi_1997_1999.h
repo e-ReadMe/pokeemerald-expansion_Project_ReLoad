@@ -494,6 +494,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .levelUpLearnset = sChoromonLevelUpLearnset,
         //.teachableLearnset = sChoromonTeachableLearnset,
         .digivolutions = sChoromonDigivolveTable,
+        .eggId = EGG_ID_CHOROMON,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -574,6 +575,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .levelUpLearnset = sMokumonLevelUpLearnset,
         //.teachableLearnset = sMokumonTeachableLearnset,
         .digivolutions = sMokumonDigivolveTable,
+        .eggId = EGG_ID_MOKUMON,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -655,6 +657,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.teachableLearnset = sNyokimonTeachableLearnset,
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
         .digivolutions = sNyokimonDigivolveTable,
+        .eggId = EGG_ID_NYOKIMON,
     },
 
 
@@ -817,6 +820,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .levelUpLearnset = sPoyomonLevelUpLearnset,
         //.teachableLearnset = sPoyomonTeachableLearnset,
         .digivolutions = sPoyomonDigivolveTable,
+        .eggId = EGG_ID_POYOMON,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -897,6 +901,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .levelUpLearnset = sPunimonLevelUpLearnset,
         //.teachableLearnset = sPunimonTeachableLearnset,
         .digivolutions = sPunimonDigivolveTable,
+        .eggId = EGG_ID_PUNIMON,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -979,6 +984,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         //.teachableLearnset = sYukimibotamonTeachableLearnset,
         .digivolutions = sYukimibotamonDigivolveTable,
         .formSpeciesIdTable = sBotamonFormSpeciesIdTable,
+        .eggId = EGG_ID_YUKIMIBOTAMON,
     },
 
 
@@ -1059,6 +1065,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .levelUpLearnset = sYuramonLevelUpLearnset,
         //.teachableLearnset = sYuramonTeachableLearnset,
         .digivolutions = sYuramonDigivolveTable,
+        .eggId = EGG_ID_YURAMON,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 
@@ -1140,6 +1147,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .levelUpLearnset = sZurumonLevelUpLearnset,
         //.teachableLearnset = sZurumonTeachableLearnset,
         .digivolutions = sZurumonDigivolveTable,
+        .eggId = EGG_ID_ZURUMON,
         //.formSpeciesIdTable = sBotamonFormSpeciesIdTable,
     },
 //-----------------------------------------------------------------------
