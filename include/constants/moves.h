@@ -59,8 +59,10 @@ enum __attribute__((packed)) Move
     MOVE_SONIC_BOOM = 49,
     MOVE_SONICBOOM = MOVE_SONIC_BOOM, // Pre-Gen VI name
     MOVE_DISABLE = 50,
-    MOVE_ACID = 51,
-    MOVE_EMBER = 52,
+    //MOVE_ACID = 51,
+    MOVE_POOP_THROW = 51, // Digimon move
+    //MOVE_EMBER = 52,
+    MOVE_PEPPER_BREATH = 52, // Digimon move
     MOVE_FLAMETHROWER = 53,
     MOVE_MIST = 54,
     MOVE_WATER_GUN = 55,
@@ -95,8 +97,9 @@ enum __attribute__((packed)) Move
     MOVE_STRING_SHOT = 81,
     MOVE_DRAGON_RAGE = 82,
     MOVE_FIRE_SPIN = 83,
-    MOVE_THUNDER_SHOCK = 84,
-    MOVE_THUNDERSHOCK = MOVE_THUNDER_SHOCK, // Pre-Gen VI name
+    //MOVE_THUNDER_SHOCK = 84,
+    //MOVE_THUNDERSHOCK = MOVE_THUNDER_SHOCK, // Pre-Gen VI name
+    MOVE_HERTZ_HOWL = 84, // Digimon move
     MOVE_THUNDERBOLT = 85,
     MOVE_THUNDER_WAVE = 86,
     MOVE_THUNDER = 87,
@@ -113,7 +116,8 @@ enum __attribute__((packed)) Move
     MOVE_QUICK_ATTACK = 98,
     MOVE_RAGE = 99,
     MOVE_TELEPORT = 100,
-    MOVE_NIGHT_SHADE = 101,
+    //MOVE_NIGHT_SHADE = 101,
+    MOVE_NIGHTMARE_SYNDROME = 101, // Digimon move
     MOVE_MIMIC = 102,
     MOVE_SCREECH = 103,
     MOVE_DOUBLE_TEAM = 104,
@@ -134,7 +138,8 @@ enum __attribute__((packed)) Move
     MOVE_MIRROR_MOVE = 119,
     MOVE_SELF_DESTRUCT = 120,
     MOVE_SELFDESTRUCT = MOVE_SELF_DESTRUCT, // Pre-Gen VI name
-    MOVE_EGG_BOMB = 121,
+    //MOVE_EGG_BOMB = 121,
+    MOVE_CHEESE_BOMB = 121, // Digimon move
     MOVE_LICK = 122,
     MOVE_SMOG = 123,
     MOVE_SLUDGE = 124,
@@ -338,7 +343,8 @@ enum __attribute__((packed)) Move
     MOVE_BLAST_BURN = 307,
     MOVE_HYDRO_CANNON = 308,
     MOVE_METEOR_MASH = 309,
-    MOVE_ASTONISH = 310,
+    //MOVE_ASTONISH = 310,
+    MOVE_CANDLE_SLASH = 310, // Digimon move
     MOVE_WEATHER_BALL = 311,
     MOVE_AROMATHERAPY = 312,
     MOVE_FAKE_TEARS = 313,
@@ -516,7 +522,8 @@ enum __attribute__((packed)) Move
     MOVE_MAGIC_ROOM = 478,
     MOVE_SMACK_DOWN = 479,
     MOVE_STORM_THROW = 480,
-    MOVE_FLAME_BURST = 481,
+    //MOVE_FLAME_BURST = 481,
+    MOVE_FIRE_BALL = 481,// digimon move
     MOVE_SLUDGE_WAVE = 482,
     MOVE_QUIVER_DANCE = 483,
     MOVE_HEAVY_SLAM = 484,
@@ -576,7 +583,8 @@ enum __attribute__((packed)) Move
     MOVE_COTTON_GUARD = 538,
     MOVE_NIGHT_DAZE = 539,
     MOVE_PSYSTRIKE = 540,
-    MOVE_TAIL_SLAP = 541,
+    //MOVE_TAIL_SLAP = 541,
+    MOVE_FOX_TAIL = 541, // Digimon move
     MOVE_HURRICANE = 542,
     MOVE_HEAD_CHARGE = 543,
     MOVE_GEAR_GRIND = 544,
@@ -905,19 +913,10 @@ enum __attribute__((packed)) Move
     MOVE_MALIGNANT_CHAIN = 847,
     MOVES_COUNT_GEN9,
 
-//digimon moves
-    MOVE_HERTZ_HOWL = MOVES_COUNT_GEN9,
-    MOVE_FOX_TAIL = MOVE_HERTZ_HOWL + 1,
-    MOVE_NIGHTMARE_SYNDROME = MOVE_FOX_TAIL + 1,
-    MOVE_CANDLE_SLASH = MOVE_NIGHTMARE_SYNDROME + 1,
-    MOVE_CHEESE_BOMB = MOVE_CANDLE_SLASH + 1,
-    MOVE_POOP_THROW = MOVE_CHEESE_BOMB + 1,
-    MOVE_PEPPER_BREATH = MOVE_POOP_THROW + 1,
-    MOVES_COUNT_DIGIMON,
 
     // Add any custom moves here, not further down!
 
-    MOVES_COUNT = MOVES_COUNT_DIGIMON,
+    MOVES_COUNT = MOVES_COUNT_GEN9,
 
     // Z Moves
     FIRST_Z_MOVE = MOVES_COUNT,
@@ -1019,9 +1018,21 @@ enum __attribute__((packed)) Move
     LAST_MAX_MOVE = MOVE_G_MAX_RAPID_FLOW,
     MOVES_COUNT_DYNAMAX,
     MOVES_COUNT_ALL = MOVES_COUNT_DYNAMAX,
+
+#define MOVE_FLAME_BURST MOVE_FIRE_BALL
+#define MOVE_THUNDER_SHOCK MOVE_HERTZ_HOWL
+#define MOVE_NIGHT_SHADE MOVE_NIGHTMARE_SYNDROME
+#define MOVE_TAIL_SLAP MOVE_FOX_TAIL
+#define MOVE_ASTONISH MOVE_CANDLE_SLASH
+#define MOVE_EGG_BOMB MOVE_CHEESE_BOMB
+#define MOVE_ACID MOVE_POOP_THROW
+#define MOVE_EMBER MOVE_PEPPER_BREATH
+
 };
 
 #define MOVE_DEFAULT     0x3FFF // Used when creating a mon to be replaced by a level-up move (needs to be less than that 0x4000 because of VarGet)
 #define MOVE_UNAVAILABLE 0xFFFF // Used for checks for moves affected by Disable, Mimic, etc.
+
+
 
 #endif  // GUARD_CONSTANTS_MOVES_H

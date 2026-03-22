@@ -22373,7 +22373,7 @@ static const struct LevelUpMove sPunimonLevelUpLearnset[] = {
 //SPECIES_YUKIMIBOTAMON
 static const struct LevelUpMove sYukimibotamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_BUBBLE),
-    LEVEL_UP_MOVE(5, MOVE_ICY_WIND),
+    LEVEL_UP_MOVE(5, MOVE_HAZE),
     LEVEL_UP_END
 };
 
@@ -22492,7 +22492,7 @@ static const struct LevelUpMove sPagumonLevelUpLearnset[] = {
 
 //SPECIES_PETITMERAMON
 static const struct LevelUpMove sPetitmeramonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 1, MOVE_FIRE_BALL),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 3, MOVE_MINIMIZE),
     LEVEL_UP_MOVE( 5, MOVE_SMOG),
@@ -22500,15 +22500,6 @@ static const struct LevelUpMove sPetitmeramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(10, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(13, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(16, MOVE_WILL_O_WISP),
-    LEVEL_UP_MOVE(20, MOVE_FLAME_BURST),
-    LEVEL_UP_MOVE(24, MOVE_IMPRISON),
-    LEVEL_UP_MOVE(28, MOVE_HEX),
-    LEVEL_UP_MOVE(33, MOVE_MEMENTO),
-    LEVEL_UP_MOVE(38, MOVE_INFERNO),
-    LEVEL_UP_MOVE(43, MOVE_CURSE),
-    LEVEL_UP_MOVE(49, MOVE_SHADOW_BALL),
-    LEVEL_UP_MOVE(55, MOVE_PAIN_SPLIT),
-    LEVEL_UP_MOVE(61, MOVE_OVERHEAT),
     LEVEL_UP_END
 };
 
