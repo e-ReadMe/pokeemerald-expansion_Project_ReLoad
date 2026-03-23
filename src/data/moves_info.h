@@ -3946,18 +3946,22 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_BUBBLE] =
     {
-        .name = COMPOUND_STRING("Bubbles"),
+        .name = COMPOUND_STRING("Bubble"),
         .description = COMPOUND_STRING(
             "An attack using bubbles.\n"
-            "It doesn't do much damage."),
+            "May lower the foe's Speed."),
         .effect = EFFECT_HIT,
-        .power = 30,
-        .type = TYPE_FREE,
+        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 40 : 20,
+        .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 30,
         .target = TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
+            .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33,
+        }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
@@ -23007,6 +23011,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_GMaxRapidFlow,
     },
 
+    [MOVE_BUBBLES] =
+    {
+        .name = COMPOUND_STRING("Bubbles"),
+        .description = COMPOUND_STRING(
+            "An attack using bubbles.\n"
+            "It doesn't do much damage."),
+        .effect = EFFECT_HIT,
+        .power = 30,
+        .type = TYPE_FREE,
+        .accuracy = 100,
+        .pp = 30,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
+        .battleAnimScript = gBattleAnimMove_Bubble,
+    },
+
     [MOVE_HERTZ_HOWL] =
     {
         .name = COMPOUND_STRING("Hertz Howl"),
@@ -23015,13 +23040,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "that hurts the ears."),
         .effect = EFFECT_HIT,
         .power = 40,
-        .type = TYPE_STEEL,
+        .type = TYPE_METAL,
         .accuracy = 100,
         .pp = 40,
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .soundMove = TRUE,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_GROWTH},
@@ -23036,7 +23062,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "strike the opponent."),
         .effect = EFFECT_HIT,
         .power = 40,
-        .type = TYPE_FAIRY,
+        .type = TYPE_PUPPET,
         .accuracy = 100,
         .pp = 40,
         .target = TARGET_SELECTED,
@@ -23078,7 +23104,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             " wax. Can crit or burn easily."),
         .effect = EFFECT_HIT,
         .power = 50,
-        .type = TYPE_GHOST,
+        .type = TYPE_UNDEAD,
         .accuracy = 90,
         .criticalHitStage = 1,
         .pp = 20,
@@ -23104,7 +23130,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "whether they like it or not."),
         .effect = EFFECT_HIT,
         .power = 40,
-        .type = TYPE_POISON,
+        .type = TYPE_FILTH,
         .accuracy = 75,
         .pp = 20,
         .target = TARGET_SELECTED,
@@ -23126,7 +23152,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Foe can no longer eat food."),
         .effect = EFFECT_EMBARGO,
         .power = 40,
-        .type = TYPE_POISON,
+        .type = TYPE_FILTH,
         .accuracy = 75,
         .pp = 20,
         .target = TARGET_SELECTED,
@@ -23173,7 +23199,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Spits out a ball of flame.\n"
             "Can cause burns."),
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 30,
         .type = TYPE_FIRE,
         .accuracy = 100,
         .pp = 15,
@@ -23189,5 +23215,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_FlameBurst,
+    },
+
+    [MOVE_ELECTRO_SHOCK] =
+    {
+        .name = COMPOUND_STRING("Electro Shock"),
+        .description = COMPOUND_STRING(
+            "Strikes the fow with an\n"
+            "electric current. Can paralyze."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 20,
+        }),
+        .contestEffect = CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_ThunderShock,
     },
 };
