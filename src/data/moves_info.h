@@ -3944,30 +3944,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_BUBBLE] =
-    {
-        .name = COMPOUND_STRING("Bubble"),
-        .description = COMPOUND_STRING(
-            "An attack using bubbles.\n"
-            "May lower the foe's Speed."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 40 : 20,
-        .type = TYPE_WATER,
-        .accuracy = 100,
-        .pp = 30,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33,
-        }),
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_STARTLE_PREV_MONS,
-        .contestCategory = CONTEST_CATEGORY_CUTE,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
-        .battleAnimScript = gBattleAnimMove_Bubble,
-    },
+    //[MOVE_BUBBLE] =
+    //{
+    //    .name = COMPOUND_STRING("Bubble"),
+    //    .description = COMPOUND_STRING(
+    //        "An attack using bubbles.\n"
+    //        "May lower the foe's Speed."),
+    //    .effect = EFFECT_HIT,
+    //    .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 40 : 20,
+    //    .type = TYPE_WATER,
+    //    .accuracy = 100,
+    //    .pp = 30,
+    //    .target = TARGET_BOTH,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_SPECIAL,
+    //    .additionalEffects = ADDITIONAL_EFFECTS({
+    //        .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
+    //        .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33,
+    //    }),
+    //    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_STARTLE_PREV_MONS,
+    //    .contestCategory = CONTEST_CATEGORY_CUTE,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
+    //    .battleAnimScript = gBattleAnimMove_Bubble,
+    //},
 
     [MOVE_DIZZY_PUNCH] =
     {
@@ -9414,27 +9414,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_RockBlast,
     },
 
-    [MOVE_SHOCK_WAVE] =
-    {
-        .name = COMPOUND_STRING("Shock Wave"),
-        .description = COMPOUND_STRING(
-            "A fast and unavoidable\n"
-            "electric attack."),
-        .effect = EFFECT_HIT,
-        .power = 60,
-        .type = TYPE_ELECTRIC,
-        .accuracy = 0,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST,
-        .contestCategory = CONTEST_CATEGORY_COOL,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
-        .battleAnimScript = gBattleAnimMove_ShockWave,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_SHOCK_WAVE] =
+    //{
+    //    .name = COMPOUND_STRING("Shock Wave"),
+    //    .description = COMPOUND_STRING(
+    //        "A fast and unavoidable\n"
+    //        "electric attack."),
+    //    .effect = EFFECT_HIT,
+    //    .power = 60,
+    //    .type = TYPE_ELECTRIC,
+    //    .accuracy = 0,
+    //    .pp = 20,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_SPECIAL,
+    //    .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST,
+    //    .contestCategory = CONTEST_CATEGORY_COOL,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {COMBO_STARTER_CHARGE},
+    //    .battleAnimScript = gBattleAnimMove_ShockWave,
+    //    .validApprenticeMove = TRUE,
+    //},
 
     [MOVE_WATER_PULSE] =
     {
