@@ -172,3 +172,4 @@ CALVIN_Text_Decline:
 	.string "Oh, okay. If you change your mind, just\n"
 	.string "speak to me again. I'm always up for a\n"
 	.string "battle!$"
+
