@@ -2601,4 +2601,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Survives OHKO's with 1 HP."),
         .aiRating = 0,
     },
+
+    [ABILITY_HAYMAKER] =
+    {
+        .name = _("Haymaker"),
+        .description = COMPOUND_STRING("Boosts Critical Hit Rate"),
+        .aiRating = 3,
+    },
 };

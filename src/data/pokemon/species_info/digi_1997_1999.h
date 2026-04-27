@@ -1160,15 +1160,15 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 55,
         .baseSpDefense = 35,
         .baseSpeed     = 34,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_METAL),
+        .types = MON_TYPES(TYPE_NODAT, TYPE_METAL, TYPE_METAL),
         .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .expYield = 40,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -1176,24 +1176,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_BABY_PROOF, ABILITY_BABY_PROOF, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GRAY,
     #if DubNames
-        .speciesName = _("Kapurimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Kapurimon"),
     #else
-        .speciesName = _("Caprimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Caprimon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_CAPRIMON,
         .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Within the two horns attached to its \n"
+            "helmet, it has antennae that are able \n"
+            "to receive any radio wave or sound. It's\n"
+            "eyes are weak, so it uses echolocation. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1241,40 +1240,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
         .baseSpeed     = 30,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_INSECT),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_INSECT, TYPE_INSECT),
+        .catchRate = 220,
+        .expYield = 40,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .abilities = { ABILITY_SWARM, ABILITY_SWARM, ABILITY_BABY_PROOF },
+        .bodyColor = BODY_COLOR_RED,
     #if DubNames
-        .speciesName = _("Kodokugumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Kodokugumon"),
     #else
-        .speciesName = _("Kodokugumon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Kodokugumon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_KODOKUGUMON,
-        .categoryName = _("Lesser"),
+        .categoryName = _("Insect"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "A Baby-level Digimon that is the \n"
+            "offspring of Dokugumon. They live in \n"
+            "countless numbers, and attack \n"
+            "intruders in clusters."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1322,15 +1320,15 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 65,
         .baseSpDefense = 45,
         .baseSpeed     = 35,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_FIRE, TYPE_FIRE),
+        .catchRate = 200,
+        .expYield = 50,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -1338,24 +1336,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_BABY_PROOF, ABILITY_BLAZE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
     #if DubNames
-        .speciesName = _("Koromon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Koromon"),
     #else
-        .speciesName = _("Koromon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Koromon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_KOROMON,
         .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Although it has become able to move \n"
+            "around more actively, it is still unable \n"
+            "to battle. It can produce bubbles from \n"
+            "its mouth to intimidate opponents."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1403,15 +1400,15 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 80,
         .baseSpeed     = 55,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_INSECT, TYPE_INSECT),
+        .catchRate = 200,
+        .expYield = 40,
+        .evYield_HP = 2,
+        .evYield_Attack = 1,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -1419,24 +1416,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_SWARM, ABILITY_BABY_PROOF, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
     #if DubNames
-        .speciesName = _("Motimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Motimon"),
     #else
-        .speciesName = _("Mochimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Mochimon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_MOCHIMON,
         .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It inflates its body when it gets\n"
+            "worked up. It has a great intellect \n"
+            "that couldn't even be imagined from its \n"
+            "appearance. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1484,15 +1480,15 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 25,
         .baseSpDefense = 45,
         .baseSpeed     = 55,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_LIGHT),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_BEAST, TYPE_BEAST),
+        .catchRate = 200,
+        .expYield = 40,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 2,
+        .evYield_Speed = 1,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -1500,24 +1496,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .abilities = { ABILITY_BABY_PROOF, ABILITY_BABY_PROOF, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
-        .speciesName = _("Nyaromon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Nyaromon"),
     #else
-        .speciesName = _("Nyaromon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Nyaromon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_NYAROMON,
         .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "A tiny cat-like Digimon. Although it is\n"
+            "sometimes frivolous due to its\n"
+            "overflowing curiosity, it also has a\n"
+            "lonely side."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1565,15 +1560,15 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 50,
         .baseSpDefense = 37,
         .baseSpeed     = 66,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_DARK),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_DARK, TYPE_DARK),
+        .catchRate = 200,
+        .expYield = 40,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 2,
+        .evYield_Speed = 2,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -1581,24 +1576,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_BABY_PROOF, ABILITY_BABY_PROOF, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
     #if DubNames
-        .speciesName = _("Pagumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Pagumon"),
     #else
-        .speciesName = _("Pagumon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Pagumon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PAGUMON,
         .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It loves pranks, and will bully other \n"
+            "Digimon by chasing them around. It is \n"
+            "capable of flying by flapping the ear-\n"
+            "like parts growing from its head. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1646,15 +1640,15 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 65,
         .baseSpDefense = 55,
         .baseSpeed     = 20,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_FIRE),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_FIRE, TYPE_UNDEAD),
+        .catchRate = 200,
+        .expYield = 40,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 2,
+        .evYield_Speed = 1,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -1662,24 +1656,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_BLAZE, ABILITY_BABY_PROOF, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
     #if DubNames
-        .speciesName = _("DemiMeramon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("DEMIMERAMON"),
     #else
-        .speciesName = _("PetitMeramon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("PETITMERAMON"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PETITMERAMON,
-        .categoryName = _("Lesser"),
+        .categoryName = _("Flame"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It's digi-core burns so fiercely that \n"
+            "it's whole body is ablaze. It has a wild \n"
+            "temperament, but cannot fight properly\n"
+            " due to low offensive power. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1727,15 +1720,15 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 55,
         .baseSpDefense = 50,
         .baseSpeed     = 25,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_WATER),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_WATER, TYPE_WATER),
+        .catchRate = 200,
+        .expYield = 40,
+        .evYield_HP = 2,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 2,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -1743,24 +1736,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_LEVITATE, ABILITY_BABY_PROOF, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
     #if DubNames
-        .speciesName = _("Bukamon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Bukamon"),
     #else
-        .speciesName = _("Pukamon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Pukamon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PUKAMON,
         .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Its outer skin cannot yet bear the \n"
+            "water pressure and low temperature of \n"
+            "the deep sea, so the length of time it \n"
+            "can dive to the deep sea is not long."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1889,15 +1881,15 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 50,
         .baseSpDefense = 70,
         .baseSpeed     = 55,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_PLANT),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_PLANT, TYPE_PLANT),
+        .catchRate = 200,
+        .expYield = 40,
+        .evYield_HP = 2,
+        .evYield_Attack = 1,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -1905,24 +1897,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_BABY_PROOF, ABILITY_OVERGROW, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Tanemon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Tanemon"),
     #else
-        .speciesName = _("Tanemon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Tanemon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_TANEMON,
         .categoryName = _("Bulb"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It is a Yuramon that wandered in search\n"
+            "of an optimal environment, then settled\n"
+            "to the ground and evolved. It has an \n"
+            "extremely timid personality. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1970,40 +1961,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 38,
         .baseSpeed     = 62,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_LIGHT),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
+        .catchRate = 200,
+        .expYield = 40,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 2,
         .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .itemRare = ITEM_ORAN_BERRY_,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GRAY,
+        .abilities = { ABILITY_BABY_PROOF, ABILITY_INTIMIDATE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_PINK,
     #if DubNames
-        .speciesName = _("Tokomon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Tokomon"),
     #else
-        .speciesName = _("Tokomon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Tokomon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_TOKOMON,
         .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Anyone who reaches out to pet Tokomon \n"
+            "may be bit with its rows of sharp teeth. \n"
+            "Tokomon has an innocent personality, \n"
+            "though, and doesn't mean any real harm. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2051,15 +2041,15 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
         .baseSpeed     = 50,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_BEAST),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
+        .types = MON_TYPES(TYPE_NODAT, TYPE_BEAST, TYPE_BEAST),
+        .catchRate = 200,
+        .expYield = 40,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_ORAN_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -2067,24 +2057,23 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .abilities = { ABILITY_BABY_PROOF, ABILITY_BABY_PROOF, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BROWN,
     #if DubNames
-        .speciesName = _("Tunomon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Tsunomon"),
     #else
-        .speciesName = _("Tsunomon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Tsunomon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_TSUNOMON,
         .categoryName = _("Lesser"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It has accomplished a more animal-like \n"
+            "evolution, and is covered in tufty body \n"
+            "hair. It is still at the peak of \n"
+            "playfulness. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2535,40 +2524,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 95,
         .baseSpDefense = 60,
         .baseSpeed     = 55,
-        .types = MON_TYPES(TYPE_DATA, TYPE_FIRE, TYPE_FIRE),
-        .catchRate = 225,
+        .types = MON_TYPES(TYPE_DATA, TYPE_FIRE, TYPE_UNDEAD),
+        .catchRate = 170,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 2,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_SPELL_TAG,
+        .itemRare = ITEM_SPELL_TAG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_FLAME_BODY, ABILITY_GOOEY, ABILITY_CURSED_BODY },
+        .abilities = { ABILITY_NIGHT_SOLDIER, ABILITY_NIGHT_SOLDIER, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
     #if DubNames
-        .speciesName = _("Candlemon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Candlemon"),
     #else
-        .speciesName = _("Candmon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Candmon"),
     #endif
-        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_CANDMON,
         .categoryName = _("Flame"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "One theory suggests that the flame on \n"
+            "its head is its true form, and that the \n"
+            "rest of its body is naught but a dummy. \n"
+            "It's special move is spitting fireballs. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2616,40 +2604,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 55,
         .baseSpeed     = 85,
-        .types = MON_TYPES(TYPE_NODAT, TYPE_FILTH, TYPE_FILTH),
-        .catchRate = 225,
-        .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_FILTH, TYPE_BEAST),
+        .catchRate = 200,
+        .expYield = 75,
+        .evYield_HP = 2,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 2,
+        .itemCommon = ITEM_POISON_BARB,
+        .itemRare = ITEM_POISON_BARB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_WIMP_OUT, ABILITY_WIMP_OUT, ABILITY_RUN_AWAY },
+        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
     #if DubNames
-        .speciesName = _("Chuumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Chuumon"),
     #else
-        .speciesName = _("Chuumon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Chuumon"),
     #endif
-        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_CHUUMON,
         .categoryName = _("Beast"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "While it is generally cowardly, its\n"
+            "cunning is unparalleled and it will dash\n"
+            "away to safety at the first sign of \n"
+            "danger. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2698,39 +2685,38 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpDefense = 85,
         .baseSpeed     = 95,
         .types = MON_TYPES(TYPE_DATA, TYPE_ELECTRIC, TYPE_ELECTRIC),
-        .catchRate = 225,
+        .catchRate = 170,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 2,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_MAGNET,
+        .itemRare = ITEM_MAGNET,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_IMPULSE_CITY, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
     #if DubNames
-        .speciesName = _("Elecmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Elecmon"),
     #else
-        .speciesName = _("Elecmon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Elecmon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_ELECMON,
         .categoryName = _("Mammal"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Elecmon possesses nine tails, and \n"
+            "during battle, it fans out its tail like \n"
+            "the plumage of a peacock to intimidate \n"
+            "its opponent."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2779,38 +2765,38 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpDefense = 80,
         .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_DATA, TYPE_PLANT, TYPE_PLANT),
-        .catchRate = 225,
+        .catchRate = 170,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 0,
-        .evYield_Defense = 0,
-        .evYield_SpAttack = 0,
-        .evYield_SpDefense = 0,
-        .evYield_Speed = 0,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 2,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_MIRACLE_SEED,
+        .itemRare = ITEM_MIRACLE_SEED,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_OVERGROW, ABILITY_OVERGROW, ABILITY_NONE },
+        .abilities = { ABILITY_NATURE_SPIRIT, ABILITY_LEAF_GUARD, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Floramon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Floramon"),
     #else
-        .speciesName = _("Floramon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Floramon"),
     #endif
-        //.field = field_WG,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_FLORAMON,
-        .categoryName = _("Vegetation"),
+        .categoryName = _("Plant"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "It sees Palmon as it's rival, and has a\n"
-            "high opinion of itself. It's helmet\n"
-            "opens and it can store things inside."),
+            "A plant Digimon that evolved like a \n"
+            "reptile. The petal shell on its head can \n"
+            "open like a flower. It sees Palmon as \n"
+            "its rival. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2858,40 +2844,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 55,
         .baseSpDefense = 60,
         .baseSpeed     = 71,
-        .types = MON_TYPES(TYPE_DATA, TYPE_ICE, TYPE_ICE),
-        .catchRate = 225,
+        .types = MON_TYPES(TYPE_DATA, TYPE_BEAST, TYPE_ICE),
+        .catchRate = 170,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_HARD_STONE,
+        .itemRare = ITEM_HARD_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLUE,
+        .abilities = { ABILITY_ANIMAL_COLOSSEUM, ABILITY_ANIMAL_COLOSSEUM, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
-        .speciesName = _("Gabumon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Gabumon"),
     #else
-        .speciesName = _("Gabumon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Gabumon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GABUMON,
         .categoryName = _("Reptile"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Due to its shy personality, it gathers \n"
+            "data from Garurumon and turns it into a \n"
+            "pelt to wear. While wearing its fur, it's \n"
+            "personality completely changes. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2939,40 +2924,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 55,
         .baseSpDefense = 55,
         .baseSpeed     = 90,
-        .types = MON_TYPES(TYPE_VACCINE, TYPE_ELECTRIC, TYPE_ELECTRIC),
-        .catchRate = 225,
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_BEAST, TYPE_ELECTRIC),
+        .catchRate = 170,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 2,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_HARD_STONE,
+        .itemRare = ITEM_HARD_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_ANIMAL_COLOSSEUM, ABILITY_ANIMAL_COLOSSEUM, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
     #if DubNames
-        .speciesName = _("Psychemon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Psychemon"),
     #else
-        .speciesName = _("Psychemon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Psychemon"),
     #endif
-        //.field = field_Nsp,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_GABUMON,
+        .natDexNum = NATIONAL_DEX_PSYCHEMON,
         .categoryName = _("Reptile"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It has a personality that is as bright \n"
+            "and showy as the colors on its body. \n"
+            "But if it's fur pelt is removed, it turns \n"
+            "cowardly, just like Gabumon."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3021,39 +3005,38 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpDefense = 95,
         .baseSpeed     = 35,
         .types = MON_TYPES(TYPE_DATA, TYPE_WATER, TYPE_WATER),
-        .catchRate = 225,
+        .catchRate = 170,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_MYSTIC_WATER,
+        .itemRare = ITEM_MYSTIC_WATER,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GRAY,
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_HYPER_CUTTER, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLUE,
     #if DubNames
-        .speciesName = _("Crabmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Crabmon"),
     #else
-        .speciesName = _("Ganimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Ganimon"),
     #endif
-        //.field = field_DS,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GANIMON,
         .categoryName = _("Crustacean"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It stuck the metal data dissolved in \n"
+            "the Net Ocean to its body, greatly \n"
+            "enhancing its combat ability. It never \n"
+            "shows its weak points to opponents. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3101,40 +3084,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 80,
         .baseSpeed     = 77,
-        .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_DARK),
-        .catchRate = 225,
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_BEAST),
+        .catchRate = 170,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 2,
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_BLACK_GLASSES,
+        .itemRare = ITEM_BLACK_GLASSES,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_DYNASTY_OF_EVIL, ABILITY_DYNASTY_OF_EVIL, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
     #if DubNames
-        .speciesName = _("Gazimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Gazimon"),
     #else
-        .speciesName = _("Gazimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Gazimon"),
     #endif
-        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GAZIMON,
         .categoryName = _("Mammal"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It is bipedal, which is rare amongst\n"
+            "Mammal types. It has an agressive\n"
+            "temperament despite its small size, and\n"
+            "never warms up to humans. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3182,40 +3164,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 83,
         .baseSpDefense = 60,
         .baseSpeed     = 60,
-        .types = MON_TYPES(TYPE_VIRUS, TYPE_WATER, TYPE_DARK),
-        .catchRate = 225,
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_WATER, TYPE_BEAST),
+        .catchRate = 170,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 2,
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_MYSTIC_WATER,
+        .itemRare = ITEM_MYSTIC_WATER,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .abilities = { ABILITY_DEEP_SAVERS, ABILITY_DEEP_SAVERS, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BROWN,
     #if DubNames
-        .speciesName = _("Gizamon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Gizamon"),
     #else
-        .speciesName = _("Gizamon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Gizamon"),
     #endif
-        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GIZAMON,
-        .categoryName = _("Sea Animal"),
+        .categoryName = _("Sea animal"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "It is more suited for life in the water;\n"
+            "although it swims about quickly in the\n"
+            "water with its fins, on the ground it\n"
+            "moves about with weak, frog-like hops. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3263,40 +3244,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 65,
         .baseSpDefense = 65,
         .baseSpeed     = 50,
-        .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_COMBAT),
-        .catchRate = 225,
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_DARK),
+        .catchRate = 200,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_BLACK_GLASSES,
+        .itemRare = ITEM_BLACK_GLASSES,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_HAYMAKER, ABILITY_HAYMAKER, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Goblimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Goblimon"),
     #else
-        .speciesName = _("Goblimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Goblimon"),
     #endif
-        //.field = field_NSo,
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_GOBLIMON,
         .categoryName = _("Oni"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "A mischief-loving, impish Digimon with \n"
+            "the appearance of a small oni. Cunning \n"
+            "but lacking courage, it never acts \n"
+            "alone. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3344,40 +3324,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 50,
         .baseSpDefense = 90,
         .baseSpeed     = 65,
-        .types = MON_TYPES(TYPE_VIRUS, TYPE_EARTH, TYPE_COMBAT),
-        .catchRate = 225,
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_COMBAT),
+        .catchRate = 170,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_BLACK_GLASSES,
+        .itemRare = ITEM_BLACK_GLASSES,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_DYNASTY_OF_EVIL, ABILITY_DYNASTY_OF_EVIL, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Shamamon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Shamamon"),
     #else
-        .speciesName = _("Shamamon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Shamamon"),
     #endif
-        //.field = field_NSo,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_GOBLIMON,
+        .natDexNum = NATIONAL_DEX_SHAMAMON,
         .categoryName = _("Oni"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "A Goburimon whose duty is to listen to \n"
+            "the will of God, and convey that to its \n"
+            "clan. It performs a mysterious dance \n"
+            "during its rituals"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3424,40 +3403,39 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 80,
         .baseSpDefense = 75,
         .baseSpeed     = 59,
-        .types = MON_TYPES(TYPE_VIRUS, TYPE_ICE, TYPE_COMBAT),
-        .catchRate = 225,
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_ICE),
+        .catchRate = 170,
         .expYield = 100,
-        .evYield_HP = 3,
-        .evYield_Attack = 3,
-        .evYield_Defense = 3,
-        .evYield_SpAttack = 3,
-        .evYield_SpDefense = 3,
-        .evYield_Speed = 3,
-        .itemCommon = ITEM_ORAN_BERRY,
-        .itemRare = ITEM_ORAN_BERRY,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
+        .itemCommon = ITEM_NEVERMELTICE,
+        .itemRare = ITEM_NEVERMELTICE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GRAY,
+        .abilities = { ABILITY_HAYMAKER, ABILITY_DYNASTY_OF_EVIL, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLUE,
     #if DubNames
-        .speciesName = _("SnowGoblimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Snowgoblimon"),
     #else
-        .speciesName = _("SnowGoblimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Snowgoblimon"),
     #endif
-        //.field = field_NSo,
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_GOBLIMON,
+        .natDexNum = NATIONAL_DEX_SNOWGOBLIMON,
         .categoryName = _("Oni"),
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Since it wears a warm hat and vest, the \n"
+            "cold doesn't bother it. The skin on the \n"
+            "soles of its feet has thickened enough \n"
+            "for it to walk barefooted on snow. "),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
