@@ -783,12 +783,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
     },
 
-    [ABILITY_SUPER_LUCK] =
-    {
-        .name = _("Super Luck"),
-        .description = COMPOUND_STRING("Critical hits land often."),
-        .aiRating = 3,
-    },
+    //[ABILITY_SUPER_LUCK] =
+    //{
+    //    .name = _("Super Luck"),
+    //    .description = COMPOUND_STRING("Critical hits land often."),
+    //    .aiRating = 3,
+    //},
 
     [ABILITY_AFTERMATH] =
     {
