@@ -668,7 +668,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseDefense   = 20,
         .baseSpAttack  = 10,
         .baseSpDefense = 55,
-        .baseSpeed     = 80,
+        .baseSpeed     = 50,
         .types = MON_TYPES(TYPE_NODAT, TYPE_NEUTRAL, TYPE_NEUTRAL),
         .catchRate = 225,
         .expYield = 100,
@@ -1659,9 +1659,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_BLAZE, ABILITY_BABY_PROOF, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
     #if DubNames
-        .speciesName = _("DEMIMERAMON"),
+        .speciesName = _("Demimeramon"),
     #else
-        .speciesName = _("PETITMERAMON"),
+        .speciesName = _("Petitmeramon"),
     #endif
         .cryId = CRY_NONE,
         .natDexNum = NATIONAL_DEX_PETITMERAMON,
@@ -3661,7 +3661,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_METAL_EMPIRE, ABILITY_METAL_EMPIRE, ABILITY_IMPULSE_CITY },
         .bodyColor = BODY_COLOR_BLACK,
     #if DubNames
         .speciesName = _("Hagurumon"),//the digimon's dub name. e.g. gatomon
@@ -4450,9 +4450,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
 	[SPECIES_PENMON] =
     {
         .baseHP        = 70,
-        .baseAttack    = 83,
+        .baseAttack    = 37,
         .baseDefense   = 50,
-        .baseSpAttack  = 37,
+        .baseSpAttack  = 83,
         .baseSpDefense = 50,
         .baseSpeed     = 60,
         .types = MON_TYPES(TYPE_VACCINE, TYPE_ICE, TYPE_ICE),
@@ -4611,12 +4611,12 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
 
 	[SPECIES_PICODEVIMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 50,
-        .baseDefense   = 45,
-        .baseSpAttack  = 115,
-        .baseSpDefense = 55,
-        .baseSpeed     = 95,
+        .baseHP        = 68,
+        .baseAttack    = 80,
+        .baseDefense   = 50,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 50,
+        .baseSpeed     = 102,
         .types = MON_TYPES(TYPE_VIRUS, TYPE_DARK, TYPE_DARK),
         .catchRate = 225,
         .expYield = 100,

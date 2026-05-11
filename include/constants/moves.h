@@ -4,32 +4,41 @@
 enum __attribute__((packed)) Move
 {
     MOVE_NONE = 0,
-    MOVE_POUND = 1,
+    //MOVE_POUND = 1,
+    MOVE_STRIKE = 1,//replaces pound
     MOVE_KARATE_CHOP = 2,
     MOVE_DOUBLE_SLAP = 3,
     MOVE_DOUBLESLAP = MOVE_DOUBLE_SLAP, // Pre-Gen VI name
-    MOVE_COMET_PUNCH = 4,
+    //MOVE_COMET_PUNCH = 4,
+    MOVE_SHAMA_HAMMER = 4,//digi move, replaces comet punch
     MOVE_MEGA_PUNCH = 5,
     MOVE_PAY_DAY = 6,
     MOVE_FIRE_PUNCH = 7,
-    MOVE_ICE_PUNCH = 8,
-    MOVE_THUNDER_PUNCH = 9,
-    MOVE_THUNDERPUNCH = MOVE_THUNDER_PUNCH, // Pre-Gen VI name
-    MOVE_SCRATCH = 10,
+    //MOVE_ICE_PUNCH = 8,
+    MOVE_SNOW_GOBLI_VOLT = 8,//digi move, replaces ice punch
+    //MOVE_THUNDER_PUNCH = 9,
+    //MOVE_THUNDERPUNCH = MOVE_THUNDER_PUNCH, // Pre-Gen VI name
+    MOVE_THUNDER_STRIKE = 9,//replaces thunder punch
+    //MOVE_SCRATCH = 10,
+    MOVE_NAIL_SCRATCH = 10, // replaces scratch
     MOVE_VISE_GRIP = 11,
     MOVE_VICEGRIP = MOVE_VISE_GRIP, // Pre-Gen VI name
     MOVE_VICE_GRIP = MOVE_VISE_GRIP, // Pre-Gen VIII name
     MOVE_GUILLOTINE = 12,
     MOVE_RAZOR_WIND = 13,
     MOVE_SWORDS_DANCE = 14,
-    MOVE_CUT = 15,
-    MOVE_GUST = 16,
+    //MOVE_CUT = 15,
+    MOVE_SCISSOR_ATTACK = 15,//digi move, replaces cut
+    //MOVE_GUST = 16,
+    MOVE_AIR_BUBBLES = 16,//replaces gust
     MOVE_WING_ATTACK = 17,
     MOVE_WHIRLWIND = 18,
     MOVE_FLY = 19,
     MOVE_BIND = 20,
-    MOVE_SLAM = 21,
-    MOVE_VINE_WHIP = 22,
+    //MOVE_SLAM = 21,
+    MOVE_HEAVY_STRIKE = 21,//replaces slam
+    //MOVE_VINE_WHIP = 22,
+    MOVE_THORN_STRIKE = 22,//replaces vine whip
     MOVE_STOMP = 23,
     MOVE_DOUBLE_KICK = 24,
     MOVE_MEGA_KICK = 25,
@@ -50,7 +59,8 @@ enum __attribute__((packed)) Move
     MOVE_POISON_STING = 40,
     MOVE_TWINEEDLE = 41,
     MOVE_PIN_MISSILE = 42,
-    MOVE_LEER = 43,
+    //MOVE_LEER = 43,
+    MOVE_GUARD_BREAK = 43,//digi move, replaces leer
     MOVE_BITE = 44,
     MOVE_GROWL = 45,
     MOVE_ROAR = 46,
@@ -67,15 +77,18 @@ enum __attribute__((packed)) Move
     MOVE_MIST = 54,
     MOVE_WATER_GUN = 55,
     MOVE_HYDRO_PUMP = 56,
-    MOVE_SURF = 57,
+    //MOVE_SURF = 57,
+    MOVE_TIDAL_STREAM = 57,//digi move, replaces surf
     MOVE_ICE_BEAM = 58,
     MOVE_BLIZZARD = 59,
     MOVE_PSYBEAM = 60,
-    MOVE_BUBBLE_BEAM = 61,
-    MOVE_BUBBLEBEAM = MOVE_BUBBLE_BEAM, // Pre-Gen VI name
+    //MOVE_BUBBLE_BEAM = 61,
+    //MOVE_BUBBLEBEAM = MOVE_BUBBLE_BEAM, // Pre-Gen VI name
+    MOVE_BUBBLE_BREATH = 61, // Digimon move, replaces bubble beam
     MOVE_AURORA_BEAM = 62,
     MOVE_HYPER_BEAM = 63,
-    MOVE_PECK = 64,
+    //MOVE_PECK = 64,
+    MOVE_WIND_CLAW = 64,//digi move. replaces peck
     MOVE_DRILL_PECK = 65,
     MOVE_SUBMISSION = 66,
     MOVE_LOW_KICK = 67,
@@ -86,7 +99,8 @@ enum __attribute__((packed)) Move
     MOVE_MEGA_DRAIN = 72,
     MOVE_LEECH_SEED = 73,
     MOVE_GROWTH = 74,
-    MOVE_RAZOR_LEAF = 75,
+    //MOVE_RAZOR_LEAF = 75,
+    MOVE_BIO_HAZARD = 75, // Digimon move, replaces razor leaf
     MOVE_SOLAR_BEAM = 76,
     MOVE_SOLARBEAM = MOVE_SOLAR_BEAM, // Pre-Gen VI name
     MOVE_POISON_POWDER = 77,
@@ -101,18 +115,22 @@ enum __attribute__((packed)) Move
     //MOVE_THUNDERSHOCK = MOVE_THUNDER_SHOCK, // Pre-Gen VI name
     MOVE_HERTZ_HOWL = 84, // Digimon move
     MOVE_THUNDERBOLT = 85,
-    MOVE_THUNDER_WAVE = 86,
+    //MOVE_THUNDER_WAVE = 86,
+    MOVE_ELECTRIC_CLOUD = 86,//digi move, replaces thunder wave
     MOVE_THUNDER = 87,
-    MOVE_ROCK_THROW = 88,
+    //MOVE_ROCK_THROW = 88,
+    MOVE_COMET_HAMMER = 88,// digimon move, replaces rock throw
     MOVE_EARTHQUAKE = 89,
     MOVE_FISSURE = 90,
     MOVE_DIG = 91,
     MOVE_TOXIC = 92,
     MOVE_CONFUSION = 93,
     MOVE_PSYCHIC = 94,
-    MOVE_HYPNOSIS = 95,
+    //MOVE_HYPNOSIS = 95,
+    MOVE_IDLE_BUBBLE = 95, // Digimon move, replaces hypnosis
     MOVE_MEDITATE = 96,
-    MOVE_AGILITY = 97,
+    //MOVE_AGILITY = 97,
+    MOVE_SPEED_CHARGE = 97,//digi move, replaces agility
     MOVE_QUICK_ATTACK = 98,
     MOVE_RAGE = 99,
     MOVE_TELEPORT = 100,
@@ -122,17 +140,21 @@ enum __attribute__((packed)) Move
     MOVE_SCREECH = 103,
     MOVE_DOUBLE_TEAM = 104,
     MOVE_RECOVER = 105,
-    MOVE_HARDEN = 106,
+    //MOVE_HARDEN = 106,
+    MOVE_GUARD_CHARGE = 106,//digi move, replaces harden
     MOVE_MINIMIZE = 107,
     MOVE_SMOKESCREEN = 108,
-    MOVE_CONFUSE_RAY = 109,
+    //MOVE_CONFUSE_RAY = 109,//digi move, replaces confuse ray
+    MOVE_BLACKOUT = 109,
     MOVE_WITHDRAW = 110,
     MOVE_DEFENSE_CURL = 111,
     MOVE_BARRIER = 112,
     MOVE_LIGHT_SCREEN = 113,
     MOVE_HAZE = 114,
-    MOVE_REFLECT = 115,
-    MOVE_FOCUS_ENERGY = 116,
+    //MOVE_REFLECT = 115,
+    MOVE_GUARD_FIELD = 115,//digi move, replaces reflect
+    //MOVE_FOCUS_ENERGY = 116,
+    MOVE_CRITICAL_CHARGE = 116,//digi move, replaces focus energy
     MOVE_BIDE = 117,
     MOVE_METRONOME = 118,
     MOVE_MIRROR_MOVE = 119,
@@ -141,6 +163,7 @@ enum __attribute__((packed)) Move
     //MOVE_EGG_BOMB = 121,
     MOVE_CHEESE_BOMB = 121, // Digimon move
     MOVE_LICK = 122,
+    MOVE_DARK_SPIRIT = 122,//digi move, replaces lick
     MOVE_SMOG = 123,
     MOVE_SLUDGE = 124,
     MOVE_BONE_CLUB = 125,
@@ -150,7 +173,8 @@ enum __attribute__((packed)) Move
     MOVE_SWIFT = 129,
     MOVE_SKULL_BASH = 130,
     MOVE_SPIKE_CANNON = 131,
-    MOVE_CONSTRICT = 132,
+    //MOVE_CONSTRICT = 132,
+    MOVE_SPEED_BREAK = 132,//digi move, replaces constrict
     MOVE_AMNESIA = 133,
     MOVE_KINESIS = 134,
     MOVE_SOFT_BOILED = 135,
@@ -180,7 +204,8 @@ enum __attribute__((packed)) Move
     MOVE_REST = 156,
     MOVE_ROCK_SLIDE = 157,
     MOVE_HYPER_FANG = 158,
-    MOVE_SHARPEN = 159,
+    //MOVE_SHARPEN = 159,
+    MOVE_ATTACK_CHARGE = 159,// Digimon move, replaces sharpen
     MOVE_CONVERSION = 160,
     MOVE_TRI_ATTACK = 161,
     MOVE_SUPER_FANG = 162,
@@ -196,7 +221,8 @@ enum __attribute__((packed)) Move
     MOVE_SPIDER_WEB = 169,
     MOVE_MIND_READER = 170,
     MOVE_NIGHTMARE = 171,
-    MOVE_FLAME_WHEEL = 172,
+    //MOVE_FLAME_WHEEL = 172,
+    MOVE_GOBLIN_STRIKE = 172,//digi move, replaces flame wheel
     MOVE_SNORE = 173,
     MOVE_CURSE = 174,
     MOVE_FLAIL = 175,
@@ -205,12 +231,15 @@ enum __attribute__((packed)) Move
     MOVE_COTTON_SPORE = 178,
     MOVE_REVERSAL = 179,
     MOVE_SPITE = 180,
-    MOVE_POWDER_SNOW = 181,
+    MOVE_FROZEN_WIND = 181,//digi move, replaces powder snow
+    //MOVE_POWDER_SNOW = 181,
     MOVE_PROTECT = 182,
-    MOVE_MACH_PUNCH = 183,
+    //MOVE_MACH_PUNCH = 183,
+    MOVE_MACH_JAB = 183,//digi move. replaces mach punch
     MOVE_SCARY_FACE = 184,
-    MOVE_FEINT_ATTACK = 185,
-    MOVE_FAINT_ATTACK = MOVE_FEINT_ATTACK, // Pre-Gen VI name
+    //MOVE_FEINT_ATTACK = 185,
+    //MOVE_FAINT_ATTACK = MOVE_FEINT_ATTACK, // Pre-Gen VI name
+    MOVE_HELL_CRUSHER = 185,//digi move, faint attack
     MOVE_SWEET_KISS = 186,
     MOVE_BELLY_DRUM = 187,
     MOVE_SLUDGE_BOMB = 188,
@@ -221,7 +250,8 @@ enum __attribute__((packed)) Move
     MOVE_FORESIGHT = 193,
     MOVE_DESTINY_BOND = 194,
     MOVE_PERISH_SONG = 195,
-    MOVE_ICY_WIND = 196,
+    //MOVE_ICY_WIND = 196,
+    MOVE_ADHESIVE_BUBBLE = 196, //replaces icy wind
     MOVE_DETECT = 197,
     MOVE_BONE_RUSH = 198,
     MOVE_LOCK_ON = 199,
@@ -234,7 +264,8 @@ enum __attribute__((packed)) Move
     MOVE_FALSE_SWIPE = 206,
     MOVE_SWAGGER = 207,
     MOVE_MILK_DRINK = 208,
-    MOVE_SPARK = 209,
+    //MOVE_SPARK = 209,
+    MOVE_MINI_SCISSOR_CLAW = 209,//digi move, replaces spark
     MOVE_FURY_CUTTER = 210,
     MOVE_STEEL_WING = 211,
     MOVE_MEAN_LOOK = 212,
@@ -256,10 +287,12 @@ enum __attribute__((packed)) Move
     MOVE_BATON_PASS = 226,
     MOVE_ENCORE = 227,
     MOVE_PURSUIT = 228,
-    MOVE_RAPID_SPIN = 229,
+    //MOVE_RAPID_SPIN = 229,
+    MOVE_SPIRAL_EDGE = 229,//digi move. replaces spiral edge
     MOVE_SWEET_SCENT = 230,
     MOVE_IRON_TAIL = 231,
-    MOVE_METAL_CLAW = 232,
+    //MOVE_METAL_CLAW = 232,
+    MOVE_IRON_SLASH = 232,//digi move, replaces metal claw
     MOVE_VITAL_THROW = 233,
     MOVE_MORNING_SUN = 234,
     MOVE_SYNTHESIS = 235,
@@ -274,8 +307,9 @@ enum __attribute__((packed)) Move
     MOVE_PSYCH_UP = 244,
     MOVE_EXTREME_SPEED = 245,
     MOVE_EXTREMESPEED = MOVE_EXTREME_SPEED, // Pre-Gen VI name
-    MOVE_ANCIENT_POWER = 246,
-    MOVE_ANCIENTPOWER = MOVE_ANCIENT_POWER, // Pre-Gen VI name
+    //MOVE_ANCIENT_POWER = 246,
+    //MOVE_ANCIENTPOWER = MOVE_ANCIENT_POWER, // Pre-Gen VI name
+    MOVE_GAIA_BLAST = 246,//digi move, replaces ancient power
     MOVE_SHADOW_BALL = 247,
     MOVE_FUTURE_SIGHT = 248,
     MOVE_ROCK_SMASH = 249,
@@ -293,7 +327,8 @@ enum __attribute__((packed)) Move
     MOVE_HAIL = 258,
     MOVE_TORMENT = 259,
     MOVE_FLATTER = 260,
-    MOVE_WILL_O_WISP = 261,
+    //MOVE_WILL_O_WISP = 261,
+    MOVE_PANIC_WISP = 261,//digi move, replaces will-o-wisp
     MOVE_MEMENTO = 262,
     MOVE_FACADE = 263,
     MOVE_FOCUS_PUNCH = 264,
@@ -320,7 +355,8 @@ enum __attribute__((packed)) Move
     MOVE_ERUPTION = 284,
     MOVE_SKILL_SWAP = 285,
     MOVE_IMPRISON = 286,
-    MOVE_REFRESH = 287,
+    //MOVE_REFRESH = 287,
+    MOVE_MEDITATOR = 287,//digi move. replaces refresh
     MOVE_GRUDGE = 288,
     MOVE_SNATCH = 289,
     MOVE_SECRET_POWER = 290,
@@ -382,14 +418,16 @@ enum __attribute__((packed)) Move
     MOVE_COVET = 343,
     MOVE_VOLT_TACKLE = 344,
     MOVE_MAGICAL_LEAF = 345,
-    MOVE_WATER_SPORT = 346,
+    //MOVE_WATER_SPORT = 346,
+    MOVE_AQUA_MAGIC = 346,//digi move, replaces water sport
     MOVE_CALM_MIND = 347,
     MOVE_LEAF_BLADE = 348,
     MOVE_DRAGON_DANCE = 349,
     MOVE_ROCK_BLAST = 350,
     //MOVE_SHOCK_WAVE = 351,
     MOVE_ELECTRO_SHOCK = 351, // Digimon move
-    MOVE_WATER_PULSE = 352,
+    //MOVE_WATER_PULSE = 352,
+    MOVE_WATER_TOWER = 352,//digi move, replaces water pulse
     MOVE_DOOM_DESIRE = 353,
     MOVE_PSYCHO_BOOST = 354,
     MOVES_COUNT_GEN3,
@@ -459,8 +497,10 @@ enum __attribute__((packed)) Move
     MOVE_GIGA_IMPACT = 416,
     MOVE_NASTY_PLOT = 417,
     MOVE_BULLET_PUNCH = 418,
-    MOVE_AVALANCHE = 419,
-    MOVE_ICE_SHARD = 420,
+    //MOVE_AVALANCHE = 419,
+    MOVE_DIAMOND_DUST = 419,
+    //MOVE_ICE_SHARD = 420,
+    MOVE_FROZEN_BULLET = 420,//digi move, replaces ice shard
     MOVE_SHADOW_CLAW = 421,
     MOVE_THUNDER_FANG = 422,
     MOVE_ICE_FANG = 423,
@@ -522,7 +562,8 @@ enum __attribute__((packed)) Move
     MOVE_RAGE_POWDER = 476,
     MOVE_TELEKINESIS = 477,
     MOVE_MAGIC_ROOM = 478,
-    MOVE_SMACK_DOWN = 479,
+    //MOVE_SMACK_DOWN = 479,
+    MOVE_ROCK_FIST = 479,//digi move, replaces smack down
     MOVE_STORM_THROW = 480,
     //MOVE_FLAME_BURST = 481,
     MOVE_FIRE_BALL = 481,// digimon move
@@ -549,12 +590,14 @@ enum __attribute__((packed)) Move
     MOVE_ALLY_SWITCH = 502,
     MOVE_SCALD = 503,
     MOVE_SHELL_SMASH = 504,
-    MOVE_HEAL_PULSE = 505,
+    //MOVE_HEAL_PULSE = 505,
+    MOVE_HEAL = 505,
     MOVE_HEX = 506,
     MOVE_SKY_DROP = 507,
     MOVE_SHIFT_GEAR = 508,
     MOVE_CIRCLE_THROW = 509,
-    MOVE_INCINERATE = 510,
+    //MOVE_INCINERATE = 510,
+    MOVE_BLUE_BLASTER = 510,//digi move, replaces incinerate
     MOVE_QUASH = 511,
     MOVE_ACROBATICS = 512,
     MOVE_REFLECT_TYPE = 513,
@@ -570,7 +613,8 @@ enum __attribute__((packed)) Move
     MOVE_BULLDOZE = 523,
     MOVE_FROST_BREATH = 524,
     MOVE_DRAGON_TAIL = 525,
-    MOVE_WORK_UP = 526,
+    //MOVE_WORK_UP = 526,
+    MOVE_MUSCLE_CHARGE = 526,//digi move, replaces work up
     MOVE_ELECTROWEB = 527,
     MOVE_WILD_CHARGE = 528,
     MOVE_DRILL_RUN = 529,
@@ -589,7 +633,8 @@ enum __attribute__((packed)) Move
     MOVE_FOX_TAIL = 541, // Digimon move
     MOVE_HURRICANE = 542,
     MOVE_HEAD_CHARGE = 543,
-    MOVE_GEAR_GRIND = 544,
+    //MOVE_GEAR_GRIND = 544,
+    MOVE_COG_CRUSH = 544,
     MOVE_SEARING_SHOT = 545,
     MOVE_TECHNO_BLAST = 546,
     MOVE_RELIC_SONG = 547,
@@ -642,7 +687,8 @@ enum __attribute__((packed)) Move
     MOVE_DIAMOND_STORM = 591,
     MOVE_STEAM_ERUPTION = 592,
     MOVE_HYPERSPACE_HOLE = 593,
-    MOVE_WATER_SHURIKEN = 594,
+    //MOVE_WATER_SHURIKEN = 594,
+    MOVE_MARCHING_FISH = 594,//digi move, replaces water shuriken
     MOVE_MYSTICAL_FIRE = 595,
     MOVE_SPIKY_SHIELD = 596,
     MOVE_AROMATIC_MIST = 597,
@@ -735,7 +781,8 @@ enum __attribute__((packed)) Move
     MOVE_FLOATY_FALL = 678,
     MOVE_PIKA_PAPOW = 679,
     MOVE_BOUNCY_BUBBLE = 680,
-    MOVE_BUZZY_BUZZ = 681,
+    //MOVE_BUZZY_BUZZ = 681,
+    MOVE_NANOBOT_BREAK = 681, //digi move, replaces buzzy buzz
     MOVE_SIZZLY_SLIDE = 682,
     MOVE_GLITZY_GLOW = 683,
     MOVE_BADDY_BAD = 684,
@@ -770,7 +817,8 @@ enum __attribute__((packed)) Move
     MOVE_BEHEMOTH_BASH = 710,
     MOVE_AURA_WHEEL = 711,
     MOVE_BREAKING_SWIPE = 712,
-    MOVE_BRANCH_POKE = 713,
+    //MOVE_BRANCH_POKE = 713,
+    MOVE_RAIN_OF_POLLEN = 713,//digi move, replaces branch poke
     MOVE_OVERDRIVE = 714,
     MOVE_APPLE_ACID = 715,
     MOVE_GRAV_APPLE = 716,
@@ -901,7 +949,8 @@ enum __attribute__((packed)) Move
     MOVE_ELECTRO_SHOT = 833,
     MOVE_TERA_STARSTORM = 834,
     MOVE_FICKLE_BEAM = 835,
-    MOVE_BURNING_BULWARK = 836,
+    //MOVE_BURNING_BULWARK = 836,
+    MOVE_FIREWALL = 836,//digi move, replaces burning bulwark
     MOVE_THUNDERCLAP = 837,
     MOVE_MIGHTY_CLEAVE = 838,
     MOVE_TACHYON_CUTTER = 839,
@@ -984,7 +1033,8 @@ enum __attribute__((packed)) Move
     MOVE_MAX_DARKNESS,
     MOVE_MAX_STARFALL,
     // Gigantamax Moves
-    MOVE_G_MAX_VINE_LASH,
+    //MOVE_G_MAX_VINE_LASH,
+    MOVE_ROOT_BIND,//digi move, replaces g max vine lash
     MOVE_G_MAX_WILDFIRE,
     MOVE_G_MAX_CANNONADE,
     MOVE_G_MAX_BEFUDDLE,
@@ -1021,16 +1071,74 @@ enum __attribute__((packed)) Move
     MOVES_COUNT_DYNAMAX,
     MOVES_COUNT_ALL = MOVES_COUNT_DYNAMAX,
 
-#define MOVE_BUBBLE MOVE_BUBBLES
-#define MOVE_FLAME_BURST MOVE_FIRE_BALL
+//this section replaces instances of the vanilla moves with the digimon moves, so the data doesnt need to be changed throughout. preverses compatibility with the main branch. 
+//also because i'm adding SO MANY moves, and SO MANY ITEMS, the compile doesnt like it. so im replacing them instead as much as possible
+
+#define MOVE_ICY_WIND MOVE_ADHESIVE_BUBBLE
+#define MOVE_POWDER_SNOW MOVE_FROZEN_WIND
+#define MOVE_ICE_SHARD MOVE_FROZEN_BULLET
+#define MOVE_AVALANCHE MOVE_DIAMOND_DUST
 #define MOVE_THUNDER_SHOCK MOVE_HERTZ_HOWL
-#define MOVE_NIGHT_SHADE MOVE_NIGHTMARE_SYNDROME
+#define MOVE_THUNDERSHOCK MOVE_HERTZ_HOWL
+#define MOVE_THUNDERPUNCH MOVE_THUNDER_STRIKE
+#define MOVE_THUNDER_PUNCH MOVE_THUNDER_STRIKE
+#define MOVE_SHOCK_WAVE MOVE_ELECTRO_SHOCK
+#define MOVE_BUZZY_BUZZ MOVE_NANOBOT_BREAK
+#define MOVE_SPARK MOVE_MINI_SCISSOR_CLAW
+#define MOVE_THUNDER_WAVE MOVE_ELECTRIC_CLOUD
 #define MOVE_TAIL_SLAP MOVE_FOX_TAIL
+#define MOVE_NIGHT_SHADE MOVE_NIGHTMARE_SYNDROME
 #define MOVE_ASTONISH MOVE_CANDLE_SLASH
+#define MOVE_LICK MOVE_DARK_SPIRIT
+#define MOVE_FAINT_ATTACK MOVE_HELL_CRUSHER
+#define MOVE_FEINT_ATTACK MOVE_HELL_CRUSHER
+#define MOVE_SCRATCH MOVE_NAIL_SCRATCH
+#define MOVE_CONFUSE_RAY MOVE_BLACKOUT
+#define MOVE_GEAR_GRIND MOVE_COG_CRUSH
+#define MOVE_MACH_PUNCH MOVE_MACH_JAB
+#define MOVE_WORK_UP MOVE_MUSCLE_CHARGE
+#define MOVE_SHARPEN MOVE_ATTACK_CHARGE
+#define MOVE_HARDEN MOVE_GUARD_CHARGE
+#define MOVE_REFLECT MOVE_GUARD_FIELD
+#define MOVE_AGILITY MOVE_SPEED_CHARGE
+#define MOVE_FOCUS_ENERGY MOVE_CRITICAL_CHARGE
+#define MOVE_LEER MOVE_GUARD_BREAK
+#define MOVE_CONSTRICT MOVE_SPEED_BREAK
 #define MOVE_EGG_BOMB MOVE_CHEESE_BOMB
 #define MOVE_ACID MOVE_POOP_THROW
 #define MOVE_EMBER MOVE_PEPPER_BREATH
-#define MOVE_SHOCK_WAVE MOVE_ELECTRO_SHOCK
+#define MOVE_FLAME_BURST MOVE_FIRE_BALL
+#define MOVE_INCINERATE MOVE_BLUE_BLASTER
+#define MOVE_FLAME_WHEEL MOVE_GOBLIN_STRIKE
+#define MOVE_BURNING_BULWARK MOVE_FIREWALL
+#define MOVE_WILL_O_WISP MOVE_PANIC_WISP
+#define MOVE_BUBBLE MOVE_BUBBLES
+#define MOVE_POUND MOVE_STRIKE
+#define MOVE_SLAM MOVE_HEAVY_STRIKE
+#define MOVE_RAPID_SPIN MOVE_SPIRAL_EDGE
+#define MOVE_COMET_PUNCH MOVE_SHAMA_HAMMER
+#define MOVE_ICE_PUNCH MOVE_SNOW_GOBLI_VOLT
+#define MOVE_GUST MOVE_AIR_BUBBLES
+#define MOVE_PECK MOVE_WIND_CLAW
+#define MOVE_VINE_WHIP MOVE_THORN_STRIKE
+#define MOVE_BRANCH_POKE MOVE_RAIN_OF_POLLEN
+#define MOVE_G_MAX_VINE_LASH MOVE_ROOT_BIND
+#define MOVE_RAZOR_LEAF MOVE_BIO_HAZARD
+#define MOVE_ROCK_THROW MOVE_COMET_HAMMER
+#define MOVE_WATER_SPORT MOVE_AQUA_MAGIC
+#define MOVE_WATER_PULSE MOVE_WATER_TOWER
+#define MOVE_BUBBLE_BEAM MOVE_BUBBLE_BREATH
+#define MOVE_BUBBLEBEAM MOVE_BUBBLE_BREATH
+#define MOVE_CUT MOVE_SCISSOR_ATTACK
+#define MOVE_SURF MOVE_TIDAL_STREAM
+#define MOVE_WATER_SHURIKEN MOVE_MARCHING_FISH
+#define MOVE_HYPNOSIS MOVE_IDLE_BUBBLE
+#define MOVE_ANCIENTPOWER MOVE_GAIA_BLAST
+#define MOVE_ANCIENT_POWER MOVE_GAIA_BLAST
+#define MOVE_SMACK_DOWN MOVE_ROCK_FIST
+#define MOVE_METAL_CLAW MOVE_IRON_SLASH
+#define MOVE_HEAL_PULSE MOVE_HEAL
+#define MOVE_REFRESH MOVE_MEDITATOR
 
 };
 
