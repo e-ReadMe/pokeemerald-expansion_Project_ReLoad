@@ -1774,6 +1774,44 @@ extern const u16 gItemIconPalette_TwiceSpicedRadish[];
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u16 gItemIconPalette_ReturnToFieldArrow[];
 
+//digi items
+extern const u32 gItemIcon_SmallRecoveryDisk[];
+extern const u16 gItemIconPalette_SmallRecoveryDisk[];
+extern const u32 gItemIcon_MediumRecoveryDisk[];
+extern const u16 gItemIconPalette_MediumRecoveryDisk[];
+extern const u32 gItemIcon_LargeRecoveryDisk[];
+extern const u16 gItemIconPalette_LargeRecoveryDisk[];
+extern const u32 gItemIcon_SuperRecoveryDisk[];
+extern const u16 gItemIconPalette_SuperRecoveryDisk[];
+extern const u32 gItemIcon_SmallMPDisk[];
+extern const u16 gItemIconPalette_SmallMPDisk[];
+extern const u32 gItemIcon_MediumMPDisk[];
+extern const u16 gItemIconPalette_MediumMPDisk[];
+extern const u32 gItemIcon_LargeMPDisk[];
+extern const u16 gItemIconPalette_LargeMPDisk[];
+extern const u32 gItemIcon_OmnipotentDisk[];
+extern const u16 gItemIconPalette_OmnipotentDisk[];
+extern const u32 gItemIcon_VariousDisk[];
+extern const u16 gItemIconPalette_VariousDisk[];
+extern const u32 gItemIcon_DoubleFlop[];
+extern const u16 gItemIconPalette_DoubleFlop[];
+extern const u32 gItemIcon_RestoreDisk[];
+extern const u16 gItemIconPalette_RestoreDisk[];
+extern const u32 gItemIcon_SuperRestore[];
+extern const u16 gItemIconPalette_SuperRestore[];
+extern const u32 gItemIcon_BrainChip[];
+extern const u16 gItemIconPalette_BrainChip[];
+extern const u32 gItemIcon_DefenseChip[];
+extern const u16 gItemIconPalette_DefenseChip[];
+extern const u32 gItemIcon_HPChip[];
+extern const u16 gItemIconPalette_HPChip[];
+extern const u32 gItemIcon_MPChip[];
+extern const u16 gItemIconPalette_MPChip[];
+extern const u32 gItemIcon_OffenseChip[];
+extern const u16 gItemIconPalette_OffenseChip[];
+extern const u32 gItemIcon_QuickChip[];
+extern const u16 gItemIconPalette_QuickChip[];
+
 //menu graphics
 extern const u16 gMenuInfoElements1_Pal[16];
 extern const u16 gMenuInfoElements2_Pal[16];

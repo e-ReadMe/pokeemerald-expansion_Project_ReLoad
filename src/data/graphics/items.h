@@ -2110,3 +2110,58 @@ const u16 gItemIconPalette_SwapSnack[] = INCBIN_U16("graphics/items/icon_palette
 
 const u32 gItemIcon_TwiceSpicedRadish[] = INCBIN_U32("graphics/items/icons/twice_spiced_radish.4bpp.smol");
 const u16 gItemIconPalette_TwiceSpicedRadish[] = INCBIN_U16("graphics/items/icon_palettes/twice_spiced_radish.gbapal");
+
+// digi items
+const u32 gItemIcon_SmallRecoveryDisk[] = INCBIN_U32("graphics/digi/items/icons/small_recovery_disk.4bpp.smol");
+const u16 gItemIconPalette_SmallRecoveryDisk[] = INCBIN_U16("graphics/digi/items/icon_palettes/small_recovery_disk.gbapal");
+
+const u32 gItemIcon_MediumRecoveryDisk[] = INCBIN_U32("graphics/digi/items/icons/medium_recovery_disk.4bpp.smol");
+const u16 gItemIconPalette_MediumRecoveryDisk[] = INCBIN_U16("graphics/digi/items/icon_palettes/medium_recovery_disk.gbapal");
+
+const u32 gItemIcon_LargeRecoveryDisk[] = INCBIN_U32("graphics/digi/items/icons/large_recovery_disk.4bpp.smol");
+const u16 gItemIconPalette_LargeRecoveryDisk[] = INCBIN_U16("graphics/digi/items/icon_palettes/large_recovery_disk.gbapal");
+
+const u32 gItemIcon_SuperRecoveryDisk[] = INCBIN_U32("graphics/digi/items/icons/super_recovery_disk.4bpp.smol");
+const u16 gItemIconPalette_SuperRecoveryDisk[] = INCBIN_U16("graphics/digi/items/icon_palettes/super_recovery_disk.gbapal");
+
+const u32 gItemIcon_SmallMPDisk[] = INCBIN_U32("graphics/digi/items/icons/small_mp_disk.4bpp.smol");
+const u16 gItemIconPalette_SmallMPDisk[] = INCBIN_U16("graphics/digi/items/icon_palettes/small_mp_disk.gbapal");
+
+const u32 gItemIcon_MediumMPDisk[] = INCBIN_U32("graphics/digi/items/icons/medium_mp_disk.4bpp.smol");
+const u16 gItemIconPalette_MediumMPDisk[] = INCBIN_U16("graphics/digi/items/icon_palettes/medium_mp_disk.gbapal");
+
+const u32 gItemIcon_LargeMPDisk[] = INCBIN_U32("graphics/digi/items/icons/large_mp_disk.4bpp.smol");
+const u16 gItemIconPalette_LargeMPDisk[] = INCBIN_U16("graphics/digi/items/icon_palettes/large_mp_disk.gbapal");
+
+const u32 gItemIcon_OmnipotentDisk[] = INCBIN_U32("graphics/digi/items/icons/omnipotent_disk.4bpp.smol");
+const u16 gItemIconPalette_OmnipotentDisk[] = INCBIN_U16("graphics/digi/items/icon_palettes/omnipotent_disk.gbapal");
+
+const u32 gItemIcon_VariousDisk[] = INCBIN_U32("graphics/digi/items/icons/various_disk.4bpp.smol");
+const u16 gItemIconPalette_VariousDisk[] = INCBIN_U16("graphics/digi/items/icon_palettes/various_disk.gbapal");
+
+const u32 gItemIcon_DoubleFlop[] = INCBIN_U32("graphics/digi/items/icons/double_flop.4bpp.smol");
+const u16 gItemIconPalette_DoubleFlop[] = INCBIN_U16("graphics/digi/items/icon_palettes/double_flop.gbapal");
+
+const u32 gItemIcon_RestoreDisk[] = INCBIN_U32("graphics/digi/items/icons/restore_disk.4bpp.smol");
+const u16 gItemIconPalette_RestoreDisk[] = INCBIN_U16("graphics/digi/items/icon_palettes/restore_disk.gbapal");
+
+const u32 gItemIcon_SuperRestore[] = INCBIN_U32("graphics/digi/items/icons/super_restore.4bpp.smol");
+const u16 gItemIconPalette_SuperRestore[] = INCBIN_U16("graphics/digi/items/icon_palettes/super_restore.gbapal");
+
+const u32 gItemIcon_BrainChip[] = INCBIN_U32("graphics/digi/items/icons/brain_chip.4bpp.smol");
+const u16 gItemIconPalette_BrainChip[] = INCBIN_U16("graphics/digi/items/icon_palettes/brain_chip.gbapal");
+
+const u32 gItemIcon_DefenseChip[] = INCBIN_U32("graphics/digi/items/icons/defense_chip.4bpp.smol");
+const u16 gItemIconPalette_DefenseChip[] = INCBIN_U16("graphics/digi/items/icon_palettes/defense_chip.gbapal");
+
+const u32 gItemIcon_HPChip[] = INCBIN_U32("graphics/digi/items/icons/hp_chip.4bpp.smol");
+const u16 gItemIconPalette_HPChip[] = INCBIN_U16("graphics/digi/items/icon_palettes/hp_chip.gbapal");
+
+const u32 gItemIcon_MPChip[] = INCBIN_U32("graphics/digi/items/icons/mp_chip.4bpp.smol");
+const u16 gItemIconPalette_MPChip[] = INCBIN_U16("graphics/digi/items/icon_palettes/mp_chip.gbapal");
+
+const u32 gItemIcon_OffenseChip[] = INCBIN_U32("graphics/digi/items/icons/offense_chip.4bpp.smol");
+const u16 gItemIconPalette_OffenseChip[] = INCBIN_U16("graphics/digi/items/icon_palettes/offense_chip.gbapal");
+
+const u32 gItemIcon_QuickChip[] = INCBIN_U32("graphics/digi/items/icons/quick_chip.4bpp.smol");
+const u16 gItemIconPalette_QuickChip[] = INCBIN_U16("graphics/digi/items/icon_palettes/quick_chip.gbapal");

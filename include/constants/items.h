@@ -32,19 +32,29 @@ enum __attribute__((packed)) Item
     ITEM_HEAVY_BALL = 21,
     ITEM_DREAM_BALL = 22,
     ITEM_SAFARI_BALL = 23,
-    ITEM_SPORT_BALL = 24,
+    //ITEM_SPORT_BALL = 24,
+    ITEM_DOUBLE_FLOPPY_DISK = 24,
     ITEM_PARK_BALL = 25,
     ITEM_BEAST_BALL = 26,
     ITEM_CHERISH_BALL = 27,
 
+
+
     // Medicine
-    ITEM_POTION = 28,
-    ITEM_SUPER_POTION = 29,
-    ITEM_HYPER_POTION = 30,
-    ITEM_MAX_POTION = 31,
-    ITEM_FULL_RESTORE = 32,
-    ITEM_REVIVE = 33,
-    ITEM_MAX_REVIVE = 34,
+    //ITEM_POTION = 28,
+    ITEM_SMALL_RECOVERY_DISK = 28,
+    //ITEM_SUPER_POTION = 29,
+    ITEM_MEDIUM_RECOVERY_DISK = 29,
+    //ITEM_HYPER_POTION = 30,
+    ITEM_LARGE_RECOVERY_DISK = 30,
+    //ITEM_MAX_POTION = 31,
+    ITEM_SUPER_RECOVERY_DISK = 31,
+    //ITEM_FULL_RESTORE = 32,
+    ITEM_OMNIPOTENT_DISK = 32,
+    //ITEM_REVIVE = 33,
+    ITEM_RESTORE_DISK = 33,
+    //ITEM_MAX_REVIVE = 34,
+    ITEM_SUPER_RESTORE_DISK = 34,
     ITEM_FRESH_WATER = 35,
     ITEM_SODA_POP = 36,
     ITEM_LEMONADE = 37,
@@ -60,17 +70,23 @@ enum __attribute__((packed)) Item
     ITEM_BURN_HEAL = 45,
     ITEM_ICE_HEAL = 46,
     ITEM_AWAKENING = 47,
-    ITEM_FULL_HEAL = 48,
-    ITEM_ETHER = 49,
-    ITEM_MAX_ETHER = 50,
-    ITEM_ELIXIR = 51,
-    ITEM_ELIXER = ITEM_ELIXIR, // Pre-Gen III name
+    //ITEM_FULL_HEAL = 48,
+    ITEM_VARIOUS_DISK = 48,
+    //ITEM_ETHER = 49,
+    ITEM_SMALL_MP_DISK = 49,
+    //ITEM_MAX_ETHER = 50,
+    ITEM_MEDIUM_MP_DISK = 50,
+    //ITEM_ELIXIR = 51,
+    ITEM_LARGE_MP_DISK = 51,
+    //ITEM_ELIXER = ITEM_ELIXIR, // Pre-Gen III name
     ITEM_MAX_ELIXIR = 52,
     ITEM_MAX_ELIXER = ITEM_MAX_ELIXIR, // Pre-Gen III name
     ITEM_BERRY_JUICE = 53,
     ITEM_SACRED_ASH = 54,
     ITEM_SWEET_HEART = 55,
     ITEM_MAX_HONEY = 56,
+
+
 
     // Regional Specialties
     ITEM_PEWTER_CRUNCHIES = 57,
@@ -84,13 +100,19 @@ enum __attribute__((packed)) Item
     ITEM_BIG_MALASADA = 64,
 
     // Vitamins
-    ITEM_HP_UP = 65,
-    ITEM_PROTEIN = 66,
-    ITEM_IRON = 67,
-    ITEM_CALCIUM = 68,
+    //ITEM_HP_UP = 65,
+    ITEM_HP_CHIP = 65,
+    ITEM_OFFENSE_CHIP = 66,
+    //ITEM_PROTEIN = 66,
+    ITEM_DEFENSE_CHIP = 67,
+    //ITEM_IRON = 67,
+    ITEM_BRAIN_CHIP = 68,
+    //ITEM_CALCIUM = 68,
     ITEM_ZINC = 69,
-    ITEM_CARBOS = 70,
-    ITEM_PP_UP = 71,
+    //ITEM_CARBOS = 70,
+    ITEM_QUICK_CHIP = 70,
+    //ITEM_PP_UP = 71,
+    ITEM_MP_CHIP = 71,
     ITEM_PP_MAX = 72,
 
     // EV Feathers
@@ -1052,25 +1074,11 @@ enum __attribute__((packed)) Item
     ITEM_GLIMMORANITE = 873,
 
 //digimon items
-    ITEM_SMALL_RECOVERY_DISK = (ITEM_GLIMMORANITE + 1),	//heals	30hp	but	lowers	happiness								
-    ITEM_MEDIUM_RECOVERY_DISK = (ITEM_SMALL_RECOVERY_DISK + 1),	//heals	50hp	but	lowers	happiness								
-    ITEM_LARGE_RECOVERY_DISK = (ITEM_MEDIUM_RECOVERY_DISK + 1),	//heals	100hp	but	lowers	happiness								
-    ITEM_SUPER_RECOVERY_DISK = (ITEM_LARGE_RECOVERY_DISK + 1),	//heals	200hp	but	lowers	happiness								
-    ITEM_SMALL_MP_DISK = (ITEM_SUPER_RECOVERY_DISK + 1),	//heals	10mp	for	one	move	but	lowers	happiness					
-    ITEM_MEDIUM_MP_DISK = (ITEM_SMALL_MP_DISK + 1),	//fully	heals	mp	for	one	move	but	lowers	happiness				
-    ITEM_LARGE_MP_DISK = (ITEM_MEDIUM_MP_DISK + 1),	//fully	heals	mp	for	all	moves	but	lowers	happiness				
-    ITEM_OMNIPOTENT_DISK = (ITEM_LARGE_MP_DISK + 1),	//fully	heals	mp	and	hp	but	lowers	happiness					
-    ITEM_VARIOUS_DISK = (ITEM_OMNIPOTENT_DISK + 1),	//	heals	all	status	conditions	but	lowers	happiness					
-    ITEM_DOUBLE_FLOPPY_DISK = (ITEM_VARIOUS_DISK + 1),	//¯\_(ツ)_/¯												
-    ITEM_RESTORE_DISK = (ITEM_DOUBLE_FLOPPY_DISK + 1),	//¯\_(ツ)_/¯												
-    ITEM_SUPER_RESTORE_DISK = (ITEM_RESTORE_DISK + 1),	//¯\_(ツ)_/¯												
-    ITEM_BRAIN_CHIP = (ITEM_SUPER_RESTORE_DISK + 1),	//	increases	SpA	Evs	by	10	(a	spa	up	vitamin)			
-    ITEM_DEFENSE_CHIP = (ITEM_BRAIN_CHIP + 1),	//	increases	Def	Evs	by	10	(a	def	up	vitamin)			
-    ITEM_HP_CHIP = (ITEM_DEFENSE_CHIP + 1),	//	increases	HP	Evs	by	10	(a	hp	up	vitamin)			
-    ITEM_MP_CHIP = (ITEM_HP_CHIP + 1),	//	increases	PP	of	a	single	move	by	2	(a	pp	up	vitamin)
-    ITEM_OFFENSE_CHIP = (ITEM_MP_CHIP + 1),	//	increases	Atk	Evs	by	10	(an	atk	up	vitamin)			
-    ITEM_QUICK_CHIP = (ITEM_OFFENSE_CHIP + 1),	//	increases	Spe	Evs	by	10	(a	spe	up	vitamin)			
-    ITEM_DISINFECTANT = (ITEM_QUICK_CHIP + 1),	//	cures	poison	but	lowers	happiness							
+
+
+
+							
+    ITEM_DISINFECTANT = 874,	//	cures	poison	but	lowers	happiness							
     ITEM_COFFEE = (ITEM_DISINFECTANT + 1),	//	cures	sleep	but	lowers	happiness							
     ITEM_VITAMINS = (ITEM_COFFEE + 1),	//	cures	paralysis	but	lowers	happiness							
     ITEM_SEDATIVE = (ITEM_VITAMINS + 1),	//	cures	confusion	but	lowers	happiness							
@@ -1114,7 +1122,32 @@ enum __attribute__((packed)) Item
 
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,
+
+
+
 };
+
+    #define ITEM_POTION ITEM_SMALL_RECOVERY_DISK
+    #define ITEM_SUPER_POTION ITEM_MEDIUM_RECOVERY_DISK
+    #define ITEM_HYPER_POTION ITEM_LARGE_RECOVERY_DISK
+    #define ITEM_MAX_POTION ITEM_SUPER_RECOVERY_DISK
+    #define ITEM_FULL_RESTORE ITEM_OMNIPOTENT_DISK
+    #define ITEM_REVIVE ITEM_RESTORE_DISK
+    #define ITEM_ETHER ITEM_SMALL_MP_DISK
+    #define ITEM_MAX_ETHER ITEM_MEDIUM_MP_DISK
+    #define ITEM_ELIXIR ITEM_LARGE_MP_DISK
+    #define ITEM_ELIXER ITEM_LARGE_MP_DISK
+    #define ITEM_FULL_HEAL ITEM_VARIOUS_DISK
+    #define ITEM_REVIVE ITEM_RESTORE_DISK
+    #define ITEM_MAX_REVIVE ITEM_SUPER_RESTORE_DISK
+    #define ITEM_SPORT_BALL ITEM_DOUBLE_FLOPPY_DISK
+
+    #define ITEM_HP_UP ITEM_HP_CHIP
+    #define ITEM_PROTEIN ITEM_OFFENSE_CHIP
+    #define ITEM_IRON ITEM_DEFENSE_CHIP
+    #define ITEM_CALCIUM ITEM_BRAIN_CHIP
+    #define ITEM_CARBOS ITEM_QUICK_CHIP
+    #define ITEM_PP_UP ITEM_MP_CHIP
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
 // Its icon is defined at ITEMS_COUNT as the "return to field" arrow

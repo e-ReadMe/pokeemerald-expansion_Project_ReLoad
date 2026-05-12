@@ -565,21 +565,21 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_SafariBall,
     },
 
-    [ITEM_SPORT_BALL] =
-    {
-        .name = ITEM_NAME("Sport Ball"),
-        .price = (I_PRICE <= GEN_3 || I_PRICE >= GEN_9) ? 0 : 300,
-        .description = COMPOUND_STRING(
-            "A special Ball\n"
-            "used in the Bug-\n"
-            "Catching Contest."),
-        .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_USE_BAG_MENU,
-        .battleUsage = EFFECT_ITEM_THROW_BALL,
-        .secondaryId = BALL_SPORT,
-        .iconPic = gItemIcon_SportBall,
-        .iconPalette = gItemIconPalette_SportBall,
-    },
+    //[ITEM_SPORT_BALL] =
+    //{
+    //    .name = ITEM_NAME("Sport Ball"),
+    //    .price = (I_PRICE <= GEN_3 || I_PRICE >= GEN_9) ? 0 : 300,
+    //    .description = COMPOUND_STRING(
+    //        "A special Ball\n"
+    //        "used in the Bug-\n"
+    //        "Catching Contest."),
+    //    .pocket = POCKET_POKE_BALLS,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .battleUsage = EFFECT_ITEM_THROW_BALL,
+    //    .secondaryId = BALL_SPORT,
+    //    .iconPic = gItemIcon_SportBall,
+    //    .iconPalette = gItemIconPalette_SportBall,
+    //},
 
     [ITEM_PARK_BALL] =
     {
@@ -629,147 +629,147 @@ const struct ItemInfo gItemsInfo[] =
 
 // Medicine
 
-    [ITEM_POTION] =
-    {
-        .name = ITEM_NAME("Potion"),
-        .price = (I_PRICE >= GEN_7) ? 200 : 300,
-        .holdEffectParam = 20,
-        .description = COMPOUND_STRING(
-            "Restores the HP of\n"
-            "a Pokémon by\n"
-            "20 points."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_RESTORE_HP,
-        .effect = gItemEffect_Potion,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Potion,
-        .iconPalette = gItemIconPalette_Potion,
-    },
+    //[ITEM_POTION] =
+    //{
+    //    .name = ITEM_NAME("Potion"),
+    //    .price = (I_PRICE >= GEN_7) ? 200 : 300,
+    //    .holdEffectParam = 20,
+    //    .description = COMPOUND_STRING(
+    //        "Restores the HP of\n"
+    //        "a Pokémon by\n"
+    //        "20 points."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_RESTORE_HP,
+    //    .effect = gItemEffect_Potion,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Potion,
+    //    .iconPalette = gItemIconPalette_Potion,
+    //},
 
-    [ITEM_SUPER_POTION] =
-    {
-        .name = ITEM_NAME("Super Potion"),
-        .price = 700,
-        .holdEffectParam = 60,
-        .description = COMPOUND_STRING(
-            "Restores the HP of\n"
-            "a Pokémon by\n"
-        #if I_HEALTH_RECOVERY >= GEN_7
-            "60 points."),
-        #else
-            "50 points."),
-        #endif
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_RESTORE_HP,
-        .effect = gItemEffect_SuperPotion,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Potion,
-        .iconPalette = gItemIconPalette_SuperPotion,
-    },
+    //[ITEM_SUPER_POTION] =
+    //{
+    //    .name = ITEM_NAME("Super Potion"),
+    //    .price = 700,
+    //    .holdEffectParam = 60,
+    // //   .description = COMPOUND_STRING(
+    //        "Restores the HP of\n"
+    //        "a Pokémon by\n"
+    //    #if I_HEALTH_RECOVERY >= GEN_7
+    //        "60 points."),
+    //    #else
+    //        "50 points."),
+    //    #endif
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_RESTORE_HP,
+    //    .effect = gItemEffect_SuperPotion,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Potion,
+    //    .iconPalette = gItemIconPalette_SuperPotion,
+    //},
 
-    [ITEM_HYPER_POTION] =
-    {
-        .name = ITEM_NAME("Hyper Potion"),
-        .price = (I_PRICE >= GEN_2 && I_PRICE <= GEN_6) ? 1200 : 1500,
-        .holdEffectParam = 120,
-        .description = COMPOUND_STRING(
-            "Restores the HP of\n"
-            "a Pokémon by\n"
-        #if I_HEALTH_RECOVERY >= GEN_7
-            "120 points."),
-        #else
-            "200 points."),
-        #endif
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_RESTORE_HP,
-        .effect = gItemEffect_HyperPotion,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Potion,
-        .iconPalette = gItemIconPalette_HyperPotion,
-    },
+    //[ITEM_HYPER_POTION] =
+    //{
+    //    .name = ITEM_NAME("Hyper Potion"),
+    //    .price = (I_PRICE >= GEN_2 && I_PRICE <= GEN_6) ? 1200 : 1500,
+    //    .holdEffectParam = 120,
+    //    .description = COMPOUND_STRING(
+    //        "Restores the HP of\n"
+    //        "a Pokémon by\n"
+    //    #if I_HEALTH_RECOVERY >= GEN_7
+    //        "120 points."),
+    //    #else
+    //        "200 points."),
+    //    #endif
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_RESTORE_HP,
+    //    .effect = gItemEffect_HyperPotion,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Potion,
+    //    .iconPalette = gItemIconPalette_HyperPotion,
+    //},
 
-    [ITEM_MAX_POTION] =
-    {
-        .name = ITEM_NAME("Max Potion"),
-        .price = 2500,
-        .holdEffectParam = 255,
-        .description = COMPOUND_STRING(
-            "Fully restores the\n"
-            "HP of a Pokémon."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_RESTORE_HP,
-        .effect = gItemEffect_MaxPotion,
-        .flingPower = 30,
-        .iconPic = gItemIcon_LargePotion,
-        .iconPalette = gItemIconPalette_MaxPotion,
-    },
+    //[ITEM_MAX_POTION] =
+    //{
+    //    .name = ITEM_NAME("Max Potion"),
+    //    .price = 2500,
+    //    .holdEffectParam = 255,
+    //    .description = COMPOUND_STRING(
+    //        "Fully restores the\n"
+    //        "HP of a Pokémon."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_RESTORE_HP,
+    //    .effect = gItemEffect_MaxPotion,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_LargePotion,
+    //    .iconPalette = gItemIconPalette_MaxPotion,
+    //},
 
-    [ITEM_FULL_RESTORE] =
-    {
-        .name = ITEM_NAME("Full Restore"),
-        .price = 3000,
-        .holdEffectParam = 255,
-        .description = COMPOUND_STRING(
-            "Fully restores the\n"
-            "HP and status of a\n"
-            "Pokémon."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_HEAL_AND_CURE_STATUS,
-        .effect = gItemEffect_FullRestore,
-        .flingPower = 30,
-        .iconPic = gItemIcon_LargePotion,
-        .iconPalette = gItemIconPalette_FullRestore,
-    },
+    //[ITEM_FULL_RESTORE] =
+    //{
+    //    .name = ITEM_NAME("Full Restore"),
+    //    .price = 3000,
+    //    .holdEffectParam = 255,
+    //    .description = COMPOUND_STRING(
+    //        "Fully restores the\n"
+    //        "HP and status of a\n"
+    //        "Pokémon."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_HEAL_AND_CURE_STATUS,
+    //    .effect = gItemEffect_FullRestore,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_LargePotion,
+    //    .iconPalette = gItemIconPalette_FullRestore,
+    //},
 
-    [ITEM_REVIVE] =
-    {
-        .name = ITEM_NAME("Revive"),
-        .price = (I_PRICE >= GEN_7) ? 2000 : 1500,
-        .description = COMPOUND_STRING(
-            "Revives a fainted\n"
-            "Pokémon with half\n"
-            "its HP."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_REVIVE,
-        .effect = gItemEffect_Revive,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Revive,
-        .iconPalette = gItemIconPalette_Revive,
-    },
+    //[ITEM_REVIVE] =
+    //{
+    //    .name = ITEM_NAME("Revive"),
+    //    .price = (I_PRICE >= GEN_7) ? 2000 : 1500,
+    //    .description = COMPOUND_STRING(
+    //        "Revives a fainted\n"
+    //        "Pokémon with half\n"
+    //        "its HP."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_REVIVE,
+    //    .effect = gItemEffect_Revive,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Revive,
+    //    .iconPalette = gItemIconPalette_Revive,
+    //},
 
-    [ITEM_MAX_REVIVE] =
-    {
-        .name = ITEM_NAME("Max Revive"),
-        .price = 4000,
-        .description = sMaxReviveDesc,
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_REVIVE,
-        .effect = gItemEffect_MaxRevive,
-        .flingPower = 30,
-        .iconPic = gItemIcon_MaxRevive,
-        .iconPalette = gItemIconPalette_Revive,
-    },
+    //[ITEM_MAX_REVIVE] =
+    //{
+    //    .name = ITEM_NAME("Max Revive"),
+    //    .price = 4000,
+    //    .description = sMaxReviveDesc,
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_REVIVE,
+    //    .effect = gItemEffect_MaxRevive,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_MaxRevive,
+    //    .iconPalette = gItemIconPalette_Revive,
+    //},
 
     [ITEM_FRESH_WATER] =
     {
@@ -1055,80 +1055,80 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_Awakening,
     },
 
-    [ITEM_FULL_HEAL] =
-    {
-        .name = ITEM_NAME("Full Heal"),
-        .price = (I_PRICE >= GEN_7) ? 400 : 600,
-        .description = sFullHealDesc,
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_STATUS_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_CURE_STATUS,
-        .effect = gItemEffect_FullHeal,
-        .flingPower = 30,
-        .iconPic = gItemIcon_FullHeal,
-        .iconPalette = gItemIconPalette_FullHeal,
-    },
+    //[ITEM_FULL_HEAL] =
+    //{
+    //    .name = ITEM_NAME("Full Heal"),
+    //    .price = (I_PRICE >= GEN_7) ? 400 : 600,
+    //    .description = sFullHealDesc,
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_STATUS_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_CURE_STATUS,
+    //    .effect = gItemEffect_FullHeal,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_FullHeal,
+    //    .iconPalette = gItemIconPalette_FullHeal,
+    //},
 
-    [ITEM_ETHER] =
-    {
-        .name = ITEM_NAME("Ether"),
-        .price = (I_PRICE >= GEN_2) ? 1200 : 1,
-        .holdEffectParam = 10,
-        .description = COMPOUND_STRING(
-            "Restores the PP\n"
-            "of a selected move\n"
-            "by 10."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_PP_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU_MOVES,
-        .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
-        .battleUsage = EFFECT_ITEM_RESTORE_PP,
-        .effect = gItemEffect_Ether,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Ether,
-        .iconPalette = gItemIconPalette_Ether,
-    },
+    //[ITEM_ETHER] =
+    //{
+    //    .name = ITEM_NAME("Ether"),
+    //    .price = (I_PRICE >= GEN_2) ? 1200 : 1,
+    //    .holdEffectParam = 10,
+    //    .description = COMPOUND_STRING(
+    //        "Restores the PP\n"
+    //        "of a selected move\n"
+     //       "by 10."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_PP_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU_MOVES,
+    //    .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
+    //    .battleUsage = EFFECT_ITEM_RESTORE_PP,
+    //    .effect = gItemEffect_Ether,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Ether,
+    //    .iconPalette = gItemIconPalette_Ether,
+    //},
 
-    [ITEM_MAX_ETHER] =
-    {
-        .name = ITEM_NAME("Max Ether"),
-        .price = (I_PRICE >= GEN_2) ? 2000 : 1,
-        .holdEffectParam = 255,
-        .description = COMPOUND_STRING(
-            "Fully restores the\n"
-            "PP of a selected\n"
-            "move."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_PP_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU_MOVES,
-        .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
-        .battleUsage = EFFECT_ITEM_RESTORE_PP,
-        .effect = gItemEffect_MaxEther,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Ether,
-        .iconPalette = gItemIconPalette_MaxEther,
-    },
+    //[ITEM_MAX_ETHER] =
+    //{
+    //    .name = ITEM_NAME("Max Ether"),
+    //    .price = (I_PRICE >= GEN_2) ? 2000 : 1,
+    //    .holdEffectParam = 255,
+    //    .description = COMPOUND_STRING(
+    //        "Fully restores the\n"
+    //        "PP of a selected\n"
+    //        "move."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_PP_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU_MOVES,
+    //    .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
+    //    .battleUsage = EFFECT_ITEM_RESTORE_PP,
+    //    .effect = gItemEffect_MaxEther,
+     //   .flingPower = 30,
+    //    .iconPic = gItemIcon_Ether,
+    //    .iconPalette = gItemIconPalette_MaxEther,
+    //},
 
-    [ITEM_ELIXIR] =
-    {
-        .name = ITEM_NAME("Elixir"),
-        .price = (I_PRICE >= GEN_2) ? 3000 : 1,
-        .holdEffectParam = 10,
-        .description = COMPOUND_STRING(
-            "Restores the PP\n"
-            "of all moves by 10."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_PP_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
-        .battleUsage = EFFECT_ITEM_RESTORE_PP,
-        .effect = gItemEffect_Elixir,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Ether,
-        .iconPalette = gItemIconPalette_Elixir,
-    },
+    //[ITEM_ELIXIR] =
+    //{
+    //    .name = ITEM_NAME("Elixir"),
+    //    .price = (I_PRICE >= GEN_2) ? 3000 : 1,
+    //    .holdEffectParam = 10,
+    //    .description = COMPOUND_STRING(
+    //        "Restores the PP\n"
+    //        "of all moves by 10."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_PP_RECOVERY,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
+    //    .battleUsage = EFFECT_ITEM_RESTORE_PP,
+    //    .effect = gItemEffect_Elixir,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Ether,
+    //    .iconPalette = gItemIconPalette_Elixir,
+    //},
 
     [ITEM_MAX_ELIXIR] =
     {
@@ -1364,76 +1364,76 @@ const struct ItemInfo gItemsInfo[] =
 
 // Vitamins
 
-    [ITEM_HP_UP] =
-    {
-        .name = ITEM_NAME("HP Up"),
-        .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING(
-            "Raises the base HP\n"
-            "of one Pokémon."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_HPUp,
-        .flingPower = 30,
-        .iconPic = gItemIcon_HPUp,
-        .iconPalette = gItemIconPalette_HPUp,
-    },
+    //[ITEM_HP_UP] =
+    //{
+    //    .name = ITEM_NAME("HP Up"),
+    //    .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
+    //    .description = COMPOUND_STRING(
+    //        "Raises the base HP\n"
+    //        "of one Pokémon."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .effect = gItemEffect_HPUp,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_HPUp,
+    //    .iconPalette = gItemIconPalette_HPUp,
+    //},
 
-    [ITEM_PROTEIN] =
-    {
-        .name = ITEM_NAME("Protein"),
-        .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING(
-            "Raises the base\n"
-            "Attack stat of one\n"
-            "Pokémon."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_Protein,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Vitamin,
-        .iconPalette = gItemIconPalette_Protein,
-    },
+    //[ITEM_PROTEIN] =
+    //{
+     //   .name = ITEM_NAME("Protein"),
+     //   .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
+    //    .description = COMPOUND_STRING(
+    //        "Raises the base\n"
+    //        "Attack stat of one\n"
+    //        "Pokémon."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .effect = gItemEffect_Protein,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Vitamin,
+    //    .iconPalette = gItemIconPalette_Protein,
+    //},
 
-    [ITEM_IRON] =
-    {
-        .name = ITEM_NAME("Iron"),
-        .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING(
-            "Raises the base\n"
-            "Defense stat of\n"
-            "one Pokémon."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_Iron,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Vitamin,
-        .iconPalette = gItemIconPalette_Iron,
-    },
+    //[ITEM_IRON] =
+    //{
+    //    .name = ITEM_NAME("Iron"),
+    //    .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
+    //    .description = COMPOUND_STRING(
+    //        "Raises the base\n"
+    //        "Defense stat of\n"
+    //        "one Pokémon."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .effect = gItemEffect_Iron,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Vitamin,
+    //    .iconPalette = gItemIconPalette_Iron,
+    //},
 
-    [ITEM_CALCIUM] =
-    {
-        .name = ITEM_NAME("Calcium"),
-        .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING(
-            "Raises the base\n"
-            "Sp. Atk stat of one\n"
-            "Pokémon."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_Calcium,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Vitamin,
-        .iconPalette = gItemIconPalette_Calcium,
-    },
+    //[ITEM_CALCIUM] =
+    //{
+    //    .name = ITEM_NAME("Calcium"),
+    //    .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
+    //    .description = COMPOUND_STRING(
+    //        "Raises the base\n"
+    //        "Sp. Atk stat of one\n"
+    //        "Pokémon."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .effect = gItemEffect_Calcium,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Vitamin,
+    //    .iconPalette = gItemIconPalette_Calcium,
+    //},
 
     [ITEM_ZINC] =
     {
@@ -1453,48 +1453,48 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_Zinc,
     },
 
-    [ITEM_CARBOS] =
-    {
-        .name = ITEM_NAME("Carbos"),
-        .pluralName = ITEM_PLURAL_NAME("Carbos"),
-        .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING(
-            "Raises the base\n"
-            "Speed stat of one\n"
-            "Pokémon."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_Carbos,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Vitamin,
-        .iconPalette = gItemIconPalette_Carbos,
-    },
+    //[ITEM_CARBOS] =
+    //{
+    //    .name = ITEM_NAME("Carbos"),
+    //    .pluralName = ITEM_PLURAL_NAME("Carbos"),
+    //    .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
+    //    .description = COMPOUND_STRING(
+    //        "Raises the base\n"
+    //        "Speed stat of one\n"
+    //        "Pokémon."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .effect = gItemEffect_Carbos,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Vitamin,
+    //    .iconPalette = gItemIconPalette_Carbos,
+    //},
 
-    [ITEM_PP_UP] =
-    {
-        .name = ITEM_NAME("PP Up"),
-    #if I_PRICE >= GEN_7
-        .price = 10000,
-    #elif I_PRICE >= GEN_2
-        .price = 9800,
-    #else
-        .price = 1,
-    #endif
-        .description = COMPOUND_STRING(
-            "Raises the maximum\n"
-            "PP of a selected\n"
-            "move."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_PPUp,
-        .effect = gItemEffect_PPUp,
-        .flingPower = 30,
-        .iconPic = gItemIcon_PPUp,
-        .iconPalette = gItemIconPalette_PPUp,
-    },
+    //[ITEM_PP_UP] =
+    //{
+    //    .name = ITEM_NAME("PP Up"),
+    //#if I_PRICE >= GEN_7
+    //    .price = 10000,
+    //#elif I_PRICE >= GEN_2
+    //    .price = 9800,
+    //#else
+    //    .price = 1,
+    //#endif
+    //    .description = COMPOUND_STRING(
+    //        "Raises the maximum\n"
+    //        "PP of a selected\n"
+    //        "move."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_PPUp,
+    //    .effect = gItemEffect_PPUp,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_PPUp,
+    //    .iconPalette = gItemIconPalette_PPUp,
+    //},
 
     [ITEM_PP_MAX] =
     {
@@ -15846,8 +15846,8 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_SmallRecoveryDisk,
+        .iconPalette = gItemIconPalette_SmallRecoveryDisk,
     },    
 
     [ITEM_MEDIUM_RECOVERY_DISK] =
@@ -15866,8 +15866,8 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_MediumRecoveryDisk,
+        .iconPalette = gItemIconPalette_MediumRecoveryDisk,
     },    
 
     [ITEM_LARGE_RECOVERY_DISK] =
@@ -15886,8 +15886,8 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_LargeRecoveryDisk,
+        .iconPalette = gItemIconPalette_LargeRecoveryDisk,
     },    
 
     [ITEM_SUPER_RECOVERY_DISK] =
@@ -15906,8 +15906,8 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_SuperRecoveryDisk,
+        .iconPalette = gItemIconPalette_SuperRecoveryDisk,
     },    
 
     [ITEM_SMALL_MP_DISK] =
@@ -15926,8 +15926,8 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
         .effect = gItemEffect_Ether,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_SmallMPDisk,
+        .iconPalette = gItemIconPalette_SmallMPDisk,
     }, 
 
     [ITEM_MEDIUM_MP_DISK] =
@@ -15946,8 +15946,8 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
         .effect = gItemEffect_Ether,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_MediumMPDisk,
+        .iconPalette = gItemIconPalette_MediumMPDisk,
     }, 
 
     [ITEM_LARGE_MP_DISK] =
@@ -15966,8 +15966,8 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
         .effect = gItemEffect_MaxElixir,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_LargeMPDisk,
+        .iconPalette = gItemIconPalette_LargeMPDisk,
     }, 
 
     [ITEM_OMNIPOTENT_DISK] =
@@ -15986,8 +15986,8 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
         .effect = gItemEffect_MaxElixir,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_OmnipotentDisk,
+        .iconPalette = gItemIconPalette_OmnipotentDisk,
     }, 
 
     [ITEM_VARIOUS_DISK] =
@@ -16005,26 +16005,24 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_FullHeal,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_VariousDisk,
+        .iconPalette = gItemIconPalette_VariousDisk,
     }, 
 
     [ITEM_DOUBLE_FLOPPY_DISK] =
     {
         .name = ITEM_NAME("Double Floppy"),
-        .price = 500,
-        .holdEffectParam = 255,
+        .price = 300,
         .description = COMPOUND_STRING(
-            "Your not completely\n"
-            "certain what this\n"
-            "does."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
+            "Stores all kinds of data. A\n"
+            "miracle of modern\n"
+            "technology."),
+        .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .battleUsage = EFFECT_ITEM_THROW_BALL,
+        .secondaryId = BALL_SPORT,
+        .iconPic = gItemIcon_DoubleFlop,
+        .iconPalette = gItemIconPalette_DoubleFlop,
     }, 
 
     [ITEM_RESTORE_DISK] =
@@ -16033,34 +16031,34 @@ const struct ItemInfo gItemsInfo[] =
         .price = 500,
         .holdEffectParam = 255,
         .description = COMPOUND_STRING(
-            "Your not completely\n"
-            "certain what this\n"
-            "does."),
+            "Revives a fainted\n"
+            "Pokémon with half\n"
+            "its HP."),
         .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_REVIVE,
+        .effect = gItemEffect_Revive,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_RestoreDisk,
+        .iconPalette = gItemIconPalette_RestoreDisk,
     }, 
 
     [ITEM_SUPER_RESTORE_DISK] =
     {
         .name = ITEM_NAME("Super Restore"),
-        .price = 500,
-        .holdEffectParam = 255,
-        .description = COMPOUND_STRING(
-            "Your not completely\n"
-            "certain what this\n"
-            "does."),
+        .price = 1000,
+        .description = sMaxReviveDesc,
         .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_REVIVE,
+        .effect = gItemEffect_MaxRevive,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_SuperRestore,
+        .iconPalette = gItemIconPalette_SuperRestore,
     }, 
 
     [ITEM_BRAIN_CHIP] =
@@ -16078,8 +16076,8 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Calcium,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_BrainChip,
+        .iconPalette = gItemIconPalette_BrainChip,
     }, 
 
     [ITEM_DEFENSE_CHIP] =
@@ -16097,8 +16095,8 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Iron,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_DefenseChip,
+        .iconPalette = gItemIconPalette_DefenseChip,
     }, 
 
     [ITEM_OFFENSE_CHIP] =
@@ -16116,8 +16114,8 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Protein,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_OffenseChip,
+        .iconPalette = gItemIconPalette_OffenseChip,
     }, 
 
     [ITEM_QUICK_CHIP] =
@@ -16135,8 +16133,8 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Carbos,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_QuickChip,
+        .iconPalette = gItemIconPalette_QuickChip,
     }, 
 
     [ITEM_HP_CHIP] =
@@ -16153,8 +16151,8 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_HPUp,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_HPChip,
+        .iconPalette = gItemIconPalette_HPChip,
     }, 
 
     [ITEM_MP_CHIP] =
@@ -16172,8 +16170,8 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_PPUp,
         .flingPower = 30,
-        .iconPic = gItemIcon_DubiousDisc,
-        .iconPalette = gItemIconPalette_DubiousDisc,
+        .iconPic = gItemIcon_MPChip,
+        .iconPalette = gItemIconPalette_MPChip,
     }, 
 
     [ITEM_DISINFECTANT] =
