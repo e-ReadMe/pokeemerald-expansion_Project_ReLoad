@@ -1811,6 +1811,25 @@ extern const u32 gItemIcon_OffenseChip[];
 extern const u16 gItemIconPalette_OffenseChip[];
 extern const u32 gItemIcon_QuickChip[];
 extern const u16 gItemIconPalette_QuickChip[];
+extern const u32 gItemIcon_Banana[];
+extern const u16 gItemIconPalette_Banana[];
+extern const u16 gItemIconPalette_Banana_Orange[];
+extern const u32 gItemIcon_DigiMushroom[];
+extern const u16 gItemIconPalette_DigiMushroom[];
+extern const u32 gItemIcon_Melon[];
+extern const u16 gItemIconPalette_Melon[];
+extern const u32 gItemIcon_Pineapple[];
+extern const u16 gItemIconPalette_Pineapple[];
+extern const u32 gItemIcon_Apple[];
+extern const u16 gItemIconPalette_Apple[];
+extern const u32 gItemIcon_Carrot[];
+extern const u16 gItemIconPalette_Carrot[];
+extern const u32 gItemIcon_MeatMiracle[];
+extern const u16 gItemIconPalette_MeatMiracle[];
+extern const u32 gItemIcon_MeatExciting[];
+extern const u16 gItemIconPalette_MeatExciting[];
+extern const u32 gItemIcon_MeatBest[];
+extern const u16 gItemIconPalette_MeatBest[];
 
 //menu graphics
 extern const u16 gMenuInfoElements1_Pal[16];

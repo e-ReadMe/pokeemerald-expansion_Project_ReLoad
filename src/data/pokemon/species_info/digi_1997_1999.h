@@ -3742,7 +3742,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_BATTERY, ABILITY_MAGNET_PULL, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
     #if DubNames
         .speciesName = _("Kokuwamon"),//the digimon's dub name. e.g. gatomon

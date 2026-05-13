@@ -10906,167 +10906,167 @@ const struct ItemInfo gItemsInfo[] =
 
 // Berries
 
-    [ITEM_CHERI_BERRY] =
-    {
-        .name = ITEM_NAME("Cheri Berry"),
-        .pluralName = ITEM_PLURAL_NAME("Cheri Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .holdEffect = HOLD_EFFECT_CURE_PAR,
-        .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "heals paralysis\n"
-            "in battle."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_CURE_STATUS,
-        .effect = gItemEffect_ParalyzeHeal,
-        .flingPower = 10,
-        .iconPic = gItemIcon_CheriBerry,
-        .iconPalette = gItemIconPalette_CheriBerry,
-    },
+    //[ITEM_CHERI_BERRY] =
+    //{
+    //    .name = ITEM_NAME("Cheri Berry"),
+    //    .pluralName = ITEM_PLURAL_NAME("Cheri Berries"),
+    //    .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+    //    .holdEffect = HOLD_EFFECT_CURE_PAR,
+    //    .description = COMPOUND_STRING(
+    //        "A hold item that\n"
+    //        "heals paralysis\n"
+    //        "in battle."),
+    //    .pocket = POCKET_BERRIES,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_CURE_STATUS,
+    //    .effect = gItemEffect_ParalyzeHeal,
+    //    .flingPower = 10,
+    //    .iconPic = gItemIcon_CheriBerry,
+    //    .iconPalette = gItemIconPalette_CheriBerry,
+    //},
 
-    [ITEM_CHESTO_BERRY] =
-    {
-        .name = ITEM_NAME("Chesto Berry"),
-        .pluralName = ITEM_PLURAL_NAME("Chesto Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .holdEffect = HOLD_EFFECT_CURE_SLP,
-        .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "awakens Pokémon\n"
-            "in battle."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_CURE_STATUS,
-        .effect = gItemEffect_Awakening,
-        .flingPower = 10,
-        .iconPic = gItemIcon_ChestoBerry,
-        .iconPalette = gItemIconPalette_ChestoBerry,
-    },
+    //[ITEM_CHESTO_BERRY] =
+    //{
+    //    .name = ITEM_NAME("Chesto Berry"),
+    //    .pluralName = ITEM_PLURAL_NAME("Chesto Berries"),
+    //    .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+    //    .holdEffect = HOLD_EFFECT_CURE_SLP,
+    //    .description = COMPOUND_STRING(
+    //        "A hold item that\n"
+    //        "awakens Pokémon\n"
+    //        "in battle."),
+    //    .pocket = POCKET_BERRIES,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_CURE_STATUS,
+    //    .effect = gItemEffect_Awakening,
+    //    .flingPower = 10,
+    //    .iconPic = gItemIcon_ChestoBerry,
+    //    .iconPalette = gItemIconPalette_ChestoBerry,
+    //},
 
-    [ITEM_PECHA_BERRY] =
-    {
-        .name = ITEM_NAME("Pecha Berry"),
-        .pluralName = ITEM_PLURAL_NAME("Pecha Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .holdEffect = HOLD_EFFECT_CURE_PSN,
-        .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "heals poisoning\n"
-            "in battle."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_CURE_STATUS,
-        .effect = gItemEffect_Antidote,
-        .flingPower = 10,
-        .iconPic = gItemIcon_PechaBerry,
-        .iconPalette = gItemIconPalette_PechaBerry,
-    },
+    //[ITEM_PECHA_BERRY] =
+    //{
+    //    .name = ITEM_NAME("Pecha Berry"),
+    //    .pluralName = ITEM_PLURAL_NAME("Pecha Berries"),
+    //    .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+    //    .holdEffect = HOLD_EFFECT_CURE_PSN,
+    //    .description = COMPOUND_STRING(
+    //        "A hold item that\n"
+    //        "heals poisoning\n"
+    //        "in battle."),
+    //    .pocket = POCKET_BERRIES,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_CURE_STATUS,
+    //    .effect = gItemEffect_Antidote,
+    //    .flingPower = 10,
+    //    .iconPic = gItemIcon_PechaBerry,
+    //    .iconPalette = gItemIconPalette_PechaBerry,
+    //},
 
-    [ITEM_RAWST_BERRY] =
-    {
-        .name = ITEM_NAME("Rawst Berry"),
-        .pluralName = ITEM_PLURAL_NAME("Rawst Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .holdEffect = HOLD_EFFECT_CURE_BRN,
-        .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "heals a burn in\n"
-            "battle."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_CURE_STATUS,
-        .effect = gItemEffect_BurnHeal,
-        .flingPower = 10,
-        .iconPic = gItemIcon_RawstBerry,
-        .iconPalette = gItemIconPalette_RawstBerry,
-    },
+    //[ITEM_RAWST_BERRY] =
+   // {
+    //   .name = ITEM_NAME("Rawst Berry"),
+    //    .pluralName = ITEM_PLURAL_NAME("Rawst Berries"),
+    //    .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+    //    .holdEffect = HOLD_EFFECT_CURE_BRN,
+    //    .description = COMPOUND_STRING(
+     //       "A hold item that\n"
+    //        "heals a burn in\n"
+    //        "battle."),
+    //    .pocket = POCKET_BERRIES,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_CURE_STATUS,
+    //    .effect = gItemEffect_BurnHeal,
+    //    .flingPower = 10,
+    //    .iconPic = gItemIcon_RawstBerry,
+    //    .iconPalette = gItemIconPalette_RawstBerry,
+    //},
 
-    [ITEM_ASPEAR_BERRY] =
-    {
-        .name = ITEM_NAME("Aspear Berry"),
-        .pluralName = ITEM_PLURAL_NAME("Aspear Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .holdEffect = HOLD_EFFECT_CURE_FRZ,
-        .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "defrosts Pokémon\n"
-            "in battle."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_CURE_STATUS,
-        .effect = gItemEffect_IceHeal,
-        .flingPower = 10,
-        .iconPic = gItemIcon_AspearBerry,
-        .iconPalette = gItemIconPalette_AspearBerry,
-    },
+    //[ITEM_ASPEAR_BERRY] =
+    //{
+    //    .name = ITEM_NAME("Aspear Berry"),
+    //    .pluralName = ITEM_PLURAL_NAME("Aspear Berries"),
+    //    .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+    //    .holdEffect = HOLD_EFFECT_CURE_FRZ,
+    //    .description = COMPOUND_STRING(
+    //        "A hold item that\n"
+    //        "defrosts Pokémon\n"
+    //        "in battle."),
+    //    .pocket = POCKET_BERRIES,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_CURE_STATUS,
+    //    .effect = gItemEffect_IceHeal,
+    //    .flingPower = 10,
+    //    .iconPic = gItemIcon_AspearBerry,
+    //    .iconPalette = gItemIconPalette_AspearBerry,
+    //},
 
-    [ITEM_LEPPA_BERRY] =
-    {
-        .name = ITEM_NAME("Leppa Berry"),
-        .pluralName = ITEM_PLURAL_NAME("Leppa Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .holdEffect = HOLD_EFFECT_RESTORE_PP,
-        .holdEffectParam = 10,
-        .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "restores 10 PP in\n"
-            "battle."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_PARTY_MENU_MOVES,
-        .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
-        .battleUsage = EFFECT_ITEM_RESTORE_PP,
-        .effect = gItemEffect_LeppaBerry,
-        .flingPower = 10,
-        .iconPic = gItemIcon_LeppaBerry,
-        .iconPalette = gItemIconPalette_LeppaBerry,
-    },
+    //[ITEM_LEPPA_BERRY] =
+    //{
+    //    .name = ITEM_NAME("Leppa Berry"),
+    //    .pluralName = ITEM_PLURAL_NAME("Leppa Berries"),
+    //    .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+    //    .holdEffect = HOLD_EFFECT_RESTORE_PP,
+    //    .holdEffectParam = 10,
+    //    .description = COMPOUND_STRING(
+    //        "A hold item that\n"
+    //        "restores 10 PP in\n"
+    //        "battle."),
+    //    .pocket = POCKET_BERRIES,
+    //    .type = ITEM_USE_PARTY_MENU_MOVES,
+    //    .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
+    //    .battleUsage = EFFECT_ITEM_RESTORE_PP,
+     //   .effect = gItemEffect_LeppaBerry,
+    //    .flingPower = 10,
+    //    .iconPic = gItemIcon_LeppaBerry,
+    //    .iconPalette = gItemIconPalette_LeppaBerry,
+    //},
 
-    [ITEM_ORAN_BERRY] =
-    {
-        .name = ITEM_NAME("Oran Berry"),
-        .pluralName = ITEM_PLURAL_NAME("Oran Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .holdEffect = HOLD_EFFECT_RESTORE_HP,
-        .holdEffectParam = 10,
-        .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "restores 10 HP in\n"
-            "battle."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_RESTORE_HP,
-        .effect = gItemEffect_OranBerry,
-        .flingPower = 10,
-        .iconPic = gItemIcon_OranBerry,
-        .iconPalette = gItemIconPalette_OranBerry,
-    },
+    //[ITEM_ORAN_BERRY] =
+    //{
+    //    .name = ITEM_NAME("Oran Berry"),
+    //    .pluralName = ITEM_PLURAL_NAME("Oran Berries"),
+    //    .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+    //    .holdEffect = HOLD_EFFECT_RESTORE_HP,
+    //    .holdEffectParam = 10,
+    //    .description = COMPOUND_STRING(
+    //        "A hold item that\n"
+    //        "restores 10 HP in\n"
+    //        "battle."),
+    //    .pocket = POCKET_BERRIES,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+    //    .battleUsage = EFFECT_ITEM_RESTORE_HP,
+    //    .effect = gItemEffect_OranBerry,
+    //    .flingPower = 10,
+    //    .iconPic = gItemIcon_OranBerry,
+    //    .iconPalette = gItemIconPalette_OranBerry,
+    //},
 
-    [ITEM_PERSIM_BERRY] =
-    {
-        .name = ITEM_NAME("Persim Berry"),
-        .pluralName = ITEM_PLURAL_NAME("Persim Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .holdEffect = HOLD_EFFECT_CURE_CONFUSION,
-        .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "heals confusion\n"
-            "in battle."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .battleUsage = EFFECT_ITEM_CURE_STATUS,
-        .effect = gItemEffect_PersimBerry,
-        .flingPower = 10,
-        .iconPic = gItemIcon_PersimBerry,
-        .iconPalette = gItemIconPalette_PersimBerry,
-    },
+    //[ITEM_PERSIM_BERRY] =
+    //{
+    //    .name = ITEM_NAME("Persim Berry"),
+    //    .pluralName = ITEM_PLURAL_NAME("Persim Berries"),
+    //    .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+    //    .holdEffect = HOLD_EFFECT_CURE_CONFUSION,
+    //    .description = COMPOUND_STRING(
+    //        "A hold item that\n"
+    //        "heals confusion\n"
+    //        "in battle."),
+    //    .pocket = POCKET_BERRIES,
+    //    .type = ITEM_USE_PARTY_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .battleUsage = EFFECT_ITEM_CURE_STATUS,
+    //    .effect = gItemEffect_PersimBerry,
+    //    .flingPower = 10,
+    //    .iconPic = gItemIcon_PersimBerry,
+    //    .iconPalette = gItemIconPalette_PersimBerry,
+    //},
 
     [ITEM_LUM_BERRY] =
     {
@@ -16173,7 +16173,147 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_MPChip,
         .iconPalette = gItemIconPalette_MPChip,
     }, 
+//------------------------------------------------------------------------food items
+    [ITEM_MEAT] =
+    {
+        .name = ITEM_NAME("Meat"),
+        .price = 100,
+        .holdEffect = HOLD_EFFECT_RESTORE_HP,
+        .holdEffectParam = 10,
+        .description = COMPOUND_STRING(
+            "Standard Digi-Food,\n"
+            "grown in fields.\n"
+            "Restores 10% HP."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_SitrusBerry,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MeatExciting,
+        .iconPalette = gItemIconPalette_MeatExciting,
+    },
 
+    [ITEM_HUNK_OF_MEAT] =
+    {
+        .name = ITEM_NAME("Hunk of Meat"),
+        .price = 200,
+        .holdEffect = HOLD_EFFECT_RESTORE_PCT_HP,
+        .holdEffectParam = 25,
+        .description = COMPOUND_STRING(
+            "Organically grown\n"
+            "meat. Top notch.\n"
+            "Restores 25% HP."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_SitrusBerry,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MeatBest,
+        .iconPalette = gItemIconPalette_MeatBest,
+    },
+
+    [ITEM_MIRACLE_MEAT] =
+    {
+        .name = ITEM_NAME("Miracle Meat"),
+        .price = 500,
+        .holdEffect = HOLD_EFFECT_RESTORE_PCT_HP,
+        .holdEffectParam = 50,
+        .description = COMPOUND_STRING(
+            "Glorious, and,\n"
+            "so hekkin chunky.\n"
+            "Restores 50% HP."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_SitrusBerry,
+        .flingPower = 10,
+        .iconPic = gItemIcon_MeatMiracle,
+        .iconPalette = gItemIconPalette_MeatMiracle,
+    },
+
+    [ITEM_BANANA] =
+    {
+        .name = ITEM_NAME("Banana"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "Can help boost your\n"
+            "Digimon's HP...\n"
+            "somehow."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_Banana,
+        .iconPalette = gItemIconPalette_Banana,
+    },
+
+    [ITEM_CARROT] =
+    {
+        .name = ITEM_NAME("Carrot"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "A fruit known for\n"
+            "fighting. Can it up\n"
+            "a Digimon's ATK?"),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_Carrot,
+        .iconPalette = gItemIconPalette_Carrot,
+    },
+
+    [ITEM_APPLE] =
+    {
+        .name = ITEM_NAME("Apple"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "Can presumably\n"
+            "be used to increase\n"
+            "defence."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_Apple,
+        .iconPalette = gItemIconPalette_Apple,
+    },
+
+    [ITEM_PINEAPPLE] =
+    {
+        .name = ITEM_NAME("Pineapple"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "Only a select few\n"
+            "know how to harness\n"
+            "it to increase SpAtk"),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_Pineapple,
+        .iconPalette = gItemIconPalette_Pineapple,
+    },
+
+    [ITEM_MELON] =
+    {
+        .name = ITEM_NAME("Melon"),
+        .price = 200,
+        .description = COMPOUND_STRING(
+            "The most specially\n"
+            "defensive of all the\n"
+            "fruits or vegies."),
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_Melon,
+        .iconPalette = gItemIconPalette_Melon,
+    },
+//------------------------------------------------------------------------not implemented yet
     [ITEM_DISINFECTANT] =
     {
         .name = ITEM_NAME("Disinfectant"),
@@ -16329,46 +16469,6 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_FullHeal,
     },
 
-    [ITEM_MEAT] =
-    {
-        .name = ITEM_NAME("Meat"),
-        .price = 100,
-        .holdEffect = HOLD_EFFECT_RESTORE_HP,
-        .holdEffectParam = 10,
-        .description = COMPOUND_STRING(
-            "Standard Digi-Food,\n"
-            "grown in fields.\n"
-            "Restores 10 HP."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_RESTORE_HP,
-        .effect = gItemEffect_OranBerry,
-        .flingPower = 10,
-        .iconPic = gItemIcon_PokeDoll,
-        .iconPalette = gItemIconPalette_PokeDoll,
-    },
-
-    [ITEM_CHOICE_MEAT] =
-    {
-        .name = ITEM_NAME("Choice Meat"),
-        .price = 200,
-        .holdEffect = HOLD_EFFECT_RESTORE_PCT_HP,
-        .holdEffectParam = 25,
-        .description = COMPOUND_STRING(
-            "Organically grown\n"
-            "meat. Top notch.\n"
-            "Restores 25% HP."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_RESTORE_HP,
-        .effect = gItemEffect_SitrusBerry,
-        .flingPower = 10,
-        .iconPic = gItemIcon_PokeDoll,
-        .iconPalette = gItemIconPalette_PokeDoll,
-    },
-
     [ITEM_SNAKEHEAD] =
     {
         .name = ITEM_NAME("Snakehead"),
@@ -16396,86 +16496,6 @@ const struct ItemInfo gItemsInfo[] =
             "{POKEBLOCK} ingredient.\n"
             "Plant in loamy soil\n"
             "to grow Mush."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 10,
-        .iconPic = gItemIcon_MaxMushrooms,
-        .iconPalette = gItemIconPalette_MaxMushrooms,
-    },
-
-    [ITEM_CARROT] =
-    {
-        .name = ITEM_NAME("Carrot"),
-        .price = 200,
-        .description = COMPOUND_STRING(
-            "{POKEBLOCK} ingredient.\n"
-            "Plant in loamy soil\n"
-            "to grow Carrot."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 10,
-        .iconPic = gItemIcon_MaxMushrooms,
-        .iconPalette = gItemIconPalette_MaxMushrooms,
-    },
-
-    [ITEM_APPLE] =
-    {
-        .name = ITEM_NAME("Apple"),
-        .price = 200,
-        .description = COMPOUND_STRING(
-            "{POKEBLOCK} ingredient.\n"
-            "Plant in loamy soil\n"
-            "to grow Apple."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 10,
-        .iconPic = gItemIcon_MaxMushrooms,
-        .iconPalette = gItemIconPalette_MaxMushrooms,
-    },
-
-    [ITEM_MELON] =
-    {
-        .name = ITEM_NAME("Melon"),
-        .price = 200,
-        .description = COMPOUND_STRING(
-            "{POKEBLOCK} ingredient.\n"
-            "Plant in loamy soil\n"
-            "to grow Melon."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 10,
-        .iconPic = gItemIcon_MaxMushrooms,
-        .iconPalette = gItemIconPalette_MaxMushrooms,
-    },
-
-    [ITEM_PINEAPPLE] =
-    {
-        .name = ITEM_NAME("Pineapple"),
-        .price = 200,
-        .description = COMPOUND_STRING(
-            "{POKEBLOCK} ingredient.\n"
-            "Plant in loamy soil\n"
-            "to grow Pineapple."),
-        .pocket = POCKET_BERRIES,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 10,
-        .iconPic = gItemIcon_MaxMushrooms,
-        .iconPalette = gItemIconPalette_MaxMushrooms,
-    },
-
-    [ITEM_BANANA] =
-    {
-        .name = ITEM_NAME("Banana"),
-        .price = 200,
-        .description = COMPOUND_STRING(
-            "{POKEBLOCK} ingredient.\n"
-            "Plant in loamy soil\n"
-            "to grow Banana."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

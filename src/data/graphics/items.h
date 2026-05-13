@@ -2108,8 +2108,8 @@ const u16 gItemIconPalette_PokeshiDoll[] = INCGFX_U16("graphics/items/icon_palet
 const u32 gItemIcon_SwapSnack[] = INCGFX_U32("graphics/items/icons/swap_snack.png", ".4bpp.smol");
 const u16 gItemIconPalette_SwapSnack[] = INCGFX_U16("graphics/items/icon_palettes/swap_snack.pal", ".gbapal");
 
-const u32 gItemIcon_TwiceSpicedRadish[] = INCBIN_U32("graphics/items/icons/twice_spiced_radish.4bpp.smol");
-const u16 gItemIconPalette_TwiceSpicedRadish[] = INCBIN_U16("graphics/items/icon_palettes/twice_spiced_radish.gbapal");
+const u32 gItemIcon_TwiceSpicedRadish[] = INCGFX_U32("graphics/items/icons/twice_spiced_radish.png", ".4bpp.smol");
+const u16 gItemIconPalette_TwiceSpicedRadish[] = INCGFX_U16("graphics/items/icon_palettes/twice_spiced_radish.pal", ".gbapal");
 
 // digi items
 const u32 gItemIcon_SmallRecoveryDisk[] = INCBIN_U32("graphics/digi/items/icons/small_recovery_disk.4bpp.smol");
@@ -2165,5 +2165,31 @@ const u16 gItemIconPalette_OffenseChip[] = INCBIN_U16("graphics/digi/items/icon_
 
 const u32 gItemIcon_QuickChip[] = INCBIN_U32("graphics/digi/items/icons/quick_chip.4bpp.smol");
 const u16 gItemIconPalette_QuickChip[] = INCBIN_U16("graphics/digi/items/icon_palettes/quick_chip.gbapal");
-const u32 gItemIcon_TwiceSpicedRadish[] = INCGFX_U32("graphics/items/icons/twice_spiced_radish.png", ".4bpp.smol");
-const u16 gItemIconPalette_TwiceSpicedRadish[] = INCGFX_U16("graphics/items/icon_palettes/twice_spiced_radish.pal", ".gbapal");
+
+const u32 gItemIcon_Banana[] = INCBIN_U32("graphics/digi/items/icons/banana.4bpp.smol");
+const u16 gItemIconPalette_Banana[] = INCBIN_U16("graphics/digi/items/icon_palettes/banana.gbapal");
+const u16 gItemIconPalette_Banana_Orange[] = INCBIN_U16("graphics/digi/items/icon_palettes/banana_orange.gbapal");
+
+const u32 gItemIcon_DigiMushroom[] = INCBIN_U32("graphics/digi/items/icons/mushroom.4bpp.smol");
+const u16 gItemIconPalette_DigiMushroom[] = INCBIN_U16("graphics/digi/items/icon_palettes/mushroom.gbapal");
+
+const u32 gItemIcon_Melon[] = INCBIN_U32("graphics/digi/items/icons/melon.4bpp.smol");
+const u16 gItemIconPalette_Melon[] = INCBIN_U16("graphics/digi/items/icon_palettes/melon.gbapal");
+
+const u32 gItemIcon_Pineapple[] = INCBIN_U32("graphics/digi/items/icons/pineapple.4bpp.smol");
+const u16 gItemIconPalette_Pineapple[] = INCBIN_U16("graphics/digi/items/icon_palettes/pineapple.gbapal");
+
+const u32 gItemIcon_Apple[] = INCBIN_U32("graphics/digi/items/icons/apple.4bpp.smol");
+const u16 gItemIconPalette_Apple[] = INCBIN_U16("graphics/digi/items/icon_palettes/apple.gbapal");
+
+const u32 gItemIcon_Carrot[] = INCBIN_U32("graphics/digi/items/icons/carrot.4bpp.smol");
+const u16 gItemIconPalette_Carrot[] = INCBIN_U16("graphics/digi/items/icon_palettes/carrot.gbapal");
+
+const u32 gItemIcon_MeatMiracle[] = INCBIN_U32("graphics/digi/items/icons/meat_miracle.4bpp.smol");
+const u16 gItemIconPalette_MeatMiracle[] = INCBIN_U16("graphics/digi/items/icon_palettes/meat_miracle.gbapal");
+
+const u32 gItemIcon_MeatExciting[] = INCBIN_U32("graphics/digi/items/icons/meat_exciting.4bpp.smol");
+const u16 gItemIconPalette_MeatExciting[] = INCBIN_U16("graphics/digi/items/icon_palettes/meat_exciting.gbapal");
+
+const u32 gItemIcon_MeatBest[] = INCBIN_U32("graphics/digi/items/icons/meat_best.4bpp.smol");
+const u16 gItemIconPalette_MeatBest[] = INCBIN_U16("graphics/digi/items/icon_palettes/meat_best.gbapal");

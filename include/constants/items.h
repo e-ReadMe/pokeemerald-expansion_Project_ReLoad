@@ -662,14 +662,24 @@ enum __attribute__((packed)) Item
 
     // Berries
     FIRST_BERRY_INDEX = 514,
-    ITEM_CHERI_BERRY = FIRST_BERRY_INDEX,
-    ITEM_CHESTO_BERRY = 515,
-    ITEM_PECHA_BERRY = 516,
-    ITEM_RAWST_BERRY = 517,
-    ITEM_ASPEAR_BERRY = 518,
-    ITEM_LEPPA_BERRY = 519,
-    ITEM_ORAN_BERRY = 520,
-    ITEM_PERSIM_BERRY = 521,
+    ITEM_MEAT = FIRST_BERRY_INDEX,
+    ITEM_HUNK_OF_MEAT = 515,
+    ITEM_MIRACLE_MEAT = 516,
+    ITEM_BANANA = 517,
+    ITEM_CARROT = 518,
+    ITEM_APPLE = 519,
+    ITEM_PINEAPPLE = 520,
+    ITEM_MELON = 521,
+
+
+    //ITEM_CHERI_BERRY = FIRST_BERRY_INDEX,
+    //ITEM_CHESTO_BERRY = 515,
+    //ITEM_PECHA_BERRY = 516,
+    //ITEM_RAWST_BERRY = 517,
+    //ITEM_ASPEAR_BERRY = 518,
+    //ITEM_LEPPA_BERRY = 519,
+    //ITEM_ORAN_BERRY = 520,
+    //ITEM_PERSIM_BERRY = 521,
     ITEM_LUM_BERRY = 522,
     ITEM_SITRUS_BERRY = 523,
     ITEM_FIGY_BERRY = 524,
@@ -1086,16 +1096,9 @@ enum __attribute__((packed)) Item
     ITEM_BIG_BANDAGE = (ITEM_BANDAGE + 1),	//	heals	80hp										
     ITEM_CLEAN_DRESSING = (ITEM_BIG_BANDAGE + 1),	//heals	10	Mp										
     ITEM_ALL_PURPOSE_OINTMENT = (ITEM_CLEAN_DRESSING + 1),	//	heals	all	status	conditions								
-    ITEM_MEAT = (ITEM_ALL_PURPOSE_OINTMENT + 1 ),	//	heals	10hp	in	battle								
-    ITEM_CHOICE_MEAT = (ITEM_MEAT + 1 ),	//	heals	25%	of	your	HP	in	battle					
-    ITEM_SNAKEHEAD = (ITEM_CHOICE_MEAT + 1 ),	//	heals	status	conditions	in	battle							
+    ITEM_SNAKEHEAD = (ITEM_ALL_PURPOSE_OINTMENT + 1 ),	//	heals	status	conditions	in	battle							
     ITEM_MUSHROOM = (ITEM_SNAKEHEAD + 1 ),	//	5	HP	EVs									
-    ITEM_CARROT = (ITEM_MUSHROOM + 1 ),	//	5	ATK	EVs									
-    ITEM_APPLE = (ITEM_CARROT + 1 ),	//	5	DEF	EVs									
-    ITEM_MELON = (ITEM_APPLE + 1 ),	//	5	SPA	EVs									
-    ITEM_PINEAPPLE = (ITEM_MELON + 1 ),	//	5	SPD	EVs									
-    ITEM_BANANA = (ITEM_PINEAPPLE + 1 ),	//	5	SPE	EVs									
-    ITEM_ODD_MUSHROOM = (ITEM_BANANA + 1 ),	//	-10	HP	EVs									
+    ITEM_ODD_MUSHROOM = (ITEM_MUSHROOM + 1 ),	//	-10	HP	EVs									
     ITEM_CURVY_CARROT = (ITEM_ODD_MUSHROOM + 1 ),	//	-10	ATK	EVs									
     ITEM_SOFT_APPLE = (ITEM_CURVY_CARROT + 1 ),	//	-10	DEF	EVs									
     ITEM_JEALOUSY_MELON = (ITEM_SOFT_APPLE + 1 ),	//	-10	SPA	EVs									
@@ -1148,6 +1151,16 @@ enum __attribute__((packed)) Item
     #define ITEM_CALCIUM ITEM_BRAIN_CHIP
     #define ITEM_CARBOS ITEM_QUICK_CHIP
     #define ITEM_PP_UP ITEM_MP_CHIP
+
+    #define ITEM_CHERI_BERRY ITEM_MEAT
+    #define ITEM_CHESTO_BERRY ITEM_HUNK_OF_MEAT
+    #define ITEM_PECHA_BERRY ITEM_MIRACLE_MEAT
+    #define ITEM_RAWST_BERRY ITEM_BANANA
+    #define ITEM_ASPEAR_BERRY ITEM_CARROT
+    #define ITEM_LEPPA_BERRY ITEM_APPLE
+    #define ITEM_ORAN_BERRY ITEM_PINEAPPLE
+    #define ITEM_PERSIM_BERRY ITEM_MELON
+
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
 // Its icon is defined at ITEMS_COUNT as the "return to field" arrow
