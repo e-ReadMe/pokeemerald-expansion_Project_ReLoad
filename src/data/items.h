@@ -10302,29 +10302,29 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_DestinyKnot,
     },
 
-    [ITEM_BLACK_SLUDGE] =
-    {
-        .name = ITEM_NAME("Black Sludge"),
-    #if I_PRICE >= GEN_9
-        .price = 10000,
-    #elif I_PRICE >= GEN_7
-        .price = 4000,
-    #else
-        .price = 200,
-    #endif
-        .holdEffect = HOLD_EFFECT_BLACK_SLUDGE,
-        .description = COMPOUND_STRING(
-            "Restores HP for\n"
-            "Poison-types.\n"
-            "Damages all others."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_HELD_ITEM,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_BlackSludge,
-        .iconPalette = gItemIconPalette_BlackSludge,
-    },
+    //[ITEM_BLACK_SLUDGE] =
+    //{
+    //    .name = ITEM_NAME("Black Sludge"),
+    //#if I_PRICE >= GEN_9
+    //    .price = 10000,
+    //#elif I_PRICE >= GEN_7
+    //    .price = 4000,
+    //#else
+    //    .price = 200,
+    //#endif
+    //    .holdEffect = HOLD_EFFECT_BLACK_SLUDGE,
+    //    .description = COMPOUND_STRING(
+    //        "Restores HP for\n"
+    //        "Poison-types.\n"
+    //        "Damages all others."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_HELD_ITEM,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_BlackSludge,
+    //    .iconPalette = gItemIconPalette_BlackSludge,
+    //},
 
     [ITEM_GRIP_CLAW] =
     {
@@ -16221,7 +16221,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_RESTORE_PCT_HP,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(
-            "Glorious, and,\n"
+            "Glorious, and\n"
             "so hekkin chunky.\n"
             "Restores 50% HP."),
         .pocket = POCKET_BERRIES,
@@ -16312,6 +16312,26 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 10,
         .iconPic = gItemIcon_Melon,
         .iconPalette = gItemIconPalette_Melon,
+    },
+
+//-------------------------------------------------------------------------misc items
+
+    [ITEM_BLACK_SLUDGE] =
+    {
+        .name = ITEM_NAME("Black Sludge"),
+        .price = 10,
+        .holdEffect = HOLD_EFFECT_BLACK_SLUDGE,
+        .description = COMPOUND_STRING(
+            "It smells really bad.\n"
+            "Filth-type Digimon\n"
+            "seem to like it tho."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_BlackSludge,
+        .iconPalette = gItemIconPalette_BlackSludge,
     },
 //------------------------------------------------------------------------not implemented yet
     [ITEM_DISINFECTANT] =

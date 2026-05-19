@@ -632,7 +632,8 @@ enum __attribute__((packed)) Item
     ITEM_IRON_BALL = 484,
     ITEM_LAGGING_TAIL = 485,
     ITEM_DESTINY_KNOT = 486,
-    ITEM_BLACK_SLUDGE = 487,
+    //ITEM_BLACK_SLUDGE = 487,
+    ITEM_PINK_SLUDGE = 487,//digi item. replaces black sludge
     ITEM_GRIP_CLAW = 488,
     ITEM_STICKY_BARB = 489,
     ITEM_SHED_SHELL = 490,
@@ -1160,6 +1161,8 @@ enum __attribute__((packed)) Item
     #define ITEM_LEPPA_BERRY ITEM_APPLE
     #define ITEM_ORAN_BERRY ITEM_PINEAPPLE
     #define ITEM_PERSIM_BERRY ITEM_MELON
+
+    #define ITEM_BLACK_SLUDGE ITEM_PINK_SLUDGE
 
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

@@ -1073,12 +1073,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
-    [ABILITY_POISON_TOUCH] =
-    {
-        .name = _("Poison Touch"),
-        .description = COMPOUND_STRING("Poisons foe on contact."),
-        .aiRating = 4,
-    },
+    //[ABILITY_POISON_TOUCH] =
+    //{
+    //    .name = _("Poison Touch"),
+    //    .description = COMPOUND_STRING("Poisons foe on contact."),
+    //    .aiRating = 4,
+    //},
 
     [ABILITY_REGENERATOR] =
     {
@@ -2407,10 +2407,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Tera Shell"),
         .description = COMPOUND_STRING("Resists all at full HP."),
         .aiRating = 10,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
-        .breakable = TRUE,
     },
 
     [ABILITY_TERAFORM_ZERO] =
@@ -2418,9 +2414,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Teraform Zero"),
         .description = COMPOUND_STRING("Zeroes weather and terrain."),
         .aiRating = 10,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_POISON_PUPPETEER] =
@@ -2428,9 +2421,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Poison Puppeteer"),
         .description = COMPOUND_STRING("Confuses poisoned foes."),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_ANCIENT_WARRIOR] =
@@ -2438,9 +2428,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Ancient_Warrior"),
         .description = COMPOUND_STRING("Boosts NULL moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_VIRUS_BUSTER] =
@@ -2448,9 +2435,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Virus Buster"),
         .description = COMPOUND_STRING("Boosts LIGHT moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_ANIMAL_COLOSSEUM] =
@@ -2458,9 +2442,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Animal Colosseum"),
         .description = COMPOUND_STRING("Boosts BEAST moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
     
     [ABILITY_VOLCANIC_BEAT] =
@@ -2468,9 +2449,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Volcanic Beat"),
         .description = COMPOUND_STRING("Boosts FIRE moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_DRAGONS_ROAR] =
@@ -2478,9 +2456,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Dragon's Roar"),
         .description = COMPOUND_STRING("Boosts DRAGON moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_DEEP_SAVERS] =
@@ -2488,9 +2463,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Deep Savers"),
         .description = COMPOUND_STRING("Boosts WATER moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_BLIZZARD_FANG] =
@@ -2498,9 +2470,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Blizzard Fang"),
         .description = COMPOUND_STRING("Boosts ICE moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_IMPULSE_CITY] =
@@ -2508,9 +2477,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Impulse City"),
         .description = COMPOUND_STRING("Boosts ELECTRIC moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_WIND_GUARDIANS] =
@@ -2518,9 +2484,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Wind Guardians"),
         .description = COMPOUND_STRING("Boosts WIND moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_TITAN_OF_DUST] =
@@ -2528,9 +2491,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Titan of Dust"),
         .description = COMPOUND_STRING("Boosts EARTH moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_METAL_EMPIRE] =
@@ -2538,9 +2498,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Metal Empire"),
         .description = COMPOUND_STRING("Boosts METAL moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_NIGHT_SOLDIER] =
@@ -2548,9 +2505,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Night Solider"),
         .description = COMPOUND_STRING("Boosts UNDEAD moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_FABLE_WALTZ] =
@@ -2558,9 +2512,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Fable Waltz"),
         .description = COMPOUND_STRING("Boosts PUPPET moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_NATURE_SPIRIT] =
@@ -2568,9 +2519,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Nature Spirit"),
         .description = COMPOUND_STRING("Boosts PLANT moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_JUNGLE_TROOPERS] =
@@ -2578,9 +2526,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Jungle Troopers"),
         .description = COMPOUND_STRING("Boosts INSECT moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_DYNASTY_OF_EVIL] =
@@ -2588,9 +2533,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Dynasty of Evil"),
         .description = COMPOUND_STRING("Boosts Dark moves"),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
     },
 
     [ABILITY_TACTICAL_RETREAT] =
@@ -2626,5 +2568,19 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Haymaker"),
         .description = COMPOUND_STRING("Boosts Critical Hit Rate"),
         .aiRating = 3,
+    },
+
+    [ABILITY_DEEP_SEA_SLUMBER] =
+    {
+        .name = _("Deep Sea Slumber"),
+        .description = COMPOUND_STRING("Contact makes them drowzy"),
+        .aiRating = 4,
+    },
+
+    [ABILITY_POISON_THORNS] =
+    {
+        .name = _("Poison Thorns"),
+        .description = COMPOUND_STRING("Poisons foe on contact."),
+        .aiRating = 4,
     },
 };
