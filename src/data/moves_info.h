@@ -23014,41 +23014,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .ignoresProtect = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxRapidFlow,
     },
-//------------------------------------------------------------------------------------------------
-    [MOVE_BUBBLES] =
-    {
-        .name = COMPOUND_STRING("Bubbles"),
-        .description = COMPOUND_STRING(
-            "An attack using bubbles.\n"
-            "It doesn't do much damage."),
-        .effect = EFFECT_HIT,
-        .power = 30,
-        .type = TYPE_FREE,
-        .accuracy = 100,
-        .pp = 30,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .battleAnimScript = gBattleAnimMove_Bubble,
-    },
-
-    [MOVE_ADHESIVE_BUBBLE] =
-    {
-        .name = COMPOUND_STRING("Adhesive Bubble"),
-        .description = COMPOUND_STRING(
-            "Spits out sticky bubbles\n"
-            "that lower Speed."),
-        .effect = EFFECT_SPEED_DOWN,
-        .power = 30,
-        .type = TYPE_FREE,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .soundMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_Bubble,
-    },
+//------------------------------------FIRE------------------------------------------------------------
 
     [MOVE_SPITFIRE] =
     {
@@ -23458,6 +23424,43 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_EggBomb,
     },
 
+//-------NEUTRAL-------------------------------------------------------------------------------------------------------------------
+
+    [MOVE_BUBBLES] =
+    {
+        .name = COMPOUND_STRING("Bubbles"),
+        .description = COMPOUND_STRING(
+            "An attack using bubbles.\n"
+            "It doesn't do much damage."),
+        .effect = EFFECT_HIT,
+        .power = 30,
+        .type = TYPE_NEUTRAL,
+        .accuracy = 100,
+        .pp = 30,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .battleAnimScript = gBattleAnimMove_Bubble,
+    },
+
+    [MOVE_ADHESIVE_BUBBLE] =
+    {
+        .name = COMPOUND_STRING("Adhesive Bubble"),
+        .description = COMPOUND_STRING(
+            "Spits out sticky bubbles\n"
+            "that lower Speed."),
+        .effect = EFFECT_SPEED_DOWN,
+        .power = 30,
+        .type = TYPE_NEUTRAL,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .soundMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_Bubble,
+    },
+
     [MOVE_STRIKE] =
     {
         .name = COMPOUND_STRING("Strike"),
@@ -23465,7 +23468,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A basic hit. Not too powerful. \n"
             "They'll grow out of it soon."),
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 45,
         .type = TYPE_NEUTRAL,
         .accuracy = 100,
         .pp = 35,
@@ -23483,7 +23486,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A powerful hit. A 12.5% chance\n"
             "to do critical damage. "),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 60,
         .type = TYPE_NEUTRAL,
         .accuracy = 95,
         .pp = 20,
@@ -23556,26 +23559,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
 //-------ICE MOVES----------------------------------------------------------------------
 
-    [MOVE_FROZEN_WIND] =
-    {
-        .name = COMPOUND_STRING("Frozen Wind"),
-        .description = COMPOUND_STRING(
-            "Spews a snowstorm from its\n"
-            "mouth. Can cause Frostbite"),
-        .effect = EFFECT_HIT,
-        .power = 50,
-        .type = TYPE_ICE,
-        .accuracy = 100,
-        .pp = 25,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
-            .chance = 20,
-        }),
-        .battleAnimScript = gBattleAnimMove_PowderSnow,
-    },
 
     [MOVE_GAIA_BLAST] =
     {
@@ -24057,6 +24040,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .punchingMove = TRUE,
         .battleAnimScript = gBattleAnimMove_CometPunch,
+    },
+
+
+    [MOVE_FROZEN_WIND] =
+    {
+        .name = COMPOUND_STRING("Frozen Wind"),
+        .description = COMPOUND_STRING(
+            "Spews a snowstorm from its\n"
+            "mouth. Can cause Frostbite"),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_ICE,
+        .accuracy = 100,
+        .pp = 25,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+            .chance = 20,
+        }),
+        .battleAnimScript = gBattleAnimMove_PowderSnow,
     },
 
     [MOVE_FROZEN_BULLET] =

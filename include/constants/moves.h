@@ -1121,11 +1121,11 @@ enum __attribute__((packed)) Move
 #define MOVE_BUBBLE MOVE_BUBBLES                    //30 power special move
 #define MOVE_ICY_WIND MOVE_ADHESIVE_BUBBLE          //30 power special move, lowers speed
 #define MOVE_MACH_PUNCH MOVE_MACH_JAB
-#define MOVE_POUND MOVE_STRIKE
-#define MOVE_DOUBLE_SLAP MOVE_SUPER_SLAP
-#define MOVE_SLAM MOVE_HEAVY_STRIKE
-#define MOVE_MEGA_PUNCH MOVE_MEGATON_PUNCH
-#define MOVE_QUICK_ATTACK MOVE_SONIC_JAB
+#define MOVE_POUND MOVE_STRIKE                      //45 power physical move
+#define MOVE_SLAM MOVE_HEAVY_STRIKE                 //60 power physical move, 95% accuracy, high crit ratio
+#define MOVE_MEGA_PUNCH MOVE_MEGATON_PUNCH          //80 power physical move, 85% accuracy
+#define MOVE_QUICK_ATTACK MOVE_SONIC_JAB            //40 power physical move, +1 priority
+#define MOVE_DOUBLE_SLAP MOVE_SUPER_SLAP            //20 power physical multi hit move
 #define MOVE_RAPID_SPIN MOVE_SPIRAL_EDGE
 #define MOVE_WORK_UP MOVE_MUSCLE_CHARGE
 #define MOVE_SHARPEN MOVE_ATTACK_CHARGE
