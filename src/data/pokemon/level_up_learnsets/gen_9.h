@@ -22506,8 +22506,8 @@ static const struct LevelUpMove sTsunomonLevelUpLearnset[] = {
 
 //SPECIES_AGUMON
 static const struct LevelUpMove sAgumonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE(0, MOVE_PEPPER_BREATH),
-    LEVEL_UP_MOVE(1, MOVE_PEPPER_BREATH),
+    LEVEL_UP_MOVE(0, MOVE_SPITFIRE),
+    LEVEL_UP_MOVE(1, MOVE_SPITFIRE),
     LEVEL_UP_MOVE(1, MOVE_STRIKE),
     LEVEL_UP_MOVE(1, MOVE_GROWL),
     LEVEL_UP_MOVE(1, MOVE_ATTACK_CHARGE),
@@ -22912,6 +22912,7 @@ static const struct LevelUpMove sTsukaimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(10, MOVE_BAD_MANNERS),
     LEVEL_UP_MOVE(12, MOVE_BLACKOUT),
     LEVEL_UP_MOVE(14, MOVE_GLOOM_DUST),
+    LEVEL_UP_MOVE(20, MOVE_FRIENDLY_FIRE),
     LEVEL_UP_END
 };
 

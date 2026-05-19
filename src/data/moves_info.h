@@ -186,29 +186,29 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_DOUBLE_SLAP] =
-    {
-        .name = COMPOUND_STRING("Double Slap"),
-        .description = COMPOUND_STRING(
-            "Repeatedly slaps the foe\n"
-            "2 to 5 times."),
-        .effect = EFFECT_HIT,
-        .power = 15,
-        .type = TYPE_NORMAL,
-        .accuracy = 85,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .multiHit = TRUE,
-        .makesContact = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
-        .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_CUTE : CONTEST_CATEGORY_TOUGH,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_POUND},
-        .battleAnimScript = gBattleAnimMove_DoubleSlap,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_DOUBLE_SLAP] =
+    //{
+    //    .name = COMPOUND_STRING("Double Slap"),
+    //    .description = COMPOUND_STRING(
+    //        "Repeatedly slaps the foe\n"
+    //        "2 to 5 times."),
+    //    .effect = EFFECT_HIT,
+    //    .power = 15,
+    //    .type = TYPE_NORMAL,
+    //    .accuracy = 85,
+    //    .pp = 10,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_PHYSICAL,
+    //    .multiHit = TRUE,
+    //    .makesContact = TRUE,
+    //    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+    //    .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_CUTE : CONTEST_CATEGORY_TOUGH,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {COMBO_STARTER_POUND},
+    //    .battleAnimScript = gBattleAnimMove_DoubleSlap,
+     //   .validApprenticeMove = TRUE,
+    //},
 
     //[MOVE_COMET_PUNCH] =
     //{
@@ -6958,32 +6958,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_HEAT_WAVE] =
-    {
-        .name = COMPOUND_STRING("Heat Wave"),
-        .description = COMPOUND_STRING(
-            "Exhales a hot breath on the\n"
-            "foes. May inflict a burn."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 95 : 100,
-        .type = TYPE_FIRE,
-        .accuracy = 90,
-        .pp = 10,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .windMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 10,
-        }),
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MONS : CONTEST_EFFECT_HIGHLY_APPEALING,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
-        .battleAnimScript = gBattleAnimMove_HeatWave,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_HEAT_WAVE] =
+    //{
+    //    .name = COMPOUND_STRING("Heat Wave"),
+    //    .description = COMPOUND_STRING(
+   //         "Exhales a hot breath on the\n"
+    //        "foes. May inflict a burn."),
+     //   .effect = EFFECT_HIT,
+     //   .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 95 : 100,
+    //    .type = TYPE_FIRE,
+    //    .accuracy = 90,
+     //   .pp = 10,
+     //   .target = TARGET_BOTH,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_SPECIAL,
+    //    .windMove = TRUE,
+    //    .additionalEffects = ADDITIONAL_EFFECTS({
+    //        .moveEffect = MOVE_EFFECT_BURN,
+    //        .chance = 10,
+    //    }),
+    //    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MONS : CONTEST_EFFECT_HIGHLY_APPEALING,
+    //    .contestCategory = CONTEST_CATEGORY_BEAUTY,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
+    //    .battleAnimScript = gBattleAnimMove_HeatWave,
+    //    .validApprenticeMove = TRUE,
+    //},
 
     [MOVE_HAIL] =
     {
@@ -23032,26 +23032,85 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Bubble,
     },
 
-    [MOVE_PEPPER_BREATH] =
+    [MOVE_ADHESIVE_BUBBLE] =
     {
-        .name = COMPOUND_STRING("Pepper Breath"),
+        .name = COMPOUND_STRING("Adhesive Bubble"),
         .description = COMPOUND_STRING(
-            "A physical fire-ball. May burn\n"
-            "the target. Baby Flame!"),
-        .power = 50,
+            "Spits out sticky bubbles\n"
+            "that lower Speed."),
+        .effect = EFFECT_SPEED_DOWN,
+        .power = 30,
+        .type = TYPE_FREE,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .soundMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_Bubble,
+    },
+
+    [MOVE_SPITFIRE] =
+    {
+        .name = COMPOUND_STRING("Spitfire"),
+        .description = COMPOUND_STRING(
+            "Shoots a tiny fireball. Very\n"
+            "quick to fire, so +1 priority."),
+        .power = 40,
         .effect = EFFECT_HIT,
         .type = TYPE_FIRE,
         .accuracy = 100,
+        .priority = 1,
         .pp = 20,
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_Incinerate,
+    },
+
+    [MOVE_FIRE_BALL] =
+    {
+        .name = COMPOUND_STRING("Fire Ball"),
+        .description = COMPOUND_STRING(
+            "Spits out a ball of flame.\n"
+            "Can cause burns."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_BURN,
             .chance = 20,
         }),
-        .ballisticMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_Incinerate,
+        .battleAnimScript = gBattleAnimMove_FlameBurst,
+    },
+
+    [MOVE_FRIENDLY_FIRE] =
+    {
+        .name = COMPOUND_STRING("Friendly Fire"),
+        .description = COMPOUND_STRING(
+            "Damages everyone with a \n"
+            "wave of burning cinders."),
+        .effect = TARGET_FOES_AND_ALLY,
+        .power = 70,
+        .type = TYPE_FIRE,
+        .accuracy = 90,
+        .pp = 10,
+        .target = TARGET_ALL,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .windMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 10,
+        }),
+        .battleAnimScript = gBattleAnimMove_HeatWave,
+        .validApprenticeMove = TRUE,
     },
 
     [MOVE_PANIC_WISP] =
@@ -23076,26 +23135,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_WillOWisp,
     },
 
-    [MOVE_FIRE_BALL] =
-    {
-        .name = COMPOUND_STRING("Fire Ball"),
-        .description = COMPOUND_STRING(
-            "Spits out a ball of flame.\n"
-            "Can cause burns."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_FIRE,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 20,
-        }),
-        .battleAnimScript = gBattleAnimMove_FlameBurst,
-    },
+//-------WATER----------------------------------------------------------------------
+
 
     [MOVE_BUBBLE_BREATH] =
     {
@@ -23133,24 +23174,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .damagesUnderwater = TRUE,
         .battleAnimScript = gBattleAnimMove_Whirlpool,
         .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_ADHESIVE_BUBBLE] =
-    {
-        .name = COMPOUND_STRING("Adhesive Bubble"),
-        .description = COMPOUND_STRING(
-            "Spits out sticky bubbles\n"
-            "that lower Speed."),
-        .effect = EFFECT_SPEED_DOWN,
-        .power = 30,
-        .type = TYPE_FREE,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .soundMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_Bubble,
     },
 
     [MOVE_NAIL_SCRATCH] =
@@ -23366,7 +23389,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .moveEffect = MOVE_EFFECT_SLEEP,
             .chance = 10,
         }),
-        .battleAnimScript = gBattleAnimMove_ConfuseRay,
+        .battleAnimScript = gBattleAnimMove_Hex,
     },
 
     [MOVE_CANDLE_SLASH] =
@@ -23511,6 +23534,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
+    [MOVE_SUPER_SLAP] =
+    {
+        .name = COMPOUND_STRING("Super Slap"),
+        .description = COMPOUND_STRING(
+            "Repeatedly slaps the foe\n"
+            "2 to 5 times."),
+        .effect = EFFECT_HIT,
+        .power = 20,
+        .type = TYPE_NEUTRAL,
+        .accuracy = 90,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .multiHit = TRUE,
+        .makesContact = TRUE,
+        .battleAnimScript = gBattleAnimMove_DoubleSlap,
+        .validApprenticeMove = TRUE,
+    },
+
+//-------ICE MOVES----------------------------------------------------------------------
+
     [MOVE_FROZEN_WIND] =
     {
         .name = COMPOUND_STRING("Frozen Wind"),
@@ -23638,24 +23683,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_STATUS,
         .snatchAffected = TRUE,
         .battleAnimScript = gBattleAnimMove_WorkUp,
-    },
-
-    [MOVE_AQUA_MAGIC] =
-    {
-        .name = COMPOUND_STRING("Aqua Magic"),
-        .description = COMPOUND_STRING(
-            "Gathers Water Magic. Gives \n"
-            "itself or an ally +1 Sp Attack."),
-        .effect = EFFECT_SPECIAL_ATTACK_UP,
-        .power = 0,
-        .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 20,
-        .target = TARGET_USER_OR_ALLY,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .snatchAffected = TRUE,
-        .battleAnimScript = gBattleAnimMove_AquaRing,
     },
 
     [MOVE_MUSCLE_CHARGE] =
@@ -24182,6 +24209,26 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Bubble,
         .validApprenticeMove = TRUE,
     },
+
+    [MOVE_AQUA_MAGIC] =
+    {
+        .name = COMPOUND_STRING("Aqua Magic"),
+        .description = COMPOUND_STRING(
+            "Gathers Water Magic. Gives \n"
+            "itself or an ally +1 Sp Attack."),
+        .effect = EFFECT_SPECIAL_ATTACK_UP,
+        .power = 0,
+        .type = TYPE_WATER,
+        .accuracy = 0,
+        .pp = 20,
+        .target = TARGET_USER_OR_ALLY,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .snatchAffected = TRUE,
+        .battleAnimScript = gBattleAnimMove_AquaRing,
+    },
+
+//---------------------------DARK MOVES---------------------------
 
     [MOVE_HELL_CRUSHER] =
     {

@@ -7,8 +7,9 @@ enum __attribute__((packed)) Move
     //MOVE_POUND = 1,
     MOVE_STRIKE = 1,//replaces pound
     MOVE_KARATE_CHOP = 2,
-    MOVE_DOUBLE_SLAP = 3,
-    MOVE_DOUBLESLAP = MOVE_DOUBLE_SLAP, // Pre-Gen VI name
+    MOVE_SUPER_SLAP = 2, //digi move, replaces double slap
+    //MOVE_DOUBLE_SLAP = 3,
+    //MOVE_DOUBLESLAP = MOVE_DOUBLE_SLAP, // Pre-Gen VI name
     //MOVE_COMET_PUNCH = 4,
     MOVE_SHAMA_HAMMER = 4,//digi move, replaces comet punch
     //MOVE_MEGA_PUNCH = 5,
@@ -76,7 +77,7 @@ enum __attribute__((packed)) Move
     //MOVE_ACID = 51,
     MOVE_POOP_THROW = 51, // Digimon move
     //MOVE_EMBER = 52,
-    MOVE_PEPPER_BREATH = 52, // Digimon move
+    MOVE_SPITFIRE = 52, // Digimon move
     MOVE_FLAMETHROWER = 53,
     MOVE_MIST = 54,
     MOVE_WATER_GUN = 55,
@@ -171,7 +172,7 @@ enum __attribute__((packed)) Move
     MOVE_SELFDESTRUCT = MOVE_SELF_DESTRUCT, // Pre-Gen VI name
     //MOVE_EGG_BOMB = 121,
     MOVE_CHEESE_BOMB = 121, // Digimon move
-    MOVE_LICK = 122,
+    //MOVE_LICK = 122,
     MOVE_DARK_SPIRIT = 122,//digi move, replaces lick
     //MOVE_SMOG = 123,
     MOVE_GLOOM_DUST = 123, // Digimon move, replaces smog
@@ -337,7 +338,8 @@ enum __attribute__((packed)) Move
     MOVE_STOCKPILE = 254,
     MOVE_SPIT_UP = 255,
     MOVE_SWALLOW = 256,
-    MOVE_HEAT_WAVE = 257,
+    //MOVE_HEAT_WAVE = 257,
+    MOVE_FRIENDLY_FIRE = 257,
     MOVE_HAIL = 258,
     MOVE_TORMENT = 259,
     MOVE_FLATTER = 260,
@@ -1099,7 +1101,6 @@ enum __attribute__((packed)) Move
 //also because i'm adding SO MANY moves, and SO MANY ITEMS, the compile doesnt like it. so im replacing them instead as much as possible
 
 //--------ice-------------------------------
-#define MOVE_ICY_WIND MOVE_ADHESIVE_BUBBLE
 #define MOVE_POWDER_SNOW MOVE_FROZEN_WIND
 #define MOVE_ICE_SHARD MOVE_FROZEN_BULLET
 #define MOVE_AVALANCHE MOVE_DIAMOND_DUST
@@ -1117,9 +1118,11 @@ enum __attribute__((packed)) Move
 //--------Light-------------------------------
 #define MOVE_DISARMING_VOICE MOVE_HOLY_LIGHT
 //--------neutral-------------------------------
-#define MOVE_BUBBLE MOVE_BUBBLES
+#define MOVE_BUBBLE MOVE_BUBBLES                    //30 power special move
+#define MOVE_ICY_WIND MOVE_ADHESIVE_BUBBLE          //30 power special move, lowers speed
 #define MOVE_MACH_PUNCH MOVE_MACH_JAB
 #define MOVE_POUND MOVE_STRIKE
+#define MOVE_DOUBLE_SLAP MOVE_SUPER_SLAP
 #define MOVE_SLAM MOVE_HEAVY_STRIKE
 #define MOVE_MEGA_PUNCH MOVE_MEGATON_PUNCH
 #define MOVE_QUICK_ATTACK MOVE_SONIC_JAB
@@ -1145,12 +1148,23 @@ enum __attribute__((packed)) Move
 #define MOVE_DIRE_CLAW MOVE_FUNGUS_CRUSHER
 #define MOVE_SMOG MOVE_GLOOM_DUST
 //--------fire-------------------------------
-#define MOVE_EMBER MOVE_PEPPER_BREATH
-#define MOVE_FLAME_BURST MOVE_FIRE_BALL
+#define MOVE_EMBER MOVE_SPITFIRE                    //40 power special move, +1 priority
+#define MOVE_FLAME_BURST MOVE_FIRE_BALL             //40 power physical move, can burn
 #define MOVE_INCINERATE MOVE_BLUE_BLASTER
 #define MOVE_FLAME_WHEEL MOVE_GOBLIN_STRIKE
 #define MOVE_BURNING_BULWARK MOVE_FIREWALL
-#define MOVE_WILL_O_WISP MOVE_PANIC_WISP
+#define MOVE_HEAT_WAVE MOVE_FRIENDLY_FIRE           //70 power special move, targets all mons
+#define MOVE_WILL_O_WISP MOVE_PANIC_WISP            //10 power 85% accuracy, burns the target
+//--------water-------------------------------
+#define MOVE_BUBBLE_BEAM MOVE_BUBBLE_BREATH         //50 power special move
+#define MOVE_BUBBLEBEAM MOVE_BUBBLE_BREATH
+#define MOVE_WATER_PULSE MOVE_WATER_TOWER           //45 power physical move
+#define MOVE_CUT MOVE_SCISSOR_ATTACK
+#define MOVE_SURF MOVE_TIDAL_STREAM
+#define MOVE_WATER_SHURIKEN MOVE_MARCHING_FISH
+#define MOVE_HYPNOSIS MOVE_IDLE_BUBBLE              //10 power 60% accuracy special move, puts the target to sleep
+#define MOVE_WATER_SPORT MOVE_AQUA_MAGIC            //status move, +1 special attack
+#define MOVE_SING MOVE_LULLABY_BUBBLE
 //--------plant-------------------------------
 #define MOVE_VINE_WHIP MOVE_THORN_STRIKE
 #define MOVE_BRANCH_POKE MOVE_RAIN_OF_POLLEN
@@ -1159,16 +1173,6 @@ enum __attribute__((packed)) Move
 #define MOVE_SLUDGE MOVE_VENOM_TRAP
 #define MOVE_MAGICAL_LEAF MOVE_CRESCENT_LEAF
 #define MOVE_POISON_JAB MOVE_POISON_IVY
-//--------water-------------------------------
-#define MOVE_WATER_SPORT MOVE_AQUA_MAGIC
-#define MOVE_WATER_PULSE MOVE_WATER_TOWER
-#define MOVE_BUBBLE_BEAM MOVE_BUBBLE_BREATH
-#define MOVE_BUBBLEBEAM MOVE_BUBBLE_BREATH
-#define MOVE_CUT MOVE_SCISSOR_ATTACK
-#define MOVE_SURF MOVE_TIDAL_STREAM
-#define MOVE_WATER_SHURIKEN MOVE_MARCHING_FISH
-#define MOVE_HYPNOSIS MOVE_IDLE_BUBBLE
-#define MOVE_SING MOVE_LULLABY_BUBBLE
 //--------combat-------------------------------
 #define MOVE_COMET_PUNCH MOVE_SHAMA_HAMMER
 //--------beast------------------------------
