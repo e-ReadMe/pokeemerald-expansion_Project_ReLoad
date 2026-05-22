@@ -23014,415 +23014,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .ignoresProtect = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxRapidFlow,
     },
-//------------------------------------FIRE------------------------------------------------------------
 
-    [MOVE_SPITFIRE] =
-    {
-        .name = COMPOUND_STRING("Spitfire"),
-        .description = COMPOUND_STRING(
-            "Shoots a tiny fireball. Very\n"
-            "quick to fire, so +1 priority."),
-        .power = 40,
-        .effect = EFFECT_HIT,
-        .type = TYPE_FIRE,
-        .accuracy = 100,
-        .priority = 1,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .ballisticMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_Incinerate,
-    },
-
-    [MOVE_FIRE_BALL] =
-    {
-        .name = COMPOUND_STRING("Fire Ball"),
-        .description = COMPOUND_STRING(
-            "Spits out a ball of flame.\n"
-            "Can cause burns."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_FIRE,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 20,
-        }),
-        .battleAnimScript = gBattleAnimMove_FlameBurst,
-    },
-
-    [MOVE_FRIENDLY_FIRE] =
-    {
-        .name = COMPOUND_STRING("Friendly Fire"),
-        .description = COMPOUND_STRING(
-            "Damages everyone with a \n"
-            "wave of burning cinders."),
-        .effect = TARGET_FOES_AND_ALLY,
-        .power = 70,
-        .type = TYPE_FIRE,
-        .accuracy = 90,
-        .pp = 10,
-        .target = TARGET_ALL,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .windMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 10,
-        }),
-        .battleAnimScript = gBattleAnimMove_HeatWave,
-        .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_PANIC_WISP] =
-    {
-        .name = COMPOUND_STRING("Panic Wisp"),
-        .description = COMPOUND_STRING(
-            "Uses magical fire to\n"
-            "burn the foe"),
-        .power = 10,
-        .effect = EFFECT_HIT,
-        .type = TYPE_FIRE,
-        .accuracy = 85,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 100,
-        }),
-        .ballisticMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_WillOWisp,
-    },
-
-//-------WATER----------------------------------------------------------------------
-
-
-    [MOVE_BUBBLE_BREATH] =
-    {
-        .name = COMPOUND_STRING("Bubble Breath"),
-        .description = COMPOUND_STRING(
-            "Spews forth a blast of frothy\n"
-            "bubbles to strike the foe."),
-        .power = 50,
-        .effect = EFFECT_HIT,
-        .type = TYPE_WATER,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .ballisticMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_BubbleBeam,
-    },
-
-    [MOVE_WATER_TOWER] =
-    {
-        .name = COMPOUND_STRING("Water Tower"),
-        .description = COMPOUND_STRING(
-            "Makes a geyser of water erupt\n"
-            "from underneath the foe."),
-        .effect = EFFECT_HIT,
-        .power = 45,
-        .type = TYPE_WATER,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
-        .damagesUnderwater = TRUE,
-        .battleAnimScript = gBattleAnimMove_Whirlpool,
-        .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_NAIL_SCRATCH] =
-    {
-        .name = COMPOUND_STRING("Nail Scratch"),
-        .description = COMPOUND_STRING(
-            "Scratches the foe with\n"
-            "sharp claws."),
-        .effect = EFFECT_HIT,
-        .power = 30,
-        .type = TYPE_DARK,
-        .accuracy = 100,
-        .pp = 35,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .battleAnimScript = gBattleAnimMove_Scratch,
-    },
-
-    [MOVE_AIR_BUBBLES] =
-    {
-        .name = COMPOUND_STRING("Air Bubbles"),
-        .description = COMPOUND_STRING(
-            "Spits some bubbles filled with a\n"
-            "tiny gale."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_WIND,
-        .accuracy = 100,
-        .pp = 35,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .battleAnimScript = gBattleAnimMove_Bubble,
-    },
-
-    [MOVE_WIND_CLAW] =
-    {
-        .name = COMPOUND_STRING("Wind Claw"),
-        .description = COMPOUND_STRING(
-            "Strikes the foe with a sharp\n"
-            "claw imbued with wind."),
-        .effect = EFFECT_HIT,
-        .power = 50,
-        .type = TYPE_WIND,
-        .accuracy = 100,
-        .pp = 35,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .battleAnimScript = gBattleAnimMove_CrushClaw,
-    },
-
-    [MOVE_AIR_SHOT] =
-    {
-        .name = COMPOUND_STRING("Air Shot"),
-        .description = COMPOUND_STRING(
-            "Sucks in air then shoots it\n"
-            "in one burst. High crit ratio."),
-        .effect = EFFECT_HIT,
-        .power = 55,
-        .type = TYPE_WIND,
-        .accuracy = 95,
-        .criticalHitStage = 2,
-        .pp = 25,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .windMove = TRUE,
-        .slicingMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_AirCutter,
-        .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_DARK_TWISTER] =
-    {
-        .name = COMPOUND_STRING("Dark Twister"),
-        .description = COMPOUND_STRING(
-            "Whips up a vicious twister\n"
-            "to tear at foes. May flinch."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_WIND,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
-        .damagesAirborneDoubleDamage = TRUE,
-        .windMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 20,
-        }),
-        .battleAnimScript = gBattleAnimMove_Twister,
-    },
-
-    [MOVE_THORN_STRIKE] =
-    {
-        .name = COMPOUND_STRING("Thorn Strike"),
-        .description = COMPOUND_STRING(
-            "Strikes the foe with\n"
-            "slender, whiplike vines."),
-            .pp = 25,
-        .effect = EFFECT_HIT,
-        .power = 45,
-        .type = TYPE_PLANT,
-        .accuracy = 100,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .makesContact = FALSE,
-        .battleAnimScript = gBattleAnimMove_VineWhip,
-    },
-
-    [MOVE_COMET_HAMMER] =
-    {
-        .name = COMPOUND_STRING("Comet Hammer"),
-        .description = COMPOUND_STRING(
-            "A move that sounds tough,\n"
-            "but it doesn't do much."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_BEAST,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .battleAnimScript = gBattleAnimMove_RockThrow,
-    },
-
-    [MOVE_SPIN_ATTACK] =
-    {
-        .name = COMPOUND_STRING("Spin Attack"),
-        .description = COMPOUND_STRING(
-            "Damages surrounding enemies\n"
-            "by rapidly spinning."),
-        .effect = EFFECT_RAPID_SPIN,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_PLUS_1,
-        }),
-        .power = 30,
-        .type = TYPE_ROCK,
-        .accuracy = 90,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .instructBanned = TRUE,
-        .parentalBondBanned = TRUE,
-        .battleAnimScript = gBattleAnimMove_RapidSpin,
-        .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_HERTZ_HOWL] =
-    {
-        .name = COMPOUND_STRING("Hertz Howl"),
-        .description = COMPOUND_STRING(
-            "Attacks with a resonance\n"
-            "that may paralyze."),
-        .effect = EFFECT_HIT,
-        .power = 30,
-        .type = TYPE_METAL,
-        .accuracy = 100,
-        .pp = 40,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .soundMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_MetalSound,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
-            .chance = 20,
-        })
-    },
-
-    [MOVE_FOX_TAIL] =
-    {
-        .name = COMPOUND_STRING("Fox Tail"),
-        .description = COMPOUND_STRING(
-            "Puffs up its tail to\n"
-            "strike the opponent."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_PUPPET,
-        .accuracy = 100,
-        .pp = 40,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .battleAnimScript = gBattleAnimMove_TailWhip,
-    },
-
-    [MOVE_NIGHTMARE_SYNDROME] =
-    {
-        .name = COMPOUND_STRING("Nightmare Syndrome"),
-        .description = COMPOUND_STRING(
-            "Attacks with captured\n"
-            "nightmares. May cause sleep."),
-        .effect = EFFECT_HIT,
-        .power = 60,
-        .type = TYPE_DARK,
-        .accuracy = 100,
-        .pp = 40,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SLEEP,
-            .chance = 10,
-        }),
-        .battleAnimScript = gBattleAnimMove_Hex,
-    },
-
-    [MOVE_CANDLE_SLASH] =
-    {
-        .name = COMPOUND_STRING("Candle Slash"),
-        .description = COMPOUND_STRING(
-            "Strikes out with a cutlass of\n"
-            " wax. Can crit or burn easily."),
-        .effect = EFFECT_HIT,
-        .power = 50,
-        .type = TYPE_UNDEAD,
-        .accuracy = 90,
-        .criticalHitStage = 1,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 10,
-        }),
-        .battleAnimScript = gBattleAnimMove_Slash,
-    },
-
-    [MOVE_CHEESE_BOMB] =
-    {
-        .name = COMPOUND_STRING("Cheese Bomb"),
-        .description = COMPOUND_STRING(
-            "Throws cheese at the foe,\n"
-            "whether they like it or not."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_FILTH,
-        .accuracy = 75,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .ballisticMove = TRUE,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
-        .contestCategory = CONTEST_CATEGORY_COOL,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_GROWTH},
-        .battleAnimScript = gBattleAnimMove_EggBomb,
-    },
-
-    [MOVE_POOP_THROW] =
-    {
-        .name = COMPOUND_STRING("Poop Throw"),
-        .description = COMPOUND_STRING(
-            "Just what it sounds like.\n"
-            "Foe can no longer eat food."),
-        .effect = EFFECT_EMBARGO,
-        .power = 40,
-        .type = TYPE_FILTH,
-        .accuracy = 75,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .ballisticMove = TRUE,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
-        .contestCategory = CONTEST_CATEGORY_COOL,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_GROWTH},
-        .battleAnimScript = gBattleAnimMove_EggBomb,
-    },
 
 //-------NEUTRAL-------------------------------------------------------------------------------------------------------------------
 
@@ -23459,6 +23051,25 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .soundMove = TRUE,
         .battleAnimScript = gBattleAnimMove_Bubble,
+    },
+	
+    [MOVE_MACH_JAB] =
+    {
+        .name = COMPOUND_STRING("Mach Jab"),
+        .description = COMPOUND_STRING(
+            "A jab is thrown at wicked\n"
+            "speed to strike first."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_BEAST,
+        .accuracy = 100,
+        .pp = 30,
+        .target = TARGET_SELECTED,
+        .priority = 1,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .battleAnimScript = gBattleAnimMove_MachPunch,
+        .validApprenticeMove = TRUE,
     },
 
     [MOVE_STRIKE] =
@@ -23518,25 +23129,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_SONIC_JAB] =
-    {
-        .name = COMPOUND_STRING("Sonic Jab"),
-        .description = COMPOUND_STRING(
-            "An extremely fast attack\n"
-            "that always strikes first."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_NEUTRAL,
-        .accuracy = 100,
-        .pp = 30,
-        .target = TARGET_SELECTED,
-        .priority = 1,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .battleAnimScript = gBattleAnimMove_QuickAttack,
-        .validApprenticeMove = TRUE,
-    },
-
     [MOVE_SUPER_SLAP] =
     {
         .name = COMPOUND_STRING("Super Slap"),
@@ -23557,25 +23149,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-//-------ICE MOVES----------------------------------------------------------------------
-
-
-    [MOVE_GAIA_BLAST] =
+    [MOVE_SPIRAL_EDGE] =
     {
-        .name = COMPOUND_STRING("Gaia Blast"),
+        .name = COMPOUND_STRING("Spiral Edge"),
         .description = COMPOUND_STRING(
-            "Attacks with all the magic\n"
-            "of the Earth."),
-        .effect = EFFECT_HIT,
+            "User spins and removes some\n"
+            "effects, while upping speed."),
+        .effect = EFFECT_RAPID_SPIN,
         .power = 50,
-        .type = TYPE_ROCK,
-        .accuracy = 90,
-        .pp = 15,
+        .type = TYPE_NEUTRAL,
+        .accuracy = 100,
+        .pp = 40,
         .target = TARGET_SELECTED,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .battleAnimScript = gBattleAnimMove_AncientPower,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SPD_PLUS_1,
+            .self = TRUE,
+            .chance = 100,
+        }),
+        .battleAnimScript = gBattleAnimMove_RapidSpin,
+        .validApprenticeMove = TRUE,
     },
 
     [MOVE_ATTACK_CHARGE] =
@@ -23596,24 +23191,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_WorkUp,
     },
 
-    [MOVE_GUARD_CHARGE] =
-    {
-        .name = COMPOUND_STRING("Guard Charge"),
-        .description = COMPOUND_STRING(
-            "Gathers digi-energy to give\n"
-            "itself or an ally +1 defense."),
-        .effect = EFFECT_DEFENSE_UP,
-        .power = 0,
-        .type = TYPE_NEUTRAL,
-        .accuracy = 0,
-        .pp = 20,
-        .target = TARGET_USER_OR_ALLY,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .snatchAffected = TRUE,
-        .battleAnimScript = gBattleAnimMove_WorkUp,
-    },
-
     [MOVE_MENTAL_CHARGE] =
     {
         .name = COMPOUND_STRING("Mental Charge"),
@@ -23621,42 +23198,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Gathers digi-energy to give\n"
             "itself or an ally +1 Sp. Atk."),
         .effect = EFFECT_SPECIAL_ATTACK_UP,
-        .power = 0,
-        .type = TYPE_NEUTRAL,
-        .accuracy = 0,
-        .pp = 20,
-        .target = TARGET_USER_OR_ALLY,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .snatchAffected = TRUE,
-        .battleAnimScript = gBattleAnimMove_WorkUp,
-    },
-
-    [MOVE_MAGIC_CHARGE] =
-    {
-        .name = COMPOUND_STRING("Magic Charge"),
-        .description = COMPOUND_STRING(
-            "Gathers digi-energy to give\n"
-            "itself or an ally +1 Sp. Def."),
-        .effect = EFFECT_SPECIAL_DEFENSE_UP,
-        .power = 0,
-        .type = TYPE_NEUTRAL,
-        .accuracy = 0,
-        .pp = 20,
-        .target = TARGET_USER_OR_ALLY,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .snatchAffected = TRUE,
-        .battleAnimScript = gBattleAnimMove_WorkUp,
-    },
-
-    [MOVE_SPEED_CHARGE] =
-    {
-        .name = COMPOUND_STRING("Speed Charge"),
-        .description = COMPOUND_STRING(
-            "Gathers digi-energy to give\n"
-            "itself or an ally +1 speed."),
-        .effect = EFFECT_SPEED_UP,
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 0,
@@ -23688,6 +23229,81 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_WorkUp,
     },
 
+    [MOVE_GUARD_CHARGE] =
+    {
+        .name = COMPOUND_STRING("Guard Charge"),
+        .description = COMPOUND_STRING(
+            "Gathers digi-energy to give\n"
+            "itself or an ally +1 defense."),
+        .effect = EFFECT_DEFENSE_UP,
+        .power = 0,
+        .type = TYPE_NEUTRAL,
+        .accuracy = 0,
+        .pp = 20,
+        .target = TARGET_USER_OR_ALLY,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .snatchAffected = TRUE,
+        .battleAnimScript = gBattleAnimMove_WorkUp,
+    },
+
+    [MOVE_MAGIC_CHARGE] =
+    {
+        .name = COMPOUND_STRING("Magic Charge"),
+        .description = COMPOUND_STRING(
+            "Gathers digi-energy to give\n"
+            "itself or an ally +1 Sp. Def."),
+        .effect = EFFECT_SPECIAL_DEFENSE_UP,
+        .power = 0,
+        .type = TYPE_NEUTRAL,
+        .accuracy = 0,
+        .pp = 20,
+        .target = TARGET_USER_OR_ALLY,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .snatchAffected = TRUE,
+        .battleAnimScript = gBattleAnimMove_WorkUp,
+    },
+
+    [MOVE_GUARD_FIELD] =
+    {
+        .name = COMPOUND_STRING("Guard Field"),
+        .description = COMPOUND_STRING(
+            "Raises the defence on its'\n"
+            "side of the field for 5 turns."),
+        .effect = EFFECT_REFLECT,
+        .power = 0,
+        .type = TYPE_NEUTRAL,
+        .accuracy = 0,
+        .pp = 20,
+        .target = TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .snatchAffected = TRUE,
+        .battleAnimScript = gBattleAnimMove_Reflect,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_SPEED_CHARGE] =
+    {
+        .name = COMPOUND_STRING("Speed Charge"),
+        .description = COMPOUND_STRING(
+            "Gathers digi-energy to give\n"
+            "itself or an ally +1 speed."),
+        .effect = EFFECT_SPEED_UP,
+        .power = 0,
+        .type = TYPE_NEUTRAL,
+        .accuracy = 0,
+        .pp = 20,
+        .target = TARGET_USER_OR_ALLY,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .snatchAffected = TRUE,
+        .battleAnimScript = gBattleAnimMove_WorkUp,
+    },
+	
     [MOVE_CRITICAL_CHARGE] =
     {
         .name = COMPOUND_STRING("Critical Charge"),
@@ -23710,24 +23326,24 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_GUARD_FIELD] =
+    [MOVE_MASS_MORPH] =
     {
-        .name = COMPOUND_STRING("Guard Field"),
+        .name = COMPOUND_STRING("Mass Morph"),
         .description = COMPOUND_STRING(
-            "Raises the defence on its'\n"
-            "side of the field for 5 turns."),
-        .effect = EFFECT_REFLECT,
+            "Rearranges the target's data\n"
+            "to raise evasiveness."),
+        .effect = EFFECT_MINIMIZE,
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 0,
-        .pp = 20,
-        .target = TARGET_USER,
+        .pp = 10,
+        .target = TARGET_USER_OR_ALLY,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
         .ignoresProtect = TRUE,
         .mirrorMoveBanned = TRUE,
         .snatchAffected = TRUE,
-        .battleAnimScript = gBattleAnimMove_Reflect,
+        .battleAnimScript = gBattleAnimMove_Minimize,
         .validApprenticeMove = TRUE,
     },
 
@@ -23753,14 +23369,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Speed Break"),
         .description = COMPOUND_STRING(
-            "Ensnares a foe and slows\n"
-            "them down. -1 speed. "),
+            "Ensnares the foes and\n"
+            "slows them down. -1 speed. "),
         .effect = EFFECT_SPEED_DOWN,
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 100,
         .pp = 30,
-        .target = TARGET_SELECTED,
+        .target = TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
         .magicCoatAffected = TRUE,
@@ -23808,150 +23424,47 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Refresh,
     },
 
-    [MOVE_MASS_MORPH] =
-    {
-        .name = COMPOUND_STRING("Mass Morph"),
-        .description = COMPOUND_STRING(
-            "Rearranges the target's data\n"
-            "to raise evasiveness."),
-        .effect = EFFECT_MINIMIZE,
-        .power = 0,
-        .type = TYPE_NEUTRAL,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_USER_OR_ALLY,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .snatchAffected = TRUE,
-        .battleAnimScript = gBattleAnimMove_Minimize,
-        .validApprenticeMove = TRUE,
-    },
 
-    [MOVE_ELECTRIC_CLOUD] =
+//------------------------------------FIRE------------------------------------------------------------
+
+    [MOVE_SPITFIRE] =
     {
-        .name = COMPOUND_STRING("Electric Cloud"),
+        .name = COMPOUND_STRING("Spitfire"),
         .description = COMPOUND_STRING(
-            "Gathers static electricity in\n"
-            "the air, paralysing the target"),
-        .effect = EFFECT_NON_VOLATILE_STATUS,
-        .power = 0,
-        .type = TYPE_ELECTRIC,
+            "Shoots a tiny fireball. Very\n"
+            "quick to fire, so +1 priority."),
+        .power = 40,
+        .effect = EFFECT_HIT,
+        .type = TYPE_FIRE,
         .accuracy = 100,
+        .priority = 1,
         .pp = 20,
         .target = TARGET_SELECTED,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .nonVolatileStatus = MOVE_EFFECT_PARALYSIS },
-        .magicCoatAffected = TRUE,
-        .battleAnimScript = gBattleAnimMove_ThunderWave,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_Incinerate,
     },
 
-    [MOVE_THUNDER_STRIKE] =
+    [MOVE_FIRE_BALL] =
     {
-        .name = COMPOUND_STRING("Thunder Strike"),
+        .name = COMPOUND_STRING("Fire Ball"),
         .description = COMPOUND_STRING(
-            "Blasts the foe with a bolt\n"
-            "of lightning. May Paralyse"),
+            "Spits out a ball of flame.\n"
+            "Can cause burns."),
         .effect = EFFECT_HIT,
         .power = 50,
-        .type = TYPE_ELECTRIC,
+        .type = TYPE_FIRE,
         .accuracy = 100,
         .pp = 15,
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .punchingMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
-            .chance = 10,
-        }),
-        .battleAnimScript = gBattleAnimMove_VoltTackle,
-        .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_ELECTRO_SHOCK] =
-    {
-        .name = COMPOUND_STRING("Electro Shock"),
-        .description = COMPOUND_STRING(
-            "Strikes the fow with an\n"
-            "electric current. Can paralyze."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_ELECTRIC,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .moveEffect = MOVE_EFFECT_BURN,
             .chance = 20,
         }),
-        .battleAnimScript = gBattleAnimMove_ThunderShock,
-    },
-
-    [MOVE_NANOBOT_BREAK] =
-    {
-        .name = COMPOUND_STRING("Nanobot Break"),
-        .description = COMPOUND_STRING(
-            "Summons nanobots to shock\n"
-            "the foe. Can paralyze."),
-        .effect = EFFECT_HIT,
-        .power = 55,
-        .type = TYPE_ELECTRIC,
-        .accuracy = 95,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
-            .chance = 20,
-        }),
-        .battleAnimScript = gBattleAnimMove_Infestation,
-    },
-
-    [MOVE_MINI_SCISSOR_CLAW] =
-    {
-        .name = COMPOUND_STRING("Mini Scissor Claw"),
-        .description = COMPOUND_STRING(
-            "Cuts with electrified\n"
-            "pincers.  High Crit Rate."),
-        .effect = EFFECT_HIT,
-        .power = 55,
-        .type = TYPE_ELECTRIC,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .criticalHitStage = 1,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .battleAnimScript = gBattleAnimMove_Spark,
-    },
-
-    [MOVE_RAIN_OF_POLLEN] =
-    {
-        .name = COMPOUND_STRING("Rain of Pollen"),
-        .description = COMPOUND_STRING(
-            "Spreads allergenic pollen.\n"
-            "Lowers Evasiveness."),
-        .effect = EFFECT_HIT,
-        .power = 55,
-        .type = TYPE_PLANT,
-        .accuracy = 95,
-        .pp = 25,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_LOWER_EVASIVENESS_SIDE,
-        }),
-        .battleAnimScript = gBattleAnimMove_SweetScent,
+        .battleAnimScript = gBattleAnimMove_FlameBurst,
     },
 
     [MOVE_BLUE_BLASTER] =
@@ -23959,7 +23472,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Blue Blaster"),
         .description = COMPOUND_STRING(
             "A blast of fire that may\n"
-            "may lower the foe's defence."),
+            "may lower the foe's Sp Def."),
         .effect = EFFECT_HIT,
         .power = 50,
         .type = TYPE_FIRE,
@@ -23969,7 +23482,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
+            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
             .chance = 30,
         }),
         .battleAnimScript = gBattleAnimMove_Incinerate,
@@ -23980,9 +23493,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Goblin Strike"),
         .description = COMPOUND_STRING(
             "A sneaky fire move that\n"
-            "lowers the foe's SP Defence."),
+            "lowers the foe's Defence."),
         .effect = EFFECT_HIT,
-        .power = 45,
+        .power = 40,
         .type = TYPE_FIRE,
         .accuracy = 85,
         .pp = 15,
@@ -23990,151 +23503,118 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
-            .chance = 100,
+            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
+            .chance = 75,
         }),
         .battleAnimScript = gBattleAnimMove_FirePunch,
     },
 
-    [MOVE_SHAMA_HAMMER] =
-    {
-        .name = COMPOUND_STRING("Shama Hammer"),
-        .description = COMPOUND_STRING(
-            "Strikes using a ceremonial\n"
-            "hammer. Lowers Attack."),
-        .effect = EFFECT_HIT,
-        .power = 45,
-        .type = TYPE_EARTH,
-        .accuracy = 85,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
-            .chance = 100,
-        }),
-        .makesContact = TRUE,
-        .punchingMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_NeedleArm,
-    },
 
-    [MOVE_SNOW_GOBLI_VOLT] =
+    [MOVE_FRIENDLY_FIRE] =
     {
-        .name = COMPOUND_STRING("Snow Gobli Volt"),
+        .name = COMPOUND_STRING("Friendly Fire"),
         .description = COMPOUND_STRING(
-            "Punches with cold, clammy \n"
-            "hands. Gross. May Frostbite."),
-        .effect = EFFECT_HIT,
-        .power = 45,
-        .type = TYPE_ICE,
-        .accuracy = 85,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
-            .chance = 30,
-        }),
-        .makesContact = TRUE,
-        .punchingMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_CometPunch,
-    },
-
-
-    [MOVE_FROZEN_WIND] =
-    {
-        .name = COMPOUND_STRING("Frozen Wind"),
-        .description = COMPOUND_STRING(
-            "Spews a snowstorm from its\n"
-            "mouth. Can cause Frostbite"),
-        .effect = EFFECT_HIT,
-        .power = 50,
-        .type = TYPE_ICE,
-        .accuracy = 100,
-        .pp = 25,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
-            .chance = 20,
-        }),
-        .battleAnimScript = gBattleAnimMove_PowderSnow,
-    },
-
-    [MOVE_FROZEN_BULLET] =
-    {
-        .name = COMPOUND_STRING("Frozen Bullet"),
-        .description = COMPOUND_STRING(
-            "Hurls a chunk of ice that\n"
-            "always strikes first."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_ICE,
-        .accuracy = 100,
-        .pp = 30,
-        .target = TARGET_SELECTED,
-        .priority = 1,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .battleAnimScript = gBattleAnimMove_IceShard,
-    },
-
-    [MOVE_DIAMOND_DUST] =
-    {
-        .name = COMPOUND_STRING("Diamond Dust"),
-        .description = COMPOUND_STRING(
-            "Strikes several times using\n"
-            "a glittering hailstorm."),
-        .effect = EFFECT_HIT,
-        .power = 20,
-        .type = TYPE_ICE,
-        .accuracy = 85,
+            "Damages everyone with a \n"
+            "wave of burning cinders."),
+        .effect = TARGET_FOES_AND_ALLY,
+        .power = 60,
+        .type = TYPE_FIRE,
+        .accuracy = 90,
         .pp = 10,
-        .target = TARGET_SELECTED,
+        .target = TARGET_ALL,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .multiHit = TRUE,
-        .battleAnimScript = gBattleAnimMove_IcyWind,
-    },
-
-    [MOVE_MACH_JAB] =
-    {
-        .name = COMPOUND_STRING("Mach Jab"),
-        .description = COMPOUND_STRING(
-            "A jab is thrown at wicked\n"
-            "speed to strike first."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_BEAST,
-        .accuracy = 100,
-        .pp = 30,
-        .target = TARGET_SELECTED,
-        .priority = 1,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .battleAnimScript = gBattleAnimMove_MachPunch,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .windMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 10,
+        }),
+        .battleAnimScript = gBattleAnimMove_HeatWave,
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_DARK_SPIRIT] =
+    [MOVE_FIREWALL] =
     {
-        .name = COMPOUND_STRING("Dark Spirit"),
+        .name = COMPOUND_STRING("Firewall"),
         .description = COMPOUND_STRING(
-            "Shoots a ball of darkness at \n"
-            "the opponent"),
+            "Evades attack, and burns\n"
+            "the foe if struck."),
+        .effect = EFFECT_PROTECT,
+        .power = 0,
+        .type = TYPE_FIRE,
+        .accuracy = 0,
+        .pp = 10,
+        .target = TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .argument = { .protectMethod = PROTECT_BURNING_BULWARK },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .copycatBanned = TRUE,
+        .assistBanned = TRUE,
+        .battleAnimScript = gBattleAnimMove_BurningBulwark,
+    },
+
+    [MOVE_PANIC_WISP] =
+    {
+        .name = COMPOUND_STRING("Panic Wisp"),
+        .description = COMPOUND_STRING(
+            "Uses magical fire to\n"
+            "burn the foe"),
+        .power = 0,
         .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_DARK,
-        .accuracy = 100,
-        .pp = 30,
+        .type = TYPE_FIRE,
+        .accuracy = 85,
+        .pp = 20,
         .target = TARGET_SELECTED,
-        .priority = 1,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 100,
+        }),
+        .ballisticMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_WillOWisp,
+    },
+
+//-------WATER----------------------------------------------------------------------
+
+
+    [MOVE_BUBBLE_BREATH] =
+    {
+        .name = COMPOUND_STRING("Bubble Breath"),
+        .description = COMPOUND_STRING(
+            "Spews forth a blast of frothy\n"
+            "bubbles to strike the foe."),
+        .power = 50,
+        .effect = EFFECT_HIT,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .makesContact = TRUE,
-        .battleAnimScript = gBattleAnimMove_ShadowBall,
+        .ballisticMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_BubbleBeam,
+    },
+
+    [MOVE_WATER_TOWER] =
+    {
+        .name = COMPOUND_STRING("Water Tower"),
+        .description = COMPOUND_STRING(
+            "Makes a geyser of water erupt\n"
+            "from underneath the foe."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
+        .damagesUnderwater = TRUE,
+        .battleAnimScript = gBattleAnimMove_Whirlpool,
         .validApprenticeMove = TRUE,
     },
 
@@ -24156,6 +23636,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .slicingMove = TRUE,
         .battleAnimScript = gBattleAnimMove_Cut,
+    },
+
+    [MOVE_LULLABY_BUBBLE] =
+    {
+        .name = COMPOUND_STRING("Lullaby Bubble"),
+        .description = COMPOUND_STRING(
+            "Attacks with a song. Chance\n"
+            "to put the foe to sleep."),
+        .effect = EFFECT_HIT,
+        .power = 45,
+        .type = TYPE_WATER,
+        .accuracy = 90,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SLEEP,
+            .chance = 30,
+        }),
+        .battleAnimScript = gBattleAnimMove_Sing,
     },
 
     [MOVE_TIDAL_STREAM] =
@@ -24202,7 +23703,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "An attack that's so weak\n"
             "it puts the foe to sleep."),
         .effect = EFFECT_NON_VOLATILE_STATUS,
-        .power = 10,
+        .power = 0,
         .type = TYPE_WATER,
         .accuracy = 60,
         .pp = 20,
@@ -24232,146 +23733,45 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .snatchAffected = TRUE,
         .battleAnimScript = gBattleAnimMove_AquaRing,
     },
+	
+//-----------PLANT------------------------------------------
 
-//---------------------------DARK MOVES---------------------------
-
-    [MOVE_HELL_CRUSHER] =
+    [MOVE_THORN_STRIKE] =
     {
-        .name = COMPOUND_STRING("Hell Crusher"),
+        .name = COMPOUND_STRING("Thorn Strike"),
         .description = COMPOUND_STRING(
-            "Attempts to drag the foes'\n"
-            "side of the field to hell."),
+            "Strikes the foe with\n"
+            "slender, whiplike vines."),
+            .pp = 25,
         .effect = EFFECT_HIT,
-        .power = 60,
-        .type = TYPE_DARK,
-        .accuracy = 90,
-        .pp = 15,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .battleAnimScript = gBattleAnimMove_DarkVoid,
-    },
-
-    [MOVE_HUNGRY_HAND] =
-    {
-        .name = COMPOUND_STRING("Hungry Hand"),
-        .description = COMPOUND_STRING(
-            "Drains the foe's HP with its\n"
-            "claws to restore health."),
-        .effect = EFFECT_ABSORB,
-        .power = 50,
-        .type = TYPE_DARK,
+        .power = 45,
+        .type = TYPE_PLANT,
         .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .absorbPercentage = 50 },
-        .makesContact = TRUE,
-        .healingMove = B_HEAL_BLOCKING >= GEN_6,
-        .battleAnimScript = gBattleAnimMove_HornLeech,
-    },
-
-    [MOVE_BAD_MANNERS] =
-    {
-        .name = COMPOUND_STRING("Bad Manners"),
-        .description = COMPOUND_STRING(
-            "Makes the opponent cry.\n"
-            "Lowers their Atk."),
-        .effect = EFFECT_ATTACK_DOWN,
-        .power = 0,
-        .type = TYPE_DARK,
-        .accuracy = 100,
-        .pp = 40,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .soundMove = TRUE,
-        .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
-        .battleAnimScript = gBattleAnimMove_Taunt,
-    },
-
-    [MOVE_HOLY_LIGHT] =
-    {
-        .name = COMPOUND_STRING("Holy Light"),
-        .description = COMPOUND_STRING(
-            "Summons a divine light to\n"
-            "help its friends. Can't miss."),
-        .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_LIGHT,
-        .accuracy = 0,
-        .pp = 15,
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .battleAnimScript = gBattleAnimMove_DisarmingVoice,
+        .makesContact = FALSE,
+        .battleAnimScript = gBattleAnimMove_VineWhip,
     },
 
-    [MOVE_SPIRAL_EDGE] =
+    [MOVE_RAIN_OF_POLLEN] =
     {
-        .name = COMPOUND_STRING("Spiral Edge"),
+        .name = COMPOUND_STRING("Rain of Pollen"),
         .description = COMPOUND_STRING(
-            "User spins and removes some\n"
-            "effects, while upping speed."),
-        .effect = EFFECT_RAPID_SPIN,
-        .power = 50,
-        .type = TYPE_NEUTRAL,
-        .accuracy = 100,
-        .pp = 40,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_PLUS_1,
-            .self = TRUE,
-            .chance = 100,
-        }),
-        .battleAnimScript = gBattleAnimMove_RapidSpin,
-        .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_BLACKOUT] =
-    {
-        .name = COMPOUND_STRING("Blackout"),
-        .description = COMPOUND_STRING(
-            "Drags the foe into darkness,\n"
-            "scrambling their minds."),
-        .effect = EFFECT_CONFUSE,
-        .power = 0,
-        .type = TYPE_DARK,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .magicCoatAffected = TRUE,
-        .battleAnimScript = gBattleAnimMove_ConfuseRay,
-        .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_ROCK_FIST] =
-    {
-        .name = COMPOUND_STRING("Rock Fist"),
-        .description = COMPOUND_STRING(
-            "Shoots super-hard ore at\n"
-            "the foe. May causes flinches."),
+            "Spreads allergenic pollen.\n"
+            "Lowers Evasiveness."),
         .effect = EFFECT_HIT,
         .power = 50,
-        .type = TYPE_EARTH,
-        .accuracy = 100,
+        .type = TYPE_PLANT,
+        .accuracy = 95,
         .pp = 25,
-        .target = TARGET_SELECTED,
+        .target = TARGET_BOTH,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
+        .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 30,
+            .moveEffect = MOVE_EFFECT_LOWER_EVASIVENESS_SIDE,
         }),
-        .battleAnimScript = gBattleAnimMove_KarateChop,
-        .validApprenticeMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_SweetScent,
     },
 
     [MOVE_ROOT_BIND] =
@@ -24403,17 +23803,17 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Washes the foes in hazardous\n"
             "biomass. May cause poison."),
         .effect = EFFECT_HIT,
-        .power = 55,
+        .power = 60,
         .type = TYPE_PLANT,
         .accuracy = 100,
         .pp = 25,
         .target = TARGET_BOTH,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .category = DAMAGE_CATEGORY_SPECIAL,
         .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_POISON,
-            .chance = 30,
+            .chance = 20,
         }),
         .battleAnimScript = gBattleAnimMove_SweetScent,
         .validApprenticeMove = TRUE,
@@ -24462,103 +23862,26 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_PoisonJab,
     },
 
-    [MOVE_COG_CRUSH] =
+    [MOVE_CRESCENT_LEAF] =
     {
-        .name = COMPOUND_STRING("Cog Crush"),
+        .name = COMPOUND_STRING("Crescent Leaf"),
         .description = COMPOUND_STRING(
-            "Nastily crushes the foe\n"
-            "between gears. Always hits."),
-        .effect = EFFECT_HIT,
-        .power = 50,
-        .type = TYPE_DARK,
-        .accuracy = 0,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .battleAnimScript = gBattleAnimMove_GearGrind,
-    },
-
-    [MOVE_IRON_SLASH] =
-    {
-        .name = COMPOUND_STRING("Iron Slash"),
-        .description = COMPOUND_STRING(
-            "Cuts the foe with cold steel.\n"
-            "Increased Critical Hit rate."),
-        .effect = EFFECT_HIT,
-        .power = 55,
-        .type = TYPE_METAL,
-        .accuracy = 90,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .criticalHitStage = 1,
-        .battleAnimScript = gBattleAnimMove_MetalClaw,
-        .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_CRUSH_BLADE] =
-    {
-        .name = COMPOUND_STRING("Crush Blade"),
-        .description = COMPOUND_STRING(
-            "Spinning blades crush the\n"
-            "foe, preventing their escape."),
-        .effect = EFFECT_MEAN_LOOK,
-        .power = 50,
-        .type = TYPE_METAL,
-        .accuracy = 90,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .criticalHitStage = 1,
-        .battleAnimScript = gBattleAnimMove_GearGrind,
-        .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_DIS_ASSEMBLER] =
-    {
-        .name = COMPOUND_STRING("Dis-Assembler"),
-        .description = COMPOUND_STRING(
-            "Throws scrap metal using\n"
-            "electromagnetism. Can't miss."),
+            "Attacks with a strange leaf\n"
+            "that cannot be evaded."),
         .effect = EFFECT_HIT,
         .power = 60,
-        .type = TYPE_METAL,
+        .type = TYPE_PLANT,
         .accuracy = 0,
         .pp = 20,
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .ballisticMove = TRUE,
-        .battleAnimScript = gBattleAnimMove_MagnetBomb,
+        .battleAnimScript = gBattleAnimMove_MagicalLeaf,
+        .validApprenticeMove = TRUE,
     },
+	
+//------------------Insect-------------------------
 
-    [MOVE_FIREWALL] =
-    {
-        .name = COMPOUND_STRING("Firewall"),
-        .description = COMPOUND_STRING(
-            "Evades attack, and burns\n"
-            "the foe if struck."),
-        .effect = EFFECT_PROTECT,
-        .power = 0,
-        .type = TYPE_FIRE,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_USER,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .protectMethod = PROTECT_BURNING_BULWARK },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .copycatBanned = TRUE,
-        .assistBanned = TRUE,
-        .battleAnimScript = gBattleAnimMove_BurningBulwark,
-    },
 
     [MOVE_ELECTRO_THREAD] =
     {
@@ -24617,25 +23940,756 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_SpiderWeb,
         .validApprenticeMove = TRUE,
     },
+	
+//------------------BEAST-------------------------
 
-    [MOVE_DANGER_STING] =
+
+    [MOVE_COMET_HAMMER] =
     {
-        .name = COMPOUND_STRING("Danger Sting"),
+        .name = COMPOUND_STRING("Comet Hammer"),
         .description = COMPOUND_STRING(
-            "Stabs with a stinger filled\n"
-            "with junk data. Can Poison."),
+            "A move that sounds tough,\n"
+            "but it doesn't do much."),
         .effect = EFFECT_HIT,
-        .power = 20,
-        .type = TYPE_FILTH,
+        .power = 40,
+        .type = TYPE_BEAST,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .battleAnimScript = gBattleAnimMove_RockThrow,
+    },
+
+    [MOVE_SPIN_ATTACK] =
+    {
+        .name = COMPOUND_STRING("Spin Attack"),
+        .description = COMPOUND_STRING(
+            "Damages surrounding enemies\n"
+            "by rapidly spinning."),
+        .effect = EFFECT_RAPID_SPIN,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SPD_PLUS_1,
+        }),
+        .power = 30,
+        .type = TYPE_ROCK,
+        .accuracy = 90,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .instructBanned = TRUE,
+        .parentalBondBanned = TRUE,
+        .battleAnimScript = gBattleAnimMove_RapidSpin,
+        .validApprenticeMove = TRUE,
+    },
+//-------------METAL-----------------------------------------------
+
+    [MOVE_HERTZ_HOWL] =
+    {
+        .name = COMPOUND_STRING("Hertz Howl"),
+        .description = COMPOUND_STRING(
+            "Attacks with a resonance\n"
+            "that may paralyze."),
+        .effect = EFFECT_HIT,
+        .power = 30,
+        .type = TYPE_METAL,
+        .accuracy = 100,
+        .pp = 40,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .soundMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_MetalSound,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 20,
+        })
+    },
+
+    [MOVE_IRON_SLASH] =
+    {
+        .name = COMPOUND_STRING("Iron Slash"),
+        .description = COMPOUND_STRING(
+            "Cuts the foe with cold steel.\n"
+            "Increased Critical Hit rate."),
+        .effect = EFFECT_HIT,
+        .power = 55,
+        .type = TYPE_METAL,
+        .accuracy = 90,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .criticalHitStage = 1,
+        .battleAnimScript = gBattleAnimMove_MetalClaw,
+        .validApprenticeMove = TRUE,
+    },
+
+
+    [MOVE_CRUSH_BLADE] =
+    {
+        .name = COMPOUND_STRING("Crush Blade"),
+        .description = COMPOUND_STRING(
+            "Spinning blades crush the\n"
+            "foe, preventing their escape."),
+        .effect = EFFECT_MEAN_LOOK,
+        .power = 50,
+        .type = TYPE_METAL,
+        .accuracy = 90,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .criticalHitStage = 1,
+        .battleAnimScript = gBattleAnimMove_GearGrind,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_DIS_ASSEMBLER] =
+    {
+        .name = COMPOUND_STRING("Dis-Assembler"),
+        .description = COMPOUND_STRING(
+            "Throws scrap metal using\n"
+            "electromagnetism. Can't miss."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_METAL,
+        .accuracy = 0,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_MagnetBomb,
+    },
+
+//-------------------EARTH----------------------
+
+    [MOVE_SHAMA_HAMMER] =
+    {
+        .name = COMPOUND_STRING("Shama Hammer"),
+        .description = COMPOUND_STRING(
+            "Strikes using a ceremonial\n"
+            "hammer. Lowers Attack."),
+        .effect = EFFECT_HIT,
+        .power = 45,
+        .type = TYPE_EARTH,
+        .accuracy = 85,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
+            .chance = 100,
+        }),
+        .makesContact = TRUE,
+        .punchingMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_NeedleArm,
+    },
+
+    [MOVE_GAIA_BLAST] =
+    {
+        .name = COMPOUND_STRING("Gaia Blast"),
+        .description = COMPOUND_STRING(
+            "Attacks with all the magic\n"
+            "of the Earth."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_EARTH,
+        .accuracy = 90,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .makesContact = TRUE,
+        .battleAnimScript = gBattleAnimMove_AncientPower,
+    },
+
+    [MOVE_ROCK_FIST] =
+    {
+        .name = COMPOUND_STRING("Rock Fist"),
+        .description = COMPOUND_STRING(
+            "Shoots super-hard ore at\n"
+            "the foe. May causes flinches."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_EARTH,
+        .accuracy = 100,
+        .pp = 25,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+        .battleAnimScript = gBattleAnimMove_KarateChop,
+        .validApprenticeMove = TRUE,
+    },
+	
+//-------ELECTRIC----------------------------------------------------------------------
+
+
+
+    [MOVE_NANOBOT_BREAK] =
+    {
+        .name = COMPOUND_STRING("Nanobot Break"),
+        .description = COMPOUND_STRING(
+            "Summons nanobots to chase\n"
+            "the foe. Can't miss."),
+        .effect = EFFECT_HIT,
+        .power = 45,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 0,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .battleAnimScript = gBattleAnimMove_Infestation,
+    },
+
+    [MOVE_THUNDER_STRIKE] =
+    {
+        .name = COMPOUND_STRING("Thunder Strike"),
+        .description = COMPOUND_STRING(
+            "Blasts the foe with a bolt\n"
+            "of lightning. May Paralyse"),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .punchingMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 10,
+        }),
+        .battleAnimScript = gBattleAnimMove_VoltTackle,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_ELECTRO_SHOCK] =
+    {
+        .name = COMPOUND_STRING("Electro Shock"),
+        .description = COMPOUND_STRING(
+            "Strikes the fow with an\n"
+            "electric current. Can paralyze."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 20,
+        }),
+        .battleAnimScript = gBattleAnimMove_ThunderShock,
+    },
+
+    [MOVE_MINI_SCISSOR_CLAW] =
+    {
+        .name = COMPOUND_STRING("Mini Scissor Claw"),
+        .description = COMPOUND_STRING(
+            "Cuts with electrified\n"
+            "pincers.  High Crit Rate."),
+        .effect = EFFECT_HIT,
+        .power = 55,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .criticalHitStage = 1,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .battleAnimScript = gBattleAnimMove_Spark,
+    },
+
+    [MOVE_ELECTRIC_CLOUD] =
+    {
+        .name = COMPOUND_STRING("Electric Cloud"),
+        .description = COMPOUND_STRING(
+            "Gathers static electricity in\n"
+            "the air, paralysing the target"),
+        .effect = EFFECT_NON_VOLATILE_STATUS,
+        .power = 0,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .argument = { .nonVolatileStatus = MOVE_EFFECT_PARALYSIS },
+        .magicCoatAffected = TRUE,
+        .battleAnimScript = gBattleAnimMove_ThunderWave,
+    },
+	
+
+//-------------WIND-------------------------------------
+
+    [MOVE_AIR_BUBBLES] =
+    {
+        .name = COMPOUND_STRING("Air Bubbles"),
+        .description = COMPOUND_STRING(
+            "Spits some bubbles filled with a\n"
+            "tiny gale."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_WIND,
+        .accuracy = 100,
+        .pp = 35,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .battleAnimScript = gBattleAnimMove_Bubble,
+    },
+
+    [MOVE_WIND_CLAW] =
+    {
+        .name = COMPOUND_STRING("Wind Claw"),
+        .description = COMPOUND_STRING(
+            "Strikes the foe with a sharp\n"
+            "claw imbued with wind."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_WIND,
         .accuracy = 100,
         .pp = 35,
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .battleAnimScript = gBattleAnimMove_CrushClaw,
+    },
+
+    [MOVE_SONIC_JAB] =
+    {
+        .name = COMPOUND_STRING("Sonic Jab"),
+        .description = COMPOUND_STRING(
+            "An extremely fast attack\n"
+            "that always strikes first."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_WIND,
+        .accuracy = 100,
+        .pp = 30,
+        .target = TARGET_SELECTED,
+        .priority = 1,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .battleAnimScript = gBattleAnimMove_QuickAttack,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_AIR_SHOT] =
+    {
+        .name = COMPOUND_STRING("Air Shot"),
+        .description = COMPOUND_STRING(
+            "Sucks in air then shoots it\n"
+            "in one burst. High crit ratio."),
+        .effect = EFFECT_HIT,
+        .power = 55,
+        .type = TYPE_WIND,
+        .accuracy = 95,
+        .criticalHitStage = 1,
+        .pp = 25,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .windMove = TRUE,
+        .slicingMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_AirCutter,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_DARK_TWISTER] =
+    {
+        .name = COMPOUND_STRING("Dark Twister"),
+        .description = COMPOUND_STRING(
+            "Whips up a vicious twister\n"
+            "to tear at foes. May flinch."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_WIND,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
+        .damagesAirborneDoubleDamage = TRUE,
+        .windMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_POISON,
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 20,
+        }),
+        .battleAnimScript = gBattleAnimMove_Twister,
+    },
+
+//------------------------ICE-------------------------------------
+
+    [MOVE_FROZEN_WIND] =
+    {
+        .name = COMPOUND_STRING("Frozen Wind"),
+        .description = COMPOUND_STRING(
+            "Spews a snowstorm from its\n"
+            "mouth. Can cause Frostbite"),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_ICE,
+        .accuracy = 100,
+        .pp = 25,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+            .chance = 20,
+        }),
+        .battleAnimScript = gBattleAnimMove_PowderSnow,
+    },
+
+    [MOVE_FROZEN_BULLET] =
+    {
+        .name = COMPOUND_STRING("Frozen Bullet"),
+        .description = COMPOUND_STRING(
+            "Hurls a chunk of ice that\n"
+            "always strikes first."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_ICE,
+        .accuracy = 100,
+        .pp = 30,
+        .target = TARGET_SELECTED,
+        .priority = 1,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .battleAnimScript = gBattleAnimMove_IceShard,
+    },
+
+    [MOVE_DIAMOND_DUST] =
+    {
+        .name = COMPOUND_STRING("Diamond Dust"),
+        .description = COMPOUND_STRING(
+            "Strikes several times using\n"
+            "a glittering hailstorm."),
+        .effect = EFFECT_HIT,
+        .power = 20,
+        .type = TYPE_ICE,
+        .accuracy = 85,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .multiHit = TRUE,
+        .battleAnimScript = gBattleAnimMove_IcyWind,
+    },
+
+    [MOVE_SNOW_GOBLI_VOLT] =
+    {
+        .name = COMPOUND_STRING("Snow Gobli Volt"),
+        .description = COMPOUND_STRING(
+            "Punches with cold, clammy \n"
+            "hands. Gross. May Frostbite."),
+        .effect = EFFECT_HIT,
+        .power = 45,
+        .type = TYPE_ICE,
+        .accuracy = 85,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
             .chance = 30,
         }),
+        .makesContact = TRUE,
+        .punchingMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_CometPunch,
+    },
+
+//---------------------------DARK MOVES---------------------------
+
+
+    [MOVE_NIGHTMARE_SYNDROME] =
+    {
+        .name = COMPOUND_STRING("Nightmare Syndrome"),
+        .description = COMPOUND_STRING(
+            "Attacks with captured\n"
+            "nightmares. May cause sleep."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .pp = 40,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SLEEP,
+            .chance = 10,
+        }),
+        .battleAnimScript = gBattleAnimMove_Hex,
+    },
+
+    [MOVE_DARK_SPIRIT] =
+    {
+        .name = COMPOUND_STRING("Dark Spirit"),
+        .description = COMPOUND_STRING(
+            "Shoots a ball of darkness at \n"
+            "the opponent"),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .pp = 30,
+        .target = TARGET_SELECTED,
+        .priority = 1,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .makesContact = TRUE,
+        .battleAnimScript = gBattleAnimMove_ShadowBall,
+        .validApprenticeMove = TRUE,
+    },
+	
+    [MOVE_HELL_CRUSHER] =
+    {
+        .name = COMPOUND_STRING("Hell Crusher"),
+        .description = COMPOUND_STRING(
+            "Attempts to drag the foes'\n"
+            "side of the field to hell."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_DARK,
+        .accuracy = 90,
+        .pp = 15,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .battleAnimScript = gBattleAnimMove_DarkVoid,
+    },
+
+    [MOVE_NAIL_SCRATCH] =
+    {
+        .name = COMPOUND_STRING("Nail Scratch"),
+        .description = COMPOUND_STRING(
+            "Scratches the foe with\n"
+            "sharp claws."),
+        .effect = EFFECT_HIT,
+        .power = 30,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .pp = 35,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .battleAnimScript = gBattleAnimMove_Scratch,
+    },
+
+    [MOVE_COG_CRUSH] =
+    {
+        .name = COMPOUND_STRING("Cog Crush"),
+        .description = COMPOUND_STRING(
+            "Nastily crushes the foe\n"
+            "between gears. Always hits."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_DARK,
+        .accuracy = 0,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .battleAnimScript = gBattleAnimMove_GearGrind,
+    },
+
+    [MOVE_HUNGRY_HAND] =
+    {
+        .name = COMPOUND_STRING("Hungry Hand"),
+        .description = COMPOUND_STRING(
+            "Drains the foe's HP with its\n"
+            "claws to restore health."),
+        .effect = EFFECT_ABSORB,
+        .power = 50,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .argument = { .absorbPercentage = 50 },
+        .makesContact = TRUE,
+        .healingMove = B_HEAL_BLOCKING >= GEN_6,
+        .battleAnimScript = gBattleAnimMove_HornLeech,
+    },
+
+    [MOVE_BLACKOUT] =
+    {
+        .name = COMPOUND_STRING("Blackout"),
+        .description = COMPOUND_STRING(
+            "Drags the foe into darkness,\n"
+            "scrambling their minds."),
+        .effect = EFFECT_CONFUSE,
+        .power = 0,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .magicCoatAffected = TRUE,
+        .battleAnimScript = gBattleAnimMove_ConfuseRay,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_BAD_MANNERS] =
+    {
+        .name = COMPOUND_STRING("Bad Manners"),
+        .description = COMPOUND_STRING(
+            "Makes the opponent cry.\n"
+            "Lowers their Atk."),
+        .effect = EFFECT_ATTACK_DOWN,
+        .power = 0,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .pp = 40,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .soundMove = TRUE,
+        .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
+        .battleAnimScript = gBattleAnimMove_Taunt,
+    },
+	
+//----------------------LIGHT--------------------------------
+
+    [MOVE_HOLY_LIGHT] =
+    {
+        .name = COMPOUND_STRING("Holy Light"),
+        .description = COMPOUND_STRING(
+            "Summons a divine light to\n"
+            "help its friends. Can't miss."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_LIGHT,
+        .accuracy = 0,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .battleAnimScript = gBattleAnimMove_DisarmingVoice,
+    },
+
+//---------Puppet-----------------------------------------
+
+
+    [MOVE_FOX_TAIL] =
+    {
+        .name = COMPOUND_STRING("Fox Tail"),
+        .description = COMPOUND_STRING(
+            "Puffs up its tail to\n"
+            "strike the opponent."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_PUPPET,
+        .accuracy = 100,
+        .pp = 40,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .battleAnimScript = gBattleAnimMove_TailWhip,
+    },
+	
+//---------------UNDEAD-----------------------------------------
+
+    [MOVE_CANDLE_SLASH] =
+    {
+        .name = COMPOUND_STRING("Candle Slash"),
+        .description = COMPOUND_STRING(
+            "Strikes out with a cutlass of\n"
+            " wax. Can crit or burn easily."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_UNDEAD,
+        .accuracy = 90,
+        .criticalHitStage = 1,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 10,
+        }),
+        .battleAnimScript = gBattleAnimMove_Slash,
+    },
+	
+//---------------FILTH---------------------------------------
+
+    [MOVE_CHEESE_BOMB] =
+    {
+        .name = COMPOUND_STRING("Cheese Bomb"),
+        .description = COMPOUND_STRING(
+            "Throws cheese at the foe,\n"
+            "whether they like it or not."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_FILTH,
+        .accuracy = 75,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ballisticMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_EggBomb,
+    },
+
+    [MOVE_POOP_THROW] =
+    {
+        .name = COMPOUND_STRING("Poop Throw"),
+        .description = COMPOUND_STRING(
+            "Just what it sounds like.\n"
+            "Foe can no longer eat food."),
+        .effect = EFFECT_EMBARGO,
+        .power = 40,
+        .type = TYPE_FILTH,
+        .accuracy = 75,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_EggBomb,
+    },
+
+    [MOVE_DANGER_STING] =
+    {
+        .name = COMPOUND_STRING("Danger Sting"),
+        .description = COMPOUND_STRING(
+            "Stabs with a small stinger.\n"
+            "A quick strike. +1 priority."),
+        .effect = EFFECT_HIT,
+        .power = 30,
+        .type = TYPE_FILTH,
+        .accuracy = 100,
+        .pp = 35,
+        .target = TARGET_SELECTED,
+        .priority = 1,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_PoisonSting,
     },
 
@@ -24644,7 +24698,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Poison Claw"),
         .description = COMPOUND_STRING(
             "Claws and scrapes at the\n"
-            "foe. Its a pathetic attack."),
+            "foe. May Poison."),
         .effect = EFFECT_HIT,
         .power = 40,
         .type = TYPE_FILTH,
@@ -24653,10 +24707,35 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_POISON,
+            .chance = 30,
+        }),
         .makesContact = TRUE,
         .battleAnimScript = gBattleAnimMove_PoisonFang,
     },
 
+    [MOVE_GLOOM_DUST] =
+    {
+        .name = COMPOUND_STRING("Gloom Dust"),
+        .description = COMPOUND_STRING(
+            "Spreads a fog of dark\n"
+            "gas at the foe. Can Poison."),
+        .effect = EFFECT_HIT,
+        .power = 30,
+        .type = TYPE_FILTH,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_POISON,
+            .chance = 50,
+        }),
+        .battleAnimScript = gBattleAnimMove_Smog,
+    },
+	
     [MOVE_FUNGUS_CRUSHER] =
     {
         .name = COMPOUND_STRING("Fungus Crusher"),
@@ -24679,63 +24758,5 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Spore,
     },
 
-    [MOVE_GLOOM_DUST] =
-    {
-        .name = COMPOUND_STRING("Gloom Dust"),
-        .description = COMPOUND_STRING(
-            "Spreads a fog of poisonous\n"
-            "gas at the foe. May Poison."),
-        .effect = EFFECT_HIT,
-        .power = 30,
-        .type = TYPE_FILTH,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_POISON,
-            .chance = 40,
-        }),
-        .battleAnimScript = gBattleAnimMove_Smog,
-    },
 
-    [MOVE_CRESCENT_LEAF] =
-    {
-        .name = COMPOUND_STRING("Crescent Leaf"),
-        .description = COMPOUND_STRING(
-            "Attacks with a strange leaf\n"
-            "that cannot be evaded."),
-        .effect = EFFECT_HIT,
-        .power = 60,
-        .type = TYPE_PLANT,
-        .accuracy = 0,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .battleAnimScript = gBattleAnimMove_MagicalLeaf,
-        .validApprenticeMove = TRUE,
-    },
-
-    [MOVE_LULLABY_BUBBLE] =
-    {
-        .name = COMPOUND_STRING("Lullaby Bubble"),
-        .description = COMPOUND_STRING(
-            "Attacks with a song. Chance\n"
-            "to put the foe to sleep."),
-        .effect = EFFECT_HIT,
-        .power = 45,
-        .type = TYPE_WATER,
-        .accuracy = 90,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SLEEP,
-            .chance = 30,
-        }),
-        .battleAnimScript = gBattleAnimMove_Sing,
-    },
 };

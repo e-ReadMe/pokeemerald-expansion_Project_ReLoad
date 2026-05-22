@@ -1100,114 +1100,113 @@ enum __attribute__((packed)) Move
 //this section replaces instances of the vanilla moves with the digimon moves, so the data doesnt need to be changed throughout. preverses compatibility with the main branch. 
 //also because i'm adding SO MANY moves, and SO MANY ITEMS, the compile doesnt like it. so im replacing them instead as much as possible
 
-//--------ice-------------------------------
-#define MOVE_POWDER_SNOW MOVE_FROZEN_WIND
-#define MOVE_ICE_SHARD MOVE_FROZEN_BULLET
-#define MOVE_AVALANCHE MOVE_DIAMOND_DUST
-#define MOVE_ICE_PUNCH MOVE_SNOW_GOBLI_VOLT
-//--------dark-------------------------------
-#define MOVE_NIGHT_SHADE MOVE_NIGHTMARE_SYNDROME
-#define MOVE_LICK MOVE_DARK_SPIRIT
-#define MOVE_FAINT_ATTACK MOVE_HELL_CRUSHER
-#define MOVE_FEINT_ATTACK MOVE_HELL_CRUSHER
-#define MOVE_SCRATCH MOVE_NAIL_SCRATCH
-#define MOVE_CONFUSE_RAY MOVE_BLACKOUT
-#define MOVE_GEAR_GRIND MOVE_COG_CRUSH
-#define MOVE_ABSORB MOVE_HUNGRY_HAND
-#define MOVE_GROWL MOVE_BAD_MANNERS
-//--------Light-------------------------------
-#define MOVE_DISARMING_VOICE MOVE_HOLY_LIGHT
 //--------neutral-------------------------------
 #define MOVE_BUBBLE MOVE_BUBBLES                    //30 power special move
 #define MOVE_ICY_WIND MOVE_ADHESIVE_BUBBLE          //30 power special move, lowers speed
-#define MOVE_MACH_PUNCH MOVE_MACH_JAB
+#define MOVE_MACH_PUNCH MOVE_MACH_JAB				//40 power physical move, +1 priority
 #define MOVE_POUND MOVE_STRIKE                      //45 power physical move
 #define MOVE_SLAM MOVE_HEAVY_STRIKE                 //60 power physical move, 95% accuracy, high crit ratio
 #define MOVE_MEGA_PUNCH MOVE_MEGATON_PUNCH          //80 power physical move, 85% accuracy
-#define MOVE_QUICK_ATTACK MOVE_SONIC_JAB            //40 power physical move, +1 priority
 #define MOVE_DOUBLE_SLAP MOVE_SUPER_SLAP            //20 power physical multi hit move
-#define MOVE_RAPID_SPIN MOVE_SPIRAL_EDGE
-#define MOVE_WORK_UP MOVE_MUSCLE_CHARGE
-#define MOVE_SHARPEN MOVE_ATTACK_CHARGE
-#define MOVE_AROMATIC_MIST MOVE_MENTAL_CHARGE
-#define MOVE_GROWTH MOVE_MAGIC_CHARGE
-#define MOVE_HARDEN MOVE_GUARD_CHARGE
-#define MOVE_REFLECT MOVE_GUARD_FIELD
-#define MOVE_AGILITY MOVE_SPEED_CHARGE
-#define MOVE_FOCUS_ENERGY MOVE_CRITICAL_CHARGE
-#define MOVE_LEER MOVE_GUARD_BREAK
-#define MOVE_CONSTRICT MOVE_SPEED_BREAK
-#define MOVE_HEAL_PULSE MOVE_HEAL
-#define MOVE_REFRESH MOVE_MEDITATOR
-#define MOVE_MINIMIZE MOVE_MASS_MORPH
-//--------filth-------------------------------
-#define MOVE_EGG_BOMB MOVE_CHEESE_BOMB
-#define MOVE_ACID MOVE_POOP_THROW
-#define MOVE_POISON_STING MOVE_DANGER_STING
-#define MOVE_POISON_FANG MOVE_POISON_CLAW
-#define MOVE_DIRE_CLAW MOVE_FUNGUS_CRUSHER
-#define MOVE_SMOG MOVE_GLOOM_DUST
+#define MOVE_RAPID_SPIN MOVE_SPIRAL_EDGE			//50 power physical move, rapid-spin effect
+#define MOVE_WORK_UP MOVE_ATTACK_CHARGE				//status, +1 attack to one target
+#define MOVE_AROMATIC_MIST MOVE_MENTAL_CHARGE		//status, +1 sp attack to one target
+#define MOVE_SHARPEN MOVE_MUSCLE_CHARGE				//status, +1 attack and sp attack to the user
+#define MOVE_HARDEN MOVE_GUARD_CHARGE				//status, +1 defense to one target
+#define MOVE_GROWTH MOVE_MAGIC_CHARGE				//status, +1 sp defense to one target
+#define MOVE_REFLECT MOVE_GUARD_FIELD				//status, puts up a reflect for 5 turns
+#define MOVE_AGILITY MOVE_SPEED_CHARGE				//status, +1 speed to one target
+#define MOVE_FOCUS_ENERGY MOVE_CRITICAL_CHARGE		//status, +1 crit rate to the user
+#define MOVE_MINIMIZE MOVE_MASS_MORPH				//status, +1 evasiveness to the target
+#define MOVE_LEER MOVE_GUARD_BREAK					//status, -1 defence to both foes
+#define MOVE_CONSTRICT MOVE_SPEED_BREAK				//status, -1 speed to both foes
+#define MOVE_HEAL_PULSE MOVE_HEAL					//status, restores 50% of the target's health
+#define MOVE_REFRESH MOVE_MEDITATOR					//status, heals status on the target
 //--------fire-------------------------------
 #define MOVE_EMBER MOVE_SPITFIRE                    //40 power special move, +1 priority
-#define MOVE_FLAME_BURST MOVE_FIRE_BALL             //40 power physical move, can burn
-#define MOVE_INCINERATE MOVE_BLUE_BLASTER
-#define MOVE_FLAME_WHEEL MOVE_GOBLIN_STRIKE
-#define MOVE_BURNING_BULWARK MOVE_FIREWALL
-#define MOVE_HEAT_WAVE MOVE_FRIENDLY_FIRE           //70 power special move, targets all mons
-#define MOVE_WILL_O_WISP MOVE_PANIC_WISP            //10 power 85% accuracy, burns the target
+#define MOVE_FLAME_BURST MOVE_FIRE_BALL             //50 power physical move, can burn
+#define MOVE_INCINERATE MOVE_BLUE_BLASTER			//50 power special move, can -1 sp defence
+#define MOVE_FLAME_WHEEL MOVE_GOBLIN_STRIKE			//40 power physical move, 75% chance to -1 defence
+#define MOVE_HEAT_WAVE MOVE_FRIENDLY_FIRE           //60 power special move, damages everyone but user, chance to burn.
+#define MOVE_BURNING_BULWARK MOVE_FIREWALL			//status. Protect, but causes burns on contact.
+#define MOVE_WILL_O_WISP MOVE_PANIC_WISP            //status 85% accuracy, burns the target
 //--------water-------------------------------
 #define MOVE_BUBBLE_BEAM MOVE_BUBBLE_BREATH         //50 power special move
 #define MOVE_BUBBLEBEAM MOVE_BUBBLE_BREATH
-#define MOVE_WATER_PULSE MOVE_WATER_TOWER           //45 power physical move
-#define MOVE_CUT MOVE_SCISSOR_ATTACK
-#define MOVE_SURF MOVE_TIDAL_STREAM
-#define MOVE_WATER_SHURIKEN MOVE_MARCHING_FISH
+#define MOVE_WATER_PULSE MOVE_WATER_TOWER           //50 power physical move
+#define MOVE_CUT MOVE_SCISSOR_ATTACK				//40 power physical move. x2 on status'd foes
+#define MOVE_SING MOVE_LULLABY_BUBBLE				//45 power special move, chance to cause sleep
+#define MOVE_SURF MOVE_TIDAL_STREAM					//60 power special move, hits both foes
+#define MOVE_WATER_SHURIKEN MOVE_MARCHING_FISH		//25 power physical move, multi-hit
 #define MOVE_HYPNOSIS MOVE_IDLE_BUBBLE              //10 power 60% accuracy special move, puts the target to sleep
 #define MOVE_WATER_SPORT MOVE_AQUA_MAGIC            //status move, +1 special attack
-#define MOVE_SING MOVE_LULLABY_BUBBLE
 //--------plant-------------------------------
-#define MOVE_VINE_WHIP MOVE_THORN_STRIKE
-#define MOVE_BRANCH_POKE MOVE_RAIN_OF_POLLEN
-#define MOVE_G_MAX_VINE_LASH MOVE_ROOT_BIND
-#define MOVE_RAZOR_LEAF MOVE_BIO_HAZARD
-#define MOVE_SLUDGE MOVE_VENOM_TRAP
-#define MOVE_MAGICAL_LEAF MOVE_CRESCENT_LEAF
-#define MOVE_POISON_JAB MOVE_POISON_IVY
-//--------combat-------------------------------
-#define MOVE_COMET_PUNCH MOVE_SHAMA_HAMMER
-//--------beast------------------------------
-#define MOVE_ROCK_THROW MOVE_COMET_HAMMER
-#define MOVE_ROLLOUT MOVE_SPIN_ATTACK
-//--------puppet-------------------------------
-#define MOVE_TAIL_SLAP MOVE_FOX_TAIL
+#define MOVE_VINE_WHIP MOVE_THORN_STRIKE			//45 power special move
+#define MOVE_BRANCH_POKE MOVE_RAIN_OF_POLLEN		//50 power special move. lowers evasiveness
+#define MOVE_G_MAX_VINE_LASH MOVE_ROOT_BIND			//25 power physical move. causes vine lash vortex
+#define MOVE_RAZOR_LEAF MOVE_BIO_HAZARD				//60 power special move, hurts both foes, may cause poison
+#define MOVE_SLUDGE MOVE_VENOM_TRAP					//40 power special move. may cause poison. 
+#define MOVE_POISON_JAB MOVE_POISON_IVY				//60 power physcial move. may cause paralysis 
+#define MOVE_MAGICAL_LEAF MOVE_CRESCENT_LEAF		//60 power special move. can't miss
 //--------Insect------------------------------
-#define MOVE_STRING_SHOT MOVE_ELECTRO_THREAD
-#define MOVE_ATTACK_ORDER MOVE_INSECT_HORDE
-#define MOVE_SPIDER_WEB MOVE_STICKY_NET
-//--------wind-------------------------------
-#define MOVE_GUST MOVE_AIR_BUBBLES
-#define MOVE_PECK MOVE_WIND_CLAW
-#define MOVE_AIR_CUTTER MOVE_AIR_SHOT
-#define MOVE_TWISTER MOVE_DARK_TWISTER
-//--------earth-------------------------------
-#define MOVE_ANCIENTPOWER MOVE_GAIA_BLAST
-#define MOVE_ANCIENT_POWER MOVE_GAIA_BLAST
-#define MOVE_SMACK_DOWN MOVE_ROCK_FIST
-//--------undead-------------------------------
-#define MOVE_ASTONISH MOVE_CANDLE_SLASH
+#define MOVE_STRING_SHOT MOVE_ELECTRO_THREAD		//20 power special move, may paralyse
+#define MOVE_ATTACK_ORDER MOVE_INSECT_HORDE			//5 power special move, can hit up to 10 
+#define MOVE_SPIDER_WEB MOVE_STICKY_NET				//status, prevents foe from switching 
+//--------beast------------------------------
+#define MOVE_ROCK_THROW MOVE_COMET_HAMMER			//40 power physical move
+#define MOVE_ROLLOUT MOVE_SPIN_ATTACK				//30 power physical move, rapid spin effect
 //--------metal-------------------------------
-#define MOVE_METAL_CLAW MOVE_IRON_SLASH
-#define MOVE_DOUBLE_IRON_BASH MOVE_CRUSH_BLADE
-#define MOVE_MAGNET_BOMB MOVE_DIS_ASSEMBLER
-//--------electric-------------------------------
-#define MOVE_THUNDER_SHOCK MOVE_HERTZ_HOWL
+#define MOVE_THUNDER_SHOCK MOVE_HERTZ_HOWL          //30 power special move, may paralyze
+#define MOVE_METAL_CLAW MOVE_IRON_SLASH             //55 power physcial move, high crit ratio
 #define MOVE_THUNDERSHOCK MOVE_HERTZ_HOWL
-#define MOVE_THUNDERPUNCH MOVE_THUNDER_STRIKE
+#define MOVE_DOUBLE_IRON_BASH MOVE_CRUSH_BLADE      //50 power physical move, prevents foe's escape
+#define MOVE_MAGNET_BOMB MOVE_DIS_ASSEMBLER         //60 power special move. cant miss
+//--------earth-------------------------------
+#define MOVE_COMET_PUNCH MOVE_SHAMA_HAMMER	        //45 power physical move, reduces foes attack. 
+#define MOVE_ANCIENTPOWER MOVE_GAIA_BLAST           //50 power special move.
+#define MOVE_ANCIENT_POWER MOVE_GAIA_BLAST
+#define MOVE_SMACK_DOWN MOVE_ROCK_FIST              //50 power physical move. may flinch
+//--------electric-------------------------------
+#define MOVE_BUZZY_BUZZ MOVE_NANOBOT_BREAK          //45 power physical move, can't miss
+#define MOVE_THUNDERPUNCH MOVE_THUNDER_STRIKE       //50 power physical move, 10% chance to paralyze
 #define MOVE_THUNDER_PUNCH MOVE_THUNDER_STRIKE
-#define MOVE_SHOCK_WAVE MOVE_ELECTRO_SHOCK
-#define MOVE_BUZZY_BUZZ MOVE_NANOBOT_BREAK
-#define MOVE_SPARK MOVE_MINI_SCISSOR_CLAW
-#define MOVE_THUNDER_WAVE MOVE_ELECTRIC_CLOUD
+#define MOVE_SHOCK_WAVE MOVE_ELECTRO_SHOCK          //50 power special move, 20% chance to paralyze
+#define MOVE_SPARK MOVE_MINI_SCISSOR_CLAW           //55 power physical move, high crit rate
+#define MOVE_THUNDER_WAVE MOVE_ELECTRIC_CLOUD       //status move, paralyses the target
+//--------wind-------------------------------
+#define MOVE_GUST MOVE_AIR_BUBBLES                  //40 power special move
+#define MOVE_PECK MOVE_WIND_CLAW                    //50 power physical move
+#define MOVE_QUICK_ATTACK MOVE_SONIC_JAB            //40 power physical move, +1 priority
+#define MOVE_AIR_CUTTER MOVE_AIR_SHOT               //55 power special move, high crit ratio
+#define MOVE_TWISTER MOVE_DARK_TWISTER				//50 power physical move, hits both foes. may cause flinching
+//--------ice-------------------------------
+#define MOVE_POWDER_SNOW MOVE_FROZEN_WIND			//50 power special move, may freeze
+#define MOVE_ICE_SHARD MOVE_FROZEN_BULLET			//40 power special move, +1 priority
+#define MOVE_AVALANCHE MOVE_DIAMOND_DUST			//20 power physical multi strike
+#define MOVE_ICE_PUNCH MOVE_SNOW_GOBLI_VOLT			//45 power physical move, may freezetimes
+//--------dark-------------------------------
+#define MOVE_NIGHT_SHADE MOVE_NIGHTMARE_SYNDROME	//60 power physical move, may sleep
+#define MOVE_LICK MOVE_DARK_SPIRIT					//40 power special move
+#define MOVE_FAINT_ATTACK MOVE_HELL_CRUSHER			//60 power physical move, hits both foes
+#define MOVE_FEINT_ATTACK MOVE_HELL_CRUSHER
+#define MOVE_SCRATCH MOVE_NAIL_SCRATCH				//30 power physical move
+#define MOVE_GEAR_GRIND MOVE_COG_CRUSH				//50 power physical move
+#define MOVE_ABSORB MOVE_HUNGRY_HAND				//50 power physical move, absorbs health
+#define MOVE_CONFUSE_RAY MOVE_BLACKOUT				//status, causes confusion
+#define MOVE_GROWL MOVE_BAD_MANNERS					//status, lowers both foes attack
+//--------Light-------------------------------
+#define MOVE_DISARMING_VOICE MOVE_HOLY_LIGHT		//40 power, special move
+//--------puppet-------------------------------
+#define MOVE_TAIL_SLAP MOVE_FOX_TAIL				//40 power, physical move
+//--------undead-------------------------------
+#define MOVE_ASTONISH MOVE_CANDLE_SLASH				//40 power physical move, may burn
+//--------filth-------------------------------
+#define MOVE_EGG_BOMB MOVE_CHEESE_BOMB				//40 power physical move
+#define MOVE_ACID MOVE_POOP_THROW					//40 power special move
+#define MOVE_POISON_STING MOVE_DANGER_STING			//30 power physical move. +1 priority
+#define MOVE_POISON_FANG MOVE_POISON_CLAW			//30 power physical move. may poison
+#define MOVE_SMOG MOVE_GLOOM_DUST					//30 power Special move, may poison
+#define MOVE_DIRE_CLAW MOVE_FUNGUS_CRUSHER			//50 power physical move. 30% chance to cause sleep, poison or paralysis
 
 };
 
