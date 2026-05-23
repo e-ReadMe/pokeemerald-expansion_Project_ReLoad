@@ -14,7 +14,8 @@ enum __attribute__((packed)) Move
     MOVE_SHAMA_HAMMER = 4,//digi move, replaces comet punch
     //MOVE_MEGA_PUNCH = 5,
     MOVE_MEGATON_PUNCH = 5,
-    MOVE_PAY_DAY = 6,
+    //MOVE_PAY_DAY = 6,
+    MOVE_PLASTIC_BLAZE = 6,//digi move, replaces pay day
     MOVE_FIRE_PUNCH = 7,
     //MOVE_ICE_PUNCH = 8,
     MOVE_SNOW_GOBLI_VOLT = 8,//digi move, replaces ice punch
@@ -23,9 +24,10 @@ enum __attribute__((packed)) Move
     MOVE_THUNDER_STRIKE = 9,//replaces thunder punch
     //MOVE_SCRATCH = 10,
     MOVE_NAIL_SCRATCH = 10, // replaces scratch
-    MOVE_VISE_GRIP = 11,
-    MOVE_VICEGRIP = MOVE_VISE_GRIP, // Pre-Gen VI name
-    MOVE_VICE_GRIP = MOVE_VISE_GRIP, // Pre-Gen VIII name
+    //MOVE_VISE_GRIP = 11,
+    MOVE_POWER_ENERGY = 11,//digi move. replaces vise grip
+    //MOVE_VICEGRIP = MOVE_VISE_GRIP, // Pre-Gen VI name
+    //MOVE_VICE_GRIP = MOVE_VISE_GRIP, // Pre-Gen VIII name
     MOVE_GUILLOTINE = 12,
     MOVE_RAZOR_WIND = 13,
     MOVE_SWORDS_DANCE = 14,
@@ -61,7 +63,8 @@ enum __attribute__((packed)) Move
     MOVE_TAIL_WHIP = 39,
     //MOVE_POISON_STING = 40,
     MOVE_DANGER_STING = 40,//digi move, replaces poison sting
-    MOVE_TWINEEDLE = 41,
+    //MOVE_TWINEEDLE = 41,
+    MOVE_CLAW_RUSH = 41,//digi move, replaces twineedle
     MOVE_PIN_MISSILE = 42,
     //MOVE_LEER = 43,
     MOVE_GUARD_BREAK = 43,//digi move, replaces leer
@@ -213,10 +216,12 @@ enum __attribute__((packed)) Move
     //MOVE_PSYWAVE = 149,
     MOVE_LIGHT_SOUL = 149,//digi move, replaces psywave
     MOVE_SPLASH = 150,// digi move. does damage now. otherwise unchanged. 
-    MOVE_ACID_ARMOR = 151,
+    MOVE_EARTH_COAT = 151,//digi move, replaces ACID armor
+    //MOVE_ACID_ARMOR = 151,
     MOVE_CRABHAMMER = 152,
     MOVE_EXPLOSION = 153,
-    MOVE_FURY_SWIPES = 154,
+    //MOVE_FURY_SWIPES = 154,
+    MOVE_MECHANICAL_CLAW = 154,//digi move. replaces fury swipes
     MOVE_BONEMERANG = 155,
     MOVE_REST = 156,
     MOVE_ROCK_SLIDE = 157,
@@ -435,7 +440,8 @@ enum __attribute__((packed)) Move
     MOVE_HAIL_SPEAR = 333,//digi move, replaces icicle spear
     MOVE_IRON_DEFENSE = 334,
     MOVE_BLOCK = 335,
-    MOVE_HOWL = 336,
+    MOVE_PUPPY_HOWL = 336,//digi move, replaces howl
+    //MOVE_HOWL = 336,
     MOVE_DRAGON_CLAW = 337,
     MOVE_FRENZY_PLANT = 338,
     MOVE_BULK_UP = 339,
@@ -473,7 +479,8 @@ enum __attribute__((packed)) Move
     MOVE_FEINT = 364,
     MOVE_PLUCK = 365,
     MOVE_TAILWIND = 366,
-    MOVE_ACUPRESSURE = 367,
+    //MOVE_ACUPRESSURE = 367,
+    MOVE_UPGRADE = 367,
     MOVE_METAL_BURST = 368,
     MOVE_U_TURN = 369,
     MOVE_CLOSE_COMBAT = 370,
@@ -654,7 +661,8 @@ enum __attribute__((packed)) Move
     MOVE_HEART_STAMP = 531,
     MOVE_HORN_LEECH = 532,
     MOVE_SACRED_SWORD = 533,
-    MOVE_RAZOR_SHELL = 534,
+    //MOVE_RAZOR_SHELL = 534,
+    MOVE_BLACK_PEARL_BLAST = 534,//digi move, replaces razor shell
     MOVE_HEAT_CRASH = 535,
     MOVE_LEAF_TORNADO = 536,
     MOVE_STEAMROLLER = 537,
@@ -876,7 +884,8 @@ enum __attribute__((packed)) Move
     MOVE_SHELL_SIDE_ARM = 729,
     MOVE_MISTY_EXPLOSION = 730,
     MOVE_GRASSY_GLIDE = 731,
-    MOVE_RISING_VOLTAGE = 732,
+    //MOVE_RISING_VOLTAGE = 732,
+    MOVE_THUNDER_FALL = 732,
     MOVE_TERRAIN_PULSE = 733,
     MOVE_SKITTER_SMACK = 734,
     MOVE_BURNING_JEALOUSY = 735,
@@ -1119,6 +1128,9 @@ enum __attribute__((packed)) Move
 #define MOVE_ICY_WIND MOVE_ADHESIVE_BUBBLE          //30 power special move, lowers speed
 #define MOVE_MACH_PUNCH MOVE_MACH_JAB				//40 power physical move, +1 priority
 #define MOVE_POUND MOVE_STRIKE                      //45 power physical move
+#define MOVE_VISE_GRIP MOVE_POWER_ENERGY            //45 power special move
+#define MOVE_VICEGRIP MOVE_POWER_ENERGY
+#define MOVE_VICE_GRIP MOVE_POWER_ENERGY
 #define MOVE_SLAM MOVE_HEAVY_STRIKE                 //60 power physical move, 95% accuracy, high crit ratio
 #define MOVE_MEGA_PUNCH MOVE_MEGATON_PUNCH          //80 power physical move, 85% accuracy
 #define MOVE_DOUBLE_SLAP MOVE_SUPER_SLAP            //20 power physical multi hit move
@@ -1151,6 +1163,7 @@ enum __attribute__((packed)) Move
 #define MOVE_BUBBLE_BEAM MOVE_BUBBLE_BREATH         //50 power special move
 #define MOVE_BUBBLEBEAM MOVE_BUBBLE_BREATH
 #define MOVE_WATER_PULSE MOVE_WATER_TOWER           //50 power physical move
+#define MOVE_RAZOR_SHELL MOVE_BLACK_PEARL_BLAST     //40 power physical move, high crit ratio
 #define MOVE_CUT MOVE_SCISSOR_ATTACK				//40 power physical move. x2 on status'd foes
 #define MOVE_SING MOVE_LULLABY_BUBBLE				//45 power special move, chance to cause sleep
 #define MOVE_SURF MOVE_TIDAL_STREAM					//60 power special move, hits both foes
@@ -1160,33 +1173,35 @@ enum __attribute__((packed)) Move
 #define MOVE_WATER_SPORT MOVE_AQUA_MAGIC            //status move, +1 special attack
 #define MOVE_RAIN_DANCE MOVE_HEAVY_RAIN             //status move, summons rain. 
 //--------plant-------------------------------
+#define MOVE_SLUDGE MOVE_VENOM_TRAP					//40 power special move. may cause poison. 
 #define MOVE_VINE_WHIP MOVE_THORN_STRIKE			//45 power special move
 #define MOVE_BRANCH_POKE MOVE_RAIN_OF_POLLEN		//50 power special move. lowers evasiveness
 #define MOVE_TROP_KICK MOVE_TROPICAL_BEAK			//50 power physical move. lowers attack
 #define MOVE_G_MAX_VINE_LASH MOVE_ROOT_BIND			//25 power physical move. causes vine lash vortex
 #define MOVE_RAZOR_LEAF MOVE_BIO_HAZARD				//60 power special move, hurts both foes, may cause poison
-#define MOVE_SLUDGE MOVE_VENOM_TRAP					//40 power special move. may cause poison. 
 #define MOVE_POISON_JAB MOVE_POISON_IVY				//60 power physcial move. may cause paralysis 
 #define MOVE_MAGICAL_LEAF MOVE_CRESCENT_LEAF		//60 power special move. can't miss
 //      MOVE_POISON_POWDER                          //sttaus. causes poison. Unchanged from vanilla
+#define MOVE_ACID_ARMOR MOVE_EARTH_COAT
 //--------Insect------------------------------
 #define MOVE_STRING_SHOT MOVE_ELECTRO_THREAD		//20 power special move, may paralyse
 #define MOVE_ATTACK_ORDER MOVE_INSECT_HORDE			//5 power special move, can hit up to 10 
+#define MOVE_TWINEEDLE MOVE_CLAW_RUSH               //25 power physical move, multi hit
 #define MOVE_SPIDER_WEB MOVE_STICKY_NET				//status, prevents foe from switching 
 //--------beast------------------------------
 #define MOVE_ROCK_THROW MOVE_COMET_HAMMER			//40 power physical move
 #define MOVE_ROLLOUT MOVE_SPIN_ATTACK				//30 power physical move, rapid spin effect
 //--------metal-------------------------------
 #define MOVE_THUNDER_SHOCK MOVE_HERTZ_HOWL          //30 power special move, may paralyze
+#define MOVE_FURY_SWIPES MOVE_MECHANICAL_CLAW       //50 power physical move. 50% chance to boost attack
 #define MOVE_METAL_CLAW MOVE_IRON_SLASH             //55 power physcial move, high crit ratio
 #define MOVE_THUNDERSHOCK MOVE_HERTZ_HOWL
 #define MOVE_DOUBLE_IRON_BASH MOVE_CRUSH_BLADE      //50 power physical move, prevents foe's escape
-#define MOVE_MAGNET_BOMB MOVE_DIS_ASSEMBLER         //60 power special move. cant miss
-// MOVE_MECHANICAL_CLAW powerful physical move
+#define MOVE_MAGNET_BOMB MOVE_DIS_ASSEMBLER         //55 power special move. cant miss
+#define MOVE_ACUPRESSURE MOVE_UPGRADE               //status. +2 to a random stat
 // MOVE_GIGAWATT LASER //powerful special move. 
 // MOVE_DELETE_PROGRAM //status. causes a curse effect that kills the foe over several turns. 
 // MOVE_DG_DIMENSION //a room effect or custom weather
-// MOVE UPGRADE //status move. boosts stats
 // MOVE_ANTI_ATTACK //status. lowers attack of both foes. 
 
 //--------earth-------------------------------
@@ -1200,6 +1215,7 @@ enum __attribute__((packed)) Move
 #define MOVE_THUNDER_PUNCH MOVE_THUNDER_STRIKE
 #define MOVE_SHOCK_WAVE MOVE_ELECTRO_SHOCK          //50 power special move, 20% chance to paralyze
 #define MOVE_SPARK MOVE_MINI_SCISSOR_CLAW           //55 power physical move, high crit rate
+#define MOVE_RISING_VOLTAGE MOVE_THUNDER_FALL       //70 power special move. hits both targets
 #define MOVE_THUNDER_WAVE MOVE_ELECTRIC_CLOUD       //status move, paralyses the target
 //      MOVE_ELECTRIC_TERRAIN   //status move. summons electric terrain
 //--------wind-------------------------------  
@@ -1241,6 +1257,7 @@ enum __attribute__((packed)) Move
 //      MOVE_FLASH                                  //30 power, special move. reduces accuracy
 #define MOVE_DISARMING_VOICE MOVE_HOLY_LIGHT		//40 power, special move
 #define MOVE_PSYWAVE MOVE_LIGHT_SOUL                //40 power, physical move
+#define MOVE_HOWL MOVE_PUPPY_HOWL                   //35 power, special move. may paralyse
 // MOVE_SAINT_RAY //60 power special move
 // MOVE_ANGEL_ROD
 // MOVE_HAND_OF_FATE
@@ -1250,6 +1267,7 @@ enum __attribute__((packed)) Move
 // MOVE_SHINING_NOVA //high power special move, hits both foes, may burn. 
 //--------puppet-------------------------------
 #define MOVE_TAIL_SLAP MOVE_FOX_TAIL				//40 power, physical move
+#define MOVE_PAY_DAY MOVE_PLASTIC_BLAZE             //40 power special move. may flinch
 //--------undead-------------------------------
 #define MOVE_ASTONISH MOVE_CANDLE_SLASH				//40 power physical move, may burn
 //--------filth-------------------------------

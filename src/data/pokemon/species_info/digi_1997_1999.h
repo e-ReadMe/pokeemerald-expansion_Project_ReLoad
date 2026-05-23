@@ -1816,7 +1816,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_BABY_PROOF, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
     #if DubNames
         .speciesName = _("Yokomon"),//the digimon's dub name. e.g. gatomon
@@ -3499,7 +3499,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_DEEP_SAVERS, ABILITY_BLIZZARD_FANG, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
         .speciesName = _("Gomamon"),//the digimon's dub name. e.g. gatomon
@@ -4303,7 +4303,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_VIRUS_BUSTER, ABILITY_VIRUS_BUSTER, ABILITY_WIND_GUARDIANS },
         .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
         .speciesName = _("Patamon"),//the digimon's dub name. e.g. gatomon
@@ -4384,7 +4384,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_DYNASTY_OF_EVIL, ABILITY_DYNASTY_OF_EVIL, ABILITY_WIND_GUARDIANS },
         .bodyColor = BODY_COLOR_PURPLE,
     #if DubNames
         .speciesName = _("Tukaimon"),//the digimon's dub name. e.g. gatomon
@@ -4789,7 +4789,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_HOLY_RING, ABILITY_HOLY_RING, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
         .speciesName = _("Salamon"),//the digimon's dub name. e.g. gatomon
@@ -4870,7 +4870,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_TOUGH_SHELL, ABILITY_TOUGH_SHELL, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
     #if DubNames
         .speciesName = _("Syakomon"),//the digimon's dub name. e.g. gatomon
@@ -4951,7 +4951,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_NUMBING_WAVES, ABILITY_NUMBING_WAVES, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
     #if DubNames
         .speciesName = _("Tentomon"),//the digimon's dub name. e.g. gatomon
@@ -5032,7 +5032,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_IRON_CLAD, ABILITY_IRON_CLAD, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
         .speciesName = _("ToyAgumon"),//the digimon's dub name. e.g. gatomon
@@ -5097,7 +5097,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 50,
         .baseSpDefense = 40,
         .baseSpeed     = 20,
-        .types = MON_TYPES(TYPE_VACCINE, TYPE_PUPPET, TYPE_PUPPET),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_METAL, TYPE_METAL),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 3,
@@ -5113,7 +5113,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_IRON_CLAD, ABILITY_IRON_CLAD, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GRAY,
     #if DubNames
         .speciesName = _("ClearAgumon"),//the digimon's dub name. e.g. gatomon

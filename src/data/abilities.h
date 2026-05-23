@@ -54,13 +54,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
-    [ABILITY_LIMBER] =
-    {
-        .name = _("Limber"),
-        .description = COMPOUND_STRING("Prevents paralysis."),
-        .aiRating = 3,
-        .breakable = TRUE,
-    },
+    //[ABILITY_LIMBER] =
+    //{
+    //    .name = _("Limber"),
+    //    .description = COMPOUND_STRING("Prevents paralysis."),
+    //    .aiRating = 3,
+    //    .breakable = TRUE,
+    //},
 
     [ABILITY_SAND_VEIL] =
     {
@@ -1272,13 +1272,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
-    [ABILITY_FUR_COAT] =
-    {
-        .name = _("Fur Coat"),
-        .description = COMPOUND_STRING("Raises Defense."),
-        .aiRating = 7,
-        .breakable = TRUE,
-    },
+    //[ABILITY_FUR_COAT] =
+    //{
+    //    .name = _("Fur Coat"),
+    //    .description = COMPOUND_STRING("Raises Defense."),
+    //    .aiRating = 7,
+    //    .breakable = TRUE,
+    //},
 
     [ABILITY_MAGICIAN] =
     {
@@ -1881,13 +1881,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 5,
     },
 
-    [ABILITY_ICE_SCALES] =
-    {
-        .name = _("Ice Scales"),
-        .description = COMPOUND_STRING("Halves special damage."),
-        .aiRating = 7,
-        .breakable = TRUE,
-    },
+    //[ABILITY_ICE_SCALES] =
+    //{
+    //    .name = _("Ice Scales"),
+    //    .description = COMPOUND_STRING("Halves special damage."),
+    //    .aiRating = 7,
+    //    .breakable = TRUE,
+    //},
 
     [ABILITY_RIPEN] =
     {
@@ -2589,5 +2589,29 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Phoenix Feather"),
         .description = COMPOUND_STRING("Often prevents fainting."),
         .aiRating = 4,
+    },
+
+    [ABILITY_TOUGH_SHELL] =
+    {
+        .name = _("Tough Shell"),
+        .description = COMPOUND_STRING("Raises Defense."),
+        .aiRating = 7,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_IRON_CLAD] =
+    {
+        .name = _("Iron Clad"),
+        .description = COMPOUND_STRING("Halves special damage."),
+        .aiRating = 7,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_NUMBING_WAVES] =
+    {
+        .name = _("Numbing Waves"),
+        .description = COMPOUND_STRING("Prevents paralysis."),
+        .aiRating = 3,
+        .breakable = TRUE,
     },
 };
