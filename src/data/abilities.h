@@ -2583,4 +2583,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Poisons foe on contact."),
         .aiRating = 4,
     },
+
+    [ABILITY_PHOENIX_FEATHER] =
+    {
+        .name = _("Phoenix Feather"),
+        .description = COMPOUND_STRING("Often prevents fainting."),
+        .aiRating = 4,
+    },
 };

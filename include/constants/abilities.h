@@ -360,7 +360,8 @@ enum __attribute__((packed)) Ability
     ABILITY_DYNASTY_OF_EVIL = 326,
 
 //new custom abilities
-    ABILITY_DEEP_SEA_SLUMBER = 327,
+    ABILITY_DEEP_SEA_SLUMBER = 327,//gives all attack an inherant chance to cause sleep on the target. 
+    ABILITY_PHOENIX_FEATHER = 328,//acts like a focus band, with a 66% chance to endure a hit that would otherwise knock the pokemon out.
 
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,

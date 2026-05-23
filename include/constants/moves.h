@@ -49,7 +49,8 @@ enum __attribute__((packed)) Move
     MOVE_SAND_ATTACK = 28,
     MOVE_HEADBUTT = 29,
     MOVE_HORN_ATTACK = 30,
-    MOVE_FURY_ATTACK = 31,
+    MOVE_SHADOW_FANG = 31,//digi move, replaces fury_attack
+    //MOVE_FURY_ATTACK = 31,
     MOVE_HORN_DRILL = 32,
     MOVE_TACKLE = 33,
     MOVE_BODY_SLAM = 34,
@@ -71,8 +72,9 @@ enum __attribute__((packed)) Move
     //MOVE_SING = 47,
     MOVE_LULLABY_BUBBLE = 47,//digi move, replaces sing
     MOVE_SUPERSONIC = 48,
-    MOVE_SONIC_BOOM = 49,
-    MOVE_SONICBOOM = MOVE_SONIC_BOOM, // Pre-Gen VI name
+    //MOVE_SONIC_BOOM = 49,
+    //MOVE_SONICBOOM = MOVE_SONIC_BOOM, // Pre-Gen VI name
+    MOVE_SONIC_SHOT = 49,//digi move, replaces sonic boom
     MOVE_DISABLE = 50,
     //MOVE_ACID = 51,
     MOVE_POOP_THROW = 51, // Digimon move
@@ -119,7 +121,8 @@ enum __attribute__((packed)) Move
     //MOVE_STRING_SHOT = 81,
     MOVE_ELECTRO_THREAD = 81, // Digimon move, replaces string shot
     MOVE_DRAGON_RAGE = 82,
-    MOVE_FIRE_SPIN = 83,
+    MOVE_SPIRAL_TWISTER = 83,
+    //MOVE_FIRE_SPIN = 83,
     //MOVE_THUNDER_SHOCK = 84,
     //MOVE_THUNDERSHOCK = MOVE_THUNDER_SHOCK, // Pre-Gen VI name
     MOVE_HERTZ_HOWL = 84, // Digimon move
@@ -142,7 +145,7 @@ enum __attribute__((packed)) Move
     MOVE_SPEED_CHARGE = 97,//digi move, replaces agility
     //MOVE_QUICK_ATTACK = 98,
     MOVE_SONIC_JAB = 98,
-    MOVE_RAGE = 99,
+    MOVE_RAGE = 99,//digi move. unchanged from vanilla
     MOVE_TELEPORT = 100,
     //MOVE_NIGHT_SHADE = 101,
     MOVE_NIGHTMARE_SYNDROME = 101, // Digimon move
@@ -319,7 +322,7 @@ enum __attribute__((packed)) Move
     MOVE_DARK_TWISTER = 239,//digi move, replaces twister
     //MOVE_RAIN_DANCE = 240,
     MOVE_HEAVY_RAIN = 240,//digi move, replaces rain dance
-    MOVE_SUNNY_DAY = 241,
+    MOVE_SUNNY_DAY = 241,//digi move. unchanged from vanilla
     MOVE_CRUNCH = 242,
     MOVE_MIRROR_COAT = 243,
     MOVE_PSYCH_UP = 244,
@@ -700,7 +703,8 @@ enum __attribute__((packed)) Move
     MOVE_HOLY_LIGHT = 574,//digi move, replaces disarming voice
     MOVE_PARTING_SHOT = 575,
     MOVE_TOPSY_TURVY = 576,
-    MOVE_DRAINING_KISS = 577,
+    MOVE_DEMI_DARTS = 577,//digi move, replaces draining kiss
+    // MOVE_DRAINING_KISS = 577,
     MOVE_CRAFTY_SHIELD = 578,
     MOVE_FLOWER_SHIELD = 579,
     MOVE_GRASSY_TERRAIN = 580,
@@ -780,7 +784,8 @@ enum __attribute__((packed)) Move
     MOVE_PURIFY = 648,
     MOVE_REVELATION_DANCE = 649,
     MOVE_CORE_ENFORCER = 650,
-    MOVE_TROP_KICK = 651,
+    //MOVE_TROP_KICK = 651,
+    MOVE_TROPICAL_BEAK = 651,//digi move, replaces trop kick
     MOVE_INSTRUCT = 652,
     MOVE_BEAK_BLAST = 653,
     MOVE_CLANGING_SCALES = 654,
@@ -1138,10 +1143,11 @@ enum __attribute__((packed)) Move
 #define MOVE_INCINERATE MOVE_BLUE_BLASTER			//50 power special move, can -1 sp defence
 #define MOVE_FLAME_WHEEL MOVE_GOBLIN_STRIKE			//40 power physical move, 75% chance to -1 defence
 #define MOVE_HEAT_WAVE MOVE_FRIENDLY_FIRE           //60 power special move, damages everyone but user, chance to burn.
+#define MOVE_FIRE_SPIN MOVE_SPIRAL_TWISTER          //40 power special move, traps the target for 4-5 turns
 #define MOVE_BURNING_BULWARK MOVE_FIREWALL			//status. Protect, but causes burns on contact.
 #define MOVE_WILL_O_WISP MOVE_PANIC_WISP            //status 85% accuracy, burns the target
 //--------water-------------------------------
-//      MOVE_SPLASH                                 //230 power physical move. +1 speed
+//      MOVE_SPLASH                                 //30 power physical move. +1 speed
 #define MOVE_BUBBLE_BEAM MOVE_BUBBLE_BREATH         //50 power special move
 #define MOVE_BUBBLEBEAM MOVE_BUBBLE_BREATH
 #define MOVE_WATER_PULSE MOVE_WATER_TOWER           //50 power physical move
@@ -1156,6 +1162,7 @@ enum __attribute__((packed)) Move
 //--------plant-------------------------------
 #define MOVE_VINE_WHIP MOVE_THORN_STRIKE			//45 power special move
 #define MOVE_BRANCH_POKE MOVE_RAIN_OF_POLLEN		//50 power special move. lowers evasiveness
+#define MOVE_TROP_KICK MOVE_TROPICAL_BEAK			//50 power physical move. lowers attack
 #define MOVE_G_MAX_VINE_LASH MOVE_ROOT_BIND			//25 power physical move. causes vine lash vortex
 #define MOVE_RAZOR_LEAF MOVE_BIO_HAZARD				//60 power special move, hurts both foes, may cause poison
 #define MOVE_SLUDGE MOVE_VENOM_TRAP					//40 power special move. may cause poison. 
@@ -1196,7 +1203,9 @@ enum __attribute__((packed)) Move
 #define MOVE_THUNDER_WAVE MOVE_ELECTRIC_CLOUD       //status move, paralyses the target
 //      MOVE_ELECTRIC_TERRAIN   //status move. summons electric terrain
 //--------wind-------------------------------  
-#define MOVE_GUST MOVE_AIR_BUBBLES                  //40 power special move
+#define MOVE_GUST MOVE_AIR_BUBBLES                  //30 power special move
+#define MOVE_SONIC_BOOM MOVE_SONIC_SHOT             //40 power special move
+#define MOVE_SONICBOOM MOVE_SONIC_SHOT
 #define MOVE_PECK MOVE_WIND_CLAW                    //50 power physical move
 #define MOVE_QUICK_ATTACK MOVE_SONIC_JAB            //40 power physical move, +1 priority
 #define MOVE_AIR_CUTTER MOVE_AIR_SHOT               //55 power special move, high crit ratio
@@ -1217,13 +1226,15 @@ enum __attribute__((packed)) Move
 #define MOVE_FREEZY_FROST MOVE_ICE_STATUE           //80 power physical move, may cause frostbite
 #define MOVE_AURORA_BEAM MOVE_AURORA_FREEZE         //status, causes frostbite
 //--------dark-------------------------------
+#define MOVE_FURY_ATTACK MOVE_SHADOW_FANG           //15 power physical multi hit move
 #define MOVE_NIGHT_SHADE MOVE_NIGHTMARE_SYNDROME	//60 power physical move, may sleep
 #define MOVE_LICK MOVE_DARK_SPIRIT					//40 power special move
 #define MOVE_FAINT_ATTACK MOVE_HELL_CRUSHER			//60 power physical move, hits both foes
 #define MOVE_FEINT_ATTACK MOVE_HELL_CRUSHER
 #define MOVE_SCRATCH MOVE_NAIL_SCRATCH				//30 power physical move
 #define MOVE_GEAR_GRIND MOVE_COG_CRUSH				//50 power physical move
-#define MOVE_ABSORB MOVE_HUNGRY_HAND				//50 power physical move, absorbs health
+#define MOVE_ABSORB MOVE_HUNGRY_HAND				//50 power special move, absorbs health
+#define MOVE_DRAINING_KISS MOVE_DEMI_DARTS			//50 power physical move, heals the user for 75% of the damage dealt
 #define MOVE_CONFUSE_RAY MOVE_BLACKOUT				//status, causes confusion
 #define MOVE_GROWL MOVE_BAD_MANNERS					//status, lowers both foes attack
 //--------Light-------------------------------
