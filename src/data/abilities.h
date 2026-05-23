@@ -2573,7 +2573,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_DEEP_SEA_SLUMBER] =
     {
         .name = _("Deep Sea Slumber"),
-        .description = COMPOUND_STRING("Contact makes them drowzy"),
+        .description = COMPOUND_STRING("Sleep chance on all attacks."),
         .aiRating = 4,
     },
 

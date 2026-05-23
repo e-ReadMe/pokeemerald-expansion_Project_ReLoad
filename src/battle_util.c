@@ -4357,17 +4357,17 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
              && !IsMoveEffectBlockedByTarget(GetBattlerAbility(gBattlerTarget))
              && CanBeSlept(gBattlerAttacker, gBattlerTarget, gLastUsedAbility, NOT_BLOCKED_BY_SLEEP_CLAUSE)
              && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES) // Need to actually hit the target
-             && RandomPercentage(RNG_SLEEPY, 30))
+             && RandomPercentage(RNG_POISON_TOUCH, 30))
             {
                 gEffectBattler = gBattlerTarget;
                 gBattleScripting.battler = gBattlerAttacker;
-                gBattleScripting.moveEffect = MOVE_EFFECT_YAWN_FOE;
+                gBattleScripting.moveEffect = MOVE_EFFECT_SLEEP;
                 PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
                 BattleScriptCall(BattleScript_AbilityStatusEffect);
                 effect++;
             }
             break;
-            
+
         case ABILITY_TOXIC_CHAIN:
             if (gBattleStruct->toxicChainPriority)
             {
