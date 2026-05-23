@@ -8368,7 +8368,7 @@ s32 GetAdjustedDamage(struct BattleContext *ctx, s32 damage)
         enduredHit = TRUE;
         RecordAbilityBattle(ctx->battlerDef, ABILITY_PHOENIX_FEATHER);
         gLastUsedAbility = ABILITY_PHOENIX_FEATHER;
-        gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_FOE_ENDURED_AFFECTION;
+        gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_FOE_ENDURED;
     }
     else if (ctx->holdEffectDef == HOLD_EFFECT_FOCUS_BAND && rand < GetBattlerHoldEffectParam(ctx->battlerDef))
     {
