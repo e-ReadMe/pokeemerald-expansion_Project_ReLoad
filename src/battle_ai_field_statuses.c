@@ -281,6 +281,7 @@ static enum FieldEffectOutcome BenefitsFromHailOrSnow(enum BattlerId battler, u3
     if (DoesAbilityBenefitFromWeather(gAiLogicData->abilities[battler], weather)
      || IS_BATTLER_OF_TYPE(battler, TYPE_ICE)
      || HasMoveWithEffect(battler, EFFECT_WEATHER_BALL)
+     || HasMoveWithEffect(battler, EFFECT_ICY_GLIDE)
      || HasMoveWithFlag(battler, MoveAlwaysHitsInHailSnow)
      || HasBattlerSideMoveWithEffect(battler, EFFECT_AURORA_VEIL))
         return FIELD_EFFECT_POSITIVE;
@@ -576,6 +577,8 @@ s32 CalcWeatherScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
                 score += GOOD_EFFECT;
             if (HasBattlerSideMoveWithEffect(battlerAtk, EFFECT_WEATHER_BALL))
                 score += WEAK_EFFECT;
+            if (HasBattlerSideMoveWithEffect(battlerAtk, EFFECT_ICY_GLIDE))
+                score += GOOD_EFFECT;
             if (aiData->holdEffects[battlerAtk] == HOLD_EFFECT_ICY_ROCK)
                 score += WEAK_EFFECT;
             if (HasMoveWithEffect(battlerDef, EFFECT_MORNING_SUN)
@@ -593,6 +596,8 @@ s32 CalcWeatherScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
                 score += GOOD_EFFECT;
             if (HasBattlerSideMoveWithEffect(battlerAtk, EFFECT_WEATHER_BALL))
                 score += WEAK_EFFECT;
+            if (HasBattlerSideMoveWithEffect(battlerAtk, EFFECT_ICY_GLIDE))
+                score += GOOD_EFFECT;
             if (aiData->holdEffects[battlerAtk] == HOLD_EFFECT_ICY_ROCK)
                 score += WEAK_EFFECT;
             if (HasMoveWithEffect(battlerDef, EFFECT_MORNING_SUN)

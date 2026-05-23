@@ -1747,30 +1747,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     //    .battleAnimScript = gBattleAnimMove_BubbleBeam,
     //},
 
-    [MOVE_AURORA_BEAM] =
-    {
-        .name = COMPOUND_STRING("Aurora Beam"),
-        .description = COMPOUND_STRING(
-            "Fires a rainbow-colored\n"
-            "beam that may lower Attack."),
-        .effect = EFFECT_HIT,
-        .power = 65,
-        .type = TYPE_ICE,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
-            .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33,
-        }),
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MON : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_HAIL},
-        .battleAnimScript = gBattleAnimMove_AuroraBeam,
-    },
+    //[MOVE_AURORA_BEAM] =
+    //{
+    //    .name = COMPOUND_STRING("Aurora Beam"),
+    //    .description = COMPOUND_STRING(
+    //        "Fires a rainbow-colored\n"
+    //        "beam that may lower Attack."),
+    //    .effect = EFFECT_HIT,
+    //    .power = 65,
+     //   .type = TYPE_ICE,
+    //    .accuracy = 100,
+    //    .pp = 20,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_SPECIAL,
+    //    .additionalEffects = ADDITIONAL_EFFECTS({
+    //        .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
+    //        .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33,
+    //    }),
+    //    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MON : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
+    //    .contestCategory = CONTEST_CATEGORY_BEAUTY,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {COMBO_STARTER_HAIL},
+    //    .battleAnimScript = gBattleAnimMove_AuroraBeam,
+    //},
 
     [MOVE_HYPER_BEAM] =
     {
@@ -2132,31 +2132,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_POISON_POWDER] =
-    {
-        .name = COMPOUND_STRING("Poison Powder"),
-        .description = COMPOUND_STRING(
-            "Scatters a toxic powder\n"
-            "that may poison the foe."),
-        .effect = EFFECT_NON_VOLATILE_STATUS,
-        .power = 0,
-        .type = TYPE_POISON,
-        .accuracy = 75,
-        .pp = 35,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .nonVolatileStatus = MOVE_EFFECT_POISON },
-        .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
-        .magicCoatAffected = TRUE,
-        .powderMove = TRUE,
-        .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
-        .contestCategory = CONTEST_CATEGORY_SMART,
-        .contestComboStarterId = COMBO_STARTER_POISON_POWDER,
-        .contestComboMoves = {COMBO_STARTER_SWEET_SCENT},
-        .battleAnimScript = gBattleAnimMove_PoisonPowder,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_POISON_POWDER] =
+    //{
+    //    .name = COMPOUND_STRING("Poison Powder"),
+    //    .description = COMPOUND_STRING(
+    //        "Scatters a toxic powder\n"
+    //        "that may poison the foe."),
+    //    .effect = EFFECT_NON_VOLATILE_STATUS,
+    //    .power = 0,
+    //    .type = TYPE_POISON,
+    //    .accuracy = 75,
+    //    .pp = 35,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_STATUS,
+    //    .argument = { .nonVolatileStatus = MOVE_EFFECT_POISON },
+    //    .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
+    //    .magicCoatAffected = TRUE,
+    //    .powderMove = TRUE,
+    //    .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
+    //    .contestCategory = CONTEST_CATEGORY_SMART,
+    //    .contestComboStarterId = COMBO_STARTER_POISON_POWDER,
+    //    .contestComboMoves = {COMBO_STARTER_SWEET_SCENT},
+    //    .battleAnimScript = gBattleAnimMove_PoisonPowder,
+    //    .validApprenticeMove = TRUE,
+    //},
 
     [MOVE_STUN_SPORE] =
     {
@@ -3451,34 +3451,34 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_WATERFALL] =
-    {
-        .name = COMPOUND_STRING("Waterfall"),
-        .description = COMPOUND_STRING(
-            "Charges with speed to climb\n"
-            "waterfalls. May flinch."),
-        .effect = EFFECT_HIT,
-        .power = 80,
-        .type = TYPE_WATER,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .additionalEffects = ADDITIONAL_EFFECTS({
-                .moveEffect = MOVE_EFFECT_FLINCH,
-                .chance = 20,
-            }),
-        #endif
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BETTER_IF_LAST,
-        .contestCategory = CONTEST_CATEGORY_TOUGH,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
-        .battleAnimScript = gBattleAnimMove_Waterfall,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_WATERFALL] =
+    //{
+    //    .name = COMPOUND_STRING("Waterfall"),
+    //    .description = COMPOUND_STRING(
+    //        "Charges with speed to climb\n"
+    //        "waterfalls. May flinch."),
+    //    .effect = EFFECT_HIT,
+    //    .power = 80,
+    //    .type = TYPE_WATER,
+    //    .accuracy = 100,
+    //    .pp = 15,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_PHYSICAL,
+    //    .makesContact = TRUE,
+    //    #if B_UPDATED_MOVE_DATA >= GEN_4
+    //        .additionalEffects = ADDITIONAL_EFFECTS({
+    //            .moveEffect = MOVE_EFFECT_FLINCH,
+    //            .chance = 20,
+    //        }),
+    //    #endif
+    //    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BETTER_IF_LAST,
+    //    .contestCategory = CONTEST_CATEGORY_TOUGH,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
+    //    .battleAnimScript = gBattleAnimMove_Waterfall,
+    //    .validApprenticeMove = TRUE,
+    //},
 
     [MOVE_CLAMP] =
     {
@@ -4031,82 +4031,82 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_FLASH] =
-    {
-        .name = COMPOUND_STRING("Flash"),
-        .description = COMPOUND_STRING(
-            "A blast of light that\n"
-            "paralyses & cuts accuracy."),
-        .effect = EFFECT_NON_VOLATILE_STATUS,
-        .power = 0,
-        .type = TYPE_NORMAL,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_4 ? 100 : 70,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_EVSN_UP_1 },
-        .magicCoatAffected = TRUE,
-        .argument = { .nonVolatileStatus = MOVE_EFFECT_PARALYSIS },
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
-            .chance = 100,
-        }),
-        .contestEffect = CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Flash,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_FLASH] =
+    //{
+    //    .name = COMPOUND_STRING("Flash"),
+    //    .description = COMPOUND_STRING(
+    //        "A blast of light that\n"
+    //        "paralyses & cuts accuracy."),
+    //    .effect = EFFECT_NON_VOLATILE_STATUS,
+    //    .power = 0,
+    //    .type = TYPE_NORMAL,
+    //    .accuracy = B_UPDATED_MOVE_DATA >= GEN_4 ? 100 : 70,
+    //    .pp = 20,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_STATUS,
+    //    .zMove = { .effect = Z_EFFECT_EVSN_UP_1 },
+    //    .magicCoatAffected = TRUE,
+    //    .argument = { .nonVolatileStatus = MOVE_EFFECT_PARALYSIS },
+    //    .additionalEffects = ADDITIONAL_EFFECTS({
+    //        .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
+    //        .chance = 100,
+    //    }),
+    //    .contestEffect = CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION,
+    //    .contestCategory = CONTEST_CATEGORY_BEAUTY,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {0},
+    //    .battleAnimScript = gBattleAnimMove_Flash,
+    //    .validApprenticeMove = TRUE,
+    //},
 
 
-    [MOVE_PSYWAVE] =
-    {
-        .name = COMPOUND_STRING("Psywave"),
-        .description = COMPOUND_STRING(
-            "Attacks with a psychic\n"
-            "wave of varying intensity."),
-        .effect = EFFECT_PSYWAVE,
-        .power = 1,
-        .type = TYPE_PSYCHIC,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_6 ? 100 : 80,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
-        .contestCategory = CONTEST_CATEGORY_SMART,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CALM_MIND},
-        .battleAnimScript = gBattleAnimMove_Psywave,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_PSYWAVE] =
+    //{
+    //    .name = COMPOUND_STRING("Psywave"),
+    //    .description = COMPOUND_STRING(
+    //        "Attacks with a psychic\n"
+     //       "wave of varying intensity."),
+    //    .effect = EFFECT_PSYWAVE,
+    //    .power = 1,
+    //    .type = TYPE_PSYCHIC,
+    //    .accuracy = B_UPDATED_MOVE_DATA >= GEN_6 ? 100 : 80,
+    //    .pp = 15,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_SPECIAL,
+    //    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
+    //    .contestCategory = CONTEST_CATEGORY_SMART,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {COMBO_STARTER_CALM_MIND},
+    //    .battleAnimScript = gBattleAnimMove_Psywave,
+    //    .validApprenticeMove = TRUE,
+    //},
 
-    [MOVE_SPLASH] =
-    {
-        .name = COMPOUND_STRING("Splash"),
-        .description = COMPOUND_STRING(
-            "It's just a splash...\n"
-            "Has no effect whatsoever."),
-        .effect = EFFECT_DO_NOTHING,
-        .power = 0,
-        .type = TYPE_NORMAL,
-        .accuracy = 0,
-        .pp = 40,
-        .target = TARGET_USER,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_ATK_UP_3 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .gravityBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_BETTER_IF_LAST, //C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUICKLY_GROW_BORED :
-        .contestCategory = CONTEST_CATEGORY_CUTE,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Splash,
-    },
+    //[MOVE_SPLASH] =
+    //{
+    //    .name = COMPOUND_STRING("Splash"),
+    //    .description = COMPOUND_STRING(
+    //        "It's just a splash...\n"
+    //        "Has no effect whatsoever."),
+    //    .effect = EFFECT_DO_NOTHING,
+    //    .power = 0,
+    //    .type = TYPE_NORMAL,
+    //    .accuracy = 0,
+    //    .pp = 40,
+    //    .target = TARGET_USER,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_STATUS,
+    //    .zMove = { .effect = Z_EFFECT_ATK_UP_3 },
+    //    .ignoresProtect = TRUE,
+    //    .mirrorMoveBanned = TRUE,
+    //    .gravityBanned = TRUE,
+    //    .contestEffect = CONTEST_EFFECT_BETTER_IF_LAST, //C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUICKLY_GROW_BORED :
+    //    .contestCategory = CONTEST_CATEGORY_CUTE,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {0},
+    //    .battleAnimScript = gBattleAnimMove_Splash,
+    //},
 
     [MOVE_ACID_ARMOR] =
     {
@@ -6483,31 +6483,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     //    .battleAnimScript = gBattleAnimMove_Twister,
     //},
 
-    [MOVE_RAIN_DANCE] =
-    {
-        .name = COMPOUND_STRING("Rain Dance"),
-        .description = COMPOUND_STRING(
-            "Boosts the power of Water-\n"
-            "type moves for 5 turns."),
-        .effect = EFFECT_WEATHER,
-        .power = 0,
-        .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 5,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .argument = { .weatherType =  BATTLE_WEATHER_RAIN },
-        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
-        .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_TOUGH,
-        .contestComboStarterId = COMBO_STARTER_RAIN_DANCE,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_RainDance,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_RAIN_DANCE] =
+    //{
+    //    .name = COMPOUND_STRING("Rain Dance"),
+    //    .description = COMPOUND_STRING(
+    //        "Boosts the power of Water-\n"
+    //        "type moves for 5 turns."),
+    //    .effect = EFFECT_WEATHER,
+    //    .power = 0,
+    //    .type = TYPE_WATER,
+    //    .accuracy = 0,
+    //    .pp = 5,
+    //    .target = TARGET_FIELD,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_STATUS,
+    //    .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
+    //    .ignoresProtect = TRUE,
+    //    .mirrorMoveBanned = TRUE,
+    //    .argument = { .weatherType =  BATTLE_WEATHER_RAIN },
+    //    .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
+    //    .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_TOUGH,
+    //    .contestComboStarterId = COMBO_STARTER_RAIN_DANCE,
+    //    .contestComboMoves = {0},
+    //    .battleAnimScript = gBattleAnimMove_RainDance,
+    //    .validApprenticeMove = TRUE,
+    //},
 
     [MOVE_SUNNY_DAY] =
     {
@@ -8011,30 +8011,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_FEATHER_DANCE] =
-    {
-        .name = COMPOUND_STRING("Feather Dance"),
-        .description = COMPOUND_STRING(
-            "Envelops the foe with down\n"
-            "to sharply reduce Attack."),
-        .effect = EFFECT_ATTACK_DOWN_2,
-        .power = 0,
-        .type = TYPE_FLYING,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
-        .magicCoatAffected = TRUE,
-        .danceMove = TRUE,
-        .contestEffect = CONTEST_EFFECT_BETTER_IF_LAST,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_FeatherDance,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_FEATHER_DANCE] =
+    //{
+    //    .name = COMPOUND_STRING("Feather Dance"),
+    //    .description = COMPOUND_STRING(
+    //        "Envelops the foe with down\n"
+    //        "to sharply reduce Attack."),
+    //    .effect = EFFECT_ATTACK_DOWN_2,
+    //    .power = 0,
+    //    .type = TYPE_FLYING,
+    //    .accuracy = 100,
+    //    .pp = 15,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_STATUS,
+    //    .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
+    //    .magicCoatAffected = TRUE,
+    //    .danceMove = TRUE,
+    //    .contestEffect = CONTEST_EFFECT_BETTER_IF_LAST,
+    //    .contestCategory = CONTEST_CATEGORY_BEAUTY,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {0},
+    //    .battleAnimScript = gBattleAnimMove_FeatherDance,
+    //    .validApprenticeMove = TRUE,
+    //},
 
     [MOVE_TEETER_DANCE] =
     {
@@ -8116,30 +8116,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_ICE_BALL] =
-    {
-        .name = COMPOUND_STRING("Ice Ball"),
-        .description = COMPOUND_STRING(
-            "A 5-turn attack that gains\n"
-            "power on successive hits."),
-        .effect = EFFECT_ROLLOUT,
-        .power = 30,
-        .type = TYPE_ICE,
-        .accuracy = 90,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .ballisticMove = TRUE,
-        .instructBanned = TRUE,
-        .parentalBondBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_HAIL, COMBO_STARTER_DEFENSE_CURL},
-        .battleAnimScript = gBattleAnimMove_IceBall,
-    },
+    //[MOVE_ICE_BALL] =
+    //{
+    //    .name = COMPOUND_STRING("Ice Ball"),
+    //    .description = COMPOUND_STRING(
+    //        "A 5-turn attack that gains\n"
+    //        "power on successive hits."),
+    //    .effect = EFFECT_ROLLOUT,
+    //    .power = 30,
+    //    .type = TYPE_ICE,
+    //    .accuracy = 90,
+    //    .pp = 20,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_PHYSICAL,
+    //    .makesContact = TRUE,
+    //    .ballisticMove = TRUE,
+    //    .instructBanned = TRUE,
+    //    .parentalBondBanned = TRUE,
+    //    .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
+    //    .contestCategory = CONTEST_CATEGORY_BEAUTY,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {COMBO_STARTER_HAIL, COMBO_STARTER_DEFENSE_CURL},
+    //    .battleAnimScript = gBattleAnimMove_IceBall,
+    //},
 
     [MOVE_NEEDLE_ARM] =
     {
@@ -8941,27 +8941,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_ICICLE_SPEAR] =
-    {
-        .name = COMPOUND_STRING("Icicle Spear"),
-        .description = COMPOUND_STRING(
-            "Attacks the foe by firing\n"
-            "2 to 5 icicles in a row."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 25 : 10,
-        .type = TYPE_ICE,
-        .accuracy = 100,
-        .pp = 30,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .multiHit = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_IcicleSpear,
-    },
+    //[MOVE_ICICLE_SPEAR] =
+    //{
+    //    .name = COMPOUND_STRING("Icicle Spear"),
+    //    .description = COMPOUND_STRING(
+    //        "Attacks the foe by firing\n"
+    //        "2 to 5 icicles in a row."),
+    //    .effect = EFFECT_HIT,
+    //    .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 25 : 10,
+    //    .type = TYPE_ICE,
+    //    .accuracy = 100,
+    //    .pp = 30,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_PHYSICAL,
+    //    .multiHit = TRUE,
+     //   .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
+    //    .contestCategory = CONTEST_CATEGORY_BEAUTY,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {0},
+    //    .battleAnimScript = gBattleAnimMove_IcicleSpear,
+    //},
 
     [MOVE_IRON_DEFENSE] =
     {
@@ -9780,35 +9780,35 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Pluck,
     },
 
-    [MOVE_TAILWIND] =
-    {
-        .name = COMPOUND_STRING("Tailwind"),
-        .description = COMPOUND_STRING(
-            "Whips up a breeze, doubling\n"
-        #if B_TAILWIND_TURNS >= GEN_5
-            "ally Speed for 4 turns."),
-        #else
-            "ally Speed for 3 turns."),
-        #endif
-        .effect = EFFECT_TAILWIND,
-        .power = 0,
-        .type = TYPE_FLYING,
-        .accuracy = 0,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 15 : 30,
-        .target = TARGET_USER,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_BOOST_CRITS },
-        .snatchAffected = TRUE,
-        .windMove = TRUE,
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_NEXT_APPEAL_EARLIER,
-        .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_SMART,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Tailwind,
-    },
+    //[MOVE_TAILWIND] =
+    //{
+    //    .name = COMPOUND_STRING("Tailwind"),
+     //   .description = COMPOUND_STRING(
+    //        "Whips up a breeze, doubling\n"
+    //    #if B_TAILWIND_TURNS >= GEN_5
+    //        "ally Speed for 4 turns."),
+    //    #else
+    //        "ally Speed for 3 turns."),
+    //    #endif
+    //    .effect = EFFECT_TAILWIND,
+    //    .power = 0,
+    //    .type = TYPE_FLYING,
+    //    .accuracy = 0,
+    //    .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 15 : 30,
+    //    .target = TARGET_USER,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_STATUS,
+    //    .zMove = { .effect = Z_EFFECT_BOOST_CRITS },
+    //    .snatchAffected = TRUE,
+    //    .windMove = TRUE,
+    //    .ignoresProtect = TRUE,
+    //    .mirrorMoveBanned = TRUE,
+    //    .contestEffect = CONTEST_EFFECT_NEXT_APPEAL_EARLIER,
+    //    .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_SMART,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {0},
+    //    .battleAnimScript = gBattleAnimMove_Tailwind,
+    //},
 
     [MOVE_ACUPRESSURE] =
     {
@@ -10675,31 +10675,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_SeedBomb,
     },
 
-    [MOVE_AIR_SLASH] =
-    {
-        .name = COMPOUND_STRING("Air Slash"),
-        .description = COMPOUND_STRING(
-            "Attacks with a blade of\n"
-            "air. May cause flinching."),
-        .effect = EFFECT_HIT,
-        .power = 75,
-        .type = TYPE_FLYING,
-        .accuracy = 95,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 15 : 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .slicingMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 30,
-        }),
-        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
-        .contestCategory = CONTEST_CATEGORY_COOL,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_AirSlash,
-    },
+    //[MOVE_AIR_SLASH] =
+    //{
+    //    .name = COMPOUND_STRING("Air Slash"),
+    //    .description = COMPOUND_STRING(
+    //        "Attacks with a blade of\n"
+    //        "air. May cause flinching."),
+    //    .effect = EFFECT_HIT,
+    //    .power = 75,
+    //    .type = TYPE_FLYING,
+    //    .accuracy = 95,
+    //    .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 15 : 20,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_SPECIAL,
+    //    .slicingMove = TRUE,
+    //    .additionalEffects = ADDITIONAL_EFFECTS({
+    //        .moveEffect = MOVE_EFFECT_FLINCH,
+    //        .chance = 30,
+    //    }),
+    //    .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
+    //    .contestCategory = CONTEST_CATEGORY_COOL,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {0},
+    //    .battleAnimScript = gBattleAnimMove_AirSlash,
+    //},
 
     [MOVE_X_SCISSOR] =
     {
@@ -14040,34 +14040,34 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     //    .battleAnimScript = gBattleAnimMove_TailSlap,
     //},
 
-    [MOVE_HURRICANE] =
-    {
-        .name = COMPOUND_STRING("Hurricane"),
-        .description = COMPOUND_STRING(
-            "Traps the foe in a fierce\n"
-            "wind. May cause confusion."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 110 : 120,
-        .type = TYPE_FLYING,
-        .accuracy = 70,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .windMove = TRUE,
-        .damagesAirborne = TRUE,
-        .alwaysHitsInRain = TRUE,
-        .accuracy50InSun = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_CONFUSION,
-            .chance = 30,
-        }),
-        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
-        .contestCategory = CONTEST_CATEGORY_TOUGH,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
-        .battleAnimScript = gBattleAnimMove_Hurricane,
-    },
+    //[MOVE_HURRICANE] =
+    //{
+    //    .name = COMPOUND_STRING("Hurricane"),
+    //    .description = COMPOUND_STRING(
+    //        "Traps the foe in a fierce\n"
+    //        "wind. May cause confusion."),
+    //    .effect = EFFECT_HIT,
+    //    .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 110 : 120,
+    //    .type = TYPE_FLYING,
+    //    .accuracy = 70,
+    //    .pp = 10,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_SPECIAL,
+     //   .windMove = TRUE,
+    //    .damagesAirborne = TRUE,
+    //    .alwaysHitsInRain = TRUE,
+    //    .accuracy50InSun = TRUE,
+    //    .additionalEffects = ADDITIONAL_EFFECTS({
+    //        .moveEffect = MOVE_EFFECT_CONFUSION,
+    //        .chance = 30,
+    //    }),
+    //    .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
+    //    .contestCategory = CONTEST_CATEGORY_TOUGH,
+    //    .contestComboStarterId = 0,
+    //    .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
+    //    .battleAnimScript = gBattleAnimMove_Hurricane,
+    //},
 
     [MOVE_HEAD_CHARGE] =
     {
@@ -17635,27 +17635,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_SappySeed,
     },
 
-    [MOVE_FREEZY_FROST] =
-    {
-        .name = COMPOUND_STRING("Freezy Frost"),
-        .description = COMPOUND_STRING(
-            "Crystal from cold haze hits.\n"
-            "Eliminates all stat changes."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 100 : 90,
-        .type = TYPE_ICE,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_8 ? 90 : 100,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_8 ? 10 : 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .mirrorMoveBanned = B_UPDATED_MOVE_FLAGS < GEN_8,
-        .metronomeBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_HAZE,
-        }),
-        .battleAnimScript = gBattleAnimMove_FreezyFrost,
-    },
+    //[MOVE_FREEZY_FROST] =
+    //{
+    //    .name = COMPOUND_STRING("Freezy Frost"),
+    //    .description = COMPOUND_STRING(
+    //        "Crystal from cold haze hits.\n"
+    //        "Eliminates all stat changes."),
+    //    .effect = EFFECT_HIT,
+    //    .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 100 : 90,
+    //    .type = TYPE_ICE,
+    //    .accuracy = B_UPDATED_MOVE_DATA >= GEN_8 ? 90 : 100,
+    //    .pp = B_UPDATED_MOVE_DATA >= GEN_8 ? 10 : 15,
+    //    .target = TARGET_SELECTED,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_SPECIAL,
+    //    .mirrorMoveBanned = B_UPDATED_MOVE_FLAGS < GEN_8,
+    //    .metronomeBanned = TRUE,
+    //    .additionalEffects = ADDITIONAL_EFFECTS({
+    //        .moveEffect = MOVE_EFFECT_HAZE,
+    //    }),
+    //    .battleAnimScript = gBattleAnimMove_FreezyFrost,
+    //},
 
     [MOVE_SPARKLY_SWIRL] =
     {
@@ -19793,28 +19793,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_BleakwindStorm,
     },
 
-    [MOVE_WILDBOLT_STORM] =
-    {
-        .name = COMPOUND_STRING("Wildbolt Storm"),
-        .description = COMPOUND_STRING(
-            "Hits with a brutal tempest.\n"
-            "May inflict paralysis."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 100 : 95,
-        .type = TYPE_ELECTRIC,
-        .accuracy = 80,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_9 ? 10 : 5,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .windMove = TRUE,
-        .alwaysHitsInRain = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
-            .chance = 20,
-        }),
-        .battleAnimScript = gBattleAnimMove_WildboltStorm,
-    },
+    //[MOVE_WILDBOLT_STORM] =
+    //{
+    //    .name = COMPOUND_STRING("Wildbolt Storm"),
+    //    .description = COMPOUND_STRING(
+    //        "Hits with a brutal tempest.\n"
+    //        "May inflict paralysis."),
+    //    .effect = EFFECT_HIT,
+    //    .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 100 : 95,
+    //    .type = TYPE_ELECTRIC,
+    //    .accuracy = 80,
+    //    .pp = B_UPDATED_MOVE_DATA >= GEN_9 ? 10 : 5,
+    //    .target = TARGET_BOTH,
+    //    .priority = 0,
+    //    .category = DAMAGE_CATEGORY_SPECIAL,
+    //    .windMove = TRUE,
+    //    .alwaysHitsInRain = TRUE,
+    //    .additionalEffects = ADDITIONAL_EFFECTS({
+    //        .moveEffect = MOVE_EFFECT_PARALYSIS,
+    //        .chance = 20,
+    //    }),
+    //    .battleAnimScript = gBattleAnimMove_WildboltStorm,
+    //},
 
     [MOVE_SANDSEAR_STORM] =
     {
@@ -23440,7 +23440,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 1,
         .pp = 20,
         .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .ballisticMove = TRUE,
         .battleAnimScript = gBattleAnimMove_Incinerate,
@@ -23516,12 +23515,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Damages everyone with a \n"
             "wave of burning cinders."),
-        .effect = TARGET_FOES_AND_ALLY,
+        .effect = EFFECT_HIT,
         .power = 60,
         .type = TYPE_FIRE,
         .accuracy = 90,
         .pp = 10,
-        .target = TARGET_ALL,
+        .target = TARGET_FOES_AND_ALLY,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .windMove = TRUE,
@@ -23579,6 +23578,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
 //-------WATER----------------------------------------------------------------------
 
+
+
+    [MOVE_SPLASH] =
+    {
+        .name = COMPOUND_STRING("Splash"),
+        .description = COMPOUND_STRING(
+            "It's just a splash...\n"
+            "Has no effect whatsoever."),
+        .effect = EFFECT_HIT,
+        .power = 30,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 40,
+        .target = TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SPD_PLUS_1,
+            .chance = 30,
+        }),
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .gravityBanned = TRUE,
+        .battleAnimScript = gBattleAnimMove_Splash,
+    },
 
     [MOVE_BUBBLE_BREATH] =
     {
@@ -23696,6 +23720,29 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_WaterShuriken,
     },
 
+    [MOVE_WATERFALL] =
+    {
+        .name = COMPOUND_STRING("Waterfall"),
+        .description = COMPOUND_STRING(
+            "Charges with speed to climb\n"
+            "waterfalls. May flinch."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+            .additionalEffects = ADDITIONAL_EFFECTS({
+                .moveEffect = MOVE_EFFECT_FLINCH,
+                .chance = 20,
+            }),
+        .battleAnimScript = gBattleAnimMove_Waterfall,
+        .validApprenticeMove = TRUE,
+    },
+
     [MOVE_IDLE_BUBBLE] =
     {
         .name = COMPOUND_STRING("Idle Bubble"),
@@ -23732,6 +23779,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_STATUS,
         .snatchAffected = TRUE,
         .battleAnimScript = gBattleAnimMove_AquaRing,
+    },
+
+    [MOVE_HEAVY_RAIN] =
+    {
+        .name = COMPOUND_STRING("Heavy Rain"),
+        .description = COMPOUND_STRING(
+            "Boosts the power of Water-\n"
+            "type moves for 5 turns."),
+        .effect = EFFECT_WEATHER,
+        .power = 0,
+        .type = TYPE_WATER,
+        .accuracy = 0,
+        .pp = 5,
+        .target = TARGET_FIELD,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .argument = { .weatherType =  BATTLE_WEATHER_RAIN },
+        .battleAnimScript = gBattleAnimMove_RainDance,
+        .validApprenticeMove = TRUE,
     },
 	
 //-----------PLANT------------------------------------------
@@ -23877,6 +23945,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .battleAnimScript = gBattleAnimMove_MagicalLeaf,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_POISON_POWDER] =
+    {
+        .name = COMPOUND_STRING("Poison Powder"),
+        .description = COMPOUND_STRING(
+            "Scatters a toxic powder\n"
+            "that may poison the foe."),
+        .effect = EFFECT_NON_VOLATILE_STATUS,
+        .power = 0,
+        .type = TYPE_PLANT,
+        .accuracy = 75,
+        .pp = 35,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .argument = { .nonVolatileStatus = MOVE_EFFECT_POISON },
+        .magicCoatAffected = TRUE,
+        .powderMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_PoisonPowder,
         .validApprenticeMove = TRUE,
     },
 	
@@ -24339,6 +24428,115 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Twister,
     },
 
+    [MOVE_WIND_CUTTER] =
+    {
+        .name = COMPOUND_STRING("Air Slash"),
+        .description = COMPOUND_STRING(
+            "Strikes with wind so hard it\n"
+            "cuts through you. Can flinch."),
+        .effect = EFFECT_HIT,
+        .power = 75,
+        .type = TYPE_WIND,
+        .accuracy = 95,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .slicingMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+        .battleAnimScript = gBattleAnimMove_AirSlash,
+    },
+
+    [MOVE_HURRICANE] =
+    {
+        .name = COMPOUND_STRING("Hurricane"),
+        .description = COMPOUND_STRING(
+            "Traps the foe in a fierce\n"
+            "wind. May cause confusion."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_WIND,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .windMove = TRUE,
+        .damagesAirborne = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_CONFUSION,
+            .chance = 30,
+        }),
+        .battleAnimScript = gBattleAnimMove_Hurricane,
+    },
+
+    [MOVE_THUNDERSTORM] =
+    {
+        .name = COMPOUND_STRING("Thunderstorm"),
+        .description = COMPOUND_STRING(
+            "Hits with a brutal tempest.\n"
+            "May inflict paralysis."),
+        .effect = EFFECT_HIT,
+        .power = 110,
+        .type = TYPE_WIND,
+        .accuracy = 85,
+        .pp = 5,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .windMove = TRUE,
+        .alwaysHitsInRain = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 20,
+        }),
+        .battleAnimScript = gBattleAnimMove_WildboltStorm,
+    },
+
+    [MOVE_WING_SHOES] =
+    {
+        .name = COMPOUND_STRING("Wing Shoes"),
+        .description = COMPOUND_STRING(
+            "Reorganizes data to equip\n"
+            "winged sandals. +1 to speed."),
+        .effect = EFFECT_SPEED_UP,
+        .power = 0,
+        .type = TYPE_WIND,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_USER_OR_ALLY,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .magicCoatAffected = TRUE,
+        .danceMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_FeatherDance,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_TAILWIND] =
+    {
+        .name = COMPOUND_STRING("Tailwind"),
+        .description = COMPOUND_STRING(
+            "Whips up a breeze, doubling\n"
+            "ally Speed for 4 turns."),
+        .effect = EFFECT_TAILWIND,
+        .power = 0,
+        .type = TYPE_WIND,
+        .accuracy = 0,
+        .pp = 15,
+        .target = TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .snatchAffected = TRUE,
+        .windMove = TRUE,
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .battleAnimScript = gBattleAnimMove_Tailwind,
+    },
+
 //------------------------ICE-------------------------------------
 
     [MOVE_FROZEN_WIND] =
@@ -24419,6 +24617,83 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .punchingMove = TRUE,
         .battleAnimScript = gBattleAnimMove_CometPunch,
+    },
+
+    [MOVE_ICY_GLIDE] =
+    {
+        .name = COMPOUND_STRING("Icy Glide"),
+        .description = COMPOUND_STRING(
+            "Slips on ice and slams into\n"
+            "the foe. +1 priority in snow."),
+        .effect = EFFECT_ICY_GLIDE,
+        .power = 60,
+        .type = TYPE_ICE,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .skyBattleBanned = B_EXTRAPOLATED_MOVE_FLAGS,
+        .battleAnimScript = gBattleAnimMove_IceBall,
+    },
+
+    [MOVE_HAIL_SPEAR] =
+    {
+        .name = COMPOUND_STRING("Hail Spear"),
+        .description = COMPOUND_STRING(
+            "Attacks the foe by firing\n"
+            "2 to 5 icicles in a row."),
+        .effect = EFFECT_HIT,
+        .power = 25,
+        .type = TYPE_ICE,
+        .accuracy = 100,
+        .pp = 30,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .multiHit = TRUE,
+        .battleAnimScript = gBattleAnimMove_IcicleSpear,
+    },
+
+    [MOVE_ICE_STATUE] =
+    {
+        .name = COMPOUND_STRING("Ice Statue"),
+        .description = COMPOUND_STRING(
+            "Turns the user into an ice\n"
+            "statue. May cause Frostbite."),
+        .effect = EFFECT_HIT,
+        .power = 90,
+        .type = TYPE_ICE,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+            .chance = 30,
+        }),
+        .battleAnimScript = gBattleAnimMove_FreezyFrost,
+    },
+
+    [MOVE_AURORA_FREEZE] =
+    {
+        .name = COMPOUND_STRING("Aurora Freeze"),
+        .description = COMPOUND_STRING(
+            "Fires a rainbow-colored\n"
+            "beam that causes frostbite"),
+        .effect = EFFECT_NON_VOLATILE_STATUS,
+        .power = 0,
+        .type = TYPE_ICE,
+        .accuracy = 85,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .magicCoatAffected = TRUE,
+        .argument = { .nonVolatileStatus = MOVE_EFFECT_FREEZE_OR_FROSTBITE },
+        .battleAnimScript = gBattleAnimMove_AuroraBeam,
     },
 
 //---------------------------DARK MOVES---------------------------
@@ -24577,6 +24852,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 	
 //----------------------LIGHT--------------------------------
 
+    [MOVE_FLASH] =
+    {
+        .name = COMPOUND_STRING("Flash"),
+        .description = COMPOUND_STRING(
+            "Blinds the foe with holy\n"
+            "light. Reduces accuracy."),
+        .effect = EFFECT_HIT,
+        .power = 30,
+        .type = TYPE_LIGHT,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
+            .chance = 100,
+        }),
+        .battleAnimScript = gBattleAnimMove_Flash,
+        .validApprenticeMove = TRUE,
+    },
+
     [MOVE_HOLY_LIGHT] =
     {
         .name = COMPOUND_STRING("Holy Light"),
@@ -24592,6 +24889,25 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .battleAnimScript = gBattleAnimMove_DisarmingVoice,
+    },
+
+
+    [MOVE_LIGHT_SOUL] =
+    {
+        .name = COMPOUND_STRING("Light Soul"),
+        .description = COMPOUND_STRING(
+            "Hurls a ball of solid light at\n"
+            "the foe."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_LIGHT,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .battleAnimScript = gBattleAnimMove_EnergyBall,
+        .validApprenticeMove = TRUE,
     },
 
 //---------Puppet-----------------------------------------

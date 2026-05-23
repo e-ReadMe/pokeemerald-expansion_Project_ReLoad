@@ -7,7 +7,7 @@ enum __attribute__((packed)) Move
     //MOVE_POUND = 1,
     MOVE_STRIKE = 1,//replaces pound
     MOVE_KARATE_CHOP = 2,
-    MOVE_SUPER_SLAP = 2, //digi move, replaces double slap
+    MOVE_SUPER_SLAP = 3, //digi move, replaces double slap
     //MOVE_DOUBLE_SLAP = 3,
     //MOVE_DOUBLESLAP = MOVE_DOUBLE_SLAP, // Pre-Gen VI name
     //MOVE_COMET_PUNCH = 4,
@@ -90,7 +90,8 @@ enum __attribute__((packed)) Move
     //MOVE_BUBBLE_BEAM = 61,
     //MOVE_BUBBLEBEAM = MOVE_BUBBLE_BEAM, // Pre-Gen VI name
     MOVE_BUBBLE_BREATH = 61, // Digimon move, replaces bubble beam
-    MOVE_AURORA_BEAM = 62,
+    MOVE_AURORA_FREEZE = 62, //digi move, replaces aurora beam
+    //MOVE_AURORA_BEAM = 62,
     MOVE_HYPER_BEAM = 63,
     //MOVE_PECK = 64,
     MOVE_WIND_CLAW = 64,//digi move. replaces peck
@@ -110,7 +111,7 @@ enum __attribute__((packed)) Move
     MOVE_BIO_HAZARD = 75, // Digimon move, replaces razor leaf
     MOVE_SOLAR_BEAM = 76,
     MOVE_SOLARBEAM = MOVE_SOLAR_BEAM, // Pre-Gen VI name
-    MOVE_POISON_POWDER = 77,
+    MOVE_POISON_POWDER = 77, //digi move. unchanged from vanilla
     MOVE_POISONPOWDER = MOVE_POISON_POWDER, // Pre-Gen VI name
     MOVE_STUN_SPORE = 78,
     MOVE_SLEEP_POWDER = 79,
@@ -180,7 +181,7 @@ enum __attribute__((packed)) Move
     MOVE_VENOM_TRAP = 124, // Digimon move, replaces sludge
     MOVE_BONE_CLUB = 125,
     MOVE_FIRE_BLAST = 126,
-    MOVE_WATERFALL = 127,
+    MOVE_WATERFALL = 127,// digi move. unchanged from vanilla
     MOVE_CLAMP = 128,
     MOVE_SWIFT = 129,
     MOVE_SKULL_BASH = 130,
@@ -205,9 +206,10 @@ enum __attribute__((packed)) Move
     MOVE_BUBBLES = 145, // Digimon move
     MOVE_DIZZY_PUNCH = 146,
     MOVE_SPORE = 147,
-    MOVE_FLASH = 148,
-    MOVE_PSYWAVE = 149,
-    MOVE_SPLASH = 150,
+    MOVE_FLASH = 148, //digi move. does damage as well now
+    //MOVE_PSYWAVE = 149,
+    MOVE_LIGHT_SOUL = 149,//digi move, replaces psywave
+    MOVE_SPLASH = 150,// digi move. does damage now. otherwise unchanged. 
     MOVE_ACID_ARMOR = 151,
     MOVE_CRABHAMMER = 152,
     MOVE_EXPLOSION = 153,
@@ -315,7 +317,8 @@ enum __attribute__((packed)) Move
     MOVE_CROSS_CHOP = 238,
     //MOVE_TWISTER = 239,
     MOVE_DARK_TWISTER = 239,//digi move, replaces twister
-    MOVE_RAIN_DANCE = 240,
+    //MOVE_RAIN_DANCE = 240,
+    MOVE_HEAVY_RAIN = 240,//digi move, replaces rain dance
     MOVE_SUNNY_DAY = 241,
     MOVE_CRUNCH = 242,
     MOVE_MIRROR_COAT = 243,
@@ -382,12 +385,14 @@ enum __attribute__((packed)) Move
     MOVE_TAIL_GLOW = 294,
     MOVE_LUSTER_PURGE = 295,
     MOVE_MIST_BALL = 296,
-    MOVE_FEATHER_DANCE = 297,
-    MOVE_FEATHERDANCE = MOVE_FEATHER_DANCE, // Pre-Gen VI name
+    //MOVE_FEATHER_DANCE = 297,
+    //MOVE_FEATHERDANCE = MOVE_FEATHER_DANCE, // Pre-Gen VI name
+    MOVE_WING_SHOES = 297, //digi move, replaces feather dance
     MOVE_TEETER_DANCE = 298,
     MOVE_BLAZE_KICK = 299,
     MOVE_MUD_SPORT = 300,
-    MOVE_ICE_BALL = 301,
+    //MOVE_ICE_BALL = 301,
+    MOVE_ICY_GLIDE = 301, //digi move, replaces ice ball
     MOVE_NEEDLE_ARM = 302,
     MOVE_SLACK_OFF = 303,
     MOVE_HYPER_VOICE = 304,
@@ -423,7 +428,8 @@ enum __attribute__((packed)) Move
     MOVE_MUDDY_WATER = 330,
     MOVE_BULLET_SEED = 331,
     MOVE_AERIAL_ACE = 332,
-    MOVE_ICICLE_SPEAR = 333,
+    //MOVE_ICICLE_SPEAR = 333,
+    MOVE_HAIL_SPEAR = 333,//digi move, replaces icicle spear
     MOVE_IRON_DEFENSE = 334,
     MOVE_BLOCK = 335,
     MOVE_HOWL = 336,
@@ -501,7 +507,8 @@ enum __attribute__((packed)) Move
     MOVE_NIGHT_SLASH = 400,
     MOVE_AQUA_TAIL = 401,
     MOVE_SEED_BOMB = 402,
-    MOVE_AIR_SLASH = 403,
+    //MOVE_AIR_SLASH = 403,
+    MOVE_WIND_CUTTER = 403,
     MOVE_X_SCISSOR = 404,
     MOVE_BUG_BUZZ = 405,
     MOVE_DRAGON_PULSE = 406,
@@ -653,7 +660,7 @@ enum __attribute__((packed)) Move
     MOVE_PSYSTRIKE = 540,
     //MOVE_TAIL_SLAP = 541,
     MOVE_FOX_TAIL = 541, // Digimon move
-    MOVE_HURRICANE = 542,
+    MOVE_HURRICANE = 542,//digi move. slightly altered from vanilla. 
     MOVE_HEAD_CHARGE = 543,
     //MOVE_GEAR_GRIND = 544,
     MOVE_COG_CRUSH = 544,
@@ -811,7 +818,8 @@ enum __attribute__((packed)) Move
     MOVE_GLITZY_GLOW = 683,
     MOVE_BADDY_BAD = 684,
     MOVE_SAPPY_SEED = 685,
-    MOVE_FREEZY_FROST = 686,
+    //MOVE_FREEZY_FROST = 686,
+    MOVE_ICE_STATUE = 686,//digi move, replaces freezy frost
     MOVE_SPARKLY_SWIRL = 687,
     MOVE_VEEVEE_VOLLEY = 688,
     //MOVE_DOUBLE_IRON_BASH = 689,
@@ -909,7 +917,8 @@ enum __attribute__((packed)) Move
     MOVE_INFERNAL_PARADE = 772,
     MOVE_CEASELESS_EDGE = 773,
     MOVE_BLEAKWIND_STORM = 774,
-    MOVE_WILDBOLT_STORM = 775,
+    //MOVE_WILDBOLT_STORM = 775,
+    MOVE_THUNDERSTORM = 775,//digi move, replaces wildbolt storm
     MOVE_SANDSEAR_STORM = 776,
     MOVE_LUNAR_BLESSING = 777,
     MOVE_TAKE_HEART = 778,
@@ -1108,6 +1117,7 @@ enum __attribute__((packed)) Move
 #define MOVE_SLAM MOVE_HEAVY_STRIKE                 //60 power physical move, 95% accuracy, high crit ratio
 #define MOVE_MEGA_PUNCH MOVE_MEGATON_PUNCH          //80 power physical move, 85% accuracy
 #define MOVE_DOUBLE_SLAP MOVE_SUPER_SLAP            //20 power physical multi hit move
+#define MOVE_DOUBLESLAP MOVE_SUPER_SLAP
 #define MOVE_RAPID_SPIN MOVE_SPIRAL_EDGE			//50 power physical move, rapid-spin effect
 #define MOVE_WORK_UP MOVE_ATTACK_CHARGE				//status, +1 attack to one target
 #define MOVE_AROMATIC_MIST MOVE_MENTAL_CHARGE		//status, +1 sp attack to one target
@@ -1131,6 +1141,7 @@ enum __attribute__((packed)) Move
 #define MOVE_BURNING_BULWARK MOVE_FIREWALL			//status. Protect, but causes burns on contact.
 #define MOVE_WILL_O_WISP MOVE_PANIC_WISP            //status 85% accuracy, burns the target
 //--------water-------------------------------
+//      MOVE_SPLASH                                 //230 power physical move. +1 speed
 #define MOVE_BUBBLE_BEAM MOVE_BUBBLE_BREATH         //50 power special move
 #define MOVE_BUBBLEBEAM MOVE_BUBBLE_BREATH
 #define MOVE_WATER_PULSE MOVE_WATER_TOWER           //50 power physical move
@@ -1138,8 +1149,10 @@ enum __attribute__((packed)) Move
 #define MOVE_SING MOVE_LULLABY_BUBBLE				//45 power special move, chance to cause sleep
 #define MOVE_SURF MOVE_TIDAL_STREAM					//60 power special move, hits both foes
 #define MOVE_WATER_SHURIKEN MOVE_MARCHING_FISH		//25 power physical move, multi-hit
+//      MOVE_WATERFALL                              //80 power physical move, can cause flinching.
 #define MOVE_HYPNOSIS MOVE_IDLE_BUBBLE              //10 power 60% accuracy special move, puts the target to sleep
 #define MOVE_WATER_SPORT MOVE_AQUA_MAGIC            //status move, +1 special attack
+#define MOVE_RAIN_DANCE MOVE_HEAVY_RAIN             //status move, summons rain. 
 //--------plant-------------------------------
 #define MOVE_VINE_WHIP MOVE_THORN_STRIKE			//45 power special move
 #define MOVE_BRANCH_POKE MOVE_RAIN_OF_POLLEN		//50 power special move. lowers evasiveness
@@ -1148,6 +1161,7 @@ enum __attribute__((packed)) Move
 #define MOVE_SLUDGE MOVE_VENOM_TRAP					//40 power special move. may cause poison. 
 #define MOVE_POISON_JAB MOVE_POISON_IVY				//60 power physcial move. may cause paralysis 
 #define MOVE_MAGICAL_LEAF MOVE_CRESCENT_LEAF		//60 power special move. can't miss
+//      MOVE_POISON_POWDER                          //sttaus. causes poison. Unchanged from vanilla
 //--------Insect------------------------------
 #define MOVE_STRING_SHOT MOVE_ELECTRO_THREAD		//20 power special move, may paralyse
 #define MOVE_ATTACK_ORDER MOVE_INSECT_HORDE			//5 power special move, can hit up to 10 
@@ -1161,6 +1175,13 @@ enum __attribute__((packed)) Move
 #define MOVE_THUNDERSHOCK MOVE_HERTZ_HOWL
 #define MOVE_DOUBLE_IRON_BASH MOVE_CRUSH_BLADE      //50 power physical move, prevents foe's escape
 #define MOVE_MAGNET_BOMB MOVE_DIS_ASSEMBLER         //60 power special move. cant miss
+// MOVE_MECHANICAL_CLAW powerful physical move
+// MOVE_GIGAWATT LASER //powerful special move. 
+// MOVE_DELETE_PROGRAM //status. causes a curse effect that kills the foe over several turns. 
+// MOVE_DG_DIMENSION //a room effect or custom weather
+// MOVE UPGRADE //status move. boosts stats
+// MOVE_ANTI_ATTACK //status. lowers attack of both foes. 
+
 //--------earth-------------------------------
 #define MOVE_COMET_PUNCH MOVE_SHAMA_HAMMER	        //45 power physical move, reduces foes attack. 
 #define MOVE_ANCIENTPOWER MOVE_GAIA_BLAST           //50 power special move.
@@ -1173,17 +1194,28 @@ enum __attribute__((packed)) Move
 #define MOVE_SHOCK_WAVE MOVE_ELECTRO_SHOCK          //50 power special move, 20% chance to paralyze
 #define MOVE_SPARK MOVE_MINI_SCISSOR_CLAW           //55 power physical move, high crit rate
 #define MOVE_THUNDER_WAVE MOVE_ELECTRIC_CLOUD       //status move, paralyses the target
-//--------wind-------------------------------
+//      MOVE_ELECTRIC_TERRAIN   //status move. summons electric terrain
+//--------wind-------------------------------  
 #define MOVE_GUST MOVE_AIR_BUBBLES                  //40 power special move
 #define MOVE_PECK MOVE_WIND_CLAW                    //50 power physical move
 #define MOVE_QUICK_ATTACK MOVE_SONIC_JAB            //40 power physical move, +1 priority
 #define MOVE_AIR_CUTTER MOVE_AIR_SHOT               //55 power special move, high crit ratio
 #define MOVE_TWISTER MOVE_DARK_TWISTER				//50 power physical move, hits both foes. may cause flinching
+#define MOVE_AIR_SLASH MOVE_WIND_CUTTER             //80 power physical move, high crit ratio. hits both foes.
+// MOVE_HURRICANE                                   //80 power special move. hits both foes. 
+#define MOVE_WILDBOLT_STORM MOVE_THUNDERSTORM       //110 power special, hits both foes, may paralyze
+#define MOVE_FEATHERDANCE MOVE_WING_SHOES           //status. sharply boosts the target's speed
+#define MOVE_FEATHER_DANCE MOVE_WING_SHOES
+//      MOVE_TAILWIND                               //Status. same as vanilla. boosts the speed of the users team for 4 turns.
 //--------ice-------------------------------
 #define MOVE_POWDER_SNOW MOVE_FROZEN_WIND			//50 power special move, may freeze
 #define MOVE_ICE_SHARD MOVE_FROZEN_BULLET			//40 power special move, +1 priority
+#define MOVE_ICE_BALL MOVE_ICY_GLIDE                //60 power physical move, +1 priority if snowing
 #define MOVE_AVALANCHE MOVE_DIAMOND_DUST			//20 power physical multi strike
 #define MOVE_ICE_PUNCH MOVE_SNOW_GOBLI_VOLT			//45 power physical move, may freezetimes
+#define MOVE_ICICLE_SPEAR MOVE_HAIL_SPEAR           //25 power physical move, multi-hit
+#define MOVE_FREEZY_FROST MOVE_ICE_STATUE           //80 power physical move, may cause frostbite
+#define MOVE_AURORA_BEAM MOVE_AURORA_FREEZE         //status, causes frostbite
 //--------dark-------------------------------
 #define MOVE_NIGHT_SHADE MOVE_NIGHTMARE_SYNDROME	//60 power physical move, may sleep
 #define MOVE_LICK MOVE_DARK_SPIRIT					//40 power special move
@@ -1195,7 +1227,16 @@ enum __attribute__((packed)) Move
 #define MOVE_CONFUSE_RAY MOVE_BLACKOUT				//status, causes confusion
 #define MOVE_GROWL MOVE_BAD_MANNERS					//status, lowers both foes attack
 //--------Light-------------------------------
+//      MOVE_FLASH                                  //30 power, special move. reduces accuracy
 #define MOVE_DISARMING_VOICE MOVE_HOLY_LIGHT		//40 power, special move
+#define MOVE_PSYWAVE MOVE_LIGHT_SOUL                //40 power, physical move
+// MOVE_SAINT_RAY //60 power special move
+// MOVE_ANGEL_ROD
+// MOVE_HAND_OF_FATE
+// MOVE_HOLY_BREATH  //status, boosts special attack and special defence 
+// MOVE_SAINT_SHIELD //Status, protect variant. 
+// MOVE_JUDGEMENT //high power physical move. 
+// MOVE_SHINING_NOVA //high power special move, hits both foes, may burn. 
 //--------puppet-------------------------------
 #define MOVE_TAIL_SLAP MOVE_FOX_TAIL				//40 power, physical move
 //--------undead-------------------------------
@@ -1207,6 +1248,12 @@ enum __attribute__((packed)) Move
 #define MOVE_POISON_FANG MOVE_POISON_CLAW			//30 power physical move. may poison
 #define MOVE_SMOG MOVE_GLOOM_DUST					//30 power Special move, may poison
 #define MOVE_DIRE_CLAW MOVE_FUNGUS_CRUSHER			//50 power physical move. 30% chance to cause sleep, poison or paralysis
+//cooties kick  //physical move. mega kick equivalent. 75 power, 85% accuracy
+//super stink jet //special move that causes the block effect, preventing item use
+//poop field //custom terrain. 
+//Guerilla poop //high power physical move. 
+
+
 
 };
 

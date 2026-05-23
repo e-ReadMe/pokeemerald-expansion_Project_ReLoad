@@ -4851,6 +4851,11 @@ s32 GetBattleMovePriority(enum BattlerId battler, enum Ability ability, enum Mov
     {
         priority++;
     }
+    else if (GetMoveEffect(move) == EFFECT_ICY_GLIDE
+          && gBattleWeather & B_WEATHER_ICY_ANY)
+    {
+        priority++;
+    }
     else if (ability == ABILITY_TRIAGE && IsHealingMove(move))
     {
         priority += 3;
