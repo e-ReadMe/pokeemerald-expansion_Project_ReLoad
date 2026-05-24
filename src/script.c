@@ -12,6 +12,7 @@
 #include "constants/map_scripts.h"
 #include "constants/script_commands.h"
 #include "field_message_box.h"
+#include "trainer_see.h"
 
 #include "dexnav.h"
 
@@ -692,3 +693,4 @@ void SetWalkingIntoSignVars(void)
     // gWalkAwayFromSignInhibitTimer = 6;
     // sMsgBoxIsCancelable = TRUE;
 }
+

@@ -522,4 +522,6 @@ bool8 PlayerIsUnderWaterfall(struct ObjectEvent *objectEvent);
 
 u8 GetObjectEventApricornTreeId(u8 objectEventId);
 
+u16 GetObjectEventTrainerSightFlagByObjectEventId(u8 objEventId);
+
 #endif //GUARD_EVENT_OBJECT_MOVEMENT_H

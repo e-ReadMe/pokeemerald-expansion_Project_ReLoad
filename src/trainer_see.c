@@ -22,6 +22,7 @@
 #include "constants/field_effects.h"
 #include "constants/script_commands.h"
 #include "constants/trainer_types.h"
+#include "event_scripts.h"
 
 // this file's functions
 static u8 CheckTrainer(u8 objectEventId);
@@ -435,53 +436,23 @@ static const struct SpriteTemplate sSpriteTemplate_Emote =
 bool8 CheckForTrainersWantingBattle(void)
 {
     u8 i;
-    u8 trainerObjects[OBJECT_EVENTS_COUNT] = {0};
-    u8 trainerObjectsCount = 0;
-
-    if (FlagGet(OW_FLAG_NO_TRAINER_SEE))
-        return FALSE;
+    u8 numTrainers;
 
     gNoOfApproachingTrainers = 0;
     gApproachingTrainerId = 0;
 
-    // Adds trainers wanting to battle to array
     for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
     {
         if (!gObjectEvents[i].active)
             continue;
-        if (gObjectEvents[i].trainerType != TRAINER_TYPE_NORMAL && gObjectEvents[i].trainerType != TRAINER_TYPE_SEE_ALL_DIRECTIONS && gObjectEvents[i].trainerType != TRAINER_TYPE_BURIED)
+        
+        if (gObjectEvents[i].trainerType == TRAINER_TYPE_NONE || gObjectEvents[i].trainerType == TRAINER_TYPE_SEE_ALL_DIRECTIONS)
             continue;
-        trainerObjects[trainerObjectsCount++] = i;
-    }
 
-    // Sorts array by localId
-    for (i = 1; i <= trainerObjectsCount; i++)
-    {
-        u8 x = trainerObjects[i];
-        u8 j = i;
-        while (j > 0 && gObjectEvents[trainerObjects[j-1]].localId > gObjectEvents[x].localId)
-        {
-            trainerObjects[j] = trainerObjects[j-1];
-            j--;
-        }
-        trainerObjects[j] = x;
-    }
-
-    for (i = 0; i <= trainerObjectsCount; i++)
-    {
-        u8 numTrainers;
-        numTrainers = CheckTrainer(trainerObjects[i]);
-        if (numTrainers == 0xFF) // non-trainerbattle script
-        {
-            u32 objectEventId = gApproachingTrainers[gNoOfApproachingTrainers - 1].objectEventId;
-            gApproachingTrainers[gNoOfApproachingTrainers - 1].trainerScriptPtr = GetObjectEventScriptPointerByObjectEventId(objectEventId);
-            gSelectedObjectEvent = objectEventId;
-            gSpecialVar_LastTalked = gObjectEvents[objectEventId].localId;
-            ScriptContext_SetupScript(EventScript_ObjectApproachPlayer);
-            LockPlayerFieldControls();
-            return TRUE;
-        }
-
+        numTrainers = CheckTrainer(i);
+        if (numTrainers == 0xFF)    //run script
+            break;
+        
         if (numTrainers == 2)
             break;
 
@@ -490,10 +461,47 @@ bool8 CheckForTrainersWantingBattle(void)
 
         if (gNoOfApproachingTrainers > 1)
             break;
-        if (GetMonsStateToDoubles_2() != PLAYER_HAS_TWO_USABLE_MONS) // one trainer found and cant have a double battle
+        if (GetMonsStateToDoubles_2() != 0) // one trainer found and cant have a double battle
             break;
     }
-
+        
+    if (numTrainers == 0xFF)
+    {
+        u8 objectEventId = gApproachingTrainers[gNoOfApproachingTrainers - 1].objectEventId;
+        
+        gSelectedObjectEvent = objectEventId;
+        gSpecialVar_LastTalked = gObjectEvents[objectEventId].localId;
+        ScriptContext_SetupScript(EventScript_ObjectApproachPlayer);
+        LockPlayerFieldControls();
+        return TRUE;
+    }
+    
+    if (gNoOfApproachingTrainers == 1)
+    {
+        ResetTrainerOpponentIds();
+        ConfigureAndSetUpOneTrainerBattle(gApproachingTrainers[gNoOfApproachingTrainers - 1].objectEventId,
+                                          gApproachingTrainers[gNoOfApproachingTrainers - 1].trainerScriptPtr);
+        gTrainerApproachedPlayer = TRUE;
+        return TRUE;
+    }
+    else if (gNoOfApproachingTrainers == 2)
+    {
+        ResetTrainerOpponentIds();
+        for (i = 0; i < gNoOfApproachingTrainers; i++, gApproachingTrainerId++)
+        {
+            ConfigureTwoTrainersBattle(gApproachingTrainers[i].objectEventId,
+                                       gApproachingTrainers[i].trainerScriptPtr);
+        }
+        SetUpTwoTrainersBattle();
+        gApproachingTrainerId = 0;
+        gTrainerApproachedPlayer = TRUE;
+        return TRUE;
+    }
+    else
+    {
+        gTrainerApproachedPlayer = FALSE;
+        return FALSE;
+    }
 
     if (InBattlePyramid_() || InTrainerHillChallenge())
     {
@@ -551,35 +559,17 @@ bool8 CheckForTrainersWantingBattle(void)
 
 static u8 CheckTrainer(u8 objectEventId)
 {
-    const u8 *trainerBattlePtr;
-    u8 numTrainers = 1;
-
-    u8 approachDistance = GetTrainerApproachDistance(&gObjectEvents[objectEventId]);
-    if (approachDistance == 0)
-        return 0;
-
+    const u8 *scriptPtr;
+    u8 ret = 1;
+    u8 approachDistance;
+    u16 scriptFlag = GetObjectEventTrainerSightFlagByObjectEventId(objectEventId);
+    
     if (InTrainerHill() == TRUE)
-    {
-        trainerBattlePtr = GetTrainerHillTrainerScript();
-    }
+        scriptPtr = GetTrainerHillTrainerScript();
     else
-    {
-        trainerBattlePtr = GetObjectEventScriptPointerByObjectEventId(objectEventId);
-        struct ScriptContext ctx;
-        if (RunScriptImmediatelyUntilEffect(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE | SCREFF_TRAINERBATTLE, trainerBattlePtr, &ctx))
-        {
-            if (*ctx.scriptPtr == SCR_OP_TRAINERBATTLE)
-                trainerBattlePtr = ctx.scriptPtr;
-            else
-                trainerBattlePtr = NULL;
-        }
-        else
-        {
-            return 0; // no effect
-        }
-    }
+        scriptPtr = GetObjectEventScriptPointerByObjectEventId(objectEventId);
 
-    if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
+    if (InBattlePyramid_())
     {
         if (GetBattlePyramidTrainerFlag(objectEventId))
             return 0;
@@ -589,48 +579,52 @@ static u8 CheckTrainer(u8 objectEventId)
         if (GetHillTrainerFlag(objectEventId))
             return 0;
     }
-    else if (trainerBattlePtr)
+    else if (scriptFlag < TRAINER_TYPE_RUN_SCRIPT)
     {
-        if (GetTrainerFlagFromScriptPointer(trainerBattlePtr))
+        if (GetTrainerFlagFromScriptPointer(scriptPtr))
+            return 0;
+    }
+
+    approachDistance = GetTrainerApproachDistance(&gObjectEvents[objectEventId]);
+
+    if (approachDistance != 0)
+    {
+        if (scriptFlag >= TRAINER_TYPE_RUN_SCRIPT)
         {
-            //If there is a rematch, we want to trigger the approach sequence
-            if (I_VS_SEEKER_CHARGING && GetRematchFromScriptPointer(trainerBattlePtr))
+            if (!FlagGet(scriptFlag) && scriptPtr != NULL)
             {
-                trainerBattlePtr = NULL;
-                numTrainers = 0xFF;
+                // TRAINER_TYPE_RUN_SCRIPT
+                FlagSet(scriptFlag);
+                ret = 0xFF;
             }
             else
             {
-                 return 0;
+                return 0;
             }
         }
-    }
-    else
-    {
-        numTrainers = 0xFF;
-    }
-
-    if (trainerBattlePtr)
-    {
-        TrainerBattleParameter *temp = (TrainerBattleParameter *)(trainerBattlePtr + 1);
-        if (temp->params.mode == TRAINER_BATTLE_DOUBLE
-            || temp->params.mode == TRAINER_BATTLE_REMATCH_DOUBLE
-            || temp->params.mode == TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE)
+        else
         {
-            if (GetMonsStateToDoubles_2() != PLAYER_HAS_TWO_USABLE_MONS)
-                return 0;
+            if (scriptPtr[1] == TRAINER_BATTLE_DOUBLE
+                || scriptPtr[1] == TRAINER_BATTLE_REMATCH_DOUBLE
+                || scriptPtr[1] == TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE)
+            {
+                if (GetMonsStateToDoubles_2() != 0)
+                    return 0;
 
-            numTrainers = 2;
+                ret = 2;
+            }
         }
+
+        gApproachingTrainers[gNoOfApproachingTrainers].objectEventId = objectEventId;
+        gApproachingTrainers[gNoOfApproachingTrainers].trainerScriptPtr = scriptPtr;
+        gApproachingTrainers[gNoOfApproachingTrainers].radius = approachDistance;
+        InitTrainerApproachTask(&gObjectEvents[objectEventId], approachDistance - 1);
+        gNoOfApproachingTrainers++;
+
+        return ret;
     }
 
-    gApproachingTrainers[gNoOfApproachingTrainers].objectEventId = objectEventId;
-    gApproachingTrainers[gNoOfApproachingTrainers].trainerScriptPtr = trainerBattlePtr;
-    gApproachingTrainers[gNoOfApproachingTrainers].radius = approachDistance;
-    InitTrainerApproachTask(&gObjectEvents[objectEventId], approachDistance - 1);
-    gNoOfApproachingTrainers++;
-
-    return numTrainers;
+    return 0;
 }
 
 static u8 GetTrainerApproachDistance(struct ObjectEvent *trainerObj)
@@ -640,7 +634,7 @@ static u8 GetTrainerApproachDistance(struct ObjectEvent *trainerObj)
     u8 approachDistance;
 
     PlayerGetDestCoords(&x, &y);
-    if (trainerObj->trainerType == TRAINER_TYPE_NORMAL)  // can only see in one direction
+    if (trainerObj->trainerType == TRAINER_TYPE_NORMAL || trainerObj->trainerType >= TRAINER_TYPE_RUN_SCRIPT)  // can only see in one direction
     {
         // Disable trainer approach while moving diagonally (usually moving on sideway stairs)
         if (trainerObj->facingDirection > DIR_EAST)
