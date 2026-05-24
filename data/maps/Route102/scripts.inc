@@ -154,13 +154,13 @@ CALVINInitialBattle_Text_ask:
 
 //what you say if you HAVE battled before
 CALVINReBattle_Text_Ask:
-	.string "Hey, your back! Do you want to have a\n"
-	.string "battle?$"
+	.string "Hey, its you again! Do you want to have a\n"
+	.string "battle with me?$"
 
 //what they say once you've agreed to battle
 CALVINBattle_Text_BattleBegin:
-	.string "Trainer battles are great for\n"
-	.string "experience!$"
+	.string "Trainer battles are great for experience\n"
+	.string "and stat training!$"
 	
 //what they say after you beat them	
 CALVINBattle_Text_BattleEnd:
@@ -169,7 +169,211 @@ CALVINBattle_Text_BattleEnd:
 	
 //what they say if you decline to battle	
 CALVIN_Text_Decline:
-	.string "Oh, okay. If you change your mind, just\n"
-	.string "speak to me again. I'm always up for a\n"
-	.string "battle!$"
+	.string "Okay, that's fine. Just speak to me again\n"
+	.string "if you ever change your mind. I'm always\l"
+	.string "up for a battle!$"
 
+//Rick battle code --------------------------------------------------------------------
+.set LOCALID_TRAINERRICK, 3
+
+TrainerBattleRick::
+	applymovement LOCALID_TRAINERRICK, Common_Movement_ExclamationMark
+	waitmovement 0
+	faceplayer
+	goto_if_not_defeated TRAINER_RICK Rick_AskforInitialBattle //if you haven't beaten them, jump to that code
+	msgbox RickReBattle_Text_Ask, MSGBOX_YESNO //if you've beaten them before, ask to battle
+	compare VAR_RESULT, TRUE
+	goto_if_eq RickBattleStart
+	goto_if_ne RickDecline
+	end
+
+//if you haven't battled them before
+Rick_AskforInitialBattle:
+	msgbox RickInitialBattle_Text_ask, MSGBOX_YESNO
+	compare VAR_RESULT, TRUE
+	goto_if_eq RickBattleStart
+	goto_if_ne RickDecline
+	releaseall
+	end
+//regardless, this is the start of the battle. 
+RickBattleStart:
+	cleartrainerflag TRAINER_RICK //you need this or rebattling wont work
+	trainerbattle_single TRAINER_RICK, RickBattle_Text_BattleBegin, RickBattle_Text_BattleEnd
+	releaseall
+	end
+	
+//if you decline the battle	
+RickDecline:
+	msgbox Rick_Text_Decline, MSGBOX_DEFAULT
+	settrainerflag(TRAINER_RICK)//this means they'll remember you
+    releaseall
+    end
+
+//what they say if they HAVEN"T battled before
+RickInitialBattle_Text_ask:
+	.string "Since we're beginners, our Digimon can't\n"
+	.string "level up past level 20.\p"
+	.string "Do you want me to tell you how to unlock\n"
+	.string "higher levels?$"
+
+//what you say if you HAVE battled before
+RickReBattle_Text_Ask:
+	.string "I heard another really good prank the\n"
+	.string "other day. Do you want to hear it?$"
+
+//what they say once you've agreed to battle
+RickBattle_Text_BattleBegin:
+	.string "I'll tell you if you win!$"
+	
+//what they say after you beat them	
+RickBattle_Text_BattleEnd:
+	.string "You need to JOGRESS two Digimon\n"
+	.string "together. Their level resets to Lv1, but\l"
+	.string "the level cap increases.\p"
+	.string "Haha just kidding.$"
+	
+//what they say if you decline to battle	
+Rick_Text_Decline:
+	.string "Toughing it out on your own, are you?$"
+
+//Allen battle code --------------------------------------------------------------------
+.set LOCALID_TRAINERALLEN, 9
+
+TrainerBattleAllen::
+	applymovement LOCALID_TRAINERALLEN, Common_Movement_ExclamationMark
+	waitmovement 0
+	faceplayer
+	goto_if_not_defeated TRAINER_ALLEN Allen_AskforInitialBattle //if you haven't beaten them, jump to that code
+	msgbox AllenReBattle_Text_Ask, MSGBOX_YESNO //if you've beaten them before, ask to battle
+	compare VAR_RESULT, TRUE
+	goto_if_eq AllenBattleStart
+	goto_if_ne AllenDecline
+	end
+
+//if you haven't battled them before
+Allen_AskforInitialBattle:
+	msgbox AllenInitialBattle_Text_ask, MSGBOX_YESNO
+	compare VAR_RESULT, TRUE
+	goto_if_eq AllenBattleStart
+	goto_if_ne AllenDecline
+	releaseall
+	end
+//regardless, this is the start of the battle. 
+AllenBattleStart:
+	cleartrainerflag TRAINER_ALLEN //you need this or rebattling wont work
+	trainerbattle_single TRAINER_ALLEN, AllenBattle_Text_BattleBegin, AllenBattle_Text_BattleEnd
+	releaseall
+	end
+	
+//if you decline the battle	
+AllenDecline:
+	msgbox Allen_Text_Decline, MSGBOX_DEFAULT
+	settrainerflag(TRAINER_ALLEN)//this means they'll remember you
+    releaseall
+    end
+
+//what they say if they HAVEN"T battled before
+AllenInitialBattle_Text_ask:
+	.string "Most Stage 3 Digimon have abilities that\n"
+	.string "buff certain types.\p"
+	.string "My Agumon has VOLCANIC BEAT, so all fire\n"
+	.string "type moves get a boost. Even my other\l"
+	.string "POKEMON benefit. Wanna see?$"
+
+//what you say if you HAVE battled before
+AllenReBattle_Text_Ask:
+	.string "I'm still working on my synergy strategy!\n"
+	.string "Shall we battle again?$"
+
+//what they say once you've agreed to battle
+AllenBattle_Text_BattleBegin:
+	.string "Alright! Let's go!$"
+	
+//what they say after you beat them	
+AllenBattle_Text_BattleEnd:
+	.string "Volcanic Beat gives a 1.25x boost to all\n"
+	.string "TYPE TYPE attacks, so as long as my\l"
+	.string "AGUMON is on the field,\p"
+	.string "all my DIGIMON benefit!$"
+	
+//what they say if you decline to battle	
+Allen_Text_Decline:
+	.string "Fair enough, my synergy strategy is\n"
+	.string "tough to beat!$"
+
+//Tiana battle code --------------------------------------------------------------------
+.set LOCALID_TRAINERTIANA, 4
+
+TrainerBattleTiana::
+	applymovement LOCALID_TRAINERTIANA, Common_Movement_ExclamationMark
+	waitmovement 0
+	faceplayer
+	goto_if_not_defeated TRAINER_TIANA Tiana_AskforInitialBattle //if you haven't beaten them, jump to that code
+	msgbox TianaReBattle_Text_Ask, MSGBOX_YESNO //if you've beaten them before, ask to battle
+	compare VAR_RESULT, TRUE
+	goto_if_eq TianaBattleStart
+	goto_if_ne TianaDecline
+	end
+
+//if you haven't battled them before
+Tiana_AskforInitialBattle:
+	msgbox TianaInitialBattle_Text_ask, MSGBOX_YESNO
+	compare VAR_RESULT, TRUE
+	goto_if_eq TianaBattleStart
+	goto_if_ne TianaDecline
+	releaseall
+	end
+//regardless, this is the start of the battle. 
+TianaBattleStart:
+	cleartrainerflag TRAINER_TIANA //you need this or rebattling wont work
+	trainerbattle_single TRAINER_TIANA, TianaBattle_Text_BattleBegin, TianaBattle_Text_BattleEnd
+	releaseall
+	end
+	
+//if you decline the battle	
+TianaDecline:
+	msgbox Tiana_Text_Decline, MSGBOX_DEFAULT
+	settrainerflag(TRAINER_TIANA)//this means they'll remember you
+    releaseall
+    end
+
+//what they say if they HAVEN"T battled before
+TianaInitialBattle_Text_ask:
+	.string "You say you want to evolve your Digimon,\n"
+	.string "but do you know about training your EVs?$"
+
+//what you say if you HAVE battled before
+TianaReBattle_Text_Ask:
+	.string "Do you need to train your stats? Even if\n"
+	.string "you've hit your level cap, you can still\l"
+	.string "gain EV's!$"
+
+//what they say once you've agreed to battle
+TianaBattle_Text_BattleBegin:
+	.string "All Digimon give at least 1 EV in every\n"
+	.string "stat. You need four EV's to gain 1 stat\l"
+	.string "point. Let's test it!$"
+	
+//what they say after you beat them	
+TianaBattle_Text_BattleEnd:
+	.string "Digimon give at least 1 EV in every stat,\n"
+	.string "but some give 2 EV's or more.$"
+	
+//what they say if you decline to battle	
+Tiana_Text_Decline:
+	.string "You need four EV's to gain 1 stat point.\n"
+	.string "But its only calculated upon level up.\l"
+	.string "UGH! Training is so confusing!$"
+	
+//--------------------------------------------------
+Route102_EventScript_TanemonMeatIntro::
+	msgbox Route102_Text_TanemonMeatIntro, MSGBOX_NPC
+	end
+
+Route102_Text_TanemonMeatIntro:
+	.string "Hi! I gave up my office job in the city to\n"
+	.string "farm the land.\p"
+	.string "I didn't have much savings, though, so I\n"
+	.string "could only afford this little plot here.\p"
+	.string "Feel free to grab some produce. I enjoy\n"
+	.string "the process more than the end result.$"
