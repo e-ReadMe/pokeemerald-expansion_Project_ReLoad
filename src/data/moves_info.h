@@ -23234,7 +23234,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Ups Attack and Sp. Atk."),
         .effect = EFFECT_ATTACK_SPATK_UP,
         .power = 0,
-        .type = TYPE_BEAST,
+        .type = TYPE_NEUTRAL,
         .accuracy = 0,
         .pp = 30,
         .target = TARGET_USER,
