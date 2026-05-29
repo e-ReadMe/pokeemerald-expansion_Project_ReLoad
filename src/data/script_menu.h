@@ -1099,6 +1099,22 @@ struct MultichoiceListStruct
     u8 count;
 };
 
+static const struct MenuAction MultichoiceList_DigimonEggChoice[] =
+{
+    {COMPOUND_STRING("Dragon's Roar")},//Botamon Egg
+    {COMPOUND_STRING("Animal Colosseum")},//Punimon Egg
+    {COMPOUND_STRING("Jungle Troopers")},//Mochimon Egg
+    {COMPOUND_STRING("Deep Savers")},//Pitchmon Egg
+    {COMPOUND_STRING("Wind Guardians")},//Nyokimon Egg
+    {COMPOUND_STRING("Nature Spirits")},//Yuramon Egg
+    {COMPOUND_STRING("Blizzard Fang")},//Yukimibotamon Egg
+    {COMPOUND_STRING("Metal Empire")},//Choromon Egg
+    {COMPOUND_STRING("Virus Busters")},//Poyomon Egg
+    {COMPOUND_STRING("Nightmare Soldiers")},//mokumon Egg
+    {COMPOUND_STRING("Dynasty of Evil")},//Zurumon Egg
+    {COMPOUND_STRING("Random")},//Random egg
+};
+
 static const struct MultichoiceListStruct sMultichoiceLists[] =
 {
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),
@@ -1260,6 +1276,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_HOF_VICTORIES_QUIT]                         = MULTICHOICE(sMultichoiceList_HOF_Victories_Quit),
     [MULTI_EGGS_VICTORIES_QUIT]                        = MULTICHOICE(sMultichoiceList_Eggs_Victories_Quit),
     [MULTI_HOF_EGGS_VICTORIES_QUIT]                    = MULTICHOICE(sMultichoiceList_HOF_Eggs_Victories_Quit),
+    [MULTI_DIGIMONEGGCHOICE]                           = MULTICHOICE(MultichoiceList_DigimonEggChoice),
 };
 
 const u8 *const gStdStrings[] =

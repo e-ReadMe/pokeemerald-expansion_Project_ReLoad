@@ -313,3 +313,159 @@ givemon SPECIES_WARGREYMON, 10, NATURE_HARDY
 givemon SPECIES_ZANBAMON, 10, NATURE_HARDY
 releaseall
 end	
+
+StarterDigimonEggGift::
+	msgbox StarterDigimonEggGift_Text_Intro, MSGBOX_DEFAULT
+	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE, TRUE
+	switch VAR_RESULT
+	case 0, StarterDigimonPickBotamon
+	case 1, StarterDigimonPickPunimon
+	case 2, StarterDigimonPickMochimon
+	case 3, StarterDigimonPickPitchmon
+	case 4, StarterDigimonPickNyokimon
+	case 5, StarterDigimonPickYuramon
+	case 6, StarterDigimonPickYukimibotamon
+	case 7, StarterDigimonPickChoromon
+	case 8, StarterDigimonPickPoyomon
+	case 9, StarterDigimonPickMokumon
+	case 10, StarterDigimonPickZurumon
+	case 11, DayCareMonGifter_Give_RAND
+	end
+	
+StarterDigimonEggGift_Text_Intro:	
+	.string "Which group do you most align with?\n"
+	.string "Or do you want me to pick for you?$"
+
+DayCareMonGifter_Give_RAND::
+	random 11
+	switch VAR_RESULT
+	case 0, [StarterDigimonPickBotamon]
+	case 1, [StarterDigimonPickPunimon]
+	case 2, [StarterDigimonPickMochimon]
+	case 3, [StarterDigimonPickPitchmon]
+	case 4, [StarterDigimonPickNyokimon]
+	case 5, [StarterDigimonPickYuramon]
+	case 6, [StarterDigimonPickYukimibotamon]
+	case 7, [StarterDigimonPickChoromon]
+	case 8, [StarterDigimonPickPoyomon]
+	case 9, [StarterDigimonPickMokumon]
+	case 10, [StarterDigimonPickZurumon]
+
+
+StarterDigimonEggGift_Text_Areyousure:
+	.string "Are you sure?$"
+	
+StarterDigimonEggGift_Text_Heresyouregg:
+	.string "Okay, here you are. Your Digimon partner.\n"
+	.string "They'll hatch when they're ready.$"
+
+StarterDigimonPickBotamon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_BOTAMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BOTAMON
+	giveegg SPECIES_BOTAMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPickPunimon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_PUNIMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PUNIMON
+	giveegg SPECIES_PUNIMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPickMochimon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_MOCHIMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MOCHIMON
+	giveegg SPECIES_MOCHIMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPickPitchmon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_PITCHMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PITCHMON
+	giveegg SPECIES_PITCHMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPickNyokimon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_NYOKIMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_NYOKIMON
+	giveegg SPECIES_NYOKIMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPickYuramon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_YURAMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_YURAMON
+	giveegg SPECIES_YURAMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPickYukimibotamon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_YUKIMIBOTAMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_YUKIMIBOTAMON
+	giveegg SPECIES_YUKIMIBOTAMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPickChoromon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_CHOROMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHOROMON
+	giveegg SPECIES_CHOROMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPickPoyomon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_POYOMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_POYOMON
+	giveegg SPECIES_POYOMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPickMokumon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_MOKUMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MOKUMON
+	giveegg SPECIES_MOKUMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPickZurumon::
+	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+	bufferspeciesname STR_VAR_1, SPECIES_ZURUMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ZURUMON
+	giveegg SPECIES_ZURUMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+
