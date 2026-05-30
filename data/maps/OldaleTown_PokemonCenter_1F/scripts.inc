@@ -314,134 +314,114 @@ givemon SPECIES_ZANBAMON, 10, NATURE_HARDY
 releaseall
 end	
 
-StarterDigimonEggGift::
-	msgbox StarterDigimonEggGift_Text_Intro, MSGBOX_DEFAULT
-	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE, TRUE
+//-----------------------------------------------------------------------------------------------------------
+//-----start of event. Jijimon arrives and asks if you want to do a quiz or get a random starter. 
+StarterDigimonEgg_Start_Event::
+	msgbox StarterDigimonEggGift_Text_Intro_Start, MSGBOX_DEFAULT
+	msgbox StarterDigimonEggGift_Text_Intro_Quiz_or_Random, MSGBOX_DEFAULT
+	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE_QUIZ_OR_RAND, TRUE
 	switch VAR_RESULT
-	case 0, StarterDigimonPickBotamon
-	case 1, StarterDigimonPickPunimon
-	case 2, StarterDigimonPickMochimon
-	case 3, StarterDigimonPickPitchmon
-	case 4, StarterDigimonPickNyokimon
-	case 5, StarterDigimonPickYuramon
-	case 6, StarterDigimonPickYukimibotamon
-	case 7, StarterDigimonPickChoromon
-	case 8, StarterDigimonPickPoyomon
-	case 9, StarterDigimonPickMokumon
-	case 10, StarterDigimonPickZurumon
-	case 11, DayCareMonGifter_Give_RAND
-	end
-	
-StarterDigimonEggGift_Text_Intro:	
-	.string "Which group do you most align with?\n"
-	.string "Or do you want me to pick for you?$"
+	case 0, StarterDigimonQuizStart
+	case 1, StarterDigimonRandom
 
-DayCareMonGifter_Give_RAND::
-	random 11
+//-----if the player picks random. 
+StarterDigimonRandom::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Random, MSGBOX_DEFAULT
+	random 12
 	switch VAR_RESULT
-	case 0, [StarterDigimonPickBotamon]
-	case 1, [StarterDigimonPickPunimon]
-	case 2, [StarterDigimonPickMochimon]
-	case 3, [StarterDigimonPickPitchmon]
-	case 4, [StarterDigimonPickNyokimon]
-	case 5, [StarterDigimonPickYuramon]
-	case 6, [StarterDigimonPickYukimibotamon]
-	case 7, [StarterDigimonPickChoromon]
-	case 8, [StarterDigimonPickPoyomon]
-	case 9, [StarterDigimonPickMokumon]
-	case 10, [StarterDigimonPickZurumon]
+	case 0, [StarterDigimonPick_Dragons_Roar_Botamon]
+	case 1, [StarterDigimonPick_Animal_Colosseum_Punimon]
+	case 2, [StarterDigimonPick_Jungle_Troopers_Bubbmon]
+	case 3, [StarterDigimonPick_Deep_Savers_Pitchmon]
+	case 4, [StarterDigimonPick_Wind_Guardians_Nyokimon]
+	case 5, [StarterDigimonPick_Nature_Spirits_Yuramon]
+	case 6, [StarterDigimonPick_Blizzard_Fang_Yukimibotamon]
+	case 7, [StarterDigimonPick_Metal_Empire_Choromon]
+	case 8, [StarterDigimonPick_Impulse_City_UNUSED]
+	case 9, [StarterDigimonPick_Virus_Busters_Poyomon]
+	case 10, [StarterDigimonPick_Nightmare_Soldiers_Mokumon]
+	case 11, [StarterDigimonPick_Dynasty_of_Evil_Zurumon]
+
+//-----if the player picks to do the quiz----------------------------------------------------------------
+StarterDigimonQuizStart::
+	msgbox StarterDigimonEggGift_Text_Intro_Quiz_Start, MSGBOX_DEFAULT
+	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE_QUIZ_START, TRUE
+	switch VAR_RESULT
+	case 0, StarterDigimonQuiz_Light_and_Darkness_Branch
+	case 1, StarterDigimonQuiz_Elemental_Branch
+
+//-----the light v darkness branch of the quiz--------------------------------------------------------
+StarterDigimonQuiz_Light_and_Darkness_Branch::
+	msgbox StarterDigimonEggGift_Text_Intro_Virus_Busers_V_Nightmare_Soldiers, MSGBOX_DEFAULT
+	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE_VB_OR_NS, TRUE
+	switch VAR_RESULT
+	case 0, StarterDigimonPick_Virus_Busters_Poyomon
+	case 1, StarterDigimonBranch_NS_OR_DOE
+	case 2, StarterDigimon_Changed_My_mind
+
+StarterDigimonBranch_NS_OR_DOE::
+	msgbox StarterDigimonEggGift_Text_Intro_GoodVEvil_Nightmare_V_Dynasty, MSGBOX_DEFAULT
+	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE_NS_OR_DOE, TRUE
+	switch VAR_RESULT
+	case 0, StarterDigimonPick_Dynasty_of_Evil_Zurumon
+	case 1, StarterDigimonPick_Nightmare_Soldiers_Mokumon
+	case 2, StarterDigimon_Changed_My_mind
+
+//-----The elemental branch of the quiz--------------------------------------------------------
+StarterDigimonQuiz_Elemental_Branch::
+	msgbox StarterDigimonEggGift_Text_Intro_Elemental_Tree_Start, MSGBOX_DEFAULT
+	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE_ELEMENTAL_START, TRUE
+	switch VAR_RESULT
+	case 0, StarterDigimonBranch_DR_OR_AC
+	case 1, StarterDigimonBranch_I_P_W
+	case 2, StarterDigimonBranch_DS_OR_BF
+	case 3, StarterDigimonBranch_ME_OR_IC
+	case 4, StarterDigimon_Changed_My_mind
+
+StarterDigimonBranch_DR_OR_AC::
+	msgbox StarterDigimonEggGift_Text_Intro_Elemental_Tree_Dragon_V_Animal, MSGBOX_DEFAULT
+	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE_ELEMENTAL_DR_OR_AC, TRUE
+	switch VAR_RESULT
+	case 0, StarterDigimonPick_Dragons_Roar_Botamon
+	case 1, StarterDigimonPick_Animal_Colosseum_Punimon
+	case 2, StarterDigimon_Changed_My_mind
+
+StarterDigimonBranch_I_P_W::
+	msgbox StarterDigimonEggGift_Text_Intro_Elemental_Tree_Insect_Plant_Wind, MSGBOX_DEFAULT
+	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE_ELEMENTAL_I_P_W, TRUE
+	switch VAR_RESULT
+	case 0, StarterDigimonPick_Nature_Spirits_Yuramon
+	case 1, StarterDigimonPick_Jungle_Troopers_Bubbmon
+	case 2, StarterDigimonPick_Wind_Guardians_Nyokimon
+	case 3, StarterDigimon_Changed_My_mind
+
+StarterDigimonBranch_DS_OR_BF::
+	msgbox StarterDigimonEggGift_Text_Intro_Elemental_Tree_Water_ice, MSGBOX_DEFAULT
+	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE_ELEMENTAL_DS_OR_BF, TRUE
+	switch VAR_RESULT
+	case 0, StarterDigimonPick_Deep_Savers_Pitchmon
+	case 1, StarterDigimonPick_Blizzard_Fang_Yukimibotamon
+	case 2, StarterDigimon_Changed_My_mind
+
+StarterDigimonBranch_ME_OR_IC::
+	msgbox StarterDigimonEggGift_Text_Intro_Elemental_Tree_metal_electric, MSGBOX_DEFAULT
+	multichoice 0, 0, MULTI_DIGIMONEGGCHOICE_ELEMENTAL_ME_OR_IC, TRUE
+	switch VAR_RESULT
+	case 0, StarterDigimonPick_Impulse_City_UNUSED
+	case 1, StarterDigimonPick_Metal_Empire_Choromon
+	case 2, StarterDigimon_Changed_My_mind
+
+//----------------Generic Responses to quiz ------------------------------------------
+
+StarterDigimon_Changed_My_mind::
+	msgbox StarterDigimonEggGift_Text_Intro_Changed_My_mind, MSGBOX_DEFAULT
+	goto StarterDigimonQuizStart
+//-----------------------------------------------------quiz results - gifting each mon --------------------------
 
 
-StarterDigimonEggGift_Text_Areyousure:
-	.string "Are you sure?$"
-	
-StarterDigimonEggGift_Text_Heresyouregg:
-	.string "Okay, here you are. Your Digimon partner.\n"
-	.string "They'll hatch when they're ready.$"
-
-StarterDigimonPickBotamon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
-	bufferspeciesname STR_VAR_1, SPECIES_BOTAMON
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BOTAMON
-	giveegg SPECIES_BOTAMON
-	msgbox StarterDigimonEggGift_Text_Heresyouregg
-	releaseall
-	end
-	
-StarterDigimonPickPunimon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
-	bufferspeciesname STR_VAR_1, SPECIES_PUNIMON
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PUNIMON
-	giveegg SPECIES_PUNIMON
-	msgbox StarterDigimonEggGift_Text_Heresyouregg
-	releaseall
-	end
-	
-StarterDigimonPickMochimon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
-	bufferspeciesname STR_VAR_1, SPECIES_MOCHIMON
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MOCHIMON
-	giveegg SPECIES_MOCHIMON
-	msgbox StarterDigimonEggGift_Text_Heresyouregg
-	releaseall
-	end
-	
-StarterDigimonPickPitchmon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
-	bufferspeciesname STR_VAR_1, SPECIES_PITCHMON
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PITCHMON
-	giveegg SPECIES_PITCHMON
-	msgbox StarterDigimonEggGift_Text_Heresyouregg
-	releaseall
-	end
-	
-StarterDigimonPickNyokimon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
-	bufferspeciesname STR_VAR_1, SPECIES_NYOKIMON
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_NYOKIMON
-	giveegg SPECIES_NYOKIMON
-	msgbox StarterDigimonEggGift_Text_Heresyouregg
-	releaseall
-	end
-	
-StarterDigimonPickYuramon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
-	bufferspeciesname STR_VAR_1, SPECIES_YURAMON
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_YURAMON
-	giveegg SPECIES_YURAMON
-	msgbox StarterDigimonEggGift_Text_Heresyouregg
-	releaseall
-	end
-	
-StarterDigimonPickYukimibotamon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
-	bufferspeciesname STR_VAR_1, SPECIES_YUKIMIBOTAMON
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_YUKIMIBOTAMON
-	giveegg SPECIES_YUKIMIBOTAMON
-	msgbox StarterDigimonEggGift_Text_Heresyouregg
-	releaseall
-	end
-	
-StarterDigimonPickChoromon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
-	bufferspeciesname STR_VAR_1, SPECIES_CHOROMON
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHOROMON
-	giveegg SPECIES_CHOROMON
-	msgbox StarterDigimonEggGift_Text_Heresyouregg
-	releaseall
-	end
-	
-StarterDigimonPickPoyomon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+StarterDigimonPick_Virus_Busters_Poyomon::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Virus_Busters_Poyomon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
 	bufferspeciesname STR_VAR_1, SPECIES_POYOMON
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_POYOMON
 	giveegg SPECIES_POYOMON
@@ -449,19 +429,9 @@ StarterDigimonPickPoyomon::
 	releaseall
 	end
 	
-StarterDigimonPickMokumon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
-	bufferspeciesname STR_VAR_1, SPECIES_MOKUMON
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MOKUMON
-	giveegg SPECIES_MOKUMON
-	msgbox StarterDigimonEggGift_Text_Heresyouregg
-	releaseall
-	end
-	
-StarterDigimonPickZurumon::
-	msgbox StarterDigimonEggGift_Text_Areyousure, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, StarterDigimonEggGift
+StarterDigimonPick_Dynasty_of_Evil_Zurumon::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Dynasty_Evil_Zurumon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
 	bufferspeciesname STR_VAR_1, SPECIES_ZURUMON
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ZURUMON
 	giveegg SPECIES_ZURUMON
@@ -469,3 +439,248 @@ StarterDigimonPickZurumon::
 	releaseall
 	end
 
+StarterDigimonPick_Nightmare_Soldiers_Mokumon::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Nightmare_Soldiers_Mokumon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
+	bufferspeciesname STR_VAR_1, SPECIES_MOKUMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MOKUMON
+	giveegg SPECIES_MOKUMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+
+StarterDigimonPick_Dragons_Roar_Botamon::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Dragons_Roar_Botamon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
+	bufferspeciesname STR_VAR_1, SPECIES_BOTAMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BOTAMON
+	giveegg SPECIES_BOTAMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPick_Animal_Colosseum_Punimon::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Animal_Colosseum_Punimon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
+	bufferspeciesname STR_VAR_1, SPECIES_PUNIMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PUNIMON
+	giveegg SPECIES_PUNIMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPick_Nature_Spirits_Yuramon::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Nature_Spirits_Yuramon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
+	bufferspeciesname STR_VAR_1, SPECIES_YURAMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_YURAMON
+	giveegg SPECIES_YURAMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPick_Jungle_Troopers_Bubbmon::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Jungle_Troopers_Bubbmon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
+	bufferspeciesname STR_VAR_1, SPECIES_BUBBMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BUBBMON
+	giveegg SPECIES_BUBBMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPick_Wind_Guardians_Nyokimon::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Wind_Guardians_Nyokimon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
+	bufferspeciesname STR_VAR_1, SPECIES_NYOKIMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_NYOKIMON
+	giveegg SPECIES_NYOKIMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPick_Deep_Savers_Pitchmon::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Deep_Savers_Pitchmon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
+	bufferspeciesname STR_VAR_1, SPECIES_PITCHMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PITCHMON
+	giveegg SPECIES_PITCHMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPick_Blizzard_Fang_Yukimibotamon::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_Blizzard_Fang_Yukimibotamon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
+	bufferspeciesname STR_VAR_1, SPECIES_YUKIMIBOTAMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_YUKIMIBOTAMON
+	giveegg SPECIES_YUKIMIBOTAMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPick_Impulse_City_UNUSED::
+	msgbox StarterDigimonEggGift_Text_Intro_Picked_impulse_city_UNUSED, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
+	bufferspeciesname STR_VAR_1, SPECIES_CHOROMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHOROMON
+	giveegg SPECIES_CHOROMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+StarterDigimonPick_Metal_Empire_Choromon::
+	msgbox StarterDigimonEggGift_Text_Intro_Elemental_Tree_metal_electric, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, StarterDigimon_Changed_My_mind
+	bufferspeciesname STR_VAR_1, SPECIES_CHOROMON
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHOROMON
+	giveegg SPECIES_CHOROMON
+	msgbox StarterDigimonEggGift_Text_Heresyouregg
+	releaseall
+	end
+	
+
+
+//----------------text------------------------------------------------------------------------------------------
+StarterDigimonEggGift_Text_Intro_Start:	
+	.string "I'm Jijimon. I'm in charge of allocating\n"
+	.string "DIGIMON partners to new players.\p"
+	.string "I'd like to ask you some questions, so I\n"
+	.string "can make the best choice.\p"
+	.string "Or I could allocate you a partner\n"
+	.string "at random.$"
+
+StarterDigimonEggGift_Text_Intro_Quiz_or_Random:
+	.string "Which would you prefer?$"
+
+StarterDigimonEggGift_Text_Intro_Quiz_Start:	
+	.string "How engaged are you in the battle\n"
+	.string "between good and evil?$"
+
+StarterDigimonEggGift_Text_Intro_Virus_Busers_V_Nightmare_Soldiers:	
+	.string "And on which side do you align yourself?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Virus_Busters_Poyomon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "VIRUS BUSTERS group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_GoodVEvil_Nightmare_V_Dynasty:	
+	.string "I see.\p"
+	.string "In that case, by what axis would you\n"
+	.string "place yourself?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Dynasty_Evil_Zurumon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "DYNASTY OF EVIL group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Nightmare_Soldiers_Mokumon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "NIGHTMARE SOLDIERS group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Elemental_Tree_Start:
+	.string "In that case, where would you choose to\n"
+	.string "live your life, if you could?$"
+
+StarterDigimonEggGift_Text_Intro_Elemental_Tree_Dragon_V_Animal:
+	.string "You seem like someone ready to defend\n"
+	.string "themselves, if they must.\p"	
+	.string "If you had to, which would suit you\n"
+	.string "better?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Dragons_Roar_Botamon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "DRAGON'S ROAR group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Animal_Colosseum_Punimon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "ANIMAL COLOSSEUM group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Elemental_Tree_Insect_Plant_Wind:	
+	.string "You seem to enjoy spending time with\n"
+	.string "nature.\p"	
+	.string "If you had plenty of time, which would\n"
+	.string "you most enjoy?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Nature_Spirits_Yuramon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "NATURE SPIRITS group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Jungle_Troopers_Bubbmon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "JUNGLE TROOPERS group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Wind_Guardians_Nyokimon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "WIND GUARDIANS group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Elemental_Tree_Water_ice:	
+	.string "You seem like someone who'd enjoy a\n"
+	.string "cosy room and a good book.\p"	
+	.string "What would be your preferred soundtrack\n"
+	.string "for a restful afternoon?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Deep_Savers_Pitchmon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "DEEP SAVERS group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Blizzard_Fang_Yukimibotamon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "BLIZZARD FANG group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Elemental_Tree_metal_electric:	
+	.string "You seem like someone who enjoys living\n"
+	.string "in a diverse community.\p"	
+	.string "But what kind of community would you\n"
+	.string "envision for yourself?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_impulse_city_UNUSED:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "IMPULSE CITY group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_metal_empire_choromon:
+	.string "I see.\p"
+	.string "I think you would belong best among the\n"
+	.string "METAL EMPIRE group.\p"
+	.string "Do you agree?$"
+
+StarterDigimonEggGift_Text_Intro_Picked_Random:
+	.string "Hmm...\p"
+	.string "You seem like the sort of person who\n"
+	.string "understands they don't have control\l"
+	.string "over the cards they are dealt.\p"
+	.string "The sort of person who will go after what\n"
+	.string "they want, and carve their own path.$"
+
+StarterDigimonEggGift_Text_Intro_Changed_My_mind:
+	.string "Take your time. This is important, but\n"
+	.string "you wont be locked into anything either.$"
+
+StarterDigimonEggGift_Text_Heresyouregg:
+	.string "Okay, here you are:\n"
+	.string "Your Digimon partner.\p"
+	.string "They'll hatch when they're ready.\p"
+	.string "How they'll grow is up for you to\n"
+	.string "determine.\p"
+	.string "Welcome to the DIGITAL WORLD.$"

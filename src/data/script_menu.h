@@ -1115,6 +1115,71 @@ static const struct MenuAction MultichoiceList_DigimonEggChoice[] =
     {COMPOUND_STRING("Random")},//Random egg
 };
 
+static const struct MenuAction MultichoiceList_DigimonEggChoice_Quiz_or_Random[] =
+{
+    {COMPOUND_STRING("I'd like to take the quiz")},//goes to the quiz start
+    {COMPOUND_STRING("I'd like you to pick a random partner")},//skips the quiz and goes to random
+};
+
+static const struct MenuAction MultichoiceList_DigimonEggChoice_Quiz_start[] =
+{
+    {COMPOUND_STRING("It's all that matters to me")},//Goes to the virus busters/nightmare soldiers tree
+    {COMPOUND_STRING("I'm just trying to live my life")},//Goes to the elemental tree
+};
+
+static const struct MenuAction MultichoiceList_DigimonEggChoice_Virus_Busers_V_Nightmare_Soldiers[] =
+{
+    {COMPOUND_STRING("Among the heroes of light")},//Player has picked the 'virus busters' option
+    {COMPOUND_STRING("Among the soldiers of darkness")},//player has picked the 'nightmare soldiers' option
+    {COMPOUND_STRING("Actually, I changed my mind")},//the 'back' option
+};
+
+static const struct MenuAction MultichoiceList_DigimonEggChoice_GoodVEvil_Nightmare_V_Dynasty[] =
+{
+    {COMPOUND_STRING("Lawful")},//Player has picked the 'Dynasty of Evil' option - dark
+    {COMPOUND_STRING("Chaotic")},//Player has picked the 'Nightmare Soldiers' option - undead
+    {COMPOUND_STRING("Actually, I changed my mind")},//the 'back' option
+};
+
+static const struct MenuAction MultichoiceList_DigimonEggChoice_Elemental_Tree_Start[] =
+{
+    {COMPOUND_STRING("Somewhere warm with plenty of sun")},//Player has picked the 'fire/dragon/animal' tree
+    {COMPOUND_STRING("Somewhere lush and surrounded by life")},//Player has picked the 'insect/plant/wind' tree
+    {COMPOUND_STRING("Somewhere that's cool and quiet")},//player has picked the 'water/ice' tree
+    {COMPOUND_STRING("Somewhere in a modern, bustling city")},//player has picked the 'metal/electric' tree
+    {COMPOUND_STRING("Actually, I changed my mind")},//the 'back' option
+};
+
+static const struct MenuAction MultichoiceList_DigimonEggChoice_Elemental_Tree_Dragon_V_Animal[] =
+{
+    {COMPOUND_STRING("Fire")},//Player has picked the 'dragon's roar' option
+    {COMPOUND_STRING("Claws")},//Player has picked the 'animal colosseum' option
+    {COMPOUND_STRING("Actually, I changed my mind")},//the 'back' option
+};
+
+static const struct MenuAction MultichoiceList_DigimonEggChoice_Elemental_Tree_Insect_Plant_Wind[] =
+{
+    {COMPOUND_STRING("Growing Plants")},//Player has picked the 'Nature Spirits' option
+    {COMPOUND_STRING("Catching Bugs")},//Player has picked the 'Jungle Troopers' option
+    {COMPOUND_STRING("Watching Birds")},//Player has picked the 'Wind Guardians' option
+    {COMPOUND_STRING("Actually, I changed my mind")},//the 'back' option
+};
+
+static const struct MenuAction MultichoiceList_DigimonEggChoice_Elemental_Tree_Water_ice[] =
+{
+    {COMPOUND_STRING("The steady sound of rain")},//Player has picked the 'Deep savers' option
+    {COMPOUND_STRING("The gentle fall of snow")},//Player has picked the 'Blizzard Fang' option
+    {COMPOUND_STRING("Actually, I changed my mind")},//the 'back' option
+};
+
+static const struct MenuAction MultichoiceList_DigimonEggChoice_Elemental_Tree_metal_electric[] =
+{
+    {COMPOUND_STRING("A modern city with every amenity.")},//Player has picked the 'impulse city' option
+    {COMPOUND_STRING("A classic city with a sense of history")},//Player has picked the 'metal empire' option
+    {COMPOUND_STRING("Actually, I changed my mind")},//the 'back' option
+};
+
+
 static const struct MultichoiceListStruct sMultichoiceLists[] =
 {
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),
@@ -1277,6 +1342,15 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_EGGS_VICTORIES_QUIT]                        = MULTICHOICE(sMultichoiceList_Eggs_Victories_Quit),
     [MULTI_HOF_EGGS_VICTORIES_QUIT]                    = MULTICHOICE(sMultichoiceList_HOF_Eggs_Victories_Quit),
     [MULTI_DIGIMONEGGCHOICE]                           = MULTICHOICE(MultichoiceList_DigimonEggChoice),
+    [MULTI_DIGIMONEGGCHOICE_QUIZ_OR_RAND]              = MULTICHOICE(MultichoiceList_DigimonEggChoice_Quiz_or_Random),
+    [MULTI_DIGIMONEGGCHOICE_QUIZ_START]                = MULTICHOICE(MultichoiceList_DigimonEggChoice_Quiz_start),
+    [MULTI_DIGIMONEGGCHOICE_VB_OR_NS]                  = MULTICHOICE(MultichoiceList_DigimonEggChoice_Virus_Busers_V_Nightmare_Soldiers),
+    [MULTI_DIGIMONEGGCHOICE_NS_OR_DOE]                 = MULTICHOICE(MultichoiceList_DigimonEggChoice_GoodVEvil_Nightmare_V_Dynasty),
+    [MULTI_DIGIMONEGGCHOICE_ELEMENTAL_START]           = MULTICHOICE(MultichoiceList_DigimonEggChoice_Elemental_Tree_Start),
+    [MULTI_DIGIMONEGGCHOICE_ELEMENTAL_DR_OR_AC]        = MULTICHOICE(MultichoiceList_DigimonEggChoice_Elemental_Tree_Dragon_V_Animal),
+    [MULTI_DIGIMONEGGCHOICE_ELEMENTAL_I_P_W]           = MULTICHOICE(MultichoiceList_DigimonEggChoice_Elemental_Tree_Insect_Plant_Wind),
+    [MULTI_DIGIMONEGGCHOICE_ELEMENTAL_DS_OR_BF]        = MULTICHOICE(MultichoiceList_DigimonEggChoice_Elemental_Tree_Water_ice),
+    [MULTI_DIGIMONEGGCHOICE_ELEMENTAL_ME_OR_IC]        = MULTICHOICE(MultichoiceList_DigimonEggChoice_Elemental_Tree_metal_electric),
 };
 
 const u8 *const gStdStrings[] =
