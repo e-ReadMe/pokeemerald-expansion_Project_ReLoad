@@ -27329,7 +27329,7 @@
 #line 10085
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 10084
-            .lvl = 5,
+            .lvl = 1,
             .ball = POKEBALL_COUNT,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -27485,7 +27485,7 @@
 #line 10140
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 10139
-            .lvl = 5,
+            .lvl = 1,
             .ball = POKEBALL_COUNT,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -27641,7 +27641,7 @@
 #line 10195
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 10194
-            .lvl = 5,
+            .lvl = 1,
             .ball = POKEBALL_COUNT,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -27797,7 +27797,7 @@
 #line 10251
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 10250
-            .lvl = 5,
+            .lvl = 1,
             .ball = POKEBALL_COUNT,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -27953,7 +27953,7 @@
 #line 10306
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 10305
-            .lvl = 5,
+            .lvl = 1,
             .ball = POKEBALL_COUNT,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -28109,7 +28109,7 @@
 #line 10363
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 10362
-            .lvl = 5,
+            .lvl = 1,
             .ball = POKEBALL_COUNT,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,

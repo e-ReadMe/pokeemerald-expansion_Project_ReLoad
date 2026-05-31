@@ -10081,7 +10081,7 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Pagumon
-Level: 5
+Level: 1
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
@@ -10136,7 +10136,7 @@ Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
 Pagumon
-Level: 5
+Level: 1
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRENDAN_ROUTE_110_TREECKO ===
@@ -10191,7 +10191,7 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Pagumon
-Level: 5
+Level: 1
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -10247,7 +10247,7 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Pagumon
-Level: 5
+Level: 1
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
@@ -10302,7 +10302,7 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Pagumon
-Level: 5
+Level: 1
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -10359,7 +10359,7 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Pagumon
-Level: 5
+Level: 1
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bite
 - Scary Face
