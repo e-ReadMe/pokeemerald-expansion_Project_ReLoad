@@ -24,6 +24,11 @@ The eventual goal is to incorporate all digimon species into the mod. Digimon ha
 - a branching evolution tree. Players can use a Digivice menu to evolve their digimon into one of several options, provided they meet stat requirements. Upon evolution they will learn a 'signature attack' which is otherwise treated as a normal move. Digimon can also revert to previous stages via this menu.
 - Custom abilities, either adapted from other [media](https://www.grindosaur.com/en/games/digimon-story-cyber-sleuth/support-skills) or invented. 
 
+**Art**
+- front and back sprites for battles. Ideally these would be custom, but can default to [DIM style](https://humulos.com/digimon/vbdm/) sprites if available.
+- Party sprites. These should be adapted from the [pendulum style](https://humulos.com/digimon/penc/list/) sprites, and use a custom set of party [pallets](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/tree/master/graphics/pokemon/icon_palettes) which better match the colours used in this style. 
+- Overworld sprites. These will need to be custom, and will also be used for NPC characters.
+
 **Relevant files** 
 - [the 97-99 species list](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/pokemon/species_info/digi_1997_1999.h) for their basic info
 - [the 97-99 graphics folder](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/tree/master/graphics/pokemon/digimon/1997_1999)  for their battle and overworld sprites
@@ -38,7 +43,7 @@ The eventual goal is to incorporate all digimon species into the mod. Digimon ha
 - Remaining digimon implemented
 - death evolution
 - failure evolution
-- 
+- portraits for each digimon when talking to overworld characters or following digimon. 
 
 **Implemented**
 - 97-99 Era digimon
