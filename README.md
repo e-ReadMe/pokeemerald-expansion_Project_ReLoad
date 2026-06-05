@@ -38,6 +38,8 @@ The eventual goal is to incorporate all digimon species into the mod. Digimon ha
 Currently this functionality is partially developed, but the demo version will showcase:
 - 🗹 Branching digivolution tree via digivice menu, with stat requirements for evolution. 
 - 🗹 all battles are double battles by default
+- Digimon start off as custom eggs 
+- if the player encounters a stage 1, the game dynamically initiates a safari style catching mode, where the player cannot use Digimon, only throw balls. 
 
 **Demo goals**
 - ☐ Quest type - Recruitment of NPCs to unlock new buildings
