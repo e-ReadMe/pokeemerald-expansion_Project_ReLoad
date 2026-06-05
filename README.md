@@ -6,48 +6,70 @@
 - Common mechanics of digimon games are implemented and incorproated into the Pokemon engine
 - Custom art and sound is created and/or adapted from official Digimon media
 
-**`Compatibility`**
+Everything in the below list shouold be considered permanently in progress, even if it is ticked. Very few features will be finalized, as the constant addition of new digimon will increase the scope. Thefore:
+- 🗹 indicates a feature is fully or partially implemented; the method is known and relatively finalized, and only requires being entered. e.g. data entry
+- ☐ no progress has been made, either because we haven't worked out the code yet, or it is known but implementation hasn't started yet. 
+
+# ✍️ Compatibility
 
 Compatibility with Pokeemerald-Expansion should be maintained for as long as possible. Additions should be made in a way that prevents code conflicts, while achieving the other goals. Currently that makes use of subfolders for digimon species information, overwriting Pokemon-equivalents, and using #define functions to ensure compatibility
 For example, this mod incorporates new types such as Insect, Plant, Filth and Light. Using a #define function we can tell the code to overwrite the Pokemon types of Bug, Grass, Poison and Psychic with these new types, without having to modify other existing code, and preserving compatibility.
 This is the primary goal of this project, as all other goals should be implemented with this in mind. 
 
-**`Mechanics`**
 
-**🦖 Digimon Species**
-
+# 🦖 Digimon Species
 The eventual goal is to incorporate all digimon species into the mod. Digimon have been organized into time eras, and then via evolution stage and then alphabetically. For the purposes of this project, stage VI and above digimon are grouped. 
 
-- Currently the 1997-1999 Era of digimon is implemented as placeholders, and is in the process of being implemented properly.
-- Digimon are defined according to their translated names, as determined by one of our leads. This will often, but not always, be consistent with [Wikimon](https://wikimon.net/). Digimon's 'dub names' are also defined, and will be consistent with the current English translation used by the TCG.
-- All attacks will be 'digimon attacks' with no pokemon moves remaining, unless they coincidentally share both a name, such as [Splash](https://www.grindosaur.com/en/games/digimon-world-next-order/moves/splash) and [Splash](https://bulbapedia.bulbagarden.net/wiki/Splash_(move))
-- a branching evolution tree. Players can use a Digivice menu to evolve their digimon into one of several options, provided they meet stat requirements. Upon evolution they will learn a 'signature attack' which is otherwise treated as a normal move. Digimon can also revert to previous stages via this menu.
-- Custom abilities, either adapted from other [media](https://www.grindosaur.com/en/games/digimon-story-cyber-sleuth/support-skills) or invented. 
+- 🗹 Digimon are defined according to their translated names, as determined by one of our leads. This will often, but not always, be consistent with [Wikimon](https://wikimon.net/). Digimon's 'dub names' are also defined, and will be consistent with the current English translation used by the TCG. Both are defined in the species info for future-proofing
+- 🗹 [custom font characters](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/tree/master/graphics/fonts) to allow extremely long character names. note these are prone to breaking if the main assembly implements new custom fonts, requiring them to be reassigned
+- 🗹 All attacks will be 'digimon attacks' with no pokemon moves remaining, unless they coincidentally share both a name, such as [Splash](https://www.grindosaur.com/en/games/digimon-world-next-order/moves/splash) and [Splash](https://bulbapedia.bulbagarden.net/wiki/Splash_(move)).
+- ☐ custom attack animations. 
+- 🗹 a branching evolution tree. Players can use a Digivice menu to evolve their digimon into one of several options, provided they meet stat requirements. Upon evolution they will learn a 'signature attack' which is otherwise treated as a normal move. Digimon can also revert to previous stages via this menu.
+- 🗹 Custom abilities, either adapted from other [media](https://www.grindosaur.com/en/games/digimon-story-cyber-sleuth/support-skills) or invented. 
 
-**Art**
-- front and back sprites for battles. Ideally these would be custom, but can default to [DIM style](https://humulos.com/digimon/vbdm/) sprites if available.
-- Party sprites. These should be adapted from the [pendulum style](https://humulos.com/digimon/penc/list/) sprites, and use a custom set of party [pallets](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/tree/master/graphics/pokemon/icon_palettes) which better match the colours used in this style. 
-- Overworld sprites. These will need to be custom, and will also be used for NPC characters.
+**Goals**
+- ☐ Remaining digimon implemented
+- ☐ death evolution (e.g. Angemon -> Devimon or MetalGreymon -> Koromon). 
+- ☐ failure evolution (e.g. Agumon -> Numemon via level up with low friendship. Supported by friendship reduction effect on items) 
+- ☐ other evolution methods (e.g. Jogress) 
+- ☐ Game start settings toggle to allow the player to select between Sub and Dub names.
+
+# 🖥️ Digimon Game Mechanics
+Currently this functionality is partially developed, but the demo version will showcase:
+- 🗹 Branching digivolution tree via digivice menu, with stat requirements for evolution. 
+- 🗹 all battles are double battles by default
+
+**Demo goals**
+- ☐ Quest type - Recruitment of NPCs to unlock new buildings
+- ☐ Quest type - NPCs that enable specific evolutions
+- ☐ Quest type - gym for grinding stats to reach evolution requirements
+- ☐ Quest type - gathering generic materials to upgrade buildings
+- ☐ Training gym for grinding stats via simple micro games
+- ☐ [unbound quest menu](https://www.pokecommunity.com/threads/unbound-quest-menu.477500/)
+
+# 🎨 Art and sound
+- 🗹 front and back sprites for battles. Ideally these would be custom, but can default to [DIM style](https://humulos.com/digimon/vbdm/) sprites if available. Ideally back sprites would be different from front sprites, and front sprites would be animated, but this isn't present in placeholders.
+- 🗹 Party sprites. These should be adapted from the [pendulum style](https://humulos.com/digimon/penc/list/) sprites, and use a custom set of party [pallets](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/tree/master/graphics/pokemon/icon_palettes) which better match the colours used in this style. 
+- 🗹 Overworld digimon follower sprites. These will need to be custom, and will also be used for NPC overworld characters 
+- ☐ NPC overworld characters and battle sprites
+- ☐ Digimon-ified assets, e.g. buildings, bag, UI
+- 🗹 custom start menu
+- 🗹 digimon items
+- 🗹 player character overworld design
+- ☐ Battle backgrounds
+- ☐ battle sprites for player and opposing trainers
+- ☐ portraits for each digimon when talking to overworld characters or following digimon.
+- ☐ replace pokemon cries with digimon cries from [the ps1 Digimon World](https://sounds.spriters-resource.com/playstation/digimonworld/)
+- 
+
 
 **Relevant files** 
-- [the 97-99 species list](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/pokemon/species_info/digi_1997_1999.h) for their basic info
-- [the 97-99 graphics folder](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/tree/master/graphics/pokemon/digimon/1997_1999)  for their battle and overworld sprites
-- [the digivolutions files](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/pokemon/digivolution.h)  for their digivolution requirement
+- [the 97-99 species list](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/pokemon/species_info/digi_1997_1999.h) for species basic info
+- [the 97-99 graphics folder](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/tree/master/graphics/pokemon/digimon/1997_1999)  for digimon battle and overworld sprites
+- [the digivolutions file](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/pokemon/digivolution.h) for the tree and species' digivolution requirement
 - [the regular moves page](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/moves_info.h) for custom attack effects, and [the move constants page](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/include/constants/moves.h) for a list of moves, organized by type and power.
 - [The ability list](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/abilities.h) for all abilities. 
 
-**Current Goals**
-- Game start settings toggle to allow the player to select between Sub and Dub names. 
-
-**Eventual goals**
-- Remaining digimon implemented
-- death evolution
-- failure evolution
-- portraits for each digimon when talking to overworld characters or following digimon. 
-
-**Implemented**
-- 97-99 Era digimon
-- Digivice menu with stat requirements and branching evolution tree
 
 # About `pokeemerald-expansion`
 
