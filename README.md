@@ -6,7 +6,7 @@
 - Common mechanics of digimon games are implemented and incorproated into the Pokemon engine
 - Custom art and sound is created and/or adapted from official Digimon media
 
-Everything in the below list shouold be considered permanently in progress, even if it is ticked. Very few features will be finalized, as the constant addition of new digimon will increase the scope. Thefore:
+Everything in the below list should be considered permanently in progress, even if it is ticked. Very few features will be finalized, as the constant addition of new digimon will increase the scope. Thefore:
 - 🗹 indicates a feature is fully or partially implemented; the method is known and relatively finalized, and only requires being entered. e.g. data entry
 - ☐ no progress has been made, either because we haven't worked out the code yet, or it is known but implementation hasn't started yet. 
 
