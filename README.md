@@ -68,7 +68,12 @@ Currently this functionality is partially developed, but the demo version will s
 - [the 97-99 graphics folder](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/tree/master/graphics/pokemon/digimon/1997_1999)  for digimon battle and overworld sprites
 - [the digivolutions file](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/pokemon/digivolution.h) for the tree and species' digivolution requirement
 - [the regular moves page](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/moves_info.h) for custom attack effects, and [the move constants page](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/include/constants/moves.h) for a list of moves, organized by type and power.
-- [The ability list](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/abilities.h) for all abilities. 
+- [The ability list](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/abilities.h) for all abilities.
+
+**Custom tools**
+- [Textbox sim](https://e-readme.github.io/Digimon-textbox-sim/) to help with planning text and dialogue
+- [species tool](https://e-readme.github.io/digimon-species-tool/) to help churn through species info. Meant to be used in tandem with the python-generated placeholder species docs
+- 
 
 
 # About `pokeemerald-expansion`
