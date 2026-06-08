@@ -41,13 +41,6 @@ Currently this functionality is partially developed, but the demo version will s
 - Digimon start off as custom eggs 
 - if the player encounters a stage 1, the game dynamically initiates a safari style catching mode, where the player cannot use Digimon, only throw balls. 
 
-**Demo goals**
-- ☐ Quest type - Recruitment of NPCs to unlock new buildings
-- ☐ Quest type - NPCs that enable specific evolutions
-- ☐ Quest type - gym for grinding stats to reach evolution requirements
-- ☐ Quest type - gathering generic materials to upgrade buildings
-- ☐ Training gym for grinding stats via simple micro games
-- ☐ [unbound quest menu](https://www.pokecommunity.com/threads/unbound-quest-menu.477500/)
 
 # 🎨 Art and sound
 - 🗹 front and back sprites for battles. Ideally these would be custom, but can default to [DIM style](https://humulos.com/digimon/vbdm/) sprites if available. Ideally back sprites would be different from front sprites, and front sprites would be animated, but this isn't present in placeholders.
@@ -64,6 +57,13 @@ Currently this functionality is partially developed, but the demo version will s
 - ☐ replace pokemon cries with digimon cries from [the ps1 Digimon World](https://sounds.spriters-resource.com/playstation/digimonworld/)
 - 
 
+**Things to implement** 
+- ☐ Quest type - Recruitment of NPCs to unlock new buildings
+- ☐ Quest type - NPCs that enable specific evolutions
+- ☐ Quest type - gym for grinding stats to reach evolution requirements
+- ☐ Quest type - gathering generic materials to upgrade buildings
+- ☐ Training gym for grinding stats via simple micro games
+- ☐ [unbound quest menu](https://www.pokecommunity.com/threads/unbound-quest-menu.477500/)
 
 **Relevant files** 
 - [the 97-99 species list](https://github.com/e-ReadMe/pokeemerald-expansion_Project_ReLoad/blob/master/src/data/pokemon/species_info/digi_1997_1999.h) for species basic info
