@@ -154,8 +154,8 @@ CALVINInitialBattle_Text_ask:
 
 //what you say if you HAVE battled before
 CALVINReBattle_Text_Ask:
-	.string "Hey, its you again! Do you want to have a\n"
-	.string "battle with me?$"
+	.string "Hey, your back! Do you want to have a\n"
+	.string "battle?$"
 
 //what they say once you've agreed to battle
 CALVINBattle_Text_BattleBegin:
