@@ -23702,7 +23702,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Spits out sticky bubbles\n"
             "that lower Speed."),
-        .effect = EFFECT_SPEED_DOWN,
+        .effect = EFFECT_HIT,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .speed = 1,
+            .chance = 100,
+        }),
         .power = 30,
         .type = TYPE_NEUTRAL,
         .accuracy = 100,
@@ -24844,7 +24849,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "by rapidly spinning."),
         .effect = EFFECT_RAPID_SPIN,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_PLUS_1,
+            .moveEffect = MOVE_EFFECT_STAT_PLUS,
+            .speed = 1,
+            .self = TRUE,
+            .chance = 100,
         }),
         .power = 30,
         .type = TYPE_ROCK,
@@ -24859,6 +24867,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_RapidSpin,
         .validApprenticeMove = TRUE,
     },
+
 //-------------METAL-----------------------------------------------
 
     [MOVE_HERTZ_HOWL] =
@@ -24940,7 +24949,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ATK_PLUS_1,
+            .moveEffect = MOVE_EFFECT_STAT_PLUS,
+            .attack = 1,
             .self = TRUE,
             .chance = 50,
         }),
@@ -25024,7 +25034,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .attack = 1,
             .chance = 100,
         }),
         .makesContact = TRUE,
@@ -25388,7 +25399,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Reorganizes data to equip\n"
             "winged sandals. +1 to speed."),
-        .effect = EFFECT_SPEED_UP,
+        .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_WIND,
         .accuracy = 100,
@@ -25398,6 +25409,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_STATUS,
         .magicCoatAffected = TRUE,
         .danceMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_PLUS,
+            .speed = 1,
+            .self = TRUE,
+            .chance = 100,
+        }),
         .battleAnimScript = gBattleAnimMove_FeatherDance,
         .validApprenticeMove = TRUE,
     },
@@ -25762,7 +25779,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Makes the opponent cry.\n"
             "Lowers their Atk."),
-        .effect = EFFECT_ATTACK_DOWN,
+        .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_DARK,
         .accuracy = 100,
@@ -25770,6 +25787,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .attack = 1,
+            .chance = 100,
+        }),
         .soundMove = TRUE,
         .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
         .battleAnimScript = gBattleAnimMove_Taunt,
@@ -25792,7 +25814,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .accuracy = 1,
             .chance = 100,
         }),
         .battleAnimScript = gBattleAnimMove_Flash,
@@ -25886,7 +25909,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Candle Slash"),
         .description = COMPOUND_STRING(
             "Strikes out with a cutlass of\n"
-            "wax. Can crit or burn easily."),
+            "wax. Can crit or burn."),
         .effect = EFFECT_HIT,
         .power = 40,
         .type = TYPE_UNDEAD,

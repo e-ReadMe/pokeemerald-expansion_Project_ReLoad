@@ -2136,7 +2136,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_VOLCANIC_BEAT , ABILITY_VOLCANIC_BEAT, ABILITY_DRAGONS_ROAR },
+        .abilities = { ABILITY_VOLCANIC_BEAT, ABILITY_VOLCANIC_BEAT, ABILITY_DRAGONS_ROAR },
         .bodyColor = BODY_COLOR_YELLOW,
     #if DubNames
         .speciesName = _("Agumon"),//the digimon's dub name. e.g. gatomon
