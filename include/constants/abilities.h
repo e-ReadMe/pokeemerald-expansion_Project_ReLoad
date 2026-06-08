@@ -341,31 +341,39 @@ enum __attribute__((packed)) Ability
     ABILITY_TERA_SHELL = 308,
     ABILITY_TERAFORM_ZERO = 309,
     ABILITY_POISON_PUPPETEER = 310,
+    ABILITY_PIERCING_DRILL = 311,
+    ABILITY_DRAGONIZE = 312,
+    ABILITY_313 = 313,
+    ABILITY_314 = 314,
+    ABILITY_MEGA_SOL = 315,
+    ABILITY_316 = 316,
+    ABILITY_317 = 317,
+    ABILITY_SPICY_SPRAY = 318,
 
+    
 //New digimon abilities
 
 //boost all attacks of X type
-    ABILITY_ANCIENT_WARRIOR = 311,
-    ABILITY_VIRUS_BUSTER = 312,
-    ABILITY_ANIMAL_COLOSSEUM = 313,
-    ABILITY_VOLCANIC_BEAT = 314,
-    ABILITY_DRAGONS_ROAR = 315,
-    ABILITY_DEEP_SAVERS = 316,
-    ABILITY_BLIZZARD_FANG = 317,
-    ABILITY_IMPULSE_CITY = 318,
-    ABILITY_WIND_GUARDIANS = 319,
-    ABILITY_TITAN_OF_DUST = 320,
-    ABILITY_METAL_EMPIRE = 321,
-    ABILITY_NIGHT_SOLDIER = 322,
-    ABILITY_FABLE_WALTZ = 323,
-    ABILITY_NATURE_SPIRIT = 324,
-    ABILITY_JUNGLE_TROOPERS = 325,
-    ABILITY_DYNASTY_OF_EVIL = 326,
+    ABILITY_ANCIENT_WARRIOR = 319,
+    ABILITY_VIRUS_BUSTER = 320,
+    ABILITY_ANIMAL_COLOSSEUM = 321,
+    ABILITY_VOLCANIC_BEAT = 322,
+    ABILITY_DRAGONS_ROAR = 323,
+    ABILITY_DEEP_SAVERS = 324,
+    ABILITY_BLIZZARD_FANG = 325,
+    ABILITY_IMPULSE_CITY = 326,
+    ABILITY_WIND_GUARDIANS = 327,
+    ABILITY_TITAN_OF_DUST = 328,
+    ABILITY_METAL_EMPIRE = 329,
+    ABILITY_NIGHT_SOLDIER = 330,
+    ABILITY_FABLE_WALTZ = 331,
+    ABILITY_NATURE_SPIRIT = 332,
+    ABILITY_JUNGLE_TROOPERS = 333,
+    ABILITY_DYNASTY_OF_EVIL = 334,
 
 //new custom abilities
-    ABILITY_DEEP_SEA_SLUMBER = 327,//gives all attack an inherant chance to cause sleep on the target. 
-    ABILITY_PHOENIX_FEATHER = 328,//acts like a focus band, with a 66% chance to endure a hit that would otherwise knock the pokemon out.
-
+    ABILITY_DEEP_SEA_SLUMBER = 335,//gives all attack an inherant chance to cause sleep on the target. 
+    ABILITY_PHOENIX_FEATHER = 336,//acts like a focus band, with a 66% chance to endure a hit that would otherwise knock the pokemon out.
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

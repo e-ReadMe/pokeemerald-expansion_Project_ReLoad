@@ -333,11 +333,9 @@ extern const u8 gText_EmptyString3[];
 extern const u8 gText_RecordBattleToPass[];
 extern const u8 gText_BattleRecordedOnPass[];
 extern const u8 gText_BattleTourney[];
-extern const u8 gText_Stage1SafariText1[];
-extern const u8 gText_OmgItsJustALittleGuy[];
-
-extern const u16 gMissStringIds[];
 extern const u16 gStatUpStringIds[];
 extern const u16 gStatDownStringIds[];
+extern const u8 gText_Stage1SafariText1[];
+extern const u8 gText_OmgItsJustALittleGuy[];
 
 #endif // GUARD_BATTLE_MESSAGE_H
