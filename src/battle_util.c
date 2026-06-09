@@ -8191,16 +8191,6 @@ s32 GetAdjustedDamage(struct DamageContext *ctx, s32 damage)
         gLastUsedAbility = ABILITY_STURDY;
         gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_STURDIED;
     }
-
-    // Phoenix Feather's effect is identical to Sturdy, but it activates even if the Pokémon isn't at full HP, and has a 65% chance to activate instead of 100%.
-    else if (GetConfig(B_STURDY) >= GEN_5 && ctx->abilityDef == ABILITY_PHOENIX_FEATHER && gBattleMons[ctx->battlerDef].hp > 1 && rand < 65)
-    {
-        enduredHit = TRUE;
-        RecordAbilityBattle(ctx->battlerDef, ABILITY_PHOENIX_FEATHER);
-        gLastUsedAbility = ABILITY_PHOENIX_FEATHER;
-        gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_FOE_ENDURED;
-    }
-    else if (ctx->holdEffectDef == HOLD_EFFECT_FOCUS_BAND && rand < GetBattlerHoldEffectParam(ctx->battlerDef))
     else if (ctx->holdEffects[ctx->battlerDef] == HOLD_EFFECT_FOCUS_BAND && rand < GetBattlerHoldEffectParam(ctx->battlerDef))
     {
         enduredHit = TRUE;
@@ -8214,6 +8204,14 @@ s32 GetAdjustedDamage(struct DamageContext *ctx, s32 damage)
         RecordItemEffectBattle(ctx->battlerDef, ctx->holdEffects[ctx->battlerDef]);
         gLastUsedItem = gBattleMons[ctx->battlerDef].item;
         gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_FOE_HUNG_ON;
+    }
+    // Phoenix Feather's effect is identical to Sturdy, but it activates even if the Pokémon isn't at full HP, and has a 65% chance to activate instead of 100%.
+    else if (GetConfig(B_STURDY) >= GEN_5 && ctx->abilities[ctx->battlerDef] == ABILITY_PHOENIX_FEATHER && gBattleMons[ctx->battlerDef].hp > 1 && rand < 65)
+    {
+        enduredHit = TRUE;
+        RecordAbilityBattle(ctx->battlerDef, ABILITY_PHOENIX_FEATHER);
+        gLastUsedAbility = ABILITY_PHOENIX_FEATHER;
+        gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_FOE_ENDURED;
     }
     else if (B_AFFECTION_MECHANICS == TRUE && IsOnPlayerSide(ctx->battlerDef) && affectionScore >= AFFECTION_THREE_HEARTS)
     {

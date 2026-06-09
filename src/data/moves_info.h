@@ -1993,63 +1993,37 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     //{
     //    .name = COMPOUND_STRING("Growth"),
     //    .description = COMPOUND_STRING(
-    //    #if B_GROWTH_STAT_RAISE >= GEN_5
+    //    #if B_UPDATED_MOVE_DATA >= GEN_5
     //        "Forces the body to grow,\n"
     //        "raising Attack and Sp. Atk."),
     //    #else
-    //        "Forces the body to grow\n"
+   //         "Forces the body to grow\n"
     //        "and heightens Sp. Atk."),
     //    #endif
-    //    .effect = B_GROWTH_STAT_RAISE >= GEN_5 ? EFFECT_GROWTH : EFFECT_SPECIAL_ATTACK_UP,
-   //     .power = 0,
+    //    .effect = EFFECT_GROWTH,
+     //   .power = 0,
     //    .type = TYPE_NORMAL,
     //    .accuracy = 0,
     //    .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 20 : 40,
     //    .target = TARGET_USER,
-     //   .priority = 0,
+    //    .priority = 0,
     //    .category = DAMAGE_CATEGORY_STATUS,
-    //    .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
+   //     .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
     //    .ignoresProtect = TRUE,
     //    .mirrorMoveBanned = TRUE,
     //    .snatchAffected = TRUE,
+    //    .additionalEffects = ADDITIONAL_EFFECTS({
+    //        .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+    //        .attack = B_UPDATED_MOVE_DATA >= GEN_5 ? 1 : 0,
+    //        .spAtk = 1,
+    //    }),
     //    .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
     //    .contestCategory = CONTEST_CATEGORY_BEAUTY,
     //    .contestComboStarterId = COMBO_STARTER_GROWTH,
     //    .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
     //    .battleAnimScript = gBattleAnimMove_Growth,
     //    .validApprenticeMove = TRUE,
-   // },
-
-
-            "raising Attack and Sp. Atk."),
-        #else
-            "Forces the body to grow\n"
-            "and heightens Sp. Atk."),
-        #endif
-        .effect = EFFECT_GROWTH,
-        .power = 0,
-        .type = TYPE_NORMAL,
-        .accuracy = 0,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 20 : 40,
-        .target = TARGET_USER,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .snatchAffected = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
-            .attack = B_UPDATED_MOVE_DATA >= GEN_5 ? 1 : 0,
-            .spAtk = 1,
-        }),
-        .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestComboStarterId = COMBO_STARTER_GROWTH,
-        .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
-        .battleAnimScript = gBattleAnimMove_Growth,
-        .validApprenticeMove = TRUE,
-    },
+    //},
 
     //[MOVE_RAZOR_LEAF] =
     //{
@@ -6304,6 +6278,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Sweet Scent"),
         .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             "Allures the foes to harshly\n"
             "reduce evasiveness."),
         #else
@@ -23848,8 +23823,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_PLUS_1,
-            .self = TRUE,
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .speed = 1,
             .chance = 100,
         }),
         .battleAnimScript = gBattleAnimMove_RapidSpin,
@@ -23862,7 +23837,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Gathers digi-energy to give\n"
             "itself or an ally +1 attack."),
-        .effect = EFFECT_ATTACK_UP,
+        .effect = EFFECT_STAT_CHANGE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .attack = 1,
+            .chance = 100,
+        }),
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 0,
@@ -23880,7 +23860,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Gathers digi-energy to give\n"
             "itself or an ally +1 Sp. Atk."),
-        .effect = EFFECT_SPECIAL_ATTACK_UP,
+        .effect = EFFECT_STAT_CHANGE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .spAtk = 1,
+            .chance = 100,
+        }),
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 0,
@@ -23898,7 +23883,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "The user is roused.\n"
             "Ups Attack and Sp. Atk."),
-        .effect = EFFECT_ATTACK_SPATK_UP,
+        .effect = EFFECT_STAT_CHANGE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .spAtk = 1,
+            .attack = 1,
+            .self = TRUE,
+            .chance = 100,
+        }),
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 0,
@@ -23918,7 +23910,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Gathers digi-energy to give\n"
             "itself or an ally +1 defense."),
-        .effect = EFFECT_DEFENSE_UP,
+        .effect = EFFECT_STAT_CHANGE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .defense = 1,
+            .chance = 100,
+        }),
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 0,
@@ -23936,7 +23933,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Gathers digi-energy to give\n"
             "itself or an ally +1 Sp. Def."),
-        .effect = EFFECT_SPECIAL_DEFENSE_UP,
+        .effect = EFFECT_STAT_CHANGE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .spDef = 1,
+            .chance = 100,
+        }),
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 0,
@@ -23975,7 +23977,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Gathers digi-energy to give\n"
             "itself or an ally +1 speed."),
-        .effect = EFFECT_SPEED_UP,
+        .effect = EFFECT_STAT_CHANGE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .speed = 1,
+            .chance = 100,
+        }),
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 0,
@@ -24036,7 +24043,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Frightens the foes and\n"
             "weakens their spirit. -1 Def."),
-        .effect = EFFECT_DEFENSE_DOWN,
+        .effect = EFFECT_STAT_CHANGE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_MINUS,
+            .defense = 1,
+            .chance = 100,
+        }),
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 100,
@@ -24054,7 +24066,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ensnares the foes and\n"
             "slows them down. -1 speed. "),
-        .effect = EFFECT_SPEED_DOWN,
+        .effect = EFFECT_STAT_CHANGE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .speed = 1,
+            .chance = 100,
+        }),
         .power = 0,
         .type = TYPE_NEUTRAL,
         .accuracy = 100,
@@ -24156,6 +24173,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A blast of fire that may\n"
             "may lower the foe's Sp Def."),
         .effect = EFFECT_HIT,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .spDef = 1,
+            .chance = 30,
+        }),
         .power = 50,
         .type = TYPE_FIRE,
         .accuracy = 100,
@@ -24163,10 +24185,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
-            .chance = 30,
-        }),
         .battleAnimScript = gBattleAnimMove_Incinerate,
     },
 
@@ -24177,6 +24195,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A sneaky fire move that\n"
             "lowers the foe's Defence."),
         .effect = EFFECT_HIT,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_MINUS,
+            .defense = 1,
+            .chance = 100,
+        }),
         .power = 40,
         .type = TYPE_FIRE,
         .accuracy = 85,
@@ -24184,10 +24207,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
-            .chance = 75,
-        }),
         .battleAnimScript = gBattleAnimMove_FirePunch,
     },
 
@@ -24290,8 +24309,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Splash"),
         .description = COMPOUND_STRING(
-            "It's just a splash...\n"
-            "Has no effect whatsoever."),
+            "Blasts enemies with water\n"
+            "at high pressure. +1 spd."),
         .effect = EFFECT_HIT,
         .power = 30,
         .type = TYPE_WATER,
@@ -24301,8 +24320,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_PLUS_1,
-            .chance = 30,
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .speed = 1,
+            .self = TRUE,
+            .chance = 100,
         }),
         .ignoresProtect = TRUE,
         .mirrorMoveBanned = TRUE,
@@ -24496,7 +24517,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Gathers Water Magic. Gives \n"
             "itself or an ally +1 Sp Attack."),
-        .effect = EFFECT_SPECIAL_ATTACK_UP,
+        .effect = EFFECT_STAT_CHANGE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .spAtk = 1,
+            .chance = 100,
+        }),
         .power = 0,
         .type = TYPE_WATER,
         .accuracy = 0,
@@ -24598,6 +24624,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "An intense peck from the\n"
             "tropics. Lowers Attack."),
         .effect = EFFECT_HIT,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_MINUS,
+            .attack = 1,
+            .chance = 100,
+        }),
         .power = 50,
         .type = TYPE_PLANT,
         .accuracy = 100,
@@ -24606,10 +24637,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
-            .chance = 100,
-        }),
         .battleAnimScript = gBattleAnimMove_Peck,
     },
 
@@ -24725,7 +24752,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "The user rolls in mud. Sharply\n"
             "increases their DEF stat. "),
-        .effect = EFFECT_DEFENSE_UP_2,
+        .effect = EFFECT_STAT_CHANGE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .defense = 2,
+            .chance = 100,
+        }),
         .power = 0,
         .type = TYPE_PLANT,
         .accuracy = 0,

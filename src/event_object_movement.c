@@ -3752,6 +3752,16 @@ u8 GetObjectEventBerryTreeId(u8 objectEventId)
     return gObjectEvents[objectEventId].trainerRange_berryTreeId;
 }
 
+u16 GetObjectEventTrainerSightFlagByObjectEventId(u8 objectEventId)
+{
+    u16 trainerType = gObjectEvents[objectEventId].trainerType;
+
+    if (trainerType < TRAINER_TYPE_RUN_SCRIPT)
+        return trainerType;
+
+    return GetObjectEventFlagIdByObjectEventId(objectEventId);
+}
+
 const struct ObjectEventTemplate *GetObjectEventTemplateByLocalIdAndMap(u8 localId, u8 mapNum, u8 mapGroup)
 {
     const struct ObjectEventTemplate *templates;

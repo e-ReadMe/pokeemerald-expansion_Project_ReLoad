@@ -563,6 +563,7 @@ static u8 CheckTrainer(u8 objectEventId)
     u8 ret = 1;
     u8 approachDistance;
     u16 scriptFlag = GetObjectEventTrainerSightFlagByObjectEventId(objectEventId);
+    bool8 isRunScriptTrainer = gObjectEvents[objectEventId].trainerType >= TRAINER_TYPE_RUN_SCRIPT;
     
     if (InTrainerHill() == TRUE)
         scriptPtr = GetTrainerHillTrainerScript();
@@ -579,7 +580,7 @@ static u8 CheckTrainer(u8 objectEventId)
         if (GetHillTrainerFlag(objectEventId))
             return 0;
     }
-    else if (scriptFlag < TRAINER_TYPE_RUN_SCRIPT)
+    else if (!isRunScriptTrainer)
     {
         if (GetTrainerFlagFromScriptPointer(scriptPtr))
             return 0;
@@ -589,12 +590,18 @@ static u8 CheckTrainer(u8 objectEventId)
 
     if (approachDistance != 0)
     {
-        if (scriptFlag >= TRAINER_TYPE_RUN_SCRIPT)
+        if (isRunScriptTrainer)
         {
-            if (!FlagGet(scriptFlag) && scriptPtr != NULL)
+            u16 objectEventFlag = GetObjectEventFlagIdByLocalIdAndMap(gObjectEvents[objectEventId].localId,
+                                                                      gObjectEvents[objectEventId].mapNum,
+                                                                      gObjectEvents[objectEventId].mapGroup);
+
+            if (scriptPtr != NULL && (objectEventFlag == 0 || !FlagGet(objectEventFlag)))
             {
-                // TRAINER_TYPE_RUN_SCRIPT
-                FlagSet(scriptFlag);
+                if (objectEventFlag != 0)
+                    FlagSet(objectEventFlag);
+
+                gObjectEvents[objectEventId].trainerRange_berryTreeId = 0;
                 ret = 0xFF;
             }
             else

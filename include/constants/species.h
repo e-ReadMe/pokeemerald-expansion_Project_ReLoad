@@ -1694,250 +1694,250 @@ enum __attribute__((packed)) Species
     // Add any custom species between here and SPECIES_CUSTOM_END
 
 //digimon list 1997-1999
-#define SPECIES_BOTAMON                                 ( SPECIES_EGG + 1)     
-#define SPECIES_BUBBMON                                 ( SPECIES_BOTAMON + 1 )     
-#define SPECIES_CHOROMON                                ( SPECIES_BUBBMON + 1 )     
-#define SPECIES_MOKUMON                                 ( SPECIES_CHOROMON + 1 )     
-#define SPECIES_NYOKIMON                                ( SPECIES_MOKUMON + 1 )     
-#define SPECIES_PITCHMON                                ( SPECIES_NYOKIMON + 1 )     
-#define SPECIES_POYOMON                                 ( SPECIES_PITCHMON + 1 )     
-#define SPECIES_PUNIMON                                 ( SPECIES_POYOMON + 1 )     
-#define SPECIES_YUKIMIBOTAMON                           ( SPECIES_PUNIMON + 1 )     
-#define SPECIES_YURAMON                                 ( SPECIES_YUKIMIBOTAMON + 1 )     
-#define SPECIES_ZURUMON                                 ( SPECIES_YURAMON + 1 )     
-#define SPECIES_CAPRIMON                                ( SPECIES_ZURUMON + 1 )     
-#define SPECIES_KODOKUGUMON                             ( SPECIES_CAPRIMON + 1 )     
-#define SPECIES_KOROMON                                 ( SPECIES_KODOKUGUMON + 1 )     
-#define SPECIES_MOCHIMON                                ( SPECIES_KOROMON + 1 )     
-#define SPECIES_NYAROMON                                ( SPECIES_MOCHIMON + 1 )     
-#define SPECIES_PAGUMON                                 ( SPECIES_NYAROMON + 1 )     
-#define SPECIES_PETITMERAMON                            ( SPECIES_PAGUMON + 1 )     
-#define SPECIES_PUKAMON                                 ( SPECIES_PETITMERAMON + 1 )     
-#define SPECIES_PYOKOMON                                ( SPECIES_PUKAMON + 1 )     
-#define SPECIES_TANEMON                                 ( SPECIES_PYOKOMON + 1 )     
-#define SPECIES_TOKOMON                                 ( SPECIES_TANEMON + 1 )     
-#define SPECIES_TSUNOMON                                ( SPECIES_TOKOMON + 1 )     
-#define SPECIES_AGUMON                                  ( SPECIES_TSUNOMON + 1 )     
-#define SPECIES_YUKIAGUMON                              ( SPECIES_AGUMON + 1 )     
-#define SPECIES_BAKUMON                                 ( SPECIES_YUKIAGUMON + 1 )     
-#define SPECIES_BETAMON                                 ( SPECIES_BAKUMON + 1 )     
-#define SPECIES_MODOKIBETAMON                           ( SPECIES_BETAMON + 1 )     
-#define SPECIES_CANDMON                                 ( SPECIES_MODOKIBETAMON + 1 )     
-#define SPECIES_CHUUMON                                 ( SPECIES_CANDMON + 1 )     
-#define SPECIES_ELECMON                                 ( SPECIES_CHUUMON + 1 )     
-#define SPECIES_FLORAMON                                ( SPECIES_ELECMON + 1 )     
-#define SPECIES_GABUMON                                 ( SPECIES_FLORAMON + 1 )     
-#define SPECIES_PSYCHEMON                               ( SPECIES_GABUMON + 1 )     
-#define SPECIES_GANIMON                                 ( SPECIES_PSYCHEMON + 1 )     
-#define SPECIES_GAZIMON                                 ( SPECIES_GANIMON + 1 )     
-#define SPECIES_GIZAMON                                 ( SPECIES_GAZIMON + 1 )     
-#define SPECIES_GOBLIMON                                ( SPECIES_GIZAMON + 1 )     
-#define SPECIES_SHAMAMON                                ( SPECIES_GOBLIMON + 1 )     
-#define SPECIES_SNOWGOBLIMON                            ( SPECIES_SHAMAMON + 1 )     
-#define SPECIES_GOMAMON                                 ( SPECIES_SNOWGOBLIMON + 1 )     
-#define SPECIES_GOTSUMON                                ( SPECIES_GOMAMON + 1 )     
-#define SPECIES_HAGURUMON                               ( SPECIES_GOTSUMON + 1 )     
-#define SPECIES_KOKUWAMON                               ( SPECIES_HAGURUMON + 1 )     
-#define SPECIES_KUNEMON                                 ( SPECIES_KOKUWAMON + 1 )     
-#define SPECIES_DOKUNEMON                               ( SPECIES_KUNEMON + 1 )     
-#define SPECIES_MUSHMON                                 ( SPECIES_DOKUNEMON + 1 )     
-#define SPECIES_OTAMAMON                                ( SPECIES_MUSHMON + 1 )     
-#define SPECIES_PALMON                                  ( SPECIES_OTAMAMON + 1 )     
-#define SPECIES_ALRAUMON                                ( SPECIES_PALMON + 1 )     
-#define SPECIES_PATAMON                                 ( SPECIES_ALRAUMON + 1 )     
-#define SPECIES_TSUKAIMON                               ( SPECIES_PATAMON + 1 )     
-#define SPECIES_PENMON                                  ( SPECIES_TSUKAIMON + 1 )     
-#define SPECIES_MUCHOMON                                ( SPECIES_PENMON + 1 )     
-#define SPECIES_PICODEVIMON                             ( SPECIES_MUCHOMON + 1 )     
-#define SPECIES_PIYOMON                                 ( SPECIES_PICODEVIMON + 1 )     
-#define SPECIES_PLOTMON                                 ( SPECIES_PIYOMON + 1 )     
-#define SPECIES_SHAKOMON                                ( SPECIES_PLOTMON + 1 )     
-#define SPECIES_TENTOMON                                ( SPECIES_SHAKOMON + 1 )     
-#define SPECIES_TOYAGUMON                               ( SPECIES_TENTOMON + 1 )     
-#define SPECIES_CLEARAGUMON                             ( SPECIES_TOYAGUMON + 1 )     
-#define SPECIES_BUN                                     ( SPECIES_CLEARAGUMON + 1 )     
-#define SPECIES_AIRDRAMON                               ( SPECIES_BUN + 1 )     
-#define SPECIES_ANGEMON                                 ( SPECIES_AIRDRAMON + 1 )     
-#define SPECIES_PIDMON                                  ( SPECIES_ANGEMON + 1 )     
-#define SPECIES_BAKEMON                                 ( SPECIES_PIDMON + 1 )     
-#define SPECIES_SOULMON                                 ( SPECIES_BAKEMON + 1 )     
-#define SPECIES_BIRDRAMON                               ( SPECIES_SOULMON + 1 )     
-#define SPECIES_SABERDRAMON                             ( SPECIES_BIRDRAMON + 1 )     
-#define SPECIES_CENTARUMON                              ( SPECIES_SABERDRAMON + 1 )     
-#define SPECIES_CLOCKMON                                ( SPECIES_CENTARUMON + 1 )     
-#define SPECIES_COELAMON                                ( SPECIES_CLOCKMON + 1 )     
-#define SPECIES_CYCLOMON                                ( SPECIES_COELAMON + 1 )     
-#define SPECIES_DARKTYRANNOMON                          ( SPECIES_CYCLOMON + 1 )     
-#define SPECIES_DELTAMON                                ( SPECIES_DARKTYRANNOMON + 1 )     
-#define SPECIES_DEVIDRAMON                              ( SPECIES_DELTAMON + 1 )     
-#define SPECIES_DEVIMON                                 ( SPECIES_DEVIDRAMON + 1 )     
-#define SPECIES_ICEDEVIMON                              ( SPECIES_DEVIMON + 1 )     
-#define SPECIES_DOKUGUMON                               ( SPECIES_ICEDEVIMON + 1 )     
-#define SPECIES_DRIMOGEMON                              ( SPECIES_DOKUGUMON + 1 )     
-#define SPECIES_NISEDRIMOGEMON                          ( SPECIES_DRIMOGEMON + 1 )     
-#define SPECIES_EBIDRAMON                               ( SPECIES_NISEDRIMOGEMON + 1 )     
-#define SPECIES_EVILMON                                 ( SPECIES_EBIDRAMON + 1 )     
-#define SPECIES_FLARELIZARMON                           ( SPECIES_EVILMON + 1 )     
-#define SPECIES_DARKLIZARMON                            ( SPECIES_FLARELIZARMON + 1 )     
-#define SPECIES_FLYMON                                  ( SPECIES_DARKLIZARMON + 1 )     
-#define SPECIES_GARURUMON                               ( SPECIES_FLYMON + 1 )     
-#define SPECIES_GURURUMON                               ( SPECIES_GARURUMON + 1 )     
-#define SPECIES_GEKOMON                                 ( SPECIES_GURURUMON + 1 )     
-#define SPECIES_GESOMON                                 ( SPECIES_GEKOMON + 1 )     
-#define SPECIES_GOKIMON                                 ( SPECIES_GESOMON + 1 )     
-#define SPECIES_GOLEMON                                 ( SPECIES_GOKIMON + 1 )     
-#define SPECIES_GORIMON                                 ( SPECIES_GOLEMON + 1 )     
-#define SPECIES_GREYMON                                 ( SPECIES_GORIMON + 1 )     
-#define SPECIES_GUARDROMON                              ( SPECIES_GREYMON + 1 )     
-#define SPECIES_HANUMON                                 ( SPECIES_GUARDROMON + 1 )     
-#define SPECIES_ICEMON                                  ( SPECIES_HANUMON + 1 )     
-#define SPECIES_IGAMON                                  ( SPECIES_ICEMON + 1 )     
-#define SPECIES_IKKAKUMON                               ( SPECIES_IGAMON + 1 )     
-#define SPECIES_KABUTERIMON                             ( SPECIES_IKKAKUMON + 1 )     
-#define SPECIES_KARATUKINUMEMON                         ( SPECIES_KABUTERIMON + 1 )     
-#define SPECIES_KIWIMON                                 ( SPECIES_KARATUKINUMEMON + 1 )     
-#define SPECIES_KOKATORIMON                             ( SPECIES_KIWIMON + 1 )     
-#define SPECIES_AKATORIMON                              ( SPECIES_KOKATORIMON + 1 )     
-#define SPECIES_KUWAGAMON                               ( SPECIES_AKATORIMON + 1 )     
-#define SPECIES_LEOMON                                  ( SPECIES_KUWAGAMON + 1 )     
-#define SPECIES_MECHANORIMON                            ( SPECIES_LEOMON + 1 )     
-#define SPECIES_MERAMON                                 ( SPECIES_MECHANORIMON + 1 )     
-#define SPECIES_MINOTAURMON                             ( SPECIES_MERAMON + 1 )     
-#define SPECIES_MOJYAMON                                ( SPECIES_MINOTAURMON + 1 )     
-#define SPECIES_JUNGLEMOJYAMON                          ( SPECIES_MOJYAMON + 1 )     
-#define SPECIES_MONOCHROMON                             ( SPECIES_JUNGLEMOJYAMON + 1 )     
-#define SPECIES_MUSYAMON                                ( SPECIES_MONOCHROMON + 1 )     
-#define SPECIES_NANIMON                                 ( SPECIES_MUSYAMON + 1 )     
-#define SPECIES_NUMEMON                                 ( SPECIES_NANIMON + 1 )     
-#define SPECIES_GEREMON                                 ( SPECIES_NUMEMON + 1 )     
-#define SPECIES_OCTOMON                                 ( SPECIES_GEREMON + 1 )     
-#define SPECIES_OGREMON                                 ( SPECIES_OCTOMON + 1 )     
-#define SPECIES_FUGAMON                                 ( SPECIES_OGREMON + 1 )     
-#define SPECIES_HYOGAMON                                ( SPECIES_FUGAMON + 1 )     
-#define SPECIES_RAREMON                                 ( SPECIES_HYOGAMON + 1 )     
-#define SPECIES_REVOLMON                                ( SPECIES_RAREMON + 1 )     
-#define SPECIES_RUKAMON                                 ( SPECIES_REVOLMON + 1 )     
-#define SPECIES_SEADRAMON                               ( SPECIES_RUKAMON + 1 )     
-#define SPECIES_SHELLMON                                ( SPECIES_SEADRAMON + 1 )     
-#define SPECIES_MORISHELLMON                            ( SPECIES_SHELLMON + 1 )     
-#define SPECIES_SNIMON                                  ( SPECIES_MORISHELLMON + 1 )     
-#define SPECIES_STARMON                                 ( SPECIES_SNIMON + 1 )     
-#define SPECIES_SUKAMON                                 ( SPECIES_STARMON + 1 )     
-#define SPECIES_PLATINUMSUKAMON                         ( SPECIES_SUKAMON + 1 )     
-#define SPECIES_TAILMON                                 ( SPECIES_PLATINUMSUKAMON + 1 )     
-#define SPECIES_TANKMON                                 ( SPECIES_TAILMON + 1 )     
-#define SPECIES_THUNDERBALLMON                          ( SPECIES_TANKMON + 1 )     
-#define SPECIES_TOGEMON                                 ( SPECIES_THUNDERBALLMON + 1 )     
-#define SPECIES_TORTOMON                                ( SPECIES_TOGEMON + 1 )     
-#define SPECIES_TUSKMON                                 ( SPECIES_TORTOMON + 1 )     
-#define SPECIES_TYRANNOMON                              ( SPECIES_TUSKMON + 1 )     
-#define SPECIES_UNIMON                                  ( SPECIES_TYRANNOMON + 1 )     
-#define SPECIES_SHIMAUNIMON                             ( SPECIES_UNIMON + 1 )     
-#define SPECIES_VEEDRAMON                               ( SPECIES_SHIMAUNIMON + 1 )     
-#define SPECIES_VEGIMON                                 ( SPECIES_VEEDRAMON + 1 )     
-#define SPECIES_ZASSOUMON                               ( SPECIES_VEGIMON + 1 )     
-#define SPECIES_REDVEGIMON                              ( SPECIES_ZASSOUMON + 1 )     
-#define SPECIES_WHAMON_ADULT                            ( SPECIES_REDVEGIMON + 1 )     
-#define SPECIES_WIZARMON                                ( SPECIES_WHAMON_ADULT + 1 )     
-#define SPECIES_WOODMON                                 ( SPECIES_WIZARMON + 1 )     
-#define SPECIES_YANMAMON                                ( SPECIES_WOODMON + 1 )     
-#define SPECIES_SANDYANMAMON                            ( SPECIES_YANMAMON + 1 )     
-#define SPECIES_YUKIDARUMON                             ( SPECIES_SANDYANMAMON + 1 )     
-#define SPECIES_TSUCHIDARUMON                           ( SPECIES_YUKIDARUMON + 1 )     
-#define SPECIES_AEROVEEDRAMON                           ( SPECIES_TSUCHIDARUMON + 1 )     
-#define SPECIES_ANDROMON                                ( SPECIES_AEROVEEDRAMON + 1 )     
-#define SPECIES_ANGEWOMON                               ( SPECIES_ANDROMON + 1 )     
-#define SPECIES_ANOMALOCARIMON                          ( SPECIES_ANGEWOMON + 1 )     
-#define SPECIES_ASURAMON                                ( SPECIES_ANOMALOCARIMON + 1 )     
-#define SPECIES_ATLURKABUTERIMONR                       ( SPECIES_ASURAMON + 1 )     
-#define SPECIES_ATLURKABUTERIMONB                       ( SPECIES_ATLURKABUTERIMONR + 1 )     
-#define SPECIES_BIGMAMEMON                              ( SPECIES_ATLURKABUTERIMONB + 1 )     
-#define SPECIES_BLOSSOMON                               ( SPECIES_BIGMAMEMON + 1 )     
-#define SPECIES_BLUEMERAMON                             ( SPECIES_BLOSSOMON + 1 )     
-#define SPECIES_BRACHIMON                               ( SPECIES_BLUEMERAMON + 1 )     
-#define SPECIES_CHIMAIRAMON                             ( SPECIES_BRACHIMON + 1 )     
-#define SPECIES_CYBERDRAMON                             ( SPECIES_CHIMAIRAMON + 1 )     
-#define SPECIES_DAGOMON                                 ( SPECIES_CYBERDRAMON + 1 )     
-#define SPECIES_DEATHMERAMON                            ( SPECIES_DAGOMON + 1 )     
-#define SPECIES_DELUMON                                 ( SPECIES_DEATHMERAMON + 1 )     
-#define SPECIES_DIGITAMAMON                             ( SPECIES_DELUMON + 1 )     
-#define SPECIES_ETEMON                                  ( SPECIES_DIGITAMAMON + 1 )     
-#define SPECIES_EXTYRANNOMON                            ( SPECIES_ETEMON + 1 )     
-#define SPECIES_GARUDAMON                               ( SPECIES_EXTYRANNOMON + 1 )     
-#define SPECIES_GERBEMON                                ( SPECIES_GARUDAMON + 1 )     
-#define SPECIES_GIGADRAMON                              ( SPECIES_GERBEMON + 1 )     
-#define SPECIES_GIROMON                                 ( SPECIES_GIGADRAMON + 1 )     
-#define SPECIES_TEKKAMON                                ( SPECIES_GIROMON + 1 )     
-#define SPECIES_HANGYOMON                               ( SPECIES_TEKKAMON + 1 )     
-#define SPECIES_HOLYANGEMON                             ( SPECIES_HANGYOMON + 1 )     
-#define SPECIES_INSEKIMON                               ( SPECIES_HOLYANGEMON + 1 )     
-#define SPECIES_JYAGAMON                                ( SPECIES_INSEKIMON + 1 )     
-#define SPECIES_JYUREIMON                               ( SPECIES_JYAGAMON + 1 )     
-#define SPECIES_KNIGHTMON                               ( SPECIES_JYUREIMON + 1 )     
-#define SPECIES_LADYDEVIMON                             ( SPECIES_KNIGHTMON + 1 )     
-#define SPECIES_LILIMON                                 ( SPECIES_LADYDEVIMON + 1 )     
-#define SPECIES_MAMEMON                                 ( SPECIES_LILIMON + 1 )     
-#define SPECIES_MAMMON                                  ( SPECIES_MAMEMON + 1 )     
-#define SPECIES_MARINEDEVIMON                           ( SPECIES_MAMMON + 1 )     
-#define SPECIES_MASTERTYRANNOMON                        ( SPECIES_MARINEDEVIMON + 1 )     
-#define SPECIES_MEGADRAMON                              ( SPECIES_MASTERTYRANNOMON + 1 )     
-#define SPECIES_MEGASEADRAMON                           ( SPECIES_MEGADRAMON + 1 )     
-#define SPECIES_WARUSEADRAMON                           ( SPECIES_MEGASEADRAMON + 1 )     
-#define SPECIES_METALGREYMON                            ( SPECIES_WARUSEADRAMON + 1 )     
-#define SPECIES_METALGREYMONV                           ( SPECIES_METALGREYMON + 1 )     
-#define SPECIES_METALMAMEMON                            ( SPECIES_METALGREYMONV + 1 )     
-#define SPECIES_METALTYRANNOMON                         ( SPECIES_METALMAMEMON + 1 )     
-#define SPECIES_MONZAEMON                               ( SPECIES_METALTYRANNOMON + 1 )     
-#define SPECIES_MUMMYMON                                ( SPECIES_MONZAEMON + 1 )     
-#define SPECIES_NANOMON                                 ( SPECIES_MUMMYMON + 1 )     
-#define SPECIES_OKUWAMON                                ( SPECIES_NANOMON + 1 )     
-#define SPECIES_OROCHIMON                               ( SPECIES_OKUWAMON + 1 )     
-#define SPECIES_PANJYAMON                               ( SPECIES_OROCHIMON + 1 )     
-#define SPECIES_PARROTMON                               ( SPECIES_PANJYAMON + 1 )     
-#define SPECIES_PHANTOMON                               ( SPECIES_PARROTMON + 1 )     
-#define SPECIES_PICCOLOMON                              ( SPECIES_PHANTOMON + 1 )     
-#define SPECIES_PUMPMON                                 ( SPECIES_PICCOLOMON + 1 )     
-#define SPECIES_SKULLGREYMON                            ( SPECIES_PUMPMON + 1 )     
-#define SPECIES_SKULLSATAMON                            ( SPECIES_SKULLGREYMON + 1 )     
-#define SPECIES_TONOSAMAGEKOMON                         ( SPECIES_SKULLSATAMON + 1 )     
-#define SPECIES_TRICERAMON                              ( SPECIES_TONOSAMAGEKOMON + 1 )     
-#define SPECIES_VADERMON                                ( SPECIES_TRICERAMON + 1 )     
-#define SPECIES_VAMDEMON                                ( SPECIES_VADERMON + 1 )     
-#define SPECIES_VERMILIMON                              ( SPECIES_VAMDEMON + 1 )     
-#define SPECIES_WARUMONZAEMON                           ( SPECIES_VERMILIMON + 1 )     
-#define SPECIES_WEREGARURUMON                           ( SPECIES_WARUMONZAEMON + 1 )     
-#define SPECIES_WHAMON_PERFECT                          ( SPECIES_WEREGARURUMON + 1 )     
-#define SPECIES_ZUDOMON                                 ( SPECIES_WHAMON_PERFECT + 1 )     
-#define SPECIES_APOCALYMON                              ( SPECIES_ZUDOMON + 1 )     
-#define SPECIES_BABAMON                                 ( SPECIES_APOCALYMON + 1 )     
-#define SPECIES_BOLTMON                                 ( SPECIES_BABAMON + 1 )     
-#define SPECIES_DEMON                                   ( SPECIES_BOLTMON + 1 )     
-#define SPECIES_DEVITAMAMON                             ( SPECIES_DEMON + 1 )     
-#define SPECIES_DIABLOMON                               ( SPECIES_DEVITAMAMON + 1 )     
-#define SPECIES_GODDRAMON                               ( SPECIES_DIABLOMON + 1 )     
-#define SPECIES_GRIFFOMON                               ( SPECIES_GODDRAMON + 1 )     
-#define SPECIES_HERAKLEKABUTERIMON                      ( SPECIES_GRIFFOMON + 1 )     
-#define SPECIES_HOLYDRAMON                              ( SPECIES_HERAKLEKABUTERIMON + 1 )     
-#define SPECIES_HOUOUMON                                ( SPECIES_HOLYDRAMON + 1 )     
-#define SPECIES_JIJIMON                                 ( SPECIES_HOUOUMON + 1 )     
-#define SPECIES_KINGETEMON                              ( SPECIES_JIJIMON + 1 )     
-#define SPECIES_MARINEANGEMON                           ( SPECIES_KINGETEMON + 1 )     
-#define SPECIES_METALETEMON                             ( SPECIES_MARINEANGEMON + 1 )     
-#define SPECIES_METALGARURUMON                          ( SPECIES_METALETEMON + 1 )     
-#define SPECIES_METALSEADRAMON                          ( SPECIES_METALGARURUMON + 1 )     
-#define SPECIES_MILLENNIUMMON                           ( SPECIES_METALSEADRAMON + 1 )     
-#define SPECIES_MUGENDRAMON                             ( SPECIES_MILLENNIUMMON + 1 )     
-#define SPECIES_OMEGAMON                                ( SPECIES_MUGENDRAMON + 1 )     
-#define SPECIES_PIEMON                                  ( SPECIES_OMEGAMON + 1 )     
-#define SPECIES_PINOCCHIMON                             ( SPECIES_PIEMON + 1 )     
-#define SPECIES_PLESIOMON                               ( SPECIES_PINOCCHIMON + 1 )     
-#define SPECIES_PUKUMON                                 ( SPECIES_PLESIOMON + 1 )     
-#define SPECIES_ROSEMON                                 ( SPECIES_PUKUMON + 1 )     
-#define SPECIES_SABERLEOMON                             ( SPECIES_ROSEMON + 1 )     
-#define SPECIES_SKULLMAMMON                             ( SPECIES_SABERLEOMON + 1 )     
-#define SPECIES_VENOMVAMDEMON                           ( SPECIES_SKULLMAMMON + 1 )     
-#define SPECIES_WARGREYMON                              ( SPECIES_VENOMVAMDEMON + 1 )     
-#define SPECIES_ZANBAMON                                ( SPECIES_WARGREYMON + 1 )     
+    SPECIES_BOTAMON = SPECIES_CUSTOM_START + 1,
+    SPECIES_BUBBMON = SPECIES_BOTAMON + 1,
+    SPECIES_CHOROMON = SPECIES_BUBBMON + 1,
+    SPECIES_MOKUMON = SPECIES_CHOROMON + 1,
+    SPECIES_NYOKIMON = SPECIES_MOKUMON + 1,
+    SPECIES_PITCHMON = SPECIES_NYOKIMON + 1,
+    SPECIES_POYOMON = SPECIES_PITCHMON + 1,
+    SPECIES_PUNIMON = SPECIES_POYOMON + 1,
+    SPECIES_YUKIMIBOTAMON = SPECIES_PUNIMON + 1,
+    SPECIES_YURAMON = SPECIES_YUKIMIBOTAMON + 1,
+    SPECIES_ZURUMON = SPECIES_YURAMON + 1,
+    SPECIES_CAPRIMON = SPECIES_ZURUMON + 1,
+    SPECIES_KODOKUGUMON = SPECIES_CAPRIMON + 1,
+    SPECIES_KOROMON = SPECIES_KODOKUGUMON + 1,
+    SPECIES_MOCHIMON = SPECIES_KOROMON + 1,
+    SPECIES_NYAROMON = SPECIES_MOCHIMON + 1,
+    SPECIES_PAGUMON = SPECIES_NYAROMON + 1,
+    SPECIES_PETITMERAMON = SPECIES_PAGUMON + 1,
+    SPECIES_PUKAMON = SPECIES_PETITMERAMON + 1,
+    SPECIES_PYOKOMON = SPECIES_PUKAMON + 1,
+    SPECIES_TANEMON = SPECIES_PYOKOMON + 1,
+    SPECIES_TOKOMON = SPECIES_TANEMON + 1,
+    SPECIES_TSUNOMON = SPECIES_TOKOMON + 1,
+    SPECIES_AGUMON = SPECIES_TSUNOMON + 1,
+    SPECIES_YUKIAGUMON = SPECIES_AGUMON + 1,
+    SPECIES_BAKUMON = SPECIES_YUKIAGUMON + 1,
+    SPECIES_BETAMON = SPECIES_BAKUMON + 1,
+    SPECIES_MODOKIBETAMON = SPECIES_BETAMON + 1,
+    SPECIES_CANDMON = SPECIES_MODOKIBETAMON + 1,
+    SPECIES_CHUUMON = SPECIES_CANDMON + 1,
+    SPECIES_ELECMON = SPECIES_CHUUMON + 1,
+    SPECIES_FLORAMON = SPECIES_ELECMON + 1,
+    SPECIES_GABUMON = SPECIES_FLORAMON + 1,
+    SPECIES_PSYCHEMON = SPECIES_GABUMON + 1,
+    SPECIES_GANIMON = SPECIES_PSYCHEMON + 1,
+    SPECIES_GAZIMON = SPECIES_GANIMON + 1,
+    SPECIES_GIZAMON = SPECIES_GAZIMON + 1,
+    SPECIES_GOBLIMON = SPECIES_GIZAMON + 1,
+    SPECIES_SHAMAMON = SPECIES_GOBLIMON + 1,
+    SPECIES_SNOWGOBLIMON = SPECIES_SHAMAMON + 1,
+    SPECIES_GOMAMON = SPECIES_SNOWGOBLIMON + 1,
+    SPECIES_GOTSUMON = SPECIES_GOMAMON + 1,
+    SPECIES_HAGURUMON = SPECIES_GOTSUMON + 1,
+    SPECIES_KOKUWAMON = SPECIES_HAGURUMON + 1,
+    SPECIES_KUNEMON = SPECIES_KOKUWAMON + 1,
+    SPECIES_DOKUNEMON = SPECIES_KUNEMON + 1,
+    SPECIES_MUSHMON = SPECIES_DOKUNEMON + 1,
+    SPECIES_OTAMAMON = SPECIES_MUSHMON + 1,
+    SPECIES_PALMON = SPECIES_OTAMAMON + 1,
+    SPECIES_ALRAUMON = SPECIES_PALMON + 1,
+    SPECIES_PATAMON = SPECIES_ALRAUMON + 1,
+    SPECIES_TSUKAIMON = SPECIES_PATAMON + 1,
+    SPECIES_PENMON = SPECIES_TSUKAIMON + 1,
+    SPECIES_MUCHOMON = SPECIES_PENMON + 1,
+    SPECIES_PICODEVIMON = SPECIES_MUCHOMON + 1,
+    SPECIES_PIYOMON = SPECIES_PICODEVIMON + 1,
+    SPECIES_PLOTMON = SPECIES_PIYOMON + 1,
+    SPECIES_SHAKOMON = SPECIES_PLOTMON + 1,
+    SPECIES_TENTOMON = SPECIES_SHAKOMON + 1,
+    SPECIES_TOYAGUMON = SPECIES_TENTOMON + 1,
+    SPECIES_CLEARAGUMON = SPECIES_TOYAGUMON + 1,
+    SPECIES_BUN = SPECIES_CLEARAGUMON + 1,
+    SPECIES_AIRDRAMON = SPECIES_BUN + 1,
+    SPECIES_ANGEMON = SPECIES_AIRDRAMON + 1,
+    SPECIES_PIDMON = SPECIES_ANGEMON + 1,
+    SPECIES_BAKEMON = SPECIES_PIDMON + 1,
+    SPECIES_SOULMON = SPECIES_BAKEMON + 1,
+    SPECIES_BIRDRAMON = SPECIES_SOULMON + 1,
+    SPECIES_SABERDRAMON = SPECIES_BIRDRAMON + 1,
+    SPECIES_CENTARUMON = SPECIES_SABERDRAMON + 1,
+    SPECIES_CLOCKMON = SPECIES_CENTARUMON + 1,
+    SPECIES_COELAMON = SPECIES_CLOCKMON + 1,
+    SPECIES_CYCLOMON = SPECIES_COELAMON + 1,
+    SPECIES_DARKTYRANNOMON = SPECIES_CYCLOMON + 1,
+    SPECIES_DELTAMON = SPECIES_DARKTYRANNOMON + 1,
+    SPECIES_DEVIDRAMON = SPECIES_DELTAMON + 1,
+    SPECIES_DEVIMON = SPECIES_DEVIDRAMON + 1,
+    SPECIES_ICEDEVIMON = SPECIES_DEVIMON + 1,
+    SPECIES_DOKUGUMON = SPECIES_ICEDEVIMON + 1,
+    SPECIES_DRIMOGEMON = SPECIES_DOKUGUMON + 1,
+    SPECIES_NISEDRIMOGEMON = SPECIES_DRIMOGEMON + 1,
+    SPECIES_EBIDRAMON = SPECIES_NISEDRIMOGEMON + 1,
+    SPECIES_EVILMON = SPECIES_EBIDRAMON + 1,
+    SPECIES_FLARELIZARMON = SPECIES_EVILMON + 1,
+    SPECIES_DARKLIZARMON = SPECIES_FLARELIZARMON + 1,
+    SPECIES_FLYMON = SPECIES_DARKLIZARMON + 1,
+    SPECIES_GARURUMON = SPECIES_FLYMON + 1,
+    SPECIES_GURURUMON = SPECIES_GARURUMON + 1,
+    SPECIES_GEKOMON = SPECIES_GURURUMON + 1,
+    SPECIES_GESOMON = SPECIES_GEKOMON + 1,
+    SPECIES_GOKIMON = SPECIES_GESOMON + 1,
+    SPECIES_GOLEMON = SPECIES_GOKIMON + 1,
+    SPECIES_GORIMON = SPECIES_GOLEMON + 1,
+    SPECIES_GREYMON = SPECIES_GORIMON + 1,
+    SPECIES_GUARDROMON = SPECIES_GREYMON + 1,
+    SPECIES_HANUMON = SPECIES_GUARDROMON + 1,
+    SPECIES_ICEMON = SPECIES_HANUMON + 1,
+    SPECIES_IGAMON = SPECIES_ICEMON + 1,
+    SPECIES_IKKAKUMON = SPECIES_IGAMON + 1,
+    SPECIES_KABUTERIMON = SPECIES_IKKAKUMON + 1,
+    SPECIES_KARATUKINUMEMON = SPECIES_KABUTERIMON + 1,
+    SPECIES_KIWIMON = SPECIES_KARATUKINUMEMON + 1,
+    SPECIES_KOKATORIMON = SPECIES_KIWIMON + 1,
+    SPECIES_AKATORIMON = SPECIES_KOKATORIMON + 1,
+    SPECIES_KUWAGAMON = SPECIES_AKATORIMON + 1,
+    SPECIES_LEOMON = SPECIES_KUWAGAMON + 1,
+    SPECIES_MECHANORIMON = SPECIES_LEOMON + 1,
+    SPECIES_MERAMON = SPECIES_MECHANORIMON + 1,
+    SPECIES_MINOTAURMON = SPECIES_MERAMON + 1,
+    SPECIES_MOJYAMON = SPECIES_MINOTAURMON + 1,
+    SPECIES_JUNGLEMOJYAMON = SPECIES_MOJYAMON + 1,
+    SPECIES_MONOCHROMON = SPECIES_JUNGLEMOJYAMON + 1,
+    SPECIES_MUSYAMON = SPECIES_MONOCHROMON + 1,
+    SPECIES_NANIMON = SPECIES_MUSYAMON + 1,
+    SPECIES_NUMEMON = SPECIES_NANIMON + 1,
+    SPECIES_GEREMON = SPECIES_NUMEMON + 1,
+    SPECIES_OCTOMON = SPECIES_GEREMON + 1,
+    SPECIES_OGREMON = SPECIES_OCTOMON + 1,
+    SPECIES_FUGAMON = SPECIES_OGREMON + 1,
+    SPECIES_HYOGAMON = SPECIES_FUGAMON + 1,
+    SPECIES_RAREMON = SPECIES_HYOGAMON + 1,
+    SPECIES_REVOLMON = SPECIES_RAREMON + 1,
+    SPECIES_RUKAMON = SPECIES_REVOLMON + 1,
+    SPECIES_SEADRAMON = SPECIES_RUKAMON + 1,
+    SPECIES_SHELLMON = SPECIES_SEADRAMON + 1,
+    SPECIES_MORISHELLMON = SPECIES_SHELLMON + 1,
+    SPECIES_SNIMON = SPECIES_MORISHELLMON + 1,
+    SPECIES_STARMON = SPECIES_SNIMON + 1,
+    SPECIES_SUKAMON = SPECIES_STARMON + 1,
+    SPECIES_PLATINUMSUKAMON = SPECIES_SUKAMON + 1,
+    SPECIES_TAILMON = SPECIES_PLATINUMSUKAMON + 1,
+    SPECIES_TANKMON = SPECIES_TAILMON + 1,
+    SPECIES_THUNDERBALLMON = SPECIES_TANKMON + 1,
+    SPECIES_TOGEMON = SPECIES_THUNDERBALLMON + 1,
+    SPECIES_TORTOMON = SPECIES_TOGEMON + 1,
+    SPECIES_TUSKMON = SPECIES_TORTOMON + 1,
+    SPECIES_TYRANNOMON = SPECIES_TUSKMON + 1,
+    SPECIES_UNIMON = SPECIES_TYRANNOMON + 1,
+    SPECIES_SHIMAUNIMON = SPECIES_UNIMON + 1,
+    SPECIES_VEEDRAMON = SPECIES_SHIMAUNIMON + 1,
+    SPECIES_VEGIMON = SPECIES_VEEDRAMON + 1,
+    SPECIES_ZASSOUMON = SPECIES_VEGIMON + 1,
+    SPECIES_REDVEGIMON = SPECIES_ZASSOUMON + 1,
+    SPECIES_WHAMON_ADULT = SPECIES_REDVEGIMON + 1,
+    SPECIES_WIZARMON = SPECIES_WHAMON_ADULT + 1,
+    SPECIES_WOODMON = SPECIES_WIZARMON + 1,
+    SPECIES_YANMAMON = SPECIES_WOODMON + 1,
+    SPECIES_SANDYANMAMON = SPECIES_YANMAMON + 1,
+    SPECIES_YUKIDARUMON = SPECIES_SANDYANMAMON + 1,
+    SPECIES_TSUCHIDARUMON = SPECIES_YUKIDARUMON + 1,
+    SPECIES_AEROVEEDRAMON = SPECIES_TSUCHIDARUMON + 1,
+    SPECIES_ANDROMON = SPECIES_AEROVEEDRAMON + 1,
+    SPECIES_ANGEWOMON = SPECIES_ANDROMON + 1,
+    SPECIES_ANOMALOCARIMON = SPECIES_ANGEWOMON + 1,
+    SPECIES_ASURAMON = SPECIES_ANOMALOCARIMON + 1,
+    SPECIES_ATLURKABUTERIMONR = SPECIES_ASURAMON + 1,
+    SPECIES_ATLURKABUTERIMONB = SPECIES_ATLURKABUTERIMONR + 1,
+    SPECIES_BIGMAMEMON = SPECIES_ATLURKABUTERIMONB + 1,
+    SPECIES_BLOSSOMON = SPECIES_BIGMAMEMON + 1,
+    SPECIES_BLUEMERAMON = SPECIES_BLOSSOMON + 1,
+    SPECIES_BRACHIMON = SPECIES_BLUEMERAMON + 1,
+    SPECIES_CHIMAIRAMON = SPECIES_BRACHIMON + 1,
+    SPECIES_CYBERDRAMON = SPECIES_CHIMAIRAMON + 1,
+    SPECIES_DAGOMON = SPECIES_CYBERDRAMON + 1,
+    SPECIES_DEATHMERAMON = SPECIES_DAGOMON + 1,
+    SPECIES_DELUMON = SPECIES_DEATHMERAMON + 1,
+    SPECIES_DIGITAMAMON = SPECIES_DELUMON + 1,
+    SPECIES_ETEMON = SPECIES_DIGITAMAMON + 1,
+    SPECIES_EXTYRANNOMON = SPECIES_ETEMON + 1,
+    SPECIES_GARUDAMON = SPECIES_EXTYRANNOMON + 1,
+    SPECIES_GERBEMON = SPECIES_GARUDAMON + 1,
+    SPECIES_GIGADRAMON = SPECIES_GERBEMON + 1,
+    SPECIES_GIROMON = SPECIES_GIGADRAMON + 1,
+    SPECIES_TEKKAMON = SPECIES_GIROMON + 1,
+    SPECIES_HANGYOMON = SPECIES_TEKKAMON + 1,
+    SPECIES_HOLYANGEMON = SPECIES_HANGYOMON + 1,
+    SPECIES_INSEKIMON = SPECIES_HOLYANGEMON + 1,
+    SPECIES_JYAGAMON = SPECIES_INSEKIMON + 1,
+    SPECIES_JYUREIMON = SPECIES_JYAGAMON + 1,
+    SPECIES_KNIGHTMON = SPECIES_JYUREIMON + 1,
+    SPECIES_LADYDEVIMON = SPECIES_KNIGHTMON + 1,
+    SPECIES_LILIMON = SPECIES_LADYDEVIMON + 1,
+    SPECIES_MAMEMON = SPECIES_LILIMON + 1,
+    SPECIES_MAMMON = SPECIES_MAMEMON + 1,
+    SPECIES_MARINEDEVIMON = SPECIES_MAMMON + 1,
+    SPECIES_MASTERTYRANNOMON = SPECIES_MARINEDEVIMON + 1,
+    SPECIES_MEGADRAMON = SPECIES_MASTERTYRANNOMON + 1,
+    SPECIES_MEGASEADRAMON = SPECIES_MEGADRAMON + 1,
+    SPECIES_WARUSEADRAMON = SPECIES_MEGASEADRAMON + 1,
+    SPECIES_METALGREYMON = SPECIES_WARUSEADRAMON + 1,
+    SPECIES_METALGREYMONV = SPECIES_METALGREYMON + 1,
+    SPECIES_METALMAMEMON = SPECIES_METALGREYMONV + 1,
+    SPECIES_METALTYRANNOMON = SPECIES_METALMAMEMON + 1,
+    SPECIES_MONZAEMON = SPECIES_METALTYRANNOMON + 1,
+    SPECIES_MUMMYMON = SPECIES_MONZAEMON + 1,
+    SPECIES_NANOMON = SPECIES_MUMMYMON + 1,
+    SPECIES_OKUWAMON = SPECIES_NANOMON + 1,
+    SPECIES_OROCHIMON = SPECIES_OKUWAMON + 1,
+    SPECIES_PANJYAMON = SPECIES_OROCHIMON + 1,
+    SPECIES_PARROTMON = SPECIES_PANJYAMON + 1,
+    SPECIES_PHANTOMON = SPECIES_PARROTMON + 1,
+    SPECIES_PICCOLOMON = SPECIES_PHANTOMON + 1,
+    SPECIES_PUMPMON = SPECIES_PICCOLOMON + 1,
+    SPECIES_SKULLGREYMON = SPECIES_PUMPMON + 1,
+    SPECIES_SKULLSATAMON = SPECIES_SKULLGREYMON + 1,
+    SPECIES_TONOSAMAGEKOMON = SPECIES_SKULLSATAMON + 1,
+    SPECIES_TRICERAMON = SPECIES_TONOSAMAGEKOMON + 1,
+    SPECIES_VADERMON = SPECIES_TRICERAMON + 1,
+    SPECIES_VAMDEMON = SPECIES_VADERMON + 1,
+    SPECIES_VERMILIMON = SPECIES_VAMDEMON + 1,
+    SPECIES_WARUMONZAEMON = SPECIES_VERMILIMON + 1,
+    SPECIES_WEREGARURUMON = SPECIES_WARUMONZAEMON + 1,
+    SPECIES_WHAMON_PERFECT = SPECIES_WEREGARURUMON + 1,
+    SPECIES_ZUDOMON = SPECIES_WHAMON_PERFECT + 1,
+    SPECIES_APOCALYMON = SPECIES_ZUDOMON + 1,
+    SPECIES_BABAMON = SPECIES_APOCALYMON + 1,
+    SPECIES_BOLTMON = SPECIES_BABAMON + 1,
+    SPECIES_DEMON = SPECIES_BOLTMON + 1,
+    SPECIES_DEVITAMAMON = SPECIES_DEMON + 1,
+    SPECIES_DIABLOMON = SPECIES_DEVITAMAMON + 1,
+    SPECIES_GODDRAMON = SPECIES_DIABLOMON + 1,
+    SPECIES_GRIFFOMON = SPECIES_GODDRAMON + 1,
+    SPECIES_HERAKLEKABUTERIMON = SPECIES_GRIFFOMON + 1,
+    SPECIES_HOLYDRAMON = SPECIES_HERAKLEKABUTERIMON + 1,
+    SPECIES_HOUOUMON = SPECIES_HOLYDRAMON + 1,
+    SPECIES_JIJIMON = SPECIES_HOUOUMON + 1,
+    SPECIES_KINGETEMON = SPECIES_JIJIMON + 1,
+    SPECIES_MARINEANGEMON = SPECIES_KINGETEMON + 1,
+    SPECIES_METALETEMON = SPECIES_MARINEANGEMON + 1,
+    SPECIES_METALGARURUMON = SPECIES_METALETEMON + 1,
+    SPECIES_METALSEADRAMON = SPECIES_METALGARURUMON + 1,
+    SPECIES_MILLENNIUMMON = SPECIES_METALSEADRAMON + 1,
+    SPECIES_MUGENDRAMON = SPECIES_MILLENNIUMMON + 1,
+    SPECIES_OMEGAMON = SPECIES_MUGENDRAMON + 1,
+    SPECIES_PIEMON = SPECIES_OMEGAMON + 1,
+    SPECIES_PINOCCHIMON = SPECIES_PIEMON + 1,
+    SPECIES_PLESIOMON = SPECIES_PINOCCHIMON + 1,
+    SPECIES_PUKUMON = SPECIES_PLESIOMON + 1,
+    SPECIES_ROSEMON = SPECIES_PUKUMON + 1,
+    SPECIES_SABERLEOMON = SPECIES_ROSEMON + 1,
+    SPECIES_SKULLMAMMON = SPECIES_SABERLEOMON + 1,
+    SPECIES_VENOMVAMDEMON = SPECIES_SKULLMAMMON + 1,
+    SPECIES_WARGREYMON = SPECIES_VENOMVAMDEMON + 1,
+    SPECIES_ZANBAMON = SPECIES_WARGREYMON + 1,
 
 
     SPECIES_CUSTOM_END,
@@ -1946,6 +1946,6 @@ enum __attribute__((packed)) Species
     NUM_SPECIES = SPECIES_EGG,
 };
 
-#define SPECIES_SHINY_TAG 5000
+    #define SPECIES_SHINY_TAG 5000
 
 #endif  // GUARD_CONSTANTS_SPECIES_H

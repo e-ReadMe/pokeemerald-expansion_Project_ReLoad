@@ -534,6 +534,7 @@ bool8 PlayerIsUnderWaterfall(struct ObjectEvent *objectEvent);
 
 u8 GetObjectEventApricornTreeId(u8 objectEventId);
 u16 GetGraphicsIdForMon(enum Species species, bool32 shiny, bool32 female);
+u16 GetObjectEventTrainerSightFlagByObjectEventId(u8 objEventId);
 
 // Overworld Wild Encounter
 bool8 MovementAction_OverworldEncounterSpawn(enum SpawnDespawnTypeOWE spawnAnimType, struct ObjectEvent *objEvent);
@@ -568,6 +569,5 @@ u8 MovementType_OverworldWildEncounter_Despawn_Step8(struct ObjectEvent *objectE
 u8 MovementType_OverworldWildEncounter_Despawn_Step10(struct ObjectEvent *objectEvent, struct Sprite *sprite);
 u8 MovementType_OverworldWildEncounter_Despawn_Step11(struct ObjectEvent *objectEvent, struct Sprite *sprite);
 
-u16 GetObjectEventTrainerSightFlagByObjectEventId(u8 objEventId);
 
 #endif //GUARD_EVENT_OBJECT_MOVEMENT_H
