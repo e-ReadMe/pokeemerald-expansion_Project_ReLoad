@@ -2709,532 +2709,539 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_GoldBottleCap,
     },
 
-    [ITEM_NUGGET] =
-    {
-        .name = ITEM_NAME("Nugget"),
-        .price = 10000 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING(
-            "A nugget of pure\n"
-            "gold. Can be sold at\n"
-            "a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Nugget,
-        .iconPalette = gItemIconPalette_Nugget,
-    },
+    //[ITEM_NUGGET] =
+    //{
+    //    .name = ITEM_NAME("Nugget"),
+    //    .price = 10000 * TREASURE_FACTOR,
+    //    .description = COMPOUND_STRING(
+    //        "A nugget of pure\n"
+    //        "gold. Can be sold at\n"
+    //        "a high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Nugget,
+    //    .iconPalette = gItemIconPalette_Nugget,
+    //},
 
-    [ITEM_BIG_NUGGET] =
-    {
-        .name = ITEM_NAME("Big Nugget"),
-    #if I_PRICE >= GEN_7
-        .price = 40000 * TREASURE_FACTOR,
-    #elif I_PRICE == GEN_6
-        .price = 20000,
-    #else
-        .price = 0,
-    #endif
-        .description = COMPOUND_STRING(
-            "A big nugget made\n"
-            "of gold, sellable\n"
-            "at a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = B_UPDATED_MOVE_DATA >= GEN_8 ? 130 : 80,
-        .iconPic = gItemIcon_BigNugget,
-        .iconPalette = gItemIconPalette_BigNugget,
-    },
+    //[ITEM_BIG_NUGGET] =
+    //{
+    //    .name = ITEM_NAME("Big Nugget"),
+    //#if I_PRICE >= GEN_7
+    //    .price = 40000 * TREASURE_FACTOR,
+    //#elif I_PRICE == GEN_6
+    //    .price = 20000,
+    //#else
+    //    .price = 0,
+    //#endif
+    //    .description = COMPOUND_STRING(
+    //        "A big nugget made\n"
+    //        "of gold, sellable\n"
+    //        "at a high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = B_UPDATED_MOVE_DATA >= GEN_8 ? 130 : 80,
+    //    .iconPic = gItemIcon_BigNugget,
+    //    .iconPalette = gItemIconPalette_BigNugget,
+    //},
 
-    [ITEM_TINY_MUSHROOM] =
-    {
-        .name = ITEM_NAME("Tiny Mushroom"),
-        .price = 500 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING(
-            "A plain mushroom\n"
-            "that would sell\n"
-            "at a cheap price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_TinyMushroom,
-        .iconPalette = gItemIconPalette_Mushroom,
-    },
+    //[ITEM_TINY_MUSHROOM] =
+    //{
+    //    .name = ITEM_NAME("Tiny Mushroom"),
+     //   .price = 500 * TREASURE_FACTOR,
+    //    .description = COMPOUND_STRING(
+    //        "A plain mushroom\n"
+    //        "that would sell\n"
+    //        "at a cheap price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_TinyMushroom,
+    //    .iconPalette = gItemIconPalette_Mushroom,
+    //},
 
-    [ITEM_BIG_MUSHROOM] =
-    {
-        .name = ITEM_NAME("Big Mushroom"),
-        .price = 5000 * TREASURE_FACTOR,
-        .description = sBigMushroomDesc,
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_BigMushroom,
-        .iconPalette = gItemIconPalette_Mushroom,
-    },
+    //[ITEM_BIG_MUSHROOM] =
+    //{
+    //    .name = ITEM_NAME("Big Mushroom"),
+    //    .price = 5000 * TREASURE_FACTOR,
+    //    .description = sBigMushroomDesc,
+    //    .pocket = POCKET_ITEMS,
+     //   .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_BigMushroom,
+    //    .iconPalette = gItemIconPalette_Mushroom,
+    //},
 
-    [ITEM_BALM_MUSHROOM] =
-    {
-        .name = ITEM_NAME("Balm Mushroom"),
-    #if I_PRICE >= GEN_7
-        .price = 15000 * TREASURE_FACTOR,
-    #elif I_PRICE == GEN_6
-        .price = 12500,
-    #else
-        .price = 0,
-    #endif
-        .description = sBigMushroomDesc,
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_BalmMushroom,
-        .iconPalette = gItemIconPalette_BalmMushroom,
-    },
+    //[ITEM_BALM_MUSHROOM] =
+    //{
+    //    .name = ITEM_NAME("Balm Mushroom"),
+    //    .price = 15000 * TREASURE_FACTOR,
+    //    .description = sBigMushroomDesc,
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_BalmMushroom,
+    //    .iconPalette = gItemIconPalette_BalmMushroom,
+    //},
+    //    .price = 12500,
+    //#else
+    //    .price = 0,
+    //#endif
+    //    .description = sBigMushroomDesc,
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_BalmMushroom,
+    //    .iconPalette = gItemIconPalette_BalmMushroom,
+    //},
 
-    [ITEM_PEARL] =
-    {
-        .name = ITEM_NAME("Pearl"),
-        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR: 1400,
-        .description = COMPOUND_STRING(
-            "A pretty pearl\n"
-            "that would sell at a\n"
-            "cheap price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Pearl,
-        .iconPalette = gItemIconPalette_Pearl,
-    },
+    //[ITEM_PEARL] =
+    //{
+    //    .name = ITEM_NAME("Pearl"),
+    //    .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR: 1400,
+    //    .description = COMPOUND_STRING(
+    //        "A pretty pearl\n"
+    //        "that would sell at a\n"
+    //        "cheap price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Pearl,
+    //    .iconPalette = gItemIconPalette_Pearl,
+    //},
 
-    [ITEM_BIG_PEARL] =
-    {
-        .name = ITEM_NAME("Big Pearl"),
-        .price = (I_PRICE >= GEN_7) ? 8000 * TREASURE_FACTOR: 7500,
-        .description = COMPOUND_STRING(
-            "A lovely large pearl\n"
-            "that would sell at a\n"
-            "high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_BigPearl,
-        .iconPalette = gItemIconPalette_Pearl,
-    },
+    //[ITEM_BIG_PEARL] =
+    //{
+    //    .name = ITEM_NAME("Big Pearl"),
+    //    .price = (I_PRICE >= GEN_7) ? 8000 * TREASURE_FACTOR: 7500,
+    //    .description = COMPOUND_STRING(
+    //        "A lovely large pearl\n"
+    //        "that would sell at a\n"
+    //        "high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_BigPearl,
+    //    .iconPalette = gItemIconPalette_Pearl,
+    //},
 
-    [ITEM_PEARL_STRING] =
-    {
-        .name = ITEM_NAME("Pearl String"),
-    #if I_PRICE >= GEN_8
-        .price = 20000 * TREASURE_FACTOR,
-    #elif I_PRICE == GEN_7
-        .price = 30000,
-    #elif I_PRICE == GEN_6
-        .price = 15000,
-    #else
-        .price = 0,
-    #endif
-        .description = COMPOUND_STRING(
-            "Very large pearls\n"
-            "that would sell at a\n"
-            "high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_PearlString,
-        .iconPalette = gItemIconPalette_PearlString,
-    },
+    //[ITEM_PEARL_STRING] =
+    //{
+    //    .name = ITEM_NAME("Pearl String"),
+    //#if I_PRICE >= GEN_8
+    //    .price = 20000 * TREASURE_FACTOR,
+    //#elif I_PRICE == GEN_7
+    //    .price = 30000,
+    //#elif I_PRICE == GEN_6
+    //    .price = 15000,
+    //#else
+    //    .price = 0,
+    //#endif
+    //    .description = COMPOUND_STRING(
+    //        "Very large pearls\n"
+    //        "that would sell at a\n"
+    //        "high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_PearlString,
+    //    .iconPalette = gItemIconPalette_PearlString,
+    //},
 
-    [ITEM_STARDUST] =
-    {
-        .name = ITEM_NAME("Stardust"),
-        .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR: 2000,
-        .description = COMPOUND_STRING(
-            "Beautiful red sand.\n"
-            "Can be sold at a\n"
-            "high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Sand,
-        .iconPalette = gItemIconPalette_Star,
-    },
+    //[ITEM_STARDUST] =
+    //{
+    //    .name = ITEM_NAME("Stardust"),
+    //    .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR: 2000,
+    //    .description = COMPOUND_STRING(
+    //        "Beautiful red sand.\n"
+    //        "Can be sold at a\n"
+    //        "high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Sand,
+    //    .iconPalette = gItemIconPalette_Star,
+    //},
 
-    [ITEM_STAR_PIECE] =
-    {
-        .name = ITEM_NAME("Star Piece"),
-        .price = (I_PRICE >= GEN_7) ? 12000 * TREASURE_FACTOR: 9800,
-        .description = COMPOUND_STRING(
-            "A red gem shard.\n"
-            "It would sell for a\n"
-            "very high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_StarPiece,
-        .iconPalette = gItemIconPalette_Star,
-    },
+    //[ITEM_STAR_PIECE] =
+    //{
+    //    .name = ITEM_NAME("Star Piece"),
+    //    .price = (I_PRICE >= GEN_7) ? 12000 * TREASURE_FACTOR: 9800,
+    //    .description = COMPOUND_STRING(
+    //        "A red gem shard.\n"
+    //        "It would sell for a\n"
+    //        "very high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_StarPiece,
+    //    .iconPalette = gItemIconPalette_Star,
+    //},
 
-    [ITEM_COMET_SHARD] =
-    {
-        .name = ITEM_NAME("Comet Shard"),
-    #if I_PRICE >= GEN_8
-        .price = 25000 * TREASURE_FACTOR,
-    #elif I_PRICE == GEN_7
-        .price = 60000,
-    #elif I_PRICE == GEN_6
-        .price = 30000,
-    #else
-        .price = 0,
-    #endif
-        .description = COMPOUND_STRING(
-            "A comet's shard.\n"
-            "It would sell for a\n"
-            "high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_StarPiece,
-        .iconPalette = gItemIconPalette_CometShard,
-    },
+    //[ITEM_COMET_SHARD] =
+    //{
+    //    .name = ITEM_NAME("Comet Shard"),
+    //#if I_PRICE >= GEN_8
+    //    .price = 25000 * TREASURE_FACTOR,
+    //#elif I_PRICE == GEN_7
+    //    .price = 60000,
+    //#elif I_PRICE == GEN_6
+    //    .price = 30000,
+    //#else
+    //    .price = 0,
+    //#endif
+    //    .description = COMPOUND_STRING(
+    //        "A comet's shard.\n"
+    //        "It would sell for a\n"
+    //        "high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_StarPiece,
+    //    .iconPalette = gItemIconPalette_CometShard,
+    //},
 
-    [ITEM_SHOAL_SALT] =
-    {
-        .name = ITEM_NAME("Shoal Salt"),
-        .price = 20,
-        .description = COMPOUND_STRING(
-            "Salt obtained from\n"
-            "deep inside the\n"
-            "Shoal Cave."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Powder,
-        .iconPalette = gItemIconPalette_ShoalSalt,
-    },
+    //[ITEM_SHOAL_SALT] =
+    //{
+    //    .name = ITEM_NAME("Shoal Salt"),
+    //    .price = 20,
+    //    .description = COMPOUND_STRING(
+    //        "Salt obtained from\n"
+    //        "deep inside the\n"
+    //        "Shoal Cave."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Powder,
+    //    .iconPalette = gItemIconPalette_ShoalSalt,
+    //},
 
-    [ITEM_SHOAL_SHELL] =
-    {
-        .name = ITEM_NAME("Shoal Shell"),
-        .price = 20,
-        .description = COMPOUND_STRING(
-            "A seashell found\n"
-            "deep inside the\n"
-            "Shoal Cave."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_ShoalShell,
-        .iconPalette = gItemIconPalette_Shell,
-    },
+    //[ITEM_SHOAL_SHELL] =
+    //{
+    //    .name = ITEM_NAME("Shoal Shell"),
+    //    .price = 20,
+    //    .description = COMPOUND_STRING(
+    //        "A seashell found\n"
+    //        "deep inside the\n"
+    //        "Shoal Cave."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_ShoalShell,
+    //    .iconPalette = gItemIconPalette_Shell,
+    //},
 
-    [ITEM_RED_SHARD] =
-    {
-        .name = ITEM_NAME("Red Shard"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 200,
-        .description = sShardsDesc,
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SHARD,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Shard,
-        .iconPalette = gItemIconPalette_RedShard,
-    },
+    //[ITEM_RED_SHARD] =
+    //{
+    //    .name = ITEM_NAME("Red Shard"),
+    //    .price = (I_PRICE >= GEN_7) ? 1000 : 200,
+    //    .description = sShardsDesc,
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SHARD,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Shard,
+    //    .iconPalette = gItemIconPalette_RedShard,
+    //},
 
-    [ITEM_BLUE_SHARD] =
-    {
-        .name = ITEM_NAME("Blue Shard"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 200,
-        .description = sShardsDesc,
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SHARD,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Shard,
-        .iconPalette = gItemIconPalette_BlueShard,
-    },
+    //[ITEM_BLUE_SHARD] =
+    //{
+    //    .name = ITEM_NAME("Blue Shard"),
+    //    .price = (I_PRICE >= GEN_7) ? 1000 : 200,
+    //    .description = sShardsDesc,
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SHARD,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Shard,
+    //    .iconPalette = gItemIconPalette_BlueShard,
+    //},
 
-    [ITEM_YELLOW_SHARD] =
-    {
-        .name = ITEM_NAME("Yellow Shard"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 200,
-        .description = sShardsDesc,
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SHARD,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Shard,
-        .iconPalette = gItemIconPalette_YellowShard,
-    },
+    //[ITEM_YELLOW_SHARD] =
+    //{
+    //    .name = ITEM_NAME("Yellow Shard"),
+    //    .price = (I_PRICE >= GEN_7) ? 1000 : 200,
+    //    .description = sShardsDesc,
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SHARD,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Shard,
+    //    .iconPalette = gItemIconPalette_YellowShard,
+    //},
 
-    [ITEM_GREEN_SHARD] =
-    {
-        .name = ITEM_NAME("Green Shard"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 200,
-        .description = sShardsDesc,
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SHARD,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Shard,
-        .iconPalette = gItemIconPalette_GreenShard,
-    },
+    //[ITEM_GREEN_SHARD] =
+    //{
+    //    .name = ITEM_NAME("Green Shard"),
+    //    .price = (I_PRICE >= GEN_7) ? 1000 : 200,
+    //    .description = sShardsDesc,
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SHARD,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Shard,
+    //    .iconPalette = gItemIconPalette_GreenShard,
+    //},
 
-    [ITEM_HEART_SCALE] =
-    {
-        .name = ITEM_NAME("Heart Scale"),
-        .price = 100,
-        .description = COMPOUND_STRING(
-            "A lovely scale.\n"
-            "It is coveted by\n"
-            "collectors."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_HeartScale,
-        .iconPalette = gItemIconPalette_HeartScale,
-    },
+    //[ITEM_HEART_SCALE] =
+    //{
+    //    .name = ITEM_NAME("Heart Scale"),
+    //    .price = 100,
+    //    .description = COMPOUND_STRING(
+    //        "A lovely scale.\n"
+    //        "It is coveted by\n"
+    //        "collectors."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_HeartScale,
+    //    .iconPalette = gItemIconPalette_HeartScale,
+    //},
 
-    [ITEM_HONEY] =
-    {
-        .name = ITEM_NAME("Honey"),
-        .pluralName = ITEM_PLURAL_NAME("Honey"),
-    #if I_PRICE >= GEN_8
-        .price = 900,
-    #elif I_PRICE == GEN_7
-        .price = 300,
-    #else
-        .price = 100,
-    #endif
-        .description = COMPOUND_STRING(
-            "Sweet honey that\n"
-            "attracts wild\n"
-            "Pokémon when used."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_STATUS_RECOVERY,
-        .type = ITEM_USE_FIELD,
-        .fieldUseFunc = ItemUseOutOfBattle_Honey,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Honey,
-        .iconPalette = gItemIconPalette_Honey,
-    },
+    //[ITEM_HONEY] =
+    //{
+    //    .name = ITEM_NAME("Honey"),
+    //    .pluralName = ITEM_PLURAL_NAME("Honey"),
+    //#if I_PRICE >= GEN_8
+    //    .price = 900,
+    //#elif I_PRICE == GEN_7
+    //    .price = 300,
+    //#else
+    //    .price = 100,
+    //#endif
+    //    .description = COMPOUND_STRING(
+    //        "Sweet honey that\n"
+    //        "attracts wild\n"
+    //        "Pokémon when used."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_STATUS_RECOVERY,
+    //    .type = ITEM_USE_FIELD,
+    //    .fieldUseFunc = ItemUseOutOfBattle_Honey,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_Honey,
+    //    .iconPalette = gItemIconPalette_Honey,
+    //},
 
-    [ITEM_RARE_BONE] =
-    {
-        .name = ITEM_NAME("Rare Bone"),
-        .price = (I_PRICE >= GEN_7) ? 5000 * TREASURE_FACTOR: 10000,
-        .description = COMPOUND_STRING(
-            "A very rare bone.\n"
-            "It can be sold at\n"
-            "a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
-        .iconPic = gItemIcon_Bone,
-        .iconPalette = gItemIconPalette_Bone,
-    },
+    //[ITEM_RARE_BONE] =
+    //{
+    //    .name = ITEM_NAME("Rare Bone"),
+    //    .price = (I_PRICE >= GEN_7) ? 5000 * TREASURE_FACTOR: 10000,
+    //    .description = COMPOUND_STRING(
+    //        "A very rare bone.\n"
+    //        "It can be sold at\n"
+    //        "a high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 100,
+    //    .iconPic = gItemIcon_Bone,
+    //    .iconPalette = gItemIconPalette_Bone,
+    //},
 
-    [ITEM_ODD_KEYSTONE] =
-    {
-        .name = ITEM_NAME("Odd Keystone"),
-        .price = 2100,
-        .description = COMPOUND_STRING(
-            "Voices can be heard\n"
-            "from this odd stone\n"
-            "occasionally."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 80,
-        .iconPic = gItemIcon_OddKeystone,
-        .iconPalette = gItemIconPalette_OddKeystone,
-    },
+    //[ITEM_ODD_KEYSTONE] =
+    //{
+    //    .name = ITEM_NAME("Odd Keystone"),
+    //    .price = 2100,
+    //    .description = COMPOUND_STRING(
+    //        "Voices can be heard\n"
+    //        "from this odd stone\n"
+    //        "occasionally."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 80,
+    //    .iconPic = gItemIcon_OddKeystone,
+    //    .iconPalette = gItemIconPalette_OddKeystone,
+    //},
 
-    [ITEM_PRETTY_FEATHER] =
-    {
-        .name = ITEM_NAME("Pretty Feather"),
-        .price = (I_PRICE >= GEN_7) ? 1000 * TREASURE_FACTOR: 200,
-        .description = COMPOUND_STRING(
-            "A beautiful yet\n"
-            "plain feather that\n"
-            "does nothing."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 20,
-        .iconPic = gItemIcon_PrettyFeather,
-        .iconPalette = gItemIconPalette_PrettyFeather,
-    },
+    //[ITEM_PRETTY_FEATHER] =
+    //{
+    //    .name = ITEM_NAME("Pretty Feather"),
+    //    .price = (I_PRICE >= GEN_7) ? 1000 * TREASURE_FACTOR: 200,
+    //    .description = COMPOUND_STRING(
+    //        "A beautiful yet\n"
+    //        "plain feather that\n"
+    //        "does nothing."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_SELLABLE,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 20,
+    //    .iconPic = gItemIcon_PrettyFeather,
+    //    .iconPalette = gItemIconPalette_PrettyFeather,
+    //},
 
-    [ITEM_RELIC_COPPER] =
-    {
-        .name = ITEM_NAME("Relic Copper"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "A copper coin used\n"
-            "long ago. It sells\n"
-            "at a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_RelicCoin,
-        .iconPalette = gItemIconPalette_RelicCopper,
-    },
+    //[ITEM_RELIC_COPPER] =
+    //{
+    //    .name = ITEM_NAME("Relic Copper"),
+    //    .price = 0,
+    //    .description = COMPOUND_STRING(
+    //        "A copper coin used\n"
+    //        "long ago. It sells\n"
+    //        "at a high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_RELIC,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_RelicCoin,
+    //    .iconPalette = gItemIconPalette_RelicCopper,
+    //},
 
-    [ITEM_RELIC_SILVER] =
-    {
-        .name = ITEM_NAME("Relic Silver"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "A silver coin used\n"
-            "long ago. It sells\n"
-            "at a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_RelicCoin,
-        .iconPalette = gItemIconPalette_RelicSilver,
-    },
+    //[ITEM_RELIC_SILVER] =
+    //{
+    //    .name = ITEM_NAME("Relic Silver"),
+    //    .price = 0,
+    //    .description = COMPOUND_STRING(
+    //        "A silver coin used\n"
+    //        "long ago. It sells\n"
+    //        "at a high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_RELIC,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_RelicCoin,
+    //    .iconPalette = gItemIconPalette_RelicSilver,
+    //},
 
-    [ITEM_RELIC_GOLD] =
-    {
-        .name = ITEM_NAME("Relic Gold"),
-        .price = (I_PRICE >= GEN_6) ? 60000 : 0,
-        .description = COMPOUND_STRING(
-            "A gold coin used\n"
-            "long ago. It sells\n"
-            "at a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_RelicCoin,
-        .iconPalette = gItemIconPalette_RelicGold,
-    },
+    //[ITEM_RELIC_GOLD] =
+    //{
+    //    .name = ITEM_NAME("Relic Gold"),
+    //    .price = (I_PRICE >= GEN_6) ? 60000 : 0,
+    //    .description = COMPOUND_STRING(
+    //        "A gold coin used\n"
+    //        "long ago. It sells\n"
+    //        "at a high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_RELIC,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_RelicCoin,
+    //    .iconPalette = gItemIconPalette_RelicGold,
+    //},
 
-    [ITEM_RELIC_VASE] =
-    {
-        .name = ITEM_NAME("Relic Vase"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "A vase made long\n"
-            "ago. It sells at\n"
-            "a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_RelicVase,
-        .iconPalette = gItemIconPalette_Relics,
-    },
+    //[ITEM_RELIC_VASE] =
+    //{
+    //    .name = ITEM_NAME("Relic Vase"),
+    //    .price = 0,
+    //    .description = COMPOUND_STRING(
+    //        "A vase made long\n"
+    //        "ago. It sells at\n"
+    //        "a high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_RELIC,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_RelicVase,
+    //    .iconPalette = gItemIconPalette_Relics,
+    //},
 
-    [ITEM_RELIC_BAND] =
-    {
-        .name = ITEM_NAME("Relic Band"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "An old bracelet.\n"
-            "It sells at a\n"
-            "high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_RelicBand,
-        .iconPalette = gItemIconPalette_Relics,
-    },
+    //[ITEM_RELIC_BAND] =
+    //{
+    //    .name = ITEM_NAME("Relic Band"),
+    //    .price = 0,
+   //     .description = COMPOUND_STRING(
+    //        "An old bracelet.\n"
+    //        "It sells at a\n"
+    //        "high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_RELIC,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_RelicBand,
+    //    .iconPalette = gItemIconPalette_Relics,
+    //},
 
-    [ITEM_RELIC_STATUE] =
-    {
-        .name = ITEM_NAME("Relic Statue"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "An old statue.\n"
-            "It sells at a\n"
-            "high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_RelicStatue,
-        .iconPalette = gItemIconPalette_Relics,
-    },
+    //[ITEM_RELIC_STATUE] =
+    //{
+    //    .name = ITEM_NAME("Relic Statue"),
+    //    .price = 0,
+    //    .description = COMPOUND_STRING(
+    //        "An old statue.\n"
+    //        "It sells at a\n"
+    //        "high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_RELIC,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_RelicStatue,
+    //    .iconPalette = gItemIconPalette_Relics,
+    //},
 
-    [ITEM_RELIC_CROWN] =
-    {
-        .name = ITEM_NAME("Relic Crown"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "An old crown.\n"
-            "It sells at a\n"
-            "high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_RelicCrown,
-        .iconPalette = gItemIconPalette_Relics,
-    },
+    //[ITEM_RELIC_CROWN] =
+    //{
+    //    .name = ITEM_NAME("Relic Crown"),
+    //    .price = 0,
+    //    .description = COMPOUND_STRING(
+    //        "An old crown.\n"
+    //        "It sells at a\n"
+    //        "high price."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_RELIC,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_RelicCrown,
+    //    .iconPalette = gItemIconPalette_Relics,
+    //},
 
-    [ITEM_STRANGE_SOUVENIR] =
-    {
-        .name = ITEM_NAME("Strange Souvenir"),
-        .price = (I_PRICE >= GEN_7) ? 3000 : 10,
-        .description = COMPOUND_STRING(
-            "An ornament that\n"
-            "depicts a Pokémon\n"
-            "from Alola."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
-        .iconPic = gItemIcon_StrangeSouvenir,
-        .iconPalette = gItemIconPalette_StrangeSouvenir,
-    },
+    //[ITEM_STRANGE_SOUVENIR] =
+    //{
+    //    .name = ITEM_NAME("Strange Souvenir"),
+    //    .price = (I_PRICE >= GEN_7) ? 3000 : 10,
+    //    .description = COMPOUND_STRING(
+    //        "An ornament that\n"
+    //        "depicts a Pokémon\n"
+    //        "from Alola."),
+    //    .pocket = POCKET_ITEMS,
+    //    .sortType = ITEM_TYPE_RELIC,
+    //    .type = ITEM_USE_BAG_MENU,
+    //    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    //    .flingPower = 30,
+    //    .iconPic = gItemIcon_StrangeSouvenir,
+    //    .iconPalette = gItemIconPalette_StrangeSouvenir,
+    //},
 
 // Fossils
 
@@ -16922,6 +16929,516 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_PokeDoll,
         .iconPalette = gItemIconPalette_PokeDoll,
+    },
+
+    [ITEM_DEEPWATER] =
+    {
+        .name = ITEM_NAME("DeepWater"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Water from deep\n"
+            "underground."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Lemonade,
+        .iconPalette = gItemIconPalette_Lemonade,
+    },
+
+    [ITEM_ACID] =
+    {
+        .name = ITEM_NAME("Acid"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Dangerous, but\n"
+            "useful in industry."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Lemonade,
+        .iconPalette = gItemIconPalette_Lemonade,
+    },
+
+    [ITEM_OIL] =
+    {
+        .name = ITEM_NAME("Oil"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Black liquid fuel\n"
+            "from the desert."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Lemonade,
+        .iconPalette = gItemIconPalette_Lemonade,
+    },
+
+    [ITEM_SAP] =
+    {
+        .name = ITEM_NAME("Sap"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Liquid extracted\n"
+            "from wounded trees."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Lemonade,
+        .iconPalette = gItemIconPalette_Lemonade,
+    },
+
+    [ITEM_LATEX] =
+    {
+        .name = ITEM_NAME("Latex"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Natural liquid\n"
+            "rubber. Stark white."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Lemonade,
+        .iconPalette = gItemIconPalette_Lemonade,
+    },
+
+    [ITEM_RAINDROP] =
+    {
+        .name = ITEM_NAME("RainDrop"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "A very attractiven"
+            "iridescent liquid."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Lemonade,
+        .iconPalette = gItemIconPalette_Lemonade,
+    },
+
+    [ITEM_HOLYWATER] =
+    {
+        .name = ITEM_NAME("HolyWater"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Liquid with the"
+            "power to exorcise."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Lemonade,
+        .iconPalette = gItemIconPalette_Lemonade,
+    },
+
+    [ITEM_COPPER] =
+    {
+        .name = ITEM_NAME("Copper"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Digital Metal"
+            "similar to brass."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_MetalAlloy,
+        .iconPalette = gItemIconPalette_MetalAlloy,
+    },
+
+    [ITEM_SILVER] =
+    {
+        .name = ITEM_NAME("Silver"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Pure digital silver."
+            "Shiny and workable."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_MetalAlloy,
+        .iconPalette = gItemIconPalette_MetalAlloy,
+    },
+
+    [ITEM_GOLD] =
+    {
+        .name = ITEM_NAME("Gold"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Pure digital gold."
+            "Very conductive."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_MetalAlloy,
+        .iconPalette = gItemIconPalette_MetalAlloy,
+    },
+
+    [ITEM_WHITEGOLD] =
+    {
+        .name = ITEM_NAME("WhiteGold"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Digital platinum."
+            "Rare and dense."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_MetalAlloy,
+        .iconPalette = gItemIconPalette_MetalAlloy,
+    },
+
+    [ITEM_MITHRIL] =
+    {
+        .name = ITEM_NAME("Mithril"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Magic metal that"
+            "shines pale purple."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_MetalAlloy,
+        .iconPalette = gItemIconPalette_MetalAlloy,
+    },
+
+    [ITEM_CHROME_DIGIZOIT] =
+    {
+        .name = ITEM_NAME("Chrome Digizoit"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "A supernaturally"
+            "hard metal."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_MetalAlloy,
+        .iconPalette = gItemIconPalette_MetalAlloy,
+    },
+
+    [ITEM_BLACK_DIGIZOIT] =
+    {
+        .name = ITEM_NAME("Black Digizoit"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Digizoit mutated by"
+            "special waves."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_MetalAlloy,
+        .iconPalette = gItemIconPalette_MetalAlloy,
+    },
+
+    [ITEM_SAND] =
+    {
+        .name = ITEM_NAME("Sand"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Mix with liquid to"
+            "make it harder."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Sand,
+        .iconPalette = gItemIconPalette_SoftSand,
+    },
+
+    [ITEM_STONE] =
+    {
+        .name = ITEM_NAME("Stone"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "A hard stone of"
+            "fairly large size."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Sand,
+        .iconPalette = gItemIconPalette_SoftSand,
+    },
+
+    [ITEM_QUARTZ] =
+    {
+        .name = ITEM_NAME("Quartz"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "A transparent"
+            "hexagonal stone."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Sand,
+        .iconPalette = gItemIconPalette_SoftSand,
+    },
+
+    [ITEM_ONYX] =
+    {
+        .name = ITEM_NAME("Onyx"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "A black gem that"
+            "wards off evil."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Sand,
+        .iconPalette = gItemIconPalette_SoftSand,
+    },
+
+    [ITEM_LIGHTSTONE] =
+    {
+        .name = ITEM_NAME("LightStone"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "It emits a soft"
+            "white light."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Sand,
+        .iconPalette = gItemIconPalette_SoftSand,
+    },
+
+    [ITEM_NIGHTSTONE] =
+    {
+        .name = ITEM_NAME("NightStone"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "A hard blue stone,"
+            "sharp like a blade."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Sand,
+        .iconPalette = gItemIconPalette_SoftSand,
+    },
+
+    [ITEM_DIAMOND] =
+    {
+        .name = ITEM_NAME("Diamond"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Said to have fallen"
+            "from heaven."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Sand,
+        .iconPalette = gItemIconPalette_SoftSand,
+    },
+
+    [ITEM_WHITEWOOD] =
+    {
+        .name = ITEM_NAME("WhiteWood"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Digital bark peeled"
+            "from a white tree."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Leek,
+        .iconPalette = gItemIconPalette_Leek,
+    },
+
+    [ITEM_BLACKWOOD] =
+    {
+        .name = ITEM_NAME("BlackWood"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Digital bark peeled"
+            "from a dark tree."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Leek,
+        .iconPalette = gItemIconPalette_Leek,
+    },
+
+    [ITEM_PALM] =
+    {
+        .name = ITEM_NAME("Palm"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Soft wood from a"
+            "tropical climate."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Leek,
+        .iconPalette = gItemIconPalette_Leek,
+    },
+
+    [ITEM_BAMBOO] =
+    {
+        .name = ITEM_NAME("Bamboo"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "A green plant with"
+            "many uses."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Leek,
+        .iconPalette = gItemIconPalette_Leek,
+    },
+
+    [ITEM_SNOWWOOD] =
+    {
+        .name = ITEM_NAME("SnowWood"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Thin wood used"
+            "to make snowshoes."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Leek,
+        .iconPalette = gItemIconPalette_Leek,
+    },
+
+    [ITEM_FIREWOOD] =
+    {
+        .name = ITEM_NAME("FireWood"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "It has a tendency"
+            "to self-combust."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Leek,
+        .iconPalette = gItemIconPalette_Leek,
+    },
+
+    [ITEM_FELWOOD] =
+    {
+        .name = ITEM_NAME("FelWood"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Hard as metal and"
+            "covered in thorns."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Leek,
+        .iconPalette = gItemIconPalette_Leek,
+    },
+
+    [ITEM_STARWOOD] =
+    {
+        .name = ITEM_NAME("FelWood"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Its growth rings"
+            "are star-shaped."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Leek,
+        .iconPalette = gItemIconPalette_Leek,
+    },
+
+    [ITEM_GODWOOD] =
+    {
+        .name = ITEM_NAME("GodWood"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Building Material.\n"
+            "Revered as sacred,"
+            "soft as feathers."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Leek,
+        .iconPalette = gItemIconPalette_Leek,
     },
 
 

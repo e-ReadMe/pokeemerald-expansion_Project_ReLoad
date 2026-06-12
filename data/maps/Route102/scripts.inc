@@ -377,3 +377,55 @@ Route102_Text_TanemonMeatIntro:
 	.string "could only afford this little plot here.\p"
 	.string "Feel free to grab some produce. I enjoy\n"
 	.string "the process more than the end result.$"
+
+//----------------------------------------------------------------------
+//random material hidden item
+	.set LOCALID_Route102_Material_Hidden_Item_1, 11
+Route102_Material_Hidden_Item_1::
+	lockall
+	goto_if_set FLAG_DAILY_MATERIAL_1, Route102_Material_Hidden_Item_Taken
+	random 3
+	switch VAR_RESULT
+	case 0, [Route102_Material_Option_1]
+	case 1, [Route102_Material_Option_2]
+	case 2, [Route102_Material_Hidden_Nothing_Found]
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	removeobject 11
+	special DrawWholeMapView
+	setflag FLAG_DAILY_MATERIAL_1
+	releaseall
+	end
+	
+Route102_Material_Option_1::
+	giveitem ITEM_WHITEWOOD
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	removeobject 11
+	special DrawWholeMapView
+	setflag FLAG_DAILY_MATERIAL_1
+	releaseall
+	end
+	
+Route102_Material_Option_2::
+	giveitem ITEM_BAMBOO
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	removeobject 11
+	special DrawWholeMapView
+	setflag FLAG_DAILY_MATERIAL_1
+	releaseall
+	end
+	
+Route102_Material_Hidden_Nothing_Found::
+	msgbox Route102_Material_Hidden_Item_Text_Nothing_Found, MSGBOX_NPC
+	removeobject 11
+	special DrawWholeMapView
+	setflag FLAG_DAILY_MATERIAL_1
+	releaseall
+	end
+	
+Route102_Material_Hidden_Item_Taken::
+	releaseall
+	end
+	
+Route102_Material_Hidden_Item_Text_Nothing_Found:
+	.string "You thought you saw something shiny,\n"
+	.string "but it was just trash.$"
