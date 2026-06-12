@@ -35,11 +35,15 @@ The eventual goal is to incorporate all digimon species into the mod. Digimon ha
 - ☐ Game start settings toggle to allow the player to select between Sub and Dub names.
 
 # 🖥️ Digimon Game Mechanics
-Currently this functionality is partially developed, but the demo version will showcase:
+Currently this functionality is partially developed
 - 🗹 Branching digivolution tree via digivice menu, with stat requirements for evolution. 
 - 🗹 all battles are double battles by default
-- Digimon start off as custom eggs 
-- if the player encounters a stage 1, the game dynamically initiates a safari style catching mode, where the player cannot use Digimon, only throw balls. 
+- 🗹 Digimon start off as custom eggs 
+- 🗹 if the player encounters a stage 1, the game dynamically initiates a safari style catching mode, where the player cannot use Digimon, only throw balls. 
+- 🗹 Respawning building materials can be found on maps, which can be used to upgrade buildings
+
+<img width="477" height="314" alt="hatchanegg" src="https://github.com/user-attachments/assets/d0cc48ee-9eb2-4497-a8c2-b29a87fd7994" />
+
 
 
 # 🎨 Art and sound
