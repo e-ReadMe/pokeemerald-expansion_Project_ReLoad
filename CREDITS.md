@@ -158,81 +158,74 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 <img width="32" height="64" alt="icon_EGG_CHOCOLATEJELLY" src="https://github.com/user-attachments/assets/d9d722ca-c1e7-4e57-b16f-82b7328894f5" /> <img width="32" height="64" alt="icon_EGG_BLUELINES" src="https://github.com/user-attachments/assets/70a95070-91c0-43ed-9b27-a9605866b1ae" /> <img width="32" height="64" alt="icon_EGG_GOLDSHINE" src="https://github.com/user-attachments/assets/5958d492-ff85-46e0-9c9b-8e121f3211fa" /> <img width="32" height="64" alt="icon_EGG_GREENSPOTS" src="https://github.com/user-attachments/assets/7fc8a5b2-8db3-4692-8ca0-bb4e14fc682c" /> <img width="32" height="64" alt="icon_EGG_INDIGOSPLOTCHES" src="https://github.com/user-attachments/assets/960be8d3-b677-4d47-aa0c-ac9376dfcda6" /> <img width="32" height="64" alt="icon_EGG_METALSHELL" src="https://github.com/user-attachments/assets/3110f5f2-fa4d-41cc-ae05-6b2b71040043" /> <img width="32" height="64" alt="icon_EGG_PINKDOTS" src="https://github.com/user-attachments/assets/fc018f1e-a149-4b80-a9b9-5992dfc6bc01" /> <img width="32" height="64" alt="icon_EGG_PURPLECRACKS" src="https://github.com/user-attachments/assets/5b448c60-de8e-4971-85eb-1e073fc0601c" /> 
 
 <!-- Stage 1 front -->
-<img width="128" height="128" alt="Botamon-large" src="https://github.com/user-attachments/assets/903865a7-2a62-45a9-a1d4-07d7323bf7a3" /> <img width="256" height="256" alt="Punimon-large" src="https://github.com/user-attachments/assets/0f0869d9-1a78-47cb-ba82-2f5736795fb2" /> <img width="256" height="256" alt="Poyomon-large" src="https://github.com/user-attachments/assets/62029f47-330e-4271-9063-09a6da096ce7" /> <img width="256" height="256" alt="Yuramon-large" src="https://github.com/user-attachments/assets/e97746bd-e35e-4412-918d-d2bb5b1086e6" /> <img width="256" height="256" alt="Nyokimon-large" src="https://github.com/user-attachments/assets/ccf130ca-0f9c-4155-af1b-2d13340abc29" /> <img width="256" height="256" alt="Pitchmon-large" src="https://github.com/user-attachments/assets/7d9641a9-0944-4b7e-b4b9-2d14301a5a67" /> <img width="256" height="256" alt="Pabumon-large" src="https://github.com/user-attachments/assets/48440f51-4977-4e88-977c-6a93608345bc" /> <img width="256" height="256" alt="Zurumon-large" src="https://github.com/user-attachments/assets/c8a73a02-5e4a-4ea3-ab84-78d2721f1deb" /> <img width="256" height="256" alt="Choromon-large" src="https://github.com/user-attachments/assets/c8a8aeca-e890-4596-83d0-1613ed9d9dcc" /> <img width="256" height="256" alt="YukimiBotamon-large" src="https://github.com/user-attachments/assets/855bf4c9-5920-427d-bc7e-a4ef751d2401" />
-
-
-
-
-
-
-
-
-
+<img width="64" height="64" alt="Botamon-large" src="https://github.com/user-attachments/assets/903865a7-2a62-45a9-a1d4-07d7323bf7a3" /> 
+<img width="64" height="64" alt="Punimon-large" src="https://github.com/user-attachments/assets/0f0869d9-1a78-47cb-ba82-2f5736795fb2" /> 
+<img width="64" height="64" alt="Poyomon-large" src="https://github.com/user-attachments/assets/62029f47-330e-4271-9063-09a6da096ce7" /> 
+<img width="64" height="64" alt="Yuramon-large" src="https://github.com/user-attachments/assets/e97746bd-e35e-4412-918d-d2bb5b1086e6" /> 
+<img width="64" height="64" alt="Nyokimon-large" src="https://github.com/user-attachments/assets/ccf130ca-0f9c-4155-af1b-2d13340abc29" /> 
+<img width="64" height="64" alt="Pitchmon-large" src="https://github.com/user-attachments/assets/7d9641a9-0944-4b7e-b4b9-2d14301a5a67" /> 
+<img width="64" height="64" alt="Pabumon-large" src="https://github.com/user-attachments/assets/48440f51-4977-4e88-977c-6a93608345bc" /> 
+<img width="64" height="64" alt="Zurumon-large" src="https://github.com/user-attachments/assets/c8a73a02-5e4a-4ea3-ab84-78d2721f1deb" /> 
+<img width="64" height="64" alt="Choromon-large" src="https://github.com/user-attachments/assets/c8a8aeca-e890-4596-83d0-1613ed9d9dcc" /> 
+<img width="64" height="64" alt="YukimiBotamon-large" src="https://github.com/user-attachments/assets/855bf4c9-5920-427d-bc7e-a4ef751d2401" />
 
 <!-- Stage 1 back -->
-<img width="256" height="256" alt="Botamon_back-large" src="https://github.com/user-attachments/assets/8b474673-8f5c-4924-af20-3d0c06e33680" /> <img width="256" height="256" alt="Pabumon_back-large" src="https://github.com/user-attachments/assets/a1c72d8c-a98b-431f-81d8-0dac00fa6f93" /> <img width="256" height="256" alt="Choromon_back-large" src="https://github.com/user-attachments/assets/9d6d0430-bcfc-4add-ba67-4b7f2c0efd3f" /> <img width="256" height="256" alt="Mokumon_back-large" src="https://github.com/user-attachments/assets/d70fe2c8-003a-4601-ac59-8607270edcba" /> <img width="256" height="256" alt="Nyokimon_back-large" src="https://github.com/user-attachments/assets/887c5ea8-7d79-41f6-9a56-1616e41d51e4" /> <img width="256" height="256" alt="Pitchmon_back-large" src="https://github.com/user-attachments/assets/d959522e-1490-4e89-80ba-1c550286ee8b" /> <img width="256" height="256" alt="Poyomon_back-large" src="https://github.com/user-attachments/assets/77bf614e-d6d4-491b-af75-37f23e9d4935" /> <img width="256" height="256" alt="Punimon_back-large" src="https://github.com/user-attachments/assets/38d80eb8-439e-49f3-81b6-7bfcced3c9a0" /> <img width="256" height="256" alt="YukimiBotamon_back-large" src="https://github.com/user-attachments/assets/46092463-dc00-4693-8617-43b09039a7da" /> <img width="256" height="256" alt="YukimiBotamonPINK_back-large" src="https://github.com/user-attachments/assets/9c6ef246-c041-4ed9-b9e9-169d0a4cae03" /> <img width="256" height="256" alt="Yuramon_back-large" src="https://github.com/user-attachments/assets/2109f7f9-1869-4b17-bc9b-85f4c5bb2bed" /> <img width="256" height="256" alt="Zurumon_back-large" src="https://github.com/user-attachments/assets/1250d9ee-8948-46bc-a98c-fd3af87c6eec" />
+<img width="64" height="64" alt="Botamon_back-large" src="https://github.com/user-attachments/assets/8b474673-8f5c-4924-af20-3d0c06e33680" /> 
+<img width="64" height="64" alt="Pabumon_back-large" src="https://github.com/user-attachments/assets/a1c72d8c-a98b-431f-81d8-0dac00fa6f93" /> 
+<img width="64" height="64" alt="Choromon_back-large" src="https://github.com/user-attachments/assets/9d6d0430-bcfc-4add-ba67-4b7f2c0efd3f" /> 
+<img width="64" height="64" alt="Mokumon_back-large" src="https://github.com/user-attachments/assets/d70fe2c8-003a-4601-ac59-8607270edcba" /> 
+<img width="64" height="64" alt="Nyokimon_back-large" src="https://github.com/user-attachments/assets/887c5ea8-7d79-41f6-9a56-1616e41d51e4" /> 
+<img width="64" height="64" alt="Pitchmon_back-large" src="https://github.com/user-attachments/assets/d959522e-1490-4e89-80ba-1c550286ee8b" /> 
+<img width="64" height="64" alt="Poyomon_back-large" src="https://github.com/user-attachments/assets/77bf614e-d6d4-491b-af75-37f23e9d4935" /> 
+<img width="64" height="64" alt="Punimon_back-large" src="https://github.com/user-attachments/assets/38d80eb8-439e-49f3-81b6-7bfcced3c9a0" /> 
+<img width="64" height="64" alt="YukimiBotamon_back-large" src="https://github.com/user-attachments/assets/46092463-dc00-4693-8617-43b09039a7da" /> 
+<img width="64" height="64" alt="YukimiBotamonPINK_back-large" src="https://github.com/user-attachments/assets/9c6ef246-c041-4ed9-b9e9-169d0a4cae03" /> 
+<img width="64" height="64" alt="Yuramon_back-large" src="https://github.com/user-attachments/assets/2109f7f9-1869-4b17-bc9b-85f4c5bb2bed" /> 
+<img width="64" height="64" alt="Zurumon_back-large" src="https://github.com/user-attachments/assets/1250d9ee-8948-46bc-a98c-fd3af87c6eec" />
 
 <!-- Stage 2 front -->
-<img width="64" height="128" alt="Tanemon_anim_front" src="https://github.com/user-attachments/assets/51499b54-eb02-4bca-b646-f1914974b6b1" /> <img width="64" height="128" alt="Mochimon_anim_front" src="https://github.com/user-attachments/assets/433ba6a4-8cf9-4868-96fc-1877c4f78a27" /> <img width="256" height="256" alt="Koromon-large" src="https://github.com/user-attachments/assets/332e8d8f-7e49-478c-8c00-195bb8b7f5ca" /> <img width="256" height="256" alt="Tsunomon-large" src="https://github.com/user-attachments/assets/3aea8f3e-386d-43c7-bcbc-adbbd0af3699" /> <img width="256" height="256" alt="Tokomon-large" src="https://github.com/user-attachments/assets/702e84d1-2cd2-4f3a-9358-e711c7b29866" /> <img width="256" height="256" alt="Tokomon2-large" src="https://github.com/user-attachments/assets/08b0ab7e-e57c-48c6-8506-ac180791ab03" /> <img width="256" height="256" alt="Pyocomon-large" src="https://github.com/user-attachments/assets/0caa35e1-8963-497a-8654-d07bcb8dd07d" /> <img width="256" height="256" alt="Pukamon-large" src="https://github.com/user-attachments/assets/ec11a2a2-1c8c-4d2a-802f-a914f651e319" /> <img width="256" height="256" alt="Pagumon-large" src="https://github.com/user-attachments/assets/9d1853c5-d435-4078-bccb-4a7bf9f2dfa8" /> <img width="256" height="256" alt="Caprimon-large" src="https://github.com/user-attachments/assets/37a33e47-2315-40aa-8bfa-2e5dc4d5988e" /> <img width="256" height="256" alt="Nyaromon-large" src="https://github.com/user-attachments/assets/7112f7ea-fdab-4940-a49a-1325b233307d" />
-
-
-
-
-
-
-
-
+<img width="64" height="128" alt="Tanemon_anim_front" src="https://github.com/user-attachments/assets/51499b54-eb02-4bca-b646-f1914974b6b1" /> 
+<img width="64" height="128" alt="Mochimon_anim_front" src="https://github.com/user-attachments/assets/433ba6a4-8cf9-4868-96fc-1877c4f78a27" /> 
+<img width="64" height="64" alt="Koromon-large" src="https://github.com/user-attachments/assets/332e8d8f-7e49-478c-8c00-195bb8b7f5ca" /> 
+<img width="64" height="64" alt="Tsunomon-large" src="https://github.com/user-attachments/assets/3aea8f3e-386d-43c7-bcbc-adbbd0af3699" /> 
+<img width="64" height="64" alt="Tokomon-large" src="https://github.com/user-attachments/assets/702e84d1-2cd2-4f3a-9358-e711c7b29866" /> 
+<img width="64" height="64" alt="Tokomon2-large" src="https://github.com/user-attachments/assets/08b0ab7e-e57c-48c6-8506-ac180791ab03" /> 
+<img width="64" height="64" alt="Pyocomon-large" src="https://github.com/user-attachments/assets/0caa35e1-8963-497a-8654-d07bcb8dd07d" /> 
+<img width="64" height="64" alt="Pukamon-large" src="https://github.com/user-attachments/assets/ec11a2a2-1c8c-4d2a-802f-a914f651e319" /> 
+<img width="64" height="64" alt="Pagumon-large" src="https://github.com/user-attachments/assets/9d1853c5-d435-4078-bccb-4a7bf9f2dfa8" /> 
+<img width="64" height="64" alt="Caprimon-large" src="https://github.com/user-attachments/assets/37a33e47-2315-40aa-8bfa-2e5dc4d5988e" /> 
+<img width="64" height="64" alt="Nyaromon-large" src="https://github.com/user-attachments/assets/7112f7ea-fdab-4940-a49a-1325b233307d" />
 
 
 <!-- Stage 2 back -->
-<img width="256" height="256" alt="Koromon_back-larrge" src="https://github.com/user-attachments/assets/2891f508-dd83-437e-bf36-6816d44648c0" /> <img width="256" height="256" alt="Tsunomon_back-large" src="https://github.com/user-attachments/assets/aa118b62-35fb-4aa8-80c5-fce2e561959e" /> <img width="256" height="256" alt="Tokomon_back-large" src="https://github.com/user-attachments/assets/27f374b2-8dc7-4e4f-8f20-de4cefbbb053" /> <img width="256" height="256" alt="Tanemon_back-large" src="https://github.com/user-attachments/assets/a182c880-d9da-4b8d-ae8d-1c5fdaaf9039" /> <img width="256" height="256" alt="Mochimon_back-large" src="https://github.com/user-attachments/assets/d3554a04-9117-46c2-991a-775494c18e9c" />
+<img width="64" height="64" alt="Koromon_back-larrge" src="https://github.com/user-attachments/assets/2891f508-dd83-437e-bf36-6816d44648c0" /> 
+<img width="64" height="64" alt="Tsunomon_back-large" src="https://github.com/user-attachments/assets/aa118b62-35fb-4aa8-80c5-fce2e561959e" /> 
+<img width="64" height="64" alt="Tokomon_back-large" src="https://github.com/user-attachments/assets/27f374b2-8dc7-4e4f-8f20-de4cefbbb053" /> 
+<img width="64" height="64" alt="Tanemon_back-large" src="https://github.com/user-attachments/assets/a182c880-d9da-4b8d-ae8d-1c5fdaaf9039" /> 
+<img width="64" height="64" alt="Mochimon_back-large" src="https://github.com/user-attachments/assets/d3554a04-9117-46c2-991a-775494c18e9c" />
+
 
 <!-- Stage 3 front -->
-<img width="256" height="256" alt="Agumon-large" src="https://github.com/user-attachments/assets/1080ff33-a548-439c-bd4e-376d5b5fd039" /> <img width="256" height="256" alt="Agumon06-large" src="https://github.com/user-attachments/assets/0737fd20-32a5-4dec-9cc5-425e5e9ba801" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="64" height="64" alt="Agumon-large" src="https://github.com/user-attachments/assets/1080ff33-a548-439c-bd4e-376d5b5fd039" /> 
+<img width="64" height="64" alt="Agumon06-large" src="https://github.com/user-attachments/assets/0737fd20-32a5-4dec-9cc5-425e5e9ba801" />
 
 #### Reza3u, commissioned by Luna
-<img width="64" height="128" alt="anim_front" src="https://github.com/user-attachments/assets/ae710013-af76-4a75-99a0-e7cbf80adf56" /> <img width="64" height="64" alt="back" src="https://github.com/user-attachments/assets/c9c5e137-634c-494a-8bbd-4ce754799765" /> <img width="64" height="128" alt="anim_front" src="https://github.com/user-attachments/assets/628ec679-e1f3-4aa4-900a-48842f376dba" /> <img width="64" height="64" alt="back" src="https://github.com/user-attachments/assets/246d11e9-6879-4b81-9f94-a16e064a914d" />
+<img width="64" height="128" alt="anim_front" src="https://github.com/user-attachments/assets/ae710013-af76-4a75-99a0-e7cbf80adf56" /> 
+<img width="64" height="64" alt="back" src="https://github.com/user-attachments/assets/c9c5e137-634c-494a-8bbd-4ce754799765" /> 
+<img width="64" height="128" alt="anim_front" src="https://github.com/user-attachments/assets/628ec679-e1f3-4aa4-900a-48842f376dba" /> 
+<img width="64" height="64" alt="back" src="https://github.com/user-attachments/assets/246d11e9-6879-4b81-9f94-a16e064a914d" />
 
-<img width="64" height="64" alt="shellmon" src="https://github.com/user-attachments/assets/7ee5eaf3-be98-45db-a67e-a3de353e3c50" /> <img width="64" height="64" alt="shellmon_back" src="https://github.com/user-attachments/assets/493016d3-98bd-4e3d-9c1c-463ab4d2d027" />
-<img width="64" height="64" alt="kuwagamon" src="https://github.com/user-attachments/assets/b82cabb8-f574-456c-9123-e4ace0181a60" /> <img width="64" height="64" alt="kuwagamon_back" src="https://github.com/user-attachments/assets/35806aae-c614-42fa-93c4-1517892ab030" />
-<img width="64" height="64" alt="devimon" src="https://github.com/user-attachments/assets/af5885f6-c43a-47db-ab40-5bbbe7671dfd" /> <img width="64" height="64" alt="devimon_back" src="https://github.com/user-attachments/assets/674ceb12-b44a-46a8-8159-c0d8033a7aee" /> <img width="64" height="64" alt="unimon" src="https://github.com/user-attachments/assets/9e7d64c9-81d3-4600-bb3d-049cb0c854b8" /> <img width="64" height="64" alt="unimon_back" src="https://github.com/user-attachments/assets/051fa37d-7444-4786-9759-982d16cac1cf" /> <img width="64" height="64" alt="meramon" src="https://github.com/user-attachments/assets/dfb2cb44-75fe-47dc-95bf-64e28c0dcd9c" /> <img width="64" height="64" alt="meramon_back" src="https://github.com/user-attachments/assets/3f5b7991-4542-4129-b9f2-4ba149b5f86a" /> <img width="64" height="64" alt="andromon_back" src="https://github.com/user-attachments/assets/38aa49e4-e16a-455b-961b-ff024b6e79d2" />
+<img width="64" height="64" alt="shellmon" src="https://github.com/user-attachments/assets/7ee5eaf3-be98-45db-a67e-a3de353e3c50" /> 
+<img width="64" height="64" alt="shellmon_back" src="https://github.com/user-attachments/assets/493016d3-98bd-4e3d-9c1c-463ab4d2d027" />
+<img width="64" height="64" alt="kuwagamon" src="https://github.com/user-attachments/assets/b82cabb8-f574-456c-9123-e4ace0181a60" /> 
+<img width="64" height="64" alt="kuwagamon_back" src="https://github.com/user-attachments/assets/35806aae-c614-42fa-93c4-1517892ab030" />
+<img width="64" height="64" alt="devimon" src="https://github.com/user-attachments/assets/af5885f6-c43a-47db-ab40-5bbbe7671dfd" /> 
+<img width="64" height="64" alt="devimon_back" src="https://github.com/user-attachments/assets/674ceb12-b44a-46a8-8159-c0d8033a7aee" /> 
+<img width="64" height="64" alt="unimon" src="https://github.com/user-attachments/assets/9e7d64c9-81d3-4600-bb3d-049cb0c854b8" /> 
+<img width="64" height="64" alt="unimon_back" src="https://github.com/user-attachments/assets/051fa37d-7444-4786-9759-982d16cac1cf" /> 
+<img width="64" height="64" alt="meramon" src="https://github.com/user-attachments/assets/dfb2cb44-75fe-47dc-95bf-64e28c0dcd9c" /> 
+<img width="64" height="64" alt="meramon_back" src="https://github.com/user-attachments/assets/3f5b7991-4542-4129-b9f2-4ba149b5f86a" /> 
+<img width="64" height="64" alt="andromon_back" src="https://github.com/user-attachments/assets/38aa49e4-e16a-455b-961b-ff024b6e79d2" />
 <img width="64" height="64" alt="andromon" src="https://github.com/user-attachments/assets/54486ffb-8971-4b6f-b081-d9ee40767f6c" />
 
 
