@@ -5258,7 +5258,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 70,
         .baseSpDefense = 105,
         .baseSpeed     = 80,
-        .types = MON_TYPES(TYPE_DATA, TYPE_WIND, TYPE_DRAGON),
+        .types = MON_TYPES(TYPE_VACCINE, TYPE_WIND, TYPE_DRAGON),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 3,
@@ -5274,7 +5274,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_WIND_GUARDIANS, ABILITY_WIND_GUARDIANS, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
     #if DubNames
         .speciesName = _("Airdramon"),//the digimon's dub name. e.g. gatomon
@@ -5288,10 +5288,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "A mythical beast Digimon with gigantic\n"
+            "wings. It invokes storms with its roar\n"
+            "and creates whirlwinds with its wings.\n"
+            "It is considered by many to be holy."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5355,7 +5355,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_VIRUS_BUSTER, ABILITY_VIRUS_BUSTER, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_WHITE,
     #if DubNames
         .speciesName = _("Angemon"),//the digimon's dub name. e.g. gatomon
@@ -5369,10 +5369,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "An angel with six glittering wings. A\n"
+            "being of pure virtue, it is merciless to\n"
+            "evil. When danger descends, it comes to\n"
+            "lead other Angel Digimon to war."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
