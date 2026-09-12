@@ -16323,7 +16323,10 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Super Restore"),
         .price = 1000,
-        .description = sMaxReviveDesc,
+        .description = COMPOUND_STRING(
+            "Revives a fainted\n"
+            "Pokémon with all\n"
+            "its HP."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,

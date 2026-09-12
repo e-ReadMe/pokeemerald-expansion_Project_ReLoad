@@ -5450,10 +5450,10 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The shell on its back is made of soil. \n"
-            "On a very healthy Turtwig, the shell \n"
-            "should feel moist. The leaf on its head\n"
-            "wilts if it is thirsty."),
+            "Though it's strength is on par with\n"
+            "Angemon, it's rank is lower so it has\n"
+            "only two wings. Its feathers are prone\n"
+            "to bursting into flames."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
