@@ -1,5 +1,6 @@
 // Digivolution data structure
 // Fields: HPReq, atkReq, defReq, spatkReq, spdefReq, speedReq, target species
+// note that in comments, such as x/y/z, x is the minimum possible level, y is the average level, and z is the maximum level required to reach the stat requirements. 
 struct Digivolution
 {
     u8 HPReq;
@@ -20,70 +21,83 @@ struct Digivolution
 
 //SPECIES_BOTAMON
 static const struct Digivolution sBotamonDigivolveTable[] = {
-    {25, 12, 0, 12, 0, 0, SPECIES_KOROMON},//should be obtainable from 0Ivs, 0Evs, neutral nature, level 7
+//  HP Atk Def SA SD Spd
+    {25, 12, 0, 12, 0, 0, SPECIES_KOROMON}, // 6/9/13
     DIGIVOLUTION_END
 };
 
 //SPECIES_BUBBMON
 static const struct Digivolution sBubbmonDigivolveTable[] = {
-    {23, 9, 9, 7, 7, 11, SPECIES_MOCHIMON}, //should be obtainable by level 7
-    {0, 11, 12, 0, 0, 0, SPECIES_NYAROMON}, //should be obtainable by level 12
+//  HP Atk Def SA SD Spd
+    {0, 0, 15, 0, 0, 0, SPECIES_MOCHIMON}, // 6/12/18
+    {0, 15, 0, 0, 0, 0, SPECIES_NYAROMON}, // 6/14/20. Slightly more difficult to reach.
+
     DIGIVOLUTION_END
 };
 
 //SPECIES_CHOROMON
 static const struct Digivolution sChoromonDigivolveTable[] = {
-    {18, 12, 0, 0, 0, 17, SPECIES_CAPRIMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 7
+//  HP Atk Def SA SD Spd
+    {0, 0, 12, 0, 0, 0, SPECIES_CAPRIMON}, // 4/10/15
     DIGIVOLUTION_END
 };
 
 //SPECIES_MOKUMON
 static const struct Digivolution sMokumonDigivolveTable[] = {
-    {23, 9, 9, 9, 9, 10, SPECIES_PETITMERAMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 7
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 12, 0, 0, SPECIES_PETITMERAMON}, // 4/10/16
     DIGIVOLUTION_END
 };
 
 //SPECIES_NYOKIMON
 static const struct Digivolution sNyokimonDigivolveTable[] = {
-    {21, 10, 0, 8, 0, 0, SPECIES_TANEMON},//slightly higher attack and lower sp attack
-    {21, 8, 0, 10, 0, 0, SPECIES_PYOKOMON},//slightly higher sp attack and lower attack
+//  HP Atk Def SA SD Spd
+    {27, 0, 0, 0, 0, 0, SPECIES_TANEMON}, // 7/10/11
+    {0, 0, 0, 0, 0, 13, SPECIES_PYOKOMON}, // 5/11/17
     DIGIVOLUTION_END
 };
 
 //SPECIES_PITCHMON
 static const struct Digivolution sPitchmonDigivolveTable[] = {
-    {0, 0, 0, 6, 12, 0, SPECIES_PUKAMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 7
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 17, SPECIES_PUKAMON}, // 6/11/14
+
     DIGIVOLUTION_END
 };
 
 //SPECIES_POYOMON
 static const struct Digivolution sPoyomonDigivolveTable[] = {
-    {24, 7, 0, 7, 0, 7, SPECIES_TOKOMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 7
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 12, 0, 0, SPECIES_TOKOMON}, // 5/13/23
     DIGIVOLUTION_END
 };
 
 //SPECIES_PUNIMON
 static const struct Digivolution sPunimonDigivolveTable[] = {
-    {21, 9, 0, 0, 0, 0, SPECIES_TSUNOMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
+//  HP Atk Def SA SD Spd
+    {0, 10, 0, 0, 0, 0, SPECIES_TSUNOMON}, // 4/10/18
     DIGIVOLUTION_END
 };
 
 //SPECIES_YUKIMIBOTAMON
 static const struct Digivolution sYukimibotamonDigivolveTable[] = {
-    {21, 0, 0, 11, 0, 0, SPECIES_NYAROMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
+//  HP Atk Def SA SD Spd
+    {30, 0, 0, 0, 0, 0, SPECIES_NYAROMON}, // 8/12/13
     DIGIVOLUTION_END
 };
 
 //SPECIES_YURAMON
 static const struct Digivolution sYuramonDigivolveTable[] = {
-    {0, 9, 10, 0, 0, 0, SPECIES_TANEMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
+//  HP Atk Def SA SD Spd
+    {30, 0, 0, 0, 0, 0, SPECIES_TANEMON}, // 8/11/11
     DIGIVOLUTION_END
 };
 
 //SPECIES_ZURUMON
 static const struct Digivolution sZurumonDigivolveTable[] = {
-    {0, 13, 0, 0, 0, 0, SPECIES_PAGUMON}, //should be obtainable from 0Ivs, 0Evs, neutral nature, level 10
-    {0, 0, 0, 11, 0, 0, SPECIES_KODOKUGUMON}, 
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 12, 0, SPECIES_PAGUMON}, // 4/10/15
+    {40, 0, 0, 0, 0, 0, SPECIES_KODOKUGUMON}, // 12/17/18
     DIGIVOLUTION_END
 };
 //-----------------------------------------------------------------
@@ -91,27 +105,27 @@ static const struct Digivolution sZurumonDigivolveTable[] = {
 //SPECIES_CAPRIMON
 static const struct Digivolution sCaprimonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {0, 30, 0, 0, 0, 0, SPECIES_TOYAGUMON},//they should be able to reach the requirements ~level 15-20
-    {0, 0, 0, 0, 20, 20, SPECIES_HAGURUMON},
-    {0, 0, 30, 0, 20, 0, SPECIES_KOKUWAMON},
-    {0, 30, 30, 0, 0, 0, SPECIES_CLEARAGUMON},
+    {0, 24, 0, 0, 0, 0, SPECIES_TOYAGUMON}, // 8/14/17
+    {0, 0, 26, 0, 0, 0, SPECIES_HAGURUMON}, // 9/15/19
+    {0, 0, 30, 0, 20, 0, SPECIES_KOKUWAMON}, // 11/18/26
+    {0, 35, 0, 0, 0, 0, SPECIES_CLEARAGUMON}, // 13/21/27 a bit harder to reach than toyagumon
     #if digi_2000
-    {0, 0, 0, 0, 0, 0, SPECIES_SOLARMON},
-    {0, 0, 0, 0, 0, 0, SPECIES_PHASCOMON},
-    {0, 0, 0, 0, 0, 0, SPECIES_CLEARAGUMONBLACK},
+    {0, 0, 37, 0, 0, 0, SPECIES_SOLARMON}, // 13/23/29 a bit harder to reach than hagurumon
+    {60, 40, 0, 0, 0, 0, SPECIES_PHASCOMON}, // 18/25/31
+    {0, 45, 0, 0, 0, 0, SPECIES_CLEARAGUMONBLACK}, // 17/28/35 bit harder again than clearagumon
     #endif
-    {0, 0, 0, 0, 0, 0, SPECIES_CHOROMON}, //Devolve. Keep as the last spot
+    {0, 0, 0, 0, 0, 0, SPECIES_CHOROMON}, // devolution. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_KODOKUGUMON
 static const struct Digivolution sKodokugumonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {60, 40, 30, 30, 30, 20, SPECIES_DOKUGUMON},//should be obtainable ~level 20
-    {0, 0, 0, 0, 0, 0, SPECIES_ZURUMON}, //Devolve. Keep as the last spot
+    {65, 45, 30, 0, 0, 0, SPECIES_DOKUGUMON}, // 21/30/38
+    {0, 0, 0, 0, 0, 0, SPECIES_ZURUMON}, // devolution. Keep as the last spot
     #if digi_2000
-    {0, 30, 0, 0, 0, 0, SPECIES_KODOKUGUMON},//they should be able to reach the requirements ~level 15-20
-    {0, 0, 0, 0, 0, 0, SPECIES_LEAFMON},
+    {0, 30, 0, 0, 0, 0, SPECIES_KODOKUGUMONCHILD}, // 11/19/25
+    {0, 0, 0, 0, 0, 0, SPECIES_LEAFMON}, // devolution. Keep as the last spot
     #endif
     DIGIVOLUTION_END
 };
@@ -119,30 +133,30 @@ static const struct Digivolution sKodokugumonDigivolveTable[] = {
 //SPECIES_KOROMON
 static const struct Digivolution sKoromonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {0, 30, 0, 0, 0, 0, SPECIES_AGUMON}, 
-    {0, 0, 0, 32, 0, 0, SPECIES_BETAMON}, 
-    {0, 0, 0, 0, 20, 0, SPECIES_MODOKIBETAMON}, 
+    {0, 25, 0, 0, 0, 0, SPECIES_AGUMON}, // 9/15/20
+    {0, 0, 0, 26, 0, 0, SPECIES_BETAMON}, // 9/15/19
+    {0, 0, 0, 0, 20, 0, SPECIES_MODOKIBETAMON}, // 8/15/20
     #if digi_2000
-    {0, 30, 0, 0, 0, 0, SPECIES_AGUMONBLACK}, 
-    {0, 0, 25, 0, 0, 0, SPECIES_AGUMON06}, 
-    {0, 0, 25, 0, 0, 0, SPECIES_AGUMON06Black}, 
-    {0, 40, 0, 0, 0, 0, SPECIES_BUSHIAGUMON}, 
+    {0, 0, 0, 32, 0, 0, SPECIES_AGUMONBLACK}, // 12/19/24
+    {0, 30, 25, 0, 0, 0, SPECIES_AGUMON06}, // 11/22/29
+    {0, 0, 0, 0, 0, 30, SPECIES_BUSHIAGUMON}, // 15/30/42
+    {0, 34, 25, 0, 0, 0, SPECIES_AGUMON06BLACK}, // 13/22/29
     #endif
-    {0, 0, 0, 0, 0, 0, SPECIES_BOTAMON}, //Devolve. Keep as the last spot
+    {0, 0, 0, 0, 0, 0, SPECIES_BOTAMON}, // devolution. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_MOCHIMON
 static const struct Digivolution sMochimonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {0, 20, 0, 25, 0, 0, SPECIES_TENTOMON},
+    {0, 0, 0, 19, 32, 0, SPECIES_TENTOMON}, // 10/16/22
     #if digi_2000
-    {0, 0, 0, 0, 0, 0, SPECIES_KOKABUTERIMON},
+    {0, 14, 0, 19, 0, 0, SPECIES_KOKABUTERIMON}, // 8/17/28
     #endif
-    {0, 0, 0, 20, 0, 0, SPECIES_KUNEMON},
-    {0, 15, 0, 0, 0, 0, SPECIES_DOKUNEMON},
-    {0, 0, 20, 0, 0, 0, SPECIES_GOTSUMON},
-    {0, 0, 0, 0, 0, 0, SPECIES_BUBBMON}, //Devolve. Keep as the last spot
+    {0, 0, 0, 20, 0, 0, SPECIES_KUNEMON}, // 9/16/23
+    {0, 0, 0, 0, 25, 0, SPECIES_DOKUNEMON}, // 8/12/15
+    {0, 0, 20, 0, 0, 0, SPECIES_GOTSUMON}, // 10/20/30
+    {0, 0, 0, 0, 0, 0, SPECIES_BUBBMON}, // devolution. Keep as the last spot
     DIGIVOLUTION_END
 };
 
@@ -260,13 +274,31 @@ static const struct Digivolution sTsunomonDigivolveTable[] = {
 // stage 3
 //SPECIES_AGUMON
 static const struct Digivolution sAgumonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_GREYMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_TYRANNOMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_COELAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_CYCLOMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_OGREMON},
+    #if digi_2007
+    {0, 0, 0, 0, 0, 0, SPECIES_COREDRAMON_GREEN},
+    {0, 0, 0, 0, 0, 0, SPECIES_GEOGREYMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_KOROMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_YUKIAGUMON
 static const struct Digivolution sYukiagumonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_ICEMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_MOJYAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_YUKIDARUMON},
+    #if digi_2002
+    {0, 0, 0, 0, 0, 0, SPECIES_CHACKMON},
+    #endif
     #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_ALLOMON},
     {0, 0, 0, 0, 0, 0, SPECIES_HIYARIMON}, //Devolve. Keep as the last spot
     #endif
     {0, 0, 0, 0, 0, 0, SPECIES_NYAROMON}, //Devolve. Keep as the last spot
@@ -275,38 +307,84 @@ static const struct Digivolution sYukiagumonDigivolveTable[] = {
 
 //SPECIES_BAKUMON
 static const struct Digivolution sBakumonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_BAKEMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_DARKLIZARMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_GURURUMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_MONOCHROMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_SHIMAUNIMON},
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_BOARMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_BULLMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_SORCERIMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_PETITMERAMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_BETAMON
 static const struct Digivolution sBetamonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_SEADRAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_AIRDRAMON},
+    #if digi_2024
+    {0, 0, 0, 0, 0, 0, SPECIES_LANDRAMON},
+    #endif
+    {0, 0, 0, 0, 0, 0, SPECIES_GEKOMON},
+    #if digi_2002
+    {0, 0, 0, 0, 0, 0, SPECIES_DINOHUMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_KOROMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_MODOKIBETAMON
 static const struct Digivolution sModokibetamonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_GEKOMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_GESOMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_NISEDRIMOGEMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_SHELLMON},
     {0, 0, 0, 0, 0, 0, SPECIES_KOROMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_CANDMON
 static const struct Digivolution sCandmonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_BAKEMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_MERAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_DARKLIZARMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_DEVIMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_WIZARMON},
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_FLADRAMON},
+    #endif
+    #if digi_2002
+    {0, 0, 0, 0, 0, 0, SPECIES_FLAWIZARMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_PETITMERAMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_CHUUMON
 static const struct Digivolution sChuumonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_PAGUMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_ELECMON
 static const struct Digivolution sElecmonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_SUKAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_GEREMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_NANIMON},
     {0, 0, 0, 0, 0, 0, SPECIES_TSUNOMON}, //Devolve. Keep as the last spot
     #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_SALAMANDAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_DOGMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_PUCCHIEMON},
     {0, 0, 0, 0, 0, 0, SPECIES_NYAROMONB}, //Devolve. Keep as the last spot
     #endif
     DIGIVOLUTION_END
@@ -314,6 +392,17 @@ static const struct Digivolution sElecmonDigivolveTable[] = {
 
 //SPECIES_FLORAMON
 static const struct Digivolution sFloramonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_KIWIMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_VEGIMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_IGAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_WOODMON},
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_HARPYMON},
+    #endif
+    #if digi_2024
+    {0, 0, 0, 0, 0, 0, SPECIES_GALEMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_PYOKOMON}, //Devolve. Keep as the last spot
     {0, 0, 0, 0, 0, 0, SPECIES_TANEMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
@@ -321,36 +410,98 @@ static const struct Digivolution sFloramonDigivolveTable[] = {
 
 //SPECIES_GABUMON
 static const struct Digivolution sGabumonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_GARURUMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_CENTARUMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_DRIMOGEMON},
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_BULLMON},
+    #endif
+    #if digi_2002
+    {0, 0, 0, 0, 0, 0, SPECIES_FANGMON},
+    #endif
+    #if digi_2010
+    {0, 0, 0, 0, 0, 0, SPECIES_DORULUMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_TSUNOMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_PSYCHEMON
 static const struct Digivolution sPsychemonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_GURURUMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_NISEDRIMOGEMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_HANUMON},
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_MOOSEMON},
+    #endif
+    #if digi_2002
+    {0, 0, 0, 0, 0, 0, SPECIES_FANGMON},
+    #endif
+    #if digi_2004
+    {0, 0, 0, 0, 0, 0, SPECIES_ASTAMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_TSUNOMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_GANIMON
 static const struct Digivolution sGanimonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_COELAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_EBIDRAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_GESOMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_SHELLMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_SNIMON},
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_ARCHELOMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_SUBMARIMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_TYLOMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_PUKAMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_GAZIMON
 static const struct Digivolution sGazimonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_DELTAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_DEVIDRAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_SUKAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_DARKTYRANNOMON},
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_BLACKTAILMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_GARGOMON},
+    #endif
+    #if digi_2010
+    {0, 0, 0, 0, 0, 0, SPECIES_MADLEOMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_PAGUMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_GIZAMON
 static const struct Digivolution sGizamonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_CYCLOMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_EBIDRAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_ICEDEVIMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_SHELLMON},
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_MANTARAYMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_PAGUMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_GOBLIMON
 static const struct Digivolution sGoblimonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_OGREMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_DELTAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_GREYMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_DEVIMON},
     {0, 0, 0, 0, 0, 0, SPECIES_PAGUMON}, //Devolve. Keep as the last spot
     #if digi_2020
     {0, 0, 0, 0, 0, 0, SPECIES_ONIBIMON}, //Devolve. Keep as the last spot
@@ -360,6 +511,13 @@ static const struct Digivolution sGoblimonDigivolveTable[] = {
 
 //SPECIES_SHAMAMON
 static const struct Digivolution sShamamonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_FUGAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_SOULMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_MINOTAURMON},
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_SEPIKMON},
+    #endif
     {0, 0, 0, 0, 0, 0, SPECIES_PAGUMON}, //Devolve. Keep as the last spot
     #if digi_2020
     {0, 0, 0, 0, 0, 0, SPECIES_ONIBIMON}, //Devolve. Keep as the last spot
@@ -369,6 +527,12 @@ static const struct Digivolution sShamamonDigivolveTable[] = {
 
 //SPECIES_SNOWGOBLIMON
 static const struct Digivolution sSnowgoblimonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
+    {0, 0, 0, 0, 0, 0, SPECIES_HYOGAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_ICEDEVIMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_ICEMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_MOJYAMON},
+    {0, 0, 0, 0, 0, 0, SPECIES_YUKIDARUMON},
     {0, 0, 0, 0, 0, 0, SPECIES_PAGUMON}, //Devolve. Keep as the last spot
     #if digi_2020
     {0, 0, 0, 0, 0, 0, SPECIES_ONIBIMON}, //Devolve. Keep as the last spot
@@ -378,12 +542,14 @@ static const struct Digivolution sSnowgoblimonDigivolveTable[] = {
 
 //SPECIES_GOMAMON
 static const struct Digivolution sGomamonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_PUKAMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_GOTSUMON
 static const struct Digivolution sGotsumonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_MOCHIMON}, //Devolve. Keep as the last spot
     #if digi_2020
     {0, 0, 0, 0, 0, 0, SPECIES_GOROMON}, //Devolve. Keep as the last spot
@@ -393,18 +559,21 @@ static const struct Digivolution sGotsumonDigivolveTable[] = {
 
 //SPECIES_HAGURUMON
 static const struct Digivolution sHagurumonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_CAPRIMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_KOKUWAMON
 static const struct Digivolution sKokuwamonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_CAPRIMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_KUNEMON
 static const struct Digivolution sKunemonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_MOCHIMON}, //Devolve. Keep as the last spot
     {0, 0, 0, 0, 0, 0, SPECIES_TOKOMON}, //Devolve. Keep as the last spot
     #if digi_2000
@@ -415,6 +584,7 @@ static const struct Digivolution sKunemonDigivolveTable[] = {
 
 //SPECIES_DOKUNEMON
 static const struct Digivolution sDokunemonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_MOCHIMON}, //Devolve. Keep as the last spot
     #if digi_2000
     {0, 0, 0, 0, 0, 0, SPECIES_MINOMON}, //Devolve. Keep as the last spot
@@ -424,6 +594,7 @@ static const struct Digivolution sDokunemonDigivolveTable[] = {
 
 //SPECIES_MUSHMON
 static const struct Digivolution sMushmonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_TANEMON}, //Devolve. Keep as the last spot
     #if digi_2000
     {0, 0, 0, 0, 0, 0, SPECIES_BUDMON}, //Devolve. Keep as the last spot
@@ -433,6 +604,7 @@ static const struct Digivolution sMushmonDigivolveTable[] = {
 
 //SPECIES_OTAMAMON
 static const struct Digivolution sOtamamonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_PUKAMON}, //Devolve. Keep as the last spot
     #if digi_2020
     {0, 0, 0, 0, 0, 0, SPECIES_PUYOYOMON}, //Devolve. Keep as the last spot
@@ -442,6 +614,7 @@ static const struct Digivolution sOtamamonDigivolveTable[] = {
 
 //SPECIES_PALMON
 static const struct Digivolution sPalmonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_TANEMON}, //Devolve. Keep as the last spot
     {0, 0, 0, 0, 0, 0, SPECIES_PYOKOMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
@@ -449,6 +622,7 @@ static const struct Digivolution sPalmonDigivolveTable[] = {
 
 //SPECIES_ALRAUMON
 static const struct Digivolution sAlraumonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_TANEMON}, //Devolve. Keep as the last spot
     {0, 0, 0, 0, 0, 0, SPECIES_PYOKOMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
@@ -456,18 +630,21 @@ static const struct Digivolution sAlraumonDigivolveTable[] = {
 
 //SPECIES_PATAMON
 static const struct Digivolution sPatamonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_TOKOMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_TSUKAIMON
 static const struct Digivolution sTsukaimonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_TOKOMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_PENMON
 static const struct Digivolution sPenmonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_PUKAMON}, //Devolve. Keep as the last spot
     #if digi_2000
     {0, 0, 0, 0, 0, 0, SPECIES_HIYARIMON}, //Devolve. Keep as the last spot
@@ -477,6 +654,7 @@ static const struct Digivolution sPenmonDigivolveTable[] = {
 
 //SPECIES_MUCHOMON
 static const struct Digivolution sMuchomonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_PYOKOMON}, //Devolve. Keep as the last spot
     #if digi_2000
     {0, 0, 0, 0, 0, 0, SPECIES_POROMON}, //Devolve. Keep as the last spot
@@ -486,12 +664,14 @@ static const struct Digivolution sMuchomonDigivolveTable[] = {
 
 //SPECIES_PICODEVIMON
 static const struct Digivolution sPicodevimonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_PETITMERAMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_PIYOMON
 static const struct Digivolution sPiyomonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_PYOKOMON}, //Devolve. Keep as the last spot
     #if digi_2000
     {0, 0, 0, 0, 0, 0, SPECIES_POROMON}, //Devolve. Keep as the last spot
@@ -502,30 +682,35 @@ static const struct Digivolution sPiyomonDigivolveTable[] = {
 
 //SPECIES_PLOTMON
 static const struct Digivolution sPlotmonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_NYAROMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_SHAKOMON
 static const struct Digivolution sShakomonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_PUKAMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_TENTOMON
 static const struct Digivolution sTentomonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_MOCHIMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_TOYAGUMON
 static const struct Digivolution sToyagumonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_CAPRIMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_CLEARAGUMON
 static const struct Digivolution sClearagumonDigivolveTable[] = {
+//  HP Atk Def SA SD Spd
     {0, 0, 0, 0, 0, 0, SPECIES_CAPRIMON}, //Devolve. Keep as the last spot
     DIGIVOLUTION_END
 };
