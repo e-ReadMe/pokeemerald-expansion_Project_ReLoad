@@ -79,7 +79,8 @@ Currently this functionality is partially developed
 **Custom tools**
 - [Textbox sim](https://e-readme.github.io/Digimon-textbox-sim/) to help with planning text and dialogue
 - [species tool](https://e-readme.github.io/digimon-species-tool/) to help churn through species info. Meant to be used in tandem with the python-generated placeholder species docs
-- 
+- [Digivolution and stat helper](https://github.com/e-ReadMe/digi_stat_designer/tree/main) to help create stat thresholds for digivolution targets
+
 
 
 # About `pokeemerald-expansion`
