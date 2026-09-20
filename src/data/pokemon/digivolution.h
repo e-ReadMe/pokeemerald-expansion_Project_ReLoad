@@ -14,6 +14,13 @@ struct Digivolution
 
 // Sentinel value to mark the end of a digivolution table
 #define DIGIVOLUTION_END {0, 0, 0, 0, 0, 0, SPECIES_NONE}
+//in general evolutions should be possible at these levels:
+//stage 1 -> 2 : level ~10. with one Stat requirement
+//stage 2 -> 3 : level 10-20. with one stat requirement
+//stage 3 -> 4 : level 20-30. with two stat requirements
+//stage 4 -> 5 : level 35-50. with three stat requirements
+//stage 5 -> 6 : level 50-70. with four stat requirements
+//stage 6 -> 7 : level 70+. with six stat requirements
 //-----------------------------------------------------------------
 //1997-1999 Digimon Digivolution Tables
 //-----------------------------------------------------------------
@@ -22,16 +29,15 @@ struct Digivolution
 //SPECIES_BOTAMON
 static const struct Digivolution sBotamonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {25, 12, 0, 12, 0, 0, SPECIES_KOROMON}, // 6/9/13
+    {0, 13, 0, 0, 0, 0, SPECIES_KOROMON}, // 4/8/11
     DIGIVOLUTION_END
 };
 
 //SPECIES_BUBBMON
 static const struct Digivolution sBubbmonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {0, 0, 15, 0, 0, 0, SPECIES_MOCHIMON}, // 6/12/18
-    {0, 15, 0, 0, 0, 0, SPECIES_NYAROMON}, // 6/14/20. Slightly more difficult to reach.
-
+    {0, 0, 13, 0, 0, 0, SPECIES_MOCHIMON}, // 5/10/15
+    {0, 12, 0, 0, 0, 0, SPECIES_NYAROMON}, // 6/14/20.
     DIGIVOLUTION_END
 };
 
@@ -652,9 +658,24 @@ static const struct Digivolution sDokunemonDigivolveTable[] = {
 //SPECIES_MUSHMON
 static const struct Digivolution sMushmonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {0, 0, 0, 0, 0, 0, SPECIES_TANEMON}, //devolution. Keep as the last spot
+    {0, 0, 50, 0, 50, 0, SPECIES_WOODMON}, // 17/26/32
+    #if digi_2002
+    {0, 55, 50, 0, 0, 0, SPECIES_ARBORMON}, // 17/26/32
+    #endif
     #if digi_2000
-    {0, 0, 0, 0, 0, 0, SPECIES_BUDMON}, //devolution. Keep as the last spot
+    {0, 0, 0, 40, 50, 0, SPECIES_PONCHOMON}, // 17/26/34
+    {0, 60, 50, 0, 0, 0, SPECIES_YAKSAMON}, // 18/27/33
+    #endif
+    #if digi_2002
+    0, 60, 0, 0, 0, 30, SPECIES_STINGMONB}, // 18/34/49
+    #endif
+    #if digi_2022
+    {0, 60, 0, 0, 50, 0, SPECIES_CHAMBLEMON}, // 18/27/33
+    #endif
+    {65, 55, 0, 0, 0, 0, SPECIES_REDVEGIMON}, // 18/25/30
+    {0, 0, 0, 0, 0, 0, SPECIES_TANEMON}, // devolution. Keep as the last spot
+    #if digi_2006
+    {0, 0, 0, 0, 0, 0, SPECIES_BUDMON}, // devolution. Keep as the last spot
     #endif
     DIGIVOLUTION_END
 };
@@ -662,9 +683,20 @@ static const struct Digivolution sMushmonDigivolveTable[] = {
 //SPECIES_OTAMAMON
 static const struct Digivolution sOtamamonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {0, 0, 0, 0, 0, 0, SPECIES_PUKAMON}, //devolution. Keep as the last spot
-    #if digi_2020
-    {0, 0, 0, 0, 0, 0, SPECIES_PUYOYOMON}, //devolution. Keep as the last spot
+    {70, 0, 0, 0, 0, 40, SPECIES_GEKOMON}, // 18/23/29
+    {0, 0, 0, 40, 0, 45, SPECIES_GIROMON}, // 16/27/33
+    {0, 0, 0, 40, 0, 45, SPECIES_THUNDERBALLMON}, // 16/27/33
+    {0, 40, 35, 0, 0, 0, SPECIES_REVOLMON}, // 15/25/31
+    {0, 0, 35, 40, 0, 0, SPECIES_STARMON}, // 15/25/31
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_FROGMON}, //14/24/31
+    #endif
+    #if digi_2002
+    {0, 0, 0, 0, 0, 0, SPECIES_RANAMON}, // 1/1/1
+    #endif
+    {0, 0, 0, 0, 0, 0, SPECIES_PUKAMON}, // devolution. Keep as the last spot
+    #if digi_2021
+    {0, 0, 0, 0, 0, 0, SPECIES_PUYOYOMON}, // devolution. Keep as the last spot
     #endif
     DIGIVOLUTION_END
 };
@@ -672,30 +704,74 @@ static const struct Digivolution sOtamamonDigivolveTable[] = {
 //SPECIES_PALMON
 static const struct Digivolution sPalmonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {0, 0, 0, 0, 0, 0, SPECIES_TANEMON}, //devolution. Keep as the last spot
-    {0, 0, 0, 0, 0, 0, SPECIES_PYOKOMON}, //devolution. Keep as the last spot
+    {65, 40, 0, 0, 0, 0, SPECIES_TOGEMON}, // 18/26/33
+    #if digi_2000
+    {0, 0, 40, 0, 0, 45, SPECIES_SHURIMON}, // 17/30/38
+    {0, 0, 0, 50, 50, 0, SPECIES_PONCHOMON}, // 17/26/32
+    #endif
+    {0, 40, 40, 0, 0, 0, SPECIES_KIWIMON}, // 15/26/33
+    {0, 50, 0, 50, 0, 50, SPECIES_VEEDRAMON}, // 20/34/43
+    {0, 0, 0, 0, 0, 0, SPECIES_TANEMON}, // devolution. Keep as the last spot
+    {0, 0, 0, 0, 0, 0, SPECIES_PYOKOMON}, // devolution. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_ALRAUMON
 static const struct Digivolution sAlraumonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {0, 0, 0, 0, 0, 0, SPECIES_TANEMON}, //devolution. Keep as the last spot
-    {0, 0, 0, 0, 0, 0, SPECIES_PYOKOMON}, //devolution. Keep as the last spot
+    {65, 0, 0, 35, 0, 0, SPECIES_ZASSOUMON}, // 18/24/31
+    #if digi_2000
+    {0, 50, 0, 0, 50, 0, SPECIES_CHAMELEMON}, // 20/35/44
+    #endif
+    {0, 0, 40, 0, 40, 0, SPECIES_WOODMON}, // 16/27/35
+    #if digi_2006
+    {0, 0, 0, 40, 40, 0, SPECIES_SUNFLOWMON}, // 16/28/36
+    #endif
+    #if digi_2002
+    {0, 50, 55, 0, 0, 0, SPECIES_ARBORMON}, // 17/27/33
+    #endif
+    {0, 0, 0, 0, 0, 0, SPECIES_TANEMON}, // devolution. Keep as the last spot
+    {0, 0, 0, 0, 0, 0, SPECIES_PYOKOMON}, // devolution. Keep as the last spot
     DIGIVOLUTION_END
 };
 
 //SPECIES_PATAMON
 static const struct Digivolution sPatamonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {0, 0, 0, 0, 0, 0, SPECIES_TOKOMON}, //devolution. Keep as the last spot
+    {0, 0, 0, 55, 70, 0, SPECIES_ANGEMON}, // 20/29/36
+    {0, 30, 0, 0, 0, 30, SPECIES_UNIMON}, // 14/27/37
+    #if digi_2000
+    {0, 0, 0, 0, 60, 30, SPECIES_PEGASMON}, // 17/27/37
+    {0, 30, 50, 0, 0, 0, SPECIES_PRARIEMON}, // 16/27/37
+    {0, 0, 0, 60, 60, 0, SPECIES_BAROMON}, // 20/32/39
+    {0, 0, 50, 0, 60, 0, SPECIES_STEGOMON}, // 17/25/30
+    {0, 40, 60, 0, 60, 0, SPECIES_RHINOMON}, // 19/37/50
+    {0, 0, 0, 0, 60, 30, SPECIES_PIPISMON}, // 17/27/37
+    {0, 0, 0, 60, 60, 0, SPECIES_PONCHOMON}, // 20/32/39
+    {65, 0, 0, 0, 60, 0, SPECIES_MANTARAYMON}, // 19/25/30
+    {70, 0, 0, 0, 60, 0, SPECIES_MAMBOMON}, // 20/27/30
+    {65, 0, 0, 0, 60, 0, SPECIES_MOTHMON}, // 19/25/30
+    #endif
     DIGIVOLUTION_END
 };
 
 //SPECIES_TSUKAIMON
 static const struct Digivolution sTsukaimonDigivolveTable[] = {
 //  HP Atk Def SA SD Spd
-    {0, 0, 0, 0, 0, 0, SPECIES_TOKOMON}, //devolution. Keep as the last spot
+    {0, 0, 0, 50, 0, 55, SPECIES_DEVIMON}, // 17/26/32
+    {0, 50, 0, 0, 0, 55, SPECIES_DEVIDRAMON}, // 17/26/32
+    {0, 0, 0, 48, 32, 0, SPECIES_WIZARMON}, // 15/28/37
+    #if digi_2000
+    {0, 50, 30, 0, 0, 0, SPECIES_SETHMON}, // 16/26/35
+    {0, 0, 0, 52, 28, 0, SPECIES_WITCHMON}, // 17/26/33
+    #endif
+    #if digi_2001
+    {70, 50, 0, 0, 0, 0, SPECIES_YOUKOMON}, // 20/26/30
+    #endif
+    {0, 0, 0, 0, 0, 0, SPECIES_TOKOMON}, // devolution. Keep as the last spot
+    #if digi_2000
+    {0, 0, 0, 0, 0, 0, SPECIES_KURAMON}, // devolution. Keep as the last spot
+    #endif
     DIGIVOLUTION_END
 };
 
