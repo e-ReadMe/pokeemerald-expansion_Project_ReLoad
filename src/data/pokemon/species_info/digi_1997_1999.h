@@ -5582,7 +5582,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 50,
         .baseSpDefense = 105,
         .baseSpeed     = 30,
-        .types = MON_TYPES(TYPE_VIRUS, TYPE_UNDEAD, TYPE_UNDEAD),
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_UNDEAD, TYPE_ELECTRIC,
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 3,
@@ -5679,7 +5679,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
+        .abilities = { ABILITY_PHOENIX_FEATHER, ABILITY_FLAME_BODY, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
     #if DubNames
         .speciesName = _("Birdramon"),//the digimon's dub name. e.g. gatomon
