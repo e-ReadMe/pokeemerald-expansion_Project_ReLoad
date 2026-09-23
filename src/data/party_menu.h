@@ -36,7 +36,7 @@ static const struct PartyMenuBoxInfoRects sPartyBoxInfoRects[] =
         BlitBitmapToPartyWindow_LeftColumn,
         {
             //The below are the x, y, width, and height for each of the following info
-            24, 11, 40, 13, // Nickname
+            14, 11, 40, 13, // Nickname
             32, 20, 32,  8, // Level
             64, 20,  8,  8, // Gender
             38, 37, 24,  8, // HP
@@ -50,7 +50,7 @@ static const struct PartyMenuBoxInfoRects sPartyBoxInfoRects[] =
         BlitBitmapToPartyWindow_RightColumn,
         {
              // See above comment
-             22,  3, 40, 13, // Nickname
+             13,  3, 40, 13, // Nickname
              30, 12, 32,  8, // Level
              62, 12,  8,  8, // Gender
             102, 12, 24,  8, // HP

@@ -1,3 +1,5 @@
+@ remember to update the character sizes in src/fonts.c or else it wont work.
+@ also dont put anything in space 77 it needs to stay blank. if you have an issue with a box appearing between words in attacks, its that space
 YUKIMI      = 30 31
 BLACK       = 32 33
 SKULL       = 95 3A
@@ -18,7 +20,7 @@ HERAKCULESKABUTERIMON = 90 91 92 93 60 61 44 62 4D 4E
 SHO         = 96
 GEKO        = 97
 CA          = 8C
-TONOSA      = 99 9A
+TONOSAMAGEKOMON = 99 9A E1 D5 97 4D 4E
 ' '         = 00
 'À'         = 01
 'Á'         = 02

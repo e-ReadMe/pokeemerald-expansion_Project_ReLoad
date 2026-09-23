@@ -23919,6 +23919,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = STAT_CHANGE_EFFECT_MINUS,
             .attack = 1,
+        }),
         .battleAnimScript = gBattleAnimMove_HornLeech,
     },
 
@@ -25141,7 +25142,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "foe. +1 priority."),
         .effect = EFFECT_HIT,
         .power = 40,
-        .type = TYPE_BEAST
+        .type = TYPE_BEAST,
         .accuracy = 100,
         .pp = 20,
         .target = TARGET_SELECTED,

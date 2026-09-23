@@ -5582,7 +5582,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .baseSpAttack  = 50,
         .baseSpDefense = 105,
         .baseSpeed     = 30,
-        .types = MON_TYPES(TYPE_VIRUS, TYPE_UNDEAD, TYPE_ELECTRIC,
+        .types = MON_TYPES(TYPE_VIRUS, TYPE_UNDEAD, TYPE_ELECTRIC),
         .catchRate = 225,
         .expYield = 100,
         .evYield_HP = 3,
@@ -16776,7 +16776,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
     #if DubNames
         .speciesName = _("{SHO}g{UN}Geko{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("{TONOSA}ma{MON}"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("{TONOSAMAGEKOMON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
