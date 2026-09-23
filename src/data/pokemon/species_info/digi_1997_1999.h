@@ -2232,7 +2232,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .description = COMPOUND_STRING(
             "It inherited Agumon's mischievousness,\n"
             "and can be seen frolicking like a child\n"
-            "during a frehs snowfall. It sneaks up on\n"
+            "during a fresh snowfall. It sneaks up on\n"
             "enemies to attack."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -15094,9 +15094,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Marvimon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("MarineDevi{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Marimon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("MarineDevi{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -15174,9 +15174,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Maon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Master{TYRANNOMON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Mason"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Master{TYRANNOMON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -15334,9 +15334,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Megasmon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Megasea{DRAMON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Megason"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Megasea{DRAMON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -15414,9 +15414,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Waruon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Warusea{DRAMON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Waron"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Warusea{DRAMON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -15494,9 +15494,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Meton"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Metalgrey{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Memon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Metalgrey{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -15574,9 +15574,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Metonv"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Metalgrey{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Menv"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Metalgrey{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -15734,9 +15734,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Memon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Metal{TYRANNOMON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Menomon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Metal{TYRANNOMON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -16774,9 +16774,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Tonomon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("{SHO}g{UN}Geko{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Tonomon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("{TONOSA}ma{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -17014,7 +17014,7 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Vamdemon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Myotismon"),//the digimon's dub name. e.g. gatomon
     #else
         .speciesName = _("Vamdemon"),//the digimon's sub name. e.g. tailmon
     #endif
@@ -17174,9 +17174,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Waruon"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Warumonzae{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Waron"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Warumonzae{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -17254,9 +17254,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Weron"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Weregaruru{MON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Wern"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Weregaruru{MON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -17334,9 +17334,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Wham"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("Whamon"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Wham"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("Whamon"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
@@ -18134,9 +18134,9 @@ const struct SpeciesInfo gSpeciesInfodigi_1997_1999[] =
         .abilities = { ABILITY_TACTICAL_RETREAT, ABILITY_TACTICAL_RETREAT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
     #if DubNames
-        .speciesName = _("Heran"),//the digimon's dub name. e.g. gatomon
+        .speciesName = _("{HERAKCULESKABUTERIMON}"),//the digimon's dub name. e.g. gatomon
     #else
-        .speciesName = _("Hermon"),//the digimon's sub name. e.g. tailmon
+        .speciesName = _("{HERAKCULESKABUTERIMON}"),//the digimon's sub name. e.g. tailmon
     #endif
         //.field = field_Nsp,
         .cryId = CRY_NONE,
