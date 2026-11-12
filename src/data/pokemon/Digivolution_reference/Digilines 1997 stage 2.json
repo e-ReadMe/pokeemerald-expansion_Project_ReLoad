@@ -1,0 +1,705 @@
+{
+    "size": 8,
+    "columns": [
+        [
+            null,
+            null,
+            {
+                "name": "toyagumon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "cleartoyagumon",
+                "from": [
+                    [
+                        1,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "choromon",
+                "from": null
+            },
+            {
+                "name": "caprimon",
+                "from": null
+            },
+            {
+                "name": "hagurumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "kokuwamon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "zurumon",
+                "from": null
+            },
+            {
+                "name": "kodokugumon",
+                "from": null
+            },
+            {
+                "name": "dokugumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "agumon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "botamon",
+                "from": null
+            },
+            {
+                "name": "koromon",
+                "from": null
+            },
+            {
+                "name": "betamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "modokibetamon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "tentomon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "bubbmon",
+                "from": null
+            },
+            {
+                "name": "mochimon",
+                "from": null
+            },
+            {
+                "name": "gottsumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "kunemon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "dokunemon",
+                "from": [
+                    [
+                        -1,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "poyomon",
+                "from": null
+            },
+            {
+                "name": "tokomon",
+                "from": null
+            },
+            {
+                "name": "patamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "tukaimon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "plotmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "snowbotamon",
+                "from": null
+            },
+            {
+                "name": "nyaromon",
+                "from": null
+            },
+            {
+                "name": "snowagumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "gazimon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "goblimon",
+                "from": [
+                    [
+                        1,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "zurumon",
+                "from": null
+            },
+            {
+                "name": "pagumon",
+                "from": null
+            },
+            {
+                "name": "gizamon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "shamamon",
+                "from": [
+                    [
+                        0,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "tyumon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "snowgoblimon",
+                "from": [
+                    [
+                        -1,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "demidevimon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "mokumon",
+                "from": null
+            },
+            {
+                "name": "demimeramon",
+                "from": null
+            },
+            {
+                "name": "tapirmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "candlemon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "gomamon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "otamamon",
+                "from": [
+                    [
+                        1,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "pitchmon",
+                "from": null
+            },
+            {
+                "name": "pukamon",
+                "from": null
+            },
+            {
+                "name": "crabmon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "shakomon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "penmon",
+                "from": [
+                    [
+                        -1,
+                        -2
+                    ],
+                    [
+                        1,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "nyokimon",
+                "from": null
+            },
+            {
+                "name": "yokomon",
+                "from": null
+            },
+            {
+                "name": "biyomon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "muchomon",
+                "from": [
+                    [
+                        0,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "palmon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ],
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "floramon",
+                "from": [
+                    [
+                        -1,
+                        -2
+                    ],
+                    [
+                        1,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "yuramon",
+                "from": null
+            },
+            {
+                "name": "tanemon",
+                "from": null
+            },
+            {
+                "name": "alraumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            {
+                "name": "mushmon",
+                "from": [
+                    [
+                        0,
+                        -2
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "elecmon",
+                "from": [
+                    [
+                        1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            {
+                "name": "punimon",
+                "from": null
+            },
+            {
+                "name": "tsunomon",
+                "from": null
+            },
+            {
+                "name": "gabumon",
+                "from": [
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "name": "psychemon",
+                "from": [
+                    [
+                        -1,
+                        -1
+                    ]
+                ]
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    ],
+    "levels": [
+        "Default Devolution",
+        "Stage 2",
+        "Evos from Stage 2",
+        "Evos from Stage 2",
+        "ultimate",
+        "mega",
+        "mega+",
+        "ultra"
+    ]
+}
