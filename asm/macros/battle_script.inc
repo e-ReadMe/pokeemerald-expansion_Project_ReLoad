@@ -1668,10 +1668,6 @@
 	callnative BS_IsRunningImpossible
 	.endm
 
-	.macro getmovetarget
-	callnative BS_GetMoveTarget
-	.endm
-
 	@ Will jump to script pointer if the specified battler has or has not fainted.
 	.macro jumpiffainted battler:req, value:req, ptr:req
 	getbattlerfainted \battler
@@ -1971,8 +1967,9 @@
 	callnative BS_TryToClearPrimalWeather
 	.endm
 
-	.macro tryendneutralizinggas
+	.macro tryendneutralizinggas battler=BS_TARGET
 	callnative BS_TryEndNeutralizingGas
+	.byte \battler
 	.endm
 
 	.macro consumeberry battler:req, fromBattler:req

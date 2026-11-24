@@ -419,6 +419,23 @@ SINGLE_BATTLE_TEST("Dynamax: Dynamaxed Pokemon lose their substitutes")
     }
 }
 
+SINGLE_BATTLE_TEST("Dynamax: Dynamaxed Pokemon lose their Minimized status")
+{
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_MINIMIZE) == EFFECT_MINIMIZE);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_MINIMIZE); MOVE(opponent, MOVE_CELEBRATE); }
+        TURN { MOVE(player, MOVE_SCRATCH, gimmick: GIMMICK_DYNAMAX); MOVE(opponent, MOVE_SCRATCH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_MINIMIZE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_MAX_STRIKE, player);
+    } THEN {
+        EXPECT(!player->volatiles.minimize);
+    }
+}
+
 SINGLE_BATTLE_TEST("Dynamax: Dynamaxed Pokemon that changes forms does not gain HP")
 {
     u16 capturedHP, finalHP;
@@ -529,6 +546,36 @@ DOUBLE_BATTLE_TEST("Dynamax: Dynamaxed Pokemon are immune to Instruct")
         MESSAGE("Wobbuffet used Max Strike!");
         MESSAGE("Wynaut used Instruct!");
         MESSAGE("But it failed!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Dynamax: Dynamaxed Pokemon are immune to Encore")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) {Moves(MOVE_SCRATCH, MOVE_PROTECT);}
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_SCRATCH, gimmick: GIMMICK_DYNAMAX); MOVE(opponent, MOVE_ENCORE); }
+        TURN { MOVE(player, MOVE_PROTECT); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_MAX_STRIKE, player);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ENCORE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_MAX_GUARD, player);
+    }
+}
+
+SINGLE_BATTLE_TEST("Dynamax: Dynamaxed Pokemon are not affected by Encore effect started before they Dynamaxed")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) {Moves(MOVE_SCRATCH, MOVE_PROTECT);}
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_SCRATCH); MOVE(opponent, MOVE_ENCORE); }
+        TURN { MOVE(player, MOVE_PROTECT, gimmick: GIMMICK_DYNAMAX); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ENCORE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_MAX_GUARD, player);
     }
 }
 

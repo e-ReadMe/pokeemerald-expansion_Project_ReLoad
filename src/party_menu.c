@@ -3626,7 +3626,10 @@ static void CB2_ReturnToPartyMenuFromWritingMail(void)
     {
         TakeMailFromMon(mon);
         SetMonData(mon, MON_DATA_HELD_ITEM, &sPartyMenuItemId);
-        RemoveBagItem(sPartyMenuItemId, 1);
+        if (sPartyMenuItemId != ITEM_NONE)
+        {
+            RemoveBagItem(sPartyMenuItemId, 1);
+        }
         AddBagItem(item, 1);
         InitPartyMenu(gPartyMenu.menuType, KEEP_PARTY_LAYOUT, gPartyMenu.action, TRUE, PARTY_MSG_CHOOSE_MON, Task_TryCreateSelectionWindow, gPartyMenu.exitCallback);
     }
@@ -5680,13 +5683,13 @@ static void Task_LearnNextMoveOrClosePartyMenu(u8 taskId)
 {
     if (IsFanfareTaskInactive() && ((JOY_NEW(A_BUTTON)) || (JOY_NEW(B_BUTTON))))
     {
-        if (gPartyMenu.data1 == 1)
+        if (gPartyMenu.learnMoveState == 1)
         {
             Task_TryLearningNextMove(taskId);
         }
         else
         {
-            if (gPartyMenu.data1 == 2) // never occurs
+            if (gPartyMenu.learnMoveState == 2) // never occurs
                 gSpecialVar_Result = TRUE;
             Task_ClosePartyMenu(taskId);
         }
@@ -6355,6 +6358,11 @@ static bool32 IsFusionMon(enum Species species)
             return SECOND_FUSE_MON;
     }
     return FALSE;
+}
+
+bool32 IsAFusedMon(enum Species species)
+{
+    return (IsFusionMon(species) == UNFUSE_MON);
 }
 
 void FormChangeTeachMove(u8 taskId, enum Move move, u32 slot)
@@ -7218,7 +7226,10 @@ static void CB2_ReturnToPartyOrBagMenuFromWritingMail(void)
     {
         TakeMailFromMon(mon);
         SetMonData(mon, MON_DATA_HELD_ITEM, &sPartyMenuItemId);
-        RemoveBagItem(sPartyMenuItemId, 1);
+        if (sPartyMenuItemId != ITEM_NONE)
+        {
+            RemoveBagItem(sPartyMenuItemId, 1);
+        }
         ReturnGiveItemToBagOrPC(item);
         SetMainCallback2(gPartyMenu.exitCallback);
     }
@@ -8381,9 +8392,17 @@ void CursorCb_MoveItemCallback(u8 taskId)
             CopyItemName(item1, gStringVar2);
             StringExpandPlaceholders(buffer, gText_XsYAnd);
 
-            StringAppend(buffer, gText_XsYWereSwapped);
             GetMonNickname(&gParties[B_TRAINER_PLAYER][gPartyMenu.slotId2], gStringVar1);
             CopyItemName(item2, gStringVar2);
+            StringExpandPlaceholders(gStringVar4, gText_XsYWereSwapped);
+            if (GetStringWidth(FONT_NORMAL, gStringVar4, 0) > GetWindowAttribute(WIN_MSG, WINDOW_WIDTH) * TILE_WIDTH)
+            {
+                StringAppend(buffer, COMPOUND_STRING("{STR_VAR_1}'s {STR_VAR_2}\lwere swapped!{PAUSE_UNTIL_PRESS}"));
+            }
+            else
+            {
+                StringAppend(buffer, gText_XsYWereSwapped);
+            }
             StringExpandPlaceholders(gStringVar4, buffer);
         }
 
