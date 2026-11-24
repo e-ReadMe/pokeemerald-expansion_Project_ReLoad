@@ -17,7 +17,13 @@ OldaleTown_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 OldaleTown_PokemonCenter_1F_EventScript_Gentleman::
+	setvar VAR_0x8000, MUGSHOT_AGUMONLEFT
+	callnative DrawMugshot
 	msgbox OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC, MSGBOX_NPC
+	setvar VAR_0x8000, MUGSHOT_AGUMONRIGHT
+	callnative DrawMugshot
+	msgbox OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC, MSGBOX_NPC
+	callnative ClearMugshot
 	end
 
 OldaleTown_PokemonCenter_1F_EventScript_Boy::
@@ -684,3 +690,4 @@ StarterDigimonEggGift_Text_Heresyouregg:
 	.string "How they'll grow is up for you to\n"
 	.string "determine.\p"
 	.string "Welcome to the DIGITAL WORLD.$"
+
